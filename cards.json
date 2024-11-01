@@ -1,0 +1,20 @@
+[
+  {
+    "name": "None",
+    "type": "Unit",
+    "rarity": "common",
+    "faction": "neutral",
+    "provisions": "2",
+    "power": "1",
+    "abilities": [],
+    "quote": "Lorem Ipsum."
+  },
+  {
+    "name": "Blistering Heatwave",
+    "type": "Special",
+    "faction": "neutral",
+    "provisions": "8",
+    "abilities": ["Banish a unit or artifact."],
+    "quote": "."
+  }
+]
