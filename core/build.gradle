@@ -12,6 +12,7 @@ dependencies {
   // https://mvnrepository.com/artifact/com.google.guava/guava
   implementation 'com.google.guava:guava:33.3.1-jre'
 
+  implementation 'com.github.DrCorchit:justice-utils:1.4.13'
 
   if(enableGraalNative == 'true') {
     implementation "io.github.berstanio:gdx-svmhelper-annotations:$graalHelperVersion"

@@ -1,0 +1,1026 @@
+[
+  {
+    "name": "Blistering Heatwave",
+    "type": "Action",
+    "cost": 8,
+    "rarity": "rare",
+    "tags": [
+      "Nature"
+    ],
+    "ability": "Banish a unit or artifact.",
+    "quote": "Just when you think it can't get any hotter..."
+  },
+  {
+    "name": "Giant Turtle",
+    "type": "Unit",
+    "power": 8,
+    "cost": 6,
+    "rarity": "rare",
+    "tags": [
+      "Beast"
+    ],
+    "ability": "Deploy: Add an additional mana die to the pot for the remainder of the round.",
+    "quote": "Could this be a dog?"
+  },
+  {
+    "name": "Pact",
+    "type": "Equipment",
+    "cost": 3,
+    "rarity": "common",
+    "tags": [
+      "Spell"
+    ],
+    "ability": ["Equip: Rally 6", "Expire: Rout 6."],
+    "quote": "Could this be a dog?"
+  },
+  {
+    "name": "Elemental Priestess",
+    "type": "Unit",
+    "power": 3,
+    "cost": 3,
+    "rarity": "common",
+    "tags": [
+      "Human",
+      "Priest"
+    ],
+    "ability": ["Deploy: Convert all mana of one color into another color of your choice."],
+    "quote": "All magic comes from one source, and to its source must return."
+  },
+  {
+    "name": "Assassin",
+    "type": "Unit",
+    "power": 1,
+    "cost": 4,
+    "rarity": "common",
+    "tags": [
+      "Human",
+      "Spy"
+    ],
+    "ability": ["Disloyal.", "Deploy: Assassinate 4."],
+    "quote": "Humans make good assassins. I hear they also make good targets.."
+  },
+  {
+    "name": "Butler",
+    "type": "Unit",
+    "power": 1,
+    "cost": 3,
+    "rarity": "common",
+    "tags": [
+      "Human"
+    ],
+    "ability": ["Deploy: Rally 2. Finale: Rally 2."],
+    "quote": "Anything you require, sir."
+  },
+  {
+    "name": "Emissary",
+    "type": "Unit",
+    "power": 1,
+    "cost": 3,
+    "rarity": "common",
+    "tags": [
+      "Greed",
+      "Human",
+      "Spy"
+    ],
+    "ability": ["Disloyal.", "Deploy: Play a unit from hand, then draw a card."],
+    "quote": "Introducing his most gracious excellency..."
+  },
+  {
+    "name": "Fireball",
+    "type": "Action",
+    "cost": 3,
+    "rarity": "common",
+    "tags": [
+      "Spell"
+    ],
+    "ability": "Conjure 1 Fire Mana then Assault 2 OR Expend 1 Fire Mana then Assault 3.",
+    "quote": "I didn't ask how big the room was. I said I cast fireball."
+  },
+  {
+    "name": "Chaos Slave",
+    "type": "Unit",
+    "power": 1,
+    "cost": 2,
+    "rarity": "common",
+    "tags": [
+      "Chaos",
+      "Human"
+    ],
+    "ability": ["Vulnerable", "Deploy, Chaos 6: Hasten.", "Activate: Tutor a bronze chaos unit, then destroy self."],
+    "quote": "A man cannot serve two masters."
+  },
+  {
+    "name": "Chaos Vanguard",
+    "type": "Unit",
+    "power": 3,
+    "cost": 2,
+    "rarity": "common",
+    "tags": [
+      "Chaos",
+      "Human",
+      "Soldier"
+    ],
+    "ability": ["Deploy: Reroll 1.", "Activate: Repeat the deploy ability."],
+    "quote": "Kill, steal, destroy!"
+  },
+  {
+    "name": "Saboteur",
+    "type": "Unit",
+    "power": 1,
+    "cost": 2,
+    "rarity": "common",
+    "tags": [
+      "Chaos",
+      "Human",
+      "Spy"
+    ],
+    "ability": ["Disloyal.", "Deploy: Expend X mana dice of the same color, then Rally X."],
+    "quote": "This is the war of the future."
+  },
+  {
+    "name": "Chaos Soldier",
+    "type": "Unit",
+    "power": 3,
+    "cost": 3,
+    "rarity": "common",
+    "tags": [
+      "Chaos",
+      "Human",
+      "Soldier"
+    ],
+    "ability": "Finale, Chaos X: Rally X. Activate: Reroll 1.",
+    "quote": "The enemy doesn't know what we're going to do in advance, because we don't either."
+  },
+  {
+    "name": "Chaos Grenadier",
+    "type": "Unit",
+    "power": 2,
+    "cost": 3,
+    "rarity": "common",
+    "tags": [
+      "Chaos",
+      "Human",
+      "Soldier"
+    ],
+    "ability": ["Deploy: Reroll one of your opponent's mana dice.", "Activate, Chaos X: Assault X."],
+    "quote": "The smell of gunpowder is sweet."
+  },
+  {
+    "name": "Chaos Cavalry",
+    "type": "Unit",
+    "power": 3,
+    "cost": 3,
+    "rarity": "common",
+    "tags": [
+      "Chaos",
+      "Human",
+      "Soldier"
+    ],
+    "ability": ["Deploy: Deflect an enemy unit.", "Activate: Deactivate an enemy unit."],
+    "quote": "Ride or die? Why not both?"
+  },
+  {
+    "name": "Chaos Knight",
+    "type": "Unit",
+    "power": 4,
+    "cost": 3,
+    "rarity": "common",
+    "tags": [
+      "Chaos",
+      "Human",
+      "Knight"
+    ],
+    "ability": ["Deploy: Reroll 2.", "Activate: Protect a chaos unit."],
+    "quote": "To fight for honor is insanity. Therefore, I fight for insanity itself."
+  },
+  {
+    "name": "Chaos Mage",
+    "type": "Unit",
+    "power": 2,
+    "cost": 4,
+    "rarity": "common",
+    "tags": [
+      "Chaos",
+      "Human",
+      "Mage"
+    ],
+    "ability": ["Deploy, Chaos 6: Hasten.", "Activate: Seize 2."],
+    "quote": "Chaos is power!"
+  },
+  {
+    "name": "Chaos Infiltrator",
+    "type": "Unit",
+    "power": 1,
+    "cost": 4,
+    "rarity": "common",
+    "tags": [
+      "Chaos",
+      "Human",
+      "Spy"
+    ],
+    "ability": ["Disloyal.", "Deploy, Chaos X: Assassinate X."],
+    "quote": "Escape plan? You lost me at \"plan\"."
+  },
+  {
+    "name": "Chaos Dutchess",
+    "type": "Unit",
+    "power": 7,
+    "cost": 4,
+    "rarity": "common",
+    "tags": [
+      "Chaos",
+      "Human",
+      "Aristocrat"
+    ],
+    "ability": "Reflex: Destroy self.",
+    "quote": "Men are so predictable."
+  },
+  {
+    "name": "Inspector Culso",
+    "type": "Unit",
+    "power": 1,
+    "cost": 5,
+    "rarity": "rare",
+    "tags": [
+      "Chaos",
+      "Human",
+      "Spy"
+    ],
+    "ability": "Disloyal. Deploy, Chaos X: Look at all cards from your opponent's hand with a provision cost of X or less. Play one, then your opponent draws a card.",
+    "quote": "With me, surprises are rarely unexpected."
+  },
+  {
+    "name": "Chaos Manor",
+    "type": "Artifact",
+    "cost": 5,
+    "rarity": "rare",
+    "tags": [
+      "Chaos",
+      "Location"
+    ],
+    "ability": [
+      "Deploy: Tutor a Chaos Slave or Chaos Dutchess.",
+      "Passive: Adjacent Chaos Slaves and Dutchesses do not destroy themselves."
+    ],
+    "quote": "If home is where the heart is, then we're homeless."
+  },
+  {
+    "name": "Nameless God of Sorrow",
+    "type": "Unit",
+    "power": 3,
+    "cost": 6,
+    "rarity": "rare",
+    "tags": [
+      "Chaos",
+      "Deity"
+    ],
+    "ability": ["Chaos 5: Tutor self.", "Chaos 6: Resurrect self."],
+    "quote": "Weep not for what has been, but for what will be."
+  },
+  {
+    "name": "Lord Kilgrom",
+    "type": "Unit",
+    "power": 6,
+    "cost": 6,
+    "rarity": "rare",
+    "tags": [
+      "Chaos",
+      "Human",
+      "Aristocrat"
+    ],
+    "ability": ["Deploy: Move a mana die from your opponent's pool to the pot.", "Expire: Move it back."],
+    "quote": ["All those deaths, just to move some lines on a map."]
+  },
+  {
+    "name": "Quartermaster",
+    "type": "Unit",
+    "power": 3,
+    "cost": 7,
+    "rarity": "rare",
+    "tags": [
+      "Chaos",
+      "Human",
+      "Spy"
+    ],
+    "ability": "Deploy: Tutor a spy.",
+    "quote": "He always finds the perfect man for the job."
+  },
+  {
+    "name": "Lady Lima",
+    "type": "Unit",
+    "power": 3,
+    "cost": 7,
+    "rarity": "rare",
+    "tags": [
+      "Chaos",
+      "Human",
+      "Aristocrat"
+    ],
+    "ability": "Deploy, Chaos X: Tutor a unit with X or fewer provisions.",
+    "quote": "Fortunately, I've already accounted for your incompetence."
+  },
+  {
+    "name": "Yalmamir, Prince of Chaos",
+    "type": "Unit",
+    "power": 3,
+    "cost": 8,
+    "rarity": "rare",
+    "tags": [
+      "Chaos",
+      "Human",
+      "Aristocrat"
+    ],
+    "ability": "Deploy: Seize a unit with power less than or equal to self.",
+    "quote": "A single incompetent enemy is worth a thousand incompetent friends."
+  },
+  {
+    "name": "Kali, High Priestess",
+    "type": "Unit",
+    "power": 4,
+    "cost": 9,
+    "rarity": "rare",
+    "tags": [
+      "Chaos",
+      "Human",
+      "Priest"
+    ],
+    "ability": [
+      "Activate: Reroll all common and allied mana dice.",
+      "Passive: Whenever a mana die is rerolled during your turn, Rally."
+    ],
+    "quote": "I love it when they struggle."
+  },
+  {
+    "name": "Pandemonium",
+    "type": "Action",
+    "cost": 9,
+    "rarity": "rare",
+    "tags": [
+      "Chaos"
+    ],
+    "ability": [
+      "Choose three cards from your deck, then play one at random.",
+      "Chaos 6: Play two at random instead.", "Finally, return the cards not played to your deck."
+    ],
+    "quote": "More than just chaos..."
+  },
+  {
+    "name": "Grand Inquisitor Molgrippe",
+    "type": "Unit",
+    "power": 3,
+    "cost": 10,
+    "rarity": "rare",
+    "tags": [
+      "Chaos",
+      "Human",
+      "Priest"
+    ],
+    "ability": "Deploy, Chaos 5: Destroy an enemy unit or artifact.",
+    "quote": "The anomaly will be corrected shortly."
+  },
+  {
+    "name": "Bledgoath, God of Insanity",
+    "type": "Unit",
+    "power": 2,
+    "cost": 10,
+    "rarity": "rare",
+    "tags": [
+      "Chaos",
+      "Deity"
+    ],
+    "ability": "Deploy, Chaos X: Seize up to 3 enemy units with a combined power of X or less.",
+    "quote": "More for me!"
+  },
+  {
+    "name": "Eris, Goddess of Discord",
+    "type": "Unit",
+    "power": 3,
+    "cost": 11,
+    "rarity": "rare",
+    "tags": [
+      "Chaos",
+      "Deity"
+    ],
+    "ability": ["Deploy: Tutor a bronze Chaos unit.", "Activate, Chaos 5: Resurrect a bronze Chaos unit."],
+    "quote": "When the new age dawns, there will be no turning back."
+  },
+  {
+    "name": "Fireswill Wine",
+    "type": "Equipment",
+    "cost": 2,
+    "rarity": "common",
+    "tags": [
+      "Greed",
+      "Vice",
+      "Liquor"
+    ],
+    "ability": ["Equip: Rally 4 and conjure 2 fire Mana.", "Finale: Rout 2."],
+    "quote": "The cheapest booze that money can buy."
+  },
+  {
+    "name": "Dwarven Miner",
+    "type": "Unit",
+    "power": 2,
+    "cost": 2,
+    "rarity": "common",
+    "tags": [
+      "Greed",
+      "Dwarf"
+    ],
+    "ability": ["Activate: Rally 1 and conjure 1 fire mana.", "Imbibe: Reactivate."],
+    "quote": "Screw whistling--we drink while we work!"
+  },
+  {
+    "name": "Forgetender",
+    "type": "Unit",
+    "power": 2,
+    "cost": 2,
+    "rarity": "common",
+    "tags": [
+      "Greed",
+      "Dwarf"
+    ],
+    "ability": ["Activate: Conjure 1 fire mana.", "Turnwise: Reactivate.", "Imbibe: Reactivate."],
+    "quote": "Work them bellows, boy, till they're hotter than hot!"
+  },
+  {
+    "name": "Flame Gecko",
+    "type": "Unit",
+    "power": 1,
+    "cost": 2,
+    "rarity": "common",
+    "tags": [
+      "Greed",
+      "Dragon"
+    ],
+    "ability": "Deploy: Expend 2 Fire Mana, then Assault 2.",
+    "quote": "They're quite harmless in small numbers. Specifically when the number is zero."
+  },
+  {
+    "name": "Golden Froth",
+    "type": "Equipment",
+    "cost": 3,
+    "rarity": "common",
+    "tags": [
+      "Greed",
+      "Vice",
+      "Liquor"
+    ],
+    "ability": "Equip: Rally 5.",
+    "quote": "Beer is proof that God loves dwarves and wants them to be happy."
+  },
+  {
+    "name": "Dwarven Brawler",
+    "type": "Unit",
+    "power": 3,
+    "cost": 3,
+    "rarity": "common",
+    "tags": [
+      "Greed",
+      "Vice",
+      "Dwarf"
+    ],
+    "ability": "Imbibe: Expend 1 Fire Mana, then Assault 2.",
+    "quote": "If its a fight yer lookin' for..."
+  },
+  {
+    "name": "Dragon Egg",
+    "type": "Unit",
+    "power": 1,
+    "cost": 3,
+    "rarity": "common",
+    "tags": [
+      "Greed",
+      "Dragon"
+    ],
+    "ability": "Finale: Rally 5.",
+    "quote": "Probably best not to touch them."
+  },
+  {
+    "name": "Pit Wyvern",
+    "type": "Unit",
+    "power": 2,
+    "cost": 3,
+    "rarity": "common",
+    "tags": [
+      "Greed",
+      "Vice",
+      "Dragon"
+    ],
+    "ability": "Activate: Expend 3 fire mana, then Assault 3.",
+    "quote": "Soft as barbed wire and charming as a gut punch."
+  },
+  {
+    "name": "Dragonbrew Reserve",
+    "type": "Equipment",
+    "cost": 4,
+    "rarity": "common",
+    "tags": [
+      "Greed",
+      "Vice",
+      "Liquor"
+    ],
+    "ability": "Equip: Rally 3 and conjure 1 fire Mana. Finale: Rally 3.",
+    "quote": "The good stuff."
+  },
+  {
+    "name": "Royal Wyvern",
+    "type": "Unit",
+    "power": 4,
+    "cost": 4,
+    "rarity": "common",
+    "tags": [
+      "Greed",
+      "Dragon"
+    ],
+    "ability": "Deploy: Expend X fire mana, then Rally X.",
+    "quote": "Capable of turning a dwarf into barbecue in 3 seconds flat."
+  },
+  {
+    "name": "Swoop",
+    "type": "Action",
+    "cost": 4,
+    "rarity": "common",
+    "tags": [
+      "Greed",
+      "Tactic"
+    ],
+    "ability": "Expend 1 air mana, then Tutor a bronze dragon.",
+    "quote": "By the time you see them, it's too late."
+  },
+  {
+    "name": "Stumpy's Axe",
+    "type": "Equipment",
+    "cost": 4,
+    "rarity": "common",
+    "tags": [
+      "Greed",
+      "Weapon"
+    ],
+    "ability": "Equip: Assault 4. If equipped to a target that already has a liquor card equipped, increase the Assault value to 5. If equipped to Stumpy McGee, Assassinate instead.",
+    "quote": "The one, the only."
+  },
+  {
+    "name": "Forgemaster",
+    "type": "Unit",
+    "power": 4,
+    "cost": 5,
+    "rarity": "rare",
+    "tags": [
+      "Greed",
+      "Dwarf"
+    ],
+    "ability": ["Activate: conjure 2 fire mana.", "Turnwise: Reactivate.", "Imbibe: Reactivate."],
+    "quote": "To master tha' forge, ya gotta become one with 'er. Jus' kiddin, tha' would be weird."
+  },
+  {
+    "name": "Dragonseeker",
+    "type": "Unit",
+    "power": 3,
+    "cost": 6,
+    "rarity": "rare",
+    "tags": [
+      "Greed",
+      "Dwarf"
+    ],
+    "ability": "Deploy: Expend 2 Fire mana, then tutor a dragon egg, OR Expend 3 Fire mana, then resurrect a dragon egg.",
+    "quote": "You're safe now, little feller."
+  },
+  {
+    "name": "Lost Dragon Egg",
+    "type": "Unit",
+    "power": 1,
+    "cost": 6,
+    "rarity": "rare",
+    "tags": [
+      "Greed",
+      "Dragon"
+    ],
+    "ability": ["At the start of the game, move to the graveyard.", "Finale: Rally 8."],
+    "quote": "It's a long way back to the nest."
+  },
+  {
+    "name": "Secret Brew",
+    "type": "Equipment",
+    "cost": 6,
+    "rarity": "rare",
+    "tags": [
+      "Greed",
+      "Vice",
+      "Liquor"
+    ],
+    "ability": ["Equip: Rally 10 and trigger imbibe an additional time.", "Finale: Rout 4."],
+    "quote": "What'd you even put in this stuff?"
+  },
+  {
+    "name": "Stumpy McGee",
+    "type": "Unit",
+    "power": 3,
+    "cost": 7,
+    "rarity": "rare",
+    "tags": [
+      "Greed",
+      "Dwarf"
+    ],
+    "ability": ["Deploy: Assault 3.", "Imbibe: Repeat the deploy ability."],
+    "quote": "Well, somebody woke up on the wrong side of the bed."
+  },
+  {
+    "name": "Golden Dragon Egg",
+    "type": "Unit",
+    "power": 1,
+    "cost": 7,
+    "rarity": "rare",
+    "tags": [
+      "Greed",
+      "Dragon"
+    ],
+    "ability": [
+      "Deploy, Expend 3 Fire Mana: gain Haste.",
+      "Activate: Tutor a dragon, then banish self.", "Finale: Rally 8."
+    ]
+  },
+  {
+    "name": "Goryx, Golden Dragon",
+    "type": "Unit",
+    "power": 7,
+    "cost": 7,
+    "rarity": "rare",
+    "tags": [
+      "Greed",
+      "Dragon"
+    ],
+    "ability": "Activate, Expend Fire Mana X: Tutor a card of 2X provisions.",
+    "quote": "The reason I act like I'm better than you is because I am."
+  },
+  {
+    "name": "Guardian Dragon",
+    "type": "Unit",
+    "power": 4,
+    "cost": 8,
+    "rarity": "rare",
+    "tags": [
+      "Greed",
+      "Dragon"
+    ],
+    "ability": [
+      "Whenever an allied Dragon Egg is destroyed, summon self from deck.",
+      "Activate: Protect a dragon egg."
+    ],
+    "quote": "Ohhh now you've made 'er mad!"
+  },
+  {
+    "name": "Neromir, Warrior Dragon",
+    "type": "Unit",
+    "power": 8,
+    "cost": 9,
+    "rarity": "rare",
+    "tags": [
+      "Greed",
+      "Dragon"
+    ],
+    "ability": ["Haste.", "Activate: Expend X fire mana, then Assault X.", "Imbibe: Reactivate."],
+    "quote": "Dragons are destruction in its purest and most beautiful form."
+  },
+  {
+    "name": "Ancestral Ale",
+    "type": "Equipment",
+    "cost": 10,
+    "rarity": "rare",
+    "tags": [
+      "Greed",
+      "Liquor"
+    ],
+    "ability": "Equip: Rally 10 and conjure 3 fire mana.",
+    "quote": "Dwarves'll kill for this stuff."
+  },
+  {
+    "name": "Dragonmother Erizyx",
+    "type": "Unit",
+    "power": 10,
+    "cost": 10,
+    "rarity": "rare",
+    "tags": [
+      "Greed",
+      "Dragon"
+    ],
+    "ability": [
+      "Deploy: Protect all unprotected allied dragon eggs.",
+      "Passive: Whenever you play a dragon egg, protect it.",
+      "Finale: Rally 2 for each allied dragon egg."
+    ],
+    "quote": "She's a lady and you will treat her as such."
+  },
+  {
+    "name": "Sven Forkbarb, Mountain King",
+    "type": "Unit",
+    "power": 1,
+    "cost": 11,
+    "rarity": "rare",
+    "tags": [
+      "Greed",
+      "Dwarf"
+    ],
+    "ability": "Deploy: Play all copies of a liquor card from deck.",
+    "quote": "He doesn't believe in discussing matters of state while sober."
+  },
+  {
+    "name": "Drinking Contest",
+    "type": "Action",
+    "cost": 13,
+    "rarity": "rare",
+    "tags": [
+      "Greed",
+      "Vice"
+    ],
+    "ability": "Play a bronze dwarf and tutor a liquor card OR tutor a dwarf and play a bronze liquor card. Finally, draw a card.",
+    "quote": "When its a drinking contest, everybody wins. -- Dwarven proverb"
+  },
+  {
+    "name": "Pixie",
+    "type": "Unit",
+    "power": 1,
+    "cost": 2,
+    "rarity": "common",
+    "tags": [
+      "Peace",
+      "Fairy"
+    ],
+    "ability": ["Deploy: Conjure 1 earth, 1 air, and 1 water mana.", "Activate: Repeat the Deploy ability."],
+    "quote": "So tiny, yet so beautiful."
+  },
+  {
+    "name": "Dryad Archer",
+    "type": "Unit",
+    "power": 1,
+    "cost": 2,
+    "rarity": "common",
+    "tags": [
+      "Peace",
+      "Dryad"
+    ],
+    "ability": ["Haste.", "Activate, Expend 1 air mana: Assault 1.", "Turnwise: Reactivate."],
+    "quote": "They always fire a warning shot."
+  },
+  {
+    "name": "Fairy Ring",
+    "type": "Unit",
+    "power": 1,
+    "cost": 2,
+    "rarity": "common",
+    "tags": [
+      "Peace",
+      "Fairy"
+    ],
+    "ability": [
+      "Haste.",
+      "Activate, Expend 1 Earth Mana: Deactivate an enemy unit.",
+      "Inactive, Turnwise: Conjure 1 earth, water, or air mana."
+    ],
+    "quote": "Come dance with us!"
+  },
+  {
+    "name": "Forest Fire",
+    "type": "Action",
+    "cost": 2,
+    "rarity": "common",
+    "tags": [
+      "Peace",
+      "Nature"
+    ],
+    "ability": "Destroy an allied unit of X power, then rally X and conjure X earth, air, or water mana.",
+    "quote": "Flames clear the way for new growth."
+  },
+  {
+    "name": "Tadpole",
+    "type": "Unit",
+    "power": 1,
+    "cost": 3,
+    "rarity": "common",
+    "tags": [
+      "Peace",
+      "Beast"
+    ],
+    "ability": "Haste. Activate, Expend 3 water mana: Tutor Bullfrog Army, then destroy self. Turnwise: decrease the activation mana cost by 1. Passive, water mana 1: Invisible.",
+    "quote": "They grow up so fast."
+  },
+  {
+    "name": "Bullfrog Army",
+    "type": "Unit",
+    "power": 2,
+    "cost": 3,
+    "rarity": "common",
+    "tags": [
+      "Peace",
+      "Beast"
+    ],
+    "ability": "Deploy, Expend 1 earth and 1 water mana: Assault 2.",
+    "quote": "Survivors describe their attacks as a ribbeting experience."
+  },
+  {
+    "name": "Warthog",
+    "type": "Unit",
+    "power": 4,
+    "cost": 3,
+    "rarity": "common",
+    "tags": [
+      "Peace",
+      "Beast"
+    ],
+    "ability": "Deploy, Expend X earth mana: Rally X. Expire: Rout 4.",
+    "quote": ""
+  },
+  {
+    "name": "Pond Naiad",
+    "type": "Unit",
+    "power": 2,
+    "cost": 3,
+    "rarity": "common",
+    "tags": [
+      "Peace",
+      "Dryad"
+    ],
+    "ability": "Deploy: Conjure 2 water mana. Turnwise: Conjure 1 Water Mana.",
+    "quote": "Beautiful. Serene. Deadly."
+  },
+  {
+    "name": "Lightning Strike",
+    "type": "Action",
+    "cost": 3,
+    "rarity": "common",
+    "tags": [
+      "Peace",
+      "Nature"
+    ],
+    "ability": ["Assault 2.", "Expend X air mana: Increase the assault by X."],
+    "quote": "You've been thunderstruck."
+  },
+  {
+    "name": "Lifegiving Rainfall",
+    "type": "Equipment",
+    "cost": 3,
+    "rarity": "common",
+    "tags": [
+      "Peace",
+      "Nature"
+    ],
+    "ability": [
+      "Passive: After playing a unit, Expend 3 water mana to play this card, then draw a card.",
+      "Turnwise: Rally."
+    ],
+    "quote": "The rain begins with a single drop."
+  },
+  {
+    "name": "Dryad Warrior",
+    "type": "Unit",
+    "power": 2,
+    "cost": 4,
+    "rarity": "common",
+    "tags": [
+      "Peace",
+      "Dryad"
+    ],
+    "ability": "Deploy, Expend 1 earth, 1 water, and 1 air mana: Assault 3.",
+    "quote": "Every life matters. So does every death."
+  },
+  {
+    "name": "Treant Sage",
+    "type": "Unit",
+    "power": 5,
+    "cost": 4,
+    "rarity": "common",
+    "tags": [
+      "Peace",
+      "Treant"
+    ],
+    "ability": "Turnwise: Conjure 1 earth mana.",
+    "quote": "I think, therefore I am."
+  },
+  {
+    "name": "Flash Flood",
+    "type": "Action",
+    "cost": 5,
+    "rarity": "rare",
+    "tags": [
+      "Peace",
+      "Nature"
+    ],
+    "ability": ["Expend X Water Mana: Assassinate X.", "Finally, Conjure 6 Water Mana."],
+    "quote": "Six feet high and rising"
+  },
+  {
+    "name": "Bamboo Grove",
+    "type": "Artifact",
+    "cost": 6,
+    "rarity": "rare",
+    "tags": [
+      "Peace",
+      "Location",
+      "Nature"
+    ],
+    "ability": [
+      "Turnwise, Expend 1 Water and 1 Earth Mana: Rally 3.",
+      "Passive: Adjacent units are invisible."
+    ],
+    "quote": "Nothing grows faster, or thicker."
+  },
+  {
+    "name": "Thunderstorm",
+    "type": "Action",
+    "cost": 6,
+    "rarity": "rare",
+    "tags": [
+      "Peace",
+      "Nature"
+    ],
+    "ability": "Conjure 1 water and 1 air mana, then tutor a nature card.",
+    "quote": "She's a-gonna blow!"
+  },
+  {
+    "name": "Puck",
+    "type": "Unit",
+    "power": 1,
+    "cost": 7,
+    "rarity": "rare",
+    "tags": [
+      "Peace",
+      "Fairy"
+    ],
+    "ability": ["Disloyal.", "Deploy: Tutor a unit whose provision cost exceeds Puck's."],
+    "quote": "Give me your hands, if we be friends."
+  },
+  {
+    "name": "Lady of the Lake",
+    "type": "Unit",
+    "power": 2,
+    "cost": 8,
+    "rarity": "rare",
+    "tags": [
+      "Peace",
+      "Dryad"
+    ],
+    "ability": ["Passive, Water Mana 4: Tutor self.", "Finale, Water Mana X: Rally X."],
+    "quote": "Soggy bints handin' out swords is no basis for a system of government."
+  },
+  {
+    "name": "Titania",
+    "type": "Unit",
+    "power": 6,
+    "cost": 9,
+    "rarity": "rare",
+    "tags": [
+      "Peace",
+      "Fairy"
+    ],
+    "ability": [
+      "Deploy: Summon a Pixie on either side of this unit, from graveyard or deck as necessary.",
+      "Activate: Conjure 2 earth, air, or water mana."
+    ],
+    "quote": "Hand in hand, with fairy grace, we will sing and bless this place."
+  },
+  {
+    "name": "King Oberon",
+    "type": "Unit",
+    "power": 7,
+    "cost": 10,
+    "rarity": "rare",
+    "tags": [
+      "Peace",
+      "Fairy"
+    ],
+    "ability": [
+      "Haste.",
+      "Activate: Tutor or Resurrect a Lightning Strike.",
+      "Turnwise: Conjure 1 Air mana."
+    ],
+    "quote": "Ill met by moonlight, proud Titania."
+  },
+  {
+    "name": "Great Oak",
+    "type": "Unit",
+    "power": 9,
+    "cost": 10,
+    "rarity": "rare",
+    "tags": [
+      "Peace",
+      "Treant"
+    ],
+    "ability": "Deploy, Expend X Earth Mana: Assault X.",
+    "quote": "I-is that tree... moving?"
+  },
+  {
+    "name": "Allmother",
+    "type": "Unit",
+    "power": 6,
+    "cost": 11,
+    "rarity": "rare",
+    "tags": [
+      "Peace",
+      "Dryad"
+    ],
+    "ability": [
+      "Deploy: Expend 1 earth, 1 water, and 1 air mana, then tutor a Peace unit, OR Expend 3 earth mana and resurrect a bronze Peace unit."
+    ],
+    "quote": "No wound too deep, no break beyond care."
+  }
+]
