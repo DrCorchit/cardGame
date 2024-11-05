@@ -7,7 +7,7 @@
     "tags": [
       "Nature"
     ],
-    "ability": "Banish a unit or artifact.",
+    "ability": ["Banish a unit or artifact."],
     "quote": "Just when you think it can't get any hotter..."
   },
   {
@@ -19,7 +19,7 @@
     "tags": [
       "Beast"
     ],
-    "ability": "Deploy: Add an additional mana die to the pot for the remainder of the round.",
+    "ability": ["Deploy: Add an additional mana die to the pot for the remainder of the round."],
     "quote": "Could this be a dog?"
   },
   {
@@ -93,7 +93,7 @@
     "tags": [
       "Spell"
     ],
-    "ability": "Conjure 1 Fire Mana then Assault 2 OR Expend 1 Fire Mana then Assault 3.",
+    "ability": ["Conjure 1 Fire Mana then Assault 2 OR Expend 1 Fire Mana then Assault 3."],
     "quote": "I didn't ask how big the room was. I said I cast fireball."
   },
   {
@@ -148,7 +148,7 @@
       "Human",
       "Soldier"
     ],
-    "ability": "Finale, Chaos X: Rally X. Activate: Reroll 1.",
+    "ability": ["Finale, Chaos X: Rally X.", "Activate: Reroll 1."],
     "quote": "The enemy doesn't know what we're going to do in advance, because we don't either."
   },
   {
@@ -232,7 +232,7 @@
       "Human",
       "Aristocrat"
     ],
-    "ability": "Reflex: Destroy self.",
+    "ability": ["Reflex: Destroy self."],
     "quote": "Men are so predictable."
   },
   {
@@ -246,7 +246,10 @@
       "Human",
       "Spy"
     ],
-    "ability": "Disloyal. Deploy, Chaos X: Look at all cards from your opponent's hand with a provision cost of X or less. Play one, then your opponent draws a card.",
+    "ability": [
+      "Disloyal.",
+      "Deploy, Chaos X: Look at all cards from your opponent's hand with a provision cost of X or less and play one. Finally, your opponent draws a card."
+    ],
     "quote": "With me, surprises are rarely unexpected."
   },
   {
@@ -302,7 +305,7 @@
       "Human",
       "Spy"
     ],
-    "ability": "Deploy: Tutor a spy.",
+    "ability": ["Deploy: Tutor a spy."],
     "quote": "He always finds the perfect man for the job."
   },
   {
@@ -316,7 +319,7 @@
       "Human",
       "Aristocrat"
     ],
-    "ability": "Deploy, Chaos X: Tutor a unit with X or fewer provisions.",
+    "ability": ["Deploy, Chaos X: Tutor a unit with X or fewer provisions."],
     "quote": "Fortunately, I've already accounted for your incompetence."
   },
   {
@@ -330,7 +333,7 @@
       "Human",
       "Aristocrat"
     ],
-    "ability": "Deploy: Seize a unit with power less than or equal to self.",
+    "ability": ["Deploy: Seize a unit with power less than or equal to self."],
     "quote": "A single incompetent enemy is worth a thousand incompetent friends."
   },
   {
@@ -375,7 +378,7 @@
       "Human",
       "Priest"
     ],
-    "ability": "Deploy, Chaos 5: Destroy an enemy unit or artifact.",
+    "ability": ["Deploy, Chaos 5: Destroy an enemy unit or artifact."],
     "quote": "The anomaly will be corrected shortly."
   },
   {
@@ -388,7 +391,7 @@
       "Chaos",
       "Deity"
     ],
-    "ability": "Deploy, Chaos X: Seize up to 3 enemy units with a combined power of X or less.",
+    "ability": ["Deploy, Chaos X: Seize up to 3 enemy units with a combined power of X or less."],
     "quote": "More for me!"
   },
   {
@@ -453,7 +456,7 @@
       "Greed",
       "Dragon"
     ],
-    "ability": "Deploy: Expend 2 Fire Mana, then Assault 2.",
+    "ability": ["Deploy: Expend 2 Fire Mana, then Assault 2."],
     "quote": "They're quite harmless in small numbers. Specifically when the number is zero."
   },
   {
@@ -466,7 +469,7 @@
       "Vice",
       "Liquor"
     ],
-    "ability": "Equip: Rally 5.",
+    "ability": ["Equip: Rally 5."],
     "quote": "Beer is proof that God loves dwarves and wants them to be happy."
   },
   {
@@ -1005,7 +1008,7 @@
       "Peace",
       "Treant"
     ],
-    "ability": "Deploy, Expend X Earth Mana: Assault X.",
+    "ability": ["Deploy, Expend X Earth Mana: Assault X."],
     "quote": "I-is that tree... moving?"
   },
   {
@@ -1021,6 +1024,6 @@
     "ability": [
       "Deploy: Expend 1 earth, 1 water, and 1 air mana, then tutor a Peace unit, OR Expend 3 earth mana and resurrect a bronze Peace unit."
     ],
-    "quote": "No wound too deep, no break beyond care."
+    "quote": "No wound too deep, no bone too broken, no heart beyond repair."
   }
 ]

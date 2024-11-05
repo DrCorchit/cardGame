@@ -1,3 +1,5 @@
+package com.drcorchit.cards
+
 import com.drcorchit.justice.utils.json.JsonUtils.prettyPrint
 import com.drcorchit.justice.utils.json.JsonUtils.toJsonArray
 import com.google.gson.JsonObject
@@ -5,8 +7,6 @@ import com.google.gson.JsonPrimitive
 import java.io.File
 
 class Script {
-
-
     companion object {
         val regex =
             Regex("(?<name>.*): (?<type>\\w+), ((?<power>\\d+)/)?(?<cost>\\d+)p, (?<tags>\\w+(/\\w+)*)\\. (?<ability>.*)")
@@ -14,7 +14,7 @@ class Script {
         @JvmStatic
         fun main(vararg args: String) {
             val input = File("cards.txt")
-            val output = File("cards.json")
+            val output = File("cards_generated.json")
             val json = input.readLines().filter { it.isNotBlank() }.map { parse(it) }.toJsonArray()
             output.writeText(json.prettyPrint())
         }
@@ -39,7 +39,6 @@ class Script {
             json.add("tags", tags.map { JsonPrimitive(it) }.toJsonArray())
             json.addProperty("ability", ability)
             return json
-
         }
     }
 }
