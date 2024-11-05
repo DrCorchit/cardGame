@@ -17,6 +17,7 @@ object Textures {
     val diamond = initTexture("diamond.png")
     val diamondBorder = initTexture("diamond_border.png")
     val slate = initTexture("slate2.png")
+    val slateBorder = initTexture("border.png")
     val star = initTexture("star.png")
 
     //Arrow

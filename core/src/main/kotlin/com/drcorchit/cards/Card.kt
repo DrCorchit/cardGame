@@ -59,4 +59,11 @@ class Card(
         }
     }
 
+    fun draw(minimal: Boolean) {
+
+    }
+
+    override fun toString(): String {
+        return "$name $power/${cost}p $abilityText $quote"
+    }
 }

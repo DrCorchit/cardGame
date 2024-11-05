@@ -1,28 +1,36 @@
 package com.drcorchit.cards
 
 import com.badlogic.gdx.ApplicationAdapter
+import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.files.FileHandle
 import com.badlogic.gdx.graphics.Color
+import com.badlogic.gdx.graphics.Pixmap
+import com.badlogic.gdx.graphics.PixmapIO
 import com.badlogic.gdx.graphics.g2d.BitmapFont
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFontParameter
 import com.badlogic.gdx.utils.ScreenUtils
 import com.drcorchit.cards.Textures.asSprite
 import com.drcorchit.cards.graphics.Draw
+import com.drcorchit.justice.utils.IOUtils
+import com.drcorchit.justice.utils.StringUtils.normalize
 import com.drcorchit.justice.utils.json.JsonUtils.parseFromFile
+import com.drcorchit.justice.utils.logging.Logger
 import com.drcorchit.justice.utils.math.Compass
 import com.google.gson.JsonArray
 import java.io.File
+import java.util.zip.Deflater
+import kotlin.random.Random
 
 /**
  * [com.badlogic.gdx.ApplicationListener] implementation shared by all platforms.
  */
 class Main() : ApplicationAdapter() {
-
-    private var font1: BitmapFont? = null
-    private var font2: BitmapFont? = null
-    private var font3: BitmapFont? = null
-    private var font4: BitmapFont? = null
+    private var numberFont: BitmapFont? = null
+    private var nameFont: BitmapFont? = null
+    private var textFont: BitmapFont? = null
+    private var quoteFont: BitmapFont? = null
+    private var tagFont: BitmapFont? = null
 
     val diamondOffsetX = 50f
     val diamondOffsetY = 100f
@@ -36,17 +44,20 @@ class Main() : ApplicationAdapter() {
     val abilityBufferMargin = 10f
     val abilityTextW = abilityBufferW - 2 * abilityBufferMargin
 
-    val imageX = W / 2f;
-    val imageY = H - 240f;
+    val imageX = W / 2f
+    val imageY = H - 240f
+
+    val index = Random.nextInt(76)
 
     override fun create() {
         //Load the batch
         Draw.batch
 
-        font1 = initFont("enchanted_land.otf", 96)
-        font2 = initFont("enchanted_land.otf", 72)
-        font3 = initFont("lora.ttf", 20)
-        font4 = initFont("lora.ttf", 16)
+        numberFont = initFont("enchanted_land.otf", 96)
+        nameFont = initFont("enchanted_land.otf", 64)
+        textFont = initFont("lora.ttf", 28)
+        quoteFont = initFont("lora.ttf", 20)
+        tagFont = initFont("lora.ttf", 20)
 
         LocalAssets.getInstance().load()
     }
@@ -55,7 +66,6 @@ class Main() : ApplicationAdapter() {
         val diamond = Textures.diamond.asSprite().setOffset(Compass.CENTER)
         diamond.blend = card.motive.color
 
-        val slate = Textures.slate.asSprite()
 
         val diamondBorder = Textures.diamondBorder.asSprite().setOffset(Compass.CENTER)
         diamondBorder.blend = card.motive.color
@@ -64,7 +74,11 @@ class Main() : ApplicationAdapter() {
             val scale = W.toFloat() / card.image.getFrames().width
             card.image.draw(Draw.batch, imageX, imageY, scale, scale, 0f)
         }
+
+        val slate = Textures.slate.asSprite()
         slate.draw(Draw.batch, 0f, 0f)
+        val border = Textures.slateBorder.asSprite()
+        border.draw(Draw.batch, 0f, 0f)
 
         diamond.draw(Draw.batch, diamondOffsetX, H - diamondOffsetY)
         diamondBorder.draw(Draw.batch, diamondOffsetX, H - diamondOffsetY)
@@ -81,7 +95,7 @@ class Main() : ApplicationAdapter() {
             Color.BLACK
         )
 
-        Draw.drawText(20f, 440f, font2, card.name, W - 50f, Compass.EAST, Color.WHITE)
+        Draw.drawText(20f, 440f, nameFont, card.name, W - 50f, Compass.EAST, Color.WHITE)
         if (card.power == 0) {
             val star = Textures.star.asSprite().setOffset(Compass.CENTER)
             star.draw(Draw.batch, diamondOffsetX, H - diamondOffsetY, starSize, starSize)
@@ -89,7 +103,7 @@ class Main() : ApplicationAdapter() {
             Draw.drawText(
                 diamondOffsetX,
                 H - diamondOffsetY,
-                font1,
+                numberFont,
                 card.power.toString(),
                 100f,
                 Compass.CENTER,
@@ -100,7 +114,7 @@ class Main() : ApplicationAdapter() {
         Draw.drawText(
             W - diamondOffsetX,
             diamondOffsetY,
-            font1,
+            numberFont,
             card.cost.toString(),
             100f,
             Compass.CENTER,
@@ -108,14 +122,14 @@ class Main() : ApplicationAdapter() {
         )
 
         val textX = abilityBufferX + abilityBufferMargin
-        Draw.drawText(textX, 390f, font4, card.tagsText, 1000f, Compass.EAST, Color.WHITE)
+        Draw.drawText(textX, 390f, tagFont, card.tagsText, 1000f, Compass.EAST, Color.WHITE)
 
         //Ability Text
         val abilityTextY = abilityBufferY + abilityBufferH - abilityBufferMargin
         Draw.drawText(
             textX,
             abilityTextY,
-            font3,
+            textFont,
             card.abilityText,
             abilityTextW,
             Compass.SOUTHEAST,
@@ -125,7 +139,7 @@ class Main() : ApplicationAdapter() {
         Draw.drawText(
             textX,
             quoteTextY,
-            font3,
+            quoteFont,
             card.quote,
             abilityTextW,
             Compass.NORTHEAST,
@@ -134,6 +148,8 @@ class Main() : ApplicationAdapter() {
     }
 
     private fun drawCardMinimal(card: Card) {
+        ScreenUtils.clear(1f, 1f, 1f, 1f)
+
         val diamondBorder = Textures.diamondBorder.asSprite().setOffset(Compass.CENTER)
         diamondBorder.draw(Draw.batch, diamondOffsetX, H - diamondOffsetY)
         diamondBorder.draw(Draw.batch, W - diamondOffsetX, diamondOffsetY)
@@ -147,7 +163,7 @@ class Main() : ApplicationAdapter() {
             Color.BLACK,
         )
 
-        Draw.drawText(20f, 440f, font2, card.name, W - 50f, Compass.EAST, Color.BLACK)
+        Draw.drawText(20f, 440f, nameFont, card.name, W - 50f, Compass.EAST, Color.BLACK)
         //type
         if (card.power == 0) {
             val star = Textures.star.asSprite().setOffset(Compass.CENTER)
@@ -157,7 +173,7 @@ class Main() : ApplicationAdapter() {
             Draw.drawText(
                 diamondOffsetX,
                 H - diamondOffsetY,
-                font1,
+                numberFont,
                 card.power.toString(),
                 100f,
                 Compass.CENTER,
@@ -169,7 +185,7 @@ class Main() : ApplicationAdapter() {
         Draw.drawText(
             W - diamondOffsetX,
             diamondOffsetY,
-            font1,
+            numberFont,
             card.cost.toString(),
             100f,
             Compass.CENTER,
@@ -177,14 +193,14 @@ class Main() : ApplicationAdapter() {
         )
 
         val textX = abilityBufferX + abilityBufferMargin
-        Draw.drawText(textX, 390f, font4, card.tagsText, 1000f, Compass.EAST, Color.BLACK)
+        Draw.drawText(textX, 390f, tagFont, card.tagsText, 1000f, Compass.EAST, Color.BLACK)
 
         //Ability Text
         val abilityTextY = abilityBufferY + abilityBufferH - abilityBufferMargin
         Draw.drawText(
             textX,
             abilityTextY,
-            font3,
+            textFont,
             card.abilityText,
             abilityTextW,
             Compass.SOUTHEAST,
@@ -194,7 +210,7 @@ class Main() : ApplicationAdapter() {
         Draw.drawText(
             textX,
             quoteTextY,
-            font3,
+            quoteFont,
             card.quote,
             abilityTextW,
             Compass.NORTHEAST,
@@ -206,21 +222,67 @@ class Main() : ApplicationAdapter() {
         //25 = Kali
         //50 = Neromir
         //75 = Allmother
-        val card = Card(CARDS[69].asJsonObject)
+        val card = Card(CARDS[75].asJsonObject)
 
-        ScreenUtils.clear(1f, 1f, 1f, 1f)
         Draw.batch.begin()
         drawCard(card)
         //drawCardMinimal(card)
         Draw.batch.end()
+
+        //renderCards()
+
+    }
+
+    fun renderCards() {
+        CARDS.map { Card(it.asJsonObject) }.forEach {
+            Draw.batch.begin()
+            drawCardMinimal(it)
+            Draw.batch.end()
+            screenshot(it.name)
+            logger.info(it.toString())
+            logger.info("rendered ${it.name}")
+        }
+
+        val columns = 3
+
+        try {
+            val style = ".grid { " +
+                "display: grid; " +
+                "grid-template-columns: auto auto auto; " +
+                "} " +
+                ".img { padding: 20px; }"
+            val head = "<style>$style</style>"
+
+            val images = File("output/images")
+                .listFiles()!!
+                .joinToString("\n") { "<img width=${W / columns} height=${H / columns} src=\"../images/${it.name}\" alt=${it.name}/>" }
+            val body = "<div class=\"grid\">\n$images\n</div>"
+
+            val html = "<html>\n<head>$head</head>\n<body>$body</body>\n</html>"
+            IOUtils.overwriteFile("output/html/output.html", html)
+            logger.info("Successfully rendered html")
+        } catch (e: Exception) {
+            logger.error("Failed to render html", e)
+        }
+
+        Gdx.app.net.openURI("http://localhost:63342/CardGame/output/html/output.html")
+        Gdx.app.exit()
+    }
+
+    fun screenshot(cardName: String) {
+        val pixmap = Pixmap.createFromFrameBuffer(0, 0, W, H)
+        val name = "output/images/${cardName.normalize()}.png"
+        PixmapIO.writePNG(FileHandle(name), pixmap, Deflater.DEFAULT_COMPRESSION, true)
     }
 
     override fun dispose() {
         Draw.batch.dispose()
     }
 
-
     companion object {
+
+        private val logger = Logger.getLogger(Main::class.java)
+
         const val W: Int = 640
         const val H: Int = 960
 
@@ -242,12 +304,10 @@ class Main() : ApplicationAdapter() {
         }
 
         private fun initFont(path: String, size: Int): BitmapFont {
-            var path = path
             val params = FreeTypeFontParameter()
             params.size = size
             params.characters = CHARACTERS
-            path = "assets/fonts/$path"
-            val file = File(path)
+            val file = File("assets/fonts/$path")
             val generator = FreeTypeFontGenerator(FileHandle(file))
             val value = generator.generateFont(params)
             generator.dispose()
