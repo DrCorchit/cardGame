@@ -21,8 +21,8 @@ object Fonts {
         CHARACTERS = alpha + num + punctuation + quotes + symbols + bars + misc
     }
 
-    val numberFont = initFont("enchanted_land.otf", 96)
-    val nameFont = initFont("enchanted_land.otf", 64)
+    val numberFont = initFont("enchanted_land.ttf", 96)
+    val nameFont = initFont("enchanted_land.ttf", 64)
 
     val textFont = initFont("teko-light.ttf", 48)
     val quoteFont = initFont("teko-light.ttf", 36)
