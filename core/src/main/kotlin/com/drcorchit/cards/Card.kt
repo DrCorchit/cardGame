@@ -18,6 +18,9 @@ class Card(
     val abilities: List<String>,
     val quote: String
 ) {
+    //val cardType
+    //val rarity
+
     val motive = tags.firstNotNullOfOrNull {
         try {
             Motives.valueOf(it)
@@ -28,10 +31,13 @@ class Card(
 
     val tagsText = tags.joinToString(", ")
     val abilityText = abilities.joinToString("\n")
-    val image = LocalAssets.getInstance()
-        .getTexture(name.normalize() + ".png")
+    val image = (
+        LocalAssets.getInstance()
+            .getTexture(name.normalize() + ".png")
+            ?: LocalAssets.getInstance()
+                .getTexture(name.normalize() + ".jpg"))
         ?.asSprite()
-        ?.setOffset(Compass.CENTER)
+        ?.setOffset(Compass.NORTH)
 
     constructor(json: JsonObject) : this(
         json["name"].asString,
@@ -58,20 +64,23 @@ class Card(
             }
         }
 
+        val midWidth = W / 2f
+        val midHeight = H / 2f
+        val cardRatio = H * 1f / W
+
         val diamondOffsetX = 50f
         val diamondOffsetY = 100f
-
         val starSize = 70f
+
+        val nameX = 20f
+        val nameY = midHeight - 40f
 
         val abilityBufferX = 20f
         val abilityBufferY = 20f
         val abilityBufferW = W - 120f
-        val abilityBufferH = 350f
+        val abilityBufferH = midHeight - 130f
         val abilityBufferMargin = 10f
         val abilityTextW = abilityBufferW - 2 * abilityBufferMargin
-
-        val imageX = W / 2f
-        val imageY = H - 240f
     }
 
     fun draw(minimal: Boolean) {
@@ -80,8 +89,17 @@ class Card(
         val textColor = if (minimal) Color.BLACK else Color.WHITE
 
         if (!minimal && image != null) {
-            val scale = W.toFloat() / image.getFrames().width
-            image.draw(Draw.batch, imageX, imageY, scale, scale, 0f)
+            val imageRatio = image.getFrames().ratio
+            val scale =
+                if (imageRatio > cardRatio / 2f) {
+                    W.toFloat() / image.getFrames().width
+                    //H.toFloat() / image.getFrames().height
+                } else {
+                    //W.toFloat() / image.getFrames().width
+                    (H / 2f) / image.getFrames().height
+                }
+
+            image.draw(Draw.batch, midWidth, H.toFloat(), scale, scale, 0f)
         }
 
         if (minimal) {
@@ -96,10 +114,18 @@ class Card(
 
             //Draw.drawRectangle(0, 0, W, H, Color.BLACK)
         } else {
-            val slate = Textures.slate.asSprite()
-            slate.draw(Draw.batch, 0f, 0f)
-            val border = Textures.slateBorder.asSprite()
-            border.draw(Draw.batch, 0f, 0f)
+            val background = Textures.slate.asSprite().setOffset(Compass.NORTH)
+            val border = Textures.slateBorder.asSprite().setOffset(Compass.NORTH)
+
+            val bgRatio = background.getFrames().ratio
+            val scale = if (bgRatio > cardRatio) {
+                W.toFloat() / background.getFrames().width
+            } else {
+                H.toFloat() / background.getFrames().height
+            }
+
+            background.draw(Draw.batch, midWidth, midHeight, scale, scale, 0f)
+            border.draw(Draw.batch, midWidth, midHeight, scale, scale, 0f)
         }
 
         //Power/provision diamonds
@@ -126,7 +152,7 @@ class Card(
             )
         }
 
-        Draw.drawText(20f, 440f, Fonts.nameFont, name, W - 50f, Compass.EAST, textColor)
+        Draw.drawText(nameX, nameY, Fonts.nameFont, name, W - 50f, Compass.EAST, textColor)
         if (power == 0) {
             val star = Textures.star.asSprite().setOffset(Compass.CENTER)
             star.blend = if (minimal) Color.BLACK else Color.WHITE
@@ -154,7 +180,7 @@ class Card(
         )
 
         val textX = abilityBufferX + abilityBufferMargin
-        Draw.drawText(textX, 390f, Fonts.tagFont, tagsText, 1000f, Compass.EAST, textColor)
+        Draw.drawText(textX, nameY - 50f, Fonts.tagFont, tagsText, 1000f, Compass.EAST, textColor)
 
         //Ability Text
         val abilityTextY = abilityBufferY + abilityBufferH - abilityBufferMargin

@@ -13,36 +13,33 @@ import com.drcorchit.justice.utils.json.JsonUtils.parseFromFile
 import com.drcorchit.justice.utils.logging.Logger
 import java.io.File
 import java.util.zip.Deflater
-import kotlin.random.Random
 
 /**
  * [com.badlogic.gdx.ApplicationListener] implementation shared by all platforms.
  */
 class Main : ApplicationAdapter() {
 
-    val cards by lazy { parseFromFile("assets/json/cards.json")!!.first.asJsonArray!! }
-    lateinit var card: Card
+    val cards by lazy { parseFromFile("assets/json/cards.json")!!
+        .first.asJsonArray!!
+        .map { Card(it.asJsonObject) } }
 
-    fun randomCard(): Card {
-        val index = Random.nextInt(cards.size())
-        return Card(cards[index].asJsonObject)
-    }
+    //25 = Kali
+    //50 = Neromir
+    //75 = Allmother
+    var index = 0
 
     override fun create() {
         //Load the batch
         Draw.batch
         LocalAssets.getInstance().load()
-        card = Card(cards[76].asJsonObject)
     }
 
     override fun render() {
-        //25 = Kali
-        //50 = Neromir
-        //75 = Allmother
-
-        if (Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
-            card = randomCard()
+        if (Gdx.input.isButtonJustPressed(Input.Buttons.LEFT)) {
+            index = (index + 1) % cards.size
         }
+
+        val card = cards[index]
 
         Draw.batch.begin()
         card.draw(false)
@@ -58,9 +55,9 @@ class Main : ApplicationAdapter() {
     }
 
     fun renderCards() {
-        cards.map { Card(it.asJsonObject) }.forEach {
+        cards.forEach {
             Draw.batch.begin()
-            it.draw(true)
+            it.draw(false)
             Draw.batch.end()
             screenshot(it.name)
         }
@@ -105,7 +102,7 @@ class Main : ApplicationAdapter() {
 
         private val logger = Logger.getLogger(Main::class.java)
 
-        const val W: Int = 640
-        const val H: Int = 960
+        const val W: Int = 750
+        const val H: Int = 1050
     }
 }
