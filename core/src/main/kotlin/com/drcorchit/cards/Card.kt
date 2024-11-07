@@ -12,8 +12,6 @@ import com.google.gson.JsonObject
 
 class Card(
     val name: String,
-    val type: String,
-    val rarity: String,
     val power: Int,
     val cost: Int,
     val tags: List<String>,
@@ -37,8 +35,6 @@ class Card(
 
     constructor(json: JsonObject) : this(
         json["name"].asString,
-        json["type"].asString,
-        json["rarity"].asString,
         json["power"]?.asInt ?: 0,
         json["cost"].asInt,
         json.getAsJsonArray("tags").map { it.asString },

@@ -6,13 +6,11 @@ import com.badlogic.gdx.Input
 import com.badlogic.gdx.files.FileHandle
 import com.badlogic.gdx.graphics.Pixmap
 import com.badlogic.gdx.graphics.PixmapIO
-import com.badlogic.gdx.scenes.scene2d.ui.Button
 import com.drcorchit.cards.graphics.Draw
 import com.drcorchit.justice.utils.IOUtils
 import com.drcorchit.justice.utils.StringUtils.normalize
 import com.drcorchit.justice.utils.json.JsonUtils.parseFromFile
 import com.drcorchit.justice.utils.logging.Logger
-import com.google.gson.JsonArray
 import java.io.File
 import java.util.zip.Deflater
 import kotlin.random.Random
@@ -22,18 +20,19 @@ import kotlin.random.Random
  */
 class Main : ApplicationAdapter() {
 
-    var card: Card = Card(CARDS[75].asJsonObject)
+    val cards by lazy { parseFromFile("assets/json/cards.json")!!.first.asJsonArray!! }
+    lateinit var card: Card
 
     fun randomCard(): Card {
-        val index = Random.nextInt(CARDS.size())
-        return Card(CARDS[index].asJsonObject)
+        val index = Random.nextInt(cards.size())
+        return Card(cards[index].asJsonObject)
     }
-
 
     override fun create() {
         //Load the batch
         Draw.batch
         LocalAssets.getInstance().load()
+        card = Card(cards[76].asJsonObject)
     }
 
     override fun render() {
@@ -59,7 +58,7 @@ class Main : ApplicationAdapter() {
     }
 
     fun renderCards() {
-        CARDS.map { Card(it.asJsonObject) }.forEach {
+        cards.map { Card(it.asJsonObject) }.forEach {
             Draw.batch.begin()
             it.draw(true)
             Draw.batch.end()
@@ -108,7 +107,5 @@ class Main : ApplicationAdapter() {
 
         const val W: Int = 640
         const val H: Int = 960
-
-        private val CARDS: JsonArray = parseFromFile("assets/json/cards.json")!!.first.asJsonArray
     }
 }
