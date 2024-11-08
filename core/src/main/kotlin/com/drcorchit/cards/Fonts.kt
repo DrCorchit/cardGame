@@ -24,9 +24,10 @@ object Fonts {
     val numberFont = initFont("enchanted_land.ttf", 96)
     val nameFont = initFont("enchanted_land.ttf", 64)
 
-    val textFont = initFont("teko-light.ttf", 48)
-    val quoteFont = initFont("teko-light.ttf", 36)
-    val tagFont = initFont("teko-light.ttf", 36)
+    val defaultFont = "roboto_condensed"
+    val textFont = initFont("$defaultFont.ttf", 32)
+    val quoteFont = initFont("${defaultFont}_italic.ttf", 20)
+    val tagFont = initFont("$defaultFont.ttf", 20)
 
     private fun initFont(path: String, size: Int): BitmapFont {
         val params = FreeTypeFontParameter()

@@ -45,7 +45,7 @@ class Main : ApplicationAdapter() {
         card.draw(false)
         Draw.batch.end()
 
-        //generatePrintableCards()
+        generatePrintableCards()
     }
 
     private fun generatePrintableCards() {
@@ -57,7 +57,7 @@ class Main : ApplicationAdapter() {
     fun renderCards() {
         cards.forEach {
             Draw.batch.begin()
-            it.draw(false)
+            it.draw(true)
             Draw.batch.end()
             screenshot(it.name)
         }
@@ -70,18 +70,24 @@ class Main : ApplicationAdapter() {
     }
 
     fun assembleHtml() {
+        val printedPageWidth = 720
         val columns = 3
+        val space = 10
+        val totalColumnsWidth = (columns+1) * space
+        val cardsTotalWidth = printedPageWidth - totalColumnsWidth
+        val cardWidth = cardsTotalWidth/columns
+        val cardHeight = cardWidth * Card.cardRatio
+
         try {
             val style = ".grid { " +
                 "display: grid; " +
                 "grid-template-columns:${" auto".repeat(columns)}; " +
-                "} " +
-                ".img { padding: 20px; }"
+                "gap: ${space}px; } "
             val head = "<style>$style</style>"
 
             val images = File("output/images")
                 .listFiles()!!
-                .joinToString("\n") { "<img width=${W / columns} height=${H / columns} src=\"../images/${it.name}\" alt=${it.name}/>" }
+                .joinToString("\n") { "<img width=$cardWidth height=$cardHeight src=\"../images/${it.name}\" alt=${it.name}/>" }
             val body = "<div class=\"grid\">\n$images\n</div>"
 
             val html = "<html>\n<head>$head</head>\n<body>$body</body>\n</html>"
