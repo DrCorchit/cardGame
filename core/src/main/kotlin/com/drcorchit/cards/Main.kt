@@ -19,9 +19,11 @@ import java.util.zip.Deflater
  */
 class Main : ApplicationAdapter() {
 
-    val cards by lazy { parseFromFile("assets/json/cards.json")!!
-        .first.asJsonArray!!
-        .map { Card(it.asJsonObject) } }
+    val cards by lazy {
+        parseFromFile("assets/json/cards.json")!!
+            .first.asJsonArray!!
+            .map { Card(it.asJsonObject) }
+    }
 
     //25 = Kali
     //50 = Neromir
@@ -45,7 +47,7 @@ class Main : ApplicationAdapter() {
         card.draw(false)
         Draw.batch.end()
 
-        generatePrintableCards()
+        //generatePrintableCards()
     }
 
     private fun generatePrintableCards() {
@@ -73,9 +75,9 @@ class Main : ApplicationAdapter() {
         val printedPageWidth = 720
         val columns = 3
         val space = 10
-        val totalColumnsWidth = (columns+1) * space
+        val totalColumnsWidth = (columns + 1) * space
         val cardsTotalWidth = printedPageWidth - totalColumnsWidth
-        val cardWidth = cardsTotalWidth/columns
+        val cardWidth = cardsTotalWidth / columns
         val cardHeight = cardWidth * Card.cardRatio
 
         try {
@@ -83,13 +85,12 @@ class Main : ApplicationAdapter() {
                 "display: grid; " +
                 "grid-template-columns:${" auto".repeat(columns)}; " +
                 "gap: ${space}px; } "
-            val head = "<style>$style</style>"
-
             val images = File("output/images")
                 .listFiles()!!
                 .joinToString("\n") { "<img width=$cardWidth height=$cardHeight src=\"../images/${it.name}\" alt=${it.name}/>" }
-            val body = "<div class=\"grid\">\n$images\n</div>"
 
+            val head = "<style>$style</style>"
+            val body = "<div class=\"grid\">\n$images\n</div>"
             val html = "<html>\n<head>$head</head>\n<body>$body</body>\n</html>"
             IOUtils.overwriteFile("output/html/output.html", html)
             logger.info("Successfully rendered html")
@@ -105,7 +106,6 @@ class Main : ApplicationAdapter() {
     }
 
     companion object {
-
         private val logger = Logger.getLogger(Main::class.java)
 
         const val W: Int = 750

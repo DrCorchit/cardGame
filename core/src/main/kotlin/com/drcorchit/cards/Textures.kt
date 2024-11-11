@@ -20,6 +20,8 @@ object Textures {
     val slateBorder = initTexture("border.png")
     val star = initTexture("star.png")
 
+    val mana = initTexture("mana.png")
+
     //Arrow
     val arrowLeft = initTexture("arrow_left.png")
     val arrowRight = initTexture("arrow_right.png")

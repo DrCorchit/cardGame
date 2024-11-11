@@ -2,12 +2,14 @@ package com.drcorchit.cards
 
 import com.badlogic.gdx.files.FileHandle
 import com.badlogic.gdx.graphics.g2d.BitmapFont
+import com.badlogic.gdx.graphics.g2d.TextureRegion
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFontParameter
 import java.io.File
 
 object Fonts {
     private val CHARACTERS: String
+    val mana = "ABC \u0010\u0011\u0012\u0013\u0014\u0015 DEF"
 
     init {
         val alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
@@ -28,6 +30,39 @@ object Fonts {
     val textFont = initFont("$defaultFont.ttf", 32)
     val quoteFont = initFont("${defaultFont}_italic.ttf", 20)
     val tagFont = initFont("$defaultFont.ttf", 20)
+
+    init {
+        val font = textFont
+        val region = TextureRegion(Textures.mana)
+        font.regions.add(region)
+
+        fun addGlyph(char: Char, i: Int, j: Int) {
+            val glyph = BitmapFont.Glyph()
+            glyph.id = char.code
+            glyph.page = 1
+            glyph.u = i / 18f
+            glyph.v = (j + 4) / 12f
+            glyph.u2 = (i + 4) / 18f
+            glyph.v2 = j / 12f
+            glyph.srcX = 0
+            glyph.srcY = 0
+            glyph.yoffset = -30
+            glyph.width = 22
+            glyph.height = 22
+            glyph.xadvance = 24
+            //glyph.kerning =
+
+            font.data.setGlyph(char.code, glyph)
+        }
+
+        addGlyph('\u0010', 1, 1)
+        addGlyph('\u0011', 7, 1)
+        addGlyph('\u0012', 13, 1)
+        addGlyph('\u0013', 1, 7)
+        addGlyph('\u0014', 7, 7)
+        addGlyph('\u0015', 13, 7)
+
+    }
 
     private fun initFont(path: String, size: Int): BitmapFont {
         val params = FreeTypeFontParameter()
