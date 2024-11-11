@@ -81,7 +81,7 @@
       "Action",
       "Spell"
     ],
-    "ability": ["Conjure 1 Fire Mana then Assault 2 OR Expend 1 Fire Mana then Assault 3."],
+    "ability": ["Conjure 1 fire mana then Assault 2 OR Expend 1 fire mana then Assault 3."],
     "quote": "I didn't ask how big the room was. I said I cast fireball."
   },
   {
@@ -375,7 +375,7 @@
       "Equipment",
       "Liquor"
     ],
-    "ability": ["Equip: Rally 4 and conjure 2 fire Mana.", "Finale: Rout 2."],
+    "ability": ["Equip: Rally 4 and conjure 2 fire mana.", "Finale: Rout 2."],
     "quote": "The cheapest booze that money can buy."
   },
   {
@@ -408,7 +408,7 @@
       "Greed",
       "Dragon"
     ],
-    "ability": ["Deploy: Expend 2 Fire Mana, then Assault 2."],
+    "ability": ["Deploy: Expend 2 fire mana, then Assault 2."],
     "quote": "They're quite harmless in small numbers. Specifically when the number is zero."
   },
   {
@@ -432,7 +432,7 @@
       "Vice",
       "Dwarf"
     ],
-    "ability": "Imbibe: Expend 1 Fire Mana, then Assault 2.",
+    "ability": "Imbibe: Expend 1 fire mana, then Assault 2.",
     "quote": "If its a fight yer lookin' for..."
   },
   {
@@ -467,7 +467,7 @@
       "Equipment",
       "Liquor"
     ],
-    "ability": "Equip: Rally 3 and conjure 1 fire Mana. Finale: Rally 3.",
+    "ability": "Equip: Rally 3 and conjure 1 fire mana. Finale: Rally 3.",
     "quote": "The good stuff."
   },
   {
@@ -524,7 +524,7 @@
       "Dwarf",
       "Rare"
     ],
-    "ability": "Deploy: Expend 2 Fire mana, then tutor a dragon egg, OR Expend 3 Fire mana, then resurrect a dragon egg.",
+    "ability": "Deploy: Expend 2 fire mana, then tutor a dragon egg, OR Expend 3 fire mana, then resurrect a dragon egg.",
     "quote": "You're safe now, little feller."
   },
   {
@@ -575,7 +575,7 @@
       "Legendary"
     ],
     "ability": [
-      "Deploy, Expend 3 Fire Mana: gain Haste.",
+      "Deploy, Expend 3 fire mana: gain Haste.",
       "Activate: Tutor a dragon, then banish self.", "Finale: Rally 8."
     ],
     "quote": "Oooh, shiny!"
@@ -589,7 +589,7 @@
       "Dragon",
       "Legendary"
     ],
-    "ability": "Activate, Expend Fire Mana X: Tutor a card of 2X provisions.",
+    "ability": "Activate, Expend X fire mana: Tutor a card of 2X provisions.",
     "quote": "The reason I act like I'm better than you is because I am."
   },
   {
@@ -678,7 +678,7 @@
       "Peace",
       "Fairy"
     ],
-    "ability": ["Deploy: Conjure 1 earth, 1 air, and 1 water mana.", "Activate: Repeat the Deploy ability."],
+    "ability": ["Deploy: Conjure earth mana water mana air mana.", "Activate: Repeat the Deploy ability."],
     "quote": "So tiny, yet so beautiful."
   },
   {
@@ -689,7 +689,7 @@
       "Peace",
       "Dryad"
     ],
-    "ability": ["Haste.", "Activate, Expend 1 air mana: Assault 1.", "Turnwise: Reactivate."],
+    "ability": ["Haste.", "Activate, Expend air mana: Assault 1.", "Turnwise: Reactivate."],
     "quote": "They always fire a warning shot."
   },
   {
@@ -702,8 +702,8 @@
     ],
     "ability": [
       "Haste.",
-      "Activate, Expend 1 Earth Mana: Deactivate an enemy unit.",
-      "Inactive, Turnwise: Conjure 1 earth, water, or air mana."
+      "Activate, Expend earth mana: Deactivate an enemy unit.",
+      "Inactive, Turnwise: Conjure 1 earth mana, water mana, or air mana."
     ],
     "quote": "Come dance with us!"
   },
@@ -715,7 +715,7 @@
       "Action",
       "Nature"
     ],
-    "ability": "Destroy an allied unit of X power, then rally X and conjure X earth, air, or water mana.",
+    "ability": "Destroy an allied unit of X power, then rally X and conjure X earth mana, air mana, or water mana.",
     "quote": "Flames clear the way for new growth."
   },
   {
@@ -726,7 +726,12 @@
       "Peace",
       "Beast"
     ],
-    "ability": "Haste. Activate, Expend 3 water mana: Tutor Bullfrog Army, then destroy self. Turnwise: decrease the activation mana cost by 1. Passive, water mana 1: Invisible.",
+    "ability": [
+      "Haste.",
+      "Activate, Expend 3 water mana: Tutor Bullfrog Army, then destroy self.",
+      "Turnwise: decrease the activation mana cost by 1.",
+      "Passive, 1 water mana: Invisible."
+    ],
     "quote": "They grow up so fast."
   },
   {
@@ -737,7 +742,7 @@
       "Peace",
       "Beast"
     ],
-    "ability": "Deploy, Expend 1 earth and 1 water mana: Assault 2.",
+    "ability": "Deploy, Expend earth mana and water mana: Assault 2.",
     "quote": "Survivors describe their attacks as a ribbeting experience."
   },
   {
@@ -759,7 +764,7 @@
       "Peace",
       "Dryad"
     ],
-    "ability": "Deploy: Conjure 2 water mana. Turnwise: Conjure 1 Water Mana.",
+    "ability": "Deploy: Conjure 2 water mana. Turnwise: Conjure 1 water mana.",
     "quote": "Beautiful. Serene. Deadly."
   },
   {
@@ -795,7 +800,7 @@
       "Peace",
       "Dryad"
     ],
-    "ability": "Deploy, Expend 1 earth, 1 water, and 1 air mana: Assault 3.",
+    "ability": "Deploy, Expend earth mana water mana air mana: Assault 3.",
     "quote": "Every life matters. So does every death."
   },
   {
@@ -806,7 +811,7 @@
       "Peace",
       "Treant"
     ],
-    "ability": "Turnwise: Conjure 1 earth mana.",
+    "ability": "Turnwise: Conjure earth mana.",
     "quote": "I think, therefore... hmmm..."
   },
   {
@@ -818,7 +823,7 @@
       "Nature",
       "Rare"
     ],
-    "ability": ["Expend X Water Mana: Assassinate X.", "Finally, Conjure 6 Water Mana."],
+    "ability": ["Expend X water mana: Assassinate X.", "Finally, Conjure 6 water mana."],
     "quote": "Six feet high and rising"
   },
   {
@@ -831,7 +836,7 @@
       "Rare"
     ],
     "ability": [
-      "Turnwise, Expend 1 Water and 1 Earth Mana: Rally 3.",
+      "Turnwise, Expend water mana earth mana: Rally 3.",
       "Passive: Adjacent units are invisible."
     ],
     "quote": "Nothing grows faster, or thicker."
@@ -845,7 +850,7 @@
       "Nature",
       "Rare"
     ],
-    "ability": "Conjure 1 water and 1 air mana, then tutor a nature card.",
+    "ability": "Conjure water mana air mana, then tutor a nature card.",
     "quote": "She's a-gonna blow!"
   },
   {
@@ -881,7 +886,7 @@
       "Dryad",
       "Legendary"
     ],
-    "ability": ["Passive, Water Mana 4: Tutor self.", "Finale, Water Mana X: Rally X."],
+    "ability": ["Passive, water mana 4: Tutor self.", "Finale, X water mana: Rally X."],
     "quote": "Soggy bints handin' out swords is no basis for a system of government."
   },
   {
@@ -896,7 +901,7 @@
     ],
     "ability": [
       "Deploy: Summon a Pixie on either side of this unit, from graveyard or deck as necessary.",
-      "Activate: Conjure 2 earth, air, or water mana."
+      "Activate: Conjure 2 earth mana, 2 air mana, or 2 water mana."
     ],
     "quote": "Hand in hand, with fairy grace, we will sing and bless this place."
   },
@@ -912,7 +917,7 @@
     "ability": [
       "Haste.",
       "Activate: Tutor or Resurrect a Lightning Strike.",
-      "Turnwise: Conjure 1 Air mana."
+      "Turnwise: Conjure 1 air mana."
     ],
     "quote": "Ill met by moonlight, proud Titania."
   },
@@ -925,12 +930,12 @@
       "Treant",
       "Legendary"
     ],
-    "ability": ["Deploy, Expend X Earth Mana: Assault X."],
+    "ability": ["Deploy, expend X earth mana: Assault X."],
     "quote": "I-is that tree... moving?"
   },
   {
     "name": "Allmother",
-    "power": 6,
+    "power": 4,
     "cost": 11,
     "tags": [
       "Peace",
@@ -938,7 +943,7 @@
       "Legendary"
     ],
     "ability": [
-      "Deploy: Expend 1 earth, 1 water, and 1 air mana, then tutor a bronze Peace unit, OR Expend 3 earth mana and resurrect a bronze Peace unit."
+      "Deploy: Expend earth mana water mana air mana, then tutor a Peace unit, OR Expend 3 earth mana and resurrect a Peace unit."
     ],
     "quote": "No wound too deep, no bone too broken, no heart beyond repair."
   }

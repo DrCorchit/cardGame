@@ -30,7 +30,15 @@ class Card(
     } ?: Motives.Neutral
 
     val tagsText = tags.joinToString(", ")
-    val abilityText = abilities.joinToString("\n")
+    val abilityText = abilities.joinToString("\n") {
+        it.replace("fire mana", "\u0010")
+            .replace("water mana", "\u0011")
+            .replace("earth mana", "\u0012")
+            .replace("air mana", "\u0013")
+            .replace("light mana", "\u0014")
+            .replace("dark mana", "\u0015")
+
+    }
     val image = (
         LocalAssets.getInstance()
             .getTexture(name.normalize() + ".png")

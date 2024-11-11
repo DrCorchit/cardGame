@@ -49,7 +49,7 @@ object Fonts {
             glyph.yoffset = -30
             glyph.width = 22
             glyph.height = 22
-            glyph.xadvance = 24
+            glyph.xadvance = 18
             //glyph.kerning =
 
             font.data.setGlyph(char.code, glyph)
