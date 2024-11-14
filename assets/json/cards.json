@@ -60,7 +60,7 @@
     "tags": [
       "Human"
     ],
-    "ability": ["Deploy: Rally 2. Finale: Rally 2."],
+    "ability": ["Deploy: Rally 2.", "Finale: Rally 2."],
     "quote": "Anything you require, sir."
   },
   {
@@ -215,7 +215,8 @@
     ],
     "ability": [
       "Disloyal.",
-      "Deploy, Chaos X: Look at all cards from your opponent's hand with a provision cost of X or less and play one. Finally, your opponent draws a card."
+      "Deploy, Chaos X: Look at all cards from your opponent's hand with a provision cost of X or less and play one.",
+      "Finally, your opponent draws a card."
     ],
     "quote": "With me, surprises are rarely unexpected."
   },
@@ -232,7 +233,7 @@
       "Deploy: Tutor a Chaos Slave or Chaos Dutchess.",
       "Passive: Adjacent Chaos Slaves and Dutchesses do not destroy themselves."
     ],
-    "quote": "If home is where the heart is, then we're homeless."
+    "quote": "If home is where the heart is, then they're homeless."
   },
   {
     "name": "Nameless God of Sorrow",
@@ -286,6 +287,23 @@
     "quote": "Fortunately, I've already accounted for your incompetence."
   },
   {
+    "name": "Pandemonium",
+    "cost": 7,
+    "tags": [
+      "Chaos",
+      "Action",
+      "Spell",
+      "Legendary"
+    ],
+    "ability": [
+      "Choose three cards from your deck, then play one at random.",
+      "Chaos 5: Choose two cards from your deck, then play one at random.",
+      "Chaos 6: Tutor a card from your deck.",
+      "Finally, return any unplayed cards to your deck."
+    ],
+    "quote": "Pandemonium did not reign; it poured."
+  },
+  {
     "name": "Yalmamir, Prince of Chaos",
     "power": 3,
     "cost": 8,
@@ -313,21 +331,6 @@
       "Passive: Whenever a mana die is rerolled during your turn, Rally."
     ],
     "quote": "I love it when they struggle."
-  },
-  {
-    "name": "Pandemonium",
-    "cost": 9,
-    "tags": [
-      "Chaos",
-      "Action",
-      "Spell",
-      "Legendary"
-    ],
-    "ability": [
-      "Choose three cards from your deck, then play one at random.",
-      "Chaos 6: Play two at random instead.", "Finally, return the cards not played to your deck."
-    ],
-    "quote": "Pandemonium did not reign; it poured."
   },
   {
     "name": "Grand Inquisitor Molgrippe",
@@ -397,7 +400,7 @@
       "Greed",
       "Dwarf"
     ],
-    "ability": ["Activate: Conjure 1 fire mana.", "Turnwise: Reactivate.", "Imbibe: Reactivate."],
+    "ability": ["Turnwise: Conjure fire mana.", "Imbibe: Conjure 2 fire mana."],
     "quote": "Work them bellows, boy, till they're hotter than hot!"
   },
   {
@@ -433,7 +436,7 @@
       "Dwarf"
     ],
     "ability": "Imbibe: Expend 1 fire mana, then Assault 2.",
-    "quote": "If its a fight yer lookin' for..."
+    "quote": "If its a fight yer lookin' fer, ye just found it."
   },
   {
     "name": "Dragon Egg",
@@ -467,7 +470,7 @@
       "Equipment",
       "Liquor"
     ],
-    "ability": "Equip: Rally 3 and conjure 1 fire mana. Finale: Rally 3.",
+    "ability": ["Equip: Rally 3 and conjure 1 fire mana.", "Finale: Rally 3."],
     "quote": "The good stuff."
   },
   {
@@ -500,7 +503,7 @@
       "Weapon",
       "Rare"
     ],
-    "ability": "Equip: Assault 4. If equipped to a target that already has a liquor card equipped, increase the Assault value to 5. If equipped to Stumpy McGee, Assassinate instead.",
+    "ability": "Equip: Assault 4. If equipped to a target that has a liquor card equipped, Assault 5 instead. If equipped to Stumpy McGee, Assassinate 5 instead.",
     "quote": "The one, the only."
   },
   {
@@ -517,7 +520,7 @@
   },
   {
     "name": "Dragonseeker",
-    "power": 3,
+    "power": 4,
     "cost": 6,
     "tags": [
       "Greed",
@@ -537,7 +540,7 @@
       "Dragon",
       "Rare"
     ],
-    "ability": ["At the start of the game, move to the graveyard.", "Finale: Rally 8."],
+    "ability": ["This card starts in your graveyard.", "Finale: Rally 8."],
     "quote": "It's a long way back to the nest."
   },
   {
@@ -576,7 +579,8 @@
     ],
     "ability": [
       "Deploy, Expend 3 fire mana: gain Haste.",
-      "Activate: Tutor a dragon, then banish self.", "Finale: Rally 8."
+      "Activate: Tutor a dragon, then banish self.",
+      "Finale: Rally 8."
     ],
     "quote": "Oooh, shiny!"
   },
@@ -602,7 +606,7 @@
       "Legendary"
     ],
     "ability": [
-      "Whenever an allied Dragon Egg is destroyed, summon self from deck.",
+      "Passive: Summon self from deck when an allied dragon egg is destroyed.",
       "Activate: Protect a dragon egg."
     ],
     "quote": "Ohhh now you've made 'er mad!"

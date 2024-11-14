@@ -27,8 +27,8 @@ class Main : ApplicationAdapter() {
 
     //25 = Kali
     //50 = Neromir
-    //75 = Allmother
-    var index = 0
+    //76 = Allmother
+    var index = 76
 
     override fun create() {
         //Load the batch
@@ -44,7 +44,7 @@ class Main : ApplicationAdapter() {
         val card = cards[index]
 
         Draw.batch.begin()
-        card.draw(false)
+        card.draw()
         Draw.batch.end()
 
         //generatePrintableCards()
@@ -59,7 +59,7 @@ class Main : ApplicationAdapter() {
     fun renderCards() {
         cards.forEach {
             Draw.batch.begin()
-            it.draw(true)
+            it.draw()
             Draw.batch.end()
             screenshot(it.name)
         }

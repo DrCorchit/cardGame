@@ -1,8 +1,10 @@
 package com.drcorchit.cards
 
 import com.badlogic.gdx.graphics.Color
+import com.drcorchit.cards.Textures.asSprite
+import com.drcorchit.justice.utils.math.Compass
 
-enum class Motives(val color: Color) {
+enum class Motive(val color: Color) {
     Neutral(Color.valueOf("504020")),
 
     //Nature and angelic themes.
@@ -27,5 +29,8 @@ enum class Motives(val color: Color) {
     Vice(Color.valueOf("68135e")),
 
     //Dark, and Chaos focused.
-    Chaos(Color.valueOf("202020"))
+    Chaos(Color.valueOf("202020"));
+
+    val texture = Textures.initTexture("${name.lowercase()}.png")
+    val image = texture.asSprite().setOffset(Compass.CENTER)
 }

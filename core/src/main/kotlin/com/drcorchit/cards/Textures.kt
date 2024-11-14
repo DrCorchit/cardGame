@@ -18,9 +18,12 @@ object Textures {
     val diamondBorder = initTexture("diamond_border.png")
     val slate = initTexture("slate2.png")
     val slateBorder = initTexture("border.png")
+    val tray = initTexture("tray.png")
     val star = initTexture("star.png")
-
+    val costBack = initTexture("cost_back.png")
+    val corners = initTexture("corners.png")
     val mana = initTexture("mana.png")
+    val brushStroke = initTexture("brush_stroke.png")
 
     //Arrow
     val arrowLeft = initTexture("arrow_left.png")
@@ -40,10 +43,10 @@ object Textures {
         return NinePatch(TextureRegion(this), left, right, top, bottom)
     }
 
-    private fun initTexture(name: String): Texture {
+    fun initTexture(name: String): Texture {
         val output = LocalAssets.getInstance().getTexture(name)
         if (output == null) {
-            val error = IOException("Missing Texture")
+            val error = IOException("Missing Texture: $name")
             log.error("Texture $name failed to load", error)
             throw error
         }

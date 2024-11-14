@@ -24,6 +24,7 @@ object Fonts {
     }
 
     val numberFont = initFont("enchanted_land.ttf", 96)
+    val numberFontSmall = initFont("enchanted_land.ttf", 56)
     val nameFont = initFont("enchanted_land.ttf", 64)
 
     val defaultFont = "roboto_condensed"
