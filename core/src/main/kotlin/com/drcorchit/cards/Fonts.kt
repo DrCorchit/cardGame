@@ -52,10 +52,10 @@ object Fonts {
             glyph.v2 = j / 12f
             glyph.srcX = 0
             glyph.srcY = 0
-            glyph.yoffset = -30
-            glyph.width = 22
-            glyph.height = 22
-            glyph.xadvance = 18
+            glyph.yoffset = -33
+            glyph.width = 24
+            glyph.height = 24
+            glyph.xadvance = 21
 
             font.data.setGlyph(char.code, glyph)
         }
