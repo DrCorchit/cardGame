@@ -5,7 +5,8 @@ import com.drcorchit.cards.Textures.asSprite
 import com.drcorchit.justice.utils.math.Compass
 
 enum class Motive(val color: Color) {
-    Neutral(Color.valueOf("504020")),
+    //Neutral(Color.valueOf("504020")),
+    Neutral(Color.valueOf("603000")),
 
     //Nature and angelic themes.
     //Earth, Water, Air, and Light mana focused
@@ -23,14 +24,17 @@ enum class Motive(val color: Color) {
     Wisdom(Color.valueOf("243d93")),
 
     //Fire focused
-    Greed(Color.valueOf("a84d2a")),
+    //Greed(Color.valueOf("a84d2a")),
+    Greed(Color.valueOf("803000")),
 
     //Water focused
     Vice(Color.valueOf("68135e")),
 
     //Dark, and Chaos focused.
-    Chaos(Color.valueOf("202020"));
+    Chaos(Color.valueOf("303030"));
 
     val texture = Textures.initTexture("${name.lowercase()}.png")
     val image = texture.asSprite().setOffset(Compass.CENTER)
+
+    val secondaryColor = Color(color.r + .12f, color.g + .12f, color.b + .12f, .3f)
 }

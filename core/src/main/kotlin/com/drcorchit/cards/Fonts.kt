@@ -24,14 +24,18 @@ object Fonts {
         CHARACTERS = alpha + num + punctuation + quotes + symbols + bars + misc
     }
 
-    val numberFont = initFont("enchanted_land.ttf", 96)
-    val numberFontSmall = initFont("enchanted_land.ttf", 56)
-    val nameFont = initFont("enchanted_land.ttf", 64)
+    val smallFontSizes = listOf(96, 56, 64, 32, 24)
+    val medFontSizes = listOf(96, 56, 72, 36, 28)
+    val fontSizes = medFontSizes
+
+    val numberFont = initFont("enchanted_land.ttf", fontSizes[0])
+    val numberFontSmall = initFont("enchanted_land.ttf", fontSizes[1])
+    val nameFont = initFont("enchanted_land.ttf", fontSizes[2])
 
     val defaultFont = "roboto_condensed"
-    val textFont = initFont("$defaultFont.ttf", 32)
-    val quoteFont = initFont("${defaultFont}_italic.ttf", 20)
-    val tagFont = initFont("$defaultFont.ttf", 20)
+    val textFont = initFont("$defaultFont.ttf", fontSizes[3])
+    val quoteFont = initFont("${defaultFont}_italic.ttf", fontSizes[4])
+    val tagFont = initFont("$defaultFont.ttf", fontSizes[4])
 
     init {
         val font = textFont
@@ -52,11 +56,11 @@ object Fonts {
             glyph.width = 22
             glyph.height = 22
             glyph.xadvance = 18
-            //glyph.kerning =
 
             font.data.setGlyph(char.code, glyph)
         }
 
+        //Add mana glyphs
         addGlyph('\u0010', 1, 1)
         addGlyph('\u0011', 7, 1)
         addGlyph('\u0012', 13, 1)

@@ -9,6 +9,7 @@ import com.drcorchit.cards.graphics.Draw
 import com.drcorchit.justice.utils.StringUtils.normalize
 import com.drcorchit.justice.utils.math.Compass
 import com.google.gson.JsonObject
+import kotlin.math.min
 
 class Card(
     val name: String,
@@ -112,7 +113,8 @@ class Card(
 
         val nameY = midHeight - 40f
         val strokeH = 120f
-        val strokeW = 200f
+        val strokeMargin = 200f
+        val strokeMaxW = W - 50f
         val strokeY = nameY - 25f
 
         val abilityBufferX = 20f
@@ -121,6 +123,10 @@ class Card(
         val abilityBufferH = midHeight - 130f
         val abilityBufferMargin = 10f
         val abilityTextW = abilityBufferW - 2 * abilityBufferMargin
+
+        val quoteTextX = midWidth
+        val quoteTextY = 50f
+        val quoteTextW = W - 200f
     }
 
     fun draw() {
@@ -174,8 +180,10 @@ class Card(
 
         //Card Name
         val dims = Draw.calculateDimensions(Fonts.nameFont, name, W - 50f)
-        stroke.draw(Draw.batch, midWidth, strokeY, strokeW + dims.first, strokeH)
-        Draw.drawText(midWidth, nameY, Fonts.nameFont, name, W - 50f, Compass.CENTER, textColor)
+        stroke.blend = motive.secondaryColor
+        val strokeW = min(dims.first + strokeMargin, strokeMaxW)
+        stroke.draw(Draw.batch, midWidth, strokeY, strokeW, strokeH)
+        Draw.drawText(midWidth, nameY, Fonts.nameFont, name, W - 50f, Compass.CENTER, motive.color)
 
         //tags
         val textX = abilityBufferX + abilityBufferMargin
@@ -187,7 +195,7 @@ class Card(
             tagsText,
             1000f,
             Compass.CENTER,
-            textColor
+            motive.color
         )
 
         //Ability Text
@@ -204,14 +212,13 @@ class Card(
         )
 
         //Quote text
-        val quoteTextY = abilityBufferY + abilityBufferMargin
         Draw.drawText(
-            midWidth,
+            quoteTextX,
             quoteTextY,
             Fonts.quoteFont,
             quote,
-            abilityTextW,
-            Compass.NORTH,
+            quoteTextW,
+            Compass.CENTER,
             textColor
         )
     }
