@@ -5,6 +5,7 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont
 import com.badlogic.gdx.graphics.g2d.TextureRegion
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFontParameter
+import com.drcorchit.cards.graphics.Draw
 import java.io.File
 
 object Fonts {
@@ -63,6 +64,8 @@ object Fonts {
         addGlyph('\u0014', 7, 7)
         addGlyph('\u0015', 13, 7)
 
+        val precoloredFontTexture = Draw.precolorTexture(font.regions[0].texture, Card.textColor)
+        font.regions[0] = TextureRegion(precoloredFontTexture)
     }
 
     private fun initFont(path: String, size: Int): BitmapFont {

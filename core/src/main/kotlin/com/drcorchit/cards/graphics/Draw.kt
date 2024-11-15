@@ -38,7 +38,7 @@ object Draw {
         return data.consumePixmap()
     }
 
-    fun saveTextureToFile(path: String?, tex: Texture) {
+    fun saveTextureToFile(path: String, tex: Texture) {
         PixmapIO.writePNG(
             FileHandle(File(path)),
             textureToPixmap(tex),
@@ -56,6 +56,24 @@ object Draw {
             for (y in 0 until h) {
                 val colorInt = input.getPixel(region.regionX + x, region.regionY + y)
                 output.drawPixel(x, y, colorInt)
+            }
+        }
+
+        return LocalAssets.create(output)
+    }
+
+    fun precolorTexture(texture: Texture, color: Color): Texture {
+        val input = textureToPixmap(texture)
+        val w = texture.width
+        val h = texture.height
+        val output = Pixmap(w, h, Pixmap.Format.RGBA8888)
+        for (x in 0 until w) {
+            for (y in 0 until h) {
+                val colorInt = input.getPixel(x, y)
+                val newColor = Color()
+                Color.rgba8888ToColor(newColor, colorInt)
+                newColor.mul(color)
+                output.drawPixel(x, y, Color.rgba8888(newColor))
             }
         }
 

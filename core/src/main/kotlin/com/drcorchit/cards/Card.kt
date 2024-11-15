@@ -79,8 +79,11 @@ class Card(
 
         val textColor = Color.valueOf("#603000ff")
         val trayColor = Color.valueOf("#00000080")
-        val quoteColor = textColor // Color.valueOf("#402000ff")
-        val strokeColor = Color.valueOf("#a0703080")
+
+        //Quote text color was: Color.valueOf("#402000ff")
+        //val strokeColor = Color.valueOf("#80400080")
+        //val strokeColor = Color.valueOf("#a0703080")
+        val strokeColor = Color.valueOf("#80503080")
 
         val stroke = Textures.brushStroke.asSprite().setOffset(Compass.CENTER)
 
@@ -166,7 +169,7 @@ class Card(
             cost.toString(),
             100f,
             Compass.CENTER,
-            Color.GRAY
+            Color.DARK_GRAY
         )
 
         //Card Name
@@ -197,7 +200,7 @@ class Card(
             text,
             abilityTextW,
             Compass.SOUTHEAST,
-            textColor
+            Color.WHITE
         )
 
         //Quote text
@@ -209,7 +212,7 @@ class Card(
             quote,
             abilityTextW,
             Compass.NORTH,
-            quoteColor
+            textColor
         )
     }
 
