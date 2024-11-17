@@ -7,6 +7,7 @@ import com.drcorchit.cards.Main.Companion.W
 import com.drcorchit.cards.Textures.asSprite
 import com.drcorchit.cards.graphics.Draw
 import com.drcorchit.justice.utils.StringUtils.normalize
+import com.drcorchit.justice.utils.json.JsonUtils.parseFromFile
 import com.drcorchit.justice.utils.math.Compass
 import com.google.gson.JsonObject
 import kotlin.math.min
@@ -78,19 +79,27 @@ class Card(
             }
         }
 
+        val cards by lazy {
+            parseFromFile("assets/json/cards.json")!!
+                .first.asJsonArray!!
+                .map { Card(it.asJsonObject) }
+        }
+
+        init {
+            cards.groupBy { it.motive }
+                .map { it.key to it.value.groupBy { card -> card.rarity } }
+                .map { it.first to it.second.mapValues { cards -> cards.value.size } }
+                .forEach { entry -> entry.second.forEach{ println("${entry.first} ${it.key}: ${it.value}") } }
+        }
+
         val textColor = Color.valueOf("#603000ff")
         val trayColor = Color.valueOf("#00000080")
 
         //Quote text color was: Color.valueOf("#402000ff")
         //val strokeColor = Color.valueOf("#80400080")
         //val strokeColor = Color.valueOf("#a0703080")
-        val strokeColor = Color.valueOf("#80503080")
-
+        //Color.valueOf("#80503080")
         val stroke = Textures.brushStroke.asSprite().setOffset(Compass.CENTER)
-
-        init {
-            stroke.blend = strokeColor
-        }
 
         val star = Textures.star.asSprite().setOffset(Compass.CENTER)
         val tray = Textures.tray.asSprite().setOffset(Compass.SOUTH)

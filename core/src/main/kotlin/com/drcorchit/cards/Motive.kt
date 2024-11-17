@@ -17,7 +17,8 @@ enum class Motive(val color: Color) {
 
     //Judgment and warrior themes
     //Fire, Water and Light mana focused
-    Justice(Color.valueOf("ceb31c")),
+    Justice(Color.valueOf("a08030")),
+    //ceb31c
 
     //Focus on human and angelic scribes
     //Air, Light, and Dark mana focused.
@@ -36,5 +37,5 @@ enum class Motive(val color: Color) {
     val texture = Textures.initTexture("${name.lowercase()}.png")
     val image = texture.asSprite().setOffset(Compass.CENTER)
 
-    val secondaryColor = Color(color.r + .12f, color.g + .12f, color.b + .12f, .3f)
+    val secondaryColor = Color(color.r + .12f, color.g + .12f, color.b + .12f, .40f)
 }

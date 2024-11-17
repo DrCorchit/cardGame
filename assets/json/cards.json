@@ -3,32 +3,46 @@
     "name": "Blistering Heatwave",
     "cost": 8,
     "tags": [
-      "Action",
       "Nature",
       "Rare"
     ],
-    "ability": ["Banish a unit or artifact."],
+    "ability": ["Action.", "Deploy: Banish a unit or artifact."],
     "quote": "Just when you think it can't get any hotter..."
   },
   {
     "name": "Giant Turtle",
-    "power": 8,
-    "cost": 6,
+    "power": 6,
+    "cost": 5,
     "tags": [
       "Beast",
       "Rare"
     ],
-    "ability": ["Deploy: Add an additional mana die to the pot for the remainder of the round."],
+    "ability": [
+      "Deploy: Add an additional mana die to the pot.",
+      "Expire: Remove a mana die from the pot."
+    ],
     "quote": "Could this be a dog?"
+  },
+  {
+    "name": "Bounty Hunter",
+    "power": 3,
+    "cost": 4,
+    "tags": [
+      "Human",
+      "Rare"
+    ],
+    "ability": [
+      "Deploy: Deactivate a unit."
+    ],
+    "quote": "You can run, but you can't hide."
   },
   {
     "name": "Pact",
     "cost": 3,
     "tags": [
-      "Equipment",
       "Spell"
     ],
-    "ability": ["Equip: Rally 6", "Expire: Rout 6."],
+    "ability": ["Equipment.", "Equip: Rally 6", "Expire: Rout 6."],
     "quote": "For sale, world. Price: your soul."
   },
   {
@@ -78,10 +92,13 @@
     "name": "Fireball",
     "cost": 3,
     "tags": [
-      "Action",
       "Spell"
     ],
-    "ability": ["Conjure 1 fire mana then Assault 2 OR Expend 1 fire mana then Assault 3."],
+    "ability": [
+      "Action.",
+      "Deploy: Conjure 1 fire mana and Assault 2.",
+      "Deploy, Expend 1 fire mana: Assault 3."
+    ],
     "quote": "I didn't ask how big the room was. I said I cast fireball."
   },
   {
@@ -92,7 +109,7 @@
       "Chaos",
       "Human"
     ],
-    "ability": ["Vulnerable", "Deploy, Chaos 6: Hasten.", "Activate: Tutor a bronze chaos unit, then destroy self."],
+    "ability": ["Deploy, Chaos 6: Hasten.", "Activate: Tutor a common chaos unit, then destroy self."],
     "quote": "A man cannot serve two masters."
   },
   {
@@ -216,12 +233,12 @@
     "ability": [
       "Disloyal.",
       "Deploy, Chaos X: Look at all cards from your opponent's hand with a provision cost of X or less and play one.",
-      "Finally, your opponent draws a card."
+      "Finally: Your opponent draws a card."
     ],
     "quote": "With me, surprises are rarely unexpected."
   },
   {
-    "name": "Chaos Manor",
+    "name": "Haunted Manor",
     "cost": 5,
     "rarity": "rare",
     "tags": [
@@ -261,7 +278,7 @@
     "quote": ["All those deaths, just to move some lines on a map."]
   },
   {
-    "name": "Quartermaster",
+    "name": "Quartermaster Ionos",
     "power": 3,
     "cost": 7,
     "tags": [
@@ -291,15 +308,16 @@
     "cost": 7,
     "tags": [
       "Chaos",
-      "Action",
       "Spell",
-      "Legendary"
+      "Rare"
     ],
     "ability": [
-      "Choose three cards from your deck, then play one at random.",
+      "Action.",
+      "Echo.",
+      "Chaos 4: Choose three cards from your deck, then play one at random.",
       "Chaos 5: Choose two cards from your deck, then play one at random.",
       "Chaos 6: Tutor a card from your deck.",
-      "Finally, return any unplayed cards to your deck."
+      "Finally: Return any unplayed cards to your deck."
     ],
     "quote": "Pandemonium did not reign; it poured."
   },
@@ -331,6 +349,22 @@
       "Passive: Whenever a mana die is rerolled during your turn, Rally."
     ],
     "quote": "I love it when they struggle."
+  },
+  {
+    "name": "Artizyrxys, Chaos Dragon",
+    "power": 7,
+    "cost": 9,
+    "tags": [
+      "Chaos",
+      "Dragon",
+      "Legendary"
+    ],
+    "ability": [
+      "Activate: Reroll any 2 allied mana dice.",
+      "Turnwise: Reactivate.",
+      "Finale, Chaos X: Rally X."
+    ],
+    "quote": "Fear is for mortals."
   },
   {
     "name": "Grand Inquisitor Molgrippe",
@@ -375,10 +409,9 @@
     "tags": [
       "Greed",
       "Vice",
-      "Equipment",
       "Liquor"
     ],
-    "ability": ["Equip: Rally 4 and conjure 2 fire mana.", "Finale: Rout 2."],
+    "ability": ["Equipment.", "Equip: Rally 4 and conjure 2 fire mana.", "Finale: Rout 2."],
     "quote": "The cheapest booze that money can buy."
   },
   {
@@ -420,10 +453,9 @@
     "tags": [
       "Greed",
       "Vice",
-      "Equipment",
       "Liquor"
     ],
-    "ability": ["Equip: Rally 5."],
+    "ability": ["Equipment.", "Equip: Rally 5."],
     "quote": "Beer is proof that God loves dwarves and wants them to be happy."
   },
   {
@@ -467,10 +499,9 @@
     "tags": [
       "Greed",
       "Vice",
-      "Equipment",
       "Liquor"
     ],
-    "ability": ["Equip: Rally 3 and conjure 1 fire mana.", "Finale: Rally 3."],
+    "ability": ["Equipment.", "Equip: Rally 3 and conjure 1 fire mana.", "Finale: Rally 3."],
     "quote": "The good stuff."
   },
   {
@@ -488,10 +519,9 @@
     "name": "Swoop",
     "cost": 4,
     "tags": [
-      "Greed",
-      "Action"
+      "Greed"
     ],
-    "ability": "Expend 1 air mana, then Tutor a bronze dragon.",
+    "ability": ["Action.", "Expend 1 air mana, then Tutor a common dragon."],
     "quote": "By the time you see them, it's too late."
   },
   {
@@ -499,11 +529,15 @@
     "cost": 4,
     "tags": [
       "Greed",
-      "Equipment",
       "Weapon",
       "Rare"
     ],
-    "ability": "Equip: Assault 4. If equipped to a target that has a liquor card equipped, Assault 5 instead. If equipped to Stumpy McGee, Assassinate 5 instead.",
+    "ability": [
+      "Equipment.",
+      "Equip: Assault 4.",
+      "If equipped to a target that has a liquor card equipped, Assault 5 instead.",
+      "If equipped to Stumpy McGee, Assassinate 5 instead."
+    ],
     "quote": "The one, the only."
   },
   {
@@ -527,7 +561,10 @@
       "Dwarf",
       "Rare"
     ],
-    "ability": "Deploy: Expend 2 fire mana, then tutor a dragon egg, OR Expend 3 fire mana, then resurrect a dragon egg.",
+    "ability": [
+      "Deploy, Expend 2 fire mana: Tutor a dragon egg.",
+      "Deploy, Expend 3 fire mana: Resurrect a dragon egg."
+    ],
     "quote": "You're safe now, little feller."
   },
   {
@@ -549,11 +586,14 @@
     "tags": [
       "Greed",
       "Vice",
-      "Equipment",
       "Liquor",
       "Rare"
     ],
-    "ability": ["Equip: Rally 10 and trigger imbibe an additional time.", "Finale: Rout 4."],
+    "ability": [
+      "Equipment.",
+      "Equip: Rally 10 and trigger imbibe an additional time.",
+      "Finale: Rout 4."
+    ],
     "quote": "What'd you even put in this stuff?"
   },
   {
@@ -631,8 +671,12 @@
       "Liquor",
       "Rare"
     ],
-    "ability": "Equip: Rally 10 and conjure 3 fire mana.",
-    "quote": "Dwarves'll kill for this stuff."
+    "ability": [
+      "Equipment.",
+      "Echo.",
+      "Equip: Rally 8 and Conjure 3 fire mana."
+    ],
+    "quote": "The old good stuff."
   },
   {
     "name": "Dragonmother Erizyx",
@@ -664,14 +708,18 @@
   },
   {
     "name": "Drinking Contest",
-    "cost": 13,
+    "cost": 11,
     "tags": [
       "Greed",
       "Vice",
-      "Action",
       "Legendary"
     ],
-    "ability": "Play a bronze dwarf and tutor a liquor card OR tutor a dwarf and play a bronze liquor card. Finally, draw a card.",
+    "ability": [
+      "Action.",
+      "Deploy: Play a dwarf, then Tutor a common liquor card",
+      "Deploy: Tutor a common dwarf, then Play a liquor card.",
+      "Finally: Draw a card."
+    ],
     "quote": "When its a drinking contest, everybody wins. -- Dwarven proverb"
   },
   {
@@ -716,10 +764,12 @@
     "cost": 2,
     "tags": [
       "Peace",
-      "Action",
       "Nature"
     ],
-    "ability": "Destroy an allied unit of X power, then rally X and conjure X earth mana, air mana, or water mana.",
+    "ability": [
+      "Action.",
+      "Destroy an allied unit of X power, then rally X and conjure X earth mana, air mana, or water mana."
+    ],
     "quote": "Flames clear the way for new growth."
   },
   {
@@ -776,10 +826,13 @@
     "cost": 3,
     "tags": [
       "Peace",
-      "Action",
       "Nature"
     ],
-    "ability": ["Assault 2.", "Expend X air mana: Increase the assault by X."],
+    "ability": [
+      "Action.",
+      "Assault 2.",
+      "Expend X air mana: Increase the Assault by X."
+    ],
     "quote": "You've been thunderstruck."
   },
   {
@@ -787,10 +840,10 @@
     "cost": 3,
     "tags": [
       "Peace",
-      "Equipment",
       "Nature"
     ],
     "ability": [
+      "Equipment.",
       "Held, Expend 3 water mana: Play this card, then draw a card.",
       "Turnwise: Rally."
     ],
@@ -823,11 +876,14 @@
     "cost": 5,
     "tags": [
       "Peace",
-      "Action",
       "Nature",
       "Rare"
     ],
-    "ability": ["Expend X water mana: Assassinate X.", "Finally, Conjure 6 water mana."],
+    "ability": [
+      "Action.",
+      "Expend X water mana: Assassinate X.",
+      "Finally: Conjure 6 water mana."
+    ],
     "quote": "Six feet high and rising"
   },
   {
@@ -850,11 +906,10 @@
     "cost": 6,
     "tags": [
       "Peace",
-      "Action",
       "Nature",
       "Rare"
     ],
-    "ability": "Conjure water mana air mana, then tutor a nature card.",
+    "ability": ["Action.", "Conjure water mana air mana, then Tutor a nature card."],
     "quote": "She's a-gonna blow!"
   },
   {
@@ -890,7 +945,7 @@
       "Dryad",
       "Legendary"
     ],
-    "ability": ["Passive, water mana 4: Tutor self.", "Finale, X water mana: Rally X."],
+    "ability": ["Passive, 4 water mana: Tutor self.", "Finale, X water mana: Rally X."],
     "quote": "Soggy bints handin' out swords is no basis for a system of government."
   },
   {
@@ -947,8 +1002,421 @@
       "Legendary"
     ],
     "ability": [
-      "Deploy: Expend earth mana water mana air mana, then tutor a Peace unit, OR Expend 3 earth mana and resurrect a Peace unit."
+      "Deploy, Expend earth mana water mana air mana: Tutor a Peace unit.",
+      "Deploy, Expend 3 earth mana: Resurrect a Peace unit."
     ],
     "quote": "No wound too deep, no bone too broken, no heart beyond repair."
+  },
+  {
+    "name": "Restraining Order",
+    "cost": 2,
+    "tags": [
+      "Justice",
+      "Law"
+    ],
+    "ability": [
+      "Action.",
+      "Deploy: Conjure 3 dark mana and Deactivate a unit."
+    ],
+    "quote": "Stop right there!"
+  },
+  {
+    "name": "Avalonian Herald",
+    "power": 2,
+    "cost": 2,
+    "tags": [
+      "Justice",
+      "Human",
+      "Soldier"
+    ],
+    "ability": [
+      "Deploy: Conjure 2 light mana.",
+      "Activate: Conjure 2 dark mana."
+    ],
+    "quote": "I've got some good news and some bad news..."
+  },
+  {
+    "name": "Forbear of Avalon",
+    "power": 4,
+    "cost": 2,
+    "tags": [
+      "Justice",
+      "Human"
+    ],
+    "ability": [
+      "Deploy: Conjure light mana or dark mana."
+    ],
+    "quote": "We learn who came before us so that we may guide those who come after us."
+  },
+  {
+    "name": "Avalonian Crusader",
+    "power": 3,
+    "cost": 3,
+    "tags": [
+      "Justice",
+      "Human",
+      "Soldier"
+    ],
+    "ability": [
+      "Activate, Expend X light mana: Rally X",
+      "Activate, Expend X dark mana: Assault X."
+    ],
+    "quote": "Deus vult!"
+  },
+  {
+    "name": "Indictment",
+    "cost": 3,
+    "tags": [
+      "Justice",
+      "Law"
+    ],
+    "ability": [
+      "Action.",
+      "Deploy: Expend light mana dark mana, then Assassinate 3"
+    ],
+    "quote": "You have the right to face your accuser in a court of law."
+  },
+  {
+    "name": "Ultimatum",
+    "cost": 3,
+    "tags": [
+      "Justice",
+      "Law"
+    ],
+    "ability": [
+      "Activate: Expend 2 light mana 2 dark mana, then Rally 6"
+    ],
+    "quote": "It's not a threat. It's a promise."
+  },
+  {
+    "name": "Affidavit",
+    "cost": 3,
+    "tags": [
+      "Justice",
+      "Law"
+    ],
+    "ability": [
+      "Turnwise: Conjure 1 light mana.",
+      "Activate, Expend 2 light mana: Rally 4."
+    ],
+    "quote": "The truth, the whole truth, and nothing but the truth."
+  },
+  {
+    "name": "Warrior Monk",
+    "power": 2,
+    "cost": 2,
+    "tags": [
+      "Justice",
+      "Human",
+      "Warrior"
+    ],
+    "ability": [
+      "Deploy: Conjure 2 light mana",
+      "Deploy, Expend 2 light mana: Assault 2"
+    ],
+    "quote": ""
+  },
+  {
+    "name": "Sub Poena",
+    "cost": 3,
+    "tags": [
+      "Justice",
+      "Law"
+    ],
+    "ability": [
+      "Action.",
+      "Deploy: Expend 2 dark mana, then Seize 2"
+    ],
+    "quote": "See you in court."
+  },
+  {
+    "name": "Valkyrie",
+    "power": 2,
+    "cost": 3,
+    "tags": [
+      "Justice",
+      "Angel"
+    ],
+    "ability": [
+      "Activate: Play a common warrior from your graveyard."
+    ],
+    "quote": ""
+  },
+  {
+    "name": "Imperial Paladin",
+    "power": 4,
+    "cost": 4,
+    "tags": [
+      "Justice",
+      "Human",
+      "Warrior"
+    ],
+    "ability": [
+      "Deploy: Conjure light mana dark mana.",
+      "Activate: Protect an allied unit."
+    ],
+    "quote": "Death before dishonor."
+  },
+  {
+    "name": "Seneschal",
+    "power": 2,
+    "cost": 4,
+    "tags": [
+      "Justice",
+      "Human"
+    ],
+    "ability": [
+      "Deploy, Expend 2 light mana: gain Haste.",
+      "Activate: Tutor a common Justice unit."
+    ],
+    "quote": "All in good order, I trust."
+  },
+  {
+    "name": "Attorney",
+    "power": 1,
+    "cost": 4,
+    "tags": [
+      "Justice",
+      "Human"
+    ],
+    "ability": [
+      "Deploy, Expend light mana dark mana: Tutor a common law."
+    ],
+    "quote": "A good lawyer knows the case. A great lawyer knows the judge."
+  },
+  {
+    "name": "Judge",
+    "power": 3,
+    "cost": 3,
+    "tags": [
+      "Justice",
+      "Human"
+    ],
+    "ability": [
+      "Passive: Whenever you play a law, Rally."
+    ],
+    "quote": "Judge not, lest ye be judged."
+  },
+  {
+    "name": "Gabriel",
+    "power": 3,
+    "cost": 5,
+    "tags": [
+      "Justice",
+      "Angel",
+      "Rare"
+    ],
+    "ability": [
+      "Passive: Whenever you Tutor a card, Rally 2."
+    ],
+    "quote": "I am Gabriel, who stands in the presence of God!"
+  },
+  {
+    "name": "Methuselah, Ancestor",
+    "power": 9,
+    "cost": 6,
+    "tags": [
+      "Justice",
+      "Human",
+      "Rare"
+    ],
+    "ability": [
+      "Deploy: Destroy self.",
+      "Deploy, Expend 3 light mana: Do not destroy self."
+    ],
+    "quote": "They say 500 is the new 400..."
+  },
+  {
+    "name": "Heimdall",
+    "power": 7,
+    "cost": 6,
+    "tags": [
+      "Justice",
+      "Deity",
+      "Rare"
+    ],
+    "ability": [
+      "Deploy: Swap a unit in your deck with a unit in your graveyard."
+    ],
+    "quote": ""
+  },
+  {
+    "name": "Odin, Allfather",
+    "power": 4,
+    "cost": 6,
+    "tags": [
+      "Justice",
+      "Deity",
+      "Rare"
+    ],
+    "ability": [
+      "Deploy: Look through your deck and move any card to the bottom.",
+      "Activate: Look through your deck and move any card to the top.",
+      "Finale: You need not shuffle your deck this round."
+    ],
+    "quote": "There's only one 'i' in wisdom."
+  },
+  {
+    "name": "High Priest Melchizedek",
+    "power": 4,
+    "cost": 7,
+    "tags": [
+      "Justice",
+      "Human",
+      "Priest",
+      "Rare"
+    ],
+    "ability": [
+      "Turnwise, X light mana, Y dark mana: Rally X, Rout Y"
+    ],
+    "quote": "Ask not what God can do for you, but what you can do for God."
+  },
+  {
+    "name": "Enoch, Prophet",
+    "power": 2,
+    "cost": 7,
+    "tags": [
+      "Justice",
+      "Human",
+      "Rare"
+    ],
+    "ability": [
+      "Activate: Rally according to the provision cost of the next card you Tutor."
+    ],
+    "quote": "I am nothing without God."
+  },
+  {
+    "name": "Ariel, Heaven's Lioness",
+    "power": 3,
+    "cost": 7,
+    "tags": [
+      "Justice",
+      "Human",
+      "Rare"
+    ],
+    "ability": [
+      "Deploy: Assault 3.",
+      "Deploy, Expend 2 light mana: Assault 4",
+      "Deploy, Expend 2 dark mana: Assassinate 3"
+    ],
+    "quote": "She makes cute noises when she fights. Adorable."
+  },
+  {
+    "name": "Jurisprudence",
+    "cost": 8,
+    "tags": [
+      "Justice",
+      "Law",
+      "Rare"
+    ],
+    "ability": [
+      "Action.",
+      "Echo.",
+      "Deploy: Conjure 2 light mana and Tutor a common Justice unit.",
+      "Deploy, Expend 2 light mana: Tutor a Justice unit."
+    ],
+    "quote": "Law is order, and good law is good order."
+  },
+  {
+    "name": "Thor, Son of Odin",
+    "power": 6,
+    "cost": 8,
+    "tags": [
+      "Justice",
+      "Deity",
+      "Legendary"
+    ],
+    "ability": [
+      "Deploy: Banish a card from your deck"
+    ],
+    "quote": ""
+  },
+  {
+    "name": "Loki, Trickster",
+    "power": 1,
+    "cost": 8,
+    "tags": [
+      "Justice",
+      "Deity",
+      "Legendary"
+    ],
+    "ability": [
+      "Deploy: Play a unit from hand and protect it.",
+      "Finally: Draw a card."
+    ],
+    "quote": "Every villain is a hero in his own mind. Except one."
+  },
+  {
+    "name": "Judgement Day",
+    "cost": 9,
+    "tags": [
+      "Justice",
+      "Law",
+      "Legendary"
+    ],
+    "ability": [
+      "Haste.",
+      "Passive: Whenever you play a unit, Conjure light mana. Whenever your opponent plays a unit, they conjure dark mana.",
+      "Activate, Expend 5 light mana: Resurrect a unit.",
+      "Activate, Expend 5 dark mana: Destroy a unit."
+    ],
+    "quote": "Pride goeth before a fall..."
+  },
+  {
+    "name": "Asgard",
+    "cost": 9,
+    "tags": [
+      "Justice",
+      "Location",
+      "Legendary"
+    ],
+    "ability": [
+      "Deploy, 3 dark mana: Move a Justice unit from your graveyard to your deck.",
+      "Activate, 3 light mana: Play a Justice unit from your deck."
+    ],
+    "quote": "No brave deed goes unrecorded in the halls of Asgard."
+  },
+  {
+    "name": "Archangel Michael",
+    "power": 7,
+    "cost": 10,
+    "tags": [
+      "Justice",
+      "Angel",
+      "Legendary"
+    ],
+    "ability": [
+      "Deploy: Tutor an angel."
+    ],
+    "quote": "Behold, the commander of the armies of heaven."
+  },
+  {
+    "name": "Azrael, Angel of Death",
+    "power": 1,
+    "cost": 10,
+    "tags": [
+      "Justice",
+      "Angel",
+      "Legendary"
+    ],
+    "ability": [
+      "Deploy: Assault 10.",
+      "Expend 3 light mana: Assassinate instead.",
+      "Overkill X: Conjure X dark mana."
+    ],
+    "quote": "The preservation of life requires the destruction of evil."
+  },
+  {
+    "name": "New Jerusalem",
+    "cost": 12,
+    "tags": [
+      "Justice",
+      "Location",
+      "Legendary"
+    ],
+    "ability": [
+      "Activate: Rally by the combined provision cost of adjacent units."
+    ],
+    "quote": "Truth and Justice prevail in the end."
   }
 ]

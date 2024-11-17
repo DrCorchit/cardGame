@@ -6,6 +6,7 @@ import com.badlogic.gdx.Input
 import com.badlogic.gdx.files.FileHandle
 import com.badlogic.gdx.graphics.Pixmap
 import com.badlogic.gdx.graphics.PixmapIO
+import com.drcorchit.cards.Card.Companion.cards
 import com.drcorchit.cards.graphics.Draw
 import com.drcorchit.justice.utils.IOUtils
 import com.drcorchit.justice.utils.StringUtils.normalize
@@ -13,27 +14,23 @@ import com.drcorchit.justice.utils.json.JsonUtils.parseFromFile
 import com.drcorchit.justice.utils.logging.Logger
 import java.io.File
 import java.util.zip.Deflater
+import kotlin.random.Random
 
 /**
  * [com.badlogic.gdx.ApplicationListener] implementation shared by all platforms.
  */
 class Main : ApplicationAdapter() {
-
-    val cards by lazy {
-        parseFromFile("assets/json/cards.json")!!
-            .first.asJsonArray!!
-            .map { Card(it.asJsonObject) }
-    }
-
-    //25 = Kali
-    //50 = Neromir
-    //76 = Allmother
-    var index = 76
+    //27 = Kali
+    //52 = Neromir
+    //78 = Allmother
+    var index = 0
 
     override fun create() {
         //Load the batch
         Draw.batch
         LocalAssets.getInstance().load()
+
+        index = Random.nextInt(cards.size)
     }
 
     override fun render() {
