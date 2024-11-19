@@ -238,7 +238,7 @@
     "quote": "With me, surprises are rarely unexpected."
   },
   {
-    "name": "Haunted Manor",
+    "name": "Chaos Manor",
     "cost": 5,
     "rarity": "rare",
     "tags": [
@@ -553,6 +553,19 @@
     "quote": "To master tha' forge, ya gotta become one with 'er. Jus' kiddin, tha' would be weird."
   },
   {
+  "name": "Lost Dragon Egg",
+  "power": 1,
+  "cost": 5,
+  "rarity": "rare",
+  "tags": [
+    "Greed",
+    "Dragon",
+    "Rare"
+  ],
+  "ability": ["This card starts in your graveyard.", "Finale: Rally 8."],
+  "quote": "It's a long way back to the nest."
+},
+  {
     "name": "Dragonseeker",
     "power": 4,
     "cost": 6,
@@ -567,19 +580,7 @@
     ],
     "quote": "You're safe now, little feller."
   },
-  {
-    "name": "Lost Dragon Egg",
-    "power": 1,
-    "cost": 6,
-    "rarity": "rare",
-    "tags": [
-      "Greed",
-      "Dragon",
-      "Rare"
-    ],
-    "ability": ["This card starts in your graveyard.", "Finale: Rally 8."],
-    "quote": "It's a long way back to the nest."
-  },
+
   {
     "name": "Secret Brew",
     "cost": 6,
@@ -1084,7 +1085,7 @@
       "Law"
     ],
     "ability": [
-      "Activate: Expend 2 light mana 2 dark mana, then Rally 6"
+      "Activate, Expend 2 dark mana: Assault 4."
     ],
     "quote": "It's not a threat. It's a promise."
   },
@@ -1104,7 +1105,7 @@
   {
     "name": "Warrior Monk",
     "power": 2,
-    "cost": 2,
+    "cost": 3,
     "tags": [
       "Justice",
       "Human",
@@ -1112,9 +1113,9 @@
     ],
     "ability": [
       "Deploy: Conjure 2 light mana",
-      "Deploy, Expend 2 light mana: Assault 2"
+      "Deploy, Expend 2 dark mana: Assault 2"
     ],
-    "quote": ""
+    "quote": "To master the body, one must first master the mind."
   },
   {
     "name": "Sub Poena",
@@ -1142,6 +1143,19 @@
     ],
     "quote": ""
   },
+  {
+  "name": "Judge",
+  "power": 3,
+  "cost": 3,
+  "tags": [
+    "Justice",
+    "Human"
+  ],
+  "ability": [
+    "Passive: Whenever you play a law, Rally."
+  ],
+  "quote": "Judge not, lest ye be judged."
+},
   {
     "name": "Imperial Paladin",
     "power": 4,
@@ -1184,19 +1198,7 @@
     ],
     "quote": "A good lawyer knows the case. A great lawyer knows the judge."
   },
-  {
-    "name": "Judge",
-    "power": 3,
-    "cost": 3,
-    "tags": [
-      "Justice",
-      "Human"
-    ],
-    "ability": [
-      "Passive: Whenever you play a law, Rally."
-    ],
-    "quote": "Judge not, lest ye be judged."
-  },
+
   {
     "name": "Gabriel",
     "power": 3,
@@ -1227,20 +1229,6 @@
     "quote": "They say 500 is the new 400..."
   },
   {
-    "name": "Heimdall",
-    "power": 7,
-    "cost": 6,
-    "tags": [
-      "Justice",
-      "Deity",
-      "Rare"
-    ],
-    "ability": [
-      "Deploy: Swap a unit in your deck with a unit in your graveyard."
-    ],
-    "quote": ""
-  },
-  {
     "name": "Odin, Allfather",
     "power": 4,
     "cost": 6,
@@ -1255,6 +1243,20 @@
       "Finale: You need not shuffle your deck this round."
     ],
     "quote": "There's only one 'i' in wisdom."
+  },
+  {
+    "name": "Heimdall",
+    "power": 5,
+    "cost": 7,
+    "tags": [
+      "Justice",
+      "Deity",
+      "Rare"
+    ],
+    "ability": [
+      "Deploy, Expend light mana dark mana: Swap a unit in your deck with a unit in your graveyard."
+    ],
+    "quote": ""
   },
   {
     "name": "High Priest Melchizedek",
@@ -1283,7 +1285,7 @@
     "ability": [
       "Activate: Rally according to the provision cost of the next card you Tutor."
     ],
-    "quote": "I am nothing without God."
+    "quote": "You know the baby's gonna be a prophet when his first word is \"Lo!\""
   },
   {
     "name": "Ariel, Heaven's Lioness",
@@ -1332,7 +1334,7 @@
     "quote": ""
   },
   {
-    "name": "Loki, Trickster",
+    "name": "Stephen, Martyr",
     "power": 1,
     "cost": 8,
     "tags": [
@@ -1341,10 +1343,12 @@
       "Legendary"
     ],
     "ability": [
-      "Deploy: Play a unit from hand and protect it.",
-      "Finally: Draw a card."
+      "Deploy: Play a card from hand.",
+      "Deploy, Expend 2 light mana: Play a unit from hand and Protect it.",
+      "Finally: Draw a card.",
+      "Expire: Conjure 2 light mana."
     ],
-    "quote": "Every villain is a hero in his own mind. Except one."
+    "quote": "Do not hold this sin against them!"
   },
   {
     "name": "Judgement Day",
@@ -1356,7 +1360,7 @@
     ],
     "ability": [
       "Haste.",
-      "Passive: Whenever you play a unit, Conjure light mana. Whenever your opponent plays a unit, they conjure dark mana.",
+      "Passive: Whenever you play a unit, Conjure light mana. Whenever your opponent plays a unit, Conjure dark mana.",
       "Activate, Expend 5 light mana: Resurrect a unit.",
       "Activate, Expend 5 dark mana: Destroy a unit."
     ],

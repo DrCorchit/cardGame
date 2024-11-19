@@ -31,6 +31,13 @@ class Main : ApplicationAdapter() {
         LocalAssets.getInstance().load()
 
         index = Random.nextInt(cards.size)
+
+        val folder =
+            File("assets/images/cards").listFiles()!!
+                .map { it.nameWithoutExtension.normalize() }
+                .toMutableSet()
+        folder.removeAll(cards.map { it.name.normalize() }.toSet())
+        println("Unused card arts:\n${folder.joinToString("\n")}}")
     }
 
     override fun render() {

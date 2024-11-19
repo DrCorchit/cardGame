@@ -54,6 +54,12 @@ class Card(
         ?.asSprite()
         ?.setOffset(Compass.NORTH)
 
+    init {
+    	if (image == null) {
+            println("No card art found for: $name")
+        }
+    }
+
     constructor(json: JsonObject) : this(
         json["name"].asString,
         json["power"]?.asInt ?: 0,
