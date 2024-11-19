@@ -553,18 +553,18 @@
     "quote": "To master tha' forge, ya gotta become one with 'er. Jus' kiddin, tha' would be weird."
   },
   {
-  "name": "Lost Dragon Egg",
-  "power": 1,
-  "cost": 5,
-  "rarity": "rare",
-  "tags": [
-    "Greed",
-    "Dragon",
-    "Rare"
-  ],
-  "ability": ["This card starts in your graveyard.", "Finale: Rally 8."],
-  "quote": "It's a long way back to the nest."
-},
+    "name": "Lost Dragon Egg",
+    "power": 1,
+    "cost": 5,
+    "rarity": "rare",
+    "tags": [
+      "Greed",
+      "Dragon",
+      "Rare"
+    ],
+    "ability": ["This card starts in your graveyard.", "Finale: Rally 8."],
+    "quote": "It's a long way back to the nest."
+  },
   {
     "name": "Dragonseeker",
     "power": 4,
@@ -580,7 +580,6 @@
     ],
     "quote": "You're safe now, little feller."
   },
-
   {
     "name": "Secret Brew",
     "cost": 6,
@@ -627,7 +626,7 @@
   },
   {
     "name": "Goryx, Golden Dragon",
-    "power": 7,
+    "power": 5,
     "cost": 7,
     "tags": [
       "Greed",
@@ -819,7 +818,10 @@
       "Peace",
       "Dryad"
     ],
-    "ability": "Deploy: Conjure 2 water mana. Turnwise: Conjure 1 water mana.",
+    "ability": [
+      "Deploy: Conjure 2 water mana.",
+      "Turnwise: Conjure 1 water mana."
+    ],
     "quote": "Beautiful. Serene. Deadly."
   },
   {
@@ -1144,18 +1146,18 @@
     "quote": ""
   },
   {
-  "name": "Judge",
-  "power": 3,
-  "cost": 3,
-  "tags": [
-    "Justice",
-    "Human"
-  ],
-  "ability": [
-    "Passive: Whenever you play a law, Rally."
-  ],
-  "quote": "Judge not, lest ye be judged."
-},
+    "name": "Judge",
+    "power": 3,
+    "cost": 3,
+    "tags": [
+      "Justice",
+      "Human"
+    ],
+    "ability": [
+      "Passive: Whenever you play a law, Rally."
+    ],
+    "quote": "Judge not, lest ye be judged."
+  },
   {
     "name": "Imperial Paladin",
     "power": 4,
@@ -1198,7 +1200,6 @@
     ],
     "quote": "A good lawyer knows the case. A great lawyer knows the judge."
   },
-
   {
     "name": "Gabriel",
     "power": 3,
