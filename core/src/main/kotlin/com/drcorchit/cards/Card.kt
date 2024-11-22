@@ -109,39 +109,42 @@ class Card(
 
         val star = Textures.star.asSprite().setOffset(Compass.CENTER)
         val tray = Textures.tray.asSprite().setOffset(Compass.SOUTH)
-        val costBack = Textures.costBack.asSprite().setOffset(Compass.CENTER)
+        val costBack = Textures.costBack.asSprite().setOffset(200f, 150f)
+        val line = Textures.line.asSprite().setOffset(Compass.CENTER)
 
         val midWidth = W / 2f
         val midHeight = tray.getFrames().height - 20f
         val cardRatio = H * 1f / W
 
-        val diamondOffsetX = 48f
-        val diamondOffsetY = 90f
-        val diamondW = 83f
-        val diamondH = 166f
-        val starSize = 50f
+        val diamondOffsetX = 90f
+        val diamondOffsetY = 120f
+        val diamondW = 100f
+        val diamondH = 2 * diamondW
+        val starSize = 60f
 
-        val costBackSize = 50f
-        val costBackOffset = 50f;
+        val costBackSize = 150f
+        val costBackOffset = 80f
         val costX = W - costBackOffset
         val costY = costBackOffset
 
-        val nameY = midHeight - 40f
-        val strokeH = 120f
+        val nameY = midHeight - 50f
+        val tagsY = nameY - 65f
+        val strokeH = 140f
         val strokeMargin = 200f
         val strokeMaxW = W - 50f
-        val strokeY = nameY - 25f
+        val strokeY = nameY - 32f
 
         val abilityBufferX = 20f
         val abilityBufferY = 20f
         val abilityBufferW = W - 2 * abilityBufferX
-        val abilityBufferH = midHeight - 130f
-        val abilityBufferMargin = 10f
+        val abilityBufferH = midHeight - 180f
+        val abilityBufferMargin = 20f
         val abilityTextW = abilityBufferW - 2 * abilityBufferMargin
 
+        val lineY = 150f
         val quoteTextX = midWidth
         val quoteTextY = 50f
-        val quoteTextW = W - 200f
+        val quoteTextW = W - 320f
     }
 
     fun draw() {
@@ -162,7 +165,7 @@ class Card(
 
         //Draw border and ability text tray
         tray.draw(Draw.batch, midWidth, 0f)
-        Draw.batch.draw(Textures.corners, 0f, 0f)
+        //Draw.batch.draw(Textures.corners, 0f, 0f)
         rarity.image.draw(Draw.batch, 0f, 0f)
 
         //Power diamond
@@ -190,7 +193,7 @@ class Card(
             cost.toString(),
             100f,
             Compass.CENTER,
-            Color.DARK_GRAY
+            Color.WHITE
         )
 
         //Card Name
@@ -200,18 +203,20 @@ class Card(
         stroke.draw(Draw.batch, midWidth, strokeY, strokeW, strokeH)
         Draw.drawText(midWidth, nameY, Fonts.nameFont, name, W - 50f, Compass.CENTER, motive.color)
 
-        //tags
+        //Tags
         val textX = abilityBufferX + abilityBufferMargin
-        //Draw.drawRectangle(abilityBufferX, abilityBufferY, abilityBufferW, abilityBufferH, trayColor)
         Draw.drawText(
             midWidth,
-            nameY - 50f,
+            tagsY,
             Fonts.tagFont,
             tagsText,
             1000f,
             Compass.CENTER,
             motive.color
         )
+
+        //line.draw(Draw.batch, midWidth, abilityBufferY + abilityBufferH, 3f, 1f, 0f)
+
 
         //Ability Text
         val text = styledAbilityText
@@ -225,6 +230,8 @@ class Card(
             Compass.SOUTHEAST,
             Color.WHITE
         )
+
+        line.draw(Draw.batch, midWidth, 2 * quoteTextY, 3f, 1f, 0f)
 
         //Quote text
         Draw.drawText(

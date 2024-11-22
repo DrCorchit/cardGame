@@ -10,7 +10,6 @@ import com.drcorchit.cards.Card.Companion.cards
 import com.drcorchit.cards.graphics.Draw
 import com.drcorchit.justice.utils.IOUtils
 import com.drcorchit.justice.utils.StringUtils.normalize
-import com.drcorchit.justice.utils.json.JsonUtils.parseFromFile
 import com.drcorchit.justice.utils.logging.Logger
 import java.io.File
 import java.util.zip.Deflater
@@ -112,7 +111,8 @@ class Main : ApplicationAdapter() {
     companion object {
         private val logger = Logger.getLogger(Main::class.java)
 
-        const val W: Int = 750
-        const val H: Int = 1050
+        //was 750x1050
+        const val W: Int = 1000
+        const val H: Int = 1400
     }
 }

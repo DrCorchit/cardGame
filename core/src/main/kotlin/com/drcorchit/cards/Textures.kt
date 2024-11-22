@@ -14,16 +14,13 @@ object Textures {
 
     val white = initTexture("white.png")
 
-    val diamond = initTexture("diamond.png")
-    val diamondBorder = initTexture("diamond_border.png")
-    val slate = initTexture("slate2.png")
-    val slateBorder = initTexture("border.png")
-    val tray = initTexture("tray.png")
+    val tray = initTexture("paper7.png")
     val star = initTexture("star.png")
-    val costBack = initTexture("cost_back.png")
+    val costBack = initTexture("resources.png")
     val corners = initTexture("corners.png")
     val mana = initTexture("mana.png")
     val brushStroke = initTexture("brush_stroke.png")
+    val line = initTexture("line.png")
 
     //Arrow
     val arrowLeft = initTexture("arrow_left.png")

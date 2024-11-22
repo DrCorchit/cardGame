@@ -146,7 +146,7 @@
       "Soldier"
     ],
     "ability": ["Finale, Chaos X: Rally X.", "Activate: Reroll 1."],
-    "quote": "The enemy doesn't know what we're going to do in advance, because we don't either."
+    "quote": "The enemy never knows what we're going to do in advance, and neither do we."
   },
   {
     "name": "Chaos Grenadier",
@@ -796,7 +796,7 @@
       "Peace",
       "Beast"
     ],
-    "ability": "Deploy, Expend earth mana and water mana: Assault 2.",
+    "ability": "Deploy, Expend earth mana water mana: Assault 2.",
     "quote": "Survivors describe their attacks as a ribbeting experience."
   },
   {
@@ -1141,6 +1141,7 @@
       "Angel"
     ],
     "ability": [
+      "Deploy: Conjure light mana dark mana.",
       "Activate: Play a common warrior from your graveyard."
     ],
     "quote": ""
@@ -1305,6 +1306,20 @@
     "quote": "She makes cute noises when she fights. Adorable."
   },
   {
+    "name": "Mjolnir",
+    "cost": 7,
+    "tags": [
+      "Justice",
+      "Weapon",
+      "Rare"
+    ],
+    "ability": [
+      "Equipment.",
+      "Equip: Rally 8. If equipped to Thor, Assault 8 instead."
+    ],
+    "quote": "Who is worthy to wield the hammer of Thor?"
+  },
+  {
     "name": "Jurisprudence",
     "cost": 8,
     "tags": [
@@ -1322,7 +1337,7 @@
   },
   {
     "name": "Thor, Son of Odin",
-    "power": 6,
+    "power": 2,
     "cost": 8,
     "tags": [
       "Justice",
@@ -1330,7 +1345,7 @@
       "Legendary"
     ],
     "ability": [
-      "Deploy: Banish a card from your deck"
+      "Deploy: Banish a card from your graveyard, then Assault a unit by its power."
     ],
     "quote": ""
   },

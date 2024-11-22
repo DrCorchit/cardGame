@@ -10,7 +10,6 @@ import java.io.File
 
 object Fonts {
     private val CHARACTERS: String
-    val mana = "ABC \u0010\u0011\u0012\u0013\u0014\u0015 DEF"
 
     init {
         val alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
@@ -26,7 +25,8 @@ object Fonts {
 
     val smallFontSizes = listOf(96, 56, 64, 32, 24)
     val medFontSizes = listOf(96, 56, 72, 36, 28)
-    val fontSizes = medFontSizes
+    val largeFontSizes = listOf(96, 84, 96, 42, 32)
+    val fontSizes = largeFontSizes
 
     val numberFont = initFont("enchanted_land.ttf", fontSizes[0])
     val numberFontSmall = initFont("enchanted_land.ttf", fontSizes[1])
