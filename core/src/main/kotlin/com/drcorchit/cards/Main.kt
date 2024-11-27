@@ -33,6 +33,7 @@ class Main : ApplicationAdapter() {
 
         val folder =
             File("assets/images/cards").listFiles()!!
+                .filter { !it.isDirectory }
                 .map { it.nameWithoutExtension.normalize() }
                 .toMutableSet()
         folder.removeAll(cards.map { it.name.normalize() }.toSet())

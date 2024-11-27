@@ -116,7 +116,7 @@ class Card(
         val midHeight = tray.getFrames().height - 20f
         val cardRatio = H * 1f / W
 
-        val diamondOffsetX = 90f
+        val diamondOffsetX = 80f
         val diamondOffsetY = 120f
         val diamondW = 100f
         val diamondH = 2 * diamondW
@@ -143,7 +143,7 @@ class Card(
 
         val lineY = 150f
         val quoteTextX = midWidth
-        val quoteTextY = 50f
+        val quoteTextY = 80f
         val quoteTextW = W - 320f
     }
 
@@ -166,7 +166,7 @@ class Card(
         //Draw border and ability text tray
         tray.draw(Draw.batch, midWidth, 0f)
         //Draw.batch.draw(Textures.corners, 0f, 0f)
-        rarity.image.draw(Draw.batch, 0f, 0f)
+        rarity.image.draw(Draw.batch, 0f, 0f, W.toFloat(), H.toFloat())
 
         //Power diamond
         val diamond = motive.image

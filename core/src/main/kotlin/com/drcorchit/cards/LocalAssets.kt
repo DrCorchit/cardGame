@@ -73,7 +73,7 @@ class LocalAssets {
         val key = name.lowercase(Locale.getDefault())
         unusedTextures.remove(key)
         val file = File(key)
-        return localTextures[key] ?: println("$key ${file.exists()}").let { null }
+        return localTextures[key]
     }
 
     //Easy asset disposing, whenever you are done with it just dispose the manager instead of many files.

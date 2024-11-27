@@ -14,7 +14,7 @@ object Textures {
 
     val white = initTexture("white.png")
 
-    val tray = initTexture("paper7.png")
+    val tray = initTexture("paper8.png")
     val star = initTexture("star.png")
     val costBack = initTexture("resources.png")
     val corners = initTexture("corners.png")
