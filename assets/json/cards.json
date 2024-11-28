@@ -255,13 +255,13 @@
   {
     "name": "Nameless God of Sorrow",
     "power": 3,
-    "cost": 6,
+    "cost": 9,
     "tags": [
       "Chaos",
       "Deity",
-      "Rare"
+      "Legendary"
     ],
-    "ability": ["Chaos 5: Tutor self.", "Chaos 6: Resurrect self."],
+    "ability": ["Chaos 4: Tutor self.", "Chaos 5: Resurrect self."],
     "quote": "Weep not for what has been, but for what will be."
   },
   {
@@ -948,7 +948,7 @@
       "Dryad",
       "Legendary"
     ],
-    "ability": ["Passive, 4 water mana: Tutor self.", "Finale, X water mana: Rally X."],
+    "ability": ["Held, 4 water mana: Play self, then draw a card.", "Finale, X water mana: Rally X."],
     "quote": "Soggy bints handin' out swords is no basis for a system of government."
   },
   {
@@ -1244,7 +1244,7 @@
       "Activate: Look through your deck and move any card to the top.",
       "Finale: You need not shuffle your deck this round."
     ],
-    "quote": "There's only one 'i' in wisdom."
+    "quote": "There's only one eye in wisdom."
   },
   {
     "name": "Heimdall",

@@ -111,6 +111,7 @@ class Card(
         val tray = Textures.tray.asSprite().setOffset(Compass.SOUTH)
         val costBack = Textures.costBack.asSprite().setOffset(200f, 150f)
         val line = Textures.line.asSprite().setOffset(Compass.CENTER)
+        val border = Textures.border.asSprite()
 
         val midWidth = W / 2f
         val midHeight = tray.getFrames().height - 20f
@@ -165,8 +166,9 @@ class Card(
 
         //Draw border and ability text tray
         tray.draw(Draw.batch, midWidth, 0f)
-        //Draw.batch.draw(Textures.corners, 0f, 0f)
+        border.draw(Draw.batch, 0f, 0f)
         rarity.image.draw(Draw.batch, 0f, 0f, W.toFloat(), H.toFloat())
+
 
         //Power diamond
         val diamond = motive.image

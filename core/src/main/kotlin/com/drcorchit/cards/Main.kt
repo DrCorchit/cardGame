@@ -13,7 +13,6 @@ import com.drcorchit.justice.utils.StringUtils.normalize
 import com.drcorchit.justice.utils.logging.Logger
 import java.io.File
 import java.util.zip.Deflater
-import kotlin.random.Random
 
 /**
  * [com.badlogic.gdx.ApplicationListener] implementation shared by all platforms.
@@ -22,14 +21,14 @@ class Main : ApplicationAdapter() {
     //27 = Kali
     //52 = Neromir
     //78 = Allmother
-    var index = 0
+    var index = 65
 
     override fun create() {
         //Load the batch
         Draw.batch
         LocalAssets.getInstance().load()
 
-        index = Random.nextInt(cards.size)
+        //index = Random.nextInt(cards.size)
 
         val folder =
             File("assets/images/cards").listFiles()!!
