@@ -1,40 +1,60 @@
 [
   {
-    "name": "Blistering Heatwave",
-    "cost": 8,
-    "tags": [
-      "Nature",
-      "Rare"
-    ],
-    "ability": ["Action.", "Deploy: Banish a unit or artifact."],
-    "quote": "Just when you think it can't get any hotter..."
-  },
-  {
-    "name": "Giant Turtle",
-    "power": 6,
+    "name": "Seraphim",
+    "power": 8,
     "cost": 5,
     "tags": [
-      "Beast",
+      "Justice",
+      "Angel",
       "Rare"
     ],
-    "ability": [
-      "Deploy: Add an additional mana die to the pot.",
-      "Expire: Remove a mana die from the pot."
-    ],
-    "quote": "Could this be a dog?"
+    "ability": ["Reflex: Move to the top of your deck."],
+    "quote": ""
   },
   {
-    "name": "Bounty Hunter",
-    "power": 3,
-    "cost": 4,
+    "name": "Hamadryad",
+    "cost": 2,
     "tags": [
-      "Human",
-      "Rare"
+      "Peace"
     ],
-    "ability": [
-      "Deploy: Deactivate a unit."
+    "ability": ["Harmony."],
+    "quote": ""
+  },
+  {
+    "name": "Scribe",
+    "cost": 2,
+    "tags": [
+      "Wisdom"
     ],
-    "quote": "You can run, but you can't hide."
+    "ability": [],
+    "quote": ""
+  },
+  {
+    "name": "Harlequin",
+    "cost": 2,
+    "tags": [
+      "Vice"
+    ],
+    "ability": [],
+    "quote": ""
+  },
+  {
+    "name": "Longshoreman Raider",
+    "cost": 2,
+    "tags": [
+      "Rage"
+    ],
+    "ability": [],
+    "quote": ""
+  },
+  {
+    "name": "Dwarven Footpad",
+    "cost": 2,
+    "tags": [
+      "Greed"
+    ],
+    "ability": [],
+    "quote": ""
   },
   {
     "name": "Pact",
@@ -102,11 +122,48 @@
     "quote": "I didn't ask how big the room was. I said I cast fireball."
   },
   {
+    "name": "Bounty Hunter",
+    "power": 3,
+    "cost": 4,
+    "tags": [
+      "Human",
+      "Rare"
+    ],
+    "ability": [
+      "Deploy: Deactivate a unit."
+    ],
+    "quote": "You can run, but you can't hide."
+  },
+  {
+    "name": "Giant Turtle",
+    "power": 6,
+    "cost": 5,
+    "tags": [
+      "Beast",
+      "Rare"
+    ],
+    "ability": [
+      "Deploy: Add an additional mana die to the pot.",
+      "Expire: Remove a mana die from the pot."
+    ],
+    "quote": "Could this be a dog?"
+  },
+  {
+    "name": "Blistering Heatwave",
+    "cost": 8,
+    "tags": [
+      "Nature",
+      "Rare"
+    ],
+    "ability": ["Action.", "Deploy: Banish a unit or artifact."],
+    "quote": "Just when you think it can't get any hotter..."
+  },
+  {
     "name": "Chaos Slave",
     "power": 1,
     "cost": 2,
     "tags": [
-      "Chaos",
+      "Vice",
       "Human"
     ],
     "ability": ["Deploy, Chaos 6: Hasten.", "Activate: Tutor a common chaos unit, then destroy self."],
@@ -117,7 +174,7 @@
     "power": 3,
     "cost": 2,
     "tags": [
-      "Chaos",
+      "Vice",
       "Human",
       "Soldier"
     ],
@@ -129,7 +186,7 @@
     "power": 1,
     "cost": 2,
     "tags": [
-      "Chaos",
+      "Vice",
       "Human",
       "Spy"
     ],
@@ -141,7 +198,7 @@
     "power": 3,
     "cost": 3,
     "tags": [
-      "Chaos",
+      "Vice",
       "Human",
       "Soldier"
     ],
@@ -153,7 +210,7 @@
     "power": 2,
     "cost": 3,
     "tags": [
-      "Chaos",
+      "Vice",
       "Human",
       "Soldier"
     ],
@@ -165,7 +222,7 @@
     "power": 3,
     "cost": 3,
     "tags": [
-      "Chaos",
+      "Vice",
       "Human",
       "Soldier"
     ],
@@ -177,7 +234,7 @@
     "power": 4,
     "cost": 3,
     "tags": [
-      "Chaos",
+      "Vice",
       "Human",
       "Knight"
     ],
@@ -189,7 +246,7 @@
     "power": 2,
     "cost": 4,
     "tags": [
-      "Chaos",
+      "Vice",
       "Human",
       "Mage"
     ],
@@ -201,7 +258,7 @@
     "power": 1,
     "cost": 4,
     "tags": [
-      "Chaos",
+      "Vice",
       "Human",
       "Spy"
     ],
@@ -213,7 +270,7 @@
     "power": 7,
     "cost": 4,
     "tags": [
-      "Chaos",
+      "Vice",
       "Human",
       "Aristocrat"
     ],
@@ -225,7 +282,7 @@
     "power": 1,
     "cost": 5,
     "tags": [
-      "Chaos",
+      "Vice",
       "Human",
       "Spy",
       "Rare"
@@ -242,7 +299,7 @@
     "cost": 5,
     "rarity": "rare",
     "tags": [
-      "Chaos",
+      "Vice",
       "Location",
       "Rare"
     ],
@@ -253,23 +310,11 @@
     "quote": "If home is where the heart is, then they're homeless."
   },
   {
-    "name": "Nameless God of Sorrow",
-    "power": 3,
-    "cost": 9,
-    "tags": [
-      "Chaos",
-      "Deity",
-      "Legendary"
-    ],
-    "ability": ["Chaos 4: Tutor self.", "Chaos 5: Resurrect self."],
-    "quote": "Weep not for what has been, but for what will be."
-  },
-  {
     "name": "Lord Kilgrom",
     "power": 6,
     "cost": 6,
     "tags": [
-      "Chaos",
+      "Vice",
       "Human",
       "Aristocrat",
       "Rare"
@@ -282,7 +327,7 @@
     "power": 3,
     "cost": 7,
     "tags": [
-      "Chaos",
+      "Vice",
       "Human",
       "Spy",
       "Rare"
@@ -295,7 +340,7 @@
     "power": 3,
     "cost": 7,
     "tags": [
-      "Chaos",
+      "Vice",
       "Human",
       "Aristocrat",
       "Rare"
@@ -307,7 +352,7 @@
     "name": "Pandemonium",
     "cost": 7,
     "tags": [
-      "Chaos",
+      "Vice",
       "Spell",
       "Rare"
     ],
@@ -326,7 +371,7 @@
     "power": 3,
     "cost": 8,
     "tags": [
-      "Chaos",
+      "Vice",
       "Human",
       "Aristocrat",
       "Legendary"
@@ -335,11 +380,23 @@
     "quote": "A single incompetent enemy is worth a thousand incompetent friends."
   },
   {
+    "name": "Nameless God of Sorrow",
+    "power": 3,
+    "cost": 9,
+    "tags": [
+      "Vice",
+      "Deity",
+      "Legendary"
+    ],
+    "ability": ["Chaos 4: Tutor self.", "Chaos 5: Resurrect self."],
+    "quote": "Weep not for what has been, but for what will be."
+  },
+  {
     "name": "Kali, High Priestess",
     "power": 4,
     "cost": 9,
     "tags": [
-      "Chaos",
+      "Vice",
       "Human",
       "Priest",
       "Legendary"
@@ -355,7 +412,7 @@
     "power": 7,
     "cost": 9,
     "tags": [
-      "Chaos",
+      "Vice",
       "Dragon",
       "Legendary"
     ],
@@ -371,7 +428,7 @@
     "power": 3,
     "cost": 10,
     "tags": [
-      "Chaos",
+      "Vice",
       "Human",
       "Priest",
       "Legendary"
@@ -384,7 +441,7 @@
     "power": 2,
     "cost": 10,
     "tags": [
-      "Chaos",
+      "Vice",
       "Deity",
       "Legendary"
     ],
@@ -396,7 +453,7 @@
     "power": 3,
     "cost": 11,
     "tags": [
-      "Chaos",
+      "Vice",
       "Deity",
       "Legendary"
     ],
@@ -731,7 +788,7 @@
       "Fairy"
     ],
     "ability": ["Deploy: Conjure earth mana water mana air mana.", "Activate: Repeat the Deploy ability."],
-    "quote": "So tiny, yet so beautiful."
+    "quote": "All you need is a little pixie dust."
   },
   {
     "name": "Dryad Archer",
@@ -928,6 +985,20 @@
     "quote": "Give me your hands, if we be friends."
   },
   {
+    "name": "Alraune",
+    "power": 3,
+    "cost": 6,
+    "tags": [
+      "Peace",
+      "Fairy"
+    ],
+    "ability": [
+      "Deploy: Convert light mana into earth mana, dark mana into water mana, and fire mana into air mana.",
+      "Finally: Rally once for each orb changed."
+    ],
+    "quote": "If you don't believe in fairies, it means fairies don't believe in you!"
+  },
+  {
     "name": "Jack Frost",
     "power": 4,
     "cost": 8,
@@ -945,7 +1016,7 @@
     "cost": 8,
     "tags": [
       "Peace",
-      "Dryad",
+      "Human",
       "Legendary"
     ],
     "ability": ["Held, 4 water mana: Play self, then draw a card.", "Finale, X water mana: Rally X."],

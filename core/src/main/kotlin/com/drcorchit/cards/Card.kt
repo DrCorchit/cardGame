@@ -8,8 +8,11 @@ import com.drcorchit.cards.Textures.asSprite
 import com.drcorchit.cards.graphics.Draw
 import com.drcorchit.justice.utils.StringUtils.normalize
 import com.drcorchit.justice.utils.json.JsonUtils.parseFromFile
+import com.drcorchit.justice.utils.json.JsonUtils.toJsonArray
 import com.drcorchit.justice.utils.math.Compass
 import com.google.gson.JsonObject
+import com.google.gson.JsonPrimitive
+import java.io.File
 import kotlin.math.min
 
 class Card(
@@ -55,8 +58,8 @@ class Card(
         ?.setOffset(Compass.NORTH)
 
     init {
-    	if (image == null) {
-            println("No card art found for: $name")
+        if (image == null) {
+            //println("No card art found for: $name")
         }
     }
 
@@ -69,7 +72,51 @@ class Card(
         json["quote"].asString
     )
 
+    fun serialize(): JsonObject {
+        val output = JsonObject()
+        output.addProperty("name", name)
+        if (power > 0) {
+            output.addProperty("power", power)
+        }
+        output.addProperty("cost", cost)
+        output.add("tags", tags.map { JsonPrimitive(it) }.toJsonArray())
+        output.add("ability", abilities.map { JsonPrimitive(it) }.toJsonArray())
+        output.addProperty("quote", quote)
+        return output
+    }
+
     companion object {
+
+        val nameRegex = "(?<name>.*)"
+        val statsRegex = "((?<power>\\d+)/)?(?<cost>\\d+)p"
+        val tagsRegex = "(?<tags>\\.+(,\\.+)*)"
+        val abilityRegex = "(?<abilities>\\.+(;\\.+)*)"
+        val quoteRegex = "(?<quote>.*)"
+
+        val regex = Regex("$nameRegex $statsRegex [$tagsRegex] [$abilityRegex] [$quoteRegex]")
+
+        @JvmStatic
+        fun parse(str: String): Card {
+            val match = regex.matchEntire(str)!!.groups
+            val name = match["name"]!!.value
+            val power = match["power"]?.value?.toInt() ?: 0
+            val cost = match["cost"]!!.value.toInt()
+            val tags = match["tags"]?.value?.split(",") ?: listOf()
+            val abilities = match["abilities"]!!.value.split(",").map { it.trim() }
+            val quote = match["quote"]!!.value
+
+            return Card(name, power, cost, tags, abilities, quote)
+        }
+
+        fun saveTo(file: String) {
+            val output = cards.joinToString("\n")
+            File(file).writeText(output)
+        }
+
+        fun readFrom(file: String): List<Card> {
+            return File(file).readLines().map { parse(it) }
+        }
+
         @JvmStatic
         fun loadAbility(json: JsonObject): List<String> {
             val ability = json["ability"]
@@ -86,16 +133,19 @@ class Card(
         }
 
         val cards by lazy {
+            readFrom("assets/cards.txt")
+            /*
             parseFromFile("assets/json/cards.json")!!
                 .first.asJsonArray!!
                 .map { Card(it.asJsonObject) }
+             */
         }
 
         init {
-            cards.groupBy { it.motive }
+            val cardsByMotive = cards.groupBy { it.motive }
                 .map { it.key to it.value.groupBy { card -> card.rarity } }
                 .map { it.first to it.second.mapValues { cards -> cards.value.size } }
-                .forEach { entry -> entry.second.forEach{ println("${entry.first} ${it.key}: ${it.value}") } }
+                .forEach { entry -> entry.second.forEach { println("${entry.first} ${it.key}: ${it.value}") } }
         }
 
         val textColor = Color.valueOf("#603000ff")
@@ -248,6 +298,9 @@ class Card(
     }
 
     override fun toString(): String {
-        return "$name $power/${cost}p $abilityText $quote"
+        val statsStr = if (power > 0) "$power/${cost}p" else "${cost}p"
+        val tagsStr = tags.joinToString(",")
+        val abilitiesStr = abilities.joinToString("\n  ")
+        return "$name: $statsStr [$tagsStr] [$abilitiesStr] [$quote]"
     }
 }

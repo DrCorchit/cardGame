@@ -5,36 +5,34 @@ import com.drcorchit.cards.Textures.asSprite
 import com.drcorchit.justice.utils.math.Compass
 
 enum class Motive(val color: Color) {
-    //Neutral(Color.valueOf("504020")),
-    Neutral(Color.valueOf("603000")),
+    //542
+    Neutral("603000"),
 
-    //Nature and angelic themes.
-    //Earth, Water, Air, and Light mana focused
-    //Two sub-factions: nature, and angels
-    //nature -> earth, water, air, plus fairies/dryads/treants/beasts
-    //angels -> angels and human healers, emphasis on resurrection and healing
-    Peace(Color.valueOf("106010")),
+    //Earth + Water + Air focused, fairies/dryads/treants/beasts, harmony/diversity
+    Peace("106010"),
 
-    //Judgment and warrior themes
-    //Fire, Water and Light mana focused
-    Justice(Color.valueOf("b09030")),
-    //ceb31c
+    //Light + Dark focused, Judgement/Legal concepts. Angels and biblical characters
+    //ceb31c, b93
+    Justice("908030"),
 
-    //Focus on human and angelic scribes
-    //Air, Light, and Dark mana focused.
-    Wisdom(Color.valueOf("243d93")),
+    //Air focused, scribes + elves
+    //243d93, 47a, 243d93, 468
+    Wisdom("4060a0"),
 
-    //Fire focused
-    //Greed(Color.valueOf("a84d2a")),
-    Greed(Color.valueOf("803000")),
+    //Fire focused, Dragons and dwarves.
+    //a84d2a, 930, 830
+    Greed("d08020"),
 
-    //Water focused
-    Vice(Color.valueOf("68135e")),
+    //Fire + Water focused, viking themes
+    //68135e, 630, c62, c30
+    Rage("a03000"),
 
-    //Dark, and Chaos focused.
-    Chaos(Color.valueOf("303030"));
+    //Chaos and Dark focused. Criminals, necromancers, and demons.
+    Vice("444444");
 
-    val texture = Textures.initTexture("${name.lowercase()}2.png")
+    constructor(color: String) : this(Color.valueOf(color))
+
+    val texture = Textures.initTexture("${name.lowercase()}.png")
     val image = texture.asSprite().setOffset(Compass.CENTER)
 
     val secondaryColor = Color(color.r + .12f, color.g + .12f, color.b + .12f, .40f)

@@ -11,6 +11,7 @@ import com.drcorchit.cards.graphics.Draw
 import com.drcorchit.justice.utils.IOUtils
 import com.drcorchit.justice.utils.StringUtils.normalize
 import com.drcorchit.justice.utils.logging.Logger
+import com.drcorchit.justice.utils.math.MathUtils
 import java.io.File
 import java.util.zip.Deflater
 
@@ -21,7 +22,7 @@ class Main : ApplicationAdapter() {
     //27 = Kali
     //52 = Neromir
     //78 = Allmother
-    var index = 65
+    var index = 0
 
     override fun create() {
         //Load the batch
@@ -31,17 +32,22 @@ class Main : ApplicationAdapter() {
         //index = Random.nextInt(cards.size)
 
         val folder =
-            File("assets/images/cards").listFiles()!!
+            File("assets/images/cards/used").listFiles()!!
                 .filter { !it.isDirectory }
                 .map { it.nameWithoutExtension.normalize() }
                 .toMutableSet()
         folder.removeAll(cards.map { it.name.normalize() }.toSet())
-        println("Unused card arts:\n${folder.joinToString("\n")}}")
+        if (folder.isNotEmpty()) {
+            println("Unused card arts {\n  ${folder.joinToString("\n  ")}\n}")
+        }
     }
 
     override fun render() {
         if (Gdx.input.isButtonJustPressed(Input.Buttons.LEFT)) {
-            index = (index + 1) % cards.size
+            index = MathUtils.modulus(index + 1, cards.size)
+        }
+        if (Gdx.input.isButtonJustPressed(Input.Buttons.RIGHT)) {
+            index = MathUtils.modulus(index - 1, cards.size)
         }
 
         val card = cards[index]
