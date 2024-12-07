@@ -115,9 +115,8 @@
       "Spell"
     ],
     "ability": [
-      "Action.",
-      "Deploy: Conjure 1 fire mana and Assault 2.",
-      "Deploy, Expend 1 fire mana: Assault 3."
+      "Instant: Conjure 1 fire mana and Assault 2.",
+      "Instant, Expend 1 fire mana: Assault 3."
     ],
     "quote": "I didn't ask how big the room was. I said I cast fireball."
   },
@@ -155,7 +154,7 @@
       "Nature",
       "Rare"
     ],
-    "ability": ["Action.", "Deploy: Banish a unit or artifact."],
+    "ability": ["Instant: Banish a unit or artifact."],
     "quote": "Just when you think it can't get any hotter..."
   },
   {
@@ -357,11 +356,10 @@
       "Rare"
     ],
     "ability": [
-      "Action.",
       "Echo.",
-      "Chaos 4: Choose three cards from your deck, then play one at random.",
-      "Chaos 5: Choose two cards from your deck, then play one at random.",
-      "Chaos 6: Tutor a card from your deck.",
+      "Instant, Chaos 4: Choose three cards from your deck, then play one at random.",
+      "Instant: Chaos 5: Choose two cards from your deck, then play one at random.",
+      "Instant: Chaos 6: Tutor a card from your deck.",
       "Finally: Return any unplayed cards to your deck."
     ],
     "quote": "Pandemonium did not reign; it poured."
@@ -578,7 +576,7 @@
     "tags": [
       "Greed"
     ],
-    "ability": ["Action.", "Expend 1 air mana, then Tutor a common dragon."],
+    "ability": ["Instant, Expend 1 air mana: Tutor a common dragon."],
     "quote": "By the time you see them, it's too late."
   },
   {
@@ -772,9 +770,8 @@
       "Legendary"
     ],
     "ability": [
-      "Action.",
-      "Deploy: Play a dwarf, then Tutor a common liquor card",
-      "Deploy: Tutor a common dwarf, then Play a liquor card.",
+      "Instant: Play a dwarf, then Tutor a common liquor card.",
+      "Instant: Tutor a common dwarf, then Play a liquor card.",
       "Finally: Draw a card."
     ],
     "quote": "When its a drinking contest, everybody wins. -- Dwarven proverb"
@@ -824,8 +821,7 @@
       "Nature"
     ],
     "ability": [
-      "Action.",
-      "Destroy an allied unit of X power, then rally X and conjure X earth mana, air mana, or water mana."
+      "Instant: Destroy an allied unit of X power, then rally X and conjure X earth mana, air mana, or water mana."
     ],
     "quote": "Flames clear the way for new growth."
   },
@@ -889,8 +885,7 @@
       "Nature"
     ],
     "ability": [
-      "Action.",
-      "Assault 2.",
+      "Instant: Assault 2.",
       "Expend X air mana: Increase the Assault by X."
     ],
     "quote": "You've been thunderstruck."
@@ -940,8 +935,7 @@
       "Rare"
     ],
     "ability": [
-      "Action.",
-      "Expend X water mana: Assassinate X.",
+      "Instant, Expend X water mana: Assassinate X.",
       "Finally: Conjure 6 water mana."
     ],
     "quote": "Six feet high and rising"
@@ -969,7 +963,7 @@
       "Nature",
       "Rare"
     ],
-    "ability": ["Action.", "Conjure water mana air mana, then Tutor a nature card."],
+    "ability": ["Instant: Conjure water mana air mana, then Tutor a nature card."],
     "quote": "She's a-gonna blow!"
   },
   {
@@ -1089,8 +1083,7 @@
       "Law"
     ],
     "ability": [
-      "Action.",
-      "Deploy: Conjure 3 dark mana and Deactivate a unit."
+      "Instant: Conjure 3 dark mana and Deactivate a unit."
     ],
     "quote": "Stop right there!"
   },
@@ -1145,8 +1138,8 @@
       "Law"
     ],
     "ability": [
-      "Action.",
-      "Deploy: Expend light mana dark mana, then Assassinate 3"
+      "Instant: Conjure light mana dark mana, then Assault 3.",
+      "Instant, Expend light mana dark mana: Assassinate 3"
     ],
     "quote": "You have the right to face your accuser in a court of law."
   },
@@ -1198,8 +1191,7 @@
       "Law"
     ],
     "ability": [
-      "Action.",
-      "Deploy: Expend 2 dark mana, then Seize 2"
+      "Instant, Expend 2 dark mana: Seize 2"
     ],
     "quote": "See you in court."
   },
@@ -1399,10 +1391,9 @@
       "Rare"
     ],
     "ability": [
-      "Action.",
       "Echo.",
-      "Deploy: Conjure 2 light mana and Tutor a common Justice unit.",
-      "Deploy, Expend 2 light mana: Tutor a Justice unit."
+      "Instant: Conjure 2 light mana and Tutor a common Justice unit.",
+      "Instant, Expend 2 light mana: Tutor a Justice unit."
     ],
     "quote": "Law is order, and good law is good order."
   },

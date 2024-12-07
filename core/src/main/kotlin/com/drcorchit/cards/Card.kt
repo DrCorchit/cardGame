@@ -101,15 +101,16 @@ class Card(
             val name = match["name"]!!.value
             val power = match["power"]?.value?.toInt() ?: 0
             val cost = match["cost"]!!.value.toInt()
-            val tags = match["tags"]?.value?.split(",") ?: listOf()
+            val tags = match["tags"]!!.value.split(",").map { it.trim() }
             val abilities = match["abilities"]!!.value.split(",").map { it.trim() }
             val quote = match["quote"]!!.value
 
             return Card(name, power, cost, tags, abilities, quote)
         }
 
-        fun saveTo(file: String) {
-            val output = cards.joinToString("\n")
+        @JvmStatic
+        fun List<Card>.saveTo(file: String) {
+            val output = this.joinToString("\n")
             File(file).writeText(output)
         }
 
@@ -133,30 +134,34 @@ class Card(
         }
 
         val cards by lazy {
-            readFrom("assets/cards.txt")
-            /*
+            //readFrom("assets/cards.txt")
+            //*
             parseFromFile("assets/json/cards.json")!!
                 .first.asJsonArray!!
                 .map { Card(it.asJsonObject) }
-             */
+            //*/
         }
 
         init {
-            val cardsByMotive = cards.groupBy { it.motive }
-                .map { it.key to it.value.groupBy { card -> card.rarity } }
-                .map { it.first to it.second.mapValues { cards -> cards.value.size } }
-                .forEach { entry -> entry.second.forEach { println("${entry.first} ${it.key}: ${it.value}") } }
+            val cardsByMotive = cards.groupBy { card -> card.motive }
+                .mapValues { it.value.groupBy { card -> card.rarity } }
+
+            cardsByMotive.entries
+                .forEach { entry ->
+                    entry.value.forEach {
+                        println("${entry.key} ${it.key}: ${it.value.size}")
+                    }
+                }
+
+            cardsByMotive.mapValues { it.value.values.flatten() }
+                .values.map { list -> list.sortedBy { it.cost } }
+                .forEach { it.saveTo("assets/cards/${it.first().motive.name}.txt") }
         }
 
         val textColor = Color.valueOf("#603000ff")
         val trayColor = Color.valueOf("#00000080")
 
-        //Quote text color was: Color.valueOf("#402000ff")
-        //val strokeColor = Color.valueOf("#80400080")
-        //val strokeColor = Color.valueOf("#a0703080")
-        //Color.valueOf("#80503080")
         val stroke = Textures.brushStroke.asSprite().setOffset(Compass.CENTER)
-
         val star = Textures.star.asSprite().setOffset(Compass.CENTER)
         val tray = Textures.tray.asSprite().setOffset(Compass.SOUTH)
         val costBack = Textures.costBack.asSprite().setOffset(200f, 150f)
@@ -218,7 +223,6 @@ class Card(
         tray.draw(Draw.batch, midWidth, 0f)
         border.draw(Draw.batch, 0f, 0f)
         rarity.image.draw(Draw.batch, 0f, 0f, W.toFloat(), H.toFloat())
-
 
         //Power diamond
         val diamond = motive.image
@@ -299,8 +303,8 @@ class Card(
 
     override fun toString(): String {
         val statsStr = if (power > 0) "$power/${cost}p" else "${cost}p"
-        val tagsStr = tags.joinToString(",")
-        val abilitiesStr = abilities.joinToString("\n  ")
+        val tagsStr = tags.joinToString(", ")
+        val abilitiesStr = abilities.joinToString("; ")
         return "$name: $statsStr [$tagsStr] [$abilitiesStr] [$quote]"
     }
 }
