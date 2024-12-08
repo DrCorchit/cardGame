@@ -1,4 +1,4 @@
-Hamadryad: 2p [Peace] [Harmony.] []
+Hamadryad: 3/2p [Peace, Dryad] [Harmony.] [Trees are the life of the forest.]
 Pixie: 1/2p [Peace, Fairy] [Deploy: Conjure earth mana water mana air mana.; Activate: Repeat the Deploy ability.] [All you need is a little pixie dust.]
 Dryad Archer: 1/2p [Peace, Dryad] [Haste.; Activate, Expend air mana: Assault 1.; Turnwise: Reactivate.] [They always fire a warning shot.]
 Fairy Ring: 1/2p [Peace, Fairy] [Haste.; Activate, Expend earth mana: Deactivate an enemy unit.; Inactive, Turnwise: Conjure 1 earth mana, water mana, or air mana.] [Come dance with us!]

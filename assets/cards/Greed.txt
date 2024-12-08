@@ -1,4 +1,4 @@
-Dwarven Footpad: 2p [Greed] [] []
+Dwarven Drunkard: 1/2p [Greed] [Imbibe: Rally 3.] [I can stop anytime I want!]
 Fireswill Wine: 2p [Greed, Vice, Liquor] [Equipment.; Equip: Rally 4 and conjure 2 fire mana.; Finale: Rout 2.] [The cheapest booze that money can buy.]
 Dwarven Miner: 2/2p [Greed, Dwarf] [Activate: Rally 1 and conjure 1 fire mana.; Imbibe: Reactivate.] [Screw whistling--we drink while we work!]
 Forgetender: 2/2p [Greed, Dwarf] [Turnwise: Conjure fire mana.; Imbibe: Conjure 2 fire mana.] [Work them bellows, boy, till they're hotter than hot!]

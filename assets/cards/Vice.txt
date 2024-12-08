@@ -1,4 +1,4 @@
-Harlequin: 2p [Vice] [] []
+Harlequin: 2/2p [Vice] [Activate: Swap a die from the pot with one from your opponent's pool.; Turnwise: Reactivate.] [Tricked ya!]
 Chaos Slave: 1/2p [Vice, Human] [Deploy, Chaos 6: Hasten.; Activate: Tutor a common chaos unit, then destroy self.] [A man cannot serve two masters.]
 Chaos Vanguard: 3/2p [Vice, Human, Soldier] [Deploy: Reroll 1.; Activate: Repeat the deploy ability.] [Kill, steal, destroy!]
 Saboteur: 1/2p [Vice, Human, Spy] [Disloyal.; Deploy: Expend X mana dice of the same color, then Rally X.] [This is the war of the future.]

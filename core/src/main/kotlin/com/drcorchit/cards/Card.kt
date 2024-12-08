@@ -7,7 +7,6 @@ import com.drcorchit.cards.Main.Companion.W
 import com.drcorchit.cards.Textures.asSprite
 import com.drcorchit.cards.graphics.Draw
 import com.drcorchit.justice.utils.StringUtils.normalize
-import com.drcorchit.justice.utils.json.JsonUtils.parseFromFile
 import com.drcorchit.justice.utils.json.JsonUtils.toJsonArray
 import com.drcorchit.justice.utils.math.Compass
 import com.google.gson.JsonObject
@@ -88,24 +87,36 @@ class Card(
     companion object {
 
         val nameRegex = "(?<name>.*)"
-        val statsRegex = "((?<power>\\d+)/)?(?<cost>\\d+)p"
-        val tagsRegex = "(?<tags>\\.+(,\\.+)*)"
-        val abilityRegex = "(?<abilities>\\.+(;\\.+)*)"
-        val quoteRegex = "(?<quote>.*)"
+        val powerRegex = "(?<power>\\d+)"
+        val costRegex = "(?<cost>\\d+)"
+        val armorRegex = "(?<armor>\\d+)a "
+        val statsRegex = "($armorRegex)?($powerRegex\\/)?${costRegex}p"
+        val tagsRegex = "(?<tags>.*?)"
+        val abilityRegex = "(?<abilities>.*?)"
+        val quoteRegex = "(?<quote>.*?)"
 
-        val regex = Regex("$nameRegex $statsRegex [$tagsRegex] [$abilityRegex] [$quoteRegex]")
+        val regex = Regex("$nameRegex: $statsRegex \\[$tagsRegex] \\[$abilityRegex] \\[$quoteRegex]")
 
         @JvmStatic
-        fun parse(str: String): Card {
-            val match = regex.matchEntire(str)!!.groups
-            val name = match["name"]!!.value
-            val power = match["power"]?.value?.toInt() ?: 0
-            val cost = match["cost"]!!.value.toInt()
-            val tags = match["tags"]!!.value.split(",").map { it.trim() }
-            val abilities = match["abilities"]!!.value.split(",").map { it.trim() }
-            val quote = match["quote"]!!.value
+        fun parse(str: String): Card? {
+            if (str.isBlank()) {
+                return null
+            }
 
-            return Card(name, power, cost, tags, abilities, quote)
+            try {
+                val match = regex.matchEntire(str)!!.groups
+                val name = match["name"]!!.value
+                val power = match["power"]?.value?.toInt() ?: 0
+                val cost = match["cost"]!!.value.toInt()
+                val tags = match["tags"]!!.value.split(",").map { it.trim() }
+                val abilities = match["abilities"]!!.value.split(";").map { it.trim() }
+                val quote = match["quote"]!!.value
+
+                return Card(name, power, cost, tags, abilities, quote)
+            } catch (e: Exception) {
+                println("Error parsing line: $str")
+                return null
+            }
         }
 
         @JvmStatic
@@ -114,8 +125,9 @@ class Card(
             File(file).writeText(output)
         }
 
-        fun readFrom(file: String): List<Card> {
-            return File(file).readLines().map { parse(it) }
+        fun readFrom(filename: String): List<Card> {
+            return File(filename).listFiles()!!
+                .flatMap { file -> file.readLines().mapNotNull { parse(it) } }
         }
 
         @JvmStatic
@@ -134,12 +146,12 @@ class Card(
         }
 
         val cards by lazy {
-            //readFrom("assets/cards.txt")
-            //*
+            readFrom("assets/cards")
+            /*
             parseFromFile("assets/json/cards.json")!!
                 .first.asJsonArray!!
                 .map { Card(it.asJsonObject) }
-            //*/
+            */
         }
 
         init {
@@ -153,9 +165,12 @@ class Card(
                     }
                 }
 
+            /*
             cardsByMotive.mapValues { it.value.values.flatten() }
                 .values.map { list -> list.sortedBy { it.cost } }
                 .forEach { it.saveTo("assets/cards/${it.first().motive.name}.txt") }
+
+             */
         }
 
         val textColor = Color.valueOf("#603000ff")
