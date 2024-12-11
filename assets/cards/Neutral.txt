@@ -1,3 +1,4 @@
+Squirrel: 2/2p [Beast] [Deplopy: Banish a card from your opponent's graveyard.] [Just one badass squirrel. Nothing more, nothing less.]
 Pact: 3p [Spell] [Equip: Rally 6; Expire: Rout 6.] [For sale, world. Price: your soul.]
 Elemental Priestess: 3/3p [Human, Priest] [Deploy: Convert all mana of one color into another color of your choice.] [All magic comes from one source, and to its source must return.]
 Butler: 1/3p [Human] [Deploy: Rally 2.; Finale: Rally 2.] [Anything you require, sir.]
@@ -7,4 +8,4 @@ Assassin: 1/4p [Human, Spy] [Disloyal.; Deploy: Assassinate 4.] [Humans make goo
 Bounty Hunter: 3/4p [Human, Rare] [Deploy: Deactivate a unit.] [You can run, but you can't hide.]
 Necromancy: 5p [Spell, Rare] [Instant: Resurrect a common unit.] [The four stages of grief: denial, anger, despair... necromancy?]
 Giant Turtle: 6/5p [Beast, Rare] [Deploy: Add an additional mana die to the pot.; Expire: Remove a mana die from the pot.] [Could this be a dog?]
-Blistering Heatwave: 8p [Nature, Rare] [Instant: Banish a unit or artifact.] [Just when you think it can't get any hotter...]
+Blistering Heatwave: 8p [Nature, Legendary] [Instant: Banish a unit or artifact.] [Just when you think it can't get any hotter...]

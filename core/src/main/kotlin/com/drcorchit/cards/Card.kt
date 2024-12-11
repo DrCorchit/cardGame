@@ -95,7 +95,8 @@ class Card(
         val abilityRegex = "(?<abilities>.*?)"
         val quoteRegex = "(?<quote>.*?)"
 
-        val regex = Regex("$nameRegex: $statsRegex \\[$tagsRegex] \\[$abilityRegex] \\[$quoteRegex]")
+        val regex =
+            Regex("$nameRegex: $statsRegex \\[$tagsRegex] \\[$abilityRegex] \\[$quoteRegex]")
 
         @JvmStatic
         fun parse(str: String): Card? {
@@ -164,6 +165,23 @@ class Card(
                         println("${entry.key} ${it.key}: ${it.value.size}")
                     }
                 }
+
+            val cardsByRarity = cards.groupBy { it.rarity }
+            cardsByRarity.forEach { (rarity, cards) -> println("$rarity ${cards.size}") }
+            println("Total cards: ${cards.size}")
+
+            fun factionCount(motive: Motive): Int {
+                val cards = cardsByMotive[motive]!!
+
+                fun rarityCount(rarity: Rarity): Int {
+                    val count = cards[rarity]?.size ?: 0
+                    return if (rarity == Rarity.Common) count * 2 else count
+                }
+                return Rarity.entries.sumOf { rarityCount(it) }
+            }
+
+            val count = Motive.entries.sumOf { factionCount(it) } + factionCount(Motive.Neutral)
+            println("Total projected cards: $count")
 
             /*
             cardsByMotive.mapValues { it.value.values.flatten() }
