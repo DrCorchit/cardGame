@@ -6,6 +6,7 @@ import com.badlogic.gdx.Input
 import com.badlogic.gdx.files.FileHandle
 import com.badlogic.gdx.graphics.Pixmap
 import com.badlogic.gdx.graphics.PixmapIO
+import com.badlogic.gdx.scenes.scene2d.Stage
 import com.drcorchit.cards.Card.Companion.cards
 import com.drcorchit.cards.graphics.Draw
 import com.drcorchit.justice.utils.IOUtils
@@ -23,23 +24,41 @@ class Main : ApplicationAdapter() {
     //52 = Neromir
     //78 = Allmother
     var index = 0
+    //lateinit var card: CardActor
+    //lateinit var stage: Stage
+    val stage by lazy { Stage() }
+    val card by lazy { CardActor(cards[index]) }
 
     override fun create() {
         //Load the batch
         Draw.batch
         LocalAssets.getInstance().load()
-
-        //index = Random.nextInt(cards.size)
+        stage.addActor(card)
 
         val folder =
             File("assets/images/cards/used").listFiles()!!
-                .filter { !it.isDirectory }
+                .filter { it.isDirectory }
+                .flatMap { it.listFiles()!!.asList() }
                 .map { it.nameWithoutExtension.normalize() }
                 .toMutableSet()
         folder.removeAll(cards.map { it.name.normalize() }.toSet())
         if (folder.isNotEmpty()) {
             println("Unused card arts {\n  ${folder.joinToString("\n  ")}\n}")
         }
+    }
+
+    override fun resize(width: Int, height: Int) {
+        val ratio = ((width / W.toFloat()) + (height / H.toFloat())) / 2
+        //super.resize(W * ratio, H * ratio)
+        val newW = (W * ratio).toInt()
+        val newH = (H * ratio).toInt()
+
+        stage.viewport.setScreenSize(newW, newH)
+        stage.viewport.update(newW, newH)
+        Draw.resize(newW.toFloat(), newH.toFloat())
+        Gdx.app.graphics.setWindowedMode(newW, newH)
+
+        println("$newW x $newH")
     }
 
     override fun render() {
@@ -49,11 +68,14 @@ class Main : ApplicationAdapter() {
         if (Gdx.input.isButtonJustPressed(Input.Buttons.RIGHT)) {
             index = MathUtils.modulus(index - 1, cards.size)
         }
+        if (Gdx.input.isKeyJustPressed(Input.Keys.SPACE)) {
+            card.card.updateGraphic()
+        }
 
-        val card = cards[index]
+        card.card = cards[index]
 
         Draw.batch.begin()
-        card.draw()
+        stage.draw()
         Draw.batch.end()
 
         //generatePrintableCards()

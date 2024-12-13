@@ -1,11 +1,14 @@
 package com.drcorchit.cards
 
 import com.badlogic.gdx.graphics.Color
+import com.badlogic.gdx.graphics.Texture
 import com.badlogic.gdx.utils.ScreenUtils
 import com.drcorchit.cards.Main.Companion.H
 import com.drcorchit.cards.Main.Companion.W
 import com.drcorchit.cards.Textures.asSprite
+import com.drcorchit.cards.graphics.AnimatedSprite
 import com.drcorchit.cards.graphics.Draw
+import com.drcorchit.cards.graphics.Draw.batch
 import com.drcorchit.justice.utils.StringUtils.normalize
 import com.drcorchit.justice.utils.json.JsonUtils.toJsonArray
 import com.drcorchit.justice.utils.math.Compass
@@ -48,19 +51,7 @@ class Card(
         .replace("light mana", "\u0014")
         .replace("dark mana", "\u0015")
 
-    val image = (
-        LocalAssets.getInstance()
-            .getTexture(name.normalize() + ".png")
-            ?: LocalAssets.getInstance()
-                .getTexture(name.normalize() + ".jpg"))
-        ?.asSprite()
-        ?.setOffset(Compass.NORTH)
-
-    init {
-        if (image == null) {
-            //println("No card art found for: $name")
-        }
-    }
+    var image: AnimatedSprite? = updateGraphic()
 
     constructor(json: JsonObject) : this(
         json["name"].asString,
@@ -206,7 +197,7 @@ class Card(
         val cardRatio = H * 1f / W
 
         val diamondOffsetX = 80f
-        val diamondOffsetY = 120f
+        val diamondOffsetY = 135f
         val diamondW = 100f
         val diamondH = 2 * diamondW
         val starSize = 60f
@@ -230,9 +221,10 @@ class Card(
         val abilityBufferMargin = 20f
         val abilityTextW = abilityBufferW - 2 * abilityBufferMargin
 
-        val lineY = 150f
+        val borderY = 20
+        val lineY = 120f
         val quoteTextX = midWidth
-        val quoteTextY = 80f
+        val quoteTextY = (lineY + borderY) / 2
         val quoteTextW = W - 320f
     }
 
@@ -240,28 +232,30 @@ class Card(
         ScreenUtils.clear(Color.BLACK)
 
         //Draw card art
+        val image = this.image
         if (image != null) {
-            val imageRatio = image.getFrames().ratio
+            val sourceImageRatio = image.getFrames().ratio
+            val destImageRatio = (H + 20 - midHeight) / W
             val scale =
-                if (imageRatio > cardRatio / 2f) {
+                if (sourceImageRatio > destImageRatio) {
                     W.toFloat() / image.getFrames().width
                 } else {
-                    (H - midHeight) / image.getFrames().height
+                    (H + 20 - midHeight) / image.getFrames().height
                 }
 
-            image.draw(Draw.batch, midWidth, H.toFloat(), scale, scale, 0f)
+            image.draw(batch, midWidth, H.toFloat(), scale, scale, 0f)
         }
 
         //Draw border and ability text tray
-        tray.draw(Draw.batch, midWidth, 0f)
-        border.draw(Draw.batch, 0f, 0f)
-        rarity.image.draw(Draw.batch, 0f, 0f, W.toFloat(), H.toFloat())
+        tray.draw(batch, midWidth, 0f)
+        border.draw(batch, 0f, 0f)
+        rarity.image.draw(batch, 0f, 0f, W.toFloat(), H.toFloat())
 
         //Power diamond
         val diamond = motive.image
-        diamond.draw(Draw.batch, diamondOffsetX, H - diamondOffsetY, diamondW, diamondH)
+        diamond.draw(batch, diamondOffsetX, H - diamondOffsetY, diamondW, diamondH)
         if (power == 0) {
-            star.draw(Draw.batch, diamondOffsetX, H - diamondOffsetY, starSize, starSize)
+            star.draw(batch, diamondOffsetX, H - diamondOffsetY, starSize, starSize)
         } else {
             Draw.drawText(
                 diamondOffsetX,
@@ -275,7 +269,7 @@ class Card(
         }
 
         //Cost
-        costBack.draw(Draw.batch, costX, costY, costBackSize, costBackSize)
+        costBack.draw(batch, costX, costY, costBackSize, costBackSize)
         Draw.drawText(
             costX, costY + 2,
             Fonts.numberFontSmall,
@@ -289,7 +283,7 @@ class Card(
         val dims = Draw.calculateDimensions(Fonts.nameFont, name, W - 50f)
         stroke.blend = motive.secondaryColor
         val strokeW = min(dims.first + strokeMargin, strokeMaxW)
-        stroke.draw(Draw.batch, midWidth, strokeY, strokeW, strokeH)
+        stroke.draw(batch, midWidth, strokeY, strokeW, strokeH)
         Draw.drawText(midWidth, nameY, Fonts.nameFont, name, W - 50f, Compass.CENTER, motive.color)
 
         //Tags
@@ -304,7 +298,7 @@ class Card(
             motive.color
         )
 
-        //line.draw(Draw.batch, midWidth, abilityBufferY + abilityBufferH, 3f, 1f, 0f)
+        //line.draw(batch, midWidth, abilityBufferY + abilityBufferH, 3f, 1f, 0f)
 
 
         //Ability Text
@@ -320,7 +314,7 @@ class Card(
             Color.WHITE
         )
 
-        line.draw(Draw.batch, midWidth, 2 * quoteTextY, 3f, 1f, 0f)
+        line.draw(batch, midWidth, lineY, 3f, 1f, 0f)
 
         //Quote text
         Draw.drawText(
@@ -339,5 +333,22 @@ class Card(
         val tagsStr = tags.joinToString(", ")
         val abilitiesStr = abilities.joinToString("; ")
         return "$name: $statsStr [$tagsStr] [$abilitiesStr] [$quote]"
+    }
+
+    fun updateGraphic(): AnimatedSprite? {
+        val normalized = name.normalize()
+        val base = "assets/images/cards/used/${motive.name}"
+        val png = "$base/$normalized.png"
+        val jpg = "$base/$normalized.jpg"
+        val texture = if (File(png).exists()) Texture(png)
+        else if (File(jpg).exists()) Texture(jpg)
+        else null
+
+        if (texture == null) {
+            println("Could not load $png or $jpg")
+        } else {
+            image = texture.asSprite().setOffset(Compass.NORTH)
+        }
+        return image
     }
 }
