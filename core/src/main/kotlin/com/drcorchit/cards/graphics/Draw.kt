@@ -1,7 +1,6 @@
 package com.drcorchit.cards.graphics
 
 import com.drcorchit.cards.LocalAssets
-import com.drcorchit.cards.Textures
 import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.files.FileHandle
 import com.badlogic.gdx.graphics.*

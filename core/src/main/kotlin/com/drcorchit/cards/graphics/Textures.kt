@@ -1,10 +1,9 @@
-package com.drcorchit.cards
+package com.drcorchit.cards.graphics
 
 import com.badlogic.gdx.graphics.Texture
 import com.badlogic.gdx.graphics.g2d.NinePatch
 import com.badlogic.gdx.graphics.g2d.TextureRegion
-import com.drcorchit.cards.graphics.AnimatedSprite
-import com.drcorchit.cards.graphics.TextureSheet
+import com.drcorchit.cards.LocalAssets
 import com.drcorchit.justice.utils.logging.Logger
 import java.io.IOException
 
@@ -15,7 +14,7 @@ object Textures {
     val white = initTexture("white.png")
 
     val tray = initTexture("paper.png")
-    val star = initTexture("star.png")
+    //val star = initTexture("star.png")
     val costBack = initTexture("resources.png")
     val border = initTexture("border.png")
     val mana = initTexture("mana.png")

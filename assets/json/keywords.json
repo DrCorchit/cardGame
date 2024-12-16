@@ -5,15 +5,15 @@
   },
   {
     "name": "Activate",
-    "description": "Trigger the active ability of the card. A card cannot be activated the same turn it was played unless it gains haste."
+    "description": "Trigger the active ability of the card. A card cannot be activated the same turn it was played unless it gains Haste."
   },
   {
     "name": "Reactivate",
-    "description": "Retrigger the activation ability. The card must not be inactive."
+    "description": "Re-enable activation of the active ability."
   },
   {
-    "name": "Deactivate",
-    "description": "Move a card into the inactive position. This disables most abilities (i.e. card text)."
+    "name": "Lock",
+    "description": "Disable card text. Locked cards are still able to provide protection."
   },
   {
     "name": "Haste",
@@ -21,35 +21,27 @@
   },
   {
     "name": "Equip",
-    "description": "The ability is triggered when the equipment is assigned to a unit. Reserved for equipment cards."
-  },
-  {
-    "name": "Equipped",
-    "description": "The ability is triggered (on equipment) as long as the equipment is assigned to a unit, or (on a unit) when the unit has a (sometimes specific) equipment."
+    "description": "The ability is triggered when the equipment is assigned to a unit."
   },
   {
     "name": "Passive",
-    "description": "The ability is triggered passively, as long as the card is on the battlefield and has not been deactivated."
+    "description": "The ability can be triggered any number of times per turn, while in hand, deck, battlefield, or graveyard."
   },
   {
     "name": "Turnwise",
-    "description": "The ability is triggered once per turn, at turn start."
+    "description": "The ability is triggered once per turn, at turn start, while on the battlefield."
   },
   {
     "name": "Play",
     "description": "Move a card from hand to the battlefield, triggering its deploy ability."
   },
   {
-    "name": "Summon",
-    "description": "Move a card to the battlefield, bypassing its deploy ability. A card can be summoned from hand, deck, or graveyard."
-  },
-  {
     "name": "Resurrect",
-    "description": "Play a card from graveyard (instead of from hand), triggering its deploy ability."
+    "description": "Play a card from graveyard (instead of from hand)."
   },
   {
     "name": "Tutor",
-    "description": "Play a card from deck (instead of from hand), triggering its deploy ability. You must shuffle your deck at the start of the round if you tutored any cards in the previous round."
+    "description": "Play a card from deck (instead of from hand)."
   },
   {
     "name": "Destroy",
@@ -69,38 +61,39 @@
   },
   {
     "name": "Protect",
-    "description": "When the condition is met, the unit provides protection to an eligible unit, preventing it from being targeted. Deactivation does not break protection."
-  },
-  {
-    "name": "Protector",
-    "description": "This card can protect more than one unit at a time."
+    "description": "Prevent a unit from being targeted by hostile abilities (Except Assassination)."
   },
   {
     "name": "Vulnerable",
-    "description": "The card cannot be protected."
+    "description": "The card cannot receive protection."
   },
   {
     "name": "Deflect",
-    "description": "Breaks the protection established between two units."
+    "description": "The targeted card no longer protects any units."
   },
   {
     "name": "Assault X",
-    "description": "Destroy an unprotected unit with X or less power. Multiple assault abilities can be combined on the same turn on the same turn, if the target cannot be slain with a single blow."
+    "match": "Assault",
+    "description": "Destroy a unit of X or less power."
   },
   {
     "name": "Assassinate X",
-    "description": "Destroy a unit of X or less power, bypassing protection."
+    "match": "Assassinate",
+    "description": "Destroy a unit of X or less power, bypassing Protection."
   },
   {
     "name": "Overkill X",
-    "description": "Trigger this ability if the value of an assault or assassinate move exceeds the point value of the target unit by at least X."
+    "match": "Overkill",
+    "description": "Trigger this ability if an assault or assassinate ability exceeds the strength of the target unit by at least X."
   },
   {
     "name": "Seize X",
-    "description": "Move an unprotected unit with X or less power to the opposite side of the battlefield."
+    "match": "Seize",
+    "description": "Move a unit of X or less power to it's opponents battlefield."
   },
   {
     "name": "Armor X",
+    "match": "Armor",
     "description": "Added to unit power when calculating vulnerability to Assault, Assassinate, and Seize abilities."
   },
   {
@@ -109,10 +102,11 @@
   },
   {
     "name": "Reflex",
-    "description": "Trigger this ability when targeted by another ability."
+    "description": "Trigger this ability when an adjacent unit is destroyed."
   },
   {
     "name": "Expire",
+    "match": "Expire",
     "description": "Trigger this ability when destroyed."
   },
   {
@@ -121,35 +115,32 @@
   },
   {
     "name": "Expend X",
-    "description": "Reroll X common or personal mana dice of the requisite type in order to trigger the ability."
+    "match": "Expend",
+    "description": "Reroll any X mana dice of the indicated type to trigger the ability."
   },
   {
     "name": "Conjure X",
-    "description": "Change X common or personal mana dice to a certain type."
+    "match": "Conjure",
+    "description": "Change any X mana dice to the indicated type."
   },
   {
     "name": "Reroll X",
-    "description": "Reroll X common or personal mana dice of any color."
+    "match": "Reroll",
+    "description": "Reroll any X mana dice of any color."
   },
   {
     "name": "Rally X",
-    "description": "Adds the indicated number of points to the player's score."
+    "match": "Rally",
+    "description": "Add the indicated number of points to your score."
   },
   {
     "name": "Rout X",
-    "description": "Subtracts the indicated number of points to the player's score. If below zero at the end of a round, the round is automatically lost."
-  },
-  {
-    "name": "Retreat X",
-    "description": "Trigger this ability if the player is able to subtract X points from their score."
+    "match": "Rout",
+    "description": "Subtract the indicated number of points from your score."
   },
   {
     "name": "Finale",
     "description": "Trigger this ability if the card is active at the end of the round."
-  },
-  {
-    "name": "Preserve",
-    "description": "Prevent a unit from moving to the graveyard at the end of the round."
   },
   {
     "name": "Disloyal",
@@ -157,10 +148,15 @@
   },
   {
     "name": "Chaos X",
+    "match": "Chaos",
     "description": "Trigger this ability if there are at least X unique mana types available."
   },
   {
     "name": "Imbibe",
     "description": "Trigger the ability when a liquor card is equipped to the unit."
+  },
+  {
+    "name": "Bonded",
+    "description": "Trigger the ability if you control more than one copy of the card."
   }
 ]

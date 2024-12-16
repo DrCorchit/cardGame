@@ -34,17 +34,6 @@ class Main : ApplicationAdapter() {
         Draw.batch
         LocalAssets.getInstance().load()
         stage.addActor(card)
-
-        val folder =
-            File("assets/images/cards/used").listFiles()!!
-                .filter { it.isDirectory }
-                .flatMap { it.listFiles()!!.asList() }
-                .map { it.nameWithoutExtension.normalize() }
-                .toMutableSet()
-        folder.removeAll(cards.map { it.name.normalize() }.toSet())
-        if (folder.isNotEmpty()) {
-            println("Unused card arts {\n  ${folder.joinToString("\n  ")}\n}")
-        }
     }
 
     override fun resize(width: Int, height: Int) {

@@ -5,10 +5,11 @@ import com.badlogic.gdx.graphics.Texture
 import com.badlogic.gdx.utils.ScreenUtils
 import com.drcorchit.cards.Main.Companion.H
 import com.drcorchit.cards.Main.Companion.W
-import com.drcorchit.cards.Textures.asSprite
+import com.drcorchit.cards.graphics.Textures.asSprite
 import com.drcorchit.cards.graphics.AnimatedSprite
 import com.drcorchit.cards.graphics.Draw
 import com.drcorchit.cards.graphics.Draw.batch
+import com.drcorchit.cards.graphics.Textures
 import com.drcorchit.justice.utils.StringUtils.normalize
 import com.drcorchit.justice.utils.json.JsonUtils.toJsonArray
 import com.drcorchit.justice.utils.math.Compass
@@ -23,8 +24,21 @@ class Card(
     val cost: Int,
     val tags: List<String>,
     val abilities: List<String>,
-    val quote: String
+    val quote: String,
+    val strategyTags: List<String>
 ) {
+    val type = if (power > 0) {
+        CardType.Unit
+    } else if (tags.contains("Instant")) {
+        CardType.Instant
+    } else if (tags.contains("Equipment")) {
+        CardType.Equipment
+    } else if (tags.contains("Emplacement")) {
+        CardType.Emplacement
+    } else {
+        throw Exception("Unknown card type: $this")
+    }
+
     val motive = tags.firstNotNullOfOrNull {
         try {
             Motive.valueOf(it)
@@ -41,7 +55,9 @@ class Card(
         }
     } ?: Rarity.Common
 
-    val tagsText = tags.joinToString(", ")
+    val tagsText =
+        tags.subtract(setOf("Common", "Rare", "Legendary", "Instant", "Equipment", "Emplacement"))
+            .joinToString(", ")
     val abilityText = abilities.joinToString("\n")
     val styledAbilityText = abilityText
         .replace("fire mana", "\u0010")
@@ -51,6 +67,12 @@ class Card(
         .replace("light mana", "\u0014")
         .replace("dark mana", "\u0015")
 
+    val regex = Regex("\\b\\w+\\b")
+    val keywords = regex.findAll(abilityText)
+        .mapNotNull { Keyword.keywords[it.value] }
+        .distinct()
+    val keywordText = keywords.joinToString("\n") { "${it.name}: ${it.description}" }
+
     var image: AnimatedSprite? = updateGraphic()
 
     constructor(json: JsonObject) : this(
@@ -59,7 +81,8 @@ class Card(
         json["cost"].asInt,
         json.getAsJsonArray("tags").map { it.asString },
         loadAbility(json),
-        json["quote"].asString
+        json["quote"].asString,
+        json["strategy"]?.let { it.asJsonArray.map { ele -> ele.asString } } ?: listOf()
     )
 
     fun serialize(): JsonObject {
@@ -72,22 +95,23 @@ class Card(
         output.add("tags", tags.map { JsonPrimitive(it) }.toJsonArray())
         output.add("ability", abilities.map { JsonPrimitive(it) }.toJsonArray())
         output.addProperty("quote", quote)
+        output.add("strategy", strategyTags.map { JsonPrimitive(it) }.toJsonArray())
         return output
     }
 
     companion object {
-
         val nameRegex = "(?<name>.*)"
         val powerRegex = "(?<power>\\d+)"
         val costRegex = "(?<cost>\\d+)"
-        val armorRegex = "(?<armor>\\d+)a "
-        val statsRegex = "($armorRegex)?($powerRegex\\/)?${costRegex}p"
+        val armorRegex = "(?<armor>\\d+)a"
+        val statsRegex = "($armorRegex)? *($powerRegex\\/)?${costRegex}p"
         val tagsRegex = "(?<tags>.*?)"
         val abilityRegex = "(?<abilities>.*?)"
         val quoteRegex = "(?<quote>.*?)"
+        val strategyRegex = "(?<strategy>.*?)"
 
         val regex =
-            Regex("$nameRegex: $statsRegex \\[$tagsRegex] \\[$abilityRegex] \\[$quoteRegex]")
+            Regex("$nameRegex: *$statsRegex *\\[$tagsRegex] *\\[$abilityRegex] *\\[$quoteRegex]( *\\[$strategyRegex])?")
 
         @JvmStatic
         fun parse(str: String): Card? {
@@ -103,10 +127,14 @@ class Card(
                 val tags = match["tags"]!!.value.split(",").map { it.trim() }
                 val abilities = match["abilities"]!!.value.split(";").map { it.trim() }
                 val quote = match["quote"]!!.value
+                val strategyTags = match["strategy"]
+                    ?.let { it.value.split(",").map { tag -> tag.trim() } }
+                    ?: listOf()
 
-                return Card(name, power, cost, tags, abilities, quote)
+                return Card(name, power, cost, tags, abilities, quote, strategyTags)
             } catch (e: Exception) {
                 println("Error parsing line: $str")
+                e.printStackTrace()
                 return null
             }
         }
@@ -147,14 +175,36 @@ class Card(
         }
 
         init {
+            println("Using regex: $regex")
+
+            val folder =
+                File("assets/images/cards/used").listFiles()!!
+                    .filter { it.isDirectory }
+                    .flatMap { it.listFiles()!!.asList() }
+                    .map { it.nameWithoutExtension.normalize() }
+                    .toMutableSet()
+            folder.removeAll(cards.map { it.name.normalize() }.toSet())
+            if (folder.isNotEmpty()) {
+                println("Unused card arts {\n  ${folder.joinToString("\n  ")}\n}")
+            }
+
             val cardsByMotive = cards.groupBy { card -> card.motive }
                 .mapValues { it.value.groupBy { card -> card.rarity } }
 
             cardsByMotive.entries
                 .forEach { entry ->
-                    entry.value.forEach {
-                        println("${entry.key} ${it.key}: ${it.value.size}")
+                    fun count(rarity: Rarity): Int {
+                        return entry.value[rarity]?.size ?: 0
                     }
+
+                    val str = "%-10s %3d %3d %3d".format(
+                        entry.key,
+                        count(Rarity.Common),
+                        count(Rarity.Rare),
+                        count(Rarity.Legendary)
+                    )
+                    println(str)
+
                 }
 
             val cardsByRarity = cards.groupBy { it.rarity }
@@ -162,7 +212,7 @@ class Card(
             println("Total cards: ${cards.size}")
 
             fun factionCount(motive: Motive): Int {
-                val cards = cardsByMotive[motive]!!
+                val cards = cardsByMotive[motive] ?: throw Exception("No cards for motive: $motive")
 
                 fun rarityCount(rarity: Rarity): Int {
                     val count = cards[rarity]?.size ?: 0
@@ -182,11 +232,11 @@ class Card(
              */
         }
 
+        val keywordGray = Color.valueOf("#405060ff")
         val textColor = Color.valueOf("#603000ff")
         val trayColor = Color.valueOf("#00000080")
 
         val stroke = Textures.brushStroke.asSprite().setOffset(Compass.CENTER)
-        val star = Textures.star.asSprite().setOffset(Compass.CENTER)
         val tray = Textures.tray.asSprite().setOffset(Compass.SOUTH)
         val costBack = Textures.costBack.asSprite().setOffset(200f, 150f)
         val line = Textures.line.asSprite().setOffset(Compass.CENTER)
@@ -214,18 +264,19 @@ class Card(
         val strokeMaxW = W - 50f
         val strokeY = nameY - 32f
 
-        val abilityBufferX = 20f
-        val abilityBufferY = 20f
-        val abilityBufferW = W - 2 * abilityBufferX
-        val abilityBufferH = midHeight - 180f
-        val abilityBufferMargin = 20f
-        val abilityTextW = abilityBufferW - 2 * abilityBufferMargin
-
         val borderY = 20
         val lineY = 120f
         val quoteTextX = midWidth
         val quoteTextY = (lineY + borderY) / 2
         val quoteTextW = W - 320f
+
+        val abilityBufferMargin = 20f
+        val abilityBufferX = 20f
+        val abilityBufferY = lineY + 10
+        val abilityBufferW = W - 2 * abilityBufferX
+        val abilityBufferH = midHeight - (strokeH + abilityBufferY)
+        val abilityTextW = abilityBufferW - 2 * abilityBufferMargin
+
     }
 
     fun draw() {
@@ -255,7 +306,7 @@ class Card(
         val diamond = motive.image
         diamond.draw(batch, diamondOffsetX, H - diamondOffsetY, diamondW, diamondH)
         if (power == 0) {
-            star.draw(batch, diamondOffsetX, H - diamondOffsetY, starSize, starSize)
+            type.image!!.draw(batch, diamondOffsetX, H - diamondOffsetY, starSize, starSize)
         } else {
             Draw.drawText(
                 diamondOffsetX,
@@ -314,6 +365,18 @@ class Card(
             Color.WHITE
         )
 
+        //Keyword text
+        val keywordTextY = abilityBufferY + abilityBufferMargin
+        Draw.drawText(
+            textX,
+            keywordTextY,
+            Fonts.tagFont,
+            keywordText,
+            abilityTextW,
+            Compass.NORTHEAST,
+            keywordGray
+        )
+
         line.draw(batch, midWidth, lineY, 3f, 1f, 0f)
 
         //Quote text
@@ -345,7 +408,7 @@ class Card(
         else null
 
         if (texture == null) {
-            println("Could not load $png or $jpg")
+            //println("Could not load $png or $jpg")
         } else {
             image = texture.asSprite().setOffset(Compass.NORTH)
         }

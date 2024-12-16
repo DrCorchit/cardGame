@@ -1,7 +1,8 @@
 package com.drcorchit.cards
 
 import com.badlogic.gdx.graphics.Color
-import com.drcorchit.cards.Textures.asSprite
+import com.drcorchit.cards.graphics.Textures
+import com.drcorchit.cards.graphics.Textures.asSprite
 import com.drcorchit.justice.utils.math.Compass
 
 enum class Motive(val color: Color) {
@@ -26,7 +27,7 @@ enum class Motive(val color: Color) {
     Wisdom("4060a0"),
 
     //a84d2a, 930, 830
-    //Strengths: Good pointslam and thinning.
+    //Strengths: Good pointslam, engines, and greed cards.
     //Limitations: weak control and tutoring.
     //Other: relies on fire/earth mana. Dragons and dwarves.
     Greed("d08020"),
