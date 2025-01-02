@@ -25,15 +25,16 @@ object Fonts {
     }
 
     val smallFontSizes = listOf(96, 56, 64, 32, 24, 20)
-    val medFontSizes = listOf(96, 56, 72, 36, 28, 20)
+    val medFontSizes = listOf(96, 84, 96, 36, 28, 12)
     val largeFontSizes = listOf(96, 84, 96, 42, 32, 12)
-    val fontSizes = largeFontSizes
+    val fontSizes = medFontSizes
 
     val numberFont = initFont("enchanted_land.ttf", fontSizes[0])
     val numberFontSmall = initFont("enchanted_land.ttf", fontSizes[1])
     val nameFont = initFont("enchanted_land.ttf", fontSizes[2])
 
-    val defaultFont = "roboto_condensed"
+    //val defaultFont = "roboto_condensed"
+    val defaultFont = "lato"
     val textFont = initFont("$defaultFont.ttf", fontSizes[3])
     val quoteFont = initFont("${defaultFont}_italic.ttf", fontSizes[4])
     val tagFont = initFont("$defaultFont.ttf", fontSizes[4])

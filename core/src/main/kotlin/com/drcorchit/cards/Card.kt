@@ -27,14 +27,14 @@ class Card(
     val quote: String,
     val strategyTags: List<String>
 ) {
-    val type = if (power > 0) {
-        CardType.Unit
-    } else if (tags.contains("Instant")) {
+    val type = if (tags.contains("Instant")) {
         CardType.Instant
     } else if (tags.contains("Equipment")) {
         CardType.Equipment
     } else if (tags.contains("Emplacement")) {
         CardType.Emplacement
+    } else if (power > 0) {
+        CardType.Unit
     } else {
         throw Exception("Unknown card type: $this")
     }
@@ -67,10 +67,11 @@ class Card(
         .replace("light mana", "\u0014")
         .replace("dark mana", "\u0015")
 
-    val regex = Regex("\\b\\w+\\b")
-    val keywords = regex.findAll(abilityText)
-        .mapNotNull { Keyword.keywords[it.value] }
+    val keywords = Keyword.regex.findAll(abilityText)
+        .mapNotNull { Keyword.keywordsDictionary[it.value] }
         .distinct()
+    //.sortedBy { it.id }
+
     val keywordText = keywords.joinToString("\n") { "${it.name}: ${it.description}" }
 
     var image: AnimatedSprite? = updateGraphic()
@@ -115,7 +116,7 @@ class Card(
 
         @JvmStatic
         fun parse(str: String): Card? {
-            if (str.isBlank()) {
+            if (str.isBlank() || str.startsWith("#")) {
                 return null
             }
 
@@ -147,7 +148,13 @@ class Card(
 
         fun readFrom(filename: String): List<Card> {
             return File(filename).listFiles()!!
-                .flatMap { file -> file.readLines().mapNotNull { parse(it) } }
+                .flatMap { file ->
+                    if (file.name == "Justice.txt" || file.name == "Rage.txt") {
+                        listOf()
+                    } else {
+                        file.readLines().mapNotNull { parse(it) }
+                    }
+                }
         }
 
         @JvmStatic
@@ -212,17 +219,17 @@ class Card(
             println("Total cards: ${cards.size}")
 
             fun factionCount(motive: Motive): Int {
-                val cards = cardsByMotive[motive] ?: throw Exception("No cards for motive: $motive")
+                val cards = cardsByMotive[motive]
 
                 fun rarityCount(rarity: Rarity): Int {
-                    val count = cards[rarity]?.size ?: 0
+                    val count = cards?.get(rarity)?.size ?: 0
                     return if (rarity == Rarity.Common) count * 2 else count
                 }
                 return Rarity.entries.sumOf { rarityCount(it) }
             }
 
             val count = Motive.entries.sumOf { factionCount(it) } + factionCount(Motive.Neutral)
-            println("Total projected cards: $count")
+            println("Total printable cards: $count")
 
             /*
             cardsByMotive.mapValues { it.value.values.flatten() }
@@ -245,6 +252,10 @@ class Card(
         val midWidth = W / 2f
         val midHeight = tray.getFrames().height - 20f
         val cardRatio = H * 1f / W
+
+        val imageW = 950f
+        val imageH = 744f
+        val imageRatio = imageH / imageW
 
         val diamondOffsetX = 80f
         val diamondOffsetY = 135f
@@ -286,15 +297,15 @@ class Card(
         val image = this.image
         if (image != null) {
             val sourceImageRatio = image.getFrames().ratio
-            val destImageRatio = (H + 20 - midHeight) / W
+            val destImageRatio = imageRatio
             val scale =
                 if (sourceImageRatio > destImageRatio) {
-                    W.toFloat() / image.getFrames().width
+                    imageW / image.getFrames().width
                 } else {
-                    (H + 20 - midHeight) / image.getFrames().height
+                    imageH / image.getFrames().height
                 }
 
-            image.draw(batch, midWidth, H.toFloat(), scale, scale, 0f)
+            image.draw(batch, midWidth, H - 10f, scale, scale, 0f)
         }
 
         //Draw border and ability text tray

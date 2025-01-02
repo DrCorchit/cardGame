@@ -1,67 +1,124 @@
 [
   {
     "name": "Deploy",
-    "description": "The ability is triggered when the card is played."
+    "description": "Triggers when the card is played.",
+    "synonyms": ["Deploys", "Deployed"]
+  },
+  {
+    "name": "After",
+    "description": "Triggers immediately after the resolution of any deploy ability."
+  },
+  {
+    "name": "Require",
+    "description": "The card cannot be played unless the condition is met."
   },
   {
     "name": "Activate",
-    "description": "Trigger the active ability of the card. A card cannot be activated the same turn it was played unless it gains Haste."
+    "description": "The active ability of the card. Unavailable on the first turn unless the card gains Haste.",
+    "synonyms": ["Activates", "Activated"]
   },
   {
     "name": "Reactivate",
     "description": "Re-enable activation of the active ability."
   },
   {
-    "name": "Lock",
-    "description": "Disable card text. Locked cards are still able to provide protection."
-  },
-  {
     "name": "Haste",
-    "description": "The card can be activated on the turn it is played."
+    "description": "The card can be activated on the turn it is played.",
+    "synonyms": ["Hasten", "Hastened"]
   },
   {
     "name": "Equip",
-    "description": "The ability is triggered when the equipment is assigned to a unit."
-  },
-  {
-    "name": "Passive",
-    "description": "The ability can be triggered any number of times per turn, while in hand, deck, battlefield, or graveyard."
+    "description": "Triggers when the equipment is assigned to a unit."
   },
   {
     "name": "Turnwise",
-    "description": "The ability is triggered once per turn, at turn start, while on the battlefield."
+    "description": "Triggers while on the battlefield, each allied turn start."
+  },
+  {
+    "name": "Battlefield",
+    "description": "Triggers while on the battlefield, any number of times per turn."
   },
   {
     "name": "Play",
-    "description": "Move a card from hand to the battlefield, triggering its deploy ability."
+    "description": "Move a card from hand to the battlefield, triggering its deploy ability.",
+    "synonym": ["Plays", "Played"]
+  },
+  {
+    "name": "Summon",
+    "description": "Move a card to the battlefield, bypassing its deploy ability.",
+    "synonyms": ["Summons", "Summoned"]
   },
   {
     "name": "Resurrect",
-    "description": "Play a card from graveyard (instead of from hand)."
+    "description": "Play a card from graveyard and give it Doomed.",
+    "synonyms": ["Resurrects", "Resurrected"]
   },
   {
     "name": "Tutor",
-    "description": "Play a card from deck (instead of from hand)."
+    "description": "Play a card from deck.",
+    "synonyms": ["Tutors", "Tutored"]
   },
   {
     "name": "Destroy",
-    "description": "Move a card from battlefield to graveyard, triggering its expire ability."
+    "description": "Move a card from battlefield to graveyard.",
+    "synonyms": ["Destroys", "Destroyed"]
   },
   {
     "name": "Discard",
-    "description": "Move a card from hand or deck to graveyard."
+    "description": "Move a card from hand to graveyard.",
+    "synonyms": ["Discards", "Discarded"]
   },
   {
     "name": "Draw",
-    "description": "Move a card from the top of deck to hand."
+    "description": "Move a card from the top of deck to hand.",
+    "synonyms": ["Draws"]
   },
   {
-    "name": "Banish",
-    "description": "Remove a card from the game, bypassing any reflex or expire abilities."
+    "name": "Mana",
+    "description": "An elemental resource used to trigger certain abilities."
+  },
+  {
+    "name": "Expend X",
+    "description": "Reroll X mana dice of the indicated type to trigger the ability.",
+    "synonyms": ["Expend", "Expends", "Expended"]
+  },
+  {
+    "name": "Conjure X",
+    "description": "Change any X mana dice to the indicated type.",
+    "synonyms": ["Conjure", "Conjures", "Conjured"]
+  },
+  {
+    "name": "Reroll",
+    "description": "Reroll any number of common or allied mana dice.",
+    "synonyms": ["Rerolls"]
+  },
+  {
+    "name": "Rally X",
+    "description": "Add the indicated number of points to your score.",
+    "synonyms": ["Rally", "Rallies"]
+  },
+  {
+    "name": "Rout X",
+    "description": "Subtract the indicated number of points from your score.",
+    "synonyms": ["Rout", "Routs"]
+  },
+  {
+    "name": "Score",
+    "description": "The running total of points gained from Rally or lost from Rout."
+  },
+  {
+    "name": "Boost X",
+    "description": "Increase the target's power by X.",
+    "synonyms": ["Boost", "Boosted"]
   },
   {
     "name": "Protect",
-    "description": "Prevent a unit from being targeted by hostile abilities (Except Assassination)."
+    "description": "Prevent a unit from being targeted by hostile abilities.",
+    "synonyms": ["Protects", "Protecting"]
+  },
+  {
+    "name": "Protected",
+    "description": "Triggers if the target unit is being protected by another unit."
   },
   {
     "name": "Vulnerable",
@@ -73,90 +130,89 @@
   },
   {
     "name": "Assault X",
-    "match": "Assault",
-    "description": "Destroy a unit of X or less power."
+    "description": "Destroy an enemy unit of X or less power.",
+    "synonyms": ["Assault", "Assaults", "Assaulted"]
   },
   {
     "name": "Assassinate X",
-    "match": "Assassinate",
-    "description": "Destroy a unit of X or less power, bypassing Protection."
+    "description": "Destroy an enemy unit of X or less power, bypassing Protection.",
+    "synonyms": ["Assassinates", "Assassinated"]
+  },
+  {
+    "name": "Banish",
+    "description": "Remove a card from the game. Does not trigger Expire abilities.",
+    "synonyms": ["Banishes", "Banished"]
   },
   {
     "name": "Overkill X",
-    "match": "Overkill",
-    "description": "Trigger this ability if an assault or assassinate ability exceeds the strength of the target unit by at least X."
+    "description": "Trigger this ability if an assault or assassinate ability exceeds the strength of the target unit by at least X.",
+    "synonyms": ["Overkill"]
   },
   {
     "name": "Seize X",
-    "match": "Seize",
-    "description": "Move a unit of X or less power to it's opponents battlefield."
+    "description": "Move a unit of X or less power to it's opponents battlefield.",
+    "synonyms": ["Seizes", "Seized"]
   },
   {
     "name": "Armor X",
-    "match": "Armor",
-    "description": "Added to unit power when calculating vulnerability to Assault, Assassinate, and Seize abilities."
-  },
-  {
-    "name": "Invisible",
-    "description": "The unit cannot be targeted by hostile abilities."
-  },
-  {
-    "name": "Reflex",
-    "description": "Trigger this ability when an adjacent unit is destroyed."
+    "description": "Added to unit power when calculating vulnerability to Assault, Assassinate, and Seize abilities.",
+    "synonym": ["Armor"]
   },
   {
     "name": "Expire",
-    "match": "Expire",
-    "description": "Trigger this ability when destroyed."
-  },
-  {
-    "name": "Mana",
-    "description": "An elemental resource used to trigger certain abilities."
-  },
-  {
-    "name": "Expend X",
-    "match": "Expend",
-    "description": "Reroll any X mana dice of the indicated type to trigger the ability."
-  },
-  {
-    "name": "Conjure X",
-    "match": "Conjure",
-    "description": "Change any X mana dice to the indicated type."
-  },
-  {
-    "name": "Reroll X",
-    "match": "Reroll",
-    "description": "Reroll any X mana dice of any color."
-  },
-  {
-    "name": "Rally X",
-    "match": "Rally",
-    "description": "Add the indicated number of points to your score."
-  },
-  {
-    "name": "Rout X",
-    "match": "Rout",
-    "description": "Subtract the indicated number of points from your score."
+    "description": "Triggers when the card is destroyed."
   },
   {
     "name": "Finale",
-    "description": "Trigger this ability if the card is active at the end of the round."
+    "description": "Triggers at the end of the round."
   },
   {
     "name": "Disloyal",
-    "description": "The card is played to the opposite side of the battlefield."
+    "description": "Modifies a unit to indicate it is played to your opponent's battlefield."
   },
   {
     "name": "Chaos X",
-    "match": "Chaos",
-    "description": "Trigger this ability if there are at least X unique mana types available."
+    "description": "Triggers if there are at least X unique mana types.",
+    "synonyms": ["Chaos"]
   },
   {
     "name": "Imbibe",
-    "description": "Trigger the ability when a liquor card is equipped to the unit."
+    "description": "Triggers when a Liquor card is equipped to the unit."
   },
   {
     "name": "Bonded",
-    "description": "Trigger the ability if you control more than one copy of the card."
+    "description": "Triggers if you control more than one copy of this card."
+  },
+  {
+    "name": "Echo",
+    "description": "If this card is in your graveyard at the start of the round, move to the top of your deck and become Doomed before drawing cards."
+  },
+  {
+    "name": "Lock",
+    "description": "Status that disables all of a card's abilities."
+  },
+  {
+    "name": "Poison",
+    "description": "Status that marks a unit as poisoned, or destroy it if it is already poisoned."
+  },
+  {
+    "name": "Muzzle",
+    "description": "Status that prevents the unit from receiving equipment."
+  },
+  {
+    "name": "Immune",
+    "description": "Status that prevents the unit from receiving additional statuses."
+  },
+  {
+    "name": "Invisible",
+    "description": "Status that prevents the unit from being targeted by hostile abilities."
+  },
+  {
+    "name": "Stalwart",
+    "description": "Status that allows the unit to remain on the battlefield after the round ends."
+  },
+  {
+    "name": "Purify",
+    "description": "Purge all statuses from a unit."
   }
 ]

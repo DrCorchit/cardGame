@@ -673,7 +673,7 @@
       "Legendary"
     ],
     "ability": [
-      "Deploy, Expend 3 fire mana: gain Haste.",
+      "Deploy, Expend 3 fire mana: Hasten.",
       "Activate: Tutor a dragon, then banish self.",
       "Finale: Rally 8."
     ],
@@ -1246,7 +1246,7 @@
       "Human"
     ],
     "ability": [
-      "Deploy, Expend 2 light mana: gain Haste.",
+      "Deploy, Expend 2 light mana: Hasten.",
       "Activate: Tutor a common Justice unit."
     ],
     "quote": "All in good order, I trust."

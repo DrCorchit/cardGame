@@ -9,38 +9,71 @@ enum class Motive(val color: Color) {
     //542
     Neutral("603000"),
 
-    //Strengths: Good combos, engines, and strong mana payoff cards.
-    //Limitations: weak bronze tempo, no tall punish
-    //Other: Earth/Water/Air focused, diverse racial groups, harmony/diversity
+    //Earth/Water/Air mana, diverse racial groups
+    //Has:
+    // Good mana sources
+    // High-end gold tutoring
+    // Resurrection
+    // Protect, Deflect, Stalwart
+    //Some:
+    // Lock, Removal
+    // Bronze tempo
+    //Does not have:
+    // Tempo-thinning
+    // Tall-Punish
     Peace("106010"),
 
     //ceb31c, b93
-    //Strengths: Excellent control and combos.
-    //Limitations: Requires precise mana control.
-    //Other: light/dark focused.
+    //Light/Dark mana.
     Justice("908030"),
 
-    //Strengths: Excellent tutoring and various answers
-    //Limitations: lacking tempo and direct removal
-    //Other: Air and light focused. Scribes + Elves
     //243d93, 47a, 243d93, 468
+    //Air/Light mana
+    // Strengths: Excellent tutoring and various answers
+    //Limitations: lacking tempo and direct removal
     Wisdom("4060a0"),
 
     //a84d2a, 930, 830
-    //Strengths: Good pointslam, engines, and greed cards.
-    //Limitations: weak control and tutoring.
-    //Other: relies on fire/earth mana. Dragons and dwarves.
+    //Identity: Fire mana, dragons and dwarves.
+    //Has:
+    // Protection, Engines, Combos.
+    // Good bronzes
+    // Bonded bronzes
+    //Some:
+    // Deploy Removal (from dragons)
+    // Imbibe removal (from dwarves).
+    //Does not have:
+    // Deflection, Lock, Purify, Poison
+    // Tall punish
+    // Removal instants.
+    // Reliable tutors for high-end cards
     Greed("d08020"),
 
     //68135e, 630, c62, c30
     //Strengths: Good bronze cards and direct removal
     //Limitations: Limited tutoring and indirect removal.
-    //Flavor: Fire and Water mana focused, vikings and pirates
+    //Identity: Fire/Water mana focused, vikings and pirates
+    //Has:
+    // Removal, removal, and more removal
+    // Bronzes: mix of pointslam, engines, and control
+    //Some:
+    // Utilities, like Purify and Lock
+    // Tall punish
+    //Does not have:
+    // Deflection
+    // Tutoring
     Rage("a03000"),
 
-    //Strengths: Bronze pointslam and control, and tall punish. Good combat vs mana
-    //Weakness: Limited engines and tutoring
-    //Flavor: Chaos/Dark mana focused. Crimials, necromancers, and demons.
+    //Flavor: Chaos/Dark mana focused. Criminals, necromancers, and demons.
+    //Control plus greed and engines.
+    //Has:
+    // Assassinate and Seize
+    // Locks, and control.
+    //Some:
+    // Engines and greed
+    //Does not have:
+    // Protection or deflection
+    // Reliable tutoring
     Vice("444444");
 
     constructor(color: String) : this(Color.valueOf(color))
