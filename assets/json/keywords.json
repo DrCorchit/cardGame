@@ -35,10 +35,6 @@
     "description": "Triggers while on the battlefield, each allied turn start."
   },
   {
-    "name": "Battlefield",
-    "description": "Triggers while on the battlefield, any number of times per turn."
-  },
-  {
     "name": "Play",
     "description": "Move a card from hand to the battlefield, triggering its deploy ability.",
     "synonym": ["Plays", "Played"]
@@ -65,17 +61,12 @@
   },
   {
     "name": "Discard",
-    "description": "Move a card from hand to graveyard.",
+    "description": "Move a card from hand or deck to graveyard.",
     "synonyms": ["Discards", "Discarded"]
   },
   {
-    "name": "Draw",
-    "description": "Move a card from the top of deck to hand.",
-    "synonyms": ["Draws"]
-  },
-  {
     "name": "Mana",
-    "description": "An elemental resource used to trigger certain abilities."
+    "description": "An elemental resource used to trigger abilities."
   },
   {
     "name": "Expend X",
@@ -108,7 +99,7 @@
   },
   {
     "name": "Boost X",
-    "description": "Increase the target's power by X.",
+    "description": "Increase a unit's power by X.",
     "synonyms": ["Boost", "Boosted"]
   },
   {
@@ -136,7 +127,7 @@
   {
     "name": "Assassinate X",
     "description": "Destroy an enemy unit of X or less power, bypassing Protection.",
-    "synonyms": ["Assassinates", "Assassinated"]
+    "synonyms": ["Assassinate", "Assassinates", "Assassinated"]
   },
   {
     "name": "Banish",
@@ -168,7 +159,7 @@
   },
   {
     "name": "Disloyal",
-    "description": "Modifies a unit to indicate it is played to your opponent's battlefield."
+    "description": "Indicates that the card is played to your opponent's battefield."
   },
   {
     "name": "Chaos X",
@@ -196,10 +187,6 @@
     "description": "Status that marks a unit as poisoned, or destroy it if it is already poisoned."
   },
   {
-    "name": "Muzzle",
-    "description": "Status that prevents the unit from receiving equipment."
-  },
-  {
     "name": "Immune",
     "description": "Status that prevents the unit from receiving additional statuses."
   },
@@ -213,6 +200,6 @@
   },
   {
     "name": "Purify",
-    "description": "Purge all statuses from a unit."
+    "description": "Remove all statuses from a unit."
   }
 ]

@@ -19,11 +19,11 @@ Maximillian, Slumlord: 4/4p [Vice, Human, Caporegime, Rare] [Deploy: Move one of
 Captain Ernesto: 4/4p [Vice, Human, Henchman, Rare] [Activate: Assault 4 and Destroy self.] [If its a fight ya wants...]
 
 Inspector Culso: 2/5p [Vice, Human, Spy, Rare] [Disloyal.; Deploy, Chaos X: Look at all cards from your opponent's hand with a provision cost of X or less and play one.; After: Your opponent draws a card.] [With me, surprises are rarely unexpected.]
-The Dollhouse: 5p [Vice, Emplacement, Location, Rare] [Deploy: Tutor a Moomsh Addict or Landlady.; Battlefield: Adjacent Moomsh Addicts and Landladies do not destroy themselves.] [If home is where the heart is, then they're homeless.]
+The Dollhouse: 5p [Vice, Emplacement, Location, Rare] [Deploy: Tutor a Moomsh Addict or Landlady.; Adjacent Moomsh Addicts and Landladies do not destroy themselves.] [If home is where the heart is, then they're homeless.]
 The Butcher: 1/5p [Vice, Human, Spy, Rare] [Disloyal.; Deploy: Assassinate 3 adjacent units.] []
 
 Jailbreak: 6p [Vice, Instant, Crime, Rare] [Deploy: Resurrect a 2 provision Vice unit.; Chaos X: Increase the provision limit by X.] []
-The Quartermaster: 2/6p [Vice, Human, Spy, Rare] [Deploy: Tutor a common spy.; Finale: Rally 1 for each Spy controlled by your opponent.] []
+The Quartermaster: 2/6p [Vice, Human, Spy, Rare] [Deploy: Tutor a common spy.; Whenever you play a Disloyal unit, Rally 1.] []
 
 Madame Baghat: 3/7p [Vice, Human, Caporegime, Rare] [Deploy, Chaos X: Tutor a unit with X or fewer provisions.] [If anyone calls me "Bag Hat" one more time...]
 Pandemonium: 7p [Vice, Instant, Crime, Rare] [Echo.; Chaos 4: Choose three cards from your deck, then play one at random.; Chaos 5: Choose two cards from your deck, then play one at random.; Chaos 6: Tutor a card from your deck.; After: Return any unplayed cards to your deck.; While in your graveyard, this card increases Chaos by 1.] [Pandemonium did not reign; it poured.] [tutor]

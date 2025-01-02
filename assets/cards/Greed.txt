@@ -1,13 +1,13 @@
 Dwarven Drunkard: 2/2p [Greed] [Imbibe: Rally 2.; Imbibe, Bonded: Rally 3 instead.] [“Drinkin' Problem”? Ya mean like when there's nothin' ta drink?] [engine]
 Dwarven Miner: 3/2p [Greed, Dwarf] [Imbibe: Rally 1 and Conjure fire mana.] [Screw whistling—we drink while we work!] [mana]
-Tiny: 3a 1/2p [Greed, Dwarf] [Activate: Protect an allied Dwarf.; Imbibe: Summon another Tiny from deck or graveyard.] [Thick thighs save lives.] [utility]
-Lava Lizard: 4/2p [Greed, Dragon] [Require: Expend fire mana.; Deploy, Bonded: Assault 2.] [Manageable in small numbers, with the ideal number being zero.] [removal]
+Tiny: 3a 1/2p [Greed, Dwarf] [Activate: Protect an allied Dwarf.; Imbibe: Summon another Tiny from deck or graveyard.] [Small, but not small time.] [utility]
+Lava Lizard: 3/2p [Greed, Dragon] [Require: Expend fire mana.; Deploy, Bonded: Assault 2.] [Manageable in small numbers, with the ideal number being zero.] [removal]
 Fireswill Wine: 2p [Greed, Equipment, Liquor] [Boost 3.; Equip: Conjure fire mana fire mana.] [The cheapest booze that money can buy.] [mana, combo]
 Warhammer: 2p [Greed, Equipment, Weapon] [Equip: Assault 1; Imbibe: Assault 1.] [If all you have is a hammer, everything looks like a nail.] [removal]
 
 Dwarven Brawler: 2/3p [Greed, Dwarf] [Imbibe: Assault 2.; Imbibe, Bonded: Assault 3 instead.] [If it's a fight yer lookin' fer, ye just found it.] [engine, control]
 Dragon Egg: 1/3p [Greed, Dragon] [Finale: Rally 6.] [Probably best not to touch them.] [greed]
-Pit Wyvern: 2/3p [Greed, Dragon] [Deploy, Expend fire mana fire mana fire mana: Assault 2.] [Soft as barbed wire and charming as a gut punch.] [removal]
+Pit Wyvern: 2/3p [Greed, Dragon] [Deploy, Expend fire mana fire mana: Assault 2.] [Soft as barbed wire and charming as a gut punch.] [removal]
 Golden Froth: 3p [Greed, Equipment, Liquor] [Boost 3.; Turnwise: Rally 1.] [Beer is proof that God loves dwarves and wants them to be happy.] [engine, combo]
 Dragonbrew Reserve: 3p [Greed, Equipment, Liquor] [Boost 4.; Turnwise: Conjure fire mana.] [Spill a barrel of this stuff, and you'll learn a thing or two about dwarven hospitality.] [engine, combo]
 
@@ -20,7 +20,7 @@ Forgemaster: 4/4p [Greed, Dwarf, Rare] [Turnwise: Conjure fire mana fire mana.; 
 Lost Dragon Egg: 1/4p [Greed, Dragon, Rare] [This card starts in your graveyard.; Finale: Rally 8.] [It's a long way back to the nest.] [thinning, finisher]
 
 Secret Brew: 5p [Greed, Equipment, Liquor, Rare] [Boost 5.; Equip: Trigger Imbibe an additional time.] [What'd you even put in this stuff?]
-Golden Dragon Egg: 1/5p [Greed, Dragon, Rare] [Activate: Tutor a Dragon, then Destroy self.; Finale: Rally 8.] [Oooh, shiny!] [tutor, greed]
+Golden Dragon Egg: 1/5p [Greed, Dragon, Rare] [Activate: Tutor a Dragon, then Destroy self.; Finale: Rally 6.] [Oooh, shiny!] [tutor, greed]
 
 Dragonseeker: 4/6p [Greed, Dwarf, Rare] [Deploy, Expend fire mana fire mana: Resurrect a dragon egg.] [You're safe now, little feller.]
 
@@ -33,8 +33,8 @@ Goryx, Golden Dragon: 4/8p [Greed, Dragon, Legendary] [Haste.; Activate, Expend 
 Neromir, Warrior Dragon: 7/9p [Greed, Dragon, Legendary] [Activate, Expend X fire mana: Assault X.; Imbibe: Reactivate.] [He's the throne-of-skulls-on-a-mountain-of-blood type.] [spender, control, engine]
 Ancestral Ale: 9p [Greed, Equipment, Liquor, Legendary] [Echo.; Boost 8.; Equip: Conjure fire mana fire mana fire mana.] [The hard part isn't the brewing process, it's hiding it from all the dwarves for a hundred years.] [pointslam]
 
-Treasure of all Treasures: 10p [Greed, Emplacement, Legendary] [Turnwise: Rout 1.; Turnwise, Protected: Rally 3.; Battlefield: This card is Protected by adjacent Dwarves.;] [All that glitters is not gold. Could be diamonds, for instance.]
-Dragonmother Erizyx: 10/10p [Greed, Dragon, Legendary] [Deploy: Protect all unprotected allied dragon eggs.; Battlefield: Whenever you play a dragon egg, Protect it.; Finale: Rally 2 for each allied dragon egg.] [She's a lady and you will treat her as such.] [pointslam, finisher]
+Treasure of all Treasures: 10p [Greed, Emplacement, Legendary] [Deploy: Rally 10.; Turnwise: Rout 1.; Turnwise, Protected: Rally 1 instead.; This card is protected by adjacent dwarves.] [All that glitters is not gold. Could be diamonds, for instance.]
+Dragonmother Erizyx: 10/10p [Greed, Dragon, Legendary] [Deploy: Protect all unprotected allied dragon eggs.; Whenever you play a dragon egg, Protect it.; Finale: Rally 2 for each allied dragon egg.] [She's a lady and you will treat her as such.] [pointslam, finisher]
 
-Sven Forkbarb, Mountain King: 1/11p [Greed, Dwarf, Legendary] [Deploy: Play all copies of a liquor card from deck.] [He doesn't believe in discussing matters of state while sober.] [tutor, pointslam]
-Drinking Contest: 11p [Greed, Instant, Legendary] [Deploy: Play a dwarf, then Tutor a common liquor card; Deploy: Tutor a common dwarf, then Play a liquor card.; After: Draw a card.] [When it's a drinking contest, everybody wins. — Dwarven proverb] [tutor, pointslam]
+Sven Forkbarb, Mountain King: 1/11p [Greed, Dwarf, Legendary] [Deploy: Tutor all copies of a Liquor card.] [He doesn't believe in discussing matters of state while sober.] [tutor, pointslam]
+Drinking Contest: 11p [Greed, Instant, Legendary] [Choose one of the following Deploy abilities:; Deploy: Play a Dwarf, then Tutor a common Liquor card; Deploy: Tutor a common Dwarf, then Play a Liquor card.; After: Draw a card.] [When it's a drinking contest, everybody wins. — Dwarven proverb] [tutor, pointslam]

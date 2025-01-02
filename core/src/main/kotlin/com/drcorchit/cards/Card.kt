@@ -228,15 +228,11 @@ class Card(
                 return Rarity.entries.sumOf { rarityCount(it) }
             }
 
-            val count = Motive.entries.sumOf { factionCount(it) } + factionCount(Motive.Neutral)
+            val count = Motive.entries.sumOf { factionCount(it) }
             println("Total printable cards: $count")
 
-            /*
-            cardsByMotive.mapValues { it.value.values.flatten() }
-                .values.map { list -> list.sortedBy { it.cost } }
-                .forEach { it.saveTo("assets/cards/${it.first().motive.name}.txt") }
-
-             */
+            val tagsCount = cards.flatMap { it.tags }.groupBy { it }.mapValues { it.value.size }
+            tagsCount.forEach { (tag, count) -> println("Tag [$tag]: $count") }
         }
 
         val keywordGray = Color.valueOf("#405060ff")

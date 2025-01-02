@@ -2,7 +2,7 @@ Automaton: 1a 2/2p [Wisdom, Machine] [Turnwise, Expend air mana: Rally 1.] [YES 
 Capacitor: 2/2p [Wisdom, Machine] [Activate, Expend X light mana: Rally X.; Activate, Expend X air mana: Assault X.] [Brzzzap!] [spender]
 Drone Swarm: 3/2p [Wisdom, Machine] [Activate, Expend light mana light mana: Protect an allied unit.; Activate, Expend air mana: Deflect a unit.] [Strength in numbers.] [utility]
 Electroshock: 2p [Wisdom, Instant, Technology] [Deploy: Conjure 4 air mana and Lock a unit.; Deploy, Expend air mana: Lock a unit and move its equipment to the graveyard.] [Therapy not included.] [control]
-Scribe: 2/2p [Wisdom, Elf] [Battlefield: Whenever you play a Machine or a Technology, Rally 1.] [The records aren't going to keep themselves.] [engine]
+Scribe: 2/2p [Wisdom, Elf] [Whenever you play a Machine or a Technology, Rally 1.] [The records aren't going to keep themselves.] [engine]
 
 Messenger: 2/3p [Wisdom, Elf] [Whenever this card is moved to the top of your deck, Summon self.] [The barristers send their regards.] [pointslam]
 Archivist: 4/3p [Wisdom, Elf] [Deploy, Expend light mana: Look at the top three cards from either your or your opponent's deck and move one to the top.; Activate, Expend light mana: Draw a card, then place a card in your hand at the top of your deck.] [Our records are perfect, according to our records.] [mill, utility]
@@ -28,7 +28,7 @@ Ultima: Prototype: 2a 1/6p [Wisdom, Machine, Rare] [Activate: Rally 2 for each T
 X Æ A-12: 2a 4/6p [Wisdom, Machine, Legendary] [Activate, Expend light mana: Give an allied unit Haste.; Turnwise: Reactivate.] [Do it faster, work it harder.]
 
 Android Replica: 1/7p [Wisdom, Machine, Rare] [Haste.; Activate, Expend light mana: Trigger an enemy unit's Deploy ability.] [Anything you can do, I can do better!]
-Time Travel: 7p [Wisdom, Instant, Technology, Legendary] [Deploy: Move a unit to the top of its owner's deck.] [Hasta la vista, baby!]
+Time Travel: 7p [Wisdom, Instant, Technology, Legendary] [Deploy: Move a unit to the top of its owner's deck.] [In the year 2525...]
 
 #Mind Control: 8p [Wisdom, Instant, Technology, Legendary] [Deploy, Rout X: Seize X.] [You will comply.] -- Note: See Vice/Heist
 Codex Veritas: 8p [Wisdom, Emplacement, Book, Legendary] [Deploy: Move two cards from your deck to the top.; Activate: Play the top card from your deck.] [No-one ever reads past the abstract because there's a paywall.]
