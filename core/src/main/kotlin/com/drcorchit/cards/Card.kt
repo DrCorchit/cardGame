@@ -22,6 +22,7 @@ class Card(
     val name: String,
     val power: Int,
     val cost: Int,
+    val armor: Int,
     val tags: List<String>,
     val abilities: List<String>,
     val quote: String,
@@ -80,6 +81,7 @@ class Card(
         json["name"].asString,
         json["power"]?.asInt ?: 0,
         json["cost"].asInt,
+        json["armor"]?.asInt ?: 0,
         json.getAsJsonArray("tags").map { it.asString },
         loadAbility(json),
         json["quote"].asString,
@@ -123,6 +125,7 @@ class Card(
             try {
                 val match = regex.matchEntire(str)!!.groups
                 val name = match["name"]!!.value
+                val armor = match["armor"]?.value?.toInt() ?: 0
                 val power = match["power"]?.value?.toInt() ?: 0
                 val cost = match["cost"]!!.value.toInt()
                 val tags = match["tags"]!!.value.split(",").map { it.trim() }
@@ -132,7 +135,7 @@ class Card(
                     ?.let { it.value.split(",").map { tag -> tag.trim() } }
                     ?: listOf()
 
-                return Card(name, power, cost, tags, abilities, quote, strategyTags)
+                return Card(name, power, cost, armor, tags, abilities, quote, strategyTags)
             } catch (e: Exception) {
                 println("Error parsing line: $str")
                 e.printStackTrace()
@@ -241,7 +244,10 @@ class Card(
 
         val stroke = Textures.brushStroke.asSprite().setOffset(Compass.CENTER)
         val tray = Textures.tray.asSprite().setOffset(Compass.SOUTH)
+        val armorBack = Textures.armorBack.asSprite().setOffset(Compass.CENTER)
+        val armorBlack = Textures.armorBlack.asSprite().setOffset(Compass.CENTER)
         val costBack = Textures.costBack.asSprite().setOffset(200f, 150f)
+        val provisionsBlack = Textures.provisionsBlack.asSprite().setOffset(200f, 150f)
         val line = Textures.line.asSprite().setOffset(Compass.CENTER)
         val border = Textures.border.asSprite()
 
@@ -258,6 +264,11 @@ class Card(
         val diamondW = 100f
         val diamondH = 2 * diamondW
         val starSize = 60f
+
+        val armorBackW = 80f
+        val armorBackH = 100f
+        val armorX = 80f
+        val armorY = 80f
 
         val costBackSize = 150f
         val costBackOffset = 80f
@@ -284,6 +295,109 @@ class Card(
         val abilityBufferH = midHeight - (strokeH + abilityBufferY)
         val abilityTextW = abilityBufferW - 2 * abilityBufferMargin
 
+    }
+
+    fun drawSimple() {
+        ScreenUtils.clear(Color.WHITE)
+
+        //Draw border and ability text tray
+        Draw.drawLine(50f, midHeight, W - 50f, midHeight, 1f, Color.BLACK)
+        border.draw(batch, 0f, 0f)
+
+        //Power diamond
+        val diamond = Textures.diamondBlack.asSprite().setOffset(Compass.CENTER)
+        diamond.draw(batch, diamondOffsetX, H - diamondOffsetY, diamondW, diamondH)
+        if (power == 0) {
+            type.imageBlack!!.draw(batch, diamondOffsetX, H - diamondOffsetY, starSize, starSize)
+        } else {
+            Draw.drawText(
+                diamondOffsetX,
+                H - diamondOffsetY,
+                Fonts.numberFont,
+                power.toString(),
+                100f,
+                Compass.CENTER,
+                Color.BLACK
+            )
+        }
+
+        //Armor
+        if (armor > 0) {
+            armorBlack.draw(batch, armorX, armorY, armorBackW, armorBackH)
+            Draw.drawText(
+                armorX, armorY + 2,
+                Fonts.numberFontSmall,
+                armor.toString(),
+                100f,
+                Compass.CENTER,
+                Color.BLACK
+            )
+        }
+
+        //Cost
+        provisionsBlack.draw(batch, costX, costY, costBackSize, costBackSize)
+        Draw.drawText(
+            costX, costY + 2,
+            Fonts.numberFontSmall,
+            cost.toString(),
+            100f,
+            Compass.CENTER,
+            Color.BLACK
+        )
+
+        //Card Name
+        Draw.drawText(midWidth, nameY, Fonts.nameFont, name, W - 50f, Compass.CENTER, Color.BLACK)
+
+        //Tags
+        val textX = abilityBufferX + abilityBufferMargin
+        Draw.drawText(
+            midWidth,
+            tagsY,
+            Fonts.tagFont,
+            tagsText,
+            1000f,
+            Compass.CENTER,
+            Color.BLACK
+        )
+
+        //Ability Text
+        val text = styledAbilityText
+        val abilityTextY = abilityBufferY + abilityBufferH - abilityBufferMargin
+        Draw.drawText(
+            textX,
+            abilityTextY,
+            Fonts.textFontColorless,
+            text,
+            abilityTextW,
+            Compass.SOUTHEAST,
+            Color.BLACK
+        )
+
+        //Keyword text
+        val keywordTextY = abilityBufferY + abilityBufferMargin
+        Draw.drawText(
+            textX,
+            keywordTextY,
+            Fonts.tagFont,
+            keywordText,
+            abilityTextW,
+            Compass.NORTHEAST,
+            Color.BLACK
+        )
+
+        Draw.drawLine(midWidth - 150, lineY, midWidth + 150, lineY, 1f, Color.BLACK)
+        //line.draw(batch, midWidth, lineY, 3f, 1f, 0f)
+
+        //Quote text
+        Draw.drawText(
+            quoteTextX,
+            quoteTextY,
+            Fonts.quoteFont,
+            quote,
+            quoteTextW,
+            Compass.CENTER,
+            Color.BLACK
+        )
     }
 
     fun draw() {
@@ -326,6 +440,19 @@ class Card(
             )
         }
 
+        //Armor
+        if (armor > 0) {
+            armorBack.draw(batch, armorX, armorY, armorBackW, armorBackH)
+            Draw.drawText(
+                armorX, armorY + 2,
+                Fonts.numberFontSmall,
+                armor.toString(),
+                100f,
+                Compass.CENTER,
+                Color.WHITE
+            )
+        }
+
         //Cost
         costBack.draw(batch, costX, costY, costBackSize, costBackSize)
         Draw.drawText(
@@ -355,9 +482,6 @@ class Card(
             Compass.CENTER,
             motive.color
         )
-
-        //line.draw(batch, midWidth, abilityBufferY + abilityBufferH, 3f, 1f, 0f)
-
 
         //Ability Text
         val text = styledAbilityText

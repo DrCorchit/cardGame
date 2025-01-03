@@ -75,7 +75,7 @@
   },
   {
     "name": "Conjure X",
-    "description": "Change any X mana dice to the indicated type.",
+    "description": "Turn X mana dice to the indicated face.",
     "synonyms": ["Conjure", "Conjures", "Conjured"]
   },
   {

@@ -36,43 +36,47 @@ object Fonts {
     //val defaultFont = "roboto_condensed"
     val defaultFont = "lato"
     val textFont = initFont("$defaultFont.ttf", fontSizes[3])
+    val textFontColorless = initFont("$defaultFont.ttf", fontSizes[3])
     val quoteFont = initFont("${defaultFont}_italic.ttf", fontSizes[4])
     val tagFont = initFont("$defaultFont.ttf", fontSizes[4])
     val keywordFont = initFont("$defaultFont.ttf", fontSizes[5])
 
     init {
-        val font = textFont
-        val region = TextureRegion(Textures.mana)
-        font.regions.add(region)
+        fun addManaIconsToFont (font: BitmapFont, region: TextureRegion) {
+            font.regions.add(region)
 
-        fun addGlyph(char: Char, i: Int, j: Int) {
-            val glyph = BitmapFont.Glyph()
-            glyph.id = char.code
-            glyph.page = 1
-            glyph.u = i / 18f
-            glyph.v = (j + 4) / 12f
-            glyph.u2 = (i + 4) / 18f
-            glyph.v2 = j / 12f
-            glyph.srcX = 0
-            glyph.srcY = 0
-            glyph.yoffset = -40
-            glyph.width = 32
-            glyph.height = 32
-            glyph.xadvance = 32
+            fun addGlyph(char: Char, i: Int, j: Int) {
+                val glyph = BitmapFont.Glyph()
+                glyph.id = char.code
+                glyph.page = 1
+                glyph.u = i / 18f
+                glyph.v = (j + 4) / 12f
+                glyph.u2 = (i + 4) / 18f
+                glyph.v2 = j / 12f
+                glyph.srcX = 0
+                glyph.srcY = 0
+                glyph.yoffset = -40
+                glyph.width = 32
+                glyph.height = 32
+                glyph.xadvance = 32
 
-            font.data.setGlyph(char.code, glyph)
+                font.data.setGlyph(char.code, glyph)
+            }
+
+            //Add mana glyphs
+            addGlyph('\u0010', 1, 1)
+            addGlyph('\u0011', 7, 1)
+            addGlyph('\u0012', 13, 1)
+            addGlyph('\u0013', 1, 7)
+            addGlyph('\u0014', 7, 7)
+            addGlyph('\u0015', 13, 7)
         }
 
-        //Add mana glyphs
-        addGlyph('\u0010', 1, 1)
-        addGlyph('\u0011', 7, 1)
-        addGlyph('\u0012', 13, 1)
-        addGlyph('\u0013', 1, 7)
-        addGlyph('\u0014', 7, 7)
-        addGlyph('\u0015', 13, 7)
+        addManaIconsToFont(textFont, TextureRegion(Textures.mana))
+        addManaIconsToFont(textFontColorless, TextureRegion(Textures.manaWhite))
 
-        val precoloredFontTexture = Draw.precolorTexture(font.regions[0].texture, Card.textColor)
-        font.regions[0] = TextureRegion(precoloredFontTexture)
+        val precoloredFontTexture = Draw.precolorTexture(textFont.regions[0].texture, Card.textColor)
+        textFont.regions[0] = TextureRegion(precoloredFontTexture)
     }
 
     private fun initFont(path: String, size: Int): BitmapFont {

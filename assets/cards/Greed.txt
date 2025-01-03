@@ -1,6 +1,6 @@
+Tiny: 3a 1/2p [Greed, Dwarf] [Activate: Protect an allied Dwarf.; Imbibe: Summon another Tiny from deck or graveyard.] [Small, but not small time.] [utility]
 Dwarven Drunkard: 2/2p [Greed] [Imbibe: Rally 2.; Imbibe, Bonded: Rally 3 instead.] [“Drinkin' Problem”? Ya mean like when there's nothin' ta drink?] [engine]
 Dwarven Miner: 3/2p [Greed, Dwarf] [Imbibe: Rally 1 and Conjure fire mana.] [Screw whistling—we drink while we work!] [mana]
-Tiny: 3a 1/2p [Greed, Dwarf] [Activate: Protect an allied Dwarf.; Imbibe: Summon another Tiny from deck or graveyard.] [Small, but not small time.] [utility]
 Lava Lizard: 3/2p [Greed, Dragon] [Require: Expend fire mana.; Deploy, Bonded: Assault 2.] [Manageable in small numbers, with the ideal number being zero.] [removal]
 Fireswill Wine: 2p [Greed, Equipment, Liquor] [Boost 3.; Equip: Conjure fire mana fire mana.] [The cheapest booze that money can buy.] [mana, combo]
 Warhammer: 2p [Greed, Equipment, Weapon] [Equip: Assault 1; Imbibe: Assault 1.] [If all you have is a hammer, everything looks like a nail.] [removal]
@@ -12,7 +12,7 @@ Golden Froth: 3p [Greed, Equipment, Liquor] [Boost 3.; Turnwise: Rally 1.] [Beer
 Dragonbrew Reserve: 3p [Greed, Equipment, Liquor] [Boost 4.; Turnwise: Conjure fire mana.] [Spill a barrel of this stuff, and you'll learn a thing or two about dwarven hospitality.] [engine, combo]
 
 Dwarven Warrior: 1a 2/4p [Greed, Dwarf] [Activate, Expend X fire mana: Rally X; Imbibe: Rally 1.; If a Weapon is equipped, Assault instead of Rally.] [Born to drink, forced to fight.]
-Royal Wyvern: 8/4p [Greed, Dragon] [Require: Expend fire mana fire mana fire mana.] [Capable of turning a dwarf into barbecue in 3 seconds flat.] [payoff]
+Royal Wyvern: 7/4p [Greed, Dragon] [Require: Expend fire mana fire mana fire mana.] [Capable of turning a dwarf into barbecue in 3 seconds flat.] [payoff]
 Swoop: 4p [Greed, Instant] [Deploy, Expend air mana: Tutor a common dragon.] [By the time you see them, it's too late.] [tutor]
 
 Stumpy's Axe: 4p [Greed, Equipment, Weapon, Rare] [Equip: Assault 3.; Increase the Assault value by 1 for every Liquor card equipped to the target unit.; If equipped to Stumpy McGee, Assassinate instead.] [The one, the only.] [removal]

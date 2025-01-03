@@ -5,22 +5,22 @@ Bullfrog Army: 3/2p [Peace, Beast] [Require: Expend water mana.; Deploy, Bonded:
 Pond Naiad: 2/2p [Peace, Dryad] [Turnwise: Conjure water mana.; Turnwise, Expend water mana: Rally 1 instead.] []
 Harvest: 2p [Peace, Instant, Nature] [Deploy: Expend all earth mana, water mana and air mana, then Rally 1 for each Mana spent.] [A time to sow, a time to reap...]
 
-Warthog: 3/3p [Peace, Beast] [Deploy, Expend X earth mana: Rally X.] [Get outta the way!]
+Dryad Shaman: 3/3p [Peace, Dryad] [Activate, Expend earth mana water mana air mana: Resurrect a Nature card.] []
+Dryad Ranger: 3/3p [Peace, Dryad] [Deploy, Expend earth mana water mana air mana: Summon another Dryad Ranger from deck.; Activate: Protect a unit.] [You ever feel like you're being watched?]
+Treant Sage: 4/3p [Peace, Treant] [Battlefield: Whenever you play a Nature card, Rally 1.] [I think, therefore... hmmm...]
 Lightning Strike: 3p [Peace, Instant, Nature] [Deploy: Assault 2.; Expend X air mana: Increase the Assault by X.] [You've been thunderstruck.]
 Lifegiving Rainfall: 3p [Peace, Equipment, Nature] [Boost 4.; Turnwise: Conjure water mana.] [The rain begins with a single drop.]
-Dryad Ranger: 3/3p [Peace, Dryad] [Deploy, Expend earth mana water mana air mana: Summon another Dryad Ranger from deck.; Activate: Protect a unit.] [You ever feel like you're being watched?]
-Treant Sage: 6/3p [Peace, Treant] [Require: Expend earth mana earth mana.] [I think, therefore... hmmm...]
 
 Dryad Warrior: 2/4p [Peace, Dryad] [Deploy, Expend earth mana water mana air mana: Assault 3.] [Every life matters. So does every death.]
 Heartwood Treant: 4/4p [Peace, Treant] [Deploy, Expend earth mana water mana air mana: Become Stalwart.] []
-Dryad Shaman: 2/4p [Peace, Dryad] [Invisible.; Turnwise: Conjure earth mana water mana, earth mana air mana, or water mana air mana.] []
+Warthog: 8/4p [Peace, Beast] [Require: Expend earth mana earth mana earth mana.] [Oink Oink]
 
 Arondight: 4p [Peace, Equipment, Weapon, Rare] [Equip: Assault 4, ignoring Armor.;] [] []
 Alraune: 1/4p [Peace, Fae, Rare] [Deploy: Convert light mana into earth mana, dark mana into water mana, and fire mana into air mana.; After: Rally 1 for each orb changed.] [If you don't believe in fairies, it means fairies don't believe in you!]
 Jack Frost: 4/4p [Peace, Fae, Rare] [Deploy, Expend X water mana: Lock or Purify X units.] [Whose woods these are, I think I know...]
 
 Puck: 1/5p [Peace, Fae, Rare] [Disloyal.; Deploy: Tutor a unit whose provision cost exceeds Puck's.] [Give me your hands, if we be friends.]
-Bamboo Grove: 5p [Peace, Emplacement, Nature, Rare] [Deploy: Grant Invisibility to adjacent units.; Turnwise, Expend water mana earth mana: Rally 3.] [Nothing grows faster, or thicker.]
+Bamboo Grove: 5p [Peace, Emplacement, Nature, Rare] [Turnwise, Expend water mana earth mana: Rally 3.] [Nothing grows faster, or thicker.]
 Flash Flood: 5p [Peace, Instant, Nature, Rare] [Deploy, Expend X water mana: Assassinate X.; After: Conjure 6 water mana.] [Six feet high and rising.]
 
 Thunderstorm: 6p [Peace, Instant, Nature, Rare] [Echo.; Deploy: Conjure water mana air mana, then Tutor a nature card.] [She's a-gonna blow!]
@@ -35,6 +35,6 @@ Treant King: 5/8p [Peace, Treant, Legendary] [Finale: Rally 2 for every Nature c
 
 Titania: 6/9p [Peace, Fae, Legendary] [Deploy: Summon a Pixie on either side of this unit, from graveyard or deck.; Activate: Conjure earth mana earth mana, air mana air mana, or water mana water mana.] [Hand in hand, with fairy grace, we will sing and bless this place.]
 
-#Pied Piper: 1/10p [Peace, Human, Legendary] [Deploy: Summon all 1-power Peace units from your graveyard.] []
+#Pied Piper: 1/6p [Peace, Human, Legendary] [Deploy: Summon all 1-power Peace units from your graveyard.] []
 King Oberon: 7/10p [Peace, Fae, Legendary] [Activate: Tutor or Resurrect a Lightning Strike.; Turnwise: Conjure air mana.] [Ill met by moonlight, proud Titania.]
 Allmother: 3/10p [Peace, Dryad, Legendary] [Deploy, Expend earth mana water mana air mana: Tutor a Peace unit.; Deploy, Expend earth mana earth mana earth mana: Resurrect a Peace unit instead.] [No wound too deep, no bone too broken, no heart beyond repair.]

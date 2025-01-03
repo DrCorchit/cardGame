@@ -29,7 +29,7 @@ Damsel: 2/6p [Human, Rare] [Finale, Protected: Rally 10.] []
 
 Royal Decree: 7p [Instant, Law, Legendary] [Deploy: Tutor a unit.] [So let it be written...]
 Royal Envoy: 1/7p [Human, Legendary] [Deploy: Tutor an instant, equipment, or emplacement.] [So let it be done!]
-Royal Guard: 1a 6/7p [Human, Knight, Legendary] [Activate: Protect a unit.] [Not so fast.]
+Royal Guard: 2a 5/7p [Human, Knight, Legendary] [Activate: Protect a unit.] [Not so fast.]
 Lich Lord: 2/8p [Undead, Mage, Legendary] [Deploy: Rally 6.; Whenever you Resurrect a card, summon self from graveyard.] [] [tempo]
 Field Marshall: 5/8p [Human, Legendary] [Deploy: Place a card from your hand at the bottom of your deck, then draw the highest provision card.] [The best defense is a strong offense.]
 Blistering Heatwave: 8p [Instant, Nature, Legendary] [Deploy: Banish any card that is not Protected.] [Just when you think it can't get any hotter...] [hard removal]

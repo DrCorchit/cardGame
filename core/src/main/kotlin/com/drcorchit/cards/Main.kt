@@ -67,7 +67,7 @@ class Main : ApplicationAdapter() {
         stage.draw()
         Draw.batch.end()
 
-        //generatePrintableCards()
+        generatePrintableCards()
     }
 
     private fun generatePrintableCards() {
@@ -79,7 +79,7 @@ class Main : ApplicationAdapter() {
     fun renderCards() {
         cards.forEach {
             Draw.batch.begin()
-            it.draw()
+            it.drawSimple()
             Draw.batch.end()
             screenshot(it.name)
         }
