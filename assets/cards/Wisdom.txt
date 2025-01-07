@@ -1,6 +1,6 @@
 Automaton: 1a 2/2p [Wisdom, Machine] [Turnwise, Expend air mana: Rally 1.] [YES MASTER] [engine, spender]
 Capacitor: 2/2p [Wisdom, Machine] [Activate, Expend X light mana: Rally X.; Activate, Expend X air mana: Assault X.] [Brzzzap!] [spender]
-Drone Swarm: 3/2p [Wisdom, Machine] [Activate, Expend light mana light mana: Protect an allied unit.; Activate, Expend air mana: Deflect a unit.] [Strength in numbers.] [utility]
+Drone Swarm: 1a 3/2p [Wisdom, Machine] [Activate, Expend light mana light mana: Protect an allied unit.; Activate, Expend air mana: Deflect a unit.] [Strength in numbers.] [utility]
 Electroshock: 2p [Wisdom, Instant, Technology] [Deploy: Conjure 4 air mana and Lock a unit.; Deploy, Expend air mana: Lock a unit and move its equipment to the graveyard.] [Therapy not included.] [control]
 Scribe: 2/2p [Wisdom, Elf] [Whenever you play a Machine or a Technology, Rally 1.] [The records aren't going to keep themselves.] [engine]
 
@@ -15,14 +15,14 @@ Incinerator: 1a 3/4p [Wisdom, Machine] [Activate: Banish the top card of your op
 Power Surge: 4p [Wisdom, Equipment, Technology] [Boost 4.; Equip: If the target is a common unit, Reactivate.] [Power is always dangerous.] [utility, combo]
 Artificer: 3/4p [Wisdom, Elf] [Deploy: Destroy an allied Machine, then Resurrect a common Machine.] [Make it or break it.] [utility]
 
-Armor Weave: 4p [Wisdom, Equipment, Technology, Rare] [Equipped: Provides 2 Armor.; While in deck, you may Expend air mana to Tutor this card.] [No way they're getting through all that.] [thinning, utility]
+Armor Weave: 4p [Wisdom, Equipment, Technology, Rare] [Expend air mana: Tutor self.; Equipped: Provides 2 Armor.;] [No way they're getting through all that.] [thinning, utility]
 Eriathorn, Gemini: 4/4p [Wisdom, Elf, Rare] [Activate: Conjure air mana air mana air mana.; If you control Shuramorn, double that amount.] [Prepare for trouble!] [mana, combo]
 Shuramorn, Gemini: 4/4p [Wisdom, Elf, Rare] [Activate: Conjure light mana light mana light mana.; If you control Eriathorn, double that amount.] [Make it double!] [mana, combo]
 
 Censorship: 5p [Wisdom, Instant, Technology, Rare] [Deploy: Banish the top card from your opponent's deck and Rally by its provision cost.] [It's a trip down memory hole lane.] [mill]
-Epocha, Harbinger: 2/5p [Wisdom, Elf, Rare] [When this card is moved to the top of your deck, Tutor self instead.; Turnwise, Expend light mana: Rally 1.] [thinning, engine]
+Epocha, Harbinger: 2/5p [Wisdom, Elf, Rare] [Whenever this card is moved to the top of your deck, Tutor self instead.; Turnwise, Expend light mana: Rally 1.] [When the new age comes, there will be no turning back.] [thinning, engine]
 
-Sophos, Ordinator: 5/6p [Wisdom, Elf, Rare] [Deploy: Move 2 cards from your deck to the top.; Activate, Expend light mana: Move a card from your deck to the top.] [No plan is ever perfect. Except mine.]
+Sophos, Ordinator: 5/6p [Wisdom, Elf, Rare] [Deploy: Move 2 cards from your deck to the top.; Activate, Expend light mana: Repeat the Deploy ability.] [No plan is ever perfect. Except mine.]
 Argos, Arbiter: 2/6p [Wisdom, Elf, Rare] [Deploy: Play the top card from your deck.; Deploy, Disloyal: Play the top card from your opponent's deck.] [I am the decider!]
 Ultima: Prototype: 2a 1/6p [Wisdom, Machine, Rare] [Activate: Rally 2 for each Technology in your graveyard.] [It's all in the name of progress.]
 X Æ A-12: 2a 4/6p [Wisdom, Machine, Legendary] [Activate, Expend light mana: Give an allied unit Haste.; Turnwise: Reactivate.] [Do it faster, work it harder.]
@@ -30,12 +30,15 @@ X Æ A-12: 2a 4/6p [Wisdom, Machine, Legendary] [Activate, Expend light mana: Gi
 Android Replica: 1/7p [Wisdom, Machine, Rare] [Haste.; Activate, Expend light mana: Trigger an enemy unit's Deploy ability.] [Anything you can do, I can do better!]
 Time Travel: 7p [Wisdom, Instant, Technology, Legendary] [Deploy: Move a unit to the top of its owner's deck.] [In the year 2525...]
 
-#Mind Control: 8p [Wisdom, Instant, Technology, Legendary] [Deploy, Rout X: Seize X.] [You will comply.] -- Note: See Vice/Heist
-Codex Veritas: 8p [Wisdom, Emplacement, Book, Legendary] [Deploy: Move two cards from your deck to the top.; Activate: Play the top card from your deck.] [No-one ever reads past the abstract because there's a paywall.]
-Teknos, Grand Artificer: 1/8p [Wisdom, Elf, Legendary] [Haste.; Activate, Expend 2X light mana: Resurrect X common Machines.;] ["Grand Artificer" is a code word for "Huge Nerd"]
+Codex Veritas: 8p [Wisdom, Emplacement, Tome, Legendary] [Deploy: Move two cards from your deck to the top.; Activate: Play the top card from your deck.] [No-one ever reads past the abstract because there's a paywall.]
+Orthos, Orchestrator: 5/8p [Wisdom, Elf, Legendary] [Activate: Reactivate a unit.] [Actually, science hasn't gone far enough.]
 
-#Reverse Engineering: 9p [Wisdom, Instant, Technology, Legendary] [Deploy: Resurrect a card from your opponent's graveyard.] [Sometimes, the imitation is better than the original.]
-Logos, Oracle: 6/9p [Wisdom, Elf, Legendary] [Activate: Tutor a card.] [Know thyself.]
+Logos, Oracle: 5/9p [Wisdom, Elf, Legendary] [Activate: Tutor a card.] [Know thyself.]
 
-Orthos, Orchestrator: 7/10p [Wisdom, Elf, Legendary] [Activate: Reactivate a unit.] [Actually, science hasn't gone far enough.]
 Teleportation: 10p [Wisdom, Instant, Technology, Legendary] [Echo.; Deploy: Tutor a unit.] [What could possibly go wrong?]
+Teknos, Grand Artificer: 1/10p [Wisdom, Elf, Legendary] [Deploy, Expend 2X light mana: Resurrect X common Machines.;] ["Grand Artificer" is pretty much a code word for "Huge Nerd"]
+
+#Further ideas: Wizards, mage university,
+#Recharge Weave, Stealth Weave
+#Mind Control: 8p [Wisdom, Instant, Technology, Legendary] [Deploy, Rout X: Seize X.] [You will comply.] -- Note: See Vice/Heist
+#Reverse Engineering: 9p [Wisdom, Instant, Technology, Legendary] [Deploy: Resurrect a card from your opponent's graveyard.] [Sometimes, the imitation is better than the original.]

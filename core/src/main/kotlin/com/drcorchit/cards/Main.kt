@@ -24,6 +24,7 @@ class Main : ApplicationAdapter() {
     //52 = Neromir
     //78 = Allmother
     var index = 0
+
     //lateinit var card: CardActor
     //lateinit var stage: Stage
     val stage by lazy { Stage() }
@@ -67,7 +68,7 @@ class Main : ApplicationAdapter() {
         stage.draw()
         Draw.batch.end()
 
-        generatePrintableCards()
+        //generatePrintableCards()
     }
 
     private fun generatePrintableCards() {
@@ -94,7 +95,7 @@ class Main : ApplicationAdapter() {
     fun assembleHtml() {
         val printedPageWidth = 720
         val columns = 3
-        val space = 10
+        val space = 3
         val totalColumnsWidth = (columns + 1) * space
         val cardsTotalWidth = printedPageWidth - totalColumnsWidth
         val cardWidth = cardsTotalWidth / columns
@@ -105,9 +106,16 @@ class Main : ApplicationAdapter() {
                 "display: grid; " +
                 "grid-template-columns:${" auto".repeat(columns)}; " +
                 "gap: ${space}px; } "
-            val images = File("output/images")
-                .listFiles()!!
-                .joinToString("\n") { "<img width=$cardWidth height=$cardHeight src=\"../images/${it.name}\" alt=${it.name}/>" }
+            val images = cards
+                .joinToString("\n") {
+                    val img = "<img " +
+                        "width=$cardWidth " +
+                        "height=$cardHeight " +
+                        "src=\"../images/${it.name.normalize()}.png\" " +
+                        "alt=${it.name}/>"
+                    if (it.rarity == Rarity.Common) "$img\n$img"
+                    else img
+                }
 
             val head = "<style>$style</style>"
             val body = "<div class=\"grid\">\n$images\n</div>"

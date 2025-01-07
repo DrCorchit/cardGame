@@ -366,7 +366,7 @@ class Card(
         Draw.drawText(
             textX,
             abilityTextY,
-            Fonts.textFontColorless,
+            Fonts.abilityFontColorless,
             text,
             abilityTextW,
             Compass.SOUTHEAST,
@@ -489,7 +489,7 @@ class Card(
         Draw.drawText(
             textX,
             abilityTextY,
-            Fonts.textFont,
+            Fonts.abilityFont,
             text,
             abilityTextW,
             Compass.SOUTHEAST,

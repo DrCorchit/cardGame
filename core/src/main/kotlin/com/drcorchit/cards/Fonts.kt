@@ -24,22 +24,22 @@ object Fonts {
         CHARACTERS = alpha + num + punctuation + quotes + symbols + bars + misc
     }
 
-    val smallFontSizes = listOf(96, 56, 64, 32, 24, 20)
-    val medFontSizes = listOf(96, 84, 96, 36, 28, 12)
-    val largeFontSizes = listOf(96, 84, 96, 42, 32, 12)
+    data class FontSizes (val numberFont: Int, val numberFontSmall: Int, val nameFont: Int, val abilityFont: Int, val quoteFont: Int)
+
+    val medFontSizes = FontSizes(96, 84, 96, 48, 28)
     val fontSizes = medFontSizes
 
-    val numberFont = initFont("enchanted_land.ttf", fontSizes[0])
-    val numberFontSmall = initFont("enchanted_land.ttf", fontSizes[1])
-    val nameFont = initFont("enchanted_land.ttf", fontSizes[2])
+    val numberFont = initFont("enchanted_land.ttf", fontSizes.numberFont)
+    val numberFontSmall = initFont("enchanted_land.ttf", fontSizes.numberFontSmall)
+    val nameFont = initFont("enchanted_land.ttf", fontSizes.nameFont)
 
     //val defaultFont = "roboto_condensed"
     val defaultFont = "lato"
-    val textFont = initFont("$defaultFont.ttf", fontSizes[3])
-    val textFontColorless = initFont("$defaultFont.ttf", fontSizes[3])
-    val quoteFont = initFont("${defaultFont}_italic.ttf", fontSizes[4])
-    val tagFont = initFont("$defaultFont.ttf", fontSizes[4])
-    val keywordFont = initFont("$defaultFont.ttf", fontSizes[5])
+    val abilityFont = initFont("$defaultFont.ttf", fontSizes.abilityFont)
+    val abilityFontColorless = initFont("$defaultFont.ttf", fontSizes.abilityFont)
+    val quoteFont = initFont("${defaultFont}_italic.ttf", fontSizes.quoteFont)
+    val tagFont = initFont("$defaultFont.ttf", fontSizes.quoteFont)
+    //val keywordFont = initFont("$defaultFont.ttf", fontSizes[5])
 
     init {
         fun addManaIconsToFont (font: BitmapFont, region: TextureRegion) {
@@ -55,10 +55,10 @@ object Fonts {
                 glyph.v2 = j / 12f
                 glyph.srcX = 0
                 glyph.srcY = 0
-                glyph.yoffset = -40
-                glyph.width = 32
-                glyph.height = 32
-                glyph.xadvance = 32
+                glyph.yoffset = -(fontSizes.abilityFont + 8)
+                glyph.width = fontSizes.abilityFont
+                glyph.height = fontSizes.abilityFont
+                glyph.xadvance = fontSizes.abilityFont
 
                 font.data.setGlyph(char.code, glyph)
             }
@@ -72,11 +72,11 @@ object Fonts {
             addGlyph('\u0015', 13, 7)
         }
 
-        addManaIconsToFont(textFont, TextureRegion(Textures.mana))
-        addManaIconsToFont(textFontColorless, TextureRegion(Textures.manaWhite))
+        addManaIconsToFont(abilityFont, TextureRegion(Textures.mana))
+        addManaIconsToFont(abilityFontColorless, TextureRegion(Textures.manaWhite))
 
-        val precoloredFontTexture = Draw.precolorTexture(textFont.regions[0].texture, Card.textColor)
-        textFont.regions[0] = TextureRegion(precoloredFontTexture)
+        val precoloredFontTexture = Draw.precolorTexture(abilityFont.regions[0].texture, Card.textColor)
+        abilityFont.regions[0] = TextureRegion(precoloredFontTexture)
     }
 
     private fun initFont(path: String, size: Int): BitmapFont {
