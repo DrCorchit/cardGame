@@ -11,6 +11,7 @@ import com.drcorchit.justice.utils.IOUtils
 import com.drcorchit.justice.utils.StringUtils.normalize
 import com.drcorchit.justice.utils.logging.Logger
 import java.util.zip.Deflater
+import kotlin.math.round
 
 /**
  * [com.badlogic.gdx.ApplicationListener] implementation shared by all platforms.
@@ -38,37 +39,53 @@ class GenerateSimpleCards : ApplicationAdapter() {
         }
     }
 
+    private fun rotatePixmap(srcPix: Pixmap): Pixmap {
+        val w = srcPix.width
+        val h = srcPix.height
+        val rotatedPix = Pixmap(h, w, srcPix.format)
+
+        for (x in 0 until h) {
+            for (y in 0 until w) {
+                rotatedPix.drawPixel(x, y, srcPix.getPixel(y, x))
+            }
+        }
+
+        srcPix.dispose()
+        return rotatedPix
+    }
+
     fun screenshot(cardName: String) {
-        val pixmap = Pixmap.createFromFrameBuffer(0, 0, W, H)
+        val rawPixmap = Pixmap.createFromFrameBuffer(0, 0, W, H)
+        val rotatedPixmap = rotatePixmap(rawPixmap)
         val name = "output/images/${cardName.normalize()}.png"
-        PixmapIO.writePNG(FileHandle(name), pixmap, Deflater.DEFAULT_COMPRESSION, true)
+        PixmapIO.writePNG(FileHandle(name), rotatedPixmap, Deflater.DEFAULT_COMPRESSION, false)
     }
 
     fun assembleHtml() {
         //page printable width = 720 px = 7 7/16 inches
-        val space = 2
-        val cardWidth = 242
-        val cardHeight = cardWidth * Card.cardRatio
+        val space = 1
+        val cardHeight = 242
+        val cardWidth = round(cardHeight * Card.cardRatio).toInt()
 
         try {
-            val style = ".grid { " +
+            val style = ".flex { " +
                 "display: flex; " +
                 "flex-direction: rows;" +
                 "flex-wrap: wrap;" +
-                "gap: ${space}px; } "
+                "gap: ${space}px; }\n" +
+                "img { " +
+                "width: $cardWidth;" +
+                "height: $cardHeight;" +
+                "}"
+
             val images = cards
                 .joinToString("\n") {
-                    val img = "<img " +
-                        "width=$cardWidth " +
-                        "height=$cardHeight " +
-                        "src=\"../images/${it.name.normalize()}.png\" " +
-                        "alt=${it.name}/>"
-                    if (it.rarity == Rarity.Common) "$img\n$img"
-                    else img
+                    val ele = "<img src=\"../images/${it.name.normalize()}.png\" alt=${it.name} />"
+                    if (it.rarity == Rarity.Common) "$ele\n$ele" else ele
                 }
 
             val head = "<style>$style</style>"
-            val body = "<div class=\"grid\">\n$images\n</div>"
+            val body = "<div class=\"flex\">\n$images\n</div>"
             val html = "<html>\n<head>$head</head>\n<body>$body</body>\n</html>"
             IOUtils.overwriteFile("output/html/output.html", html)
             logger.info("Successfully rendered html")
