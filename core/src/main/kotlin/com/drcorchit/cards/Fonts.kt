@@ -26,7 +26,7 @@ object Fonts {
 
     data class FontSizes (val numberFont: Int, val numberFontSmall: Int, val nameFont: Int, val abilityFont: Int, val quoteFont: Int)
 
-    val medFontSizes = FontSizes(96, 84, 96, 48, 28)
+    val medFontSizes = FontSizes(96, 84, 96, 36, 28)
     val fontSizes = medFontSizes
 
     val numberFont = initFont("enchanted_land.ttf", fontSizes.numberFont)
@@ -55,7 +55,7 @@ object Fonts {
                 glyph.v2 = j / 12f
                 glyph.srcX = 0
                 glyph.srcY = 0
-                glyph.yoffset = -(fontSizes.abilityFont + 8)
+                glyph.yoffset = -(fontSizes.abilityFont + 4)
                 glyph.width = fontSizes.abilityFont
                 glyph.height = fontSizes.abilityFont
                 glyph.xadvance = fontSizes.abilityFont

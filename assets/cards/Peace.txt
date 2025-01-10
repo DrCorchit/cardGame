@@ -5,13 +5,13 @@ Bullfrog Army: 3/2p [Peace, Beast] [Require: Expend water mana.; Deploy, Bonded:
 Pond Naiad: 2/2p [Peace, Dryad] [Turnwise: Conjure water mana.; Turnwise, Expend water mana: Rally 1 instead.] [Ponds are objectively cuter than lakes.]
 Harvest: 2p [Peace, Instant, Nature] [Deploy: Expend all earth mana, water mana and air mana, then Rally 1 for each Mana spent.] [A time to sow, a time to reap...]
 
-Dryad Shaman: 3/3p [Peace, Dryad] [Deploy, Expend earth mana water mana air mana: Play a Nature card from hand, then draw a card.] [Nature is a jewel of many facets.]
-Treant Sage: 4/3p [Peace, Treant] [Battlefield: Whenever you play a Nature card, Rally 1.] [I think, therefore... hmmm...]
+Dryad Shaman: 3/3p [Peace, Dryad] [Deploy: Conjure earth mana earth mana, air mana air mana, or water mana water mana.; Activate: Repeat the Deploy ability.] []
+Treant Sage: 3/3p [Peace, Treant] [Whenever you play a Nature card, Rally 1.] [I think, therefore... hmmm...]
 Lightning Strike: 3p [Peace, Instant, Nature] [Deploy: Assault 2.; Expend X air mana: Increase the Assault by X.] [You've been thunderstruck.]
 Lifegiving Rainfall: 3p [Peace, Equipment, Nature] [Boost 4.; Turnwise: Conjure water mana.] [The rain begins with a single drop.]
-Heartwood Treant: 3/3p [Peace, Treant] [Deploy, Expend earth mana water mana air mana: Become Stalwart.] [Some people just can't see the forest because the trees will attack them if they do.]
+Dryad Sentinel: 3/3p [Peace, Dryad] [Deploy, Expend earth mana water mana air mana: Summon another Dryad Sentinel from deck.; Activate, Bonded: Protect a unit.] [You ever feel like you're being watched?]
 
-Dryad Ranger: 4/4p [Peace, Dryad] [Deploy, Expend earth mana water mana air mana: Summon another Dryad Ranger from deck.; Activate: Protect a unit.] [You ever feel like you're being watched?]
+Heartwood Treant: 4/4p [Peace, Treant] [Deploy, Expend earth mana water mana air mana: Become Stalwart.] [Some people just can't see the forest because the trees will attack them if they do.]
 Dryad Warrior: 2/4p [Peace, Dryad] [Deploy, Expend earth mana water mana air mana: Assault 3.] [Every life matters. So does every death.]
 Warthog: 7/4p [Peace, Beast] [Require: Expend earth mana earth mana earth mana.] [Oink! Oink!]
 
@@ -38,5 +38,6 @@ Titania: 6/9p [Peace, Fae, Regent, Legendary] [Deploy: Summon a Pixie on either 
 #Pied Piper: 1/11p [Peace, Human, Legendary] [Deploy: Summon all 1-power Peace units from your graveyard and give them Doomed.] []
 King Oberon: 5/10p [Peace, Fae, Regent, Legendary] [Activate: Tutor or Resurrect a Lightning Strike.; Turnwise: Conjure air mana.] [Ill met by moonlight, proud Titania.]
 Allmother: 2/10p [Peace, Dryad, Legendary] [Deploy, Expend earth mana water mana air mana: Tutor a Peace unit.; Deploy, Expend earth mana earth mana earth mana: Resurrect a Peace unit instead.] [No wound too deep, no bone too broken, no heart beyond repair.]
+
 
 #Further ideas: Snow White, Leprechaun, Robin Hood

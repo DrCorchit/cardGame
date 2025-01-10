@@ -24,9 +24,6 @@ class Main : ApplicationAdapter() {
     //52 = Neromir
     //78 = Allmother
     var index = 0
-
-    //lateinit var card: CardActor
-    //lateinit var stage: Stage
     val stage by lazy { Stage() }
     val card by lazy { CardActor(cards[index]) }
 
@@ -68,65 +65,6 @@ class Main : ApplicationAdapter() {
         stage.draw()
         Draw.batch.end()
 
-        //generatePrintableCards()
-    }
-
-    private fun generatePrintableCards() {
-        renderCards()
-        assembleHtml()
-        Gdx.app.exit()
-    }
-
-    fun renderCards() {
-        cards.forEach {
-            Draw.batch.begin()
-            it.drawSimple()
-            Draw.batch.end()
-            screenshot(it.name)
-        }
-    }
-
-    fun screenshot(cardName: String) {
-        val pixmap = Pixmap.createFromFrameBuffer(0, 0, W, H)
-        val name = "output/images/${cardName.normalize()}.png"
-        PixmapIO.writePNG(FileHandle(name), pixmap, Deflater.DEFAULT_COMPRESSION, true)
-    }
-
-    fun assembleHtml() {
-        val printedPageWidth = 720
-        val columns = 3
-        val space = 3
-        val totalColumnsWidth = (columns + 1) * space
-        val cardsTotalWidth = printedPageWidth - totalColumnsWidth
-        val cardWidth = cardsTotalWidth / columns
-        val cardHeight = cardWidth * Card.cardRatio
-
-        try {
-            val style = ".grid { " +
-                "display: grid; " +
-                "grid-template-columns:${" auto".repeat(columns)}; " +
-                "gap: ${space}px; } "
-            val images = cards
-                .joinToString("\n") {
-                    val img = "<img " +
-                        "width=$cardWidth " +
-                        "height=$cardHeight " +
-                        "src=\"../images/${it.name.normalize()}.png\" " +
-                        "alt=${it.name}/>"
-                    if (it.rarity == Rarity.Common) "$img\n$img"
-                    else img
-                }
-
-            val head = "<style>$style</style>"
-            val body = "<div class=\"grid\">\n$images\n</div>"
-            val html = "<html>\n<head>$head</head>\n<body>$body</body>\n</html>"
-            IOUtils.overwriteFile("output/html/output.html", html)
-            logger.info("Successfully rendered html")
-        } catch (e: Exception) {
-            logger.error("Failed to render html", e)
-        }
-
-        Gdx.app.net.openURI("http://localhost:63342/CardGame/output/html/output.html")
     }
 
     override fun dispose() {

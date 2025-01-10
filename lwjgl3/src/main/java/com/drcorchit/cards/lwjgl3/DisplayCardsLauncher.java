@@ -8,7 +8,7 @@ import static com.drcorchit.cards.Main.H;
 import static com.drcorchit.cards.Main.W;
 
 /** Launches the desktop (LWJGL3) application. */
-public class Lwjgl3Launcher {
+public class DisplayCardsLauncher {
     public static void main(String[] args) {
         if (StartupHelper.startNewJvmIfRequired()) return; // This handles macOS support and helps on Windows.
         createApplication();
@@ -18,7 +18,7 @@ public class Lwjgl3Launcher {
         return new Lwjgl3Application(new Main(), getDefaultConfiguration());
     }
 
-    private static Lwjgl3ApplicationConfiguration getDefaultConfiguration() {
+    public static Lwjgl3ApplicationConfiguration getDefaultConfiguration() {
         Lwjgl3ApplicationConfiguration configuration = new Lwjgl3ApplicationConfiguration();
         configuration.setTitle("CardGame");
         //// Vsync limits the frames per second to what your hardware can display, and helps eliminate

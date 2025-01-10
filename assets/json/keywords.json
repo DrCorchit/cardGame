@@ -6,7 +6,7 @@
   },
   {
     "name": "After",
-    "description": "Triggers immediately after the resolution of any deploy ability."
+    "description": "Triggers immediately after the resolution of any Deploy ability."
   },
   {
     "name": "Require",

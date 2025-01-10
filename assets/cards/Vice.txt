@@ -26,7 +26,7 @@ Jailbreak: 6p [Vice, Instant, Crime, Rare] [Deploy: Resurrect a 2 provision Vice
 The Quartermaster: 2/6p [Vice, Human, Spy, Rare] [Deploy: Tutor a common spy.; Whenever you play a Disloyal unit, Rally 1.] [The best plans are those that work.]
 
 Madame Baghat: 3/7p [Vice, Human, Caporegime, Rare] [Deploy, Chaos X: Tutor a unit with X or fewer provisions.] [If anyone calls me "Bag Hat" one more time...]
-Pandemonium: 7p [Vice, Instant, Crime, Rare] [Echo.; Chaos 4: Choose three cards from your deck, then play one at random.; Chaos 5: Choose two cards from your deck, then play one at random.; Chaos 6: Tutor a card from your deck.; After: Return any unplayed cards to your deck.; While in your graveyard, this card increases Chaos by 1.] [Pandemonium did not reign; it poured.] [tutor]
+Pandemonium: 7p [Vice, Instant, Crime, Rare] [Echo.; Deploy: Choose three cards from your deck and play one at random, then return any unplayed cards to your deck.; While in your graveyard, Chaos is increased by 1.] [Pandemonium did not reign; it poured.] [tutor]
 Scarlet, Made Lady: 2/7p [Vice, Human, Caporegime, Legendary] [Finale: Rally 1 for each allied Henchman, 2 for each allied Caporegime, and 3 for each allied Kingpin.] [Wait 'til Big Daddy hears about this!]
 
 Molgrippe, Master Assassin: 2/8p [Vice, Human, Henchman, Legendary] [Deploy, Chaos 5: Assassinate 7.] [The anomaly will be corrected momentarily.] [removal, tall punish]

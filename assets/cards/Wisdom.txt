@@ -15,7 +15,7 @@ Incinerator: 1a 3/4p [Wisdom, Machine] [Activate: Banish the top card of your op
 Power Surge: 4p [Wisdom, Equipment, Technology] [Boost 4.; Equip: If the target is a common unit, Reactivate.] [Power is always dangerous.] [utility, combo]
 Artificer: 3/4p [Wisdom, Elf] [Deploy: Destroy an allied Machine, then Resurrect a common Machine.] [Make it or break it.] [utility]
 
-Armor Weave: 4p [Wisdom, Equipment, Technology, Rare] [Expend air mana: Tutor self.; Equipped: Provides 2 Armor.;] [No way they're getting through all that.] [thinning, utility]
+Armor Weave: 2a 4p [Wisdom, Equipment, Technology, Rare] [Expend air mana: Tutor self.] [No way they're getting through all that.] [thinning, utility]
 Eriathorn, Gemini: 4/4p [Wisdom, Elf, Rare] [Activate: Conjure air mana air mana air mana.; If you control Shuramorn, double that amount.] [Prepare for trouble!] [mana, combo]
 Shuramorn, Gemini: 4/4p [Wisdom, Elf, Rare] [Activate: Conjure light mana light mana light mana.; If you control Eriathorn, double that amount.] [Make it double!] [mana, combo]
 
