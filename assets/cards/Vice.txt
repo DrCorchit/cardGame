@@ -6,27 +6,27 @@ Shank: 2p [Vice, Equipment, Weapon, Crime] [Equip: Assault 2.; If the equip targ
 Pickpocket: 2p [Vice, Instant, Crime] [Deploy, Chaos X: Rally X] [You can get a lot more of what you want with a kind word and a knife than you can with just a kind word.] [tempo]
 
 Pyromaniac: 2/3p [Vice, Human, Henchman] [Deploy: Reroll.; Activate, Chaos X: Assault X.] [Something not being on fire is usually a very easy problem to solve.]
-Flash Mob: 3/3p [Vice, Human] [Deploy, Chaos 4: Summon all copies of Flash Mob from your deck.] [If they could arrest us all, we'd just make an even bigger mob.]
+Flash Mob: 3/3p [Vice, Human] [Deploy, Chaos 4: Summon all copies of Flash Mob from your deck.] [They can't arrest us all!]
 Street Thug: 1a 3/3p [Vice, Human, Henchman] [Deploy: Reroll.; Activate: Lock an enemy unit.] [The enemy can't steal our plans if we don't have any plans.] [lock]
 Intimidation: 3p [Vice, Equipment, Crime] [Deploy: Reroll and Rally 5.] [utility, pointslam]
-Bystander: 2/3p [Vice, Human] [Activate: On this turn, whenever a unit is Assassinated or Seized, Rally by its provision cost.] [Why don't you take a picture? It will last longer.] [greed]
 
+Bystander: 2/4p [Vice, Human] [Activate: On this turn, whenever a unit is Assassinated or Seized, Rally by its provision cost.] [Didn' see nuthin'.] [greed]
 Hypnotist: 1/4p [Vice, Human, Spy] [Disloyal.; Deploy: Seize 2.] [What a captivating performance!] [seize]
 Hitman: 1/4p [Vice, Human, Spy] [Disloyal.; Deploy, Chaos X: Assassinate X.] [I never hurt nobody that ain't had it comin'.] [assassinate]
-Landlady: 6/4p [Vice, Human] [If an adjacent unit is destroyed, Destroy self.] [It's a beautiful day for an eviction.] [pointslam]
+Landlady: 6/4p [Vice, Human] [Whenever an adjacent unit is destroyed, destroy self.] [It's a beautiful day for an eviction.] [pointslam]
 
 Maximillian, Slumlord: 4/4p [Vice, Human, Caporegime, Rare] [Deploy: Move one of your opponent's Mana dice to the common pool.; Expire: Move it back.] [Su casa es mi casa.]
-Captain Ernesto: 4/4p [Vice, Human, Henchman, Rare] [Activate: Assault 4 and Destroy self.] [If its a fight ya wants...]
+Captain Ernesto: 4/4p [Vice, Human, Henchman, Rare] [Activate: Assault 4 and destroy self.] [If it's a fight ya wants...]
 The Butcher: 1/4p [Vice, Human, Spy, Rare] [Disloyal.; Deploy: Assassinate 3 adjacent units.] [Nice to meat you!]
 
-Inspector Culso: 2/5p [Vice, Human, Spy, Rare] [Disloyal.; Deploy, Chaos X: Look at all cards from your opponent's hand with a provision cost of X or less and play one.; After: Your opponent draws a card.] [With me, surprises are rarely unexpected.]
+Inspector Culso: 2/5p [Vice, Human, Spy, Rare] [Disloyal.; Deploy, Chaos X: Look at all cards from your opponent's deck with a provision cost of X or less and play one.] [With me, surprises are rarely unexpected.]
 The Dollhouse: 5p [Vice, Emplacement, Location, Rare] [Deploy: Tutor a Moomsh Addict or Landlady.; Adjacent Moomsh Addicts and Landladies do not destroy themselves.] [If home is where the heart is, then they're homeless.]
 
 Jailbreak: 6p [Vice, Instant, Crime, Rare] [Deploy: Resurrect a 2 provision Vice unit.; Chaos X: Increase the provision limit by X.] [Breaking out: not just for teenagers anymore.]
 The Quartermaster: 2/6p [Vice, Human, Spy, Rare] [Deploy: Tutor a common spy.; Whenever you play a Disloyal unit, Rally 1.] [The best plans are those that work.]
 
 Madame Baghat: 3/7p [Vice, Human, Caporegime, Rare] [Deploy, Chaos X: Tutor a unit with X or fewer provisions.] [If anyone calls me "Bag Hat" one more time...]
-Pandemonium: 7p [Vice, Instant, Crime, Rare] [Echo.; Deploy: Choose three cards from your deck and play one at random, then return any unplayed cards to your deck.; While in your graveyard, Chaos is increased by 1.] [Pandemonium did not reign; it poured.] [tutor]
+Pandemonium: 7p [Vice, Instant, Crime, Rare] [Echo.; Deploy: Choose three cards from your deck and play one at random.; While in your graveyard, Chaos is increased by 1.] [Pandemonium did not reign; it poured.] [tutor]
 Scarlet, Made Lady: 2/7p [Vice, Human, Caporegime, Legendary] [Finale: Rally 1 for each allied Henchman, 2 for each allied Caporegime, and 3 for each allied Kingpin.] [Wait 'til Big Daddy hears about this!]
 
 Molgrippe, Master Assassin: 2/8p [Vice, Human, Henchman, Legendary] [Deploy, Chaos 5: Assassinate 7.] [The anomaly will be corrected momentarily.] [removal, tall punish]

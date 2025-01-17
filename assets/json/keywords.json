@@ -5,16 +5,8 @@
     "synonyms": ["Deploys", "Deployed"]
   },
   {
-    "name": "After",
-    "description": "Triggers immediately after the resolution of any Deploy ability."
-  },
-  {
-    "name": "Require",
-    "description": "The card cannot be played unless the condition is met."
-  },
-  {
     "name": "Activate",
-    "description": "The active ability of the card. Unavailable on the first turn unless the card gains Haste.",
+    "description": "An ability that can be used on demand, after the first turn.",
     "synonyms": ["Activates", "Activated"]
   },
   {
@@ -35,11 +27,6 @@
     "description": "Triggers while on the battlefield, each allied turn start."
   },
   {
-    "name": "Play",
-    "description": "Move a card from hand to the battlefield, triggering its deploy ability.",
-    "synonym": ["Plays", "Played"]
-  },
-  {
     "name": "Summon",
     "description": "Move a card to the battlefield, bypassing its deploy ability.",
     "synonyms": ["Summons", "Summoned"]
@@ -51,18 +38,8 @@
   },
   {
     "name": "Tutor",
-    "description": "Play a card from deck.",
+    "description": "Search for and play a card from deck.",
     "synonyms": ["Tutors", "Tutored"]
-  },
-  {
-    "name": "Destroy",
-    "description": "Move a card from battlefield to graveyard.",
-    "synonyms": ["Destroys", "Destroyed"]
-  },
-  {
-    "name": "Discard",
-    "description": "Move a card from hand or deck to graveyard.",
-    "synonyms": ["Discards", "Discarded"]
   },
   {
     "name": "Mana",
@@ -70,27 +47,27 @@
   },
   {
     "name": "Expend X",
-    "description": "Reroll X mana dice of the indicated type to trigger the ability.",
+    "description": "Triggers if X mana dice are rerolled.",
     "synonyms": ["Expend", "Expends", "Expended"]
   },
   {
-    "name": "Conjure X",
-    "description": "Turn X mana dice to the indicated face.",
-    "synonyms": ["Conjure", "Conjures", "Conjured"]
+    "name": "Conjure",
+    "description": "Turn a number of mana dice to the indicated faces.",
+    "synonyms": ["Conjures", "Conjured"]
   },
   {
-    "name": "Reroll",
-    "description": "Reroll any number of common or allied mana dice.",
+    "name": "Reroll X",
+    "description": "Reroll X common or allied mana dice.",
     "synonyms": ["Rerolls"]
   },
   {
     "name": "Rally X",
-    "description": "Add the indicated number of points to your score.",
+    "description": "Add X points to your score.",
     "synonyms": ["Rally", "Rallies"]
   },
   {
     "name": "Rout X",
-    "description": "Subtract the indicated number of points from your score.",
+    "description": "Subtract X points from your score.",
     "synonyms": ["Rout", "Routs"]
   },
   {
@@ -99,7 +76,7 @@
   },
   {
     "name": "Boost X",
-    "description": "Increase a unit's power by X.",
+    "description": "Increase the unit's power by X.",
     "synonyms": ["Boost", "Boosted"]
   },
   {
@@ -109,7 +86,7 @@
   },
   {
     "name": "Protected",
-    "description": "Triggers if the target unit is being protected by another unit."
+    "description": "Triggers if the card is under the protection of an ally."
   },
   {
     "name": "Vulnerable",
@@ -126,40 +103,45 @@
   },
   {
     "name": "Assassinate X",
-    "description": "Destroy an enemy unit of X or less power, bypassing Protection.",
+    "description": "Assault X, bypassing Protection.",
     "synonyms": ["Assassinate", "Assassinates", "Assassinated"]
   },
   {
+    "name": "Destroy",
+    "description": "Move a card from the battlefield to the graveyard.",
+    "synonyms": ["destroys", "destroyed"]
+  },
+  {
     "name": "Banish",
-    "description": "Remove a card from the game. Does not trigger Expire abilities.",
+    "description": "Remove a card from the game. Does not trigger Expire.",
     "synonyms": ["Banishes", "Banished"]
   },
   {
     "name": "Overkill X",
-    "description": "Trigger this ability if an assault or assassinate ability exceeds the strength of the target unit by at least X.",
+    "description": "Triggers if an assault or assassination exceeds the target's power by at least X.",
     "synonyms": ["Overkill"]
   },
   {
     "name": "Seize X",
     "description": "Move a unit of X or less power to it's opponents battlefield.",
-    "synonyms": ["Seizes", "Seized"]
+    "synonyms": ["Seize", "Seizes", "Seized"]
   },
   {
     "name": "Armor X",
-    "description": "Added to unit power when calculating vulnerability to Assault, Assassinate, and Seize abilities.",
+    "description": "Unit resistance to Assault, Assassinate, and Seize abilities is increased by X.",
     "synonym": ["Armor"]
   },
   {
     "name": "Expire",
-    "description": "Triggers when the card is destroyed."
+    "description": "Triggers when the card is Destroyed."
   },
   {
     "name": "Finale",
-    "description": "Triggers at the end of the round."
+    "description": "Triggers when you pass."
   },
   {
     "name": "Disloyal",
-    "description": "Indicates that the card is played to your opponent's battefield."
+    "description": "The card is played to your opponent's battefield."
   },
   {
     "name": "Chaos X",
@@ -184,7 +166,7 @@
   },
   {
     "name": "Poison",
-    "description": "Status that marks a unit as poisoned, or destroy it if it is already poisoned."
+    "description": "A unit is destroyed if it receives two instances of this status."
   },
   {
     "name": "Immune",

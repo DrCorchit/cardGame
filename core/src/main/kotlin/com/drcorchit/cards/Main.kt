@@ -23,7 +23,7 @@ class Main : ApplicationAdapter() {
     //27 = Kali
     //52 = Neromir
     //78 = Allmother
-    var index = 0
+    var index = 120
     val stage by lazy { Stage() }
     val card by lazy { CardActor(cards[index]) }
 

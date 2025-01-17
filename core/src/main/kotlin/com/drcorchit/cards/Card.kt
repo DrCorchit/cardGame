@@ -236,6 +236,9 @@ class Card(
 
             val tagsCount = cards.flatMap { it.tags }.groupBy { it }.mapValues { it.value.size }
             tagsCount.forEach { (tag, count) -> println("Tag [$tag]: $count") }
+
+            val keywordsCount = cards.flatMap { it.keywords }.groupBy { it }.mapValues { it.value.size }
+            keywordsCount.forEach{ (keyword, count) -> println("Keyword [${keyword.name}]: $count")}
         }
 
         val keywordGray = Color.valueOf("#405060ff")
@@ -337,7 +340,7 @@ class Card(
         //Cost
         provisionsBlack.draw(batch, costX, costY, costBackSize, costBackSize)
         Draw.drawText(
-            costX, costY + 2,
+            costX, costY + 5,
             Fonts.numberFontSmall,
             cost.toString(),
             100f,
@@ -431,7 +434,7 @@ class Card(
         } else {
             Draw.drawText(
                 diamondOffsetX,
-                H - diamondOffsetY,
+                H - diamondOffsetY + 5,
                 Fonts.numberFont,
                 power.toString(),
                 100f,

@@ -19,7 +19,7 @@ object Textures {
     val line = initTexture("line.png")
     val diamondBlack = initTexture("diamond_black.png")
 
-    val armorBack = initTexture("armor_8.png")
+    val armorBack = initTexture("armor.png")
     val armorBlack = initTexture("armor_black.png")
 
     val costBack = initTexture("provisions.png")

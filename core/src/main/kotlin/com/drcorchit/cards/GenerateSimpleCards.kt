@@ -6,6 +6,8 @@ import com.badlogic.gdx.files.FileHandle
 import com.badlogic.gdx.graphics.Pixmap
 import com.badlogic.gdx.graphics.PixmapIO
 import com.drcorchit.cards.Card.Companion.cards
+import com.drcorchit.cards.Main.Companion.H
+import com.drcorchit.cards.Main.Companion.W
 import com.drcorchit.cards.graphics.Draw
 import com.drcorchit.justice.utils.IOUtils
 import com.drcorchit.justice.utils.StringUtils.normalize
@@ -57,7 +59,7 @@ class GenerateSimpleCards : ApplicationAdapter() {
     fun screenshot(cardName: String) {
         val rawPixmap = Pixmap.createFromFrameBuffer(0, 0, W, H)
         val rotatedPixmap = rotatePixmap(rawPixmap)
-        val name = "output/images/${cardName.normalize()}.png"
+        val name = "output/images/simple/${cardName.normalize()}.png"
         PixmapIO.writePNG(FileHandle(name), rotatedPixmap, Deflater.DEFAULT_COMPRESSION, false)
     }
 
@@ -68,19 +70,20 @@ class GenerateSimpleCards : ApplicationAdapter() {
         val cardWidth = round(cardHeight * Card.cardRatio).toInt()
 
         try {
-            val style = ".flex { " +
-                "display: flex; " +
-                "flex-direction: rows;" +
-                "flex-wrap: wrap;" +
-                "gap: ${space}px; }\n" +
-                "img { " +
-                "width: $cardWidth;" +
-                "height: $cardHeight;" +
+            val style = ".flex {" +
+                " display: flex; " +
+                " flex-direction: rows;" +
+                " flex-wrap: wrap;" +
+                " gap: ${space}px;" +
+                "}\n" +
+                "img {" +
+                " width: $cardWidth;" +
+                " height: $cardHeight;" +
                 "}"
 
             val images = cards
                 .joinToString("\n") {
-                    val ele = "<img src=\"../images/${it.name.normalize()}.png\" alt=${it.name} />"
+                    val ele = "<img src=\"../images/simple/${it.name.normalize()}.png\" alt=${it.name} />"
                     if (it.rarity == Rarity.Common) "$ele\n$ele" else ele
                 }
 
@@ -102,9 +105,5 @@ class GenerateSimpleCards : ApplicationAdapter() {
 
     companion object {
         private val logger = Logger.getLogger(GenerateSimpleCards::class.java)
-
-        //was 750x1050
-        const val W: Int = 1000
-        const val H: Int = 1400
     }
 }

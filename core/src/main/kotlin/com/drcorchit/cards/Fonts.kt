@@ -26,7 +26,7 @@ object Fonts {
 
     data class FontSizes (val numberFont: Int, val numberFontSmall: Int, val nameFont: Int, val abilityFont: Int, val quoteFont: Int)
 
-    val medFontSizes = FontSizes(96, 84, 96, 36, 28)
+    val medFontSizes = FontSizes(96, 84, 96, 40, 32)
     val fontSizes = medFontSizes
 
     val numberFont = initFont("enchanted_land.ttf", fontSizes.numberFont)

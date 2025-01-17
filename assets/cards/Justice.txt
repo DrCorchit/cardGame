@@ -20,7 +20,7 @@ Enoch, Prophet: 2/7p [Justice, Human, Rare] [Activate: Rally equal to the provis
 Ariel, Heaven's Lioness: 3/7p [Justice, Human, Rare] [Deploy: Assault 3.; Deploy, Expend 2 light mana: Assault 4; Deploy, Expend 2 dark mana: Assassinate 3] [She makes cute noises when she fights. Adorable.]
 Jurisprudence: 8p [Justice, Instant, Law, Rare] [Echo.; Deploy: Conjure 2 light mana and Tutor a common Justice unit.; Deploy, Expend 2 light mana: Tutor a Justice unit.] [Law is order, and good law is good order.]
 
-Stephen, Martyr: 1/8p [Justice, Deity, Legendary] [Deploy: Play a card from hand.; Deploy, Expend 2 light mana: Play a unit from hand and Protect it.; After: Draw a card.; Expire: Conjure 2 light mana.] [Do not hold this sin against them!]
+Stephen, Martyr: 1/8p [Justice, Deity, Legendary] [Deploy: Play a card from hand.; Deploy, Expend 2 light mana: Play a unit from hand and Protect it.; Afterwards, draw a card.; Expire: Conjure 2 light mana.] [Do not hold this sin against them!]
 Judgment Day: 9p [Justice, Emplacement, Law, Legendary] [Haste.; Whenever you play a unit, Conjure light mana. Whenever your opponent plays a unit, Conjure dark mana.; Activate, Expend 5 light mana: Resurrect a unit.; Activate, Expend 5 dark mana: Destroy a unit.] [Pride goeth before a fall...]
 Archangel Michael: 7/10p [Justice, Angel, Legendary] [Deploy: Tutor an angel.] [Behold, the commander of the armies of heaven.]
 Azrael, Angel of Death: 1/10p [Justice, Angel, Legendary] [Deploy: Assault 10.; Expend 3 light mana: Assassinate instead.; Overkill X: Conjure X dark mana.] [The preservation of life requires the destruction of evil.]

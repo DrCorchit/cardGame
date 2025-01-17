@@ -6,6 +6,15 @@ import com.drcorchit.cards.graphics.Textures.asSprite
 import com.drcorchit.justice.utils.math.Compass
 
 enum class Motive(val color: Color) {
+    /*
+    Wisdom -> Engines + non-removal control + deck manipulation
+    Greed -> Pointslam + Engines
+    Peace -> Engines + Mana-based setup/payoff + removal control + tutoring
+    Vice ->  Pointslam + assassination control + mana disruption
+    Rage -> Removal control + pointslam + discard package
+    Justice -> Removal control + engines + mana manipulation
+     */
+
     //542
     Neutral("603000"),
 
