@@ -6,12 +6,12 @@
   },
   {
     "name": "Activate",
-    "description": "An ability that can be used on demand, after the first turn.",
+    "description": "An ability that can be used once, after the first turn.",
     "synonyms": ["Activates", "Activated"]
   },
   {
-    "name": "Reactivate",
-    "description": "Re-enable activation of the active ability."
+    "name": "Recharge",
+    "description": "Re-enable the active ability."
   },
   {
     "name": "Haste",
@@ -21,10 +21,6 @@
   {
     "name": "Equip",
     "description": "Triggers when the equipment is assigned to a unit."
-  },
-  {
-    "name": "Turnwise",
-    "description": "Triggers while on the battlefield, each allied turn start."
   },
   {
     "name": "Summon",
@@ -75,6 +71,10 @@
     "description": "The running total of points gained from Rally or lost from Rout."
   },
   {
+    "name": "Turnwise",
+    "description": "Triggers while on the battlefield, each allied turn start."
+  },
+  {
     "name": "Boost X",
     "description": "Increase the unit's power by X.",
     "synonyms": ["Boost", "Boosted"]
@@ -112,6 +112,10 @@
     "synonyms": ["destroys", "destroyed"]
   },
   {
+    "name": "Reflex",
+    "description": "Triggers when an adjacent unit is destroyed."
+  },
+  {
     "name": "Banish",
     "description": "Remove a card from the game. Does not trigger Expire.",
     "synonyms": ["Banishes", "Banished"]
@@ -127,8 +131,8 @@
     "synonyms": ["Seize", "Seizes", "Seized"]
   },
   {
-    "name": "Armor X",
-    "description": "Unit resistance to Assault, Assassinate, and Seize abilities is increased by X.",
+    "name": "Armor",
+    "description": "Increases resistance to Assault or Assassinate abilities.",
     "synonym": ["Armor"]
   },
   {

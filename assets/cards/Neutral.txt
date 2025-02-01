@@ -3,16 +3,17 @@ Butler: 1/2p [Human] [Deploy: Rally 2.; Finale: Rally 2.] [Anything you require,
 Icicle: 2p [Instant, Nature] [Deploy, Expend water mana: Assault 2.] [You'll shoot your eye out!]
 Pack Wolf: 2/2p [Beast] [Deploy, Bonded: Assault 2] [Nice doggy...]
 Manacles: 2p [Equipment, Technology] [Disloyal.; Equip: Lock the target.; No additional equipment may be assigned to this unit.] [Don't do anything rash.]
+Bandit: 3/3p [Human] [Deploy: Assault 1.] [Stick 'em up.]
 
 Apothecary: 3/3p [Human, Mage] [Deploy, Expend water mana: Purify a unit.] [An ounce of prevention is worth a pound of cure.] [utility]
-Bandit: 3/3p [Human] [Deploy: Assault 1.] [Stick 'em up.]
 Elemental Priestess: 3/3p [Human, Mage] [Deploy: Convert all Mana of one color into another color of your choice.] [All magic comes from one source, and to this source must return.]
-Cave Bear: 5/3p [Beast] [Expend earth mana to play this card.] [Let sleeping bears lie.]
+Cave Bear: 5/3p [Beast] [You must control an emplacement to play this card.] [Let sleeping bears lie.]
 Fireball: 3p [Instant, Spell] [Deploy: Conjure fire mana and Assault 2.; Deploy, Expend fire mana: Assault 3 instead.] [I didn't ask how big the room was. I said I cast fireball.] [removal]
 
 Assassin: 1/4p [Human, Spy] [Disloyal.; Deploy: Assassinate 4.] [Humans make good assassins. I hear they also make good targets.]
 Emissary: 1/4p [Human, Spy] [Disloyal.; Deploy: Play a unit from hand, then draw a card.] [Introducing his most gracious excellency...]
 Saboteur: 2/4p [Human, Spy] [Deploy: Deflect a unit.; Deploy, Disloyal: Destroy an Emplacement or Equipment instead.] [If I had a hammer...]
+Thunderbolt: 4p [Instant, Spell] [Deploy: Conjure air mana air mana and Assault 2.; Deploy: Expend air mana air mana: Assault 4.] [Krakowwww!]
 Pact: 4p [Equipment, Spell] [Equip: Rally 6.; Expire: Rout 6.] [For sale, world. Price: your soul.] [greed]
 
 Bounty Hunter: 3/4p [Human, Rare] [Deploy, Expend air mana: Lock a unit.] [You can run, but you can't hide.]

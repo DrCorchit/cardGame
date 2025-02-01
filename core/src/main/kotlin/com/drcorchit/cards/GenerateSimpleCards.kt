@@ -58,16 +58,15 @@ class GenerateSimpleCards : ApplicationAdapter() {
 
     fun screenshot(cardName: String) {
         val rawPixmap = Pixmap.createFromFrameBuffer(0, 0, W, H)
-        val rotatedPixmap = rotatePixmap(rawPixmap)
+        val rotatedPixmap = if (rotate90) rotatePixmap(rawPixmap) else rawPixmap
         val name = "output/images/simple/${cardName.normalize()}.png"
         PixmapIO.writePNG(FileHandle(name), rotatedPixmap, Deflater.DEFAULT_COMPRESSION, false)
     }
 
     fun assembleHtml() {
-        //page printable width = 720 px = 7 7/16 inches
-        val space = 1
         val cardHeight = 242
         val cardWidth = round(cardHeight * Card.cardRatio).toInt()
+        val space = 1
 
         try {
             val style = ".flex {" +
@@ -83,7 +82,8 @@ class GenerateSimpleCards : ApplicationAdapter() {
 
             val images = cards
                 .joinToString("\n") {
-                    val ele = "<img src=\"../images/simple/${it.name.normalize()}.png\" alt=${it.name} />"
+                    val ele =
+                        "<img src=\"../images/simple/${it.name.normalize()}.png\" alt=${it.name} />"
                     if (it.rarity == Rarity.Common) "$ele\n$ele" else ele
                 }
 
@@ -105,5 +105,12 @@ class GenerateSimpleCards : ApplicationAdapter() {
 
     companion object {
         private val logger = Logger.getLogger(GenerateSimpleCards::class.java)
+
+        //page printable width = 720 px = 7 7/16 inches
+        val pageWidthInInches = 7.4375f
+        val pageWidthInPx = 720
+        val pxToInches = pageWidthInPx / pageWidthInPx
+
+        val rotate90 = true
     }
 }

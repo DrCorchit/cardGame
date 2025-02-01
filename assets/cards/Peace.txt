@@ -1,21 +1,27 @@
 Pixie: 1/2p [Peace, Fae] [Deploy: Conjure earth mana water mana air mana.; Activate: Conjure earth mana water mana air mana.] [All you need is a little pixie dust.]
-Fairy Ring: 1/2p [Peace, Fae] [Deploy: Deflect an enemy unit.; Turnwise: Conjure earth mana, water mana, or air mana.] [Come dance with us!]
-Forest Fire: 2p [Peace, Instant, Nature] [Deploy: Destroy an allied unit, then Resurrect a common Peace unit.] [Flames clear the way for new growth.]
+Fairy Ring: 1/2p [Peace, Fae] [Activate: Deflect an enemy unit.; Turnwise: Conjure earth mana.] [Come dance with us!]
+Pond Naiad: 2/2p [Peace, Nymph] [Turnwise: Conjure water mana.; Turnwise, Expend water mana: Rally 1 instead.] [Naiads agree that ponds are objectively cuter than lakes.]
+Treant Sapling: 2/2p [Peace, Treant] [Turnwise: Conjure earth mana.; Turnwise, Expend earth mana: Rally 1 instead.] [They grow up so fast.]
+Will-o'-the-Wisp: 3/2p [Peace, Fairy] [Deploy, Expend air mana air mana: Purify adjacent units.] [Where there's a will, there's a wisp.]
 Bullfrog Army: 3/2p [Peace, Beast] [Expend water mana to play this card.; Deploy, Bonded: Assault 2.] [Survivors describe their attacks as a ribbeting experience.]
-Pond Naiad: 2/2p [Peace, Dryad] [Turnwise: Conjure water mana.; Turnwise, Expend water mana: Rally 1 instead.] [Naiads agree that ponds are objectively cuter than lakes.]
+Sleeping Bear: 4/4p [Peace, Beast] [Expend earth mana to play this card.] []
+Forest Fire: 2p [Peace, Instant, Nature] [Deploy: Destroy an allied unit, then Resurrect a common Peace unit.] [Flames clear the way for new growth.]
 Harvest: 2p [Peace, Instant, Nature] [Deploy: Expend all earth mana, water mana and air mana, then Rally 1 for each Mana spent.] [A time to sow, a time to reap...]
 
-Dryad Shaman: 3/3p [Peace, Dryad] [Deploy: Conjure earth mana earth mana, air mana air mana, or water mana water mana.; Activate: Repeat the Deploy ability.] []
-Treant Sage: 3/3p [Peace, Treant] [Whenever you play a Nature card, Rally 1.] [I think, therefore... hmmm...]
-Lightning Strike: 3p [Peace, Instant, Nature] [Deploy: Assault 2.; Expend X air mana: Increase the Assault by X.] [You've been thunderstruck.]
+Treant Sage: 2/3p [Peace, Treant] [Finale: Rally 1 for each Nature card in your graveyard.] [I think, therefore... hmmm...]
+Heartwood Treant: 3/3p [Peace, Treant] [Deploy, Expend earth mana water mana air mana: Become Stalwart.] [Some people just can't see the forest for the trees. (Because the trees  will attack them if they do).]
+Dryad Shaman: 3/3p [Peace, Nymph] [Deploy: Conjure earth mana earth mana, air mana air mana, or water mana water mana.; Activate: Repeat the Deploy ability.] []
+Dryad Ranger: 4/3p [Peace, Nymph] [Deploy, Expend earth mana water mana air mana: Lock a unit.] [You ever feel like you're being watched?]
+Warthog: 5/4p [Peace, Beast] [Expend earth mana earth mana to play this card.] [Oink! Oink!]
+Mermaid: 5/4p [Peace, Nymph] [Expend water mana water mana to play this card.] [Such a beautiful song...]
+Lightning Strike: 3p [Peace, Instant, Nature] [Deploy, Expend X air mana: Assault 2 + X.; The target must be on either end of your opponent's battlefield.] [You've been thunderstruck.]
 Lifegiving Rainfall: 3p [Peace, Equipment, Nature] [Boost 4.; Turnwise: Conjure water mana.] [The rain begins with a single drop.]
-Dryad Ranger: 4/3p [Peace, Dryad] [Deploy, Expend earth mana water mana air mana: Lock a unit.] [You ever feel like you're being watched?]
 
-Heartwood Treant: 4/4p [Peace, Treant] [Deploy, Expend earth mana water mana air mana: Become Stalwart.] [Some people just can't see the forest because the trees will attack them if they do.]
-Hamadryad: 1a 5/4p [Peace, Dryad] [Activate, Expend earth mana water mana air mana: Protect an allied unit.] [Every life matters. So does every death.]
-Warthog: 7/4p [Peace, Beast] [Expend earth mana earth mana earth mana to play this card.] [Oink! Oink!]
+Hamadryad: 5/4p [Peace, Nymph] [Activate, Expend earth mana water mana air mana: Protect an allied unit.] [Every life matters. So does every death.]
+Mountain Gorilla: 7/4p [Peace, Beast] [Expend earth mana earth mana earth mana to play this card.] [A gentle giant until provoked.]
+Oceanid: 7/4p [Peace, Nymph] [Expend water mana water mana water mana to play this card.] []
 
-Arondight: 4p [Peace, Equipment, Weapon, Rare] [Equip: Assault 4, ignoring Armor.;] [Cuts like a knife through butter.] [removal]
+Arondight: 4p [Peace, Equipment, Weapon, Rare] [Equip: Assault 4, ignoring Armor.] [Cuts like a knife through butter.] [removal]
 Alraune: 1/4p [Peace, Fae, Rare] [Deploy: Convert light mana into earth mana, dark mana into water mana, and fire mana into air mana.; Afterwards, Rally 1 for each orb changed.] [If you don't believe in fairies, it means fairies don't believe in you!]
 Jack Frost: 4/4p [Peace, Fae, Rare] [Deploy, Expend 2X water mana: Lock or Purify X units.] [Whose woods these are, I think I know...]
 
@@ -31,12 +37,12 @@ Merlin: 1/7p [Peace, Human, Mage, Legendary] [Deploy: Conjure 6 earth mana, wate
 Excalibur: 7p [Peace, Equipment, Weapon, Legendary] [Equip: Assault 6.; Overkill X: Conjure X earth mana, water mana, or air mana.] [Whoso draws this sword, shall be king of Avalon!]
 
 King Arthur: 1a 4/8p [Peace, Human, Regent, Legendary] [Finale: If a weapon is equipped, become Stalwart.; In round 3, Rally 2 instead.] [One day, he will arise and save his homeland of Avalon.]
-Treant King: 5/8p [Peace, Treant, Regent, Legendary] [Finale: Rally for every nature card in your graveyard.] [My crown is called content, a crown that seldom kings enjoy.]
+Treant King: 1/8p [Peace, Treant, Regent, Legendary] [Deploy: Expend all earth mana, water mana, and air mana, then Rally for each mana expended. Repeat the deploy ability until no earth mana, water mana, or air mana remains.] [My crown is called content, a crown that seldom kings enjoy.]
 
-Titania: 6/9p [Peace, Fae, Regent, Legendary] [Deploy: Summon a Pixie on either side of this unit, from graveyard or deck.; Activate: Conjure earth mana earth mana, air mana air mana, or water mana water mana.] [Hand in hand, with fairy grace, we will sing and bless this place.]
+Titania: 4/9p [Peace, Fae, Regent, Legendary] [Deploy: Summon two pixies, one from deck and one from graveyard.; Activate: Conjure earth mana earth mana, air mana air mana, or water mana water mana.] [Hand in hand, with fairy grace, we will sing and bless this place.]
 
 King Oberon: 5/10p [Peace, Fae, Regent, Legendary] [Activate: Resurrect a Lightning Strike.; Turnwise: Conjure air mana.] [Ill met by moonlight, proud Titania.]
-Allmother: 2/10p [Peace, Dryad, Legendary] [Deploy, Expend earth mana water mana air mana: Tutor a Peace unit.; Deploy, Expend earth mana earth mana earth mana: Resurrect a Peace unit instead.] [No wound too deep, no bone too broken, no heart beyond repair.]
+Allmother: 2/10p [Peace, Nymph, Legendary] [Deploy, Expend earth mana water mana air mana: Tutor a Peace unit.; Deploy, Expend earth mana earth mana earth mana: Resurrect a Peace unit instead.] [No wound too deep, no bone too broken, no heart beyond repair.]
 
 #Pied Piper: 1/11p [Peace, Human, Legendary] [Deploy: Summon all 1-power Peace units from your graveyard and give them Doomed.] []
-#Further ideas: Snow White, Leprechaun, Robin Hood
+#Further ideas: Snow White, Leprechaun, Robin Hood, Undine

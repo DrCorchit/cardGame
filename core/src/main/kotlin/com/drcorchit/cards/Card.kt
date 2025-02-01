@@ -149,14 +149,14 @@ class Card(
             File(file).writeText(output)
         }
 
+        val factions = setOf(Motive.Peace, Motive.Greed, Motive.Neutral).map { "$it.txt" }
+
         fun readFrom(filename: String): List<Card> {
             return File(filename).listFiles()!!
                 .flatMap { file ->
-                    if (file.name == "Justice.txt" || file.name == "Rage.txt") {
-                        listOf()
-                    } else {
+                    if (factions.contains(file.name)) {
                         file.readLines().mapNotNull { parse(it) }
-                    }
+                    } else listOf()
                 }
         }
 
@@ -237,8 +237,9 @@ class Card(
             val tagsCount = cards.flatMap { it.tags }.groupBy { it }.mapValues { it.value.size }
             tagsCount.forEach { (tag, count) -> println("Tag [$tag]: $count") }
 
-            val keywordsCount = cards.flatMap { it.keywords }.groupBy { it }.mapValues { it.value.size }
-            keywordsCount.forEach{ (keyword, count) -> println("Keyword [${keyword.name}]: $count")}
+            val keywordsCount =
+                cards.flatMap { it.keywords }.groupBy { it }.mapValues { it.value.size }
+            keywordsCount.forEach { (keyword, count) -> println("Keyword [${keyword.name}]: $count") }
         }
 
         val keywordGray = Color.valueOf("#405060ff")
@@ -292,12 +293,10 @@ class Card(
         val quoteTextW = W - 320f
 
         val abilityBufferMargin = 20f
-        val abilityBufferX = 20f
-        val abilityBufferY = lineY + 10
+        val abilityBufferX = 40f
+        val abilityBufferY = lineY + 30
         val abilityBufferW = W - 2 * abilityBufferX
         val abilityBufferH = midHeight - (strokeH + abilityBufferY)
-        val abilityTextW = abilityBufferW - 2 * abilityBufferMargin
-
     }
 
     fun drawSimple() {
@@ -352,7 +351,6 @@ class Card(
         Draw.drawText(midWidth, nameY, Fonts.nameFont, name, W - 50f, Compass.CENTER, Color.BLACK)
 
         //Tags
-        val textX = abilityBufferX + abilityBufferMargin
         Draw.drawText(
             midWidth,
             tagsY,
@@ -367,11 +365,11 @@ class Card(
         val text = styledAbilityText
         val abilityTextY = abilityBufferY + abilityBufferH - abilityBufferMargin
         Draw.drawText(
-            textX,
+            abilityBufferX,
             abilityTextY,
             Fonts.abilityFontColorless,
             text,
-            abilityTextW,
+            abilityBufferW,
             Compass.SOUTHEAST,
             Color.BLACK
         )
@@ -379,11 +377,11 @@ class Card(
         //Keyword text
         val keywordTextY = abilityBufferY + abilityBufferMargin
         Draw.drawText(
-            textX,
+            abilityBufferX,
             keywordTextY,
             Fonts.tagFont,
             keywordText,
-            abilityTextW,
+            abilityBufferW,
             Compass.NORTHEAST,
             Color.BLACK
         )
@@ -475,7 +473,6 @@ class Card(
         Draw.drawText(midWidth, nameY, Fonts.nameFont, name, W - 50f, Compass.CENTER, motive.color)
 
         //Tags
-        val textX = abilityBufferX + abilityBufferMargin
         Draw.drawText(
             midWidth,
             tagsY,
@@ -490,11 +487,11 @@ class Card(
         val text = styledAbilityText
         val abilityTextY = abilityBufferY + abilityBufferH - abilityBufferMargin
         Draw.drawText(
-            textX,
+            abilityBufferX,
             abilityTextY,
             Fonts.abilityFont,
             text,
-            abilityTextW,
+            abilityBufferW,
             Compass.SOUTHEAST,
             Color.WHITE
         )
@@ -502,11 +499,11 @@ class Card(
         //Keyword text
         val keywordTextY = abilityBufferY + abilityBufferMargin
         Draw.drawText(
-            textX,
+            abilityBufferX,
             keywordTextY,
             Fonts.tagFont,
             keywordText,
-            abilityTextW,
+            abilityBufferW,
             Compass.NORTHEAST,
             keywordGray
         )
