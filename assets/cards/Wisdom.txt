@@ -1,8 +1,8 @@
-Automaton: 1a 2/2p [Wisdom, Machine] [At turn start, you may Expend air land to Rally 1.] [YES MASTER] [engine, spender]
-Capacitor: 1a 1/2p [Wisdom, Machine] [Activate, Expend X light land: Rally X.; Activate, Expend X air land: Assault X instead.] [Brzzzap!] [spender]
-Drone Swarm: 1a 2/2p [Wisdom, Machine] [Activate, Expend light land: Protect an allied unit.; Activate, Expend air land: Deflect a unit instead.] [Strength in numbers.] [utility]
-Electroshock: 2p [Wisdom, Instant, Technology] [When played, Lock a unit.; Expend X air land to also Destroy X equipments on that unit.] [Therapy not included.] [control]
-Scribe: 2/2p [Wisdom, Elf] [Whenever you play a machine or a technology, Rally 1.] [The records aren't going to keep themselves.] [engine]
+Automaton: 1a 2/2p [Wisdom, Machine] [At turn start, you may Expend air land to Rally 1.] [YES MASTER]
+Capacitor: 1a 1/2p [Wisdom, Machine] [When activated, you may either:#Expend X light land to Rally X.#Expend X air land to assault X.] [Brzzzap!]
+Drone Swarm: 1a 2/2p [Wisdom, Machine] [When activated, you may:#Expend light land light land to protect an adjacent unit for one turn.;#Expend air land to displace a unit.;At the start of your turn, re-enable activation.] [Strength in numbers.]
+Electroshock: 2p [Wisdom, Instant, Technology] [When played, Lock a unit.; Expend X air land to also Destroy X equipments on that unit.] [Therapy not included.]
+Scribe: 2/2p [Wisdom, Elf] [Whenever you play a machine or a technology, Rally 1.] [The records aren't going to keep themselves.]
 
 Messenger: 2/3p [Wisdom, Elf] [Whenever moved to the top of your deck, Summon self.] [The barristers send their regards.] [pointslam]
 Archivist: 4/3p [Wisdom, Elf] [When played, you may expend light land Look at the top three cards from either player's deck and move one to the top.] [Our records are perfect, according to our records.] [mill, utility]
@@ -36,9 +36,9 @@ Orthos, Orchestrator: 5/8p [Wisdom, Elf, Legendary] [Activate: Recharge a unit.]
 Logos, Oracle: 5/9p [Wisdom, Elf, Legendary] [Activate: Tutor a card.] [Know thyself.]
 Teleportation: 9p [Wisdom, Instant, Technology, Legendary] [Echo.; When played, Tutor a unit.] [What could possibly go wrong?]
 
-Teknos, Grand Artificer: 1/10p [Wisdom, Elf, Legendary] [When played, you may expend 2X light land Resurrect X common Machines.;] ["Grand Artificer" is pretty much a code word for "Huge Nerd"]
+Teknos, Grand Artificer: 1/10p [Wisdom, Elf, Legendary] [When played, you may expend 2X light land to resurrect X common machines.;] ["Grand Artificer" is pretty much a code word for "Huge Nerd"]
 
-#Further ideas: Wizards, mage university,
+#Further ideas: Monks
 #Regeneration Weave, Stealth Weave
 #Mind Control: 8p [Wisdom, Instant, Technology, Legendary] [When played, subtract X points from your score to Seize X.] [You will comply.] -- Note: See Vice/Heist
 #Reverse Engineering: 9p [Wisdom, Instant, Technology, Legendary] [When played, Resurrect a card from your opponent's graveyard.] [Sometimes, the imitation is better than the original.]

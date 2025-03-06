@@ -31,7 +31,7 @@
   {
     "name": "Reroll X",
     "description": "Reroll X common or allied land dice.",
-    "synonyms": ["Rerolls"]
+    "synonyms": ["Reroll", "Rerolls"]
   },
   {
     "name": "Rally X",
@@ -76,10 +76,10 @@
     "synonyms": ["Assassinate", "Assassinates", "Assassinated"]
   },
   {
-  "name": "Seize X",
-  "description": "Move a unit of X or less power to its opponent's battlefield.",
-  "synonyms": ["Seize", "Seizes", "Seized"]
-},
+    "name": "Seize X",
+    "description": "Move a unit of X or less power to its opponent's battlefield.",
+    "synonyms": ["Seize", "Seizes", "Seized"]
+  },
   {
     "name": "Banish",
     "description": "Remove a card from the game.",
@@ -99,7 +99,6 @@
     "description": "Triggers if an assault or assassination exceeds the target's power by at least X.",
     "synonyms": ["Overkill"]
   },
-
   {
     "name": "Armor",
     "description": "Increases resistance to Assault, Assassinate, or Seize abilities.",

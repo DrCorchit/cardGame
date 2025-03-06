@@ -2,7 +2,7 @@ Squirrel: 2/2p [Beast] [When played, you may expend earth land to banish a card 
 Icicle: 2p [Instant, Nature] [When played, you may expend water land to assault 2.] [You'll shoot your eye out!]
 Pack Wolf: 2/2p [Beast] [When played while bonded, assault 2] [Nice doggy...]
 Manacles: 2p [Equipment, Technology] [Disloyal.; When equipped, lock the target.; No additional equipment may be assigned to this unit.] [Don't do anything rash.]
-Bandit: 3/2p [Human] [When played, assault 1.] [Your money or your life!]
+Bandit: 3/2p [Human, Henchman] [At turn start, reroll 1.] [Your money or your life!]
 
 Butler: 1/3p [Human] [When played, rally 2.; When you pass, rally 2.] [Anything you require, sir.]
 Apothecary: 3/3p [Human] [When played, you may expend water land to purify a unit.] [An ounce of prevention is worth a pound of cure.] [utility]
@@ -18,7 +18,7 @@ Corruption: 4p [Equipment, Crime] [When equipped, rally 6.; If the equip target 
 
 Chimney Sweep: 4/4p [Human, Rare] [When played, banish a card from your opponent's graveyard.; At turn start, Repeat this ability.] [A sweep is as lucky as lucky can be.]
 Mobilization: 4p [Instant, Warfare, Rare] [When played, play a 4 provision card from deck.] [Hut, two, three, four!]
-Resurrection: 4p [Instant, Miracle, Rare] [When played, you may expend light land to play a common unit from your graveyard.] [A good character never stays dead for long.]
+Resurrection: 4p [Instant, Miracle, Rare] [When played, you may expend light land to resurrect a common unit.] [A good character never stays dead for long.]
 
 Alpha Wolf: 4/5p [Beast, Rare] [When played, assault 1.; Increase the assault by 1 for each allied Pack Wolf.] [Arooooo!]
 Giant Turtle: 5/5p [Beast, Rare] [When played, add an extra land die to the common pool.; When destroyed, remove a land die from the common pool.] [Could this be a dog?]

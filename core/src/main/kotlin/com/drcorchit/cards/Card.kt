@@ -154,7 +154,9 @@ class Card(
             File(file).writeText(output)
         }
 
-        val factions = setOf(Motive.Peace, Motive.Greed, Motive.Neutral).map { "$it.txt" }
+        val factions = setOf(Motive.Peace, Motive.Greed, Motive.Neutral, Motive.Vice)
+            .map { "$it.txt" }
+
 
         fun readFrom(filename: String): List<Card> {
             return File(filename).listFiles()!!

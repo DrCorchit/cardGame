@@ -31,18 +31,19 @@ class GenerateCards : ApplicationAdapter() {
     }
 
     fun renderCards() {
-        cards.forEach {
+        cards.forEachIndexed { index, card ->
             Draw.batch.begin()
-            it.draw()
+            card.draw()
             Draw.batch.end()
-            screenshot(it)
+            screenshot(card)
+            println("${index * 100f / cards.size}% complete - ${card.name}")
         }
     }
 
     fun screenshot(card: Card) {
         val pixmap = Pixmap.createFromFrameBuffer(0, 0, W, H)
         val name = "output/images/full/${card.rarity.name}/${card.name.normalize()}.png"
-        PixmapIO.writePNG(FileHandle(name), pixmap, Deflater.DEFAULT_COMPRESSION, false)
+        PixmapIO.writePNG(FileHandle(name), pixmap, Deflater.DEFAULT_COMPRESSION, true)
     }
 
     override fun dispose() {
