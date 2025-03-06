@@ -9,18 +9,18 @@ enum class Motive(val color: Color) {
     /*
     Wisdom -> Engines + non-removal control + deck manipulation
     Greed -> Pointslam + Engines
-    Peace -> Engines + Mana-based setup/payoff + removal control + tutoring
-    Vice ->  Pointslam + assassination control + mana disruption
+    Peace -> Engines + land-based setup/payoff + removal control + tutoring
+    Vice ->  Pointslam + assassination control + land disruption
     Rage -> Removal control + pointslam + discard package
-    Justice -> Removal control + engines + mana manipulation
+    Justice -> Removal control + engines + land manipulation
      */
 
     //542
     Neutral("603000"),
 
-    //Earth/Water/Air mana, diverse racial groups
+    //Earth/Water/Air land, diverse racial groups
     //Has:
-    // Good mana sources
+    // Good land sources
     // High-end gold tutoring
     // Resurrection
     // Protect, Deflect, Stalwart
@@ -33,17 +33,17 @@ enum class Motive(val color: Color) {
     Peace("106010"),
 
     //ceb31c, b93
-    //Light/Dark mana.
+    //Light/Dark land.
     Justice("908030"),
 
     //243d93, 47a, 243d93, 468
-    //Air/Light mana
+    //Air/Light land
     // Strengths: Excellent tutoring and various answers
     //Limitations: lacking tempo and direct removal
     Wisdom("4060a0"),
 
     //a84d2a, 930, 830
-    //Identity: Fire mana, dragons and dwarves.
+    //Identity: Fire land, dragons and dwarves.
     //Has:
     // Protection, Engines, Combos.
     // Good bronzes
@@ -61,7 +61,7 @@ enum class Motive(val color: Color) {
     //68135e, 630, c62, c30
     //Strengths: Good bronze cards and direct removal
     //Limitations: Limited tutoring and indirect removal.
-    //Identity: Fire/Water mana focused, vikings and pirates
+    //Identity: Fire/Water land focused, vikings and pirates
     //Has:
     // Removal, removal, and more removal
     // Bronzes: mix of pointslam, engines, and control
@@ -73,7 +73,7 @@ enum class Motive(val color: Color) {
     // Tutoring
     Rage("a03000"),
 
-    //Flavor: Chaos/Dark mana focused. Criminals, necromancers, and demons.
+    //Flavor: Chaos/Dark land focused. Criminals, necromancers, and demons.
     //Control plus greed and engines.
     //Has:
     // Assassinate and Seize

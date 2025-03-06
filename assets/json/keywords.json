@@ -1,10 +1,5 @@
 [
   {
-    "name": "Deploy",
-    "description": "Triggers when the card is played.",
-    "synonyms": ["Deploys", "Deployed"]
-  },
-  {
     "name": "Activate",
     "description": "An ability that can be used once, after the first turn.",
     "synonyms": ["Activates", "Activated"]
@@ -19,41 +14,23 @@
     "synonyms": ["Hasten", "Hastened"]
   },
   {
-    "name": "Equip",
-    "description": "Triggers when the equipment is assigned to a unit."
-  },
-  {
     "name": "Summon",
-    "description": "Move a card to the battlefield, bypassing its deploy ability.",
+    "description": "Move a card to the battlefield without playing it.",
     "synonyms": ["Summons", "Summoned"]
   },
   {
-    "name": "Resurrect",
-    "description": "Play a card from graveyard and give it Doomed.",
-    "synonyms": ["Resurrects", "Resurrected"]
-  },
-  {
-    "name": "Tutor",
-    "description": "Search for and play a card from deck.",
-    "synonyms": ["Tutors", "Tutored"]
-  },
-  {
-    "name": "Mana",
-    "description": "An elemental resource used to trigger abilities."
-  },
-  {
     "name": "Expend X",
-    "description": "Triggers if X mana dice are rerolled.",
+    "description": "Triggers if X land dice are rerolled.",
     "synonyms": ["Expend", "Expends", "Expended"]
   },
   {
-    "name": "Conjure",
-    "description": "Turn a number of mana dice to the indicated faces.",
-    "synonyms": ["Conjures", "Conjured"]
+    "name": "Spawn",
+    "description": "Turn a number of land dice to the indicated faces.",
+    "synonyms": ["Spawns", "Spawnd"]
   },
   {
     "name": "Reroll X",
-    "description": "Reroll X common or allied mana dice.",
+    "description": "Reroll X common or allied land dice.",
     "synonyms": ["Rerolls"]
   },
   {
@@ -71,10 +48,6 @@
     "description": "The running total of points gained from Rally or lost from Rout."
   },
   {
-    "name": "Turnwise",
-    "description": "Triggers while on the battlefield, each allied turn start."
-  },
-  {
     "name": "Boost X",
     "description": "Increase the unit's power by X.",
     "synonyms": ["Boost", "Boosted"]
@@ -85,16 +58,12 @@
     "synonyms": ["Protects", "Protecting"]
   },
   {
-    "name": "Protected",
-    "description": "Triggers if the card is under the protection of an ally."
-  },
-  {
     "name": "Vulnerable",
     "description": "The card cannot receive protection."
   },
   {
-    "name": "Deflect",
-    "description": "The targeted card no longer protects any units."
+    "name": "Displace",
+    "description": "Move an opponent's card, normally away from protection."
   },
   {
     "name": "Assault X",
@@ -107,54 +76,49 @@
     "synonyms": ["Assassinate", "Assassinates", "Assassinated"]
   },
   {
-    "name": "Destroy",
-    "description": "Move a card from the battlefield to the graveyard.",
-    "synonyms": ["destroys", "destroyed"]
-  },
-  {
-    "name": "Reflex",
-    "description": "Triggers when an adjacent unit is destroyed."
-  },
+  "name": "Seize X",
+  "description": "Move a unit of X or less power to its opponent's battlefield.",
+  "synonyms": ["Seize", "Seizes", "Seized"]
+},
   {
     "name": "Banish",
-    "description": "Remove a card from the game. Does not trigger Expire.",
+    "description": "Remove a card from the game.",
     "synonyms": ["Banishes", "Banished"]
+  },
+  {
+    "name": "Destroy",
+    "description": "Move a card to the graveyard.",
+    "synonyms": ["Destroys", "Destroyed"]
+  },
+  {
+    "name": "Piercing",
+    "description": "This card's attack ignores armor."
   },
   {
     "name": "Overkill X",
     "description": "Triggers if an assault or assassination exceeds the target's power by at least X.",
     "synonyms": ["Overkill"]
   },
-  {
-    "name": "Seize X",
-    "description": "Move a unit of X or less power to it's opponents battlefield.",
-    "synonyms": ["Seize", "Seizes", "Seized"]
-  },
+
   {
     "name": "Armor",
-    "description": "Increases resistance to Assault or Assassinate abilities.",
+    "description": "Increases resistance to Assault, Assassinate, or Seize abilities.",
     "synonym": ["Armor"]
   },
   {
-    "name": "Expire",
-    "description": "Triggers when the card is Destroyed."
-  },
-  {
-    "name": "Finale",
-    "description": "Triggers when you pass."
-  },
-  {
     "name": "Disloyal",
-    "description": "The card is played to your opponent's battefield."
+    "description": "The card is played to your opponent's battlefield.",
+    "synonym": ["disloyally"]
   },
   {
     "name": "Chaos X",
-    "description": "Triggers if there are at least X unique mana types.",
+    "description": "Triggers if there are at least X unique land types.",
     "synonyms": ["Chaos"]
   },
   {
-    "name": "Imbibe",
-    "description": "Triggers when a Liquor card is equipped to the unit."
+    "name": "Armor Up",
+    "description": "Triggers when an armor card is equipped to the unit.",
+    "synonyms": ["armor_up"]
   },
   {
     "name": "Bonded",
@@ -165,6 +129,10 @@
     "description": "If this card is in your graveyard at the start of the round, move to the top of your deck and become Doomed before drawing cards."
   },
   {
+    "name": "Purify",
+    "description": "Remove all statuses from a unit."
+  },
+  {
     "name": "Lock",
     "description": "Status that disables all of a card's abilities."
   },
@@ -173,19 +141,19 @@
     "description": "A unit is destroyed if it receives two instances of this status."
   },
   {
-    "name": "Immune",
-    "description": "Status that prevents the unit from receiving additional statuses."
-  },
-  {
-    "name": "Invisible",
-    "description": "Status that prevents the unit from being targeted by hostile abilities."
+    "name": "Contract",
+    "description": "Status that causes the oppponent to rally 3 when this unit is destroyed or banished."
   },
   {
     "name": "Stalwart",
     "description": "Status that allows the unit to remain on the battlefield after the round ends."
   },
   {
-    "name": "Purify",
-    "description": "Remove all statuses from a unit."
+    "name": "Immune",
+    "description": "Status that prevents the unit from receiving additional statuses."
+  },
+  {
+    "name": "Invisible",
+    "description": "Status that prevents the unit from being targeted by hostile abilities."
   }
 ]

@@ -59,17 +59,22 @@ class Card(
     val tagsText =
         tags.subtract(setOf("Common", "Rare", "Legendary", "Instant", "Equipment", "Emplacement"))
             .joinToString(", ")
-    val abilityText = abilities.joinToString("\n")
+    val abilityText = abilities
+        .joinToString("\n") { it.trim() }
+        .replace("_", " ")
+        .replace("#", "\n • ")
     val styledAbilityText = abilityText
-        .replace("fire mana", "\u0010")
-        .replace("water mana", "\u0011")
-        .replace("earth mana", "\u0012")
-        .replace("air mana", "\u0013")
-        .replace("light mana", "\u0014")
-        .replace("dark mana", "\u0015")
+        .replace("fire land", "\u0010")
+        .replace("water land", "\u0011")
+        .replace("earth land", "\u0012")
+        .replace("air land", "\u0013")
+        .replace("light land", "\u0014")
+        .replace("dark land", "\u0015")
 
-    val keywords = Keyword.regex.findAll(abilityText)
-        .mapNotNull { Keyword.keywordsDictionary[it.value] }
+    val keywords = abilities
+        .flatMap { it.split(Regex("[ #]")) }
+        .map { it.normalize() }
+        .mapNotNull { Keyword.keywordsDictionary[it] }
         .distinct()
     //.sortedBy { it.id }
 
@@ -129,7 +134,7 @@ class Card(
                 val power = match["power"]?.value?.toInt() ?: 0
                 val cost = match["cost"]!!.value.toInt()
                 val tags = match["tags"]!!.value.split(",").map { it.trim() }
-                val abilities = match["abilities"]!!.value.split(";").map { it.trim() }
+                val abilities = match["abilities"]!!.value.split(";")
                 val quote = match["quote"]!!.value
                 val strategyTags = match["strategy"]
                     ?.let { it.value.split(",").map { tag -> tag.trim() } }
@@ -240,11 +245,20 @@ class Card(
             val keywordsCount =
                 cards.flatMap { it.keywords }.groupBy { it }.mapValues { it.value.size }
             keywordsCount.forEach { (keyword, count) -> println("Keyword [${keyword.name}]: $count") }
+
+            //print card issues here
+            cards.forEach {
+                if (it.image == null) {
+                    println("Card ${it.name} has no art!")
+                }
+                if (it.quote.isBlank()) {
+                    println("Card ${it.name} has no quote!")
+                }
+            }
         }
 
-        val keywordGray = Color.valueOf("#405060ff")
         val textColor = Color.valueOf("#603000ff")
-        val trayColor = Color.valueOf("#00000080")
+        val helpTextColor = Color.valueOf("#806040ff") //was 405060
 
         val stroke = Textures.brushStroke.asSprite().setOffset(Compass.CENTER)
         val tray = Textures.tray.asSprite().setOffset(Compass.SOUTH)
@@ -256,15 +270,15 @@ class Card(
         val border = Textures.border.asSprite()
 
         val midWidth = W / 2f
-        val midHeight = tray.getFrames().height - 20f
+        val midHeight = tray.getFrames().height - 22f
         val cardRatio = H * 1f / W
 
         val imageW = 950f
         val imageH = 744f
         val imageRatio = imageH / imageW
 
-        val diamondOffsetX = 80f
-        val diamondOffsetY = 135f
+        val diamondOffsetX = 85f
+        val diamondOffsetY = 140f
         val diamondW = 100f
         val diamondH = 2 * diamondW
         val starSize = 60f
@@ -311,11 +325,21 @@ class Card(
         diamond.draw(batch, diamondOffsetX, H - diamondOffsetY, diamondW, diamondH)
         if (power == 0) {
             type.imageBlack!!.draw(batch, diamondOffsetX, H - diamondOffsetY, starSize, starSize)
-        } else {
+        } else if (type == CardType.Unit) {
             Draw.drawText(
                 diamondOffsetX,
                 H - diamondOffsetY,
                 Fonts.numberFont,
+                power.toString(),
+                100f,
+                Compass.CENTER,
+                Color.BLACK
+            )
+        } else {
+            Draw.drawText(
+                diamondOffsetX,
+                H - diamondOffsetY + 24,
+                Fonts.numberFontSmall,
                 power.toString(),
                 100f,
                 Compass.CENTER,
@@ -429,7 +453,7 @@ class Card(
         diamond.draw(batch, diamondOffsetX, H - diamondOffsetY, diamondW, diamondH)
         if (power == 0) {
             type.image!!.draw(batch, diamondOffsetX, H - diamondOffsetY, starSize, starSize)
-        } else {
+        } else if (type == CardType.Unit) {
             Draw.drawText(
                 diamondOffsetX,
                 H - diamondOffsetY + 5,
@@ -439,6 +463,18 @@ class Card(
                 Compass.CENTER,
                 Color.WHITE
             )
+        } else {
+            val y = H - diamondOffsetY
+            Draw.drawText(
+                diamondOffsetX,
+                y + 30,
+                Fonts.numberFontXS,
+                power.toString(),
+                100f,
+                Compass.CENTER,
+                Color.WHITE
+            )
+            type.image!!.draw(batch, diamondOffsetX + 3, y - 20, starSize, starSize)
         }
 
         //Armor
@@ -505,7 +541,7 @@ class Card(
             keywordText,
             abilityBufferW,
             Compass.NORTHEAST,
-            keywordGray
+            helpTextColor
         )
 
         line.draw(batch, midWidth, lineY, 3f, 1f, 0f)
@@ -539,7 +575,7 @@ class Card(
         else null
 
         if (texture == null) {
-            //println("Could not load $png or $jpg")
+            println("Could not load $png or $jpg")
         } else {
             image = texture.asSprite().setOffset(Compass.NORTH)
         }

@@ -1,5 +1,5 @@
 
-Mana Wars  | Gwent
+land Wars  | Gwent
 provs/power|provs/power
 2 -> 4     | 4 -> 6
 3 -> 5     | 5 -> 8
@@ -19,10 +19,11 @@ Key idea:
 Basic Statuses:
 Lock                                    chains/handciffs icon
 Stalwart (survives round end)
-Doomed (Banished after leaving board)   skull icon
-Invisible (Can't be targeted)
+
+X Doomed (Banished after leaving board)   skull icon
 
 Advanced Statuses:
-Immune (can't receive statuses)
 Poison
 Bounty (Rally X when destroyed)
+Invisible (Can't be targeted)
+Immune (can't receive statuses)

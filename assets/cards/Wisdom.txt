@@ -1,44 +1,44 @@
-Automaton: 1a 2/2p [Wisdom, Machine] [Turnwise, Expend air mana: Rally 1.] [YES MASTER] [engine, spender]
-Capacitor: 1a 1/2p [Wisdom, Machine] [Activate, Expend X light mana: Rally X.; Activate, Expend X air mana: Assault X instead.] [Brzzzap!] [spender]
-Drone Swarm: 1a 2/2p [Wisdom, Machine] [Activate, Expend light mana: Protect an allied unit.; Activate, Expend air mana: Deflect a unit instead.] [Strength in numbers.] [utility]
-Electroshock: 2p [Wisdom, Instant, Technology] [Deploy: Lock a unit.; Expend X air mana to also Destroy X equipments attached to that unit.] [Therapy not included.] [control]
+Automaton: 1a 2/2p [Wisdom, Machine] [At turn start, you may Expend air land to Rally 1.] [YES MASTER] [engine, spender]
+Capacitor: 1a 1/2p [Wisdom, Machine] [Activate, Expend X light land: Rally X.; Activate, Expend X air land: Assault X instead.] [Brzzzap!] [spender]
+Drone Swarm: 1a 2/2p [Wisdom, Machine] [Activate, Expend light land: Protect an allied unit.; Activate, Expend air land: Deflect a unit instead.] [Strength in numbers.] [utility]
+Electroshock: 2p [Wisdom, Instant, Technology] [When played, Lock a unit.; Expend X air land to also Destroy X equipments on that unit.] [Therapy not included.] [control]
 Scribe: 2/2p [Wisdom, Elf] [Whenever you play a machine or a technology, Rally 1.] [The records aren't going to keep themselves.] [engine]
 
 Messenger: 2/3p [Wisdom, Elf] [Whenever moved to the top of your deck, Summon self.] [The barristers send their regards.] [pointslam]
-Archivist: 4/3p [Wisdom, Elf] [Deploy, Expend light mana: Look at the top three cards from either player's deck and move one to the top.] [Our records are perfect, according to our records.] [mill, utility]
-Dynamo: 1a 3/3p [Wisdom, Machine] [Turnwise, Expend fire mana: Conjure air mana or light mana] [Ol' Reliable] [mana, engine]
-Engineer: 3/3p [Wisdom, Elf] [Activate, Expend light mana: Purify a machine.; Activate, Expend air mana: Lock a unit instead.] [Fix-it Felix just doesn't have the same ring to it.] [utility, control]
-Battery: 4/3p [Wisdom, Machine] [Activate: Conjure light mana light mana light mana or air mana air mana air mana.] [Keeps going and going and... oh it's dead already.] [mana]
+Archivist: 4/3p [Wisdom, Elf] [When played, you may expend light land Look at the top three cards from either player's deck and move one to the top.] [Our records are perfect, according to our records.] [mill, utility]
+Dynamo: 1a 3/3p [Wisdom, Machine] [At turn start, you may Expend fire land to Spawn air land or light land] [Ol' Reliable] [land, engine]
+Engineer: 3/3p [Wisdom, Elf] [Activate, Expend light land: Purify a machine.; Activate, Expend air land: Lock a unit instead.] [Fix-it Felix just doesn't have the same ring to it.] [utility, control]
+Battery: 4/3p [Wisdom, Machine] [Activate: Spawn light land light land light land or air land air land air land.] [Keeps going and going and... oh it's dead already.] [land]
 
-Schematic: 4p [Wisdom, Instant, Technology] [Deploy: Tutor a common machine.] [Great, they forgot to attach the parts list again.] [tutor]
-Incinerator: 1a 3/4p [Wisdom, Machine] [Activate, Expend fire mana: Banish the top card of your opponent's deck.] [Ashes to ashes.] [mill]
-Power Surge: 4p [Wisdom, Equipment, Technology] [Boost 4.; Equip: If the target is a common machine, Recharge it.] [Power is always dangerous.] [utility, combo]
-Artificer: 3/4p [Wisdom, Elf] [Deploy: Destroy an allied machine, then Resurrect a common machine.] [Make it or break it.] [utility]
+Schematic: 4p [Wisdom, Instant, Technology] [When played, Tutor a common machine.] [Great, they forgot to attach the parts list again.] [tutor]
+Incinerator: 1a 3/4p [Wisdom, Machine] [Activate, Expend fire land: Banish the top card of your opponent's deck.] [Ashes to ashes.] [mill]
+Power Surge: 4/4p [Wisdom, Equipment, Technology] [When equipped, If the target is a common machine, Recharge it.] [Power is always dangerous.] [utility, combo]
+Artificer: 3/4p [Wisdom, Elf] [When played, Destroy an allied machine, then Resurrect a common machine.] [Make it or break it.] [utility]
 
-Armor Weave: 2a 4p [Wisdom, Equipment, Technology, Rare] [Expend air mana: Tutor self.] [No way they're getting through all that.] [thinning, utility]
-Eriathorn, Gemini: 4/4p [Wisdom, Elf, Rare] [Activate: Conjure air mana air mana air mana.; If you control Shuramorn, double that amount.] [Prepare for trouble!] [mana, combo]
-Shuramorn, Gemini: 4/4p [Wisdom, Elf, Rare] [Activate: Conjure light mana light mana light mana.; If you control Eriathorn, double that amount.] [Make it double!] [mana, combo]
+Armor Weave: 2a 4p [Wisdom, Equipment, Technology, Rare] [Expend air land: Tutor self.] [No way they're getting through all that.] [thinning, utility]
+Eriathorn, Gemini: 4/4p [Wisdom, Elf, Rare] [Activate: Spawn air land air land air land.; If you control Shuramorn, double that amount.] [Prepare for trouble!] [land, combo]
+Shuramorn, Gemini: 4/4p [Wisdom, Elf, Rare] [Activate: Spawn light land light land light land.; If you control Eriathorn, double that amount.] [Make it double!] [land, combo]
 
-Censorship: 5p [Wisdom, Instant, Technology, Rare] [Deploy: Banish the top card of your opponent's deck and Rally by its provision cost.] [It's a trip down memory hole lane.] [mill]
-Epocha, Harbinger: 2/5p [Wisdom, Elf, Rare] [Turnwise, Expend light mana: Rally 1.; Whenever moved to the top of your deck, Summon self.] [When the new age comes, there will be no turning back.] [thinning, engine]
+Censorship: 5p [Wisdom, Instant, Technology, Rare] [When played, Banish the top card of your opponent's deck and Rally by its provision cost.] [It's a trip down memory hole lane.] [mill]
+Epocha, Harbinger: 2/5p [Wisdom, Elf, Rare] [At turn start, you may Expend light land to Rally 1.; Whenever moved to the top of your deck, Summon self.] [When the new age comes, there will be no turning back.] [thinning, engine]
 
-Sophos, Ordinator: 4/6p [Wisdom, Elf, Rare] [Deploy: Move 2 cards from your deck to the top.; Activate, Expend light mana: Repeat the Deploy ability.] [No plan is ever perfect. Except mine.]
-Argos, Arbiter: 2/6p [Wisdom, Elf, Rare] [Deploy: Play the top card from your deck.; Deploy, Disloyal: Play the top card from your opponent's deck instead.] [I am the decider!]
+Sophos, Ordinator: 4/6p [Wisdom, Elf, Rare] [When played, move 2 cards from your deck to the top.; Activate, Expend light land: move 2 cards from your deck to the top.] [No plan is ever perfect. Except mine.]
+Argos, Arbiter: 2/6p [Wisdom, Elf, Rare] [When played, Play the top card from your deck.; When played to your opponent's battlefield, play the top card from your opponent's deck instead.] [I am the decider!]
 Ultima: Prototype: 1a 2/6p [Wisdom, Machine, Rare] [Activate: Rally for each technology in your graveyard.] [It's all in the name of progress.]
-X Æ A-12: 2a 4/6p [Wisdom, Machine, Legendary] [Activate, Expend light mana: Give an allied unit Haste.; Turnwise: Recharge.] [Do it faster, work it harder.]
+X Æ A-12: 2a 4/6p [Wisdom, Machine, Legendary] [Activate, Expend light land: Give an allied unit Haste.; At turn start, Recharge.] [Do it faster, work it harder.]
 
-Android Replica: 1/7p [Wisdom, Machine, Rare] [Haste.; Activate, Expend light mana: Trigger an enemy unit's Deploy ability.] [Anything you can do, I can do better!]
-Time Travel: 7p [Wisdom, Instant, Technology, Legendary] [Deploy: Move a unit to the top of its owner's deck.] [In the year 2525...]
+Android Replica: 1/7p [Wisdom, Machine, Rare] [Haste.; Activate, Expend light land: Trigger an enemy unit's "When Played" ability.] [Anything you can do, I can do better!]
+Time Travel: 7p [Wisdom, Instant, Technology, Legendary] [When played, Move a unit to the top of its owner's deck.] [In the year 2525...]
 
-Codex Veritas: 8p [Wisdom, Emplacement, Tome, Legendary] [Deploy: Move two cards from your deck to the top.; Activate: Play the top card from your deck.] [No-one ever reads past the abstract because there's a paywall.]
+Codex Veritas: 8p [Wisdom, Emplacement, Tome, Legendary] [When played, Move two cards from your deck to the top.; Activate: Play the top card from your deck.] [No-one ever reads past the abstract because there's a paywall.]
 Orthos, Orchestrator: 5/8p [Wisdom, Elf, Legendary] [Activate: Recharge a unit.] [Actually, science hasn't gone far enough.]
 
 Logos, Oracle: 5/9p [Wisdom, Elf, Legendary] [Activate: Tutor a card.] [Know thyself.]
-Teleportation: 9p [Wisdom, Instant, Technology, Legendary] [Echo.; Deploy: Tutor a unit.] [What could possibly go wrong?]
+Teleportation: 9p [Wisdom, Instant, Technology, Legendary] [Echo.; When played, Tutor a unit.] [What could possibly go wrong?]
 
-Teknos, Grand Artificer: 1/10p [Wisdom, Elf, Legendary] [Deploy, Expend 2X light mana: Resurrect X common Machines.;] ["Grand Artificer" is pretty much a code word for "Huge Nerd"]
+Teknos, Grand Artificer: 1/10p [Wisdom, Elf, Legendary] [When played, you may expend 2X light land Resurrect X common Machines.;] ["Grand Artificer" is pretty much a code word for "Huge Nerd"]
 
 #Further ideas: Wizards, mage university,
 #Regeneration Weave, Stealth Weave
-#Mind Control: 8p [Wisdom, Instant, Technology, Legendary] [Deploy, Rout X: Seize X.] [You will comply.] -- Note: See Vice/Heist
-#Reverse Engineering: 9p [Wisdom, Instant, Technology, Legendary] [Deploy: Resurrect a card from your opponent's graveyard.] [Sometimes, the imitation is better than the original.]
+#Mind Control: 8p [Wisdom, Instant, Technology, Legendary] [When played, subtract X points from your score to Seize X.] [You will comply.] -- Note: See Vice/Heist
+#Reverse Engineering: 9p [Wisdom, Instant, Technology, Legendary] [When played, Resurrect a card from your opponent's graveyard.] [Sometimes, the imitation is better than the original.]

@@ -9,7 +9,7 @@ data class Keyword(
     val synonyms: Set<String>
 ) {
     companion object {
-        val regex = Regex("\\b\\w+\\b")
+        val regex = Regex("[a-z_]+")
 
         var count = 0
         val keywordsList = JsonUtils.parseFromFile("assets/json/keywords.json")!!
@@ -28,8 +28,8 @@ data class Keyword(
         init {
             //TODO check for dupe syns?
             keywordsList.forEach {
-                keywordsDictionary.putIfAbsent(it.name, it)
-                it.synonyms.forEach { syn -> keywordsDictionary.putIfAbsent(syn, it) }
+                keywordsDictionary.putIfAbsent(it.name.lowercase(), it)
+                it.synonyms.forEach { syn -> keywordsDictionary.putIfAbsent(syn.lowercase(), it) }
             }
         }
     }

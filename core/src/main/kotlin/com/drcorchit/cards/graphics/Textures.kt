@@ -25,7 +25,7 @@ object Textures {
     val costBack = initTexture("provisions.png")
     val provisionsBlack = initTexture("provisions_black.png")
 
-    val mana = initTexture("mana.png")
+    val land = initTexture("mana.png")
     val manaWhite = initTexture("mana_white.png")
 
     //Arrow
