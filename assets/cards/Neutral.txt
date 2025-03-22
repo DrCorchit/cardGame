@@ -2,7 +2,7 @@ Squirrel: 2/2p [Beast] [When played, you may expend earth land to banish a card 
 Icicle: 2p [Instant, Nature] [When played, you may expend water land to assault 2.] [You'll shoot your eye out!]
 Pack Wolf: 2/2p [Beast] [When played while bonded, assault 2] [Nice doggy...]
 Manacles: 2p [Equipment, Technology] [Disloyal.; When equipped, lock the target.; No additional equipment may be assigned to this unit.] [Don't do anything rash.]
-Bandit: 3/2p [Human, Henchman] [At turn start, reroll 1.] [Your money or your life!]
+Bandit: 3/2p [Human] [At turn start, reroll 1.] [Your money or your life!]
 
 Butler: 1/3p [Human] [When played, rally 2.; When you pass, rally 2.] [Anything you require, sir.]
 Apothecary: 3/3p [Human] [When played, you may expend water land to purify a unit.] [An ounce of prevention is worth a pound of cure.] [utility]
@@ -13,26 +13,29 @@ Fireball: 3p [Instant, Miracle] [When played, you may either:#Spawn fire land an
 Assassin: 1/4p [Human, Spy] [Disloyal.; When played, Assassinate 4.] [Humans make good assassins. I hear they also make good targets.]
 Emissary: 1/4p [Human, Spy] [Disloyal.; When played, play a unit from hand, then draw a card.] [Introducing his most gracious excellency...]
 Saboteur: 2/4p [Human, Spy] [When played, you may either:#Displace a unit.#Disloyal. Destroy an enemy emplacement.] [If I had a hammer...]
-Thunderbolt: 4p [Instant, Technology] [When played, you may either:#Spawn air land air land and Assault 3.#Expend air land air land and assault 4.] [Krakowwww!]
+Meteorite Strike: 4p [Instant, Miracle] [When played, you may either:#Spawn air land air land and assault 3.#Expend air land air land and assault 4.] [Krakowwww!]
 Corruption: 4p [Equipment, Crime] [When equipped, rally 6.; If the equip target is destroyed, rout 6.] [For sale, world. Price: your soul.]
 
 Chimney Sweep: 4/4p [Human, Rare] [When played, banish a card from your opponent's graveyard.; At turn start, Repeat this ability.] [A sweep is as lucky as lucky can be.]
-Mobilization: 4p [Instant, Warfare, Rare] [When played, play a 4 provision card from deck.] [Hut, two, three, four!]
-Resurrection: 4p [Instant, Miracle, Rare] [When played, you may expend light land to resurrect a common unit.] [A good character never stays dead for long.]
+Mobilization: 4p [Instant, Warfare, Rare] [When played, play a 4 provision card from your deck.] [Hut, two, three, four!]
+Resurrection: 4p [Instant, Miracle, Rare] [When played, you may expend light land to play a common unit from your graveyard.] [A good character never stays dead for long.]
 
 Alpha Wolf: 4/5p [Beast, Rare] [When played, assault 1.; Increase the assault by 1 for each allied Pack Wolf.] [Arooooo!]
-Giant Turtle: 5/5p [Beast, Rare] [When played, add an extra land die to the common pool.; When destroyed, remove a land die from the common pool.] [Could this be a dog?]
-Bounty Hunter: 4/5p [Human, Rare] [When played, you may expend air land to lock a unit.] [You can run, but you can't hide.]
+Giant Turtle: 5/5p [Beast, Rare] [When played, roll and additional land die and add it to the common pool.] [Could this be a dog?]
+Bounty Hunter: 4/5p [Human, Rare] [When played, you may expend dark land to lock a unit.] [You can run, but you can't hide.]
 
 Ancient Vampire: 7/6p [Vampire, Rare] [When played, you must rout 1 for each light land.] [For some, the emo phase lasts a bit longer than others.]
 Skeleton Key: 6p [Instant, Rare] [When played, you may expend light land to dislodge a unit.; Afterwards, play a card, then draw a card.] [Life is an open door.]
-Distressed Damsel: 1/6p [Human, Rare] [Finale: If protected, Rally 7.] [My hero!]
+Distressed Damsel: 1/6p [Human, Rare] [When you pass, rally 7 if this unit is protected.] [My hero!]
 
 Royal Decree: 7p [Instant, Law, Legendary] [When played, Tutor a unit.] [So let it be written...]
 Royal Envoy: 1/7p [Human, Legendary] [When played, Tutor an instant, equipment, or emplacement.] [So let it be done!]
 Royal Guard: 2a 5/7p [Human, Knight, Legendary] [This card protects the unit to the right.] [They'll have to go through me.]
 
-Gravetender: 2/8p [Undead, Legendary] [Whenever you play a card from graveyard, summon self.] [Yer only diggin' yer own grave.]
+Gravetender: 1/8p [Undead, Legendary] [Whenever you play a card from graveyard, summon self.] [Yer only diggin' yer own grave.]
 Field Marshall: 4/8p [Human, Legendary] [When played, swap a card in hand with a card in your deck.] [The best defense is a strong offense, I always say.]
 Blistering Heatwave: 8p [Instant, Nature, Legendary] [When played, banish any card that is not protected.] [Just when you think it can't get any hotter...]
 Prophecy: 10p [Instant, Miracle, Legendary] [Echo.; When played, play a card from deck.] [If I foretold your doom, would so prophesying avert it—or fulfill it?]
+
+Bird of Victory: 3/0p [Beast, Legendary] [] [May the best man win!]
+Leprechaun: 3/1p [Human, Legendary] [If this card is in your deck at the end of the game, you lose.] [Follow your dreams. Rainbows are an acceptable alternative, however.]

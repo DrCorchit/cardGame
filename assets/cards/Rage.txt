@@ -3,7 +3,7 @@ Valkyrie: 2/3p [Rage, Angel] [When played, Spawn light land dark land.; Activate
 
 Mjolnir: 4p [Rage, Equipment, Weapon, Rare] [When equipped, Rally 6. If equipped to Thor, Assault 6 instead.] [Who is worthy to wield the hammer of Thor?]
 Odin, Allfather: 4/6p [Rage, Deity, Rare] [When played, Look through your deck and move any card to the bottom.; Activate: Look through your deck and move any card to the top.; Finale: You need not shuffle your deck this round.] [There's only one eye in wisdom.]
-Thor, Son of Odin: 3/7p [Rage, Deity, Legendary] [When played, Banish a card from your graveyard, then Assault a unit by its power.] []
+Thor, Son of Odin: 3/7p [Rage, Deity, Legendary] [When played, banish a card from your graveyard, then Assault a unit by its power.] []
 Jormungandir: 9/7p [Rage, Beast] [At turn start, Destroy the weakest unit either player controls.] [Cull the weak.]
 Asgard: 9p [Rage, Emplacement, Location, Legendary] [Deploy, 3 dark land: Move a Justice unit from your graveyard to your deck.; Activate, 3 light land: Play a Justice unit from your deck.] [No brave deed goes unrecorded in the halls of Asgard.]
 

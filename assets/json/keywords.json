@@ -5,8 +5,14 @@
     "synonyms": ["Activates", "Activated"]
   },
   {
-    "name": "Recharge",
-    "description": "Re-enable the active ability."
+    "name": "Deactivate",
+    "description": "Re-enable use of the active ability.",
+    "synonyms": ["Deactivates", "Deactivated"]
+  },
+  {
+    "name": "Reactivate",
+    "description": "Retrigger the active ability immediately.",
+    "synonyms": ["Reactivates", "Reactivated"]
   },
   {
     "name": "Haste",
@@ -48,14 +54,9 @@
     "description": "The running total of points gained from Rally or lost from Rout."
   },
   {
-    "name": "Boost X",
-    "description": "Increase the unit's power by X.",
-    "synonyms": ["Boost", "Boosted"]
-  },
-  {
     "name": "Protect",
     "description": "Prevent a unit from being targeted by hostile abilities.",
-    "synonyms": ["Protects", "Protecting"]
+    "synonyms": ["Protects", "Protecting", "Protected"]
   },
   {
     "name": "Vulnerable",
@@ -64,6 +65,16 @@
   {
     "name": "Displace",
     "description": "Move an opponent's card, normally away from protection."
+  },
+  {
+    "name": "Destroy",
+    "description": "Move a card to the graveyard.",
+    "synonyms": ["Destroys", "Destroyed"]
+  },
+  {
+    "name": "Banish",
+    "description": "Remove a card from the game.",
+    "synonyms": ["Banishes", "Banished"]
   },
   {
     "name": "Assault X",
@@ -77,18 +88,13 @@
   },
   {
     "name": "Seize X",
-    "description": "Move a unit of X or less power to its opponent's battlefield.",
+    "description": "Move an enemy unit of X or less power to your battlefield.",
     "synonyms": ["Seize", "Seizes", "Seized"]
   },
   {
-    "name": "Banish",
-    "description": "Remove a card from the game.",
-    "synonyms": ["Banishes", "Banished"]
-  },
-  {
-    "name": "Destroy",
-    "description": "Move a card to the graveyard.",
-    "synonyms": ["Destroys", "Destroyed"]
+    "name": "Armor",
+    "description": "Increases resistance to Assault, Assassinate, or Seize abilities.",
+    "synonym": ["Armor"]
   },
   {
     "name": "Piercing",
@@ -98,11 +104,6 @@
     "name": "Overkill X",
     "description": "Triggers if an assault or assassination exceeds the target's power by at least X.",
     "synonyms": ["Overkill"]
-  },
-  {
-    "name": "Armor",
-    "description": "Increases resistance to Assault, Assassinate, or Seize abilities.",
-    "synonym": ["Armor"]
   },
   {
     "name": "Disloyal",
@@ -125,7 +126,7 @@
   },
   {
     "name": "Echo",
-    "description": "If this card is in your graveyard at the start of the round, move to the top of your deck and become Doomed before drawing cards."
+    "description": "Move this card to the top of your deck between rounds, once per game."
   },
   {
     "name": "Purify",
@@ -141,7 +142,7 @@
   },
   {
     "name": "Contract",
-    "description": "Status that causes the oppponent to rally 3 when this unit is destroyed or banished."
+    "description": "Status that causes the opponent to rally 3 when this unit is destroyed or banished."
   },
   {
     "name": "Stalwart",

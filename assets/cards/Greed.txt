@@ -1,9 +1,8 @@
 Tiny: 2a 1/2p [Greed, Dwarf] [This unit protects adjacent units.; When destroyed, summon another Tiny from deck.] [Small, but not small time.]
-Apprentice Smitty: 2/2p [Greed, Dwarf] [At turn start, you may either:#Spawn fire land.#Expend fire land to rally 1.] [This is what they call a hot job.]
+Apprentice Smitty: 2/2p [Greed, Dwarf] [At turn start, you may either:#Spawn fire land.#Expend fire land to rally 1.] [Just like my father, and his father, and his father's father...]
 Dwarven Armorer: 2/2p [Greed, Dwarf] [Armor_Up to either:#Rally 2.#Summon a Dwarven Armorer.] [The best offense is a strong defense.]
 Dwarven Miner: 3/2p [Greed, Dwarf] [Armor_Up to rally 1 and spawn fire land.] [Dwarves haven't invented safety regulations yet.]
-Smelter: 2/2p [Greed, Dwarf] [Armor_Up to expend X fire land and rally X.] [The bellows ain't gonna work themselves.]
-Smelter: 3/2p [Greed, Dwarf] [When played, you may expend fire land to purify a unit.] [Fire burns away slag.]
+Smelter: 2/2p [Greed, Dwarf] [Armor_Up to expend X fire land and rally X.] [This is what they call a hot job.]
 Lava Lizard: 4/2p [Greed, Dragon] [Expend fire land to play this card.] [Manageable in small numbers, with the ideal number being zero.]
 Dwarfsteel Sabatons: 3/2p [Greed, Equipment, Armor] [When equipped, spawn fire land fire land.] [Dwarves are practically born wearing these.]
 Old Warhammer: 2p [Greed, Equipment, Weapon] [When equipped, assault 2.; Piercing.] [If all you have is a hammer, everything looks like a nail.]
@@ -11,13 +10,13 @@ Old Warhammer: 2p [Greed, Equipment, Weapon] [When equipped, assault 2.; Piercin
 Dragon Egg: 1/3p [Greed, Egg] [When you pass, rally 5.] [Probably best not to touch them.]
 Pit Wyvern: 2/3p [Greed, Dragon] [When played, you may expend fire land fire land to assault 2.] [Soft as barbed wire and charming as a gut punch.]
 Dwarven Brawler: 2/3p [Greed, Dwarf] [Armor_Up to either:#Assault 2.#Summon a Dwarven Brawler.] [If it's a fight yer lookin' fer, ye just found it.]
-Dwarven Warrior: 1a 2/3p [Greed, Dwarf] [Armor_Up to either:#Rally 1#Assault 1.; If a weapon is equipped, trigger both abilities.] [Born to drink, forced to fight.]
-Cave Dragon: 5/3p [Greed, Dragon] [Expend fire land fire land to play this card.] [Peaceful, as far as dragons go. (Run!)]
+Dwarven Warrior: 1a 3/3p [Greed, Dwarf] [Armor_Up to either:#Rally 1#Assault 1.; If a weapon is equipped, trigger both abilities.] [Born to drink, forced to fight.]
+Cave Dragon: 6/3p [Greed, Dragon] [Expend fire land fire land to play this card.] [Peaceful, as far as dragons go. (Run!)]
 Dwarfsteel Breastplate: 2/3p [Greed, Equipment, Armor] [At turn start, rally 1.] [Solid and sturdy. Lightweight? Not so much.]
-Dwarfsteel Gauntlets: 5/3p [Greed, Equipment, Armor] [When equipped, spawn fire land.] [Any shield that saves your life is a great shield.]
+Dwarfsteel Gauntlets: 4/3p [Greed, Equipment, Armor] [At turn start, spawn fire land.] [Any shield that saves your life is a great shield.]
 Dwarfsteel Battleaxe: 3p [Greed, Equipment, Weapon] [When equipped, assault 2.; Armor_Up to assault 1.] [Even dwarven battleaxes have beards...]
 
-Dwarven Engineer: 1a 2/4p [Greed, Dwarf] [To activate this card, you must expend fire land fire land.; Activate to make a common unit stalwart.] [Unlike humans, dwarves don't let computers do their thinkin' for them.]
+Dwarven Engineer: 1a 2/4p [Greed, Dwarf] [To activate this card, you must expend fire land fire land.; When activated, make a common unit stalwart.] [Unlike humans, dwarves don't let computers do their thinkin' for them.]
 Royal Wyvern: 7/4p [Greed, Dragon] [Expend fire land fire land fire land to play this card.] [Capable of turning a dwarf into barbecue in 3 seconds flat.]
 Swoop: 4p [Greed, Instant] [When played, you may expend air land to play a common dragon from deck.] [By the time you see them, it's too late.]
 Mantlet: 3/4p [Greed, Equipment, Armor] [Triggers Armor_Up abilities on adjacent units.] [Wider than 'tis tall? 's fer protectin' a mate!]
@@ -27,18 +26,18 @@ Grandmaster Smitty: 4/4p [Greed, Dwarf, Rare] [At turn start, spawn fire land fi
 Lost Dragon Egg: 1/4p [Greed, Egg, Rare] [When you pass, rally 8.; This card starts in your graveyard.] [It's a long way back to the nest.]
 
 Golden Helmet: 4/5p [Greed, Equipment, Armor, Rare] [When equipped, trigger Armor Up an additional time.] [Twice the pride, double the fall.]
-Golden Dragon Egg: 1a 1/5p [Greed, Egg, Rare] [Activate to destroy self and play a dragon from deck.] [Oooh, shiny!]
+Golden Dragon Egg: 1a 1/5p [Greed, Egg, Rare] [When activated, destroy self and play a dragon from deck.] [Oooh, shiny!]
 
 The Eggspert: 3/6p [Greed, Dwarf, Rare] [When played, you may expend fire land fire land to summon an egg.] [You mean you DON'T collect dragon eggs?]
-Shorty McGee: 2/6p [Greed, Dwarf, Rare] [When played, Assault 3.; Armor Up to Assault 2.] [Axe questions later.]
+Shorty McGee: 2/6p [Greed, Dwarf, Rare] [When played, assault 3.; Armor_Up to assault 2.] [Axe questions later.]
 
 Hoard Dragon: 1a 7/7p [Greed, Dragon, Rare] [Your score must be at least 10 to play this card.] [Be fearful when others are greedy.]
-Guardian Dragon: 1a 3/7p [Greed, Dragon, Rare] [Activate to protect an adjacent egg.; Summon self from deck whenever an allied dragon egg is destroyed.] [Ohhh now you've made 'er mad!]
+Guardian Dragon: 1a 3/7p [Greed, Dragon, Rare] [When activated, protect adjacent dragon eggs.; Summon self from deck whenever an allied dragon egg is destroyed.] [Ohhh now you've made 'er mad!]
 
-Goryx, Golden Dragon: 1a 4/8p [Greed, Dragon, Legendary] [Haste.; Activate to expend X fire land to play a card from deck of 2X provisions.] [Be greedy when others are fearful.]
+Goryx, Golden Dragon: 1a 4/8p [Greed, Dragon, Legendary] [Haste.; When activated, expend X fire land and play a card from deck of 2X provisions.] [Be greedy when others are fearful.]
 Mithril Mail: 6/8p [Greed, Equipment, Armor, Legendary] [Echo.; When equipped, spawn fire land fire land fire land.] [Made to last; last of its make.]
 
-Neromir, Warrior Dragon: 1a 5/9p [Greed, Dragon, Legendary] [Haste.; Activate to expend X fire land and assault X.; At turn start, you may expend fire land to re-enable activation.] [Look who woke up on the wrong side of the bed.]
+Neromir, Warrior Dragon: 1a 5/9p [Greed, Dragon, Legendary] [Haste.; When activated, expend X fire land and assault X.; At turn start, deactivate.] [Look who woke up on the wrong side of the bed.]
 Treasure of all Treasures: 9p [Greed, Emplacement, Legendary] [When played, rally 6.; At turn start, rally 1.; This card is protected by adjacent dwarves.] [All that glitters is not gold. Could be diamonds, for instance.]
 
 Dragonmother Erizyx: 2a 8/10p [Greed, Dragon, Legendary] [This card protects adjacent eggs.; When you pass, rally 2 for each allied egg.] [She's a lady and you will treat her as such.]

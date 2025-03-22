@@ -12,6 +12,7 @@ import com.drcorchit.cards.graphics.Draw
 import com.drcorchit.justice.utils.IOUtils
 import com.drcorchit.justice.utils.StringUtils.normalize
 import com.drcorchit.justice.utils.logging.Logger
+import java.io.File
 import java.util.zip.Deflater
 import kotlin.math.round
 
@@ -19,10 +20,14 @@ import kotlin.math.round
  * [com.badlogic.gdx.ApplicationListener] implementation shared by all platforms.
  */
 class GenerateCards : ApplicationAdapter() {
+
     override fun create() {
         //Load the batch
         Draw.batch
         LocalAssets.getInstance().load()
+
+        val output = File("output/images/full")
+        output.deleteRecursively()
     }
 
     override fun render() {
@@ -36,14 +41,26 @@ class GenerateCards : ApplicationAdapter() {
             card.draw()
             Draw.batch.end()
             screenshot(card)
-            println("${index * 100f / cards.size}% complete - ${card.name}")
+
+            val percent = (index+1) * 100f / cards.size
+            println("%.1f%% complete - %s".format( percent, card.name))
         }
     }
 
     fun screenshot(card: Card) {
         val pixmap = Pixmap.createFromFrameBuffer(0, 0, W, H)
-        val name = "output/images/full/${card.rarity.name}/${card.name.normalize()}.png"
-        PixmapIO.writePNG(FileHandle(name), pixmap, Deflater.DEFAULT_COMPRESSION, true)
+
+        fun save(name: String) {
+            val file = FileHandle("output/images/full/${card.rarity.name}/$name.png")
+            PixmapIO.writePNG(file, pixmap, Deflater.DEFAULT_COMPRESSION, true)
+        }
+
+        if (card.rarity == Rarity.Common) {
+            save("${card.name}_1")
+            save("${card.name}_2")
+        } else {
+            save(card.name)
+        }
     }
 
     override fun dispose() {

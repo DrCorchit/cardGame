@@ -20,7 +20,7 @@ import java.util.zip.Deflater
  * [com.badlogic.gdx.ApplicationListener] implementation shared by all platforms.
  */
 class Main : ApplicationAdapter() {
-    var index = 100
+    var index = 36
     val stage by lazy { Stage() }
     val card by lazy { CardActor(cards[index]) }
 
@@ -30,6 +30,7 @@ class Main : ApplicationAdapter() {
         LocalAssets.getInstance().load()
         stage.addActor(card)
     }
+
 
     override fun resize(width: Int, height: Int) {
         val ratio = ((width / W.toFloat()) + (height / H.toFloat())) / 2

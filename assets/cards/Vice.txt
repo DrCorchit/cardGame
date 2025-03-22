@@ -1,43 +1,49 @@
-Moomsh Addict: 1/2p [Vice, Human] [When activated, destroy self and play a common Vice unit from deck.] [Wish I had some Moomsh.]
-Snitch: 1/2p [Vice, Human, Spy] [Disloyal.; When played, play a common crime from deck.] [Hey, pssst!]
+Moomsh Addict: 1/2p [Vice, Human] [When activated, destroy self and play a common Vice unit from deck.] [Wish I had some moomsh.]
+Snitch: 1/2p [Vice, Human, Spy] [Disloyal.; When played, play a common crime from your graveyard.] [Hey, pssst!]
 Beggar: 2/2p [Vice, Human] [At turn start (chaos 4), rally 1.;Whenever you play a crime, reroll 1.] [Alms for the poor?]
-Harlequin: 3/2p [Vice, Human] [When played, Reroll 1.; At turn start, swap an enemy land with a common or allied land.] [Tricked ya!]
+Constable: 2/2p [Vice, Human] [When played, lock a unit.] [You're under arrest.]
+Harlequin: 3/2p [Vice, Human] [When played, Reroll 1.; At turn start, swap an enemy land with a common or allied land.] [Tricked ya again!]
+Hired Muscle: 1a 3/2p [Vice, Human, Henchman] [When an adjacent unit is destroyed, summon another Hired Muscle.] [Watch it, twerp.]
+Neighborhood Bully: 4/2p [Vice, Human, Henchman] [Chaos 4 is required to play this unit.; Bonded: Your chaos level is increased by 1.] [Says who? My fist, that's who!]
 Shiv: 2p [Vice, Equipment, Weapon, Crime] [When equipped, assault 2.; If the equip target is a henchman, assassinate 2 instead.] [In prison, these things are cutting-edge technology.]
-Pickpocket: 2p [Vice, Instant, Crime] [When played (chaos X), rally X and reroll 3.] [You can get a lot more of what you  want with a kind word and a knife than you can with just a kind word.]
+Intimidation: 2p [Vice, Instant, Crime] [When played, rally 3 and reroll 2.] [You can get more of what you want with a kind word and a knife than you can with just a kind word.]
+Moomsh: 2p [Vice, Equipment, Crime] [Disloyal.; When equipped, rally 2.; Moomsh is poison.] [The high to die for?]
 
 Pyromaniac: 2/3p [Vice, Human, Henchman] [When played, reroll 3.; When activated (chaos X), assault X.] [Something not being on fire is usually a very easy problem to solve.]
 Street Thug: 1a 3/3p [Vice, Human, Henchman] [When activated, lock an enemy unit.; Chaos 5: Gain haste.] [The enemy can't steal our plans if we don't have any plans.]
-Intimidation: 3p [Vice, Equipment, Crime] [When played, reroll 1 and rally 5.] [Who you lookin' at?]
+Moomsh Dealer: 3/3p [Vice, Human, Henchman] [When played, poison a unit.] [First one's on the house.]
+Chain Gang: 5/3p [Vice, Human] [Chaos 4 is required to play this card.] [It's where they all end up, eventually.]
 Landlady: 6/3p [Vice, Human] [When an adjacent unit is destroyed, also destroy self.] [It's a beautiful day for an eviction.]
+Pickpocket: 3p [Vice, Instant, Crime] [When played (chaos X), rally X and reroll 1.] [A fool and his money...]
 
 Bystanders: 2/4p [Vice, Human] [When activated, rally by the provision cost of the next unit you assassinate or seize this turn.] [Oh wow, dinner AND a show!]
 Hypnotist: 1/4p [Vice, Human, Spy] [Disloyal.; When played, seize 2.] [What a captivating performance!]
 Hitman: 1/4p [Vice, Human, Spy] [Disloyal.; When played (chaos X), assassinate X.] [I never hurt nobody that ain't had it comin'.]
-Hired Muscle: 4/4p [Vice, Human, Henchman] [When an adjacent unit is destroyed, summon another Hired Muscle.] [Watch it, twerp.]
+Man Mountain: 7/4p [Vice, Human, Henchman] [Chaos 5 is required to play this card.] [(indecipherable grunting)]
 
 Maximillian, Slumlord: 4/4p [Vice, Human, Caporegime, Rare] [When played, move one of your opponent's land dice to the common pool.; When destroyed, move it back.] [Su casa es mi casa.]
 Captain Ernesto: 4/4p [Vice, Human, Henchman, Rare] [When activated, assault 4 and destroy self.] [If it's a fight ye wants...]
 The Butcher: 1/4p [Vice, Human, Spy, Rare] [Disloyal.; When played, assassinate adjacent units by 3.] [Nice to meat you!]
 
-Inspector Culso: 3/5p [Vice, Human, Spy, Rare] [Disloyal.; When played (chaos X), look at all cards from your opponent's deck with a provision cost of X or less and play one.] [With me, surprises are rarely unexpected.]
-The Dollhouse: 5p [Vice, Emplacement, Location, Rare] [When played, Tutor a Moomsh Addict or Landlady.; Adjacent Moomsh Addicts and Landladies do not destroy themselves.] [If home is where the heart is, then they're homeless.]
+Inspector Culso: 2/5p [Vice, Human, Spy, Rare] [Disloyal.; When played (chaos X), look at all cards from your opponent's deck with a provision cost of X or less and play one.] [With me, surprises are rarely unexpected.]
+The Dollhouse: 5p [Vice, Emplacement, Location, Rare] [When played, play a Moomsh Addict or Landlady from deck.; Adjacent Moomsh Addicts and Landladies do not destroy themselves.] [If home is where the heart is, then they're homeless.]
 
-Jailbreak: 6p [Vice, Instant, Crime, Rare] [When played (chaos X), resurrect a 2 + X provision Vice unit.] [Breaking out: not just for teenagers anymore.]
-The Quartermaster: 2/6p [Vice, Human, Spy, Rare] [When played, Tutor a common spy.; Whenever you play a Disloyal unit, Rally 1.] [The best plans are those that work.]
+The Quartermaster: 2/6p [Vice, Human, Spy, Rare] [When played, play a common spy from deck.] [Take whatcha need for the job and scram.]
+Madame Baghat: 3/6p [Vice, Human, Caporegime, Rare] [When played (chaos X), play a unit with X or fewer provisions from your deck.] [If anyone calls me "Bag Hat" one more time...]
 
 Pandemonium: 7p [Vice, Instant, Crime, Rare] [Echo.; When played, choose three cards from your deck and play one at random.; While in your graveyard, Chaos is increased by 1.] [Pandemonium did not reign; it poured.]
-Scarlet, Made Lady: 2/8p [Vice, Human, Caporegime, Legendary] [When you pass:#Rally 1 for each allied Henchman.#Rally 2 for each allied Caporegime or Kingpin.] [Wait 'til Big Daddy hears about this!]
+Scarlet, Made Lady: 1/7p [Vice, Human, Caporegime, Legendary] [When you pass:#Rally 1 for each allied Henchman or Caporegime.#Rally 2 for each allied Kingpin.] [Wait 'til Big Daddy hears about this!]
 
-Madame Baghat: 3/8p [Vice, Human, Caporegime, Rare] [When played (chaos X), play a unit with X or fewer provisions from your deck.] [If anyone calls me "Bag Hat" one more time...]
-Molgrippe, Master Assassin: 2/8p [Vice, Human, Henchman, Legendary] [When played, trigger an effect depending on the condition:#Chaos 4-5: Assassinate 5.#Chaos 6: Assassinate 10.] [The anomaly will be corrected momentarily.] [removal, tall punish]
+Molgrippe, Master Assassin: 2/8p [Vice, Human, Henchman, Legendary] [When played, you may either:#Chaos 5: Assassinate 5.#Chaos 6: Assassinate 10.] [The anomaly will be corrected momentarily.]
+Chester Zilch: 2/8p [Vice, Human, Caporegime, Legendary] [Chaos 4: Summon self from deck.; Chaos 6: Summon self from your graveyard.] [Ahead of schedule, as usual.]
 
-Chester Zilch: 2/9p [Vice, Human, Caporegime, Legendary] [Trigger an effect depending on the condition:#Chaos 4: Summon self from deck.#Chaos 5: Summon self from graveyard.] [Ahead of schedule, as usual.]
-The Heist: 9p [Vice, Instant, Crime, Legendary] [When played, seize any unit, then rout by its power.;This card cannot be played in such a way that your score goes below zero.] [The perfect crime.]
+The Heist: 9p [Vice, Instant, Crime, Legendary] [When played, rout 3 then seize 6.;Your score must be at least 3 to play this card.] [The perfect crime.]
+Jailbreak: 9p [Vice, Instant, Crime, Rare] [When played, play a common Vice unit from your graveyard.;Chaos 5: Also summon a Hired Muscle.] [Breaking out: not just for teenagers anymore.]
 
-Yalmamir, Prince of Crime: 2/10p [Vice, Vampire, Kingpin, Legendary] [When played, seize 3.;Piercing.] [A single incompetent enemy is worth a thousand incompetent friends.]
-Gladys the Glorious: 1/11p [Vice, Human, Kingpin, Legendary] [When played, choose a common henchman with 4 or less power, then summon a copy on either side of self from your graveyard.] [Big things happen to big people.]
-Big Daddy: 1/11p [Vice, Kingpin, Legendary] [When played, seize up to 3 enemy units with a combined power less than or equal to your chaos level.] [More for me!] [seize]
+Gladys the Glorious: 2/11p [Vice, Human, Kingpin, Legendary] [When played, choose a common henchman with 4 or less power and summon a copy on either side of self.;Both copies must be summoned from your graveyard.] [I am big. It's the pictures that got smaller.]
+Yalmamir, Prince of Crime: 2/11p [Vice, Vampire, Kingpin, Legendary] [When played, seize 3.;Piercing.] [A single incompetent enemy is worth a thousand incompetent friends.]
+Big Daddy: 1/11p [Vice, Human, Kingpin, Legendary] [When played (chaos X), seize up to 3 enemy units with a combined power less than or equal to X.] [More for me!] [seize]
 
 #Further ideas
 #Moomsh
-#Flengtooth, Moomsh Dragon: 7/9p [Vice, Dragon, Legendary] [Activate: Reroll 1; At turn start, Recharge.; Finale, Chaos X: Rally X.] []
+#Flengtooth, Sewer Dragon: 7/9p [Vice, Dragon, Legendary] [When played, poison adjacent units.;For each unit poisoned, also poison an enemy unit.] []

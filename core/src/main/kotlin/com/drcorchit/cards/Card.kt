@@ -134,8 +134,17 @@ class Card(
                 val power = match["power"]?.value?.toInt() ?: 0
                 val cost = match["cost"]!!.value.toInt()
                 val tags = match["tags"]!!.value.split(",").map { it.trim() }
-                val abilities = match["abilities"]!!.value.split(";")
+                val abilities = match["abilities"]!!.value
+                    .replace("(?<!\\w)\"(?=\\w)".toRegex(), "“")
+                    .replace("\"", "”")
+                    .replace("(?<!\\w)'(?=\\w)".toRegex(), "‘")
+                    .replace("'", "’")
+                    .split(";")
                 val quote = match["quote"]!!.value
+                    .replace("(?<!\\w)\"(?=\\w)".toRegex(), "“")
+                    .replace("\"", "”")
+                    .replace("(?<!\\w)'(?=\\w)".toRegex(), "‘")
+                    .replace("'", "’")
                 val strategyTags = match["strategy"]
                     ?.let { it.value.split(",").map { tag -> tag.trim() } }
                     ?: listOf()
@@ -154,9 +163,8 @@ class Card(
             File(file).writeText(output)
         }
 
-        val factions = setOf(Motive.Peace, Motive.Greed, Motive.Neutral, Motive.Vice)
+        val factions = setOf(Motive.Peace, Motive.Greed, Motive.Justice, Motive.Vice, Motive.Neutral, Motive.Wisdom)
             .map { "$it.txt" }
-
 
         fun readFrom(filename: String): List<Card> {
             return File(filename).listFiles()!!
@@ -202,7 +210,7 @@ class Card(
                     .toMutableSet()
             folder.removeAll(cards.map { it.name.normalize() }.toSet())
             if (folder.isNotEmpty()) {
-                println("Unused card arts {\n  ${folder.joinToString("\n  ")}\n}")
+                //println("Unused card arts {\n  ${folder.joinToString("\n  ")}\n}")
             }
 
             val cardsByMotive = cards.groupBy { card -> card.motive }

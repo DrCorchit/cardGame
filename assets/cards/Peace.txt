@@ -6,17 +6,17 @@ Will-o'-the-Wisp: 3/2p [Peace, Fairy] [When played, you may expend air land to p
 Bullfrog Army: 3/2p [Peace, Beast] [Expend water land to play this card.; When played while bonded, assault 2.] [Survivors describe their attacks as a ribbeting experience.]
 Sleeping Bear: 4/4p [Peace, Beast] [Expend earth land to play this card.] [Let sleeping bears lie.]
 Forest Fire: 2p [Peace, Instant, Nature] [When played, destroy an allied unit and play a common Peace unit from your graveyard.] [Flames clear the way for new growth.]
-Harvest: 2p [Peace, Instant, Nature] [When played, Expend all earth land, water land and air land, then rally 1 for each land spent.] [A time to sow, a time to reap...]
+Harvest: 2p [Peace, Instant, Nature] [When played, Expend all earth land water land air land, then rally 1 for each land spent.] [A time to sow, a time to reap...]
 
-Treant Sage: 2/3p [Peace, Treant] [Finale: Rally 1 for each Nature card in your graveyard.] [I think, therefore... hmmm...]
-Heartwood Treant: 3/3p [Peace, Treant] [When played, you may expend earth land water land air land Become Stalwart.] [Some people just can't see the forest for the trees. (Because the trees  will attack them if they do).]
+Treant Sage: 2/3p [Peace, Treant] [When you pass, rally 1 for each Nature card in your graveyard.] [I think, therefore... hmmm...]
 Dryad Grovekeeper: 4/3p [Peace, Nymph] [When played, spawn earth land earth land, water land water land, or air land air land.; When activated, spawn earth land earth land, water land water land, or air land air land.] [Nature always provides.]
 Dryad Ranger: 4/3p [Peace, Nymph] [When played, you may expend air land to lock a unit.] [You ever feel like you're being watched?]
-Warthog: 5/4p [Peace, Beast] [Expend earth land earth land to play this card.] [Oink! Oink!]
-Mermaid: 5/4p [Peace, Nymph] [Expend water land water land to play this card.] [Such a beautiful song...]
-Lightning Strike: 3p [Peace, Instant, Nature] [When played, assault 2.; You may expend X air land to increase the assault by X X.; The target must be on either end of your opponent's battlefield.] [You've been thunderstruck.]
+Warthog: 6/3p [Peace, Beast] [Expend earth land earth land to play this card.] [Oink! Oink!]
+Mermaid: 6/3p [Peace, Nymph] [Expend water land water land to play this card.] [Such a beautiful song...]
+Lightning Strike: 3p [Peace, Instant, Nature] [When played, assault 2.; You may expend X air land to increase the assault by X.] [You've been thunderstruck.]
 Lifegiving Rainfall: 4/3p [Peace, Equipment, Nature] [At turn start, spawn water land.] [The rain begins with a single drop.]
 
+Heartwood Treant: 4/4p [Peace, Treant] [When played, you may expend earth land water land air land to become stalwart.] [Some people just can't see the forest for the trees.]
 Hamadryad: 5/4p [Peace, Nymph] [You must expend earth land water land air land to activate this unit.; When activated, protect adjacent units.] [Every life matters. So does every death.]
 Mountain Gorilla: 7/4p [Peace, Beast] [Expend earth land earth land earth land to play this card.] [A mountain of muscle.]
 Oceanid: 7/4p [Peace, Nymph] [Expend water land water land water land to play this card.] [Her voice is found in every seashell.]
@@ -36,13 +36,13 @@ Lady of the Lake: 1/6p [Peace, Human, Rare] [At the start of your turn, you may 
 Joan of Arc: 1/7p [Peace, Human, Legendary] [When you pass, rally by the provision cost of the most expensive unit you control.] [Good is defined by what it creates. Evil, by what it destroys.]
 Excalibur: 7p [Peace, Equipment, Weapon, Legendary] [When equipped, assault 6.; Upon an overkill, spawn X earth land, water land, or air land.] [Whoso draws this sword, shall be king of Avalon!]
 
-King Arthur: 1a 4/8p [Peace, Human, Regent, Legendary] [If a weapon is equipped when you pass, either:#Become Stalwart.#Rally 2.;] [One day, he will arise and save his homeland of Avalon.]
-Treant King: 1/8p [Peace, Treant, Regent, Legendary] [When played, expend all earth land, water land, and air land, then rally for each land expended.;Repeat this ability until no earth land, water land, or air land remains.] [My crown is called content, a crown that seldom kings enjoy.]
+King Arthur: 1a 4/8p [Peace, Human, Regent, Legendary] [If a weapon is equipped when you pass, either:#Become stalwart.#Rally 2.;] [One day, he will arise and save his homeland of Avalon.]
+Treant King: 3/8p [Peace, Treant, Regent, Legendary] [When played, expend all earth land, water land, and air land, then rally for each land expended.;Repeat this ability until no earth land, water land, or air land remains.] [My crown is called content, a crown that seldom kings enjoy.]
 
 Queen Titania: 4/9p [Peace, Fairy, Regent, Legendary] [When played, summon a Pixie on either side of self.; When activated, spawn earth land earth land, water land water land, or air land air land.] [Hand in hand, with fairy grace, we will sing and bless this place.]
 
-King Oberon: 5/10p [Peace, Fairy, Regent, Legendary] [At turn start, spawn air land.; When activated, play a Lightning Strike from graveyard.] [Ill met by moonlight, proud Titania.]
-Allmother: 3/10p [Peace, Nymph, Legendary] [When played, you may either:#Expend earth land water land air land to play a Peace unit from deck.#Expend earth land earth land earth land to play a Peace unit from graveyard.] [No wound too deep, no bone too broken, no heart beyond repair.]
+King Oberon: 5/10p [Peace, Fairy, Regent, Legendary] [At turn start, spawn air land.; When activated, play a Lightning Strike from your graveyard.] [Ill met by moonlight, proud Titania.]
+Allmother: 4/10p [Peace, Nymph, Legendary] [When played, you may either:#Expend earth land water land air land to play a Peace unit from deck.#Expend earth land earth land earth land to play a Peace unit from your graveyard.] [No wound too deep, no bone too broken, no heart beyond repair.]
 
 #Pied Piper: 1/11p [Peace, Human, Legendary] [When played, summon all 1-power Peace units from your graveyard and give them doomed.] []
 #Further ideas: Snow White, Leprechaun, Robin Hood, Undine
