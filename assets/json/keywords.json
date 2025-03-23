@@ -64,12 +64,11 @@
   },
   {
     "name": "Displace",
-    "description": "Move an opponent's card, normally away from protection."
+    "description": "Move an opponent's card."
   },
   {
     "name": "Destroy",
-    "description": "Move a card to the graveyard.",
-    "synonyms": ["Destroys", "Destroyed"]
+    "description": "Move a card to the graveyard."
   },
   {
     "name": "Banish",
@@ -90,11 +89,6 @@
     "name": "Seize X",
     "description": "Move an enemy unit of X or less power to your battlefield.",
     "synonyms": ["Seize", "Seizes", "Seized"]
-  },
-  {
-    "name": "Armor",
-    "description": "Increases resistance to Assault, Assassinate, or Seize abilities.",
-    "synonym": ["Armor"]
   },
   {
     "name": "Piercing",

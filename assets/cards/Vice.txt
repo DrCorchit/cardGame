@@ -1,4 +1,4 @@
-Moomsh Addict: 1/2p [Vice, Human] [When activated, destroy self and play a common Vice unit from deck.] [Wish I had some moomsh.]
+Moomsh Addict: 1/2p [Vice, Human] [When activated, destroy self and play a common Vice unit from your deck.] [Wish I had some moomsh.]
 Snitch: 1/2p [Vice, Human, Spy] [Disloyal.; When played, play a common crime from your graveyard.] [Hey, pssst!]
 Beggar: 2/2p [Vice, Human] [At turn start (chaos 4), rally 1.;Whenever you play a crime, reroll 1.] [Alms for the poor?]
 Constable: 2/2p [Vice, Human] [When played, lock a unit.] [You're under arrest.]
@@ -26,16 +26,16 @@ Captain Ernesto: 4/4p [Vice, Human, Henchman, Rare] [When activated, assault 4 a
 The Butcher: 1/4p [Vice, Human, Spy, Rare] [Disloyal.; When played, assassinate adjacent units by 3.] [Nice to meat you!]
 
 Inspector Culso: 2/5p [Vice, Human, Spy, Rare] [Disloyal.; When played (chaos X), look at all cards from your opponent's deck with a provision cost of X or less and play one.] [With me, surprises are rarely unexpected.]
-The Dollhouse: 5p [Vice, Emplacement, Location, Rare] [When played, play a Moomsh Addict or Landlady from deck.; Adjacent Moomsh Addicts and Landladies do not destroy themselves.] [If home is where the heart is, then they're homeless.]
+The Dollhouse: 5p [Vice, Emplacement, Location, Rare] [When played, play a Moomsh Addict or Landlady from your deck.; Adjacent Moomsh Addicts and Landladies do not destroy themselves.] [If home is where the heart is, then they're homeless.]
 
-The Quartermaster: 2/6p [Vice, Human, Spy, Rare] [When played, play a common spy from deck.] [Take whatcha need for the job and scram.]
+The Quartermaster: 2/6p [Vice, Human, Spy, Rare] [When played, play a common spy from your deck.] [Take whatcha need for the job and scram.]
 Madame Baghat: 3/6p [Vice, Human, Caporegime, Rare] [When played (chaos X), play a unit with X or fewer provisions from your deck.] [If anyone calls me "Bag Hat" one more time...]
 
 Pandemonium: 7p [Vice, Instant, Crime, Rare] [Echo.; When played, choose three cards from your deck and play one at random.; While in your graveyard, Chaos is increased by 1.] [Pandemonium did not reign; it poured.]
 Scarlet, Made Lady: 1/7p [Vice, Human, Caporegime, Legendary] [When you pass:#Rally 1 for each allied Henchman or Caporegime.#Rally 2 for each allied Kingpin.] [Wait 'til Big Daddy hears about this!]
 
 Molgrippe, Master Assassin: 2/8p [Vice, Human, Henchman, Legendary] [When played, you may either:#Chaos 5: Assassinate 5.#Chaos 6: Assassinate 10.] [The anomaly will be corrected momentarily.]
-Chester Zilch: 2/8p [Vice, Human, Caporegime, Legendary] [Chaos 4: Summon self from deck.; Chaos 6: Summon self from your graveyard.] [Ahead of schedule, as usual.]
+Chester Zilch: 2/8p [Vice, Human, Caporegime, Legendary] [Chaos 4: Summon self from your deck.; Chaos 6: Summon self from your graveyard.] [Ahead of schedule, as usual.]
 
 The Heist: 9p [Vice, Instant, Crime, Legendary] [When played, rout 3 then seize 6.;Your score must be at least 3 to play this card.] [The perfect crime.]
 Jailbreak: 9p [Vice, Instant, Crime, Rare] [When played, play a common Vice unit from your graveyard.;Chaos 5: Also summon a Hired Muscle.] [Breaking out: not just for teenagers anymore.]

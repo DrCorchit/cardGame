@@ -3,6 +3,7 @@ package com.drcorchit.cards
 import com.badlogic.gdx.ApplicationAdapter
 import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.files.FileHandle
+import com.badlogic.gdx.graphics.Color
 import com.badlogic.gdx.graphics.Pixmap
 import com.badlogic.gdx.graphics.PixmapIO
 import com.drcorchit.cards.Card.Companion.cards
@@ -42,21 +43,22 @@ class GenerateCards : ApplicationAdapter() {
             Draw.batch.end()
             screenshot(card)
 
-            val percent = (index+1) * 100f / cards.size
-            println("%.1f%% complete - %s".format( percent, card.name))
+            val percent = (index + 1) * 100f / cards.size
+            println("%.1f%% complete - %s".format(percent, card.name))
         }
     }
 
     fun screenshot(card: Card) {
-        val pixmap = Pixmap.createFromFrameBuffer(0, 0, W, H)
+        val pixmap = Pixmap.createFromFrameBuffer(0, 0, W.toInt(), H.toInt())
 
         fun save(name: String) {
-            val file = FileHandle("output/images/full/${card.rarity.name}/$name.png")
+            val file = FileHandle("output/images/full/${card.motive.name}/$name.png")
             PixmapIO.writePNG(file, pixmap, Deflater.DEFAULT_COMPRESSION, true)
         }
 
         if (card.rarity == Rarity.Common) {
             save("${card.name}_1")
+            pixmap.drawPixel(0, 0, Color.GRAY.toIntBits())
             save("${card.name}_2")
         } else {
             save(card.name)

@@ -28,7 +28,8 @@ object Fonts {
     data class FontSizes (val numberFont: Int, val numberFontSmall: Int, val nameFont: Int, val abilityFont: Int, val quoteFont: Int)
 
     val medFontSizes = FontSizes(96, 84, 96, 40, 32)
-    val fontSizes = medFontSizes
+    val smFontSizes = FontSizes(72, 72, 80, 28, 24)
+    val fontSizes = smFontSizes
 
     val numberFont = initFont("enchanted_land.ttf", fontSizes.numberFont)
     val numberFontSmall = initFont("enchanted_land.ttf", fontSizes.numberFontSmall)
@@ -40,9 +41,9 @@ object Fonts {
     val defaultFont = "lato"
     val abilityFont = initFont("$defaultFont.ttf", fontSizes.abilityFont)
     val abilityFontColorless = initFont("$defaultFont.ttf", fontSizes.abilityFont)
-    val quoteFont = initFont("${defaultFont}_italic.ttf", fontSizes.quoteFont)
     val tagFont = initFont("$defaultFont.ttf", fontSizes.quoteFont)
-    //val keywordFont = initFont("$defaultFont.ttf", fontSizes[5])
+    val keywordFont = initFont("$defaultFont.ttf", fontSizes.quoteFont)
+    val quoteFont = initFont("${defaultFont}_italic.ttf", fontSizes.quoteFont)
 
     init {
         fun addManaIconsToFont (font: BitmapFont, region: TextureRegion) {

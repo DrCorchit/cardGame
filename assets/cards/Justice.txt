@@ -15,14 +15,14 @@ Affidavit: 3p [Justice, Emplacement, Law] [At turn start, spawn light land.; You
 Sub Poena: 3p [Justice, Instant, Law] [You must expend dark land dark land to play this instant.; When played, seize 2.] [See you in court.]
 
 Holy Paladin: 1a 3/4p [Justice, Human, Warrior] [When played, spawn light land dark land.; This card protects adjacent units.] [Death before dishonor.]
-Seneschal: 2/4p [Justice, Human] [When played, you may expend light land light land to play a common justice unit from deck.] [All in good order, I trust.]
-Attorney: 2/4p [Justice, Human] [When played, you may expend dark land dark land to play a common law from deck.] [A good lawyer knows the case. A great lawyer knows the judge.]
+Seneschal: 2/4p [Justice, Human] [When played, you may expend light land light land to play a common justice unit from your deck.] [All in good order, I trust.]
+Attorney: 2/4p [Justice, Human] [When played, you may expend dark land dark land to play a common law from your deck.] [A good lawyer knows the case. A great lawyer knows the judge.]
 Living Creature: 7/4p [Justice, Angel] [You must expend light land light land light land to play this unit.] [HOLY, HOLY, HOLY, is the Lord God Almighty.]
 
-Gabriel: 1/4p [Justice, Angel, Rare] [When played, play an angel from deck.] [I am Gabriel, who stands in the presence of God!]
+Gabriel: 1/4p [Justice, Angel, Rare] [When played, play an angel from your deck.] [I am Gabriel, who stands in the presence of God!]
 
 Methuselah: 8/5p [Justice, Human, Ancestor, Rare] [] [They say 500 is the new 400...]
-Enoch, Prophet: 2/5p [Justice, Human, Ancestor, Prophet, Rare] [When activated, rally by the provision cost of the next card you play from deck.] [You know the baby's gonna be a prophet when his first word is "Lo!"]
+Enoch, Prophet: 2/5p [Justice, Human, Ancestor, Prophet, Rare] [When activated, rally by the provision cost of the next card you play from your deck.] [You know the baby's gonna be a prophet when his first word is "Lo!"]
 
 Saint Paul: 4/6p [Justice, Human, Saint, Rare] [] []
 Noah: 4/6p [Justice, Human, Ancestor, Rare] [] []
@@ -33,10 +33,10 @@ Ariel, Heaven's Blade: 3/7p [Justice, Angel, Rare] [When played, you may either:
 Stephen, Martyr: 1/8p [Justice, Saint, Legendary] [When played, play a card from hand and draw a card.; Stephen protects adjacent units.] [Do not hold this sin against them!]
 Judgment Day: 8p [Justice, Instant, Law, Legendary] [When played, you may either:#Expend dark land dark land dark land to destroy a unit.#Expend light land light land light land to play a unit from your graveyard.] []
 
-Jurisprudence: 9p [Justice, Instant, Law, Rare] [Echo.; When played, you may either:#Spawn light land light land and play a common justice unit from deck.;#Expend light land light land play a Justice unit from deck.] [Law is order, and good law is good order.]
+Jurisprudence: 9p [Justice, Instant, Law, Rare] [Echo.; When played, you may either:#Spawn light land light land and play a common justice unit from your deck.;#Expend light land light land play a Justice unit from your deck.] [Law is order, and good law is good order.]
 Saint Peter: 4/9p [Justice, Human, Saint, Rare] [At turn start, Rally by the amount light land exceeds dark land.] [Ask not what God can do for you, but what you can do for God.]
 
 Archangel Michael: 3/10p [Justice, Angel, Legendary] [Whenever you play an ancestor, rally 1. Whenever you play a saint, rally 2.] [Behold, the commander of the armies of heaven.]
 Azrael, Angel of Death: 1/10p [Justice, Angel, Legendary] [When played, assault 10.; Upon overkill X, spawn X dark land.] [The preservation of life requires the destruction of evil.]
 
-New Jerusalem: 11p [Justice, Emplacement, Location, Legendary] [Activate: Rally equal to the provision cost of the next card you play from deck.] []
+New Jerusalem: 11p [Justice, Emplacement, Location, Legendary] [Activate: Rally equal to the provision cost of the next card you play from your deck.] []

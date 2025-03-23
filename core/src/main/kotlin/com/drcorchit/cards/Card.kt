@@ -3,7 +3,10 @@ package com.drcorchit.cards
 import com.badlogic.gdx.graphics.Color
 import com.badlogic.gdx.graphics.Texture
 import com.badlogic.gdx.utils.ScreenUtils
+import com.drcorchit.cards.Main.Companion.BORDER
 import com.drcorchit.cards.Main.Companion.H
+import com.drcorchit.cards.Main.Companion.IMAGE_H
+import com.drcorchit.cards.Main.Companion.IMAGE_W
 import com.drcorchit.cards.Main.Companion.W
 import com.drcorchit.cards.graphics.Textures.asSprite
 import com.drcorchit.cards.graphics.AnimatedSprite
@@ -163,7 +166,14 @@ class Card(
             File(file).writeText(output)
         }
 
-        val factions = setOf(Motive.Peace, Motive.Greed, Motive.Justice, Motive.Vice, Motive.Neutral, Motive.Wisdom)
+        val factions = setOf(
+            Motive.Peace,
+            Motive.Greed,
+            //Motive.Justice,
+            Motive.Vice,
+            Motive.Neutral,
+            Motive.Wisdom
+        )
             .map { "$it.txt" }
 
         fun readFrom(filename: String): List<Card> {
@@ -199,9 +209,60 @@ class Card(
             */
         }
 
-        init {
-            println("Using regex: $regex")
+        val textColor = Color.valueOf("#603000ff")
+        val helpTextColor = Color.valueOf("#806040ff") //was 405060
 
+        val stroke = Textures.brushStroke.asSprite().setOffset(Compass.CENTER)
+        val tray = Textures.tray.asSprite().setOffset(Compass.SOUTH)
+        val armorBack = Textures.armorBack.asSprite().setOffset(Compass.CENTER)
+        val costBack = Textures.costBack.asSprite().setOffset(200f, 150f)
+        val line = Textures.line.asSprite().setOffset(Compass.CENTER)
+        val border = Textures.border.asSprite()
+
+        val scale =  W / tray.getFrames().width
+        val trayHeight = tray.getFrames().height * scale
+        val imageW = W
+        val imageH = H + 10 - trayHeight
+        val imageRatio = imageH / imageW
+
+        val midWidth = IMAGE_W / 2f
+        val midHeight = tray.getFrames().height - 22f
+
+        val diamondOffsetX = 65f + BORDER
+        val diamondOffsetY = 105f - BORDER
+        val diamondW = 80f
+        val diamondH = 2 * diamondW
+        val starSize = 48f
+
+        val armorBackW = 80f
+        val armorBackH = 100f
+        val armorX = 80f + BORDER
+        val armorY = 80f + BORDER
+
+        val costBackSize = 150f
+        val costBackOffset = 80f
+        val costX = W + BORDER - costBackOffset
+        val costY = BORDER + costBackOffset
+
+        val strokeY = trayHeight + BORDER - 92
+        val strokeH = 140f
+        val strokeMargin = 200f
+        val strokeMaxW = W - 50f
+
+        val abilityTextX = BORDER + 30f
+        val abilityTextY = strokeY - 70
+        val abilityTextW = W - 60f
+
+        val lineY = 120f + BORDER
+        val quoteTextX = midWidth
+        val quoteTextY = (lineY + 20 + BORDER) / 2
+        val quoteTextW = W - 320f
+
+        val keywordTextX = abilityTextX
+        val keywordTextY = lineY + 20
+        val totalAbilityTextH = abilityTextY - keywordTextY
+
+        init {
             val folder =
                 File("assets/images/cards/used").listFiles()!!
                     .filter { it.isDirectory }
@@ -264,199 +325,45 @@ class Card(
                 if (it.quote.isBlank()) {
                     println("Card ${it.name} has no quote!")
                 }
+
+                val abilityTextH = Draw.calculateDimensions(Fonts.abilityFont, it.abilityText, abilityTextW).second
+                val keywordTextH = Draw.calculateDimensions(Fonts.keywordFont, it.keywordText, abilityTextW).second
+                val overlap = totalAbilityTextH - (keywordTextH + abilityTextH)
+                if (overlap < 0) {
+                    println("Card has overlap: ${it.name} $overlap")
+                } else if (overlap < 20) {
+                    println("Card has near overlap: ${it.name} $overlap")
+                }
             }
         }
-
-        val textColor = Color.valueOf("#603000ff")
-        val helpTextColor = Color.valueOf("#806040ff") //was 405060
-
-        val stroke = Textures.brushStroke.asSprite().setOffset(Compass.CENTER)
-        val tray = Textures.tray.asSprite().setOffset(Compass.SOUTH)
-        val armorBack = Textures.armorBack.asSprite().setOffset(Compass.CENTER)
-        val armorBlack = Textures.armorBlack.asSprite().setOffset(Compass.CENTER)
-        val costBack = Textures.costBack.asSprite().setOffset(200f, 150f)
-        val provisionsBlack = Textures.provisionsBlack.asSprite().setOffset(200f, 150f)
-        val line = Textures.line.asSprite().setOffset(Compass.CENTER)
-        val border = Textures.border.asSprite()
-
-        val midWidth = W / 2f
-        val midHeight = tray.getFrames().height - 22f
-        val cardRatio = H * 1f / W
-
-        val imageW = 950f
-        val imageH = 744f
-        val imageRatio = imageH / imageW
-
-        val diamondOffsetX = 85f
-        val diamondOffsetY = 140f
-        val diamondW = 100f
-        val diamondH = 2 * diamondW
-        val starSize = 60f
-
-        val armorBackW = 80f
-        val armorBackH = 100f
-        val armorX = 80f
-        val armorY = 80f
-
-        val costBackSize = 150f
-        val costBackOffset = 80f
-        val costX = W - costBackOffset
-        val costY = costBackOffset
-
-        val nameY = midHeight - 50f
-        val tagsY = nameY - 65f
-        val strokeH = 140f
-        val strokeMargin = 200f
-        val strokeMaxW = W - 50f
-        val strokeY = nameY - 32f
-
-        val borderY = 20
-        val lineY = 120f
-        val quoteTextX = midWidth
-        val quoteTextY = (lineY + borderY) / 2
-        val quoteTextW = W - 320f
-
-        val abilityBufferMargin = 20f
-        val abilityBufferX = 40f
-        val abilityBufferY = lineY + 30
-        val abilityBufferW = W - 2 * abilityBufferX
-        val abilityBufferH = midHeight - (strokeH + abilityBufferY)
-    }
-
-    fun drawSimple() {
-        ScreenUtils.clear(Color.WHITE)
-
-        //Draw border and ability text tray
-        Draw.drawLine(50f, midHeight, W - 50f, midHeight, 1f, Color.BLACK)
-        border.draw(batch, 0f, 0f)
-
-        //Power diamond
-        val diamond = Textures.diamondBlack.asSprite().setOffset(Compass.CENTER)
-        diamond.draw(batch, diamondOffsetX, H - diamondOffsetY, diamondW, diamondH)
-        if (power == 0) {
-            type.imageBlack!!.draw(batch, diamondOffsetX, H - diamondOffsetY, starSize, starSize)
-        } else if (type == CardType.Unit) {
-            Draw.drawText(
-                diamondOffsetX,
-                H - diamondOffsetY,
-                Fonts.numberFont,
-                power.toString(),
-                100f,
-                Compass.CENTER,
-                Color.BLACK
-            )
-        } else {
-            Draw.drawText(
-                diamondOffsetX,
-                H - diamondOffsetY + 24,
-                Fonts.numberFontSmall,
-                power.toString(),
-                100f,
-                Compass.CENTER,
-                Color.BLACK
-            )
-        }
-
-        //Armor
-        if (armor > 0) {
-            armorBlack.draw(batch, armorX, armorY, armorBackW, armorBackH)
-            Draw.drawText(
-                armorX, armorY + 2,
-                Fonts.numberFontSmall,
-                armor.toString(),
-                100f,
-                Compass.CENTER,
-                Color.BLACK
-            )
-        }
-
-        //Cost
-        provisionsBlack.draw(batch, costX, costY, costBackSize, costBackSize)
-        Draw.drawText(
-            costX, costY + 5,
-            Fonts.numberFontSmall,
-            cost.toString(),
-            100f,
-            Compass.CENTER,
-            Color.BLACK
-        )
-
-        //Card Name
-        Draw.drawText(midWidth, nameY, Fonts.nameFont, name, W - 50f, Compass.CENTER, Color.BLACK)
-
-        //Tags
-        Draw.drawText(
-            midWidth,
-            tagsY,
-            Fonts.tagFont,
-            tagsText,
-            1000f,
-            Compass.CENTER,
-            Color.BLACK
-        )
-
-        //Ability Text
-        val text = styledAbilityText
-        val abilityTextY = abilityBufferY + abilityBufferH - abilityBufferMargin
-        Draw.drawText(
-            abilityBufferX,
-            abilityTextY,
-            Fonts.abilityFontColorless,
-            text,
-            abilityBufferW,
-            Compass.SOUTHEAST,
-            Color.BLACK
-        )
-
-        //Keyword text
-        val keywordTextY = abilityBufferY + abilityBufferMargin
-        Draw.drawText(
-            abilityBufferX,
-            keywordTextY,
-            Fonts.tagFont,
-            keywordText,
-            abilityBufferW,
-            Compass.NORTHEAST,
-            Color.BLACK
-        )
-
-        Draw.drawLine(midWidth - 150, lineY, midWidth + 150, lineY, 1f, Color.BLACK)
-        //line.draw(batch, midWidth, lineY, 3f, 1f, 0f)
-
-        //Quote text
-        Draw.drawText(
-            quoteTextX,
-            quoteTextY,
-            Fonts.quoteFont,
-            quote,
-            quoteTextW,
-            Compass.CENTER,
-            Color.BLACK
-        )
     }
 
     fun draw() {
         ScreenUtils.clear(Color.BLACK)
-
         //Draw card art
         val image = this.image
         if (image != null) {
             val sourceImageRatio = image.getFrames().ratio
             val destImageRatio = imageRatio
-            val scale =
+            val imageScale =
                 if (sourceImageRatio > destImageRatio) {
                     imageW / image.getFrames().width
                 } else {
                     imageH / image.getFrames().height
                 }
 
-            image.draw(batch, midWidth, H - 10f, scale, scale, 0f)
+            image.draw(batch, midWidth, H + BORDER - 10f, imageScale, imageScale, 0f)
         }
+        Draw.drawRectangle(0f, 0f, IMAGE_W.toFloat(), BORDER, Color.BLACK)
+        Draw.drawRectangle(0f, H + BORDER, IMAGE_W.toFloat(), IMAGE_H.toFloat(), Color.BLACK)
+        Draw.drawRectangle(0f, 0f, BORDER, IMAGE_H.toFloat(), Color.BLACK)
+        Draw.drawRectangle(W + BORDER, 0f, IMAGE_W.toFloat(), IMAGE_H.toFloat(), Color.BLACK)
 
         //Draw border and ability text tray
-        tray.draw(batch, midWidth, 0f)
-        border.draw(batch, 0f, 0f)
-        rarity.image.draw(batch, 0f, 0f, W.toFloat(), H.toFloat())
+
+        tray.draw(batch, midWidth, BORDER, W, trayHeight)
+        border.draw(batch, BORDER, BORDER, W, H)
+        rarity.image.draw(batch, BORDER, BORDER, W, H)
 
         //Power diamond
         val diamond = motive.image
@@ -477,14 +384,14 @@ class Card(
             val y = H - diamondOffsetY
             Draw.drawText(
                 diamondOffsetX,
-                y + 30,
+                y + 28,
                 Fonts.numberFontXS,
                 power.toString(),
                 100f,
                 Compass.CENTER,
                 Color.WHITE
             )
-            type.image!!.draw(batch, diamondOffsetX + 3, y - 20, starSize, starSize)
+            type.image!!.draw(batch, diamondOffsetX + 3, y - 18, starSize, starSize)
         }
 
         //Armor
@@ -516,12 +423,12 @@ class Card(
         stroke.blend = motive.secondaryColor
         val strokeW = min(dims.first + strokeMargin, strokeMaxW)
         stroke.draw(batch, midWidth, strokeY, strokeW, strokeH)
-        Draw.drawText(midWidth, nameY, Fonts.nameFont, name, W - 50f, Compass.CENTER, motive.color)
+        Draw.drawText(midWidth, strokeY + 30, Fonts.nameFont, name, W - 50f, Compass.CENTER, motive.color)
 
         //Tags
         Draw.drawText(
             midWidth,
-            tagsY,
+            strokeY - 30,
             Fonts.tagFont,
             tagsText,
             1000f,
@@ -531,25 +438,23 @@ class Card(
 
         //Ability Text
         val text = styledAbilityText
-        val abilityTextY = abilityBufferY + abilityBufferH - abilityBufferMargin
         Draw.drawText(
-            abilityBufferX,
+            abilityTextX,
             abilityTextY,
             Fonts.abilityFont,
             text,
-            abilityBufferW,
+            abilityTextW,
             Compass.SOUTHEAST,
             Color.WHITE
         )
 
         //Keyword text
-        val keywordTextY = abilityBufferY + abilityBufferMargin
         Draw.drawText(
-            abilityBufferX,
+            keywordTextX,
             keywordTextY,
-            Fonts.tagFont,
+            Fonts.keywordFont,
             keywordText,
-            abilityBufferW,
+            abilityTextW,
             Compass.NORTHEAST,
             helpTextColor
         )

@@ -20,7 +20,7 @@ import java.util.zip.Deflater
  * [com.badlogic.gdx.ApplicationListener] implementation shared by all platforms.
  */
 class Main : ApplicationAdapter() {
-    var index = 36
+    var index = 0
     val stage by lazy { Stage() }
     val card by lazy { CardActor(cards[index]) }
 
@@ -73,7 +73,11 @@ class Main : ApplicationAdapter() {
         private val logger = Logger.getLogger(Main::class.java)
 
         //was 750x1050
-        const val W: Int = 1000
-        const val H: Int = 1400
+        //was 1000x1400
+        const val BORDER = 32f
+        const val IMAGE_W = 822
+        const val IMAGE_H = 1122
+        const val W = IMAGE_W - (BORDER * 2)
+        const val H = IMAGE_H - (BORDER * 2)
     }
 }
