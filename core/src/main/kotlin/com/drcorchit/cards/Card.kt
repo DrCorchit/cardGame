@@ -111,79 +111,13 @@ class Card(
     }
 
     companion object {
-        val nameRegex = "(?<name>.*)"
-        val powerRegex = "(?<power>\\d+)"
-        val costRegex = "(?<cost>\\d+)"
-        val armorRegex = "(?<armor>\\d+)a"
-        val statsRegex = "($armorRegex)? *($powerRegex\\/)?${costRegex}p"
-        val tagsRegex = "(?<tags>.*?)"
-        val abilityRegex = "(?<abilities>.*?)"
-        val quoteRegex = "(?<quote>.*?)"
-        val strategyRegex = "(?<strategy>.*?)"
-
-        val regex =
-            Regex("$nameRegex: *$statsRegex *\\[$tagsRegex] *\\[$abilityRegex] *\\[$quoteRegex]( *\\[$strategyRegex])?")
-
-        @JvmStatic
-        fun parse(str: String): Card? {
-            if (str.isBlank() || str.startsWith("#")) {
-                return null
-            }
-
-            try {
-                val match = regex.matchEntire(str)!!.groups
-                val name = match["name"]!!.value
-                val armor = match["armor"]?.value?.toInt() ?: 0
-                val power = match["power"]?.value?.toInt() ?: 0
-                val cost = match["cost"]!!.value.toInt()
-                val tags = match["tags"]!!.value.split(",").map { it.trim() }
-                val abilities = match["abilities"]!!.value
-                    .replace("(?<!\\w)\"(?=\\w)".toRegex(), "“")
-                    .replace("\"", "”")
-                    .replace("(?<!\\w)'(?=\\w)".toRegex(), "‘")
-                    .replace("'", "’")
-                    .split(";")
-                val quote = match["quote"]!!.value
-                    .replace("(?<!\\w)\"(?=\\w)".toRegex(), "“")
-                    .replace("\"", "”")
-                    .replace("(?<!\\w)'(?=\\w)".toRegex(), "‘")
-                    .replace("'", "’")
-                val strategyTags = match["strategy"]
-                    ?.let { it.value.split(",").map { tag -> tag.trim() } }
-                    ?: listOf()
-
-                return Card(name, power, cost, armor, tags, abilities, quote, strategyTags)
-            } catch (e: Exception) {
-                println("Error parsing line: $str")
-                e.printStackTrace()
-                return null
-            }
-        }
-
         @JvmStatic
         fun List<Card>.saveTo(file: String) {
             val output = this.joinToString("\n")
             File(file).writeText(output)
         }
 
-        val factions = setOf(
-            Motive.Peace,
-            Motive.Greed,
-            //Motive.Justice,
-            Motive.Vice,
-            Motive.Neutral,
-            Motive.Wisdom
-        )
-            .map { "$it.txt" }
 
-        fun readFrom(filename: String): List<Card> {
-            return File(filename).listFiles()!!
-                .flatMap { file ->
-                    if (factions.contains(file.name)) {
-                        file.readLines().mapNotNull { parse(it) }
-                    } else listOf()
-                }
-        }
 
         @JvmStatic
         fun loadAbility(json: JsonObject): List<String> {
@@ -200,14 +134,7 @@ class Card(
             }
         }
 
-        val cards by lazy {
-            readFrom("assets/cards")
-            /*
-            parseFromFile("assets/json/cards.json")!!
-                .first.asJsonArray!!
-                .map { Card(it.asJsonObject) }
-            */
-        }
+
 
         val textColor = Color.valueOf("#603000ff")
         val helpTextColor = Color.valueOf("#806040ff") //was 405060
@@ -219,7 +146,7 @@ class Card(
         val line = Textures.line.asSprite().setOffset(Compass.CENTER)
         val border = Textures.border.asSprite()
 
-        val scale =  W / tray.getFrames().width
+        val scale = W / tray.getFrames().width
         val trayHeight = tray.getFrames().height * scale
         val imageW = W
         val imageH = H + 10 - trayHeight
@@ -228,29 +155,29 @@ class Card(
         val midWidth = IMAGE_W / 2f
         val midHeight = tray.getFrames().height - 22f
 
-        val diamondOffsetX = 65f + BORDER
-        val diamondOffsetY = 105f - BORDER
         val diamondW = 80f
         val diamondH = 2 * diamondW
+        val diamondOffsetX = 80f + BORDER
+        val diamondOffsetY = 120f - BORDER
         val starSize = 48f
-
-        val armorBackW = 80f
-        val armorBackH = 100f
-        val armorX = 80f + BORDER
-        val armorY = 80f + BORDER
 
         val costBackSize = 150f
         val costBackOffset = 80f
         val costX = W + BORDER - costBackOffset
         val costY = BORDER + costBackOffset
 
-        val strokeY = trayHeight + BORDER - 92
-        val strokeH = 140f
+        val armorBackW = 80f
+        val armorBackH = 100f
+        val armorX = BORDER + costBackOffset
+        val armorY = BORDER + costBackOffset
+
+        val strokeY = trayHeight + BORDER - 80
+        val strokeH = 120f
         val strokeMargin = 200f
         val strokeMaxW = W - 50f
 
         val abilityTextX = BORDER + 30f
-        val abilityTextY = strokeY - 70
+        val abilityTextY = strokeY - 60
         val abilityTextW = W - 60f
 
         val lineY = 120f + BORDER
@@ -261,81 +188,6 @@ class Card(
         val keywordTextX = abilityTextX
         val keywordTextY = lineY + 20
         val totalAbilityTextH = abilityTextY - keywordTextY
-
-        init {
-            val folder =
-                File("assets/images/cards/used").listFiles()!!
-                    .filter { it.isDirectory }
-                    .flatMap { it.listFiles()!!.asList() }
-                    .map { it.nameWithoutExtension.normalize() }
-                    .toMutableSet()
-            folder.removeAll(cards.map { it.name.normalize() }.toSet())
-            if (folder.isNotEmpty()) {
-                //println("Unused card arts {\n  ${folder.joinToString("\n  ")}\n}")
-            }
-
-            val cardsByMotive = cards.groupBy { card -> card.motive }
-                .mapValues { it.value.groupBy { card -> card.rarity } }
-
-            cardsByMotive.entries
-                .forEach { entry ->
-                    fun count(rarity: Rarity): Int {
-                        return entry.value[rarity]?.size ?: 0
-                    }
-
-                    val str = "%-10s %3d %3d %3d".format(
-                        entry.key,
-                        count(Rarity.Common),
-                        count(Rarity.Rare),
-                        count(Rarity.Legendary)
-                    )
-                    println(str)
-
-                }
-
-            val cardsByRarity = cards.groupBy { it.rarity }
-            cardsByRarity.forEach { (rarity, cards) -> println("$rarity ${cards.size}") }
-            println("Total cards: ${cards.size}")
-
-            fun factionCount(motive: Motive): Int {
-                val cards = cardsByMotive[motive]
-
-                fun rarityCount(rarity: Rarity): Int {
-                    val count = cards?.get(rarity)?.size ?: 0
-                    return if (rarity == Rarity.Common) count * 2 else count
-                }
-                return Rarity.entries.sumOf { rarityCount(it) }
-            }
-
-            val count = Motive.entries.sumOf { factionCount(it) }
-            println("Total printable cards: $count")
-
-            val tagsCount = cards.flatMap { it.tags }.groupBy { it }.mapValues { it.value.size }
-            tagsCount.forEach { (tag, count) -> println("Tag [$tag]: $count") }
-
-            val keywordsCount =
-                cards.flatMap { it.keywords }.groupBy { it }.mapValues { it.value.size }
-            keywordsCount.forEach { (keyword, count) -> println("Keyword [${keyword.name}]: $count") }
-
-            //print card issues here
-            cards.forEach {
-                if (it.image == null) {
-                    println("Card ${it.name} has no art!")
-                }
-                if (it.quote.isBlank()) {
-                    println("Card ${it.name} has no quote!")
-                }
-
-                val abilityTextH = Draw.calculateDimensions(Fonts.abilityFont, it.abilityText, abilityTextW).second
-                val keywordTextH = Draw.calculateDimensions(Fonts.keywordFont, it.keywordText, abilityTextW).second
-                val overlap = totalAbilityTextH - (keywordTextH + abilityTextH)
-                if (overlap < 0) {
-                    println("Card has overlap: ${it.name} $overlap")
-                } else if (overlap < 20) {
-                    println("Card has near overlap: ${it.name} $overlap")
-                }
-            }
-        }
     }
 
     fun draw() {
@@ -423,12 +275,20 @@ class Card(
         stroke.blend = motive.secondaryColor
         val strokeW = min(dims.first + strokeMargin, strokeMaxW)
         stroke.draw(batch, midWidth, strokeY, strokeW, strokeH)
-        Draw.drawText(midWidth, strokeY + 30, Fonts.nameFont, name, W - 50f, Compass.CENTER, motive.color)
+        Draw.drawText(
+            midWidth,
+            strokeY + 27,
+            Fonts.nameFont,
+            name,
+            W - 50f,
+            Compass.CENTER,
+            motive.color
+        )
 
         //Tags
         Draw.drawText(
             midWidth,
-            strokeY - 30,
+            strokeY - 27,
             Fonts.tagFont,
             tagsText,
             1000f,
@@ -490,7 +350,7 @@ class Card(
         else null
 
         if (texture == null) {
-            println("Could not load $png or $jpg")
+            //println("Could not load $png or $jpg")
         } else {
             image = texture.asSprite().setOffset(Compass.NORTH)
         }

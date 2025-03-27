@@ -96,7 +96,7 @@
   },
   {
     "name": "Overkill X",
-    "description": "Triggers if an assault or assassination exceeds the target's power by at least X.",
+    "description": "The amount an assault exceeds its target's power.",
     "synonyms": ["Overkill"]
   },
   {
@@ -121,6 +121,14 @@
   {
     "name": "Echo",
     "description": "Move this card to the top of your deck between rounds, once per game."
+  },
+  {
+    "name": "Devour",
+    "description": "Destroy a unit and convert it into an equipment. The target's card text is disabled."
+  },
+  {
+    "name": "Plunder X",
+    "description": "Award X points when the unit is devoured."
   },
   {
     "name": "Purify",

@@ -1,11 +1,47 @@
-Longshoreman Raider: 2/2p [Rage, Human] [When played, you may expend fire land water land Assault 2] [There's always war somewhere.]
-Valkyrie: 2/3p [Rage, Angel] [When played, Spawn light land dark land.; Activate: Play a common warrior from your graveyard.] []
+#Ship, pirate, warfare
+#Fire+water land
+Havoc Raider: 1a 2/2p [Rage, Human, Pirate] [At turn start, spawn fire land or water land.] []
+Longshoreman Raider: 2/2p [Rage, Human, Pirate] [When played, you may expend fire land water land to assault 2.] [There's always war somewhere.] []
+Dinghy: 2/2p [Rage, Ship] [Plunder 4.] []
+Deckhand Fibber: 3/2p [Rage, Human, Pirate] [When played, draw a card and discard a card.] [Yeah, I know a good yarn...]
+Orca: 3/2p [Rage, Monster] [When played, devour an allied unit.] []
+Hand Cannon: 2p [Rage, Equipment, Weapon, Warfare] [This card must be equipped to a Pirate.; When equipped, assault 2.; Increases the damage of Broadside by 1.] [Always add a little extra powder.]
+Shore Leave: 2p [Rage, Instant, Warfare] [When played, lock a unit and spawn fire land fire land fire land or water land water land water land] [Just what the doctor ordered.]
 
-Mjolnir: 4p [Rage, Equipment, Weapon, Rare] [When equipped, Rally 6. If equipped to Thor, Assault 6 instead.] [Who is worthy to wield the hammer of Thor?]
-Odin, Allfather: 4/6p [Rage, Deity, Rare] [When played, Look through your deck and move any card to the bottom.; Activate: Look through your deck and move any card to the top.; Finale: You need not shuffle your deck this round.] [There's only one eye in wisdom.]
-Thor, Son of Odin: 3/7p [Rage, Deity, Legendary] [When played, banish a card from your graveyard, then Assault a unit by its power.] []
-Jormungandir: 9/7p [Rage, Beast] [At turn start, Destroy the weakest unit either player controls.] [Cull the weak.]
-Asgard: 9p [Rage, Emplacement, Location, Legendary] [Deploy, 3 dark land: Move a Justice unit from your graveyard to your deck.; Activate, 3 light land: Play a Justice unit from your deck.] [No brave deed goes unrecorded in the halls of Asgard.]
+Havoc Vanguard: 2/3p [Rage, Human, Pirate] [When discarded, summon self from your graveyard.] []
+Havoc Longship: 1a 2/3p [Rage, Ship] [Each time you assault, you may expend fire land to intensify by 1.; Plunder 2.] []
+Schooner: 2/3p [Rage, Ship] [Plunder 5.] []
+Havoc Frigate: 1a 1/3p [Rage, Ship] [When you discard a Carronade or Howitzer, equip it here instead.; Plunder 2.] []
+Havoc Corsair: 4/3p [Rage, Human, Pirate] [When played, either:#Expend X fire land and rally X.#Expend X water land and rally X.] []
+Treasure Hunter: 6/3p [Rage, Human, Pirate] [You must expend fire land water land to play this unit.] []
+Carronade: 3p [Rage, Equipment, Weapon, Warfare] [When equipped, assault 2.; You may expend X fire land to increase the assault by X.; Increases the damage of Broadside by 1.] []
+Hoist the Colors: 3p [Rage, Instant, Warfare] [When played, rally 4 and spawn fire land fire land fire land or water land water land water land.] [All hands, thieves and beggars!]
+Walk the Plank: 3p [Rage, Instant, Warfare] [When played, draw a card and discard a card.; Finally, rally by the provision cost of the discarded card.] []
 
+Harpooner: 1a 2/4p [Rage, Human, Pirate] [When activated, assault 2.; Increase the damage by 1 for each adjacent ship.; Piercing.] []
+Howitzer: 4p [Rage, Equipment, Weapon, Warfare] [When equipped, rally 4.; If equipped to a ship, assault 4 instead.; Increases the damage of Broadside by 2.] []
+Treasure Galleon: 1a 2/4p [Rage, Ship] [Plunder 6.] [Don't put all your gold on one ship.]
+Kraken: 1/4p [Rage, Monster] [When played, devour an allied ship.; If there is another copy in your deck, summon it.] [What exactly am I looking at?]
 
-Heimdall: 5/7p [Rage, Deity, Rare] [When played, you may expend light land dark land Swap a unit in your deck with a unit in your graveyard.] []
+Moby Dick: 3/4p [Rage, Monster, Rare] [When activated, devour an allied ship.; When discarded, summon self from your graveyard.] [Thar she blows!]
+Davy Jones: 10/4p [Rage, Specter, Pirate, Rare] [This unit starts in your graveyard.] [Life is cruel. Why should the afterlife be any different?]
+
+Captain Fribley: 4/5p [Rage, Human, Pirate, Rare] [When played, you may expend fire land water land to swap a unit in your deck with a unit in your graveyard.;] [A good captiain goes down wit' his ship. But I ain't a good captain, har har!]
+Billy Bones: 5/5p [Rage, Human, Pirate, Rare] [When played, Look through your deck and move any card to the bottom.; When you pass, you need not shuffle your deck next round.] [Only one 'i' in wisdom...]
+Amphibious Assault: 5p [Rage, Instant, Warfare, Rare] [When played, play a unit of 2 or fewer provisions from your deck.; For every provision under the limit, rally 1.;You may expend X water land to increase the provision limit by X.] [They'll never see it coming...]
+Terror o' the Seas: 1a 2/5p [Rage, Ship, Rare] [Each time you assault, you may expend fire land to intensify it by 2.; Plunder 2.] []
+
+Keel-Haul: 6p [Rage, Instant, Warfare, Rare] [When played, destroy an allied Human, then play a Pirate from your graveyard.] [Welcome to the Crew!]
+Jormungandir: 2a 4/6p [Rage, Monster, Rare] [When you pass, you may expend X water mana to devour X allied units.] []
+Davy Jones' Locker: 6p [Rage, Emplacement, Location, Legendary] [When played, play a Walk the Plank from your deck.; Whenever you discard a card of X provisions, spawn X fire land.; Whenever you devour a unit of X provisions, spawn X water land.] []
+
+Blackbeard: 7/7p [Rage, Human, Pirate, Legendary] [When activated, assault 7 and destroy self.] []
+Captain Flint: 2/7p [Rage, Human, Pirate, Rare] [When played, either:#Play a Warfare card from your deck.#Expend fire land fire land fire land and play a Warfare card from your graveyard.] [Yo-ho-ho, and a bottle of rum!]
+
+Long John Silver: 2/8p [Rage, Human, Pirate, Legendary] [When played, banish a unit from your graveyard, then assault a unit by its power.] []
+Anne Bonny: 4/8p [Rage, Human, Pirate, Legendary] [When played, draw a card and discard a card.; Whenever you discard a card, assault 2.] []
+
+Broadside: 9p [Rage, Instant, Warfare, Legendary] [Echo.; Assault 4.; Upon overkill X, play a unit from your deck of X or fewer provisions.] []
+
+Queen Anne's Revenge: 2/10p [Rage, Ship, Legendary] [When played, assault all enemy units by 1.; You may expend fire land water land to increase the damage by 1.; Plunder 2.] []
+Cthulhu: 4/10p [Rage, Monster, Legendary] [When played, expend X water land to devour an enemy unit of X power.] [Cthulhu fhtagn!]

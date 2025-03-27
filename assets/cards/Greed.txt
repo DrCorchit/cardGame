@@ -1,8 +1,8 @@
 Tiny: 2a 1/2p [Greed, Dwarf] [This unit protects adjacent units.; When destroyed, summon another Tiny from your deck.] [Small, but not small time.]
-Apprentice Smitty: 2/2p [Greed, Dwarf] [At turn start, you may either:#Spawn fire land.#Expend fire land to rally 1.] [Just like my father, and his father, and his father's father...]
+Apprentice Smitty: 2/2p [Greed, Dwarf] [At turn start, either:#Spawn fire land.#Expend fire land to rally 1.] [Just like my father, and his father, and his father's father...]
 Dwarven Armorer: 2/2p [Greed, Dwarf] [Armor_Up to either:#Rally 2.#Summon a Dwarven Armorer.] [The best offense is a strong defense.]
 Dwarven Miner: 3/2p [Greed, Dwarf] [Armor_Up to rally 1 and spawn fire land.] [Dwarves haven't invented safety regulations yet.]
-Smelter: 2/2p [Greed, Dwarf] [Armor_Up to expend X fire land and rally X.] [This is what they call a hot job.]
+Smelter: 3/2p [Greed, Dwarf] [Armor_Up to expend X fire land and rally X.] [This is what they call a hot job.]
 Lava Lizard: 4/2p [Greed, Dragon] [Expend fire land to play this card.] [Manageable in small numbers, with the ideal number being zero.]
 Dwarfsteel Sabatons: 3/2p [Greed, Equipment, Armor] [When equipped, spawn fire land fire land.] [Dwarves are practically born wearing these.]
 Old Warhammer: 2p [Greed, Equipment, Weapon] [When equipped, assault 2.; Piercing.] [If all you have is a hammer, everything looks like a nail.]
@@ -18,7 +18,7 @@ Dwarfsteel Battleaxe: 3p [Greed, Equipment, Weapon] [When equipped, assault 2.; 
 
 Dwarven Engineer: 1a 2/4p [Greed, Dwarf] [To activate this card, you must expend fire land fire land.; When activated, make a common unit stalwart.] [Unlike humans, dwarves don't let computers do their thinkin' for them.]
 Royal Wyvern: 7/4p [Greed, Dragon] [Expend fire land fire land fire land to play this card.] [Capable of turning a dwarf into barbecue in 3 seconds flat.]
-Swoop: 4p [Greed, Instant] [When played, you may expend air land to play a common dragon from your deck.] [By the time you see them, it's too late.]
+Swoop: 4p [Greed, Instant, Warfare] [When played, you may expend air land to play a common dragon from your deck.] [By the time you see them, it's too late.]
 Mantlet: 3/4p [Greed, Equipment, Armor] [Triggers Armor_Up abilities on adjacent units.] [Wider than 'tis tall? 's fer protectin' a mate!]
 
 Shorty's Axe: 4p [Greed, Equipment, Weapon, Rare] [When equipped, assault 4.; If equipped to Shorty McGee, increase the assault by 1 for every Armor card equipped.] [The one, the only.]
@@ -38,9 +38,9 @@ Goryx, Golden Dragon: 1a 4/8p [Greed, Dragon, Legendary] [Haste.; When activated
 Mithril Mail: 6/8p [Greed, Equipment, Armor, Legendary] [Echo.; When equipped, spawn fire land fire land fire land.] [Made to last; last of its make.]
 
 Neromir, Warrior Dragon: 1a 5/9p [Greed, Dragon, Legendary] [When played, expend X fire land and assault X.; At turn start, you may repeat this ability.] [Look who woke up on the wrong side of the bed.]
-Treasure of all Treasures: 9p [Greed, Emplacement, Legendary] [When played, rally 6.; At turn start, rally 1.; This card is protected by adjacent dwarves.] [All that glitters is not gold. Could be diamonds, for instance.]
+Treasure of all Treasures: 9p [Greed, Emplacement, Legendary] [When played, rally 5.; At turn start, rally for each adjacent dwarf.; This card is protected by adjacent dwarves.] [All that glitters is not gold. Could be diamonds, for instance.]
 
 Dragonmother Erizyx: 2a 8/10p [Greed, Dragon, Legendary] [This card protects adjacent eggs.; When you pass, rally 2 for each allied egg.] [She's a lady and you will treat her as such.]
 Double Time: 10p [Greed, Instant, Legendary] [Summon two copies of a common dwarf unit.; Both copies cannot be summoned from the graveyard.] [They just don't stop comin']
 
-Mountainlord Torbjorn: 1a 1/11p [Greed, Dwarf, Regent, Legendary] [When played, play an armor card from your deck.; Armor_Up to rally 2.] [Bring. It. On.]
+Mountainlord Torbjorn: 1a 1/11p [Greed, Dwarf, Regent, Legendary] [When played, play an armor card from your deck.; Armor_Up to rally 3.] [Bring. It. On.]

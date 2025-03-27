@@ -34,10 +34,10 @@ Madame Baghat: 3/6p [Vice, Human, Caporegime, Rare] [When played (chaos X), play
 Pandemonium: 7p [Vice, Instant, Crime, Rare] [Echo.; When played, choose three cards from your deck and play one at random.; While in your graveyard, Chaos is increased by 1.] [Pandemonium did not reign; it poured.]
 Scarlet, Made Lady: 1/7p [Vice, Human, Caporegime, Legendary] [When you pass:#Rally 1 for each allied Henchman or Caporegime.#Rally 2 for each allied Kingpin.] [Wait 'til Big Daddy hears about this!]
 
-Molgrippe, Master Assassin: 2/8p [Vice, Human, Henchman, Legendary] [When played, you may either:#Chaos 5: Assassinate 5.#Chaos 6: Assassinate 10.] [The anomaly will be corrected momentarily.]
+Molgrippe, Master Assassin: 2/8p [Vice, Human, Henchman, Legendary] [When played, either:#Chaos 5: Assassinate 5.#Chaos 6: Assassinate 10.] [The anomaly will be corrected momentarily.]
 Chester Zilch: 2/8p [Vice, Human, Caporegime, Legendary] [Chaos 4: Summon self from your deck.; Chaos 6: Summon self from your graveyard.] [Ahead of schedule, as usual.]
 
-The Heist: 9p [Vice, Instant, Crime, Legendary] [When played, rout 3 then seize 6.;Your score must be at least 3 to play this card.] [The perfect crime.]
+The Heist: 9p [Vice, Instant, Crime, Legendary] [When played, rout 4 then seize 6.;Your score must be at least 4 to play this card.] [The perfect crime.]
 Jailbreak: 9p [Vice, Instant, Crime, Rare] [When played, play a common Vice unit from your graveyard.;Chaos 5: Also summon a Hired Muscle.] [Breaking out: not just for teenagers anymore.]
 
 Gladys the Glorious: 2/11p [Vice, Human, Kingpin, Legendary] [When played, choose a common henchman with 4 or less power and summon a copy on either side of self.;Both copies must be summoned from your graveyard.] [I am big. It's the pictures that got smaller.]

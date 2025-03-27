@@ -1,6 +1,6 @@
-Capacitor: 1a 1/2p [Wisdom, Machine] [When activated, you may either:#Expend X light land to rally X.#Expend X air land to assault X.] [Brzzzap!]
-Automaton: 2/2p [Wisdom, Machine] [At turn start, you may either:#Spawn air land.#Expend air land to rally 1.] [YES MASTER]
-Solar Panel: 2/2p [Wisdom, Machine] [At turn start, you may either:#Spawn light land.#Expend light land to rally 1.] [These things have a bright future.]
+Capacitor: 1a 1/2p [Wisdom, Machine] [When activated, either:#Expend X light land to rally X.#Expend X air land to assault X.] [Brzzzap!]
+Automaton: 2/2p [Wisdom, Machine] [At turn start, either:#Spawn air land.#Expend air land to rally 1.] [YES MASTER]
+Solar Panel: 2/2p [Wisdom, Machine] [At turn start, either:#Spawn light land.#Expend light land to rally 1.] [These things have a bright future.]
 Drone Swarm: 1a 2/2p [Wisdom, Machine] [When activated, this unit protects adjacent units.; At turn start, you may deactivate this unit to displace an enemy unit.] [Strength in numbers.]
 Scribe: 2/2p [Wisdom, Elf] [Whenever you play a machine or a technology, rally 1.] [The records aren't going to keep themselves.]
 Paper Shuffler: 3/2p [Wisdom, Elf] [At turn start, choose a card in your hand. Move it to the bottom of your deck and draw a card.] [Paper is actually kinda heavy.]
@@ -9,8 +9,8 @@ Cyborg: 4/2p [Wisdom, Elf] [You must expend air land to play this card.] [More m
 Electroshock: 2p [Wisdom, Instant, Technology] [When played, lock a unit. You may also either:#Spawn air land air land air land.#Expend X air land to destroy X equipments on that unit.] [Therapy not included.]
 
 Messenger: 2/3p [Wisdom, Elf] [When moved to the top of your deck, summon self.] [The barristers send their regards.] [pointslam]
-Transformer: 1a 2/3p [Wisdom, Machine] [When Activated, you may either:#Convert all water land and dark land into light land.#Convert all fire land and earth land into air land.; At turn start, deactivate.] [Change is good.]
-Engineer: 3/3p [Wisdom, Elf] [When activated, you may either:#Expend light land to purify a unit.#Expend air land to lock a unit.] [Fix-it Felix just doesn't have the same ring to it.] [utility, control]
+Transformer: 1a 2/3p [Wisdom, Machine] [When Activated, either:#Convert all water land and dark land into light land.#Convert all fire land and earth land into air land.; At turn start, deactivate.] [Change is good.]
+Engineer: 3/3p [Wisdom, Elf] [When activated, either:#Expend light land to purify a unit.#Expend air land to lock a unit.] [Fix-it Felix just doesn't have the same ring to it.] [utility, control]
 Power Surge: 3/3p [Wisdom, Equipment, Technology] [When equipped to a common unit, reactivate the target.] [Power is always dangerous.] [utility, combo]
 Battery: 1a 4/3p [Wisdom, Machine] [When activated, spawn light land light land light land or air land air land air land.] [Keeps going and going and... oh it's dead already.] [land]
 Archivist: 4/3p [Wisdom, Elf] [When played, you may expend light land to look at the top three cards from either player's deck and move one to the top.] [Our records are perfect, according to our records.] [mill, utility]
@@ -29,14 +29,14 @@ Censorship: 5p [Wisdom, Instant, Technology, Rare] [When played, banish the top 
 Epocha, Harbinger: 2/5p [Wisdom, Elf, Rare] [At turn start, you may Expend light land to Rally 1.; Whenever moved to the top of your deck, Summon self.] [When the new age comes, there will be no turning back.] [thinning, engine]
 
 Ultima: Prototype: 1a 2/6p [Wisdom, Machine, Rare] [When activated, rally 1 for each technology in your graveyard.] [It's all in the name of progress.]
-Argos, Arbiter: 2/6p [Wisdom, Elf, Rare] [When played, you may either:#Play the top card from your deck.#Disloyal. Play the top card from your opponent's deck.] [I am the decider!]
+Argos, Arbiter: 2/6p [Wisdom, Elf, Rare] [When played, either:#Play the top card from your deck.#Disloyal. Play the top card from your opponent's deck.] [I am the decider!]
 Sophos, Ordinator: 4/6p [Wisdom, Elf, Rare] [When played, move 2 cards to the top of your deck.; You must expend light land light land to activate this unit.; When activated, repeat the "When Played" ability.] [No plan is ever perfect. Except mine.]
 Time Travel: 6p [Wisdom, Instant, Technology, Legendary] [When played, move a unit to the top of its owner's deck.] [In the year 2525...]
 
 Android Replica: 1/7p [Wisdom, Machine, Rare] [Haste.; When activated, trigger an enemy unit's "When played" ability.] [Anything you can do, I can do better.]
 X Æ A-12: 2a 4/7p [Wisdom, Machine, Legendary] [When activated, give an allied unit haste.; At turn start, you may expend light land to deactivate.] [Do it faster, work it harder.]
 
-Codex Veritas: 8p [Wisdom, Emplacement, Tome, Legendary] [When played, move 2 cards to the top of your deck.; When activated, play the card at the top of your deck.] [No-one ever reads past the abstract because there's a paywall.]
+Codex Veritas: 8p [Wisdom, Emplacement, Book, Legendary] [When played, move 2 cards to the top of your deck.; When activated, play the card at the top of your deck.] [No-one ever reads past the abstract because there's a paywall.]
 Orthos, Orchestrator: 5/8p [Wisdom, Elf, Legendary] [Haste.; When activated, reactivate an allied unit.] [Actually, science hasn't gone far enough.]
 
 Logos, Oracle: 4/9p [Wisdom, Elf, Legendary] [When activated, play a card from your deck.] [Know thyself.]

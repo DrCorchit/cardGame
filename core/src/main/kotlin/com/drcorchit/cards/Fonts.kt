@@ -40,7 +40,6 @@ object Fonts {
     //val defaultFont = "roboto_condensed"
     val defaultFont = "lato"
     val abilityFont = initFont("$defaultFont.ttf", fontSizes.abilityFont)
-    val abilityFontColorless = initFont("$defaultFont.ttf", fontSizes.abilityFont)
     val tagFont = initFont("$defaultFont.ttf", fontSizes.quoteFont)
     val keywordFont = initFont("$defaultFont.ttf", fontSizes.quoteFont)
     val quoteFont = initFont("${defaultFont}_italic.ttf", fontSizes.quoteFont)
@@ -77,10 +76,14 @@ object Fonts {
         }
 
         addManaIconsToFont(abilityFont, TextureRegion(Textures.land))
-        addManaIconsToFont(abilityFontColorless, TextureRegion(Textures.manaWhite))
 
         val precoloredFontTexture = Draw.precolorTexture(abilityFont.regions[0].texture, Card.textColor)
         abilityFont.regions[0] = TextureRegion(precoloredFontTexture)
+
+        //default is 34f
+        abilityFont.data.setLineHeight(32f)
+        //default is 29f
+        keywordFont.data.setLineHeight(25f)
     }
 
     private fun initFont(path: String, size: Int): BitmapFont {
@@ -90,6 +93,7 @@ object Fonts {
         val file = File("assets/fonts/$path")
         val generator = FreeTypeFontGenerator(FileHandle(file))
         val value = generator.generateFont(params)
+        value.setUseIntegerPositions(true)
         generator.dispose()
         return value
     }

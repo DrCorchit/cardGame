@@ -3,26 +3,18 @@ package com.drcorchit.cards
 import com.badlogic.gdx.ApplicationAdapter
 import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.Input
-import com.badlogic.gdx.files.FileHandle
-import com.badlogic.gdx.graphics.Pixmap
-import com.badlogic.gdx.graphics.PixmapIO
 import com.badlogic.gdx.scenes.scene2d.Stage
-import com.drcorchit.cards.Card.Companion.cards
 import com.drcorchit.cards.graphics.Draw
-import com.drcorchit.justice.utils.IOUtils
-import com.drcorchit.justice.utils.StringUtils.normalize
 import com.drcorchit.justice.utils.logging.Logger
 import com.drcorchit.justice.utils.math.MathUtils
-import java.io.File
-import java.util.zip.Deflater
 
 /**
  * [com.badlogic.gdx.ApplicationListener] implementation shared by all platforms.
  */
 class Main : ApplicationAdapter() {
-    var index = 0
+    var index = 137
     val stage by lazy { Stage() }
-    val card by lazy { CardActor(cards[index]) }
+    val card by lazy { CardActor(Cards.cards[index]) }
 
     override fun create() {
         //Load the batch
@@ -33,31 +25,30 @@ class Main : ApplicationAdapter() {
 
 
     override fun resize(width: Int, height: Int) {
-        val ratio = ((width / W.toFloat()) + (height / H.toFloat())) / 2
-        //super.resize(W * ratio, H * ratio)
-        val newW = (W * ratio).toInt()
-        val newH = (H * ratio).toInt()
+//        val ratio = ((width / W) + (height / H)) / 2
+//        val newW = (W * ratio).toInt()
+//        val newH = (H * ratio).toInt()
+//
+//        stage.viewport.setScreenSize(newW, newH)
+//        stage.viewport.update(newW, newH)
+//        Draw.resize(newW.toFloat(), newH.toFloat())
+        Gdx.app.graphics.setWindowedMode(width, height)
 
-        stage.viewport.setScreenSize(newW, newH)
-        stage.viewport.update(newW, newH)
-        Draw.resize(newW.toFloat(), newH.toFloat())
-        Gdx.app.graphics.setWindowedMode(newW, newH)
-
-        println("$newW x $newH")
+        println("$width x $height")
     }
 
     override fun render() {
         if (Gdx.input.isButtonJustPressed(Input.Buttons.LEFT)) {
-            index = MathUtils.modulus(index + 1, cards.size)
+            index = MathUtils.modulus(index + 1, Cards.cards.size)
         }
         if (Gdx.input.isButtonJustPressed(Input.Buttons.RIGHT)) {
-            index = MathUtils.modulus(index - 1, cards.size)
+            index = MathUtils.modulus(index - 1, Cards.cards.size)
         }
         if (Gdx.input.isKeyJustPressed(Input.Keys.SPACE)) {
             card.card.updateGraphic()
         }
 
-        card.card = cards[index]
+        card.card = Cards.cards[index]
 
         Draw.batch.begin()
         stage.draw()
@@ -74,7 +65,7 @@ class Main : ApplicationAdapter() {
 
         //was 750x1050
         //was 1000x1400
-        const val BORDER = 32f
+        const val BORDER = 35f
         const val IMAGE_W = 822
         const val IMAGE_H = 1122
         const val W = IMAGE_W - (BORDER * 2)

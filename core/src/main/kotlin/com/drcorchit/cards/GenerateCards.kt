@@ -6,16 +6,11 @@ import com.badlogic.gdx.files.FileHandle
 import com.badlogic.gdx.graphics.Color
 import com.badlogic.gdx.graphics.Pixmap
 import com.badlogic.gdx.graphics.PixmapIO
-import com.drcorchit.cards.Card.Companion.cards
-import com.drcorchit.cards.Main.Companion.H
-import com.drcorchit.cards.Main.Companion.W
+import com.drcorchit.cards.Main.Companion.IMAGE_H
+import com.drcorchit.cards.Main.Companion.IMAGE_W
 import com.drcorchit.cards.graphics.Draw
-import com.drcorchit.justice.utils.IOUtils
-import com.drcorchit.justice.utils.StringUtils.normalize
-import com.drcorchit.justice.utils.logging.Logger
 import java.io.File
 import java.util.zip.Deflater
-import kotlin.math.round
 
 /**
  * [com.badlogic.gdx.ApplicationListener] implementation shared by all platforms.
@@ -37,19 +32,19 @@ class GenerateCards : ApplicationAdapter() {
     }
 
     fun renderCards() {
-        cards.forEachIndexed { index, card ->
+        Cards.cards.forEachIndexed { index, card ->
             Draw.batch.begin()
             card.draw()
             Draw.batch.end()
             screenshot(card)
 
-            val percent = (index + 1) * 100f / cards.size
+            val percent = (index + 1) * 100f / Cards.cards.size
             println("%.1f%% complete - %s".format(percent, card.name))
         }
     }
 
     fun screenshot(card: Card) {
-        val pixmap = Pixmap.createFromFrameBuffer(0, 0, W.toInt(), H.toInt())
+        val pixmap = Pixmap.createFromFrameBuffer(0, 0, IMAGE_W, IMAGE_H)
 
         fun save(name: String) {
             val file = FileHandle("output/images/full/${card.motive.name}/$name.png")

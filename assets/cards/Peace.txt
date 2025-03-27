@@ -25,7 +25,7 @@ Arondight: 4p [Peace, Equipment, Weapon, Rare] [When equipped, assault 4.; Pierc
 Jack Frost: 4/4p [Peace, Fairy, Rare] [When played, you may expend X water land to lock or purify X units.] [Whose woods these are, I think I know...]
 Puck: 2/4p [Peace, Fairy, Rare] [Disloyal.; When played, play a unit from your deck whose provision cost exceeds Puck's.] [Give me your hands, if we be friends.]
 
-Alraune: 4/5p [Peace, Fairy, Rare] [Haste.; When activated, change light land into earth land, fire land into water land, and dark land into air land.] [If you don't believe in fairies, it means fairies don't believe in you!]
+Alraune: 4/5p [Peace, Fairy, Rare] [When played, change light land into earth land, fire land into water land, and dark land into air land.] [If you don't believe in fairies, it means fairies don't believe in you!]
 Bamboo Grove: 5p [Peace, Emplacement, Nature, Rare] [At turn start, you may expend water land earth land to rally 4.] [Nothing grows faster, or thicker.]
 Flash Flood: 5p [Peace, Instant, Nature, Rare] [When played, you may expend X water land to assassinate X.; Afterwards, spawn 6 water land.] [Six feet high and rising.]
 
@@ -42,7 +42,7 @@ Treant King: 3/8p [Peace, Treant, Regent, Legendary] [When played, expend all ea
 Queen Titania: 4/9p [Peace, Fairy, Regent, Legendary] [When played, summon a Pixie on either side of self.; When activated, spawn earth land earth land, water land water land, or air land air land.] [Hand in hand, with fairy grace, we will sing and bless this place.]
 
 King Oberon: 5/10p [Peace, Fairy, Regent, Legendary] [At turn start, spawn air land.; When activated, play a Lightning Strike from your graveyard.] [Ill met by moonlight, proud Titania.]
-Allmother: 4/10p [Peace, Nymph, Legendary] [When played, you may either:#Expend earth land water land air land to play a Peace unit from your deck.#Expend earth land earth land earth land to play a Peace unit from your graveyard.] [No wound too deep, no bone too broken, no heart beyond repair.]
+Allmother: 4/10p [Peace, Nymph, Legendary] [When played, either:#Expend earth land water land air land to play a Peace unit from your deck.#Expend earth land earth land earth land to play a Peace unit from your graveyard.] [No wound too deep, no bone too broken, no heart beyond repair.]
 
 #Pied Piper: 1/11p [Peace, Human, Legendary] [When played, summon all 1-power Peace units from your graveyard and give them doomed.] []
 #Further ideas: Snow White, Leprechaun, Robin Hood, Undine

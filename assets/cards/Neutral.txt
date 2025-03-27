@@ -8,12 +8,12 @@ Butler: 1/3p [Human] [When played, rally 2.; When you pass, rally 2.] [Anything 
 Apothecary: 3/3p [Human] [When played, you may expend water land to purify a unit.] [An ounce of prevention is worth a pound of cure.] [utility]
 Clay Golem: 3/3p [Undead] [At turn start, spawn a land of any color.] [Whoever keeps making these, please stop.]
 Cave Bear: 5/3p [Beast] [You must control an emplacement to play this card.] [Let sleeping bears lie.]
-Fireball: 3p [Instant, Miracle] [When played, you may either:#Spawn fire land and assault 2.#Expend fire land and assault 3.] [I didn't ask how big the room was. I said I cast fireball.] [removal]
+Fireball: 3p [Instant, Miracle] [When played, either:#Spawn fire land and assault 2.#Expend fire land and assault 3.] [I didn't ask how big the room was. I said I cast fireball.] [removal]
 
 Assassin: 1/4p [Human, Spy] [Disloyal.; When played, Assassinate 4.] [Humans make good assassins. I hear they also make good targets.]
 Emissary: 1/4p [Human, Spy] [Disloyal.; When played, play a unit from hand, then draw a card.] [Introducing his most gracious excellency...]
-Saboteur: 2/4p [Human, Spy] [When played, you may either:#Displace a unit.#Disloyal. Destroy an enemy emplacement.] [If I had a hammer...]
-Meteorite Strike: 4p [Instant, Miracle] [When played, you may either:#Spawn air land air land and assault 3.#Expend air land air land and assault 4.] [Krakowwww!]
+Saboteur: 2/4p [Human, Spy] [When played, either:#Displace a unit.#Disloyal. Destroy an enemy emplacement.] [If I had a hammer...]
+Meteorite Strike: 4p [Instant, Miracle] [When played, either:#Spawn air land air land and assault 3.#Expend air land air land and assault 4.] [Krakowwww!]
 Corruption: 4p [Equipment, Crime] [When equipped, rally 6.; If the equip target is destroyed, rout 6.] [For sale, world. Price: your soul.]
 
 Chimney Sweep: 4/4p [Human, Rare] [When played, banish a card from your opponent's graveyard.; At turn start, Repeat this ability.] [A sweep is as lucky as lucky can be.]
