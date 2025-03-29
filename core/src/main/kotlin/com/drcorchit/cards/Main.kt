@@ -12,7 +12,7 @@ import com.drcorchit.justice.utils.math.MathUtils
  * [com.badlogic.gdx.ApplicationListener] implementation shared by all platforms.
  */
 class Main : ApplicationAdapter() {
-    var index = 137
+    var index = 36 * 2
     val stage by lazy { Stage() }
     val card by lazy { CardActor(Cards.cards[index]) }
 
@@ -65,7 +65,7 @@ class Main : ApplicationAdapter() {
 
         //was 750x1050
         //was 1000x1400
-        const val BORDER = 35f
+        const val BORDER = 36f
         const val IMAGE_W = 822
         const val IMAGE_H = 1122
         const val W = IMAGE_W - (BORDER * 2)

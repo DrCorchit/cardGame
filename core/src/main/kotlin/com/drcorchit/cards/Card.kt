@@ -117,8 +117,6 @@ class Card(
             File(file).writeText(output)
         }
 
-
-
         @JvmStatic
         fun loadAbility(json: JsonObject): List<String> {
             val ability = json["ability"]

@@ -33,7 +33,7 @@ Ariel, Heaven's Blade: 3/7p [Justice, Angel, Rare] [When played, either:#Assault
 Stephen, Martyr: 1/8p [Justice, Saint, Legendary] [When played, play a card from hand and draw a card.; Stephen protects adjacent units.] [Do not hold this sin against them!]
 Judgment Day: 8p [Justice, Instant, Law, Legendary] [When played, either:#Expend dark land dark land dark land to destroy a unit.#Expend light land light land light land to play a unit from your graveyard.] []
 
-Jurisprudence: 9p [Justice, Instant, Law, Rare] [Echo.; When played, either:#Spawn light land light land and play a common justice unit from your deck.;#Expend light land light land play a Justice unit from your deck.] [Law is order, and good law is good order.]
+Jurisprudence: 9p [Justice, Instant, Law, Rare] [Echo.; When played, either:#Spawn light land light land and play a common unit from your deck.#Expend light land light land play a Justice unit from your deck.] [Law is order, and good law is good order.]
 Saint Peter: 4/9p [Justice, Human, Saint, Rare] [At turn start, Rally by the amount light land exceeds dark land.] [Ask not what God can do for you, but what you can do for God.]
 
 Archangel Michael: 3/10p [Justice, Angel, Legendary] [Whenever you play an ancestor, rally 1. Whenever you play a saint, rally 2.] [Behold, the commander of the armies of heaven.]

@@ -91,8 +91,9 @@
     "synonyms": ["Seize", "Seizes", "Seized"]
   },
   {
-    "name": "Piercing",
-    "description": "This card's attack ignores armor."
+    "name": "Armor X",
+    "description": "Increases a unit's resistance to assault.",
+    "synonyms": ["armor"]
   },
   {
     "name": "Overkill X",

@@ -5,7 +5,7 @@ Dwarven Miner: 3/2p [Greed, Dwarf] [Armor_Up to rally 1 and spawn fire land.] [D
 Smelter: 3/2p [Greed, Dwarf] [Armor_Up to expend X fire land and rally X.] [This is what they call a hot job.]
 Lava Lizard: 4/2p [Greed, Dragon] [Expend fire land to play this card.] [Manageable in small numbers, with the ideal number being zero.]
 Dwarfsteel Sabatons: 3/2p [Greed, Equipment, Armor] [When equipped, spawn fire land fire land.] [Dwarves are practically born wearing these.]
-Old Warhammer: 2p [Greed, Equipment, Weapon] [When equipped, assault 2.; Piercing.] [If all you have is a hammer, everything looks like a nail.]
+Old Warhammer: 2p [Greed, Equipment, Weapon] [When equipped, assault 2.; This card's assault ignores armor.] [If all you have is a hammer, everything looks like a nail.]
 
 Dragon Egg: 1/3p [Greed, Egg] [When you pass, rally 5.] [Probably best not to touch them.]
 Pit Wyvern: 2/3p [Greed, Dragon] [When played, you may expend fire land fire land to assault 2.] [Soft as barbed wire and charming as a gut punch.]

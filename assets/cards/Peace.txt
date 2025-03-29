@@ -21,7 +21,7 @@ Hamadryad: 5/4p [Peace, Nymph] [You must expend earth land water land air land t
 Mountain Gorilla: 7/4p [Peace, Beast] [Expend earth land earth land earth land to play this card.] [A mountain of muscle.]
 Oceanid: 7/4p [Peace, Nymph] [Expend water land water land water land to play this card.] [Her voice is found in every seashell.]
 
-Arondight: 4p [Peace, Equipment, Weapon, Rare] [When equipped, assault 4.; Piercing.] [Cuts like a knife through butter.] [removal]
+Arondight: 4p [Peace, Equipment, Weapon, Rare] [When equipped, assault 4.; This card's assault ignores armor.] [Cuts like a knife through butter.] [removal]
 Jack Frost: 4/4p [Peace, Fairy, Rare] [When played, you may expend X water land to lock or purify X units.] [Whose woods these are, I think I know...]
 Puck: 2/4p [Peace, Fairy, Rare] [Disloyal.; When played, play a unit from your deck whose provision cost exceeds Puck's.] [Give me your hands, if we be friends.]
 

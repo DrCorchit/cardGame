@@ -29,6 +29,10 @@ object Cards {
         try {
             val match = regex.matchEntire(str)!!.groups
             val name = match["name"]!!.value
+                .replace("(?<!\\w)\"(?=\\w)".toRegex(), "“")
+                .replace("\"", "”")
+                .replace("(?<!\\w)'(?=\\w)".toRegex(), "‘")
+                .replace("'", "’")
             val armor = match["armor"]?.value?.toInt() ?: 0
             val power = match["power"]?.value?.toInt() ?: 0
             val cost = match["cost"]!!.value.toInt()

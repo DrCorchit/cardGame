@@ -31,7 +31,7 @@ object Fonts {
     val smFontSizes = FontSizes(72, 72, 80, 28, 24)
     val fontSizes = smFontSizes
 
-    val numberFont = initFont("enchanted_land.ttf", fontSizes.numberFont)
+    val numberFont = initFont("enchanted_land.ttf", fontSizes.numberFontSmall)
     val numberFontSmall = initFont("enchanted_land.ttf", fontSizes.numberFontSmall)
     val numberFontXS = initFont("enchanted_land.ttf", 64)
 
