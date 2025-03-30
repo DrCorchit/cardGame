@@ -4,7 +4,7 @@ Beggar: 2/2p [Vice, Human] [At turn start (chaos 4), rally 1.;Whenever you play 
 Constable: 2/2p [Vice, Human] [When played, lock a unit.] [You're under arrest.]
 Harlequin: 3/2p [Vice, Human] [When played, Reroll 1.; At turn start, swap an enemy land with a common or allied land.] [Tricked ya again!]
 Hired Muscle: 1a 3/2p [Vice, Human, Henchman] [When an adjacent unit is destroyed, summon another Hired Muscle.] [Watch it, twerp.]
-Neighborhood Bully: 4/2p [Vice, Human, Henchman] [Chaos 4 is required to play this unit.; Bonded: Your chaos level is increased by 1.] [Says who? My fist, that's who!]
+Neighborhood Bully: 4/2p [Vice, Human, Henchman] [Chaos 4 is required to play this unit.; When paired, your chaos level is increased by 1.] [Says who? My fist, that's who!]
 Shiv: 2p [Vice, Equipment, Weapon, Crime] [When equipped, assault 2.; If the equip target is a henchman, assassinate 2 instead.] [In prison, these things are cutting-edge technology.]
 Intimidation: 2p [Vice, Instant, Crime] [When played, rally 3 and reroll 2.] [You can get more of what you want with a kind word and a knife than you can with just a kind word.]
 Moomsh: 2p [Vice, Equipment, Crime] [Disloyal.; When equipped, rally 2.; Moomsh is poison.] [The high to die for?]

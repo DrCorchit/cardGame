@@ -1,6 +1,6 @@
 Tiny: 2a 1/2p [Greed, Dwarf] [This unit protects adjacent units.; When destroyed, summon another Tiny from your deck.] [Small, but not small time.]
 Apprentice Smitty: 2/2p [Greed, Dwarf] [At turn start, either:#Spawn fire land.#Expend fire land to rally 1.] [Just like my father, and his father, and his father's father...]
-Dwarven Armorer: 2/2p [Greed, Dwarf] [Armor_Up to either:#Rally 2.#Summon a Dwarven Armorer.] [The best offense is a strong defense.]
+Dwarven Armorer: 2/2p [Greed, Dwarf] [Armor_Up to either:#When paired, rally 2.#Summon a Dwarven Armorer.] [The best offense is a strong defense.]
 Dwarven Miner: 3/2p [Greed, Dwarf] [Armor_Up to rally 1 and spawn fire land.] [Dwarves haven't invented safety regulations yet.]
 Smelter: 3/2p [Greed, Dwarf] [Armor_Up to expend X fire land and rally X.] [This is what they call a hot job.]
 Lava Lizard: 4/2p [Greed, Dragon] [Expend fire land to play this card.] [Manageable in small numbers, with the ideal number being zero.]
@@ -9,7 +9,7 @@ Old Warhammer: 2p [Greed, Equipment, Weapon] [When equipped, assault 2.; This ca
 
 Dragon Egg: 1/3p [Greed, Egg] [When you pass, rally 5.] [Probably best not to touch them.]
 Pit Wyvern: 2/3p [Greed, Dragon] [When played, you may expend fire land fire land to assault 2.] [Soft as barbed wire and charming as a gut punch.]
-Dwarven Brawler: 2/3p [Greed, Dwarf] [Armor_Up to either:#Assault 2.#Summon a Dwarven Brawler.] [If it's a fight yer lookin' fer, ye just found it.]
+Dwarven Brawler: 2/3p [Greed, Dwarf] [Armor_Up to either:#When paired, assault 2.#Summon a Dwarven Brawler.] [If it's a fight yer lookin' fer, ye just found it.]
 Dwarven Warrior: 1a 3/3p [Greed, Dwarf] [Armor_Up to either:#Rally 2#Assault 1.; If a weapon is equipped, trigger both abilities.] [Born to drink, forced to fight.]
 Cave Dragon: 6/3p [Greed, Dragon] [Expend fire land fire land to play this card.] [Peaceful, as far as dragons go. (Run!)]
 Dwarfsteel Breastplate: 2/3p [Greed, Equipment, Armor] [At turn start, rally 1.] [Solid and sturdy. Lightweight? Not so much.]

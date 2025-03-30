@@ -56,15 +56,11 @@
   {
     "name": "Protect",
     "description": "Prevent a unit from being targeted by hostile abilities.",
-    "synonyms": ["Protects", "Protecting", "Protected"]
+    "synonyms": ["Protects", "Protecting", "Protected", "Protector"]
   },
   {
     "name": "Vulnerable",
     "description": "The card cannot receive protection."
-  },
-  {
-    "name": "Displace",
-    "description": "Move an opponent's card."
   },
   {
     "name": "Destroy",
@@ -116,7 +112,7 @@
     "synonyms": ["armor_up"]
   },
   {
-    "name": "Bonded",
+    "name": "Paired",
     "description": "Triggers if you control more than one copy of this card."
   },
   {

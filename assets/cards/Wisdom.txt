@@ -1,7 +1,7 @@
 Capacitor: 1a 1/2p [Wisdom, Machine] [When activated, either:#Expend X light land to rally X.#Expend X air land to assault X.] [Brzzzap!]
 Automaton: 2/2p [Wisdom, Machine] [At turn start, either:#Spawn air land.#Expend air land to rally 1.] [YES MASTER]
 Solar Panel: 2/2p [Wisdom, Machine] [At turn start, either:#Spawn light land.#Expend light land to rally 1.] [These things have a bright future.]
-Drone Swarm: 1a 2/2p [Wisdom, Machine] [When activated, this unit protects adjacent units.; At turn start, you may deactivate this unit to displace an enemy unit.] [Strength in numbers.]
+Drone Swarm: 1a 2/2p [Wisdom, Machine] [When played while paired, lock an enemy unit.; When activated, this unit protects adjacent units.] [Strength in numbers.]
 Scribe: 2/2p [Wisdom, Elf] [Whenever you play a machine or a technology, rally 1.] [The records aren't going to keep themselves.]
 Paper Shuffler: 3/2p [Wisdom, Elf] [At turn start, choose a card in your hand. Move it to the bottom of your deck and draw a card.] [Paper is actually kinda heavy.]
 Dynamo: 3/2p [Wisdom, Machine] [At turn start, you may expend fire land to spawn air land or light land] [Ol' Reliable] [land, engine]

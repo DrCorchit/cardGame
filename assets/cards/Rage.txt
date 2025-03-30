@@ -32,7 +32,7 @@ Keel-Haul: 6p [Rage, Instant, Warfare, Rare] [When played, destroy an allied Hum
 Jormungandir: 2a 4/6p [Rage, Monster, Rare] [When you pass, you may expend X water mana to devour X allied units.] [The serpent at the end of the world!]
 
 Captain Flint: 2/7p [Rage, Human, Pirate, Rare] [When played, either:#Play a Warfare card from your deck.#Expend fire land fire land fire land and play a Warfare card from your graveyard.] [Yo-ho-ho, and a bottle of rum!]
-Anne Bonny: 4/7p [Rage, Human, Pirate, Legendary] [When played, draw a card and discard a card.; Whenever you discard a card, assault 1.] [No need to call me lady. "Captain" will do just fine.]
+Anne Bonny: 4/7p [Rage, Human, Pirate, Rare] [When played, draw a card and discard a card.; Whenever you discard a card, assault 1.] [No need to call me lady. "Captain" will do just fine.]
 Blackbeard: 7/7p [Rage, Human, Pirate, Legendary] [When activated, assault 7 and destroy self.] [He died standing up.]
 Davy Jones' Locker: 7p [Rage, Emplacement, Location, Legendary] [When played, play a Walk the Plank from your deck.; Whenever you discard a unit of X provisions, spawn X fire land.; Whenever you devour a unit of X provisions, spawn X water land.] [Sleep with the fishes.]
 
