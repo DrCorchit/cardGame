@@ -6,7 +6,7 @@ Scribe: 2/2p [Wisdom, Elf] [Whenever you play a machine or a technology, rally 1
 Paper Shuffler: 3/2p [Wisdom, Elf] [At turn start, choose a card in your hand. Move it to the bottom of your deck and draw a card.] [Paper is actually kinda heavy.]
 Dynamo: 3/2p [Wisdom, Machine] [At turn start, you may expend fire land to spawn air land or light land] [Ol' Reliable] [land, engine]
 Cyborg: 4/2p [Wisdom, Elf] [You must expend air land to play this card.] [More machine than man.]
-Electroshock: 2p [Wisdom, Instant, Technology] [When played, lock a unit. You may also either:#Spawn air land air land air land.#Expend X air land to destroy X equipments on that unit.] [Therapy not included.]
+Electroshock: 2p [Wisdom, Instant, Technology] [When played, either:#Lock a unit and spawn air land air land air land.#Expend X air land to destroy X equipments on a unit.] [Therapy not included.]
 
 Messenger: 2/3p [Wisdom, Elf] [When moved to the top of your deck, summon self.] [The barristers send their regards.] [pointslam]
 Transformer: 1a 2/3p [Wisdom, Machine] [When Activated, either:#Convert all water land and dark land into light land.#Convert all fire land and earth land into air land.; At turn start, deactivate.] [Change is good.]

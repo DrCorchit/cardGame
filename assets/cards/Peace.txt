@@ -12,7 +12,7 @@ Treant Sage: 2/3p [Peace, Treant] [When you pass, rally 1 for each Nature card i
 Mermaid: 3/3p [Peace, Nymph] [At turn start, you may either:#Expend earth land to spawn water land air land.#Expend water land to spawn earth land air land.#Expend air land to spawn earth land water land.] [Such a beautiful song...]
 Dryad Grovekeeper: 4/3p [Peace, Nymph] [When played, spawn earth land earth land, water land water land, or air land air land.; When activated, spawn earth land earth land, water land water land, or air land air land.] [Nature always provides.]
 Dryad Ranger: 4/3p [Peace, Nymph] [When played, you may expend air land to lock a unit.] [You ever feel like you're being watched?]
-Warthog: 4/3p [Peace, Beast] [When played, you may expend earth land water land air land to assault 3.] [Oink! Oink!]
+Warthog: 3/3p [Peace, Beast] [When played, you may expend earth land water land air land to assault 3.] [Oink! Oink!]
 Lightning Strike: 3p [Peace, Instant, Nature] [When played, assault 2.; You may expend X air land to increase the assault by X.] [You've been thunderstruck.]
 Lifegiving Rainfall: 4/3p [Peace, Equipment, Nature] [At turn start, spawn water land.] [The rain begins with a single drop.]
 
@@ -30,10 +30,10 @@ Bamboo Grove: 5p [Peace, Emplacement, Nature, Rare] [At turn start, you may expe
 Flash Flood: 5p [Peace, Instant, Nature, Rare] [When played, you may expend X water land to assassinate X.; Afterwards, spawn 6 water land.] [Six feet high and rising.]
 
 Thunderstorm: 6p [Peace, Instant, Nature, Rare] [Echo.; When played, spawn water land air land and play a Nature card from your deck.] [She's a-gonna blow!]
-Guinevere: 1/6p [Peace, Human, Rare] [When played, spawn 5 land of any color.; When activated, spawn 5 land of any color.] [Even in the darkest night, there is still a little hope in the world.]
+Guinevere: 1/6p [Peace, Human, Rare] [When you pass, rally by the provision cost of the most expensive unit you control.] [Even in the darkest night, there is still a little hope in the world.]
 Lady of the Lake: 1/6p [Peace, Human, Rare] [At the start of your turn, you may expend water land water land water land to play this card from your deck.; When activated, play a weapon from your deck.] [One so fair and full of grace, ]
 
-Joan of Arc: 1/7p [Peace, Human, Legendary] [When you pass, rally by the provision cost of the most expensive unit you control.] [Good is defined by what it creates. Evil, by what it destroys.]
+Lancelot: 1a 2/7p [Peace, Human, Legendary] [Whenever a weapon is equipped, rally by its provision cost.] [Good is defined by what it creates. Evil, by what it destroys.]
 Excalibur: 7p [Peace, Equipment, Weapon, Legendary] [When equipped, assault 6.; Upon an overkill, spawn X earth land, water land, or air land.] [Whoso draws this sword, shall be king of Avalon!]
 
 King Arthur: 1a 4/8p [Peace, Human, Regent, Legendary] [If a weapon is equipped when you pass, either:#Become stalwart.#Rally 2.;] [One day, he will arise and save his homeland of Avalon.]
@@ -45,4 +45,4 @@ King Oberon: 5/10p [Peace, Fairy, Regent, Legendary] [At turn start, spawn air l
 Allmother: 4/10p [Peace, Nymph, Legendary] [When played, either:#Expend earth land water land air land to play a Peace unit from your deck.#Expend earth land earth land earth land to play a Peace unit from your graveyard.] [No wound too deep, no bone too broken, no heart beyond repair.]
 
 #Pied Piper: 1/11p [Peace, Human, Legendary] [When played, summon all 1-power Peace units from your graveyard and give them doomed.] []
-#Further ideas: Snow White, Leprechaun, Robin Hood, Undine
+#Further ideas: Snow White, Undine, Gawain

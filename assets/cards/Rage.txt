@@ -13,7 +13,7 @@ Frigate: 3/3p [Rage, Ship] [Whenever you overkill X, rally X; Plunder 2.] [This 
 Havoc Corsair: 3/3p [Rage, Human, Pirate] [When played, either:#Expend X fire land and rally X.#Expend X water land and rally X.] [A pirate's life for me!]
 Treasure Hunter: 6/3p [Rage, Human, Pirate] [You must expend fire land water land to play this unit.] [Now all I need is a map.]
 Carronade: 3p [Rage, Equipment, Weapon, Warfare] [When equipped, rally 3.; If equipped to a ship, assault 3 instead.; Increases the damage of Broadside by 1.] [It goes boom.]
-Hoist the Colors: 3p [Rage, Instant, Warfare] [When played, rally 4 and spawn fire land fire land or water land water land.] [All hands, thieves and beggars!]
+Jolly Roger: 4/3p [Rage, Equipment, Warfare] [When equipped to a Pirate, spawn fire land fire land fire land.; When equipped to a ship, spawn water land water land water land.] [Hoist the colors!]
 Walk the Plank: 3p [Rage, Instant, Warfare] [When played, draw a card and discard a card.; Finally, rally by the provision cost of the discarded card.] [Next stop: Davy Jones' locker!]
 
 Harpooner: 2/4p [Rage, Human, Pirate] [When activated, assault 2.; Increase the damage by 1 for each adjacent ship.;] [Do you get my thrust?]
