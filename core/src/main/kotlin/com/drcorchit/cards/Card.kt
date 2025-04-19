@@ -12,6 +12,7 @@ import com.drcorchit.cards.graphics.Textures.asSprite
 import com.drcorchit.cards.graphics.AnimatedSprite
 import com.drcorchit.cards.graphics.Draw
 import com.drcorchit.cards.graphics.Draw.batch
+import com.drcorchit.cards.graphics.Drawable
 import com.drcorchit.cards.graphics.Textures
 import com.drcorchit.justice.utils.StringUtils.normalize
 import com.drcorchit.justice.utils.json.JsonUtils.toJsonArray
@@ -30,7 +31,7 @@ class Card(
     val abilities: List<String>,
     val quote: String,
     val strategyTags: List<String>
-) {
+): Drawable {
     val type = if (tags.contains("Instant")) {
         CardType.Instant
     } else if (tags.contains("Equipment")) {
@@ -188,7 +189,7 @@ class Card(
         val totalAbilityTextH = abilityTextY - keywordTextY
     }
 
-    fun draw() {
+    override fun draw() {
         ScreenUtils.clear(Color.BLACK)
         //Draw card art
         val image = this.image
@@ -338,7 +339,7 @@ class Card(
         return "$name: $statsStr [$tagsStr] [$abilitiesStr] [$quote]"
     }
 
-    fun updateGraphic(): AnimatedSprite? {
+    override fun updateGraphic(): AnimatedSprite? {
         val normalized = name.normalize()
         val base = "assets/images/cards/used/${motive.name}"
         val png = "$base/$normalized.png"

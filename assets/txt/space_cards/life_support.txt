@@ -1,8 +1,8 @@
-Xanadu MK I LS 50k 3p       | Supports 4 crew.
-Xanadu MK II LS 80k 4p      | Supports 5 crew.
-Xanadu MK III LS 120k 5p    | Supports 6 crew.
+Xanadu MK I LS 50k 3p               | Supports 4 crew.
+Xanadu MK II LS 80k 4p              | Supports 5 crew.
+Xanadu MK III LS 120k 5p            | Supports 6 crew.
 
-Standard Issue LS 10k 1p    | Supports 3 crew.
-Bob's Choice LS 30k 4p      | Supports 4 crew.
-Halycon INC 120k 3p         | Supports 5 crew.
+Bob's Bargain Basement LS 10k 4p    | Supports 3 crew.
+Standard Issue LS 30k 1p            | Supports 4 crew.
+Halycon INC LS 120k 3p              | Supports 5 crew.
 

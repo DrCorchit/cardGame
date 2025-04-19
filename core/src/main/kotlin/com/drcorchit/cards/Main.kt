@@ -4,6 +4,7 @@ import com.badlogic.gdx.ApplicationAdapter
 import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.Input
 import com.badlogic.gdx.scenes.scene2d.Stage
+import com.drcorchit.cards.graphics.CardActor
 import com.drcorchit.cards.graphics.Draw
 import com.drcorchit.justice.utils.logging.Logger
 import com.drcorchit.justice.utils.math.MathUtils
@@ -12,9 +13,10 @@ import com.drcorchit.justice.utils.math.MathUtils
  * [com.badlogic.gdx.ApplicationListener] implementation shared by all platforms.
  */
 class Main : ApplicationAdapter() {
-    var index = 36 * 1
+    var index = 0
     val stage by lazy { Stage() }
-    val card by lazy { CardActor(Cards.cards[index]) }
+    val cards = Cards2.cards
+    val card by lazy { CardActor(cards[index]) }
 
     override fun create() {
         //Load the batch
@@ -45,10 +47,10 @@ class Main : ApplicationAdapter() {
             index = MathUtils.modulus(index - 1, Cards.cards.size)
         }
         if (Gdx.input.isKeyJustPressed(Input.Keys.SPACE)) {
-            card.card.updateGraphic()
+            card.drawable.updateGraphic()
         }
 
-        card.card = Cards.cards[index]
+        card.drawable = cards[index]
 
         Draw.batch.begin()
         stage.draw()

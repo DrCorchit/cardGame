@@ -1,9 +1,9 @@
-Standard Mainframe 20k 5p   | Targeting: 10; Hacking: 0; Firewall: 10; Database 15;
-Seek-n-Destroy 40k 6p       | Targeting: 15; Hacking: 0; Firewall: 5; Database 10;
-WeebOS 60k 7p               | Targeting: 5; Hacking: 10; Firewall: 10; Database 0;
-Nemesis AI 80k 8p           | Targeting: 20; Hacking: 5; Firewall: 5; Database 15;
-Iron Curtain 100k 9p        | Targeting: 15; Hacking: 0; Firewall: 20; Database 20;
+Standard Mainframe 50k 5p   | Targeting: 10; Hacking: 0; Firewall: 10; Database 15;
+Seek-n-Destroy 80k 6p       | Targeting: 15; Hacking: 0; Firewall: 5; Database 10;
+WeebOS 120k 7p               | Targeting: 5; Hacking: 10; Firewall: 10; Database 0;
+Nemesis AI 150k 8p           | Targeting: 20; Hacking: 5; Firewall: 5; Database 15;
+Iron Curtain 200k 9p        | Targeting: 15; Hacking: 0; Firewall: 20; Database 20;
 
-Haxorz 1337.1 60k 8p        | Targeting: 8; Hacking: 15; Firewall: 0; Database 8;
-Haxorz 1337.2 80k 10p       | Targeting: 10; Hacking: 15; Firewall: 0; Database 10;
-Haxorz 1337.3 100k 12p      | Targeting: 12; Hacking: 15; Firewall: 0; Database 12;
+Haxorz 1337.1 120k 8p        | Targeting: 8; Hacking: 15; Firewall: 0; Database 8;
+Haxorz 1337.2 150k 10p       | Targeting: 10; Hacking: 15; Firewall: 0; Database 10;
+Haxorz 1337.3 200k 12p      | Targeting: 12; Hacking: 15; Firewall: 0; Database 12;

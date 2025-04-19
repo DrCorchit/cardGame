@@ -12,10 +12,10 @@ object Cards {
     val costRegex = "(?<cost>\\d+)"
     val armorRegex = "(?<armor>\\d+)a"
     val statsRegex = "($armorRegex)? *($powerRegex\\/)?${costRegex}p"
-    val tagsRegex = "(?<tags>.*?)"
-    val abilityRegex = "(?<abilities>.*?)"
-    val quoteRegex = "(?<quote>.*?)"
-    val strategyRegex = "(?<strategy>.*?)"
+    val tagsRegex = "(?<tags>.*)"
+    val abilityRegex = "(?<abilities>.*)"
+    val quoteRegex = "(?<quote>.*)"
+    val strategyRegex = "(?<strategy>.*)"
 
     val regex =
         Regex("$nameRegex: *$statsRegex *\\[$tagsRegex] *\\[$abilityRegex] *\\[$quoteRegex]( *\\[$strategyRegex])?")

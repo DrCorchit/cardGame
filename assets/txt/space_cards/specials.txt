@@ -1,0 +1,13 @@
+Weapons Scavenger 10k | Just before combat, buy a weapons module from the scrapyard.
+Engines Scavenger 10k | Just before combat, buy an engine from the scrapyard.
+Computer Scavenger 10k | Just before combat, buy a computer from the scrapyard.
+Life Support Scavenger 10k | Just before combat, buy a life support from the scrapyard.
+
+Weapons Subcontractor 40k | Just before combat, buy any weapons module from deck.
+Engines Subcontractor 40k | Just before combat, buy any engine from deck.
+Computer Subcontractor 40k | Just before combat, buy any computer from deck.
+
+Emergency Crew 10k | Just before combat, you may buy 0-2 of the first two crew members from deck.
+Shopping Spree 20k | Just before combat, buy as many cards from the top of deck as you can, at half price. Once you are unable to buy a card, the shopping spree ends.
+
+Bespoke Modification 80k | Just before combat, search the deck and buy any module you choose.
