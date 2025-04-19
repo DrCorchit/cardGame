@@ -1,4 +1,4 @@
-Captain 100k | In addition to
+Captain 100k | Can swap places with allied crew.
 Pilot 80k | Advantage on Maneuvering when manning engines.
 Gunner 50k | Advantage on Targeting when manning weapons.
 Hacker 50k | Advantage on Hacking when manning computers.
