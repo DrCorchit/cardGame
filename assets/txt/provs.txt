@@ -17,7 +17,7 @@ Key idea:
 8+ power is reserved for golds
 
 Basic Statuses:
-Lock                                    chains/handciffs icon
+Lock                                    chains/handcuffs icon
 Stalwart (survives round end)
 
 X Doomed (Banished after leaving board)   skull icon

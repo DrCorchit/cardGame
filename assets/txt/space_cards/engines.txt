@@ -1,0 +1,20 @@
+#Cheap power for heavy gunships. Low evasion.
+U238 Drive MK I 160k 39p        | Passive evasion: 12.; When manned, increase evasion by 3.
+U238 Drive MK II 170k 40p       | Passive evasion: 11.; When manned, increase evasion by 3.
+U238 Drive MK III 180k 41p      | Passive evasion: 11.; When manned, increase evasion by 3.
+U238 Drive MK IV 190k 43p       | Passive evasion: 10.; When manned, increase evasion by 4.
+U238 Drive MK V 200k 45p        | Passive evasion: 10.; When manned, increase evasion by 4.
+
+#Mid-level power and evasion for mid-level prices
+Deuterium Drive MK I 190k 42p   | Passive evasion: 14.; When manned, increase evasion by 4.
+Deuterium Drive MK II 210k 43p  | Passive evasion: 13.; When manned, increase evasion by 5.
+Deuterium Drive MK III 230k 45p | Passive evasion: 13.; When manned, increase evasion by 5.
+Deuterium Drive MK IV 250k 47p  | Passive evasion: 13.; When manned, increase evasion by 5.
+Deuterium Drive MK V 270k 50p   | Passive evasion: 12.; When manned, increase evasion by 6.
+
+#Expensive, but high evasion.
+Positron Drive 390cc 220k 39p   | Passive evasion: 16.; When manned, increase evasion by 6.
+Positron Drive 400cc 240k 40p   | Passive evasion: 16.; When manned, increase evasion by 6.
+Positron Drive 410cc 260k 41p   | Passive evasion: 15.; When manned, increase evasion by 7.
+Positron Drive 430cc 280k 43p   | Passive evasion: 15.; When manned, increase evasion by 7.
+Positron Drive 450cc 300k 45p   | Passive evasion: 14.; When manned, increase evasion by 7.

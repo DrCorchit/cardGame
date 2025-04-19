@@ -33,11 +33,11 @@ Thunderstorm: 6p [Peace, Instant, Nature, Rare] [Echo.; When played, spawn water
 Guinevere: 1/6p [Peace, Human, Rare] [When you pass, rally by the provision cost of the most expensive unit you control.] [Even in the darkest night, there is still a little hope in the world.]
 Lady of the Lake: 1/6p [Peace, Human, Rare] [At the start of your turn, you may expend water land water land water land to play this card from your deck.; When activated, play a weapon from your deck.] [One so fair and full of grace, ]
 
-Lancelot: 1a 2/7p [Peace, Human, Legendary] [Whenever a weapon is equipped, rally by its provision cost.] [Good is defined by what it creates. Evil, by what it destroys.]
+Lancelot: 1a 2/7p [Peace, Human, Legendary] [Whenever a weapon is equipped, rally by its provision cost.] [Talk not of faith, for you have none in you.]
 Excalibur: 7p [Peace, Equipment, Weapon, Legendary] [When equipped, assault 6.; Upon an overkill, spawn X earth land, water land, or air land.] [Whoso draws this sword, shall be king of Avalon!]
 
 King Arthur: 1a 4/8p [Peace, Human, Regent, Legendary] [If a weapon is equipped when you pass, either:#Become stalwart.#Rally 2.;] [One day, he will arise and save his homeland of Avalon.]
-Treant King: 3/8p [Peace, Treant, Regent, Legendary] [When played, expend all earth land, water land, and air land, then rally for each land expended.;Repeat this ability until no earth land, water land, or air land remains.] [My crown is called content, a crown that seldom kings enjoy.]
+Treant King: 3/8p [Peace, Treant, Regent, Legendary] [When played, play a Harvest from your graveyard; When activated, play another Harvest from your graveyard.] [My crown is called content, a crown that seldom kings enjoy.]
 
 Queen Titania: 4/9p [Peace, Fairy, Regent, Legendary] [When played, summon a Pixie on either side of self.; When activated, spawn earth land earth land, water land water land, or air land air land.] [Hand in hand, with fairy grace, we will sing and bless this place.]
 

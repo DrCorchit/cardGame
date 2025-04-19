@@ -1,0 +1,9 @@
+#Shields
+#Ward = cheap but less effective
+Ward
+Aegis
+Phalanx
+
+#APS
+#Stealth
+#Manufactory

@@ -1,0 +1,6 @@
+Captain 100k | In addition to
+Pilot 80k | Advantage on Maneuvering when manning engines.
+Gunner 50k | Advantage on Targeting when manning weapons.
+Hacker 50k | Advantage on Hacking when manning computers.
+Engineer 30k | Advantage on Manufacture.
+Marine 10k | No special abilities.
