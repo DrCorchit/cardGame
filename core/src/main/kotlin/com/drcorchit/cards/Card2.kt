@@ -2,20 +2,13 @@ package com.drcorchit.cards
 
 import com.badlogic.gdx.graphics.Color
 import com.badlogic.gdx.graphics.Texture
+import com.badlogic.gdx.graphics.g2d.TextureRegion
 import com.badlogic.gdx.utils.ScreenUtils
-import com.drcorchit.cards.Card.Companion.imageH
-import com.drcorchit.cards.Card.Companion.imageRatio
-import com.drcorchit.cards.Card.Companion.imageW
-import com.drcorchit.cards.Card.Companion.midWidth
 import com.drcorchit.cards.Main.Companion.BORDER
 import com.drcorchit.cards.Main.Companion.H
-import com.drcorchit.cards.Main.Companion.IMAGE_H
-import com.drcorchit.cards.Main.Companion.IMAGE_W
 import com.drcorchit.cards.Main.Companion.W
-import com.drcorchit.cards.graphics.AnimatedSprite
-import com.drcorchit.cards.graphics.Draw
+import com.drcorchit.cards.graphics.*
 import com.drcorchit.cards.graphics.Draw.batch
-import com.drcorchit.cards.graphics.Drawable
 import com.drcorchit.cards.graphics.Textures.asSprite
 import com.drcorchit.justice.utils.StringUtils.normalize
 import com.drcorchit.justice.utils.math.Compass
@@ -27,15 +20,21 @@ class Card2(
     val power: Int,
     val type: Type,
     val abilities: List<String>,
-): Drawable {
+    val count: Int
+) : Drawable {
     var image: AnimatedSprite? = updateGraphic()
+    val costText = "${cost}K"
+    val powerText = "$power\u0010"
+    val abilityText = abilities
+        .joinToString("\n") { it.trim() }
+        .replace("_", " ")
+        .replace("#", "\n • ")
 
     enum class Type(file: String) {
         Computer("computers"),
         Crew("crew"),
         Defense("defense"),
         Engine("engines"),
-        Hull("hull"),
         LifeSupport("life_support"),
         Special("specials"),
         Weapon("weapons");
@@ -45,29 +44,54 @@ class Card2(
 
     override fun draw() {
         ScreenUtils.clear(Color.BLACK)
-        //Draw card art
-        val image = this.image
-        if (image != null) {
-            val sourceImageRatio = image.getFrames().ratio
-            val destImageRatio = imageRatio
-            val imageScale =
-                if (sourceImageRatio > destImageRatio) {
-                    imageW / image.getFrames().width
-                } else {
-                    imageH / image.getFrames().height
-                }
 
-            image.draw(batch, midWidth, H + BORDER - 10f, imageScale, imageScale, 0f)
+        card.draw(batch, BORDER, BORDER, W, H)
+        //Draw card art
+        this.image?.draw(batch, imageX, imageY)
+        artBorder.draw(batch, imageX, imageY)
+
+        titleBar.draw(batch, nameTextX, nameTextY)
+        Draw.drawText(nameTextX, nameTextY, Fonts.nameFont2, name, W, Compass.CENTER, nameTextColor)
+
+        Draw.drawText(
+            abilityTextX,
+            abilityTextY,
+            Fonts.abilityFont2,
+            abilityText,
+            abilityTextW,
+            Compass.SOUTHEAST,
+            abilityTextColor
+        )
+
+        if (power > 0) {
+            scoreArea.draw(batch, powerTextX, powerTextY)
+            Draw.drawText(
+                powerTextX,
+                powerTextY,
+                Fonts.numberFont2,
+                powerText,
+                W,
+                Compass.CENTER,
+                Color.YELLOW
+            )
         }
-        Draw.drawRectangle(0f, 0f, IMAGE_W.toFloat(), BORDER, Color.BLACK)
-        Draw.drawRectangle(0f, H + BORDER, IMAGE_W.toFloat(), IMAGE_H.toFloat(), Color.BLACK)
-        Draw.drawRectangle(0f, 0f, BORDER, IMAGE_H.toFloat(), Color.BLACK)
-        Draw.drawRectangle(W + BORDER, 0f, IMAGE_W.toFloat(), IMAGE_H.toFloat(), Color.BLACK)
+
+        scoreArea.draw(batch, costTextX, costTextY)
+        Draw.drawText(
+            costTextX,
+            costTextY,
+            Fonts.numberFont2,
+            costText,
+            W,
+            Compass.CENTER,
+            Color.YELLOW
+        )
+
     }
 
     override fun updateGraphic(): AnimatedSprite? {
         val normalized = name.normalize()
-        val base = "assets/images/space_cards"
+        val base = "assets/images/space_cards/card_art"
         val png = "$base/$normalized.png"
         val jpg = "$base/$normalized.jpg"
         val texture = if (File(png).exists()) Texture(png)
@@ -77,8 +101,39 @@ class Card2(
         if (texture == null) {
             //println("Could not load $png or $jpg")
         } else {
-            image = texture.asSprite().setOffset(Compass.NORTH)
+            val w = Textures.artBorder.width
+            val h = Textures.artBorder.height
+            val newTex = Draw.textureRegionToTexture(TextureRegion(texture, w, h))
+            image = newTex.asSprite().setOffset(Compass.CENTER)
         }
         return image
+    }
+
+    companion object {
+        val card = Textures.card.asSprite()
+        val titleBar = Textures.titleBar.asSprite().setOffset(Compass.CENTER)
+        val scoreArea = Textures.scoreArea.asSprite().setOffset(Compass.CENTER)
+        val artBorder = Textures.artBorder.asSprite().setOffset(Compass.CENTER)
+
+        val nameTextX = BORDER + (W / 2f)
+        val nameTextY = BORDER + H - 80f
+        val nameTextColor = Color.valueOf("40c0ff")
+
+        //image from 100-720x, 500-920y
+        val imageX = 410f
+        val imageY = 710f
+
+        val margin = 80f
+        val abilityTextX = BORDER + margin
+        val abilityTextY = BORDER + 370f
+        val abilityTextW = W - 2 * margin
+        val abilityTextColor = nameTextColor
+
+        val margin2 = 165
+        val powerTextX = BORDER + margin2
+        val powerTextY = BORDER + 130
+
+        val costTextX = BORDER + W - margin2
+        val costTextY = powerTextY
     }
 }

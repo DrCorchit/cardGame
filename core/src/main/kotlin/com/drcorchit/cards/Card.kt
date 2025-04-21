@@ -8,12 +8,9 @@ import com.drcorchit.cards.Main.Companion.H
 import com.drcorchit.cards.Main.Companion.IMAGE_H
 import com.drcorchit.cards.Main.Companion.IMAGE_W
 import com.drcorchit.cards.Main.Companion.W
+import com.drcorchit.cards.graphics.*
 import com.drcorchit.cards.graphics.Textures.asSprite
-import com.drcorchit.cards.graphics.AnimatedSprite
-import com.drcorchit.cards.graphics.Draw
 import com.drcorchit.cards.graphics.Draw.batch
-import com.drcorchit.cards.graphics.Drawable
-import com.drcorchit.cards.graphics.Textures
 import com.drcorchit.justice.utils.StringUtils.normalize
 import com.drcorchit.justice.utils.json.JsonUtils.toJsonArray
 import com.drcorchit.justice.utils.math.Compass
@@ -133,8 +130,6 @@ class Card(
             }
         }
 
-
-
         val textColor = Color.valueOf("#603000ff")
         val helpTextColor = Color.valueOf("#806040ff") //was 405060
 
@@ -250,7 +245,7 @@ class Card(
             armorBack.draw(batch, armorX, armorY, armorBackW, armorBackH)
             Draw.drawText(
                 armorX, armorY + 2,
-                Fonts.numberFontSmall,
+                Fonts.numberFont,
                 armor.toString(),
                 100f,
                 Compass.CENTER,
@@ -262,7 +257,7 @@ class Card(
         costBack.draw(batch, costX, costY, costBackSize, costBackSize)
         Draw.drawText(
             costX, costY + 2,
-            Fonts.numberFontSmall,
+            Fonts.numberFont,
             cost.toString(),
             100f,
             Compass.CENTER,

@@ -1,13 +1,14 @@
-Weapons Scavenger 10k | Just before combat, buy a weapons module from the scrapyard.
-Engines Scavenger 10k | Just before combat, buy an engine from the scrapyard.
-Computer Scavenger 10k | Just before combat, buy a computer from the scrapyard.
-Life Support Scavenger 10k | Just before combat, buy a life support from the scrapyard.
+2x Weapons Scavenger 30k | Just before combat, buy a weapons module from the scrapyard, for half price.
+2x Engines Scavenger 30k | Just before combat, buy an engine from the scrapyard, for half price.
+2x Computer Scavenger 30k | Just before combat, buy a computer from the scrapyard, for half price.
+2x Life Support Scavenger 30k | Just before combat, buy a life support from the scrapyard, for half price.
 
-Weapons Subcontractor 40k | Just before combat, buy any weapons module from deck.
-Engines Subcontractor 40k | Just before combat, buy any engine from deck.
-Computer Subcontractor 40k | Just before combat, buy any computer from deck.
+2x Weapons Subcontractor 30k | Just before combat, buy any weapons module from deck.
+2x Engines Subcontractor 30k | Just before combat, buy any engine from deck.
+2x Computer Subcontractor 30k | Just before combat, buy any computer from deck.
+2x Life Support Subcontractor 30k | Before combat, buy any computer from deck.
 
-Emergency Crew 10k | Just before combat, you may buy 0-2 of the first two crew members from deck.
-Shopping Spree 20k | Just before combat, buy as many cards from the top of deck as you can, at half price. Once you are unable to buy a card, the shopping spree ends.
+1x Emergency Crew 30k | Just before combat, you may buy up to three crew members from deck.
+1x Shopping Spree 100k | Just before combat, buy as many cards from the top of deck as you can, at half price. Once you are unable to buy a card, the shopping spree ends.
 
-Bespoke Modification 80k | Just before combat, search the deck and buy any module you choose.
+1x Bespoke Modification 50k | Just before combat, search the deck and buy any module you choose.

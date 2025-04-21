@@ -1,12 +1,12 @@
-package com.drcorchit.cards
+package com.drcorchit.cards.graphics
 
 import com.badlogic.gdx.files.FileHandle
+import com.badlogic.gdx.graphics.Color
 import com.badlogic.gdx.graphics.g2d.BitmapFont
 import com.badlogic.gdx.graphics.g2d.TextureRegion
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFontParameter
-import com.drcorchit.cards.graphics.Draw
-import com.drcorchit.cards.graphics.Textures
+import com.drcorchit.cards.Card
 import java.io.File
 
 object Fonts {
@@ -25,26 +25,51 @@ object Fonts {
         CHARACTERS = alpha + num + punctuation + quotes + symbols + bars + misc + dots
     }
 
-    data class FontSizes (val numberFont: Int, val numberFontSmall: Int, val nameFont: Int, val abilityFont: Int, val quoteFont: Int)
+    data class FontSizes (val numberFont: Int, val nameFont: Int, val abilityFont: Int, val quoteFont: Int)
 
-    val medFontSizes = FontSizes(96, 84, 96, 40, 32)
-    val smFontSizes = FontSizes(72, 72, 80, 28, 24)
+    val medFontSizes = FontSizes(96, 96, 40, 32)
+    val smFontSizes = FontSizes(72, 80, 28, 24)
     val fontSizes = smFontSizes
 
-    val numberFont = initFont("enchanted_land.ttf", fontSizes.numberFontSmall)
-    val numberFontSmall = initFont("enchanted_land.ttf", fontSizes.numberFontSmall)
-    val numberFontXS = initFont("enchanted_land.ttf", 64)
+    val numberFont = initFontSize("enchanted_land.ttf", fontSizes.numberFont)
+    val nameFont = initFontSize("enchanted_land.ttf", fontSizes.nameFont)
 
-    val nameFont = initFont("enchanted_land.ttf", fontSizes.nameFont)
+    val numberFontXS = initFontSize("enchanted_land.ttf", 64)
 
-    //val defaultFont = "roboto_condensed"
     val defaultFont = "lato"
-    val abilityFont = initFont("$defaultFont.ttf", fontSizes.abilityFont)
-    val tagFont = initFont("$defaultFont.ttf", fontSizes.quoteFont)
-    val keywordFont = initFont("$defaultFont.ttf", fontSizes.quoteFont)
-    val quoteFont = initFont("${defaultFont}_italic.ttf", fontSizes.quoteFont)
+    val abilityFont = initFontSize("$defaultFont.ttf", fontSizes.abilityFont)
+    val tagFont = initFontSize("$defaultFont.ttf", fontSizes.quoteFont)
+    val keywordFont = initFontSize("$defaultFont.ttf", fontSizes.quoteFont)
+    val quoteFont = initFontSize("${defaultFont}_italic.ttf", fontSizes.quoteFont)
+
+    val numberFont2 = initFontSizeAndStroke("exo_medium.ttf", 48)
+    val nameFont2 = initFontSizeAndStroke("exo_medium.ttf", 36)
+    val abilityFont2 = initFontSizeAndStroke("exo_medium.ttf", 30)
 
     init {
+        fun addBoltIconToFont(font: BitmapFont) {
+            val region = TextureRegion(Textures.power)
+            val code = '\u0010'.code
+            val size = 40
+            font.regions.add(region)
+            val glyph = BitmapFont.Glyph()
+            glyph.id = code
+            glyph.page = 1
+            glyph.u = 0f
+            glyph.v = 1f
+            glyph.u2 = 1f
+            glyph.v2 = 0f
+            glyph.srcX = 0
+            glyph.srcY = 0
+            glyph.yoffset = -(size + 12)
+            glyph.width = size
+            glyph.height = size
+            glyph.xadvance = size
+
+            font.data.setGlyph(code, glyph)
+        }
+        addBoltIconToFont(numberFont2)
+
         fun addManaIconsToFont (font: BitmapFont, region: TextureRegion) {
             font.regions.add(region)
 
@@ -77,7 +102,10 @@ object Fonts {
 
         addManaIconsToFont(abilityFont, TextureRegion(Textures.land))
 
-        val precoloredFontTexture = Draw.precolorTexture(abilityFont.regions[0].texture, Card.textColor)
+        val precoloredFontTexture = Draw.precolorTexture(
+            abilityFont.regions[0].texture,
+            Card.textColor
+        )
         abilityFont.regions[0] = TextureRegion(precoloredFontTexture)
 
         //default is 34f
@@ -86,10 +114,23 @@ object Fonts {
         keywordFont.data.setLineHeight(25f)
     }
 
-    private fun initFont(path: String, size: Int): BitmapFont {
+    private fun initFontSize(path: String, size: Int): BitmapFont {
         val params = FreeTypeFontParameter()
         params.size = size
         params.characters = CHARACTERS
+        return initFontParams(path, params)
+    }
+
+    private fun initFontSizeAndStroke(path: String, size: Int): BitmapFont {
+        val params = FreeTypeFontParameter()
+        params.size = size
+        params.borderWidth = 3f
+        params.borderColor = Color.BLACK
+        params.characters = CHARACTERS
+        return initFontParams(path, params)
+    }
+
+    private fun initFontParams(path: String, params: FreeTypeFontParameter): BitmapFont {
         val file = File("assets/fonts/$path")
         val generator = FreeTypeFontGenerator(FileHandle(file))
         val value = generator.generateFont(params)

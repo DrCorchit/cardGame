@@ -1,5 +1,0 @@
-Microlayered Aluminum   200k | 0 Armor.; Passive evasion: +2
-Carbon Nanofiber        250k | 5 Armor.; Passive evasion: +3
-Titanium Steel          200k | 10 Armor.
-Hyperforged Vanadium    250k | 15 Armor.
-Dreadnought Plating     300k | 20 Armor.

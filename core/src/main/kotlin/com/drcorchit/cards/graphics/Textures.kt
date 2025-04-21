@@ -28,6 +28,13 @@ object Textures {
     val land = initTexture("land.png")
     val manaWhite = initTexture("mana_white.png")
 
+    val metal = initTexture("metal.jpg")
+    val power = initTexture("power.png")
+    val card = initTexture("card2.png")
+    val titleBar = initTexture("title_bar.png")
+    val scoreArea = initTexture("score_area.png")
+    val artBorder = initTexture("art_border.png")
+
     //Arrow
     val arrowLeft = initTexture("arrow_left.png")
     val arrowRight = initTexture("arrow_right.png")

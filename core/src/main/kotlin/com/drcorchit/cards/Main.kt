@@ -15,7 +15,7 @@ import com.drcorchit.justice.utils.math.MathUtils
 class Main : ApplicationAdapter() {
     var index = 0
     val stage by lazy { Stage() }
-    val cards = Cards2.cards
+    val cards by lazy { Cards2.cards }
     val card by lazy { CardActor(cards[index]) }
 
     override fun create() {
@@ -41,10 +41,10 @@ class Main : ApplicationAdapter() {
 
     override fun render() {
         if (Gdx.input.isButtonJustPressed(Input.Buttons.LEFT)) {
-            index = MathUtils.modulus(index + 1, Cards.cards.size)
+            index = MathUtils.modulus(index + 1, cards.size)
         }
         if (Gdx.input.isButtonJustPressed(Input.Buttons.RIGHT)) {
-            index = MathUtils.modulus(index - 1, Cards.cards.size)
+            index = MathUtils.modulus(index - 1, cards.size)
         }
         if (Gdx.input.isKeyJustPressed(Input.Keys.SPACE)) {
             card.drawable.updateGraphic()

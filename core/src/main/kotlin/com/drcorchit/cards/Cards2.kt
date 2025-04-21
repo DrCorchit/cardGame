@@ -4,13 +4,14 @@ import java.io.File
 
 object Cards2 {
 
-    val nameRegex = "(?<name>.*)"
+    val countRegex = "(?<count>\\d+)x"
+    val nameRegex = "(?<name>.*?)"
     val costRegex = "(?<cost>\\d+)k"
     val powerRegex = "(?<power>\\d+)p"
     val abilityRegex = "(?<abilities>.*?)"
 
     val regex =
-        Regex("$nameRegex\\s+$costRegex\\s+($powerRegex\\s+)?\\|\\s+$abilityRegex")
+        Regex("$countRegex\\s+$nameRegex\\s+$costRegex\\s+($powerRegex\\s+)?\\|\\s+$abilityRegex")
 
     @JvmStatic
     fun parse(type: Card2.Type, str: String): Card2? {
@@ -25,6 +26,7 @@ object Cards2 {
                 .replace("\"", "”")
                 .replace("(?<!\\w)'(?=\\w)".toRegex(), "‘")
                 .replace("'", "’")
+                .trim()
             val cost = match["cost"]!!.value.toInt()
             val power = match["power"]?.value?.toInt() ?: 0
             val abilities = match["abilities"]!!.value
@@ -33,8 +35,10 @@ object Cards2 {
                 .replace("(?<!\\w)'(?=\\w)".toRegex(), "‘")
                 .replace("'", "’")
                 .split(";")
+                .map { it.trim() }
+            val count = match["count"]!!.value.toInt()
 
-            return Card2(name, cost, power, type, abilities)
+            return Card2(name, cost, power, type, abilities, count)
         } catch (e: Exception) {
             println("Error parsing line: $str")
             //e.printStackTrace()
@@ -53,4 +57,14 @@ object Cards2 {
     }
 
     val cards by lazy { readFrom("assets/txt/space_cards") }
+
+    init {
+        cards.groupBy { it.type }
+            .forEach { entry ->
+                val count = entry.value.sumOf { it.count }
+                println("${entry.key.name}: $count")
+            }
+        val total = cards.sumOf { it.count }
+        println("Unique: ${cards.size} Total: $total")
+    }
 }

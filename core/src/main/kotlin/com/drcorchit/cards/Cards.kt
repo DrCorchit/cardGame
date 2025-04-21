@@ -3,6 +3,7 @@ package com.drcorchit.cards
 import com.drcorchit.cards.Card.Companion.abilityTextW
 import com.drcorchit.cards.Card.Companion.totalAbilityTextH
 import com.drcorchit.cards.graphics.Draw
+import com.drcorchit.cards.graphics.Fonts
 import com.drcorchit.justice.utils.StringUtils.normalize
 import java.io.File
 
