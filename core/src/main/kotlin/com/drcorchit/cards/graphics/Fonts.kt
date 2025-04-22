@@ -44,7 +44,7 @@ object Fonts {
 
     val numberFont2 = initFontSizeAndStroke("exo_medium.ttf", 48)
     val nameFont2 = initFontSizeAndStroke("exo_medium.ttf", 36)
-    val abilityFont2 = initFontSizeAndStroke("exo_medium.ttf", 30)
+    val abilityFont2 = initFontSizeAndStroke("exo_medium.ttf", 28)
 
     init {
         fun addBoltIconToFont(font: BitmapFont) {

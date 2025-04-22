@@ -23,21 +23,21 @@ class Card2(
     val count: Int
 ) : Drawable {
     var image: AnimatedSprite? = updateGraphic()
-    val costText = "${cost}K"
+    val costText = "${cost}0K"
     val powerText = "$power\u0010"
     val abilityText = abilities
         .joinToString("\n") { it.trim() }
         .replace("_", " ")
         .replace("#", "\n • ")
 
-    enum class Type(file: String) {
-        Computer("computers"),
-        Crew("crew"),
-        Defense("defense"),
-        Engine("engines"),
-        LifeSupport("life_support"),
-        Special("specials"),
-        Weapon("weapons");
+    enum class Type(file: String, val text: String) {
+        Computer("computers", "Computer"),
+        Crew("crew", "Crewmember"),
+        Defense("defense", "Defense Module"),
+        Engine("engines", "Engine"),
+        LifeSupport("life_support", "Life Support"),
+        Special("specials", "Special"),
+        Weapon("weapons", "Weapons Module");
 
         val file = File("assets/txt/space_cards/$file.txt")
     }
@@ -46,12 +46,24 @@ class Card2(
         ScreenUtils.clear(Color.BLACK)
 
         card.draw(batch, BORDER, BORDER, W, H)
+        textArea.draw(batch, BORDER, BORDER, W, H)
         //Draw card art
         this.image?.draw(batch, imageX, imageY)
         artBorder.draw(batch, imageX, imageY)
 
-        titleBar.draw(batch, nameTextX, nameTextY)
+        titleBar.draw(batch, nameTextX, nameTextY - 20)
         Draw.drawText(nameTextX, nameTextY, Fonts.nameFont2, name, W, Compass.CENTER, nameTextColor)
+
+        //typeBar.draw(batch, labelTextX, labelTextY)
+        Draw.drawText(
+            typeTextX,
+            typeTextY,
+            Fonts.abilityFont2,
+            type.text,
+            W,
+            Compass.CENTER,
+            nameTextColor
+        )
 
         Draw.drawText(
             abilityTextX,
@@ -112,12 +124,16 @@ class Card2(
     companion object {
         val card = Textures.card.asSprite()
         val titleBar = Textures.titleBar.asSprite().setOffset(Compass.CENTER)
+        val typeBar = Textures.typeBar.asSprite().setOffset(Compass.CENTER)
         val scoreArea = Textures.scoreArea.asSprite().setOffset(Compass.CENTER)
         val artBorder = Textures.artBorder.asSprite().setOffset(Compass.CENTER)
+        val textArea = Textures.textArea.asSprite()
 
         val nameTextX = BORDER + (W / 2f)
-        val nameTextY = BORDER + H - 80f
+        val nameTextY = BORDER + H - 75f
         val nameTextColor = Color.valueOf("40c0ff")
+        val typeTextX = nameTextX
+        val typeTextY = nameTextY - 40
 
         //image from 100-720x, 500-920y
         val imageX = 410f

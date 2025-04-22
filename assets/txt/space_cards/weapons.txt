@@ -1,28 +1,32 @@
 #Better targeting bonuses from more advanced lasers.
-3x Basic Laser              30k 3p | When manned, deal 3 damage.
-2x Crystallic Laser MK I    40k 4p | When manned, deal 4 damage.
-2x Crystallic Laser MK II   50k 5p | When manned, deal 5 damage.; Targeting bonus: +1
-2x Crystallic Laser MK III  60k 6p | When manned, deal 6 damage.; Targeting bonus: +1
-1x Crystallic Laser MK IV   70k 7p | When manned, deal 7 damage.; Targeting bonus: +2
-1x Crystallic Laser MK V    80k 8p | When manned, deal 8 damage.; Targeting bonus: +2
-1x Fusion Laser             90k 9p | When manned, deal 9 damage.; Targeting bonus: +3
+2x Basic Laser              2k 3p | When manned, deal 3 damage.
+1x Crystallic Laser MK I    2k 4p | When manned, deal 4 damage.
+1x Crystallic Laser MK II   3k 5p | When manned, deal 5 damage.; Targeting bonus: +1
+1x Crystallic Laser MK III  3k 6p | When manned, deal 6 damage.; Targeting bonus: +1
+1x Crystallic Laser MK IV   4k 7p | When manned, deal 7 damage.; Targeting bonus: +2
+1x Crystallic Laser MK V    4k 8p | When manned, deal 8 damage.; Targeting bonus: +2
+1x Fusion Laser             5k 9p | When manned, deal 9 damage.; Targeting bonus: +3
 
-2x Precision Laser 1.0      50k 4p | When manned, deal 4 damage.; Targeting bonus: +5
-2x Precision Laser 1.1      60k 4p | When manned, deal 4 damage.; Targeting bonus: +7
-2x Precision Laser 1.2      70k 4p | When manned, deal 4 damage.; Targeting bonus: +9
-1x Precision Laser 2.0      80k 6p | When manned, deal 6 damage.; Targeting bonus: +8
-1x Precision Laser 2.1     100k 6p | When manned, deal 6 damage.; Targeting bonus: +10
-1x Precision Laser 2.2     120k 6p | When manned, deal 6 damage.; Targeting bonus: +12
+1x Precision Laser 1.0      3k 4p | When manned, deal 4 damage.; Targeting bonus: +3
+1x Precision Laser 1.1      3k 4p | When manned, deal 4 damage.; Targeting bonus: +4
+1x Precision Laser 1.2      4k 4p | When manned, deal 4 damage.; Targeting bonus: +5
+1x Precision Laser 2.0      4k 6p | When manned, deal 6 damage.; Targeting bonus: +6
+1x Precision Laser 2.1      5k 6p | When manned, deal 6 damage.; Targeting bonus: +7
+1x Precision Laser 2.2      6k 6p | When manned, deal 6 damage.; Targeting bonus: +8
 
 #Anti-shields
-2x Dual Cycle Laser A       80k  4p | When manned, deal 2 bursts of 2 damage.; Targeting bonus: +3
-2x Dual Cycle Laser B      100k 7p | When manned, deal 2 bursts of 3 damage.; Targeting bonus: +3
-2x Dual Cycle Laser C      120k 9p | When manned, deal 2 bursts of 4 damage.; Targeting bonus: +3
-2x Shield Buster Laser     100k 5p | When manned, deal 3 bursts of 1 damage.; Targeting bonus: +5
+1x Dual Cycle Laser A       4k 4p | When manned, deal 2 bursts of 2 damage.; Targeting bonus: +3
+1x Dual Cycle Laser B       5k 7p | When manned, deal 2 bursts of 3 damage.; Targeting bonus: +3
+1x Dual Cycle Laser C       6k 9p | When manned, deal 2 bursts of 4 damage.; Targeting bonus: +3
+2x Shield Buster Laser      5k 5p | When manned, deal 3 bursts of 1 damage.; Targeting bonus: +5
 
 #Missiles
-
+2x TOMB Missile             5k 6p | When manned, deal 10 damage.
+1x Advanced TOMB Missile    7k 6p | When manned, deal 10 damage.; Crit chance: 100%.
+2x Laser-Guided Bomb V1     5k 8p | When manned, deal 8 damage.; Targeting bonus: +1
+2x Laser-Guided Bomb V2    7k 10p | When manned, deal 10 damage.; Targeting bonus: +2
+2x Laser-Guided Bomb V3   10k 12p | When manned, deal 12 damage.; Targeting bonus: +3
 
 #EMP
-2x Diffuse EMP
-1x Directed EMP
+1x Directed EMP             5k 6p | When manned, EMP an enemy system.
+1x Diffuse EMP              10k 10p | When manned, EMP 2 random enemy systems.

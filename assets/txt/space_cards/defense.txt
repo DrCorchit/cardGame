@@ -1,27 +1,29 @@
 #Hull Armor
-2x Microlayered Aluminum        200k | 5 Armor.; Passive evasion: +5
-2x Carbon Nanofiber             250k | 10 Armor.; Passive evasion: +3
-3x Titanium Steel               200k | 15 Armor.
-2x Hyperforged Vanadium         250k | 20 Armor.; Passive evasion: -3
-1x Dreadnought Plating            300k | 30 Armor.; Passive evasion: -5
+2x Microlayered Aluminum         5k | 5 Armor.; Passive evasion: +5
+2x Carbon Nanofiber              5k | 10 Armor.; Passive evasion: +3
+3x Titanium Steel                5k | 15 Armor.
+2x Hyperforged Vanadium          6k | 20 Armor.; Passive evasion: -3
+1x Dreadnought Plating           7k | 30 Armor.; Passive evasion: -5
 
 #Shields
-2x Space Turtle MK I          80k 3p | Shield layers: 2; Damage reduction: 50%; No bonus when manned.
-1x Space Turtle MK II       150k 10p | Shield layers: 2; Damage reduction: 100%; No bonus when manned.
-2x Electromagnetic Ward       80k 3p | Shield layers: 1; Damage reduction: 50%; When manned, +2 shield layers.;
-2x Carapace                   80k 4p | Shield layers: 1; Damage reduction: 100%; No bonus when manned.;
-2x Phalanx                   100k 7p | Shield layers: 0; Damage reduction: 100%; When manned, +2 shield layers.;
-1x Aegis                     150k 8p | Shield layers: 1; Damage reduction: 100%; When manned, +1 shield layer.
+2x Space Turtle MK I          4k 3p | Shield layers: 2; Damage reduction: 50%; No bonus when manned.
+1x Space Turtle MK II        8k 10p | Shield layers: 2; Damage reduction: 100%; No bonus when manned.
+2x Electromagnetic Ward       4k 3p | Shield layers: 1; Damage reduction: 50%; When manned, +2 shield layers.;
+2x Carapace                   4k 4p | Shield layers: 1; Damage reduction: 100%; No bonus when manned.;
+1x Phalanx                    6k 7p | Shield layers: 0; Damage reduction: 100%; When manned, +2 shield layers.;
+1x Aegis                      8k 8p | Shield layers: 1; Damage reduction: 100%; When manned, +1 shield layer.
 
 #APS
-2x Reactive Armor               100k | Reduces damage from missiles by 50%.
-2x Active Protection System   50k 8p | Blocks an incoming missile.;
-1x Anti-Missile Armature    100k 15p | Blocks an incoming missile.; When manned, blocks an additional missile.
+1x Active Protection System   3k 5p | Blocks one incoming missile per turn.
+1x Anti-Missile Armature     4k 10p | Blocks one incoming missile per turn.; When manned, blocks an additional missile.
+1x Reactive Armor                5k | Reduces damage from missiles by 50%.
 
 #Stealth
-1x Cloaking Device          120k 12p | When manned, +10 evasion.; Limit once per game.
+2x Cloaking Device MK I       5k 6p | When manned, +10 to maneuvering.; Limit 1x per game.
+1x Cloaking Device MK II     7k 10p | When manned, +10 to maneuvering.; Limit 2x per game.
+1x Phase Shifter              5k 6p | When manned, +5 to maneuvering.
 
 #Manufactory
-3x Manufactory MK I           80k 8p | Repair: +3; When manned, attempt repair on all damaged systems.; Limit once per game.
-2x Manufactory MK I         100k 10p | Repair: +5; When manned, attempt repair on all damaged systems.; Limit once per game.
-1x Manufactory MK I         120k 12p | Repair: +8; When manned, attempt repair on all damaged systems.; Limit once per game.
+2x Manufactory MK I           3k 4p | Repair: +2; When manned, attempt repair on all damaged systems.; Limit once per game.
+1x Manufactory MK II          5k 5p | Repair: +4; When manned, attempt repair on all damaged systems.; Limit once per game.
+1x Manufactory MK III         7k 6p | Repair: +6; When manned, attempt repair on all damaged systems.; Limit once per game.

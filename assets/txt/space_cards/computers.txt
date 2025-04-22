@@ -1,9 +1,9 @@
-3x Standard Mainframe    50k 5p | Targeting: 5; Hacking: 0; Firewall: 15; When manned, attempt to repair all hacked systems.
-3x Seek-n-Destroy        80k 6p | Targeting: 8; Hacking: 0; Firewall: 20; When manned, attempt to repair all hacked systems.
-3x WeebOS               100k 7p | Targeting: 5; Hacking: 10; Firewall: 25; When manned, attempt to hack an enemy system.
-2x Nemesis AI           150k 8p | Targeting: 10; Hacking: 5; Firewall: 0; When manned, attempt to hack an enemy system.
-1x Iron Curtain         200k 9p | Targeting: 8; Hacking: 0; Firewall: 30; When manned, attempt to repair all hacked systems.
+1x Standard Mainframe    2k 5p | Targeting: 5; Hacking: 0; Firewall: 15; When manned, attempt to repair all hacked systems.
+1x Seek-n-Destroy       5k 6p | Targeting: 8; Hacking: 0; Firewall: 20; When manned, attempt to repair all hacked systems.
+1x WeebOS               5k 7p | Targeting: 5; Hacking: 10; Firewall: 25; When manned, attempt to hack an enemy system.
+1x Nemesis AI           5k 8p | Targeting: 10; Hacking: 5; Firewall: 10; When manned, attempt to hack an enemy system.
+1x Iron Curtain         7k 9p | Targeting: 8; Hacking: 0; Firewall: 30; When manned, attempt to repair all hacked systems.
 
-2x Haxorz 1337.1       120k 8p  | Targeting: 4; Hacking: 15; Firewall: 0; When manned, attempt to hack an enemy system.
-2x Haxorz 1337.2       150k 10p | Targeting: 6; Hacking: 15; Firewall: 0; When manned, attempt to hack an enemy system.
-1x Haxorz 1337.3    200k 12p | Targeting: 8; Hacking: 15; Firewall: 0; When manned, attempt to hack an enemy system.
+1x Haxorz 1337.1        3k 8p  | Targeting: 4; Hacking: 15; Firewall: 10; When manned, attempt to hack an enemy system.
+1x Haxorz 1337.2       5k 10p | Targeting: 6; Hacking: 15; Firewall: 10; When manned, attempt to hack an enemy system.
+1x Haxorz 1337.3       7k 12p | Targeting: 8; Hacking: 15; Firewall: 10; When manned, attempt to hack an enemy system.
