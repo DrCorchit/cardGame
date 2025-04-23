@@ -28,7 +28,12 @@ object Textures {
     val land = initTexture("land.png")
     val manaWhite = initTexture("mana_white.png")
 
+    val raw = initTexture("raw.png")
+    val shadow = initTexture("shadow.png")
+    val disasterCutaway = initTexture("disaster_cutaway.png")
     val metal = initTexture("metal.jpg")
+
+
     val power = initTexture("power.png")
     val card = initTexture("card2.png")
     val titleBar = initTexture("title_bar_2.png")

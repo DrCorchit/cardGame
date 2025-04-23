@@ -1,6 +1,6 @@
 2x Captain      2k | Can swap places with assigned crew.; Limit one per ship.
 2x Pilot        1k | Maneuvering bonus: +3
-4x Gunner       1k | Targeting bonus: +3
+8x Gunner       1k | Targeting bonus: +3
 2x Hacker       1k | Hacking bonus: +3
 8x Engineer     1k | Repair bonus: +3
-12x Marine      1k | Skill bonus: +1
+8x Marine      1k | Skill bonus: +1

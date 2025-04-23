@@ -42,9 +42,10 @@ object Fonts {
     val keywordFont = initFontSize("$defaultFont.ttf", fontSizes.quoteFont)
     val quoteFont = initFontSize("${defaultFont}_italic.ttf", fontSizes.quoteFont)
 
-    val numberFont2 = initFontSizeAndStroke("exo_medium.ttf", 48)
-    val nameFont2 = initFontSizeAndStroke("exo_medium.ttf", 36)
+    val numberFont2 = initFontSizeAndStroke("conthrax.otf", 48)
+    val nameFont2 = initFontSizeAndStroke("conthrax.otf", 36)
     val abilityFont2 = initFontSizeAndStroke("exo_medium.ttf", 28)
+    val cardTypeFont = initFontSizeAndStroke("conthrax.otf", 40)
 
     init {
         fun addBoltIconToFont(font: BitmapFont) {

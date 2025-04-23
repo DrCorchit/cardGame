@@ -4,6 +4,8 @@ import com.badlogic.gdx.ApplicationAdapter
 import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.Input
 import com.badlogic.gdx.scenes.scene2d.Stage
+import com.drcorchit.cards.Card2Back.Companion.texts
+import com.drcorchit.cards.Card2Disaster.Companion.disasters
 import com.drcorchit.cards.graphics.CardActor
 import com.drcorchit.cards.graphics.Draw
 import com.drcorchit.justice.utils.logging.Logger
@@ -15,7 +17,12 @@ import com.drcorchit.justice.utils.math.MathUtils
 class Main : ApplicationAdapter() {
     var index = 0
     val stage by lazy { Stage() }
-    val cards by lazy { Cards2.cards }
+
+    val cards by lazy {
+        Cards2.cards +
+            texts.map { Card2Back(it) } +
+            disasters.map { Card2Disaster(it.first, it.second) }
+    }
     val card by lazy { CardActor(cards[index]) }
 
     override fun create() {

@@ -10,9 +10,9 @@
 1x Precision Laser 1.0      3k 4p | When manned, deal 4 damage.; Targeting bonus: +3
 1x Precision Laser 1.1      3k 4p | When manned, deal 4 damage.; Targeting bonus: +4
 1x Precision Laser 1.2      4k 4p | When manned, deal 4 damage.; Targeting bonus: +5
-1x Precision Laser 2.0      4k 6p | When manned, deal 6 damage.; Targeting bonus: +6
-1x Precision Laser 2.1      5k 6p | When manned, deal 6 damage.; Targeting bonus: +7
-1x Precision Laser 2.2      6k 6p | When manned, deal 6 damage.; Targeting bonus: +8
+1x Precision Laser 2.0      4k 6p | When manned, deal 6 damage.; Targeting bonus: +4
+1x Precision Laser 2.1      5k 6p | When manned, deal 6 damage.; Targeting bonus: +5
+1x Precision Laser 2.2      6k 6p | When manned, deal 6 damage.; Targeting bonus: +6
 
 #Anti-shields
 1x Dual Cycle Laser A       4k 4p | When manned, deal 2 bursts of 2 damage.; Targeting bonus: +3
@@ -21,8 +21,8 @@
 2x Shield Buster Laser      5k 5p | When manned, deal 3 bursts of 1 damage.; Targeting bonus: +5
 
 #Missiles
-2x TOMB Missile             5k 6p | When manned, deal 10 damage.
-1x Advanced TOMB Missile    7k 6p | When manned, deal 10 damage.; Crit chance: 100%.
+2x TOMB Missile             5k 8p | When manned, deal 10 damage.
+1x Advanced TOMB Missile   7k 10p | When manned, deal 10 damage.; Crit chance: 100%.
 2x Laser-Guided Bomb V1     5k 8p | When manned, deal 8 damage.; Targeting bonus: +1
 2x Laser-Guided Bomb V2    7k 10p | When manned, deal 10 damage.; Targeting bonus: +2
 2x Laser-Guided Bomb V3   10k 12p | When manned, deal 12 damage.; Targeting bonus: +3
