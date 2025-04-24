@@ -2,6 +2,7 @@ package com.drcorchit.cards.graphics
 
 import com.badlogic.gdx.files.FileHandle
 import com.badlogic.gdx.graphics.Color
+import com.badlogic.gdx.graphics.Texture
 import com.badlogic.gdx.graphics.g2d.BitmapFont
 import com.badlogic.gdx.graphics.g2d.TextureRegion
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator
@@ -25,7 +26,12 @@ object Fonts {
         CHARACTERS = alpha + num + punctuation + quotes + symbols + bars + misc + dots
     }
 
-    data class FontSizes (val numberFont: Int, val nameFont: Int, val abilityFont: Int, val quoteFont: Int)
+    data class FontSizes(
+        val numberFont: Int,
+        val nameFont: Int,
+        val abilityFont: Int,
+        val quoteFont: Int
+    )
 
     val medFontSizes = FontSizes(96, 96, 40, 32)
     val smFontSizes = FontSizes(72, 80, 28, 24)
@@ -48,30 +54,9 @@ object Fonts {
     val cardTypeFont = initFontSizeAndStroke("conthrax.otf", 40)
 
     init {
-        fun addBoltIconToFont(font: BitmapFont) {
-            val region = TextureRegion(Textures.power)
-            val code = '\u0010'.code
-            val size = 40
-            font.regions.add(region)
-            val glyph = BitmapFont.Glyph()
-            glyph.id = code
-            glyph.page = 1
-            glyph.u = 0f
-            glyph.v = 1f
-            glyph.u2 = 1f
-            glyph.v2 = 0f
-            glyph.srcX = 0
-            glyph.srcY = 0
-            glyph.yoffset = -(size + 12)
-            glyph.width = size
-            glyph.height = size
-            glyph.xadvance = size
+        numberFont2.addTexture(Textures.power, '\u0010')
 
-            font.data.setGlyph(code, glyph)
-        }
-        addBoltIconToFont(numberFont2)
-
-        fun addManaIconsToFont (font: BitmapFont, region: TextureRegion) {
+        fun addManaIconsToFont(font: BitmapFont, region: TextureRegion) {
             font.regions.add(region)
 
             fun addGlyph(char: Char, i: Int, j: Int) {
@@ -115,18 +100,23 @@ object Fonts {
         keywordFont.data.setLineHeight(25f)
     }
 
-    private fun initFontSize(path: String, size: Int): BitmapFont {
+    fun initFontSize(path: String, size: Int): BitmapFont {
         val params = FreeTypeFontParameter()
         params.size = size
         params.characters = CHARACTERS
         return initFontParams(path, params)
     }
 
-    private fun initFontSizeAndStroke(path: String, size: Int): BitmapFont {
+    fun initFontSizeAndStroke(
+        path: String,
+        size: Int,
+        borderWidth: Float = 2f,
+        borderColor: Color = Color.BLACK
+    ): BitmapFont {
         val params = FreeTypeFontParameter()
         params.size = size
-        params.borderWidth = 3f
-        params.borderColor = Color.BLACK
+        params.borderWidth = borderWidth
+        params.borderColor = borderColor
         params.characters = CHARACTERS
         return initFontParams(path, params)
     }
@@ -138,5 +128,26 @@ object Fonts {
         value.setUseIntegerPositions(true)
         generator.dispose()
         return value
+    }
+
+    fun BitmapFont.addTexture(tex: Texture, char: Char) {
+        val region = TextureRegion(tex)
+        val size = 40
+        this.regions.add(region)
+        val glyph = BitmapFont.Glyph()
+        glyph.id = char.code
+        glyph.page = 1
+        glyph.u = 0f
+        glyph.v = 1f
+        glyph.u2 = 1f
+        glyph.v2 = 0f
+        glyph.srcX = 0
+        glyph.srcY = 0
+        glyph.yoffset = -(size + 12)
+        glyph.width = size
+        glyph.height = size
+        glyph.xadvance = size
+
+        this.data.setGlyph(char.code, glyph)
     }
 }

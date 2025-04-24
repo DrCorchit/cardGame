@@ -1,8 +1,6 @@
 package com.drcorchit.cards
 
-import java.io.File
-
-object Cards2 {
+object SpaceCards {
 
     val countRegex = "(?<count>\\d+)x"
     val nameRegex = "(?<name>.*?)"
@@ -14,7 +12,7 @@ object Cards2 {
         Regex("$countRegex\\s+$nameRegex\\s+$costRegex\\s+($powerRegex\\s+)?\\|\\s+$abilityRegex")
 
     @JvmStatic
-    fun parse(type: Card2.Type, str: String): Card2? {
+    fun parse(type: SpaceCard.Type, str: String): SpaceCard? {
         if (str.isBlank() || str.startsWith("#")) {
             return null
         }
@@ -38,7 +36,7 @@ object Cards2 {
                 .map { it.trim() }
             val count = match["count"]!!.value.toInt()
 
-            return Card2(name, cost, power, type, abilities, count)
+            return SpaceCard2(name, cost, power, type, abilities, count)
         } catch (e: Exception) {
             println("Error parsing line: $str")
             //e.printStackTrace()
@@ -46,25 +44,24 @@ object Cards2 {
         }
     }
 
-    fun readFrom(filename: String): List<Card2> {
-        return File(filename).listFiles()!!
-            .flatMap { file ->
-                val type = Card2.Type.entries.first {
-                    it.file == file
-                }
-                file.readLines().mapNotNull { parse(type, it) }
-            }
+    val cards by lazy {
+        SpaceCard.Type.entries.flatMap { type ->
+            if (type.file == null) listOf()
+            else type.file.readLines().mapNotNull { parse(type, it) }
+        }
     }
-
-    val cards by lazy { readFrom("assets/txt/space_cards") }
 
     init {
         cards.groupBy { it.type }
-            .forEach { entry ->
-                val count = entry.value.sumOf { it.count }
-                println("${entry.key.name}: $count")
+            .forEach { group, cards ->
+                val count = cards.sumOf { it.count }
+                val avgPower = cards.sumOf { it.power * it.count } / count.toFloat()
+                val avgCost = cards.sumOf { it.cost * it.count } / count.toFloat()
+                println("${group.text}: $count Average Power: $avgPower Average Cost: $avgCost")
             }
         val total = cards.sumOf { it.count }
         println("Unique: ${cards.size} Total: $total")
+
+
     }
 }

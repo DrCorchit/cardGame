@@ -14,7 +14,7 @@ import com.drcorchit.justice.utils.StringUtils.normalize
 import com.drcorchit.justice.utils.math.Compass
 import java.io.File
 
-class Card2(
+open class SpaceCard(
     val name: String,
     val cost: Int,
     val power: Int,
@@ -30,16 +30,17 @@ class Card2(
         .replace("_", " ")
         .replace("#", "\n • ")
 
-    enum class Type(file: String, val text: String) {
-        Computer("computers", "Computer"),
+    enum class Type(file: String?, val text: String) {
+        Computer("computer", "Computer Module"),
         Crew("crew", "Crewmember"),
         Defense("defense", "Defense Module"),
-        Engine("engines", "Engine"),
-        LifeSupport("life_support", "Life Support"),
-        Special("specials", "Special"),
-        Weapon("weapons", "Weapons Module");
+        Disaster(null, "Disaster Card"),
+        Engine("engine", "Engine Module"),
+        Life_Support("life_support", "Life Support Module"),
+        Special("special", "Special Card"),
+        Weapon("weapon", "Weapon Module");
 
-        val file = File("assets/txt/space_cards/$file.txt")
+        val file = file?.let { File("assets/txt/space_cards/$it.txt") }
     }
 
     override fun draw() {
@@ -122,9 +123,8 @@ class Card2(
     }
 
     companion object {
-        val card = Textures.card.asSprite()
+        val card = Textures.cardWithText.asSprite()
         val titleBar = Textures.titleBar.asSprite().setOffset(Compass.CENTER)
-        val typeBar = Textures.typeBar.asSprite().setOffset(Compass.CENTER)
         val scoreArea = Textures.scoreArea.asSprite().setOffset(Compass.CENTER)
         val artBorder = Textures.artBorder.asSprite().setOffset(Compass.CENTER)
         val textArea = Textures.textArea.asSprite()

@@ -9,11 +9,10 @@ import com.drcorchit.cards.graphics.*
 import com.drcorchit.cards.graphics.Textures.asSprite
 import com.drcorchit.justice.utils.math.Compass
 
-class Card2Back(val text: String) : Drawable {
+class SpaceCardBack(val text: String) : Drawable {
     override fun draw() {
         ScreenUtils.clear(Color.BLACK)
         raw.draw(Draw.batch, BORDER, BORDER, W, H)
-        //shadow.draw(Draw.batch, textX, textY)
         textBack.draw(Draw.batch, textX, textY)
         Draw.drawText(textX, textY, Fonts.cardTypeFont, text, W, Compass.CENTER, Color.RED)
     }
@@ -38,7 +37,7 @@ class Card2Back(val text: String) : Drawable {
             )
 
         val textBack = Textures.titleBar.asSprite().setOffset(Compass.CENTER)
-        val raw = Textures.raw.asSprite()
+        val raw = Textures.cardWithInset.asSprite()
         val textX = BORDER + W / 2
         val textY = BORDER + H / 2
     }

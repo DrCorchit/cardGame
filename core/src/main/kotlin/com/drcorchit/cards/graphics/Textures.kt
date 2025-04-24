@@ -28,19 +28,26 @@ object Textures {
     val land = initTexture("land.png")
     val manaWhite = initTexture("mana_white.png")
 
-    val raw = initTexture("raw.png")
-    val shadow = initTexture("shadow.png")
-    val disasterCutaway = initTexture("disaster_cutaway.png")
     val metal = initTexture("metal.jpg")
-
-
     val power = initTexture("power.png")
-    val card = initTexture("card2.png")
+    val blackHole= initTexture("black_hole.jpg")
+    val card3Back = initTexture("cardback.jpg")
+
+    //card
+    val cardWithInset = initTexture("card_with_inset.png")
+    val cardWithCutaway = initTexture("card_cutaway.png")
+    val cardWithText = initTexture("card_with_text.png")
+
     val titleBar = initTexture("title_bar_2.png")
-    val typeBar = initTexture("type_bar.png")
     val scoreArea = initTexture("score_area.png")
     val artBorder = initTexture("art_border.png")
     val textArea = initTexture("text_area.png")
+
+    //card2
+    val border2 = initTexture("border.png")
+    val card2SmallWindow = initTexture("card2_small_window.png")
+    val card2LargeWindow = initTexture("card2_large_window.png")
+    val numberBox = initTexture("number_box.png")
 
     //Arrow
     val arrowLeft = initTexture("arrow_left.png")
