@@ -10,22 +10,25 @@ import com.drcorchit.cards.SpaceCard2.Companion.border
 import com.drcorchit.cards.graphics.*
 import com.drcorchit.cards.graphics.Draw.batch
 import com.drcorchit.cards.graphics.Textures.asSprite
+import com.drcorchit.justice.utils.StringUtils.normalize
 import com.drcorchit.justice.utils.math.Compass
 import java.io.File
 
-class SpaceCard2LargeWindow(val text: String, val file: String, val textColor: Color) : Drawable {
+class SpaceCard2LargeWindow(override val name: String, val file: String, val textColor: Color) : Drawable {
     var image: AnimatedSprite? = updateGraphic()
+
+    override val outputLocation = "output/images/full/space_cards/large/${name.normalize()}.png"
 
     override fun draw() {
         ScreenUtils.clear(Color.BLACK)
         this.image?.draw(batch, imageX, imageY)
         largeWindow.draw(batch, BORDER, BORDER, W, H)
         border.draw(batch, 0f, 0f)
-        Draw.drawText(textX, textY, font, text, W, Compass.CENTER, textColor)
+        Draw.drawText(textX, textY, font, name, W, Compass.CENTER, textColor)
     }
 
     override fun updateGraphic(): AnimatedSprite? {
-        val png = "assets/images/space_cards/card_art/$file"
+        val png = "assets/images/space_cards/card_art/large/$file"
         val texture = if (File(png).exists()) Texture(png) else null
 
         if (texture == null) {

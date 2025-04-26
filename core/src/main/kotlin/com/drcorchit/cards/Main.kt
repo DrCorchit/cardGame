@@ -19,9 +19,8 @@ class Main : ApplicationAdapter() {
     var index = 0
     val stage by lazy { Stage() }
 
-
     val cards by lazy {
-        SpaceCards.cards + cardbacks + disasters
+        SpaceCards.cards + disasters + cardbacks
     }
     val card by lazy { CardActor(cards[index]) }
 

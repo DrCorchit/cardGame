@@ -20,7 +20,7 @@ import java.io.File
 import kotlin.math.min
 
 class Card(
-    val name: String,
+    override val name: String,
     val power: Int,
     val cost: Int,
     val armor: Int,
@@ -82,6 +82,8 @@ class Card(
     val keywordText = keywords.joinToString("\n") { "${it.name}: ${it.description}" }
 
     var image: AnimatedSprite? = updateGraphic()
+
+    override val outputLocation = "output/images/full/cards/${rarity.name.normalize()}/${name.normalize()}.png"
 
     constructor(json: JsonObject) : this(
         json["name"].asString,

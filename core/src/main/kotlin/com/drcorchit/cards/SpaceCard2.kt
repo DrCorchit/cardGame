@@ -67,7 +67,7 @@ class SpaceCard2(
 
     override fun updateGraphic(): AnimatedSprite? {
         val normalized = name.normalize()
-        val base = "assets/images/space_cards/card_art"
+        val base = "assets/images/space_cards/card_art/${type.name.lowercase()}"
         val png = "$base/$normalized.png"
         val jpg = "$base/$normalized.jpg"
         val texture = if (File(png).exists()) Texture(png)
@@ -99,7 +99,7 @@ class SpaceCard2(
 
         //image from 100-720x, 500-920y
         val imageX = nameTextX
-        val imageY = BORDER + 650f
+        val imageY = BORDER + 640f
 
         val margin = 100f
         val abilityTextX = BORDER + margin

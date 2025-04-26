@@ -7,14 +7,17 @@ import com.drcorchit.cards.Main.Companion.H
 import com.drcorchit.cards.Main.Companion.W
 import com.drcorchit.cards.graphics.*
 import com.drcorchit.cards.graphics.Textures.asSprite
+import com.drcorchit.justice.utils.StringUtils.normalize
 import com.drcorchit.justice.utils.math.Compass
 
-class SpaceCardBack(val text: String) : Drawable {
+class SpaceCardBack(override val name: String) : Drawable {
+    override val outputLocation = "output/images/full/cards/large/${name.normalize()}.png"
+
     override fun draw() {
         ScreenUtils.clear(Color.BLACK)
         raw.draw(Draw.batch, BORDER, BORDER, W, H)
         textBack.draw(Draw.batch, textX, textY)
-        Draw.drawText(textX, textY, Fonts.cardTypeFont, text, W, Compass.CENTER, Color.RED)
+        Draw.drawText(textX, textY, Fonts.cardTypeFont, name, W, Compass.CENTER, Color.RED)
     }
 
     override fun updateGraphic(): AnimatedSprite? {

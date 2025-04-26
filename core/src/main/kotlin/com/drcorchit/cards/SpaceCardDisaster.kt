@@ -8,11 +8,13 @@ import com.drcorchit.cards.Main.Companion.H
 import com.drcorchit.cards.Main.Companion.W
 import com.drcorchit.cards.graphics.*
 import com.drcorchit.cards.graphics.Textures.asSprite
+import com.drcorchit.justice.utils.StringUtils.normalize
 import com.drcorchit.justice.utils.math.Compass
 import java.io.File
 
-class SpaceCardDisaster(val text: String, val file: String) : Drawable {
+class SpaceCardDisaster(override val name: String, val file: String) : Drawable {
     var image: AnimatedSprite? = null
+    override val outputLocation = "output/images/full/cards/large/${name.normalize()}.png"
 
     override fun draw() {
         ScreenUtils.clear(Color.BLACK)
@@ -21,7 +23,7 @@ class SpaceCardDisaster(val text: String, val file: String) : Drawable {
         image?.draw(Draw.batch, centerX, centerY)
 
         textBack.draw(Draw.batch, textX, textY)
-        Draw.drawText(textX, textY, Fonts.cardTypeFont, text, W, Compass.CENTER, Color.RED)
+        Draw.drawText(textX, textY, Fonts.cardTypeFont, name, W, Compass.CENTER, Color.RED)
     }
 
     override fun updateGraphic(): AnimatedSprite? {

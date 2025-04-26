@@ -1,21 +1,22 @@
-1x Weapons Scavenger        2k | Before combat, buy any weapons module from the scrapyard, for half price.
-1x Defense Scavenger        2k | Before combat, buy any defense module from the scrapyard, for half price.
-1x Computer Scavenger       3k | Before combat, buy any computer from the scrapyard, for half price.
-1x Engines Scavenger        4k | Before combat, buy any engine from the scrapyard, for half price.
-1x LS Scavenger             2k | Before combat, buy any life support from the scrapyard, for half price.
+1x Weapons Scavenger        2k | Buy any weapons module from the scrapyard, for half price.
+1x Defense Scavenger        2k | Buy any defense module from the scrapyard, for half price.
+1x Computer Scavenger       3k | Buy any computer from the scrapyard, for half price.
+1x Engines Scavenger        4k | Buy any engine from the scrapyard, for half price.
+1x LS Scavenger             2k | Buy any life support from the scrapyard, for half price.
 
-1x Weapons Subcontractor    3k | Before combat, buy any weapons module from the weapons deck.
-1x Defense Subcontractor    3k | Before combat, buy any defense module from the defenses deck.
-1x Computer Subcontractor   3k | Before combat, buy any computer from the essentials deck.
-1x Engines Subcontractor    3k | Before combat, buy any engine from the essentials deck.
-1x LS Subcontractor         3k | Before combat, buy any life support module from the essentials deck.
+1x Weapons Subcontractor    3k | Buy any weapons module from the weapons deck.
+1x Defense Subcontractor    3k | Buy any defense module from the defenses deck.
+1x Computer Subcontractor   3k | Buy any computer from the essentials deck.
+1x Engines Subcontractor    3k | Buy any engine from the essentials deck.
+1x LS Subcontractor         3k | Buy any life support module from the essentials deck.
 
-1x Emergency Crew           2k | Before combat, you may choose up to three crew members from the scrapyard.
-1x One Man's Trash         10k | Before combat, you may buy any number of cards from the graveyard, at half price.
-1x Shopping Spree           7k | Before combat, you may buy any number of cards from any deck.
-1x Bespoke Modification     3k | Before combat, search the deck and buy any module you choose.
+1x Emergency Crew           2k | Choose up to three crew members from the scrapyard, for free.
+1x One Man's Trash          3k | Buy any module from the scrapyard, for half price.
+1x Bespoke Modification     2k | Search any deck and buy a module of your choice.
 
 4x Broadside!               3k | During combat, this card mans all weapons simultaneously.
 2x System Reboot            2k | During combat, restore all hacked and EMP'd systems.
 4x Repair Droids            1k | During combat, fully repair a damaged, hacked, or EMP'd system.
 6x Precision Shot           2k | During combat, add a +5 targeting bonus to any shot.; If it hits, it counts as a critical hit.
+
+1x Wild Card                4k | Duplicates the effect of another special card in your hand, before or during combat.

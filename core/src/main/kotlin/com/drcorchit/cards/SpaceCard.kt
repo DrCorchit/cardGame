@@ -15,7 +15,7 @@ import com.drcorchit.justice.utils.math.Compass
 import java.io.File
 
 open class SpaceCard(
-    val name: String,
+    override val name: String,
     val cost: Int,
     val power: Int,
     val type: Type,
@@ -30,9 +30,12 @@ open class SpaceCard(
         .replace("_", " ")
         .replace("#", "\n • ")
 
+    override val outputLocation =
+        "output/images/full/space_cards/${type.name.normalize()}/${name.normalize()}.png"
+
     enum class Type(file: String?, val text: String) {
         Computer("computer", "Computer Module"),
-        Crew("crew", "Crewmember"),
+        Crew("crew", "Crew"),
         Defense("defense", "Defense Module"),
         Disaster(null, "Disaster Card"),
         Engine("engine", "Engine Module"),
