@@ -1,6 +1,6 @@
-2x Captain      2k | Can swap places with assigned crew.; Limit one per ship.
-2x Pilot        1k | When manning engines: Evasion +3
-8x Gunner       1k | When manning weapons: Targeting +3
-2x Hacker       1k | When manning computers: Hacking +3
-8x Engineer     1k | When making repairs: Repair +3
-8x Marine       1k | All skills +1
+2x Captain      2k | Adjacent crew gain +2 to all skills.; Limit one per ship.
+2x Pilot        2k | Evasion +3
+8x Gunner       2k | Targeting +3
+2x Hacker       2k | Hacking +3
+8x Engineer     2k | Repair +3
+8x Marine       2k | All skills +1

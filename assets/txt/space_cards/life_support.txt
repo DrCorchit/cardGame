@@ -1,7 +1,7 @@
-1x Xanadu MK I            4k 8p | Supports 5 crew.
-1x Xanadu MK II          5k 10p | Supports 6 crew.
-1x Xanadu MK III         6k 12p | Supports 7 crew.
+1x Xanadu MK I            4k 8p | Supports 4 crew.
+1x Xanadu MK II          5k 10p | Supports 5 crew.
+1x Xanadu MK III         6k 12p | Supports 6 crew.
 
-1x Bob's Bargain Basement 1k 4p | Supports 4 crew.
-2x Standard Issue         7k 6p | Supports 5 crew.
-1x Halycon INC           10k 8p | Supports 6 crew.
+1x Bob's Bargain Basement 1k 4p | Supports 3 crew.
+2x Standard Issue         7k 6p | Supports 4 crew.
+1x Halycon INC           10k 8p | Supports 5 crew.

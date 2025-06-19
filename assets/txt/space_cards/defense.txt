@@ -6,11 +6,11 @@
 1x Dreadnought Plating           7k | 30 Armor.; Passive evasion: -2
 
 #Shields
-2x Space Turtle MK I          4k 3p | Shield layers: 2; Laser damage reduction: 50%; No bonus when manned.
-1x Space Turtle MK II        8k 10p | Shield layers: 2; Laser damage reduction: 100%; No bonus when manned.
-2x Electromagnetic Ward       4k 3p | Shield layers: 1; Laser damage reduction: 50%; When manned, +2 shield layers.;
-2x Carapace                   4k 4p | Shield layers: 1; Laser damage reduction: 100%; No bonus when manned.;
-1x Phalanx                    6k 7p | Shield layers: 0; Laser damage reduction: 100%; When manned, +2 shield layers.;
+2x Space Turtle MK I          4k 3p | Shield layers: 2; Laser damage reduction: 50%
+1x Space Turtle MK II        8k 10p | Shield layers: 2; Laser damage reduction: 100%
+2x Electromagnetic Ward       4k 3p | Shield layers: 1; Laser damage reduction: 50%; When manned, +2 shield layers.
+2x Carapace                   4k 4p | Shield layers: 1; Laser damage reduction: 100%
+1x Phalanx                    6k 7p | Shield layers: 0; Laser damage reduction: 100%; When manned, +2 shield layers.
 1x Aegis                      8k 8p | Shield layers: 1; Laser damage reduction: 100%; When manned, +1 shield layer.
 
 #APS
@@ -18,11 +18,11 @@
 1x Reactive Armor               10k | Shield layers: 2; Missile damage reduction: 50%
 
 #Stealth
-2x Cloaking Device MK I       5k 6p | When manned, +10 to maneuvering.; Limit 1x per game.
-1x Cloaking Device MK II    10k 10p | When manned, +10 to maneuvering.; Limit 2x per game.
-1x Phase Shifter              5k 6p | When manned, +3 to maneuvering.
+2x Cloaking Device MK I       5k 6p | When manned, +10 evasion.; Limit 1x per game.
+1x Cloaking Device MK II      8k 7p | When manned, +8 evasion.; Limit 2x per game.
+1x Phase Shifter              5k 6p | When manned, +5 evasion.
 
 #Manufactory
-2x Manufactory MK I           3k 4p | Repair: +2; When manned, attempt repair on all damaged systems.; Limit once per game.
-1x Manufactory MK II          5k 5p | Repair: +4; When manned, attempt repair on all damaged systems.; Limit once per game.
-1x Manufactory MK III         7k 6p | Repair: +6; When manned, attempt repair on all damaged systems.; Limit once per game.
+2x Manufactory MK I           3k 4p | Repair: +1; When manned, attempt repair on all damaged systems.;
+1x Manufactory MK II          5k 4p | Repair: +2; When manned, attempt repair on all damaged systems.;
+1x Manufactory MK III         7k 4p | Repair: +3; When manned, attempt repair on all damaged systems.;
