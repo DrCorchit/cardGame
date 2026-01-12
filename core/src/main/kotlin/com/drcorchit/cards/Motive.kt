@@ -87,8 +87,7 @@ enum class Motive(val color: Color) {
 
     constructor(color: String) : this(Color.valueOf(color))
 
-    val texture = Textures.initTexture("${name.lowercase()}.png")
-    val image = texture.asSprite().setOffset(Compass.CENTER)
-
+    val texture by lazy { Textures.initTexture("${name.lowercase()}.png") }
+    val image by lazy { texture.asSprite().setOffset(Compass.CENTER) }
     val secondaryColor = Color(color.r + .12f, color.g + .12f, color.b + .12f, .40f)
 }

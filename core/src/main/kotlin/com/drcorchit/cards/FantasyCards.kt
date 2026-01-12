@@ -7,7 +7,7 @@ import com.drcorchit.cards.graphics.Fonts
 import com.drcorchit.justice.utils.StringUtils.normalize
 import java.io.File
 
-object Cards {
+object FantasyCards {
     val nameRegex = "(?<name>.*)"
     val powerRegex = "(?<power>\\d+)"
     val costRegex = "(?<cost>\\d+)"

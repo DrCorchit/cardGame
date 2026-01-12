@@ -3,7 +3,6 @@ package com.drcorchit.cards
 import com.badlogic.gdx.ApplicationAdapter
 import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.Input
-import com.badlogic.gdx.graphics.Color
 import com.badlogic.gdx.scenes.scene2d.Stage
 import com.drcorchit.cards.SpaceCard2LargeWindow.Companion.cardbacks
 import com.drcorchit.cards.SpaceCard2LargeWindow.Companion.disasters
@@ -19,9 +18,14 @@ class Main : ApplicationAdapter() {
     var index = 0
     val stage by lazy { Stage() }
 
-    val cards by lazy {
+    val spaceCards by lazy {
         SpaceCards.cards + disasters + cardbacks
     }
+
+    val fantasyCards by lazy { FantasyCards.cards }
+
+    val cards by lazy { fantasyCards }
+
     val card by lazy { CardActor(cards[index]) }
 
     override fun create() {
@@ -30,7 +34,6 @@ class Main : ApplicationAdapter() {
         LocalAssets.getInstance().load()
         stage.addActor(card)
     }
-
 
     override fun resize(width: Int, height: Int) {
 //        val ratio = ((width / W) + (height / H)) / 2

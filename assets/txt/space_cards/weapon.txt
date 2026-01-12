@@ -22,11 +22,11 @@
 
 #Missiles
 2x TOMB Missile             5k 6p | When manned, deal 8 damage.
-1x Advanced TOMB Missile   7k 8p | When manned, deal 8 damage.; Crit chance: 100%.
+1x Advanced TOMB Missile    7k 8p | When manned, deal 8 damage.; Module damage chance: 100%.
 2x Laser-Guided Bomb V1     5k 6p | When manned, deal 6 damage.; Targeting bonus: +1
-2x Laser-Guided Bomb V2    7k 8p | When manned, deal 8 damage.; Targeting bonus: +2
-2x Laser-Guided Bomb V3   10k 10p | When manned, deal 10 damage.; Targeting bonus: +3
+2x Laser-Guided Bomb V2     7k 8p | When manned, deal 8 damage.; Targeting bonus: +2
+1x Laser-Guided Bomb V3   10k 10p | When manned, deal 10 damage.; Targeting bonus: +3
 
 #EMP
-1x Directed EMP             5k 6p | When manned, EMP an enemy system.
-1x Diffuse EMP              10k 10p | When manned, EMP 2 random enemy systems.
+2x Directed EMP             5k 6p | When manned, deal 3 damage.; Module EMP chance: 50%.
+1x Diffuse EMP            10k 10p | When manned, deal 1 damage.; Module EMP chance: 100%.

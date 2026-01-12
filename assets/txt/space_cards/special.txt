@@ -1,6 +1,6 @@
 1x Weapons Scavenger        2k | Buy any weapons module from the scrapyard, for half price.
 1x Defense Scavenger        2k | Buy any defense module from the scrapyard, for half price.
-1x Computer Scavenger       2k | Buy any computer from the scrapyard, for half price.
+1x Computer Scavenger       3k | Buy any computer from the scrapyard, for half price.
 1x Engines Scavenger        3k | Buy any engine from the scrapyard, for half price.
 1x LS Scavenger             2k | Buy any life support from the scrapyard, for half price.
 
