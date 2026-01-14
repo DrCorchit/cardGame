@@ -6,6 +6,7 @@ import com.badlogic.gdx.Input
 import com.badlogic.gdx.scenes.scene2d.Stage
 import com.drcorchit.cards.SpaceCard2LargeWindow.Companion.cardbacks
 import com.drcorchit.cards.SpaceCard2LargeWindow.Companion.disasters
+import com.drcorchit.cards.fantasy.FantasyCards
 import com.drcorchit.cards.graphics.CardActor
 import com.drcorchit.cards.graphics.Draw
 import com.drcorchit.justice.utils.logging.Logger

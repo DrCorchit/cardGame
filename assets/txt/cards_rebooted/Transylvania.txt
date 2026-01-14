@@ -1,0 +1,49 @@
+Moomsh Addict: 1/2p [Transylvania, Human] [When activated, destroy self and play a common Vice unit from your deck.] [Wish I had some moomsh.]
+Snitch: 1/2p [Transylvania, Human, Spy] [Disloyal.; When played, play a common crime from your graveyard.] [Hey, pssst!]
+Beggar: 2/2p [Transylvania, Human] [At turn start (chaos 4), rally 1.;Whenever you play a crime, reroll 1.] [Alms for the poor?]
+Constable: 2/2p [Transylvania, Human] [When played, lock a unit.] [You're under arrest.]
+Harlequin: 3/2p [Transylvania, Human] [When played, Reroll 1.; At turn start, swap an enemy land with a common or allied land.] [Tricked ya again!]
+Hired Muscle: 1a 3/2p [Transylvania, Human, Henchman] [When an adjacent unit is destroyed, summon another Hired Muscle.] [Watch it, twerp.]
+Neighborhood Bully: 4/2p [Transylvania, Human, Henchman] [Chaos 4 is required to play this unit.; When paired, your chaos level is increased by 1.] [Says who? My fist, that's who!]
+Shiv: 2p [Transylvania, Equipment, Weapon, Crime] [When equipped, assault 2.; If the equip target is a henchman, assassinate 2 instead.] [In prison, these things are cutting-edge technology.]
+Intimidation: 2p [Transylvania, Instant, Crime] [When played, rally 3 and reroll 2.] [You can get more of what you want with a kind word and a knife than you can with just a kind word.]
+Moomsh: 2p [Transylvania, Equipment, Crime] [Disloyal.; When equipped, rally 2.; Moomsh is poison.] [The high to die for?]
+
+Pyromaniac: 2/3p [Transylvania, Human, Henchman] [When played, reroll 3.; When activated (chaos X), assault X.] [Something not being on fire is usually a very easy problem to solve.]
+Street Thug: 1a 3/3p [Transylvania, Human, Henchman] [When activated, lock an enemy unit.; Chaos 5: Gain haste.] [The enemy can't steal our plans if we don't have any plans.]
+Moomsh Dealer: 3/3p [Transylvania, Human, Henchman] [When played, poison a unit.] [First one's on the house.]
+Chain Gang: 5/3p [Transylvania, Human] [Chaos 4 is required to play this card.] [It's where they all end up, eventually.]
+Landlady: 6/3p [Transylvania, Human] [When an adjacent unit is destroyed, also destroy self.] [It's a beautiful day for an eviction.]
+Pickpocket: 3p [Transylvania, Instant, Crime] [When played (chaos X), rally X and reroll 1.] [A fool and his money...]
+
+Bystanders: 2/4p [Transylvania, Human] [When activated, rally by the provision cost of the next unit you assassinate or seize this turn.] [Oh wow, dinner AND a show!]
+Hypnotist: 1/4p [Transylvania, Human, Spy] [Disloyal.; When played, seize 2.] [What a captivating performance!]
+Hitman: 1/4p [Transylvania, Human, Spy] [Disloyal.; When played (chaos X), assassinate X.] [I never hurt nobody that ain't had it comin'.]
+Man Mountain: 7/4p [Transylvania, Human, Henchman] [Chaos 5 is required to play this card.] [(indecipherable grunting)]
+
+Maximillian, Slumlord: 4/4p [Transylvania, Human, Caporegime, Rare] [When played, move one of your opponent's land dice to the common pool.; When destroyed, move it back.] [Su casa es mi casa.]
+Captain Ernesto: 4/4p [Transylvania, Human, Henchman, Rare] [When activated, assault 4 and destroy self.] [If it's a fight ye wants...]
+The Butcher: 1/4p [Transylvania, Human, Spy, Rare] [Disloyal.; When played, assassinate adjacent units by 3.] [Nice to meat you!]
+
+Inspector Culso: 2/5p [Transylvania, Human, Spy, Rare] [Disloyal.; When played (chaos X), look at all cards from your opponent's deck with a provision cost of X or less and play one.] [With me, surprises are rarely unexpected.]
+The Dollhouse: 5p [Transylvania, Emplacement, Location, Rare] [When played, play a Moomsh Addict or Landlady from your deck.; Adjacent Moomsh Addicts and Landladies do not destroy themselves.] [If home is where the heart is, then they're homeless.]
+
+The Quartermaster: 2/6p [Transylvania, Human, Spy, Rare] [When played, play a common spy from your deck.] [Take whatcha need for the job and scram.]
+Madame Baghat: 3/6p [Transylvania, Human, Caporegime, Rare] [When played (chaos X), play a unit with X or fewer provisions from your deck.] [If anyone calls me "Bag Hat" one more time...]
+
+Pandemonium: 7p [Transylvania, Instant, Crime, Rare] [Echo.; When played, choose three cards from your deck and play one at random.; While in your graveyard, Chaos is increased by 1.] [Pandemonium did not reign; it poured.]
+Scarlet, Made Lady: 1/7p [Transylvania, Human, Caporegime, Legendary] [When you pass:#Rally 1 for each allied Henchman or Caporegime.#Rally 2 for each allied Kingpin.] [Wait 'til Big Daddy hears about this!]
+
+Molgrippe, Master Assassin: 2/8p [Transylvania, Human, Henchman, Legendary] [When played, either:#Chaos 5: Assassinate 5.#Chaos 6: Assassinate 10.] [The anomaly will be corrected momentarily.]
+Chester Zilch: 2/8p [Transylvania, Human, Caporegime, Legendary] [Chaos 4: Summon self from your deck.; Chaos 6: Summon self from your graveyard.] [Ahead of schedule, as usual.]
+
+The Heist: 9p [Transylvania, Instant, Crime, Legendary] [When played, rout 4 then seize 6.;Your score must be at least 4 to play this card.] [The perfect crime.]
+Jailbreak: 9p [Transylvania, Instant, Crime, Rare] [When played, play a common Vice unit from your graveyard.;Chaos 5: Also summon a Hired Muscle.] [Breaking out: not just for teenagers anymore.]
+
+Gladys the Glorious: 2/11p [Transylvania, Human, Kingpin, Legendary] [When played, choose a common henchman with 4 or less power and summon a copy on either side of self.;Both copies must be summoned from your graveyard.] [I am big. It's the pictures that got smaller.]
+Yalmamir, Prince of Crime: 2/11p [Transylvania, Vampire, Kingpin, Legendary] [When played, seize 3.;Piercing.] [A single incompetent enemy is worth a thousand incompetent friends.]
+Big Daddy: 1/11p [Transylvania, Human, Kingpin, Legendary] [When played (chaos X), seize up to 3 enemy units with a combined power less than or equal to X.] [More for me!] [seize]
+
+#Further ideas
+#Moomsh
+#Flengtooth, Sewer Dragon: 7/9p [Transylvania, Dragon, Legendary] [When played, poison adjacent units.;For each unit poisoned, also poison an enemy unit.] []

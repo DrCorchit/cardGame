@@ -13,7 +13,8 @@ object Textures {
 
     val white = initTexture("white.png")
 
-    val border = initTexture("border.png")
+    val fantasyBorder = initTexture("border_fantasy.png")
+    val spaceBorder = initTexture("border_space.png")
     val tray = initTexture("paper.png")
     val brushStroke = initTexture("brush_stroke.png")
     val line = initTexture("line.png")
@@ -44,7 +45,7 @@ object Textures {
     val textArea = initTexture("text_area.png")
 
     //card2
-    val border2 = initTexture("border.png")
+    val border2 = initTexture("border_space.png")
     val card2SmallWindow = initTexture("card2_small_window.png")
     val card2LargeWindow = initTexture("card2_large_window.png")
     val numberBox = initTexture("number_box.png")

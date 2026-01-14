@@ -7,7 +7,7 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont
 import com.badlogic.gdx.graphics.g2d.TextureRegion
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFontParameter
-import com.drcorchit.cards.Card
+import com.drcorchit.cards.fantasy.FantasyCard
 import java.io.File
 
 object Fonts {
@@ -43,9 +43,10 @@ object Fonts {
     val numberFontXS = initFontSize("enchanted_land.ttf", 64)
 
     val defaultFont = "lato"
-    val abilityFont = initFontSize("$defaultFont.ttf", fontSizes.abilityFont)
     val tagFont = initFontSize("$defaultFont.ttf", fontSizes.quoteFont)
-    val keywordFont = initFontSize("$defaultFont.ttf", fontSizes.quoteFont)
+    val abilityFont = initFontSize("$defaultFont.ttf", fontSizes.abilityFont)
+    val keywordFont = initFontSizeAndStroke("$defaultFont.ttf", fontSizes.abilityFont, 1f, Color.WHITE)
+    val keywordHelpFont = initFontSize("$defaultFont.ttf", fontSizes.quoteFont)
     val quoteFont = initFontSize("${defaultFont}_italic.ttf", fontSizes.quoteFont)
 
     val numberFont2 = initFontSizeAndStroke("conthrax.otf", 48)
@@ -90,20 +91,19 @@ object Fonts {
 
         val precoloredFontTexture = Draw.precolorTexture(
             abilityFont.regions[0].texture,
-            Card.textColor
+            FantasyCard.textColor
         )
         abilityFont.regions[0] = TextureRegion(precoloredFontTexture)
 
         //default is 34f
         abilityFont.data.setLineHeight(32f)
         //default is 29f
-        keywordFont.data.setLineHeight(25f)
+        keywordHelpFont.data.setLineHeight(25f)
     }
 
     fun initFontSize(path: String, size: Int): BitmapFont {
         val params = FreeTypeFontParameter()
         params.size = size
-        params.characters = CHARACTERS
         return initFontParams(path, params)
     }
 
