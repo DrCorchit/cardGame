@@ -80,17 +80,9 @@ class FantasyCard(
             .joinToString(", ")
     val abilityText = abilities
         .joinToString("\n") { it.trim() }
-        .replace("_", " ")
         .replace("#", "\n > ")
-    val styledAbilityText = abilityText
-        .replace("fire land", "\u0010")
-        .replace("water land", "\u0011")
-        .replace("earth land", "\u0012")
-        .replace("air land", "\u0013")
-        .replace("light land", "\u0014")
-        .replace("dark land", "\u0015")
 
-    val keywordHandler = KeywordHandler(styledAbilityText, Keyword.keywordsDictionary)
+    val keywordHandler = KeywordHandler(abilityText, Keyword.keywordsDictionary)
 
     val keywords = abilities
         .flatMap { it.split(Regex("[ #]")) }
@@ -324,6 +316,8 @@ class FantasyCard(
 //            Compass.SOUTHEAST,
 //            Color.WHITE
 //        )
+
+        //Draw.drawRectangle(abilityTextX, abilityTextY, abilityTextW, 10f, Color.RED)
         keywordHandler.render(abilityTextX, abilityTextY, abilityTextW)
 
         //Keyword text
@@ -332,7 +326,7 @@ class FantasyCard(
             keywordTextY,
             Fonts.keywordHelpFont,
             keywordText,
-            abilityTextW,
+            abilityTextW - 30,
             Compass.NORTHEAST,
             keywordHelpColor
         )

@@ -14,8 +14,8 @@ object FantasyCards {
     val armorRegex = "(?<armor>\\d+)a"
     val statsRegex = "($armorRegex)? *($powerRegex\\/)?${costRegex}p"
     val tagsRegex = "(?<tags>.*?)"
-    val abilityRegex = "(?<abilities>.*)"
-    val quoteRegex = "(?<quote>.*)"
+    val abilityRegex = "(?<abilities>.*?)"
+    val quoteRegex = "(?<quote>.*?)"
     val strategyRegex = "(?<strategy>.*)"
 
     val regex =

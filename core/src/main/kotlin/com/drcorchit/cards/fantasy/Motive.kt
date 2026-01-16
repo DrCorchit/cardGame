@@ -9,18 +9,18 @@ enum class Motive(override val color: Color): Faction {
     /*
     Wisdom -> Engines + non-removal control + deck manipulation
     Greed -> Pointslam + Engines
-    Peace -> Engines + land-based setup/payoff + removal control + tutoring
-    Vice ->  Pointslam + assassination control + land disruption
+    Peace -> Engines +_land-based setup/payoff + removal control + tutoring
+    Vice ->  Pointslam + assassination control +_land disruption
     Rage -> Removal control + pointslam + discard package
-    Justice -> Removal control + engines + land manipulation
+    Justice -> Removal control + engines +_land manipulation
      */
 
     //542
     Neutral("603000"),
 
-    //Earth/Water/Air land, diverse racial groups
+    //Earth/Water/Air_land, diverse racial groups
     //Has:
-    // Good land sources
+    // Good_land sources
     // High-end gold tutoring
     // Resurrection
     // Protect, Deflect, Stalwart
@@ -33,17 +33,17 @@ enum class Motive(override val color: Color): Faction {
     Peace("106010"),
 
     //ceb31c, b93
-    //Light/Dark land.
+    //Light/Dark_land.
     Justice("908030"),
 
     //243d93, 47a, 243d93, 468
-    //Air/Light land
+    //Air/Light_land
     // Strengths: Excellent tutoring and various answers
     //Limitations: lacking tempo and direct removal
     Wisdom("4060a0"),
 
     //a84d2a, 930, 830
-    //Identity: Fire land, dragons and dwarves.
+    //Identity: Fire_land, dragons and dwarves.
     //Has:
     // Protection, Engines, Combos.
     // Good bronzes
@@ -61,7 +61,7 @@ enum class Motive(override val color: Color): Faction {
     //68135e, 630, c62, c30
     //Strengths: Good bronze cards and direct removal
     //Limitations: Limited tutoring and indirect removal.
-    //Identity: Fire/Water land focused, vikings and pirates
+    //Identity: Fire/Water_land focused, vikings and pirates
     //Has:
     // Removal, removal, and more removal
     // Bronzes: mix of pointslam, engines, and control
@@ -73,7 +73,7 @@ enum class Motive(override val color: Color): Faction {
     // Tutoring
     Rage("a03000"),
 
-    //Flavor: Chaos/Dark land focused. Criminals, necromancers, and demons.
+    //Flavor: Chaos/Dark_land focused. Criminals, necromancers, and demons.
     //Control plus greed and engines.
     //Has:
     // Assassinate and Seize

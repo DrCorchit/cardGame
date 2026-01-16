@@ -1,22 +1,7 @@
 [
   {
-    "name": "Activate",
-    "description": "An ability that can be used once, after the first turn.",
-    "synonyms": ["Activates", "Activated"]
-  },
-  {
-    "name": "Deactivate",
-    "description": "Re-enable use of the active ability.",
-    "synonyms": ["Deactivates", "Deactivated"]
-  },
-  {
-    "name": "Reactivate",
-    "description": "Retrigger the active ability immediately.",
-    "synonyms": ["Reactivates", "Reactivated"]
-  },
-  {
     "name": "Haste",
-    "description": "The card can be activated on the turn it is played.",
+    "description": "The card can be tapped on the turn it is played.",
     "synonyms": ["Hasten", "Hastened"]
   },
   {
@@ -26,17 +11,17 @@
   },
   {
     "name": "Expend X",
-    "description": "Triggers if X land dice are rerolled.",
+    "description": "Reroll the indicated dice to trigger the ability.",
     "synonyms": ["Expend", "Expends", "Expended"]
   },
   {
     "name": "Spawn",
     "description": "Turn a number of land dice to the indicated faces.",
-    "synonyms": ["Spawns", "Spawnd"]
+    "synonyms": ["Spawns", "Spawned"]
   },
   {
     "name": "Reroll X",
-    "description": "Reroll X common or allied land dice.",
+    "description": "Reroll X common or allied mana dice.",
     "synonyms": ["Reroll", "Rerolls"]
   },
   {
@@ -55,7 +40,7 @@
   },
   {
     "name": "Protect",
-    "description": "Prevent a unit from being targeted by hostile abilities.",
+    "description": "Prevent a unit from being targeted by your opponent. A card that provides protection cannot be protected.",
     "synonyms": ["Protects", "Protecting", "Protected", "Protector"]
   },
   {
@@ -78,7 +63,7 @@
   },
   {
     "name": "Assassinate X",
-    "description": "Assault X, bypassing Protection.",
+    "description": "Assault X, bypassing protection.",
     "synonyms": ["Assassinate", "Assassinates", "Assassinated"]
   },
   {
@@ -88,7 +73,7 @@
   },
   {
     "name": "Armor X",
-    "description": "Increases a unit's resistance to assault.",
+    "description": "Increases a unit's resistance to assault and seize.",
     "synonyms": ["armor"]
   },
   {
@@ -103,13 +88,8 @@
   },
   {
     "name": "Chaos X",
-    "description": "Triggers if there are at least X unique land types.",
+    "description": "Triggers if there are at least X unique_land types.",
     "synonyms": ["Chaos"]
-  },
-  {
-    "name": "Armor Up",
-    "description": "Triggers when an armor card is equipped to the unit.",
-    "synonyms": ["armor_up"]
   },
   {
     "name": "Paired",
@@ -117,11 +97,15 @@
   },
   {
     "name": "Echo",
-    "description": "Move this card to the top of your deck between rounds, once per game."
+    "description": "This card can be moved to the top of your deck, once per game."
   },
   {
     "name": "Devour",
     "description": "Destroy a unit and convert it into an equipment. The target's card text is disabled."
+  },
+  {
+    "name": "Devotion",
+    "description": "Triggers if your starting deck contains no Yeoman cards."
   },
   {
     "name": "Plunder X",

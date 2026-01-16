@@ -27,6 +27,13 @@ object Textures {
     val provisionsBlack = initTexture("provisions_black.png")
 
     val land = initTexture("land.png")
+    val air = initTexture("air_sharp.png")
+    val dark = initTexture("dark_sharp.png")
+    val earth = initTexture("earth_sharp.png")
+    val fire = initTexture("fire_sharp.png")
+    val light = initTexture("light_sharp.png")
+    val water = initTexture("water_sharp.png")
+
     val manaWhite = initTexture("mana_white.png")
 
     val metal = initTexture("metal.jpg")

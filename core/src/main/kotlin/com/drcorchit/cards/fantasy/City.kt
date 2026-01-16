@@ -8,9 +8,9 @@ import com.drcorchit.justice.utils.math.Compass
 enum class City(override val color: Color): Faction {
     Yeoman("603000"),
 
-    //Earth/Water/Air land, diverse racial groups
+    //Earth/Water/Air_land, diverse racial groups
     //Has:
-    // Good land sources
+    // Good_land sources
     // High-end gold tutoring
     // Resurrection
     // Protect, Deflect, Stalwart
@@ -22,13 +22,13 @@ enum class City(override val color: Color): Faction {
     // Tall-Punish
     Avalon("106010"),
 
-    //Air/Light land
+    //Air/Light_land
     // Strengths: Excellent tutoring and various answers
     //Limitations: lacking tempo and direct removal
     Technopolis("4060a0"),
 
     //a84d2a, 930, 830
-    //Identity: Fire land, dragons and dwarves.
+    //Identity: Fire_land, dragons and dwarves.
     //Has:
     // Protection, Engines, Combos.
     // Good bronzes
@@ -41,12 +41,12 @@ enum class City(override val color: Color): Faction {
     // Tall punish
     // Removal instants.
     // Reliable tutors for high-end cards
-    Mordania("d08020"),
+    Transylvania("444444"),
 
     //68135e, 630, c62, c30
     //Strengths: Good bronze cards and direct removal
     //Limitations: Limited tutoring and indirect removal.
-    //Identity: Fire/Water land focused, vikings and pirates
+    //Identity: Fire/Water_land focused, vikings and pirates
     //Has:
     // Removal, removal, and more removal
     // Bronzes: mix of pointslam, engines, and control
@@ -58,7 +58,7 @@ enum class City(override val color: Color): Faction {
     // Tutoring
     Thalassa("a03000"),
 
-    //Flavor: Chaos/Dark land focused. Criminals, necromancers, and demons.
+    //Flavor: Chaos/Dark_land focused. Criminals, necromancers, and demons.
     //Control plus greed and engines.
     //Has:
     // Assassinate and Seize
@@ -68,7 +68,7 @@ enum class City(override val color: Color): Faction {
     //Does not have:
     // Protection or deflection
     // Reliable tutoring
-    Vulcania("444444");
+    Vulcania("d07020");
 
     constructor(color: String) : this(Color.valueOf(color))
 

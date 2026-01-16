@@ -34,7 +34,7 @@ object Fonts {
     )
 
     val medFontSizes = FontSizes(96, 96, 40, 32)
-    val smFontSizes = FontSizes(72, 80, 28, 24)
+    val smFontSizes = FontSizes(72, 80, 24, 24)
     val fontSizes = smFontSizes
 
     val numberFont = initFontSize("enchanted_land.ttf", fontSizes.numberFont)
@@ -49,6 +49,7 @@ object Fonts {
     val keywordHelpFont = initFontSize("$defaultFont.ttf", fontSizes.quoteFont)
     val quoteFont = initFontSize("${defaultFont}_italic.ttf", fontSizes.quoteFont)
 
+    //Space card fonts
     val numberFont2 = initFontSizeAndStroke("conthrax.otf", 48)
     val nameFont2 = initFontSizeAndStroke("conthrax.otf", 36)
     val abilityFont2 = initFontSizeAndStroke("exo_medium.ttf", 28)
@@ -57,53 +58,21 @@ object Fonts {
     init {
         numberFont2.addTexture(Textures.power, '\u0010')
 
-        fun addManaIconsToFont(font: BitmapFont, region: TextureRegion) {
-            font.regions.add(region)
-
-            fun addGlyph(char: Char, i: Int, j: Int) {
-                val glyph = BitmapFont.Glyph()
-                glyph.id = char.code
-                glyph.page = 1
-                glyph.u = i / 18f
-                glyph.v = (j + 4) / 12f
-                glyph.u2 = (i + 4) / 18f
-                glyph.v2 = j / 12f
-                glyph.srcX = 0
-                glyph.srcY = 0
-                glyph.yoffset = -(fontSizes.abilityFont + 4)
-                glyph.width = fontSizes.abilityFont
-                glyph.height = fontSizes.abilityFont
-                glyph.xadvance = fontSizes.abilityFont
-
-                font.data.setGlyph(char.code, glyph)
-            }
-
-            //Add land glyphs
-            addGlyph('\u0010', 1, 1)
-            addGlyph('\u0011', 7, 1)
-            addGlyph('\u0012', 13, 1)
-            addGlyph('\u0013', 1, 7)
-            addGlyph('\u0014', 7, 7)
-            addGlyph('\u0015', 13, 7)
-        }
-
-        addManaIconsToFont(abilityFont, TextureRegion(Textures.land))
-
-        val precoloredFontTexture = Draw.precolorTexture(
-            abilityFont.regions[0].texture,
-            FantasyCard.textColor
-        )
-        abilityFont.regions[0] = TextureRegion(precoloredFontTexture)
-
         //default is 34f
         abilityFont.data.setLineHeight(32f)
         //default is 29f
         keywordHelpFont.data.setLineHeight(25f)
+
+        val tex1 = quoteFont.regions[0].texture
+        val tex2 = abilityFont.regions[0].texture
+        //Draw.saveTextureToFile("tex1.png", tex1)
+        //Draw.saveTextureToFile("tex2.png", tex2)
     }
 
     fun initFontSize(path: String, size: Int): BitmapFont {
         val params = FreeTypeFontParameter()
         params.size = size
+        params.characters = CHARACTERS
         return initFontParams(path, params)
     }
 

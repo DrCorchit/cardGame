@@ -4,6 +4,7 @@ import com.badlogic.gdx.graphics.Color
 import com.badlogic.gdx.graphics.g2d.BitmapFont
 import com.drcorchit.cards.Keyword
 import com.drcorchit.cards.fantasy.FantasyCard
+import com.drcorchit.cards.graphics.Textures.asSprite
 import com.drcorchit.justice.utils.StringUtils.normalize
 import com.drcorchit.justice.utils.math.Compass
 
@@ -14,10 +15,11 @@ class KeywordHandler(
     val keywordColor: Color = defaultKeywordColor,
     val abilityFont: BitmapFont = Fonts.abilityFont,
     val keywordFont: BitmapFont = Fonts.keywordFont,
-    val spaceWidth: Float = 7f,
-    val lineHeight: Float = 36f
+    val lineHeight: Float = 32f
 ) {
-    val lines = text.split("\n").mapNotNull { makeLine(it) }
+    private val spriteSize = lineHeight - 6
+    private val spriteVoff = lineHeight - 10
+    private val lines = text.split("\n").mapNotNull { makeLine(it) }
 
     fun render(x: Float, y: Float, width: Float) {
         var posY = y
@@ -32,10 +34,13 @@ class KeywordHandler(
     }
 
     inner class Line(text: String) {
-        val words = text.split(" ").mapNotNull { makeWord(it) }
+        val words = Regex("\\b").splitToSequence(text).mapNotNull { makeWord(it) }
+        //.split("\b").mapNotNull { makeWord(it) }
 
-        private fun makeWord(string: String): Word? {
-            return if (string.isBlank()) null else Word(string)
+        private fun makeWord(string: String): Word {
+            if (sprites[string.normalize()] != null) return SpriteWord(string)
+            if (keywords[string.normalize()] != null) return KeywordWord(string)
+            return TextWord(string)
         }
 
         fun render(x: Float, y: Float, width: Float): Float {
@@ -43,15 +48,16 @@ class KeywordHandler(
             var posY = y
 
             words.forEach {
-                val remainWidth = width - posX
-                if (it.dimensions.first > remainWidth && it.dimensions.first < width) {
+                val remainWidth = width - (posX - x)
+                if (it.width > remainWidth && it.width < width) {
                     //word wrap
                     posX = x
                     posY -= lineHeight
                 }
 
+                //Draw.drawRectangle(posX, posY - lineHeight, it.width, 10f, Color.RED)
                 it.render(posX, posY)
-                posX += it.dimensions.first + spaceWidth
+                posX += it.width + 2f
             }
             return posY - lineHeight
         }
@@ -61,25 +67,58 @@ class KeywordHandler(
         }
     }
 
-    inner class Word(val text: String) {
-        val keyword: Keyword? = keywords[text.normalize()]
-        val font = if (keyword == null) abilityFont else keywordFont
-        val color = if (keyword == null) abilityColor else keywordColor
+    abstract inner class Word(val text: String) {
+        abstract val width: Float
 
-        val dimensions = Draw.calculateDimensions(font, text, 10000f)
-
-        fun render(x: Float, y: Float) {
-            //Draw.drawRectangle(x, y - dimensions.second, dimensions.first + 2, dimensions.second, Color.RED)
-            Draw.drawText(x, y, font, text, 10000f, Compass.SOUTHEAST, color)
-        }
+        abstract fun render(x: Float, y: Float)
 
         override fun toString(): String {
             return "Word($text)"
         }
     }
 
+    inner class KeywordWord(text: String) : Word(text) {
+        override val width = Draw.calculateDimensions(keywordFont, text, 10000f).first
+        override fun render(x: Float, y: Float) {
+            Draw.drawText(x, y, keywordFont, text, 10000f, Compass.SOUTHEAST, keywordColor)
+        }
+    }
+
+    inner class TextWord(text: String) : Word(text) {
+        override val width = Draw.calculateDimensions(abilityFont, text, 10000f).first
+        override fun render(x: Float, y: Float) {
+            Draw.drawText(x, y, abilityFont, text, 10000f, Compass.SOUTHEAST, abilityColor)
+        }
+    }
+
+    inner class SpriteWord(text: String) : Word(text) {
+        val sprite: AnimatedSprite = sprites[text.normalize()]!!
+
+        override val width = spriteSize
+
+        override fun render(x: Float, y: Float) {
+            sprite.draw(Draw.batch, x, y - spriteVoff, spriteSize, spriteSize)
+        }
+    }
+
     companion object {
-        val defaultAbilityColor = Color.WHITE
+        val defaultAbilityColor = FantasyCard.textColor
         val defaultKeywordColor = FantasyCard.keywordColor
+
+        val airSpr = Textures.air.asSprite()
+        val darkSpr = Textures.dark.asSprite()
+        val earthSpr = Textures.earth.asSprite()
+        val fireSpr = Textures.fire.asSprite()
+        val lightSpr = Textures.light.asSprite()
+        val waterSpr = Textures.water.asSprite()
+
+        val sprites = mapOf(
+            "air_mana" to airSpr, "air_land" to airSpr,
+            "dark_mana" to darkSpr, "dark_land" to darkSpr,
+            "earth_mana" to earthSpr, "earth_land" to earthSpr,
+            "fire_mana" to fireSpr, "fire_land" to fireSpr,
+            "light_mana" to lightSpr, "light_land" to lightSpr,
+            "water_mana" to waterSpr, "water_land" to waterSpr
+        )
     }
 }
