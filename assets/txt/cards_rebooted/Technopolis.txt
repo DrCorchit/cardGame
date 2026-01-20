@@ -5,14 +5,14 @@ Capacitor: 1a 2/2p [Technopolis, Machine] [When tapped, either:#Expend X light_m
 Drone Swarm: 1a 2/2p [Technopolis, Machine] [When played while paired, lock an enemy unit.; When tapped, this unit protects adjacent units.] [Strength in numbers.]
 Scribe: 3/2p [Technopolis, Elf] [Immune.; When you pass, rally 1 for each allied machine you control.] [The records aren't going to keep themselves.]
 Paper Shuffler: 3/2p [Technopolis, Elf] [At turn start, you may draw a card from the top of your deck and move a card from your hand to the top or bottom of your deck.] [Paper is actually kinda heavy.]
-Dynamo: 4/2p [Technopolis, Machine] [At turn start, you may expend fire_mana to spawn air_land or light_land] [Ol' Reliable] [land, engine]
-Cyborg: 5/2p [Technopolis, Elf] [You must expend air_land to play this card.] [More machine than man.]
-Electroshock: 2p [Technopolis, Instant, Technology] [When played, either:#Lock a unit and spawn air_land air_land air_land.#Expend X air_land to destroy X equipments on a unit.] [Therapy not included.]
+Dynamo: 4/2p [Technopolis, Machine] [At turn start, you may expend fire_mana to spawn air_mana or light_mana] [Ol' Reliable] [land, engine]
+Cyborg: 5/2p [Technopolis, Elf] [You must expend air_mana to play this card.] [More machine than man.]
+Electroshock: 2p [Technopolis, Instant, Technology] [When played, either:#Lock a unit and spawn air_mana air_mana air_mana.#Expend X air_mana to destroy X equipments on a unit.] [Therapy not included.]
 
 Messenger: 3/3p [Technopolis, Elf] [When moved to the top of your deck, summon self.] [The barristers send their regards.] [pointslam]
-Transformer: 1a 3/3p [Technopolis, Machine] [When played, either:#Convert all water_land and dark_land into light_land.#Convert all fire_land and earth_land into air_land.; When tapped, repeat the "when played" ability.] [Step up the voltage.]
-Engineer: 3/3p [Technopolis, Elf] [When tapped, either:#Expend light_land to purify a unit.#Expend air_land to lock a unit.] [Fix-it Felix just doesn't have the same ring to it.] [utility, control]
-Power Surge: 3/3p [Technopolis, Equipment, Technology] [When equipped to a common unit, untap it and give it haste.] [Power is always dangerous.] [utility, combo]
+Transformer: 1a 3/3p [Technopolis, Machine] [When played, either:#Convert all water_mana and dark_mana into light_mana.#Convert all fire_mana and earth_mana into air_mana.; When tapped, repeat the "when played" ability.] [Step up the voltage.]
+Engineer: 3/3p [Technopolis, Elf] [When tapped, either:#Expend light_mana to purify a unit.#Expend air_mana to lock a unit.] [Fix-it Felix just doesn't have the same ring to it.] [utility, control]
+Power Surge: 3/3p [Technopolis, Equipment, Technology] [When equipped to a common unit, untap it.] [Power is always dangerous.] [utility, combo]
 Battery: 1a 4/3p [Technopolis, Machine] [When tapped, spawn light_land light_land light_land or air_land air_land air_land.] [Keeps going and going and... oh it's dead already.] [land]
 Archivist: 4/3p [Technopolis, Elf] [When played, look at the top two cards from either player's deck and move one to the top.; When activated, repeat the "when played" ability.] [Our records are perfect, according to our records.]
 Pulverizer: 1a 6/3p [Technopolis, Machine] [You must expend air_land air_land to play this unit.] [Resistance is futile.]
@@ -36,17 +36,17 @@ Argos, Arbiter: 2/6p [Technopolis, Elf, Rare] [When played, either:#Play the top
 Sophos, Ordinator: 4/6p [Technopolis, Elf, Rare] [When played, move 2 cards to the top of your deck.; You must expend light_land light_land to tap this unit.; When tapped, repeat the "when played" ability.] [No plan is ever perfect. Except mine.]
 Time Travel: 6p [Technopolis, Instant, Technology, Legendary] [When played, move a unit to the top of its owner's deck.] [In the year 2525...]
 
-Android Replica: 1/7p [Technopolis, Machine, Rare] [Haste.; When tapped, trigger an enemy unit's "when played" ability as if it were on your battlefield.] [Anything you can do, I can do better.]
-X Æ A-12: 2a 4/7p [Technopolis, Machine, Legendary] [When tapped, give an allied unit haste.; At turn start, you may expend light_land to untap this card and give it haste.] [Do it faster, work it harder.]
+Android Replica: 1/7p [Technopolis, Machine, Rare] [Haste.; When tapped, trigger an enemy unit's "when played" ability as if it had been played by you.] [Anything you can do, I can do better.]
+X Æ A-12: 2a 4/7p [Technopolis, Machine, Legendary] [When tapped, give an allied unit haste.; At turn start, you may expend light_land to untap this card.] [Do it faster, work it harder.]
 
 Codex Veritas: 8p [Technopolis, Emplacement, Book, Legendary] [When played, move 2 cards to the top of your deck.; When tapped, play the card at the top of your deck.] [No-one ever reads past the abstract because there's a paywall.]
-System Reboot: 8p [Technopolis, Instant, Legendary] [Untap all allied units and give them haste.] [Have you tried turning it off and on again?]
+System Reboot: 8p [Technopolis, Instant, Rare] [Untap all allied units.] [Have you tried turning it off and on again?]
 Reverse Engineering: 8p [Technopolis, Instant, Technology, Legendary] [When played, play a card from your opponent's graveyard.] [Sometimes, the imitation is better than the original.]
 
 Logos, Oracle: 4/9p [Technopolis, Elf, Legendary] [When tapped, play a card from your deck.] [Know thyself.]
 Teleportation: 9p [Technopolis, Instant, Technology, Legendary] [Echo.; When played, play a unit from your deck.] [What could possibly go wrong?]
 
-Orthos, Orchestrator: 5/10p [Technopolis, Elf, Legendary] [Haste.; When tapped, untap an allied card and give it haste.] [Actually, science hasn't gone far enough.]
+Orthos, Orchestrator: 5/10p [Technopolis, Elf, Legendary] [Haste.; When tapped, untap an allied card.] [Actually, science hasn't gone far enough.]
 Teknos, Grand Artificer: 1/10p [Technopolis, Elf, Legendary] [When played, you may expend 2X light_land to resurrect X common machines.;] ["Grand Artificer" is a code word for "Huge Nerd"]
 
 #Further ideas: Monks

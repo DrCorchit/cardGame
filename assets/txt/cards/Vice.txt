@@ -2,7 +2,7 @@ Moomsh Addict: 1/2p [Vice, Human] [When activated, destroy self and play a commo
 Snitch: 1/2p [Vice, Human, Spy] [Disloyal.; When played, play a common crime from your graveyard.] [Hey, pssst!]
 Beggar: 2/2p [Vice, Human] [At turn start (chaos 4), rally 1.;Whenever you play a crime, reroll 1.] [Alms for the poor?]
 Constable: 2/2p [Vice, Human] [When played, lock a unit.] [You're under arrest.]
-Harlequin: 3/2p [Vice, Human] [When played, Reroll 1.; At turn start, swap an enemy_land with a common or allied_land.] [Tricked ya again!]
+Harlequin: 3/2p [Vice, Human] [When played, Reroll 1.; At turn start, swap an enemy_mana with a common or allied_mana.] [Tricked ya again!]
 Hired Muscle: 1a 3/2p [Vice, Human, Henchman] [When an adjacent unit is destroyed, summon another Hired Muscle.] [Watch it, twerp.]
 Neighborhood Bully: 4/2p [Vice, Human, Henchman] [Chaos 4 is required to play this unit.; When paired, your chaos level is increased by 1.] [Says who? My fist, that's who!]
 Shiv: 2p [Vice, Equipment, Weapon, Crime] [When equipped, assault 2.; If the equip target is a henchman, assassinate 2 instead.] [In prison, these things are cutting-edge technology.]
@@ -21,12 +21,12 @@ Hypnotist: 1/4p [Vice, Human, Spy] [Disloyal.; When played, seize 2.] [What a ca
 Hitman: 1/4p [Vice, Human, Spy] [Disloyal.; When played (chaos X), assassinate X.] [I never hurt nobody that ain't had it comin'.]
 Man Mountain: 7/4p [Vice, Human, Henchman] [Chaos 5 is required to play this card.] [(indecipherable grunting)]
 
-Maximillian, Slumlord: 4/4p [Vice, Human, Caporegime, Rare] [When played, move one of your opponent's_land dice to the common pool.; When destroyed, move it back.] [Su casa es mi casa.]
+Maximillian, Slumlord: 4/4p [Vice, Human, Caporegime, Rare] [When played, move one of your opponent's_mana dice to the common pool.; When destroyed, move it back.] [Su casa es mi casa.]
 Captain Ernesto: 4/4p [Vice, Human, Henchman, Rare] [When activated, assault 4 and destroy self.] [If it's a fight ye wants...]
 The Butcher: 1/4p [Vice, Human, Spy, Rare] [Disloyal.; When played, assassinate adjacent units by 3.] [Nice to meat you!]
 
 Inspector Culso: 2/5p [Vice, Human, Spy, Rare] [Disloyal.; When played (chaos X), look at all cards from your opponent's deck with a provision cost of X or less and play one.] [With me, surprises are rarely unexpected.]
-The Dollhouse: 5p [Vice, Emplacement, Location, Rare] [When played, play a Moomsh Addict or_landlady from your deck.; Adjacent Moomsh Addicts and_landladies do not destroy themselves.] [If home is where the heart is, then they're homeless.]
+The Dollhouse: 5p [Vice, Emplacement, Location, Rare] [When played, play a Moomsh Addict or_manalady from your deck.; Adjacent Moomsh Addicts and_manaladies do not destroy themselves.] [If home is where the heart is, then they're homeless.]
 
 The Quartermaster: 2/6p [Vice, Human, Spy, Rare] [When played, play a common spy from your deck.] [Take whatcha need for the job and scram.]
 Madame Baghat: 3/6p [Vice, Human, Caporegime, Rare] [When played (chaos X), play a unit with X or fewer provisions from your deck.] [If anyone calls me "Bag Hat" one more time...]

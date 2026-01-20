@@ -73,7 +73,7 @@ enum class Motive(override val color: Color): Faction {
     // Tutoring
     Rage("a03000"),
 
-    //Flavor: Chaos/Dark_land focused. Criminals, necromancers, and demons.
+    //Flavor: Chaos/Dark land focused. Criminals, necromancers, and demons.
     //Control plus greed and engines.
     //Has:
     // Assassinate and Seize

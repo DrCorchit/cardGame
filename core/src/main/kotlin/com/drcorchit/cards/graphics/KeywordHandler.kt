@@ -113,12 +113,12 @@ class KeywordHandler(
         val waterSpr = Textures.water.asSprite()
 
         val sprites = mapOf(
-            "air_mana" to airSpr, "air_land" to airSpr,
-            "dark_mana" to darkSpr, "dark_land" to darkSpr,
-            "earth_mana" to earthSpr, "earth_land" to earthSpr,
-            "fire_mana" to fireSpr, "fire_land" to fireSpr,
-            "light_mana" to lightSpr, "light_land" to lightSpr,
-            "water_mana" to waterSpr, "water_land" to waterSpr
+            "air_mana" to airSpr,
+            "dark_mana" to darkSpr,
+            "earth_mana" to earthSpr,
+            "fire_mana" to fireSpr,
+            "light_mana" to lightSpr,
+            "water_mana" to waterSpr,
         )
     }
 }

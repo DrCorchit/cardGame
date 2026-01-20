@@ -5,8 +5,8 @@ import com.drcorchit.cards.graphics.Textures
 import com.drcorchit.cards.graphics.Textures.asSprite
 import com.drcorchit.justice.utils.math.Compass
 
-enum class City(override val color: Color): Faction {
-    Yeoman("603000"),
+enum class City(override val color: Color, val adj: String): Faction {
+    Yeomen("603000", "Yeoman"),
 
     //Earth/Water/Air land, diverse racial groups
     //Has:
@@ -20,12 +20,12 @@ enum class City(override val color: Color): Faction {
     //Does not have:
     // Tempo-thinning
     // Tall-Punish
-    Avalon("106010"),
+    Avalon("106010", "Avalonian"),
 
     //Air/Light land
     // Strengths: Excellent tutoring and various answers
     //Limitations: lacking tempo and direct removal
-    Technopolis("4060a0"),
+    Technopolis("4060a0", "Technopolitan"),
 
     //a84d2a, 930, 830
     //Identity: Fire land, dragons and dwarves.
@@ -41,7 +41,7 @@ enum class City(override val color: Color): Faction {
     // Tall punish
     // Removal instants.
     // Reliable tutors for high-end cards
-    Transylvania("444444"),
+    Transylvania("444444", "Transylvanian"),
 
     //68135e, 630, c62, c30
     //Strengths: Good bronze cards and direct removal
@@ -56,7 +56,7 @@ enum class City(override val color: Color): Faction {
     //Does not have:
     // Deflection
     // Tutoring
-    Thalassa("a03000"),
+    Thalassa("a03000", "Thalassan"),
 
     //Flavor: Chaos/Dark land focused. Criminals, necromancers, and demons.
     //Control plus greed and engines.
@@ -68,12 +68,12 @@ enum class City(override val color: Color): Faction {
     //Does not have:
     // Protection or deflection
     // Reliable tutoring
-    Vulcania("d07020");
+    Vulcania("d07020", "Vulcanian");
 
-    constructor(color: String) : this(Color.valueOf(color))
+    constructor(color: String, adj: String) : this(Color.valueOf(color), adj)
 
     val texture by lazy { Textures.initTexture("${name.lowercase()}.png") }
     override val image by lazy { texture.asSprite().setOffset(Compass.CENTER) }
-    override val secondaryColor = Color(color.r + .12f, color.g + .12f, color.b + .12f, .40f)
+    override val secondaryColor = Color(color.r + .12f, color.g + .12f, color.b + .12f, .35f)
 }
 

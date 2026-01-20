@@ -29,7 +29,7 @@ class FantasyCard(
     val abilities: List<String>,
     val quote: String,
     val strategyTags: List<String>
-): Drawable {
+) : Drawable {
     val type = if (tags.contains("Instant")) {
         CardType.Instant
     } else if (tags.contains("Equipment")) {
@@ -41,11 +41,6 @@ class FantasyCard(
     } else {
         throw Exception("Unknown card type: $this")
     }
-
-//    val race = when (type) {
-//        CardType.Unit -> tags.firstOrNull { it.equals() }
-//            else -> type.name
-//    }
 
 //    val motive = tags.firstNotNullOfOrNull {
 //        try {
@@ -63,7 +58,7 @@ class FantasyCard(
             println("No city for card $name")
             null
         }
-    } ?: City.Yeoman
+    } ?: City.Yeomen
 
     val faction: Faction = city
 
@@ -75,9 +70,26 @@ class FantasyCard(
         }
     } ?: Rarity.Common
 
+    /*
     val tagsText =
         tags.subtract(setOf("Common", "Rare", "Legendary", "Instant", "Equipment", "Emplacement"))
             .joinToString(", ")
+     */
+
+    val tagsText = run {
+        val miscTags = tags.toSet()
+            .subtract(Rarity.entries.map { it.name }.toSet())
+            .subtract(setOf(city.name))
+            .subtract(setOf("Unit", "Instant", "Equipment", "Emplacement"))
+            .subtract(Race.entries.map { it.name }.toSet())
+
+        val race = Race.detectRacialTag(tags, type)
+
+        val prefix = "${city.adj} $race"
+        val suffix = miscTags.joinToString(", ")
+        if (miscTags.isEmpty()) prefix else "$prefix — $suffix"
+    }
+
     val abilityText = abilities
         .joinToString("\n") { it.trim() }
         .replace("#", "\n > ")
@@ -95,7 +107,8 @@ class FantasyCard(
 
     var image: AnimatedSprite? = updateGraphic()
 
-    override val outputLocation = "output/images/full/cards/${rarity.name.normalize()}/${name.normalize()}.png"
+    override val outputLocation =
+        "output/images/full/cards/${rarity.name.normalize()}/${name.normalize()}.png"
 
     constructor(json: JsonObject) : this(
         json["name"].asString,
@@ -175,8 +188,9 @@ class FantasyCard(
         val costX = W + BORDER - costBackOffset
         val costY = BORDER + costBackOffset
 
-        val armorBackW = 80f
-        val armorBackH = 100f
+        //8x10 aspect ratio preferred
+        val armorBackW = 72f
+        val armorBackH = 90f
         val armorX = BORDER + costBackOffset
         val armorY = BORDER + costBackOffset
 
