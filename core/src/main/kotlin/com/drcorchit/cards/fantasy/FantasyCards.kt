@@ -87,6 +87,15 @@ object FantasyCards {
             //println("Unused card arts {\n  ${folder.joinToString("\n  ")}\n}")
         }
 
+        /*
+        val tagsCount = cards.flatMap { it.tags }.groupBy { it }.mapValues { it.value.size }
+        tagsCount.forEach { (tag, count) -> println("Tag [$tag]: $count") }
+
+        val keywordsCount =
+            cards.flatMap { it.keywords }.groupBy { it }.mapValues { it.value.size }
+        keywordsCount.forEach { (keyword, count) -> println("Keyword [${keyword.name}]: $count") }
+        */
+
         val cardsByCity = cards.groupBy { card -> card.city }
             .mapValues { it.value.groupBy { card -> card.rarity } }
 
@@ -96,7 +105,7 @@ object FantasyCards {
                     return entry.value[rarity]?.size ?: 0
                 }
 
-                val str = "%-10s %3d %3d %3d".format(
+                val str = "%-12s %3d %3d %3d".format(
                     entry.key,
                     count(Rarity.Common),
                     count(Rarity.Rare),
@@ -122,13 +131,6 @@ object FantasyCards {
 
         val count = City.entries.sumOf { factionCount(it) }
         println("Total printable cards: $count")
-
-        val tagsCount = cards.flatMap { it.tags }.groupBy { it }.mapValues { it.value.size }
-        tagsCount.forEach { (tag, count) -> println("Tag [$tag]: $count") }
-
-        val keywordsCount =
-            cards.flatMap { it.keywords }.groupBy { it }.mapValues { it.value.size }
-        keywordsCount.forEach { (keyword, count) -> println("Keyword [${keyword.name}]: $count") }
 
         //print card issues here
         cards.forEach {

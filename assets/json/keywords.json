@@ -40,7 +40,7 @@
   },
   {
     "name": "Protect",
-    "description": "Prevent a unit from being targeted by your opponent. A card that provides protection cannot be protected.",
+    "description": "Prevent a unit from being targeted by your opponent. A protector cannot be protected.",
     "synonyms": ["Protects", "Protecting", "Protected", "Protector"]
   },
   {
@@ -69,7 +69,7 @@
   {
     "name": "Seize X",
     "description": "Move an enemy unit of X or less power to your battlefield.",
-    "synonyms": ["Seize", "Seizes", "Seized"]
+    "synonyms": ["Seize", "seizes", "seized"]
   },
   {
     "name": "Armor X",
@@ -79,7 +79,7 @@
   {
     "name": "Overkill X",
     "description": "The amount an assault exceeds its target's power.",
-    "synonyms": ["Overkill"]
+    "synonyms": ["overkill"]
   },
   {
     "name": "Disloyal",
@@ -88,7 +88,7 @@
   },
   {
     "name": "Chaos X",
-    "description": "Triggers if there are at least X unique_land types.",
+    "description": "Triggers if there are at least X unique land types.",
     "synonyms": ["Chaos"]
   },
   {
@@ -97,19 +97,20 @@
   },
   {
     "name": "Echo",
-    "description": "This card can be moved to the top of your deck, once per game."
+    "description": "You may you may move this card to the top of your deck after the end of the round, once per game."
   },
   {
     "name": "Devour",
-    "description": "Destroy a unit and convert it into an equipment. The target's card text is disabled."
+    "description": "Convert a unit into an equipment. The target's abilities are disabled, and any equipment is destroyed."
+  },
+  {
+    "name": "Plunder X",
+    "description": "Rally X when the unit is devoured.",
+    "synonyms": ["plunder"]
   },
   {
     "name": "Devotion",
     "description": "Triggers if your starting deck contains no Yeoman cards."
-  },
-  {
-    "name": "Plunder X",
-    "description": "Award X points when the unit is devoured."
   },
   {
     "name": "Purify",
