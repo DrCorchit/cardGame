@@ -44,17 +44,13 @@ enum class City(override val color: Color, val adj: String): Faction {
     Transylvania("444444", "Transylvanian"),
 
     //68135e, 630, c62, c30
-    //Strengths: Good bronze cards and direct removal
-    //Limitations: Limited tutoring and indirect removal.
     //Identity: Fire/Water land focused, vikings and pirates
     //Has:
     // Removal, removal, and more removal
     // Bronzes: mix of pointslam, engines, and control
     //Some:
-    // Utilities, like Purify and Lock
-    // Tall punish
+    // Lock
     //Does not have:
-    // Deflection
     // Tutoring
     Thalassa("a03000", "Thalassan"),
 

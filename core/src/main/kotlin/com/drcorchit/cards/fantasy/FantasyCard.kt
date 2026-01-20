@@ -203,7 +203,7 @@ class FantasyCard(
         val abilityTextY = strokeY - 60
         val abilityTextW = W - 60f
 
-        val lineY = 110f + BORDER
+        val lineY = 120f + BORDER
         val quoteTextX = midWidth
         val quoteTextY = (lineY + 20 + BORDER) / 2
         val quoteTextW = W - 320f

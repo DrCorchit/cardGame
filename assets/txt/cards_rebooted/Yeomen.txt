@@ -1,3 +1,4 @@
+Unicorn: 2/2p [Yeomen, Beast] [At turn start, spawn a mana color of your choice.] [Always be yourself, unless you can be a unicorn. Then, always be a unicorn.]
 Squirrel: 2/2p [Yeomen, Beast] [When played, you may expend earth_mana to banish a card from your opponent's graveyard.] [Just one badass squirrel. Nothing more, nothing less.]
 Icicle: 2p [Instant, Nature] [When played, you may expend water_mana to assault 2.] [You'll shoot your eye out!]
 Pack Wolf: 2/2p [Beast] [When played while paired, assault 2] [Nice doggy...]
