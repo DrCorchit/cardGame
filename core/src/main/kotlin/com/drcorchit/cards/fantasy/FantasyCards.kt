@@ -135,7 +135,7 @@ object FantasyCards {
         //print card issues here
         cards.forEach {
             if (it.image == null) {
-                println("Card ${it.name} has no art!")
+                println("Card ${it.name} has no art! (checked ${it.name.normalize()}.png and .jpg)")
             }
             if (it.quote.isBlank()) {
                 println("Card ${it.name} has no quote!")

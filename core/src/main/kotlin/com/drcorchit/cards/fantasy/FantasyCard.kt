@@ -15,9 +15,11 @@ import com.drcorchit.cards.graphics.Draw.batch
 import com.drcorchit.justice.utils.StringUtils.normalize
 import com.drcorchit.justice.utils.json.JsonUtils.toJsonArray
 import com.drcorchit.justice.utils.math.Compass
+import com.drcorchit.justice.utils.math.MathUtils
 import com.google.gson.JsonObject
 import com.google.gson.JsonPrimitive
 import java.io.File
+import kotlin.math.max
 import kotlin.math.min
 
 class FantasyCard(
@@ -85,7 +87,7 @@ class FantasyCard(
 
         val race = Race.detectRacialTag(tags, type)
 
-        val prefix = "${city.adj} $race"
+        val prefix = "$rarity ${city.adj} $race"
         val suffix = miscTags.joinToString(", ")
         if (miscTags.isEmpty()) prefix else "$prefix — $suffix"
     }
@@ -197,6 +199,7 @@ class FantasyCard(
         val strokeY = trayHeight + BORDER - 80
         val strokeH = 120f
         val strokeMargin = 200f
+        val strokeMinW = 200f
         val strokeMaxW = W - 50f
 
         val abilityTextX = BORDER + 30f
@@ -295,9 +298,19 @@ class FantasyCard(
         )
 
         //Card Name
-        val dims = Draw.calculateDimensions(Fonts.nameFont, name, W - 50f)
+        val dims1 = Draw.calculateDimensions(Fonts.nameFont, name, W - 50f)
+        val dims2 = Draw.calculateDimensions(Fonts.tagFont, tagsText, W - 50f)
         stroke.blend = faction.secondaryColor
-        val strokeW = min(dims.first + strokeMargin, strokeMaxW)
+
+
+        val strokeW = MathUtils.clamp(
+            strokeMinW,
+            max(
+                dims1.first + strokeMargin,
+                dims2.first + strokeMargin / 2
+            ), strokeMaxW
+        )
+
         stroke.draw(batch, midWidth, strokeY, strokeW, strokeH)
         Draw.drawText(
             midWidth,

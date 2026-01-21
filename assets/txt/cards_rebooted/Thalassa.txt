@@ -23,7 +23,7 @@ Treasure Galleon: 2a 2/4p [Thalassa, Ship] [Plunder 6.] [Don't put all your gold
 Kraken: 1/4p [Thalassa, Monster] [When played, devour an allied ship.; If there is another copy in your deck, summon it.] [Now would be a good time to start screaming.]
 
 Moby Dick: 3/4p [Thalassa, Beast, Rare] [When tapped, devour an allied ship.; When discarded, summon self from your graveyard.] [Thar she blows!]
-Davy Jones: 10/4p [Thalassa, Human, Pirate, Specter, Rare] [This unit starts in your graveyard.] [Life is cruel. Why should the afterlife be any different?]
+Davy Jones: 10/4p [Thalassa, Undead, Pirate, Rare] [This unit starts in your graveyard.] [Life is cruel. Why should the afterlife be any different?]
 Yarn-Spinner Calhoun: 4/4p [Thalassa, Human, Pirate, Rare] [When played, both players draw a card. This ability cannot be used if your opponent has passed.;Instead of drawing the top card from your deck, you may expend X water_mana to draw from the top 2X cards instead.; When tapped, repeat the "when played" ability.] [Lemme tell ya a tale...]
 
 Captain Fribley: 4/5p [Thalassa, Human, Pirate, Rare] [When played, you may expend water_mana water_mana water_mana to place a unit from your graveyard into your hand, then discard a card.;] [A good captain goes down wit' his ship. But I ain't a good captain, har har!]
@@ -35,15 +35,16 @@ Jormungandir: 2a 4/6p [Thalassa, Monster, Rare] [When you pass, you may expend X
 Captain Flint: 1/6p [Thalassa, Human, Pirate, Rare] [When played, either:#Play a Warfare card from your deck.#Expend fire_mana fire_mana and play a Warfare card from your graveyard.] [Yo-ho-ho, and a bottle of rum!]
 
 Anne Bonny: 4/7p [Thalassa, Human, Pirate, Rare] [When played, draw a card and discard a card.; Whenever you discard a card, assault 1.] [No need to call me lady. "Captain" will do just fine.]
-Blackbeard: 5/7p [Thalassa, Human, Pirate, Rare] [When tapped, assault 5 and destroy self.] [He died standing up.]
+Blackbeard: 6/7p [Thalassa, Human, Pirate, Rare] [When tapped, assault 6 and destroy self.; Upon an overkill X, spawn X fire_mana.] [He died standing up.]
 Davy Jones' Locker: 7p [Thalassa, Emplacement, Legendary] [When played, draw a card and discard a card.; Whenever you discard a unit of X provisions, spawn X fire_mana.; Whenever you devour a unit of X provisions, spawn X water_mana.] [Sleep with the fishes.]
 
 Long John Silver: 2/8p [Thalassa, Human, Pirate, Legendary] [When played, banish a unit from your graveyard, then assault a unit by its power.] [I’m cap’n here because I’m the best man by a long sea-mile.]
-The Flying Dutchman: 4/8p [Thalassa, Ship, Specter, Legendary] [When tapped, you may expend X fire_mana to assault 2X.; Upon an overkill X, spawn X water_mana.; Plunder 2.] [Those who see the Flying Dutchman ne'er see the shore!]
-The White Cliffs: 8p [Thalassa, Emplacement, Location, Legendary] [When played, become stalwart.; When tapped, you may expend 2X water_mana to play X Gun cards from your graveyard.; At the start of the round, untap this card.] []
+The Flying Dutchman: 4/8p [Thalassa, Ship, Legendary] [Invisible.; When tapped, you may expend X fire_mana to assault 2X.; Upon an overkill X, spawn X water_mana.] [Those who see the Flying Dutchman ne'er see the shore!]
+Rock of Gibraltar: 8p [Thalassa, Emplacement, Location, Legendary] [When played, become stalwart.; Double the plunder value of adjacent ships.] [Rock solid.]
 
+The White Cliffs: 9p [Thalassa, Emplacement, Location, Legendary] [When played, become stalwart.; When tapped, you may expend 2X water_mana to play X Gun cards from your graveyard.; At the start of the round, untap this card.] []
 Broadside: 9p [Thalassa, Instant, Warfare, Legendary] [Echo.; Assault 4.; Upon an overkill X, look at the top X cards of your deck and play one.] [Full speed ahead!]
-Rock of Gibraltar: 9p [Thalassa, Emplacement, Location, Legendary] [When played, become stalwart.; Double the plunder value of adjacent ships.] [Rock solid.]
+
 
 Queen Anne's Revenge: 1a 1/10p [Thalassa, Ship, Legendary] [When played, assault 2. You may expend 2X fire_mana to intensify the assault by X.; This card's assault also hits units adjacent to the target.; Plunder 2.] [Shiver me timbers!]
-Cthulhu: 4/10p [Thalassa, Monster, Legendary] [When played, expend X water_mana to devour an enemy unit of X power.] [Cthulhu fhtagn!]
+Cthulhu: 4/10p [Thalassa, Undead, Legendary] [When played, expend X water_mana to devour an enemy unit of X power.] [Cthulhu fhtagn!]

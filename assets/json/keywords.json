@@ -16,7 +16,7 @@
   },
   {
     "name": "Spawn",
-    "description": "Turn a number of land dice to the indicated faces.",
+    "description": "Turn a number of mana dice to the indicated faces.",
     "synonyms": ["Spawns", "Spawned"]
   },
   {
@@ -33,10 +33,6 @@
     "name": "Rout X",
     "description": "Subtract X points from your score.",
     "synonyms": ["Rout", "Routs"]
-  },
-  {
-    "name": "Score",
-    "description": "The running total of points gained from Rally or lost from Rout."
   },
   {
     "name": "Protect",
@@ -98,6 +94,10 @@
   {
     "name": "Echo",
     "description": "You may you may move this card to the top of your deck after the end of the round, once per game."
+  },
+  {
+    "name": "Imbibe",
+    "description": "Triggers whenever a liquor card is equipped."
   },
   {
     "name": "Devour",

@@ -1,6 +1,6 @@
 Pixie: 1/2p [Avalon, Fairy] [When played, spawn earth_mana water_mana air_mana.; When tapped, repeat the "when played" ability.] [All you need is a little pixie dust.]
 Fairy Ring: 1/2p [Avalon, Fairy] [When tapped, lock an enemy protector.; At turn start, spawn earth_mana.] [Come dance with us!]
-Firefly: 1/2p [Avalon, Insectoid] [When played, spawn air_mana air_mana.;When played while paired, spawn twice as much air_mana.; When tapped, repeat the "when played" ability.] [Fireflies are proof taht nature is magic.]
+Firefly: 1/2p [Avalon, Insectoid] [When played, spawn air_mana air_mana.;When played while paired, spawn twice as much air_mana.; When tapped, repeat the "when played" ability.] [Fireflies are proof that nature is magic.]
 Pond Naiad: 2/2p [Avalon, Nymph] [At turn start, either:#Spawn water_mana.#Expend water_mana to rally 1.] [Naiads agree that ponds are objectively cuter than lakes.]
 Treant Sapling: 2/2p [Avalon, Treant] [At turn start, either:#Spawn earth_mana.#Expend earth_mana to rally 1.] [They grow up so fast.]
 Will-o'-the-Wisp: 3/2p [Avalon, Fairy] [When played, either:#Purify a unit.#Spawn air_mana.] [Where there's a will, there's a wisp.]
@@ -42,11 +42,11 @@ King Arthur: 1a 5/8p [Avalon, Human, Regent, Legendary] [When a weapon is equipp
 Treant King: 2/8p [Avalon, Treant, Regent, Rare] [When played, play a Harvest from your deck.; When tapped, play a Harvest from your graveyard.] [My crown is called content, a crown that seldom kings enjoy.]
 
 Hurricane: 9p [Avalon, Instant, Nature, Legendary] [Expend 2X air_mana to play the top X cards from your deck, in any order.] [She's a-gonna blow!]
-Queen Titania: 4/9p [Avalon, Fairy, Regent, Legendary] [When played, summon a Pixie on either side of self.; When tapped, spawn earth_mana earth_mana, water_mana water_mana, or air_mana air_mana.] [Hand in hand, with fairy grace, we will sing and bless this place.]
+Queen Titania: 4/9p [Avalon, Fairy, Regent, Legendary] [When played, summon a Pixie on either side of self, from deck or graveyard as desired.; When tapped, spawn earth_mana earth_mana, water_mana water_mana, or air_mana air_mana.] [Hand in hand, with fairy grace, we will sing and bless this place.]
 
 King Oberon: 3/10p [Avalon, Fairy, Regent, Legendary] [Invisible.; At turn start, spawn air_mana.; When tapped, play a Lightning Strike from your graveyard.] [Ill met by moonlight, proud Titania.]
-Allmother: 5/10p [Avalon, Nymph, Legendary] [When played, either:#Expend earth_mana water_mana air_mana to play an Avalon unit from your deck.#Expend earth_mana earth_mana earth_mana to play an Avalon unit from your graveyard.] [No wound too deep, no bone too broken, no heart beyond repair.]
+Allmother: 5/10p [Avalon, Nymph, Legendary] [When played, either:#Expend earth_mana water_mana air_mana to play an Avalonian unit from your deck.#Expend earth_mana earth_mana earth_mana to play an Avalonian unit from your graveyard.] [No wound too deep, no bone too broken, no heart beyond repair.]
 
-The Pied Piper: 1/11p [Avalon, Human, Legendary] [When played, summon all 1-power Avalon units from your graveyard to the right of self, in any order.] [You mustn't forget to pay the piper.]
+The Pied Piper: 1/11p [Avalon, Human, Legendary] [When played, summon all 1-power Avalonian units from your graveyard to the right of self, in any order.] [You mustn't forget to pay the piper.]
 
 #Further ideas: Snow White, Undine, Gawain

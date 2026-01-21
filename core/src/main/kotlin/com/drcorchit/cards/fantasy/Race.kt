@@ -11,10 +11,11 @@ enum class Race {
     Treant,
     Beast,
     Dragon,
-    Machine,
-    Ship,
     Vampire,
-    Monster;
+    Undead,
+    Machine,
+    Ship;
+
 
     companion object {
         fun detectRacialTag(tags: List<String>, cardType: CardType): String {
