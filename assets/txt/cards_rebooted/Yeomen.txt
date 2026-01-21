@@ -8,18 +8,18 @@ Bandit: 4/2p [Yeomen, Human] [At turn start, reroll 1.] [Your money or your life
 Icicle: 2p [Yeomen, Instant, Nature] [When played, you may either:#Spawn water_mana and rally 3.#Expend water_mana and assault 2.] [You'll shoot your eye out!]
 Manacles: 2p [Yeomen, Equipment, Technology] [Disloyal.; When equipped, lock the target.; No additional equipment may be assigned to this unit.] [Don't do anything rash.]
 
-Butler: 1/3p [Yeomen, Human] [When played, rally 2.; When you pass, rally 2.] [Anything you require, sir.]
 Clay Golem: 3a 1/3p [Yeomen, Undead] [At turn start, rally 1.] [Whoever keeps making these, please stop.]
+Butler: 2/3p [Yeomen, Human] [When played, rally 2.; When you pass, rally 2.] [Anything you require, sir.]
 House Elf: 5/3p [Yeomen, Elf] [You must control an emplacement to play this card.] [Master has given <name redacted> a sock!]
 Fireball: 3p [Yeomen, Instant, Spell] [When played, either:#Spawn fire_mana and assault 2.#Expend fire_mana and assault 3.] [I didn't ask how big the room was. I said I cast fireball.]
-Corruption: 3p [Yeomen, Equipment, Crime] [When equipped, rally 6.; If the equip target is destroyed, rout 6.] [For sale, world. Price: your soul.]
+Corruption: 3p [Yeomen, Equipment, Crime] [When equipped, rally 6.; If the equip target is destroyed, lose 6 points.] [For sale, world. Price: your soul.]
 Emissary: 1/3p [Yeomen, Human, Spy] [Disloyal.; When played, play a unit from hand, then draw a card.] [Introducing his most gracious excellency...]
-Halberd: 3p [Yeoman, Equipment, Weapon] [When equipped, rally 2 and assault 2.] [A soldier's weapon.]
+Halberd: 3p [Yeomen, Equipment, Weapon] [When equipped, rally 2 and assault 2.] [A soldier's weapon.]
 Meteorite Strike: 3p [Yeomen, Instant, Spell, Nature] [When played, either:#Spawn air_mana air_mana and assault 2.#Expend air_mana air_mana and assault 4.] [Krakowwww!]
 
 Assassin: 1/4p [Yeomen, Human, Spy] [Disloyal.; When played, Assassinate 4.] [Humans make good assassins. They also make good targets.]
 Saboteur: 2/4p [Yeomen, Human, Spy] [When played, either:#Lock an enemy protector.#Become disloyal and destroy an enemy emplacement.] [If I had a hammer...]
-Living Armor: 3a 1/4p [Yeoman, Undead] [Immune.; A weapon must be equipped to tap this card.; When tapped, unequip an attached weapon and replay it.;] [It's... moving?]
+Living Armor: 3a 1/4p [Yeomen, Undead] [Immune.; A weapon must be equipped to tap this card.; When tapped, unequip an attached weapon and replay it.;] [It's... moving?]
 Mobilization: 4p [Yeomen, Instant, Warfare] [When played, play a 4 provision card from your deck.] [Hut, two, three, four!]
 
 Chimney Sweep: 4/4p [Yeomen, Human, Rare] [When played, banish a card from your opponent's graveyard.; At turn start, repeat this ability.] [A sweep is as lucky as lucky can be.]

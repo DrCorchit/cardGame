@@ -1,4 +1,4 @@
-Moomsh Addict: 1/2p [Transylvania, Human] [When tapped, destroy self and play a common Transylvanian unit from your deck.] [Wish I had some moomsh.]
+Moomsh Addict: 1/2p [Transylvania, Human] [When played, become immune.; When tapped, destroy self and play a common Transylvanian unit from your deck.] [Wish I had some moomsh.]
 Snitch: 1/2p [Transylvania, Human, Spy] [Disloyal.; When played, play a common crime from your graveyard.] [Hey, pssst!]
 Nightcrawler: 2/2p [Transylvania, Vampire] [At turn start, either:#Spawn dark_mana.#Expend dark_mana to rally 1.] [This is the nightcrawler!]
 Beggar: 2/2p [Transylvania, Human] [At turn start (chaos 4), rally 1.;Whenever you play a crime, reroll a common or allied mana die.] [Alms for the poor?]
@@ -10,11 +10,11 @@ Shiv: 2p [Transylvania, Equipment, Weapon, Crime] [When equipped, assault 2.; If
 Intimidation: 2p [Transylvania, Instant, Crime] [Choose 2 of the following abilities:#Rally 2.#Assault 2. #Spawn dark_mana dark_mana dark_mana.] [You can get more of what you want with a kind word and a knife than you can with just a kind word.]
 Moomsh: 2p [Transylvania, Instant, Crime] [Spawn dark_mana dark_mana dark_mana and poison an enemy unit.] [The high to die for?]
 
-Pyromaniac: 2/3p [Transylvania, Vampire, Henchman] [When played, reroll up to 3 common or allied mana dice.; When tapped (chaos X), assault X.] [Something not being on fire is usually a very easy problem to solve.]
+Pyromaniac: 2/3p [Transylvania, Vampire, Henchman] [When played, become immune and reroll up to 3 common or allied mana dice.; When tapped (chaos X), assault X.] [Something not being on fire is usually a very easy problem to solve.]
 Street Thug: 1a 3/3p [Transylvania, Human, Henchman] [When tapped, lock an enemy unit.; Chaos 5: Gain haste.] [The enemy can't steal our plans if we don't have any plans.]
 Moomsh Dealer: 3/3p [Transylvania, Human, Henchman] [When played, poison a unit.] [First one's on the house.]
 Vampiric Abomination: 4/3p [Transylvania, Vampire] [When played, gain poison.; You must expend dark_mana dark_mana dark_mana to tap this unit.; When tapped, move all statuses on self to another unit.] [The horror!]
-Landlady: 6/3p [Transylvania, Vampire] [When an adjacent unit is destroyed, also destroy self.] [It's a beautiful day for an eviction.]
+Landlady: 6/3p [Transylvania, Vampire] [When played, become immune.; When an adjacent unit is destroyed, also destroy self.] [It's a beautiful day for an eviction.]
 Pickpocket: 3p [Transylvania, Instant, Crime] [When played, reroll 6 common or allied mana dice.; Chaos X: Rally X and decrease the reroll amount by X. ] [A fool and his money...]
 
 Bystander: 2/4p [Transylvania, Human] [When tapped, rally by the provision cost of the next unit you assassinate or seize this turn.] [Oh wow, dinner AND a show!]
@@ -40,9 +40,9 @@ Chester Zilch: 1/7p [Transylvania, Vampire, Caporegime, Rare] [While in deck, ei
 Molgrippe, Master Assassin: 2/8p [Transylvania, Human, Henchman, Legendary] [When played, either:#Chaos 5: Assault 5.#Chaos 6: Assassinate 6.] [The anomaly will be corrected momentarily.]
 The Heist: 8p [Transylvania, Instant, Crime, Legendary] [When played, lose X points and seize X.;You cannot play this card in such a way that your score falls below zero.] [The perfect crime.]
 
-Jailbreak: 9p [Transylvania, Instant, Crime, Legendary] [Play a common or rare unit from your graveyard, and gain one of the following effects:#If it's a human, rally 4.; If it's a vampire, assault 2.] []
+Jailbreak: 9p [Transylvania, Instant, Crime, Legendary] [Play a common or rare unit from your graveyard, and gain one of the following effects:#If it's a human, rally 4.; If it's a vampire, assault 2.] [Breaking out: not just for teenagers anymore.]
 
-Yalmamir, Prince of Darkness: 1a 2/10p [Transylvania, Vampire, Kingpin, Legendary] [Haste.; When tapped, you may expend X dark_mana to seize X.; At turn start, untap self.] [A single incompetent enemy is worth a thousand incompetent friends.]
+Yalmamir, Prince of Crime: 1a 2/10p [Transylvania, Vampire, Kingpin, Legendary] [Haste.; When tapped, you may expend X dark_mana to seize X.; Whenever you play a crime, untap this card.] [A single incompetent enemy is worth a thousand incompetent friends.]
 Gladys the Glorious: 1/10p [Transylvania, Vampire, Kingpin, Legendary] [When played, expend 2X dark_mana to summon X common Henchman units from your graveyard.] [I am big. It's the pictures that got smaller.]
 Debutante Ball: 10p [Transylvania, Instant, Legendary] [Play a unit from your deck.;If it's a human, give it stalwart.; If it's a vampire, give it invisible.] [Be there or be square.]
 

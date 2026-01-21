@@ -25,11 +25,6 @@
     "synonyms": ["Rally", "Rallies"]
   },
   {
-    "name": "Rout X",
-    "description": "Subtract X points from your score.",
-    "synonyms": ["Rout", "Routs"]
-  },
-  {
     "name": "Protect",
     "description": "Prevent a unit from being targeted by your opponent. A protector cannot be protected.",
     "synonyms": ["Protects", "Protecting", "Protected", "Protector"]
@@ -84,7 +79,7 @@
   },
   {
     "name": "Paired",
-    "description": "Triggers if you control more than one copy of this card."
+    "description": "Triggers if you play or control a second copy of this card."
   },
   {
     "name": "Echo",
