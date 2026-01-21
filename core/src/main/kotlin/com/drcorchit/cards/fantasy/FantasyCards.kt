@@ -73,7 +73,7 @@ object FantasyCards {
             }
     }
 
-    val cards by lazy { readFrom("assets/txt/cards_rebooted") }
+    val cards by lazy { readFrom("assets/txt/cards") }
 
     init {
         val folder =

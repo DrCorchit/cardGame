@@ -7,7 +7,7 @@ Scribe: 3/2p [Technopolis, Elf] [Immune.; When you pass, rally 1 for each allied
 Paper Shuffler: 3/2p [Technopolis, Elf] [At turn start, you may draw a card from the top of your deck and move a card from your hand to the top or bottom of your deck.] [Paper is actually kinda heavy.]
 Dynamo: 4/2p [Technopolis, Machine] [At turn start, you may expend fire_mana to spawn air_mana or light_mana] [Ol' Reliable] [land, engine]
 Cyborg: 5/2p [Technopolis, Elf] [You must expend air_mana to play this card.] [More machine than man.]
-Electroshock: 2p [Technopolis, Instant, Technology] [When played, either:#Lock a unit and spawn air_mana air_mana air_mana.#Expend X air_mana to destroy X equipments on a unit.] [Therapy not included.]
+Electroshock: 2p [Technopolis, Instant, Technology] [When played, either:#Lock a unit and spawn air_mana air_mana air_mana.#Expend air_mana to remove all equipments from a unit.] [Therapy not included.]
 
 Messenger: 3/3p [Technopolis, Elf] [When moved to the top of your deck, summon self.] [The barristers send their regards.] [pointslam]
 Transformer: 1a 3/3p [Technopolis, Machine] [When played, either:#Convert all water_mana and dark_mana into light_mana.#Convert all fire_mana and earth_mana into air_mana.; When tapped, repeat the "when played" ability.] [Step up the voltage.]

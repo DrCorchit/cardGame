@@ -15,7 +15,7 @@ Cave Dragon: 6/3p [Vulcania, Dragon] [Expend fire_mana fire_mana to play this ca
 Golden Froth: 2/3p [Vulcania, Equipment, Armor] [At turn start, rally 1.] [Beer is proof that God loves dwarves and wants them to be happy.]
 Dragonbrew Reserve: 4/3p [Vulcania, Equipment, Armor] [At turn start, spawn fire_mana.] [Spill a barrel of this stuff, and you'll learn a thing or two about dwarven hospitality.]
 Dwarfsteel Battleaxe: 3p [Vulcania, Equipment, Weapon] [When equipped, assault 2.; When tapped to assault 1.] [Even dwarven battleaxes have beards...]
-Natural Spring Water: 4/3p [Vulcania, Equipment, Rare] [When equipped, purify the target.] [Pure, refreshing goodness.]
+Natural Spring Water: 4/3p [Vulcania, Equipment] [When equipped, purify the target.] [Pure, refreshing goodness.]
 
 Dwarven Engineer: 1a 2/4p [Vulcania, Dwarf] [You must expend fire_mana fire_mana to tap this card.; When tapped, make a common unit stalwart.; At turn start, untap this card.] [Unlike elves, dwarves don't let computers do their thinkin' for 'em.]
 Dwarven Warrior: 1a 3/4p [Vulcania, Dwarf] [Imbibe to rally 2.; When tapped, assault 1 for each equipped Weapon or Liquor card.] [Born to drink, forced to fight.]
