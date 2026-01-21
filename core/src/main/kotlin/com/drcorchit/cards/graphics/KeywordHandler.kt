@@ -30,12 +30,11 @@ class KeywordHandler(
     }
 
     private fun makeLine(string: String): Line? {
-        return if (string.isBlank()) null else Line(string)
+        return if (string.isBlank()) null else Line(string.trim())
     }
 
     inner class Line(text: String) {
-        val words = Regex("\\b").splitToSequence(text).mapNotNull { makeWord(it) }
-        //.split("\b").mapNotNull { makeWord(it) }
+        val words = wordSplit.split(text).map { makeWord(it) }
 
         private fun makeWord(string: String): Word {
             if (sprites[string.normalize()] != null) return SpriteWord(string)
@@ -102,6 +101,8 @@ class KeywordHandler(
     }
 
     companion object {
+        val wordSplit = Regex("\\b")
+
         val defaultAbilityColor = FantasyCard.textColor
         val defaultKeywordColor = FantasyCard.keywordColor
 

@@ -1,21 +1,13 @@
 package com.drcorchit.cards.fantasy
 
 enum class Race {
-    //Unit races
-    Human,
-    Elf,
-    Dwarf,
-    Fairy,
-    Dryad,
-    Nymph,
-    Treant,
-    Beast,
-    Dragon,
-    Vampire,
-    Undead,
-    Machine,
-    Ship;
+    Human, Elf, Dwarf,
 
+    Fairy, Dryad, Nymph, Treant, Beast,
+
+    Dragon, Vampire, Undead, Demon,
+
+    Machine, Ship;
 
     companion object {
         fun detectRacialTag(tags: List<String>, cardType: CardType): String {

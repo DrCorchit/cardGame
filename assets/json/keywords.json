@@ -20,11 +20,6 @@
     "synonyms": ["Spawns", "Spawned"]
   },
   {
-    "name": "Reroll X",
-    "description": "Reroll X common or allied mana dice.",
-    "synonyms": ["Reroll", "Rerolls"]
-  },
-  {
     "name": "Rally X",
     "description": "Add X points to your score.",
     "synonyms": ["Rally", "Rallies"]
@@ -84,7 +79,7 @@
   },
   {
     "name": "Chaos X",
-    "description": "Triggers if there are at least X unique land types.",
+    "description": "Triggers if there are at least X unique mana types.",
     "synonyms": ["Chaos"]
   },
   {
@@ -125,10 +120,6 @@
     "description": "A unit is destroyed if it receives two instances of this status."
   },
   {
-    "name": "Contract",
-    "description": "Status that causes the opponent to rally 3 when this unit is destroyed or banished."
-  },
-  {
     "name": "Stalwart",
     "description": "Status that allows the unit to remain on the battlefield after the round ends."
   },
@@ -138,6 +129,6 @@
   },
   {
     "name": "Invisible",
-    "description": "Status that prevents the unit from being targeted by hostile abilities."
+    "description": "Status that prevents the unit from being targeted."
   }
 ]

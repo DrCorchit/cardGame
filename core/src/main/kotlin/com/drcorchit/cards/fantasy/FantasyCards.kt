@@ -87,14 +87,14 @@ object FantasyCards {
             //println("Unused card arts {\n  ${folder.joinToString("\n  ")}\n}")
         }
 
-        /*
+        //*
         val tagsCount = cards.flatMap { it.tags }.groupBy { it }.mapValues { it.value.size }
         tagsCount.forEach { (tag, count) -> println("Tag [$tag]: $count") }
 
         val keywordsCount =
             cards.flatMap { it.keywords }.groupBy { it }.mapValues { it.value.size }
         keywordsCount.forEach { (keyword, count) -> println("Keyword [${keyword.name}]: $count") }
-        */
+        //*/
 
         val cardsByCity = cards.groupBy { card -> card.city }
             .mapValues { it.value.groupBy { card -> card.rarity } }

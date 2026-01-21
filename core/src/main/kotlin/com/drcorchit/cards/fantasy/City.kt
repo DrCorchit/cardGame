@@ -6,8 +6,6 @@ import com.drcorchit.cards.graphics.Textures.asSprite
 import com.drcorchit.justice.utils.math.Compass
 
 enum class City(override val color: Color, val adj: String): Faction {
-    Yeomen("603000", "Yeoman"),
-
     //Earth/Water/Air land, diverse racial groups
     //Has:
     // Good land sources
@@ -64,7 +62,10 @@ enum class City(override val color: Color, val adj: String): Faction {
     //Does not have:
     // Protection or deflection
     // Reliable tutoring
-    Vulcania("d07020", "Vulcanian");
+    Vulcania("d07020", "Vulcanian"),
+
+    //Commonly available cards
+    Yeomen("603000", "Yeoman");
 
     constructor(color: String, adj: String) : this(Color.valueOf(color), adj)
 
