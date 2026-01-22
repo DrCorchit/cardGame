@@ -10,6 +10,7 @@ import com.drcorchit.cards.Main.Companion.IMAGE_H
 import com.drcorchit.cards.Main.Companion.IMAGE_W
 import com.drcorchit.cards.SpaceCard2LargeWindow.Companion.cardbacks
 import com.drcorchit.cards.SpaceCard2LargeWindow.Companion.disasters
+import com.drcorchit.cards.fantasy.FantasyCards
 import com.drcorchit.cards.graphics.Draw
 import com.drcorchit.cards.graphics.Drawable
 import java.io.File
@@ -20,9 +21,14 @@ import java.util.zip.Deflater
  */
 class GenerateCards : ApplicationAdapter() {
     var index = 0
-    val cards by lazy {
+
+    val spaceCards by lazy {
         SpaceCards.cards + disasters + cardbacks
     }
+
+    val fantasyCards by lazy { FantasyCards.cards }
+
+    val cards by lazy { fantasyCards }
 
     override fun create() {
         //Load the batch
