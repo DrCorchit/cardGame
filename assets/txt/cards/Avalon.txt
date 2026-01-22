@@ -6,20 +6,20 @@ Treant Sapling: 2/2p [Avalon, Treant] [At turn start, either:#Spawn earth_mana.#
 Will-o'-the-Wisp: 3/2p [Avalon, Fairy] [When played, either:#Purify a unit.#Spawn air_mana.] [Where there's a will, there's a wisp.]
 Bullfrog Army: 3/2p [Avalon, Beast] [You must expend water_mana to tap this card.; When tapped, assault 1.; When tapped while paired, assault 2 instead.] [Survivors describe their attacks as a ribbeting experience.]
 Sleeping Bear: 5/2p [Avalon, Beast] [You must expend earth_mana to play this card.] [Let sleeping bears lie.]
-Lifegiving Rainfall: 2p [Avalon, Equipment, Nature] [When equipped, spawn earth_mana, water_mana, or air_mana.; At turn start, repeat the "when equipped" ability.] [Every rainstorm begins with a single drop.]
+Lifegiving Rainfall: 2/2p [Avalon, Equipment, Nature] [At turn start, spawn earth_mana, water_mana, or air_mana.] [Every rainstorm begins with a single drop.]
 
 Treant Sage: 2/3p [Avalon, Treant] [When played, become immune.; When you pass, rally 1 for each Nature card in your graveyard.] [I think, therefore... hmmm...]
 Mermaid: 3/3p [Avalon, Nymph] [At turn start, you may either:#Expend earth_mana to spawn water_mana water_mana.#Expend water_mana to spawn earth_mana air_mana.#Expend air_mana to spawn water_mana water_mana.] [Such a beautiful song...]
 Dryad Grovekeeper: 3/3p [Avalon, Nymph] [When played, spawn earth_mana earth_mana, water_mana water_mana, or air_mana air_mana.; When tapped, repeat the "when played" ability.] [Nature always provides.]
-Dryad Ranger: 4/3p [Avalon, Nymph] [When played, become immune. You must expend air_mana to tap this unit.; When tapped, lock a unit.] [You ever feel like you're being watched?]
+Dryad Ranger: 4/3p [Avalon, Nymph] [When played, become immune.; You must expend air_mana to tap this unit.; When tapped, lock a unit.] [You ever feel like you're being watched?]
 Warthog: 3/3p [Avalon, Beast] [When played, you may expend earth_mana earth_mana to assault 3.] [Oink! Oink!]
-Oceanid: 7/3p [Avalon, Nymph] [Expend water_mana water_mana water_mana to play this card.] [No man can withstand the wrath of the sea.]
+Oceanid: 7/3p [Avalon, Nymph] [Expend water_mana water_mana to play this card.] [No man can withstand the wrath of the sea.]
 Lightning Strike: 3p [Avalon, Instant, Nature] [When played, assault 2.; You may expend X air_mana to increase the assault by X.] [You've been thunderstruck.]
-Forest Fire: 3p [Avalon, Instant, Nature] [When played, destroy an allied unit and spawn earth mana equal to it's power.; Afterwards, you may convert X earth_mana to fire_mana and play a unit from your graveyard of X or fewer provisions.] [Flames clear the way for new growth.]
+Forest Fire: 3p [Avalon, Instant, Nature] [When played, destroy an allied unit and spawn earth mana equal to its power.; Afterwards, you may convert X earth_mana to fire_mana and play a unit from your graveyard of X or fewer provisions.] [Flames clear the way for new growth.]
 
 Heartwood Treant: 4/4p [Avalon, Treant] [You must expend earth_mana water_mana air_mana to tap this unit.; When tapped, become stalwart.] [Some people just can't see the forest for the trees.]
-Hamadryad: 1a 4/4p [Avalon, Nymph] [You must expend earth_mana water_mana air_mana to tap this unit.; While tapped, protect adjacent units.] [Every life matters. So does every death.]
-Mountain Gorilla: 4/4p [Avalon, Beast] [When tapped, you may expend X earth_mana to rally X.] [A mountain of muscle.]
+Hamadryad: 1a 3/4p [Avalon, Nymph] [When played, become immune.; You must expend earth_mana water_mana air_mana to tap this unit.; While tapped, protect adjacent units.] [Every life matters. So does every death.]
+Mountain Gorilla: 5/4p [Avalon, Beast] [When played, become immune.; When tapped, you may expend X earth_mana to rally X.] [A mountain of muscle.]
 Harvest: 4p [Avalon, Instant, Nature] [Combine up to 3 of the following effects:#Expend X earth_mana and rally X.#Expend X water_mana and assault X.#Expend X air_mana and increase other effects by X.] [A time to sow, a time to reap...]
 
 Arondight: 4p [Avalon, Equipment, Weapon, Rare] [When equipped, assault 4.; This card's assault ignores armor.] [Cuts like a knife through butter.] [removal]
@@ -30,23 +30,23 @@ Alraune: 4/5p [Avalon, Fairy, Rare] [When played, change all light_mana into ear
 Thunderstorm: 5p [Avalon, Instant, Nature, Rare] [Echo.; When played, spawn water_mana air_mana and play a Nature card from your deck.] [She's a-gonna blow!]
 Puck: 1/5p [Avalon, Fairy, Rare] [Disloyal.; When played, play a unit from your deck whose provision cost exceeds Puck's.] [Give me your hands, if we be friends.]
 
-Bamboo Grove: 6p [Avalon, Emplacement, Nature, Rare] [You must expend earth_mana water_mana to tap this card.; When tapped, play a common Nature card from your graveyard and banish it.; At the start of your turn, untap this card.] [Nothing grows faster, or thicker.]
-Lancelot: 2a 5/6p [Avalon, Human, Rare] [You must expend air_mana air_mana to tap this card.; While tapped, protect the highest provision unit(s) you control.] [I am never in the dark when I am protecting you.]
-Guinevere: 5/7p [Avalon, Human, Rare] [When you pass, rally 1 for each earth_mana, water_mana, or air_mana.] [Talk not of faith, for you have none in you.]
+Bamboo Grove: 6p [Avalon, Emplacement, Nature, Rare] [When played, become stalwart.; When tapped, Rally 4.; At turn start, you may expend earth_mana water_mana to untap this card.] [Nothing grows faster, or thicker.]
+Lancelot: 2a 7/6p [Avalon, Human, Rare] [Whenever a Weapon is equipped, you may destroy an enemy equipment.] [I am never in the dark when I am protecting you.]
+Guinevere: 5/6p [Avalon, Human, Rare] [When you pass, rally 1 for each earth_mana, water_mana, or air_mana among common or allied mana dice.] [Talk not of faith, for you have none in you.]
 
 Lady of the Lake: 1/7p [Avalon, Human, Rare] [At the start of your turn, you may expend water_mana water_mana water_mana to play this card from your deck.; When tapped, play a Weapon from your deck.] [One so fair and full of grace.]
 Merlin: 1/7p [Avalon, Human, Mage, Legendary] [When played, spawn up to 6 mana of any colors you want.; Whenever you play a unit, give it haste.] [Destiny is not a matter of chance. It's a matter of choice.]
-Excalibur: 7p [Avalon, Equipment, Weapon, Legendary] [When equipped, assault 6.; Upon an overkill X: spawn X earth_mana, water_mana, or air_mana.] [Whoso draws this sword, shall be king of Avalon!]
+Excalibur: 7p [Avalon, Equipment, Weapon, Legendary] [When equipped, assault 6.; Overkill X: spawn X earth_mana, water_mana, or air_mana.] [Whoso draws this sword, shall be king of Avalon!]
 
-King Arthur: 1a 5/8p [Avalon, Human, Regent, Legendary] [When a weapon is equipped, either:#Become stalwart.#Rally 2.;] [One day, he will arise and save his homeland of Avalon.]
+King Arthur: 1a 4/8p [Avalon, Human, Regent, Legendary] [When a weapon is equipped, either:#Become stalwart.#Rally 3.;] [One day, he will arise and save his homeland of Avalon.]
 Treant King: 2/8p [Avalon, Treant, Regent, Rare] [When played, play a Harvest from your deck.; When tapped, play a Harvest from your graveyard.] [My crown is called content, a crown that seldom kings enjoy.]
 
 Hurricane: 9p [Avalon, Instant, Nature, Legendary] [Expend 2X air_mana to play the top X cards from your deck, in any order.] [She's a-gonna blow!]
 Queen Titania: 4/9p [Avalon, Fairy, Regent, Legendary] [When played, summon a Pixie on either side of self, from deck or graveyard as desired.; When tapped, spawn earth_mana earth_mana, water_mana water_mana, or air_mana air_mana.] [Hand in hand, with fairy grace, we will sing and bless this place.]
 
-King Oberon: 3/10p [Avalon, Fairy, Regent, Legendary] [When played, become invisible.; At turn start, spawn air_mana.; When tapped, play a Lightning Strike from your graveyard.] [Ill met by moonlight, proud Titania.]
+King Oberon: 4/10p [Avalon, Fairy, Regent, Legendary] [When played, become invisible.; At turn start, spawn air_mana.; When tapped, play a Lightning Strike from your graveyard.] [Ill met by moonlight, proud Titania.]
 Allmother: 5/10p [Avalon, Nymph, Legendary] [When played, either:#Expend earth_mana water_mana air_mana to play an Avalonian unit from your deck.#Expend earth_mana earth_mana earth_mana to play an Avalonian unit from your graveyard.] [No wound too deep, no bone too broken, no heart beyond repair.]
 
 The Pied Piper: 1/11p [Avalon, Human, Legendary] [When played, summon all 1-power Avalonian units from your graveyard to the right of self, in any order.] [You mustn't forget to pay the piper.]
 
-#Further ideas: Snow White, Undine, Gawain
+#Further ideas: Snow White, Undine, Gawain, Robin Hood

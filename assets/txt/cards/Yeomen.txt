@@ -47,4 +47,4 @@ Field Marshall: 4/8p [Yeomen, Human, Legendary] [When played, swap a card in han
 Prophecy: 9p [Yeomen, Instant, Spell, Legendary] [Echo.; When played, play a card from your deck.] [If I foretold your fate, would so prophesying avert it—or seal it?]
 
 Leprechaun: 3/1p [Yeomen, Human, Legendary] [If this card is in your starting deck, you must inform your opponent.; If you have not played this card by the end of the game, you lose.] [Follow your dreams. Rainbows are an acceptable alternative, however.]
-Bird of Victory: 3/0p [Yeomen, Beast, Legendary] [] [May the best man win!]
+Bird of Victory: 3/0p [Yeomen, Beast, Token, Legendary] [] [May the best man win!]

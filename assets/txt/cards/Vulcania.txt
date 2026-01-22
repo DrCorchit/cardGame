@@ -32,7 +32,7 @@ Swoop: 5p [Vulcania, Dragon, Instant, Instinct, Rare] [You may either:#Spawn fir
 
 The Eggspert: 1/6p [Vulcania, Dwarf, Rare] [When played, you may either:#Play an Egg from your deck.#Expend 2X fire_mana to play X dragon eggs from your graveyard.] [You mean you DON'T collect dragon eggs?]
 Shorty McGee: 2/6p [Vulcania, Dwarf, Rare] [When played, assault 3.; Imbibe to assault 2.] [Axe questions later.]
-Dragonrunt: 3a 1/6p [Vulcania, Dragon, Rare] [Imbibe: Rally 4.] [Drink all night, sleep all day... that's the life!]
+Dragonrunt: 3a 1/6p [Vulcania, Dragon, Rare] [At turn start, this unit moves to the battlefield with the most powerful unit. (On a tie, it stays put.); When you pass, rally 7] [Drink all night, sleep all day... that's the life!]
 
 Hoard Dragon: 1a 9/7p [Vulcania, Dragon, Rare] [Your score must be at least 10 to play this card.] [Be fearful when others are greedy.]
 Guardian Dragon: 1a 3/7p [Vulcania, Dragon, Rare] [When tapped, protect adjacent dragon eggs.; Summon self from your deck whenever an allied dragon egg is destroyed.] [Ohhh now you've made 'er mad!]

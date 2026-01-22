@@ -99,25 +99,31 @@ object FantasyCards {
         val cardsByCity = cards.groupBy { card -> card.city }
             .mapValues { it.value.groupBy { card -> card.rarity } }
 
+        println("\nCards by city:")
         cardsByCity.entries
             .forEach { entry ->
                 fun count(rarity: Rarity): Int {
                     return entry.value[rarity]?.size ?: 0
                 }
 
-                val str = "%-12s %3d %3d %3d".format(
+                val str = " %-12s %3d %3d %3d".format(
                     entry.key,
                     count(Rarity.Common),
                     count(Rarity.Rare),
                     count(Rarity.Legendary)
                 )
                 println(str)
-
             }
 
+        println("\nCards by rarity:")
         val cardsByRarity = cards.groupBy { it.rarity }
-        cardsByRarity.forEach { (rarity, cards) -> println("$rarity ${cards.size}") }
-        println("Total cards: ${cards.size}")
+        cardsByRarity.forEach { (rarity, cards) -> println(" $rarity ${cards.size}") }
+
+        println("\nCards by type:")
+        val cardsByType = cards.groupBy { it.type }
+        cardsByType.forEach { (type, cards) -> println(" $type ${cards.size}") }
+
+        println("\nTotal unique cards: ${cards.size}")
 
         fun factionCount(city: City): Int {
             val cards = cardsByCity[city]
