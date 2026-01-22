@@ -109,7 +109,7 @@ class FantasyCard(
     var image: AnimatedSprite? = updateGraphic()
 
     override val outputLocation =
-        "output/images/full/cards/${rarity.name.normalize()}/${name.normalize()}.png"
+        "output/images/full/cards/${city.name.normalize()}/${name.normalize()}.png"
 
     constructor(json: JsonObject) : this(
         json["name"].asString,
