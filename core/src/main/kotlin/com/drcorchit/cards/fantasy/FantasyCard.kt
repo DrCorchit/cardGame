@@ -20,7 +20,6 @@ import com.google.gson.JsonObject
 import com.google.gson.JsonPrimitive
 import java.io.File
 import kotlin.math.max
-import kotlin.math.min
 
 class FantasyCard(
     override val name: String,
@@ -60,7 +59,7 @@ class FantasyCard(
             println("No city for card $name")
             null
         }
-    } ?: City.Yeomen
+    } ?: City.Unaffiliated
 
     val faction: Faction = city
 
@@ -87,7 +86,7 @@ class FantasyCard(
 
         val race = Race.detectRacialTag(tags, type)
 
-        val prefix = "$rarity ${city.adj} $race"
+        val prefix = if (city == City.Unaffiliated) "$rarity $race" else "$rarity ${city.adj} $race"
         val suffix = miscTags.joinToString(", ")
         if (miscTags.isEmpty()) prefix else "$prefix — $suffix"
     }

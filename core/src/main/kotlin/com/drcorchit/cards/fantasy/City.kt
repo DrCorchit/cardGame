@@ -65,7 +65,7 @@ enum class City(override val color: Color, val adj: String): Faction {
     Vulcania("d07020", "Vulcanian"),
 
     //Commonly available cards
-    Yeomen("603000", "Yeoman");
+    Unaffiliated("603000", "Unaffiliated");
 
     constructor(color: String, adj: String) : this(Color.valueOf(color), adj)
 

@@ -16,7 +16,7 @@ import com.drcorchit.justice.utils.math.MathUtils
  * [com.badlogic.gdx.ApplicationListener] implementation shared by all platforms.
  */
 class Main : ApplicationAdapter() {
-    var index = 160
+    var index = 40
     val stage by lazy { Stage() }
 
     val spaceCards by lazy {

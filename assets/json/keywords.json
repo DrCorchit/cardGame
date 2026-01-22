@@ -100,7 +100,7 @@
   },
   {
     "name": "Devotion",
-    "description": "Triggers if your starting deck contains no Yeoman cards."
+    "description": "Triggers if your starting deck contains no unaffiliated cards."
   },
   {
     "name": "Purify",
