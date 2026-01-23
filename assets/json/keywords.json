@@ -1,28 +1,24 @@
 [
   {
-    "name": "Haste",
-    "description": "The card can be tapped on the turn it is played.",
-    "synonyms": ["Hasten", "Hastened"]
-  },
-  {
-    "name": "Summon",
-    "description": "Move a card to the battlefield without playing it.",
-    "synonyms": ["Summons", "Summoned"]
+    "name": "Spawn",
+    "description": "Turn a number of mana dice to the indicated faces.",
+    "synonyms": ["Spawns", "Spawned"]
   },
   {
     "name": "Expend X",
     "description": "Reroll the indicated dice to trigger the ability.",
     "synonyms": ["Expend", "Expends", "Expended"]
   },
+
   {
-    "name": "Spawn",
-    "description": "Turn a number of mana dice to the indicated faces.",
-    "synonyms": ["Spawns", "Spawned"]
-  },
+  "name": "Haste",
+  "description": "The card can be tapped on the turn it is played.",
+  "synonyms": ["Hasten", "Hastened"]
+},
   {
-    "name": "Rally X",
-    "description": "Add X points to your score.",
-    "synonyms": ["Rally", "Rallies"]
+    "name": "Summon",
+    "description": "Move a card to the battlefield without playing it.",
+    "synonyms": ["Summons", "Summoned"]
   },
   {
     "name": "Protect",
@@ -35,7 +31,7 @@
   },
   {
     "name": "Destroy",
-    "description": "Move a card to the graveyard."
+    "description": "Move a card and any attached equipment to the graveyard."
   },
   {
     "name": "Banish",
@@ -44,27 +40,22 @@
   },
   {
     "name": "Assault X",
-    "description": "Destroy an enemy unit of X or less power.",
+    "description": "Destroy an enemy unit whose power plus armor is X or less.",
     "synonyms": ["Assault", "Assaults", "Assaulted"]
   },
   {
     "name": "Assassinate X",
-    "description": "Assault X, bypassing protection.",
+    "description": "Assault X, bypassing protection and invisibility.",
     "synonyms": ["Assassinate", "Assassinates", "Assassinated"]
   },
   {
-    "name": "Seize X",
-    "description": "Move an enemy unit of X or less power to your battlefield.",
+    "name": "Seize",
+    "description": "Move an enemy unit to the opposite battlefield.",
     "synonyms": ["Seize", "seizes", "seized"]
   },
   {
-    "name": "Armor X",
-    "description": "Increases a unit's resistance to assault and seize.",
-    "synonyms": ["armor"]
-  },
-  {
     "name": "Overkill X",
-    "description": "The amount an assault exceeds its target's power.",
+    "description": "The amount an assault exceeds its target's power and armor.",
     "synonyms": ["overkill"]
   },
   {
@@ -83,7 +74,7 @@
   },
   {
     "name": "Echo",
-    "description": "You may you may move this card to the top of your deck after the end of the round, once per game."
+    "description": "Before the mulligan phase, draw this card from your graveyard, once per game."
   },
   {
     "name": "Imbibe",
@@ -91,11 +82,11 @@
   },
   {
     "name": "Devour",
-    "description": "Convert a unit into an equipment. The target's abilities are disabled, and any equipment is destroyed."
+    "description": "Destroy a unit, then give the devouring unit it's power."
   },
   {
     "name": "Plunder X",
-    "description": "Rally X when the unit is devoured.",
+    "description": "Gain X points when the unit is destroyed during the round.",
     "synonyms": ["plunder"]
   },
   {

@@ -1,9 +1,9 @@
 #Faction identity: engines, limited hard removal
-Automaton: 2/2p [Technopolis, Machine] [At turn start, either:#Spawn air_mana.#Expend air_mana to rally 1.] [YES MASTER]
-Solar Panel: 2/2p [Technopolis, Machine] [At turn start, either:#Spawn light_mana.#Expend light_mana to rally 1.] [These things have a bright future.]
-Capacitor: 1a 2/2p [Technopolis, Machine] [When tapped, either:#Expend X light_mana to rally X.#Expend X air_mana to assault X.] [Brzzzap!]
+Automaton: 2/2p [Technopolis, Machine] [At turn start, either:#Spawn air_mana.#Expend air_mana to gain 1 point.] [YES MASTER]
+Solar Panel: 2/2p [Technopolis, Machine] [At turn start, either:#Spawn light_mana.#Expend light_mana to gain 1 point.] [These things have a bright future.]
+Capacitor: 1a 2/2p [Technopolis, Machine] [When tapped, either:#Expend X light_mana to gain X points.#Expend X air_mana to assault X.] [Brzzzap!]
 Drone Swarm: 1a 2/2p [Technopolis, Machine] [When played while paired, lock an enemy unit.; When tapped, this unit protects adjacent units.] [Strength in numbers.]
-Scribe: 3/2p [Technopolis, Elf] [Immune.; When you pass, rally 1 for each allied machine you control.] [The records aren't going to keep themselves.]
+Scribe: 3/2p [Technopolis, Elf] [Immune.; When you pass, gain 1 point for each allied machine you control.] [The records aren't going to keep themselves.]
 Paper Shuffler: 3/2p [Technopolis, Elf] [At turn start, you may draw a card from the top of your deck and move a card from your hand to the top or bottom of your deck.] [Paper is actually kinda heavy.]
 Dynamo: 4/2p [Technopolis, Machine] [At turn start, you may expend fire_mana to spawn air_mana or light_mana] [Ol' Reliable.]
 Cyborg: 5/2p [Technopolis, Elf] [You must expend air_mana to play this card.] [More machine than man.]
@@ -23,15 +23,15 @@ Incinerator: 1a 3/4p [Technopolis, Machine] [When played, banish the top card of
 Artificer: 3/4p [Technopolis, Elf] [When played, destroy an allied machine and play a common machine from your graveyard.] [Make it or break it.] [utility]
 Devastator: 1a 9/4p [Technopolis, Machine] [You must expend light_mana light_mana light_mana to play this unit.] [TARGET DESTROYED]
 
-Armor Weave: 2a 4p [Technopolis, Equipment, Technology, Rare] [When moved to the top of your deck, play self.; You may also expend air_mana to play this card from your deck at any time during your turn.] [No way they're getting through all that.]
+Armor Weave: 1a 4p [Technopolis, Equipment, Technology, Rare] [When equipped, bestow immune.; When moved to the top of your deck, play self.; You may also expend air_mana to play this card from your deck during your turn.] [No way they're getting through all that.]
 Eriathorn, Gemini: 4/4p [Technopolis, Elf, Rare] [When tapped, spawn air_mana air_mana air_mana.; If you control Shuramorn, double that amount.] [Prepare for trouble!]
 Shuramorn, Gemini: 4/4p [Technopolis, Elf, Rare] [When tapped, spawn light_mana light_mana light_mana.; If you control Eriathorn, double that amount.] [Make it double!]
 
 Censorship: 5p [Technopolis, Instant, Technology, Rare] [When played, banish the top card of your opponent's deck and rally by its provision cost.] [It's a trip down memory hole lane.]
-Epocha, Harbinger: 2/5p [Technopolis, Elf, Rare] [At turn start, you may Expend light_mana to Rally 1.; Whenever moved to the top of your deck, Summon self.] [When the new age comes, there will be no turning back.]
+Epocha, Harbinger: 2/5p [Technopolis, Elf, Rare] [At turn start, you may Expend light_mana to gain 1 point.; Whenever moved to the top of your deck, Summon self.] [When the new age comes, there will be no turning back.]
 Pyros, Inquisitor: 1/5p [Technopolis, Elf, Rare] [When you pass, rally by the cost of the highest provision card that has been banished this game.] [Beware the point of no return.]
 
-Ultima: Prototype: 1a 2/6p [Technopolis, Machine, Rare] [When tapped, rally 1 for each technology in your graveyard.] [It's all in the name of progress.]
+Ultima: Prototype: 1a 2/6p [Technopolis, Machine, Rare] [When tapped, gain 1 point for each technology in your graveyard.] [It's all in the name of progress.]
 Argos, Arbiter: 2/6p [Technopolis, Elf, Rare] [When played, either:#Play the top card from your deck.#Disloyal. Play the top card from your opponent's deck.] [I am the decider!]
 Sophos, Ordinator: 4/6p [Technopolis, Elf, Rare] [When played, move 2 cards to the top of your deck.; You must expend light_mana to tap this unit.; When tapped, repeat the "when played" ability.] [No plan is ever perfect. Except mine.]
 Time Travel: 6p [Technopolis, Instant, Technology, Legendary] [When played, move a unit to the top of its owner's deck.] [In the year 2525...]
@@ -47,9 +47,9 @@ Logos, Oracle: 5/9p [Technopolis, Elf, Legendary] [When tapped, play a card from
 Teleportation: 9p [Technopolis, Instant, Technology, Legendary] [Echo.; Play a unit from your deck.] [What could possibly go wrong?]
 
 Orthos, Orchestrator: 5/10p [Technopolis, Elf, Legendary] [Haste.; When tapped, untap an allied card.] [Actually, science hasn't gone far enough.]
-Teknos, Grand Artificer: 1/10p [Technopolis, Elf, Legendary] [When played, you may expend 2X light_mana to resurrect X common machines.;] ["Grand Artificer" is a code word for "Huge Nerd"]
+Teknos, Grand Artificer: 1/10p [Technopolis, Elf, Legendary] [When played, you may expend 2X light_mana to resurrect X common machines.] ["Grand Artificer" is a code word for "Huge Nerd"]
 
 #Further ideas: Monks
 #Regeneration Weave, Stealth Weave
-#Mind Control: 8p [Technopolis, Instant, Technology, Legendary] [When played, subtract X points from your score to Seize X.] [You will comply.] -- Note: See Vice/Heist
+
 
