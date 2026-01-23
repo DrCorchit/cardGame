@@ -18,7 +18,7 @@ Lightning Strike: 3p [Avalon, Instant, Nature] [When played, assault 2.; You may
 Lifegiving Rainfall: 3/3p [Avalon, Equipment, Nature] [At turn start, spawn earth_mana, water_mana, or air_mana.] [Every rainstorm begins with a single drop.]
 
 Heartwood Treant: 5/4p [Avalon, Treant] [You must expend earth_mana water_mana air_mana to tap this unit.; When tapped, become stalwart.] [Some people just can't see the forest for the trees.]
-Ancient Hamadryad: 2/4p [Avalon, Nymph] [When played, you may expend earth_mana water_mana air_mana to play a unit from hand and draw a card.; This unit protects the unit to the right.] [The forest will never die!]
+Ancient Hamadryad: 2/4p [Avalon, Nymph] [When played, you may expend earth_mana water_mana air_mana to play a common unit from hand and draw a card.; This unit protects the unit to the right.] [The forest will never die!]
 Mountain Gorilla: 5/4p [Avalon, Beast] [When played, become immune.; When tapped, you may expend X earth_mana to gain X points.] [A mountain of muscle.]
 Harvest: 4p [Avalon, Instant, Nature] [Combine up to 3 of the following effects:#Expend X earth_mana and gain X points.#Expend X water_mana and assault X.#Expend X air_mana and increase all other effects by X.] [A time to sow, a time to reap...]
 
@@ -30,7 +30,7 @@ Alraune: 4/5p [Avalon, Fairy, Rare] [When played, change all dark_mana into eart
 Thunderstorm: 5p [Avalon, Instant, Nature, Rare] [Echo.; When played, spawn water_mana air_mana and play a Nature card from your deck.] [She's a-gonna blow!]
 Puck: 1/5p [Avalon, Fairy, Rare] [Disloyal.; When played, play a unit from your deck whose provision cost exceeds Puck's.] [Give me your hands, if we be friends.]
 
-Guinevere: 3/6p [Avalon, Human, Rare] [Whenever you expend mana, rally 1.] [Talk not of faith, for you have none in you.]
+Guinevere: 3/6p [Avalon, Human, Rare] [Whenever you expend mana, gain 1 point.] [Talk not of faith, for you have none in you.]
 Lancelot: 2a 7/6p [Avalon, Human, Knight, Rare] [Whenever a Weapon is equipped, you may destroy an enemy equipment.] [I am never in the dark when I am protecting you.]
 Bamboo Grove: 6p [Avalon, Emplacement, Nature, Rare] [When played, become stalwart.; When tapped, gain 3 points.; At turn start, you may expend earth_mana water_mana to untap this card.] [Nothing grows faster, or thicker.]
 

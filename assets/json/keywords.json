@@ -31,7 +31,8 @@
   },
   {
     "name": "Destroy",
-    "description": "Move a card and any attached equipment to the graveyard."
+    "description": "Move a card to the graveyard.",
+    "synonyms": ["destroys", "destroyed"]
   },
   {
     "name": "Banish",
@@ -40,7 +41,7 @@
   },
   {
     "name": "Assault X",
-    "description": "Destroy an enemy unit whose power plus armor is X or less.",
+    "description": "Destroy a unit whose power plus armor is X or less.",
     "synonyms": ["Assault", "Assaults", "Assaulted"]
   },
   {
@@ -50,12 +51,12 @@
   },
   {
     "name": "Seize",
-    "description": "Move an enemy unit to the opposite battlefield.",
+    "description": "Move a unit to its opponent's battlefield.",
     "synonyms": ["Seize", "seizes", "seized"]
   },
   {
     "name": "Overkill X",
-    "description": "The amount an assault exceeds its target's power and armor.",
+    "description": "Triggers when an assault deals X excess damage.",
     "synonyms": ["overkill"]
   },
   {
@@ -86,7 +87,7 @@
   },
   {
     "name": "Plunder X",
-    "description": "Gain X points when the unit is destroyed during the round.",
+    "description": "Gain X points when the unit is destroyed.",
     "synonyms": ["plunder"]
   },
   {

@@ -32,7 +32,7 @@ Swoop: 5p [Vulcania, Dragon, Instant, Instinct, Rare] [You may either:#Spawn fir
 
 The Eggspert: 1/6p [Vulcania, Dwarf, Rare] [When played, you may either:#Play an Egg from your deck.#Expend 2X fire_mana to play X dragon eggs from your graveyard.] [You mean you DON'T collect dragon eggs?]
 Shorty McGee: 2/6p [Vulcania, Dwarf, Rare] [When played, assault 3.; Imbibe to assault 2.] [Axe questions later.]
-Dragonrunt: 3a 1/6p [Vulcania, Dragon, Rare] [At turn start, this unit moves to the battlefield with the most powerful unit. (On a tie, it stays put.); When you pass, gain 7 points] [Drink all night, sleep all day... that's the life!]
+Dragonrunt: 3a 1/6p [Vulcania, Dragon, Rare] [At turn start, this unit moves to the battlefield with the most powerful unit. (On a tie, it stays put.); When you pass, gain 7 points] [It's basically a scaly green chihuahua.]
 
 Hoard Dragon: 1a 9/7p [Vulcania, Dragon, Rare] [Your score must be at least 10 to play this card.] [Be fearful when others are greedy.]
 Guardian Dragon: 1a 3/7p [Vulcania, Dragon, Rare] [When tapped, protect adjacent dragon eggs.; Summon self from your deck whenever an allied dragon egg is destroyed.] [Ohhh now you've made 'er mad!]
@@ -41,7 +41,7 @@ Goryx, Golden Dragon: 1a 4/8p [Vulcania, Dragon, Legendary] [Haste.; When tapped
 Ale of the Ancestors: 6/8p [Vulcania, Equipment, Liquor, Legendary] [Echo.; When equipped, spawn fire_mana fire_mana fire_mana.] [The hard part isn't the brewing process, it's hiding it from all the dwarves for a hundred years.]
 
 Neromir, Warrior Dragon: 2a 4/9p [Vulcania, Dragon, Legendary] [Haste.; When tapped, expend X fire_mana and assault X.; At turn start, untap this card.] [Look who woke up on the wrong side of the bed.]
-Treasure of all Treasures: 9p [Vulcania, Emplacement, Legendary] [When played, gain 4 points.; At turn start, rally for each adjacent dwarf.; This card is protected by adjacent dwarves.] [All that glitters is not gold. Could be diamonds, for instance.]
+Treasure of all Treasures: 9p [Vulcania, Emplacement, Legendary] [When played, gain 4 points.; At turn start, gain 1 point for each adjacent dwarf.; This card is protected by adjacent dwarves.] [All that glitters is not gold. Could be diamonds, for instance.]
 
 Dragonmother Erizyx: 2a 8/10p [Vulcania, Dragon, Legendary] [This card protects adjacent eggs.; When you pass, gain 2 points for each allied egg.] [She's a lady and you will treat her as such.]
 Dragon Emperor Coronakt: 3/10p [Vulcania, Dragon, Legendary] [When tapped, devour a unit in your graveyard.; Imbibe: untap this card.] [Ever been so hungry you could eat a dragon?]

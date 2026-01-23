@@ -18,7 +18,7 @@ Meteorite Strike: 3p [Instant, Spell, Nature] [When played, either:#Spawn air_ma
 Saboteur: 2/3p [Human, Spy] [When played, either:#Lock an enemy protector.#Become disloyal and destroy an enemy emplacement.] [If I had a hammer...]
 
 Assassin: 1/4p [Human, Spy] [Disloyal.; When played, Assassinate 4.] [Humans make good assassins. They also make good targets.]
-Living Armor: 3a 1/4p [Undead] [When played, become immune.; A weapon must be equipped to tap this card.; When tapped, unequip an attached weapon and replay it.;] [It's... moving?]
+Living Armor: 3a 1/4p [Undead] [A weapon must be equipped to tap this card.; When tapped, unequip an attached weapon and replay it.;] [It's... moving?]
 Manacles: 4p [Equipment, Technology] [Disloyal.; When equipped, lock the target and remove any equipment.; No additional equipment can be assigned.] [Don't do anything rash.]
 Mobilization: 4p [Instant, Warfare] [When played, play a 4 provision card from your deck.] [Hut, two, three, four!]
 
@@ -27,12 +27,12 @@ Necromancy: 4p [Instant, Spell, Rare] [Play a common unit from your graveyard.] 
 Captain Ernesto: 4/4p [Human, Rare] [When tapped, assault 4 and destroy self.] [If it's a fight ye wants...]
 
 Alpha Wolf: 3/5p [Beast, Rare] [When played, assault 2.; Increase the assault by 1 for each allied Pack Wolf.] [Arooooo!]
-Giant Turtle: 5/5p [Beast, Rare] [When played, roll and additional mana die and add it to the common pool.] [Could this be a dog?]
+Giant Turtle: 6/5p [Beast, Rare] [When played, roll and additional mana die and add it to the common pool.] [Could this be a dog?]
 Bounty Hunter: 4/5p [Human, Rare] [When played, lock a unit.] [You can run, but you can't hide.]
-Orslaz Zalsro: 6/6p [Demon, Rare] [When you pass, seize a 1-power enemy unit.] [The contract is sealed.]
+Grand Inquisitor: 6/6p [Human, Rare] [When tapped, either:#Purify all enemy units.#Purify all allied units.] [The contract is sealed.]
 
 Ancient Vampire: 7/6p [Vampire, Rare] [When played, lose 1 point for each light_mana among common or allied mana dice.] [For some, the emo phase lasts a bit longer than others.]
-Distressed Damsel: 1/6p [Human, Rare] [When you pass, gain 7 points if this unit is protected.] [My hero!]
+Distressed Damsel: 1/6p [Human, Rare] [When you pass, gain 10 points if this unit is protected.] [My hero!]
 Resurrection: 6p [Instant, Spell, Rare] [Play a common or rare unit from your graveyard.] [A good character never stays dead for long.]
 Gravetender: 2/6p [Undead, Rare] [When played, summon all zombies from your graveyard.; Whenever you play a card from graveyard, summon self from deck or graveyard.] [Yer only diggin' yer own grave.]
 
@@ -45,6 +45,7 @@ Blistering Heatwave: 7p [Instant, Nature, Legendary] [When played, banish any ca
 Field Marshall: 4/8p [Human, Legendary] [When played, swap a card in hand with a card in your deck.; When tapped, repeat the "when played" ability.] [The best defense is a strong offense, I always say.]
 
 Prophecy: 9p [Instant, Spell, Legendary] [Echo.; When played, play a card from your deck.] [If I foretold your fate, would so prophesying avert it—or seal it?]
+Multitool: 9p [Instant, Weapon, Legendary] [When played, choose 3 of the following abilities in any order:#Lock a unit.#Purify a unit.#Assault 2.#Gain 3 points.] [Why don't YOU own one?]
 
 Leprechaun: 3/1p [Human, Legendary] [If this card is in your starting deck, you must inform your opponent.; If you have not played this card by the end of the game, you lose.] [Follow your dreams. Rainbows are an acceptable alternative, however.]
 Bird of Victory: 3/0p [Beast, Token, Legendary] [] [May the best man win!]
