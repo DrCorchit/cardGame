@@ -27,7 +27,7 @@
   },
   {
     "name": "Vulnerable",
-    "description": "The card cannot receive protection."
+    "description": "This card cannot receive protection."
   },
   {
     "name": "Destroy",
@@ -83,7 +83,7 @@
   },
   {
     "name": "Devour",
-    "description": "Destroy a unit, then give the devouring unit it's power."
+    "description": "Destroy a unit, then increase the devour unit's power by the target's power. If the target was in the graveyard, banish it instead."
   },
   {
     "name": "Plunder X",

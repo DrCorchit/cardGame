@@ -18,7 +18,7 @@ Lightning Strike: 3p [Avalon, Instant, Nature] [When played, assault 2.; You may
 Lifegiving Rainfall: 3/3p [Avalon, Equipment, Nature] [At turn start, spawn earth_mana, water_mana, or air_mana.] [Every rainstorm begins with a single drop.]
 
 Heartwood Treant: 5/4p [Avalon, Treant] [You must expend earth_mana water_mana air_mana to tap this unit.; When tapped, become stalwart.] [Some people just can't see the forest for the trees.]
-Ancient Hamadryad: 2/4p [Avalon, Nymph] [When played, you may expend earth_mana water_mana air_mana to play a common unit from hand and draw a card.; This unit protects the unit to the right.] [The forest will never die!]
+Ancient Hamadryad: 1/4p [Avalon, Nymph] [When played, you may expend earth_mana water_mana air_mana to play a common unit from hand and draw a card.; This unit protects the unit to the right.] [The forest will never die!]
 Mountain Gorilla: 5/4p [Avalon, Beast] [When played, become immune.; When tapped, you may expend X earth_mana to gain X points.] [A mountain of muscle.]
 Harvest: 4p [Avalon, Instant, Nature] [Combine up to 3 of the following effects:#Expend X earth_mana and gain X points.#Expend X water_mana and assault X.#Expend X air_mana and increase all other effects by X.] [A time to sow, a time to reap...]
 

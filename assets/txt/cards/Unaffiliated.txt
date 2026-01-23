@@ -18,7 +18,7 @@ Meteorite Strike: 3p [Instant, Spell, Nature] [When played, either:#Spawn air_ma
 Saboteur: 2/3p [Human, Spy] [When played, either:#Lock an enemy protector.#Become disloyal and destroy an enemy emplacement.] [If I had a hammer...]
 
 Assassin: 1/4p [Human, Spy] [Disloyal.; When played, Assassinate 4.] [Humans make good assassins. They also make good targets.]
-Living Armor: 3a 1/4p [Undead] [A weapon must be equipped to tap this card.; When tapped, unequip an attached weapon and replay it.;] [It's... moving?]
+Living Armor: 3a 1/4p [Undead] [When tapped, choose a common weapon equipped to this card and replay it.;] [It's... moving?]
 Manacles: 4p [Equipment, Technology] [Disloyal.; When equipped, lock the target and remove any equipment.; No additional equipment can be assigned.] [Don't do anything rash.]
 Mobilization: 4p [Instant, Warfare] [When played, play a 4 provision card from your deck.] [Hut, two, three, four!]
 
@@ -44,8 +44,9 @@ Blistering Heatwave: 7p [Instant, Nature, Legendary] [When played, banish any ca
 
 Field Marshall: 4/8p [Human, Legendary] [When played, swap a card in hand with a card in your deck.; When tapped, repeat the "when played" ability.] [The best defense is a strong offense, I always say.]
 
+
 Prophecy: 9p [Instant, Spell, Legendary] [Echo.; When played, play a card from your deck.] [If I foretold your fate, would so prophesying avert it—or seal it?]
 Multitool: 9p [Instant, Weapon, Legendary] [When played, choose 3 of the following abilities in any order:#Lock a unit.#Purify a unit.#Assault 2.#Gain 3 points.] [Why don't YOU own one?]
 
-Leprechaun: 3/1p [Human, Legendary] [If this card is in your starting deck, you must inform your opponent.; If you have not played this card by the end of the game, you lose.] [Follow your dreams. Rainbows are an acceptable alternative, however.]
+Leprechaun: 3/1p [Fairy, Legendary] [If this card is in your starting deck, you must inform your opponent.; If you have not played this card by the end of the game, you lose.] [Follow your dreams. Rainbows are an acceptable alternative, however.]
 Bird of Victory: 3/0p [Beast, Token, Legendary] [] [May the best man win!]

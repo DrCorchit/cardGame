@@ -11,12 +11,13 @@ import com.drcorchit.cards.graphics.CardActor
 import com.drcorchit.cards.graphics.Draw
 import com.drcorchit.justice.utils.logging.Logger
 import com.drcorchit.justice.utils.math.MathUtils
+import kotlin.random.Random
 
 /**
  * [com.badlogic.gdx.ApplicationListener] implementation shared by all platforms.
  */
 class Main : ApplicationAdapter() {
-    var index = 160
+    var index = Random.Default.nextInt(240)
     val stage by lazy { Stage() }
 
     val spaceCards by lazy {
