@@ -5,7 +5,7 @@ enum class Race {
 
     Fairy, Dryad, Nymph, Treant, Beast, Insect,
 
-    Dragon, Vampire, Undead, Demon, Monster,
+    Dragon, Vampire, Undead, Monster,
 
     Machine, Ship;
 

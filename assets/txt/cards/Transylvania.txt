@@ -17,7 +17,7 @@ Landlady: 6/3p [Transylvania, Vampire] [When played, become immune.; When an adj
 Pickpocket: 3p [Transylvania, Instant, Crime] [When played, reroll 6 common or allied mana dice.; Chaos X: gain X points and decrease the reroll amount by X. ] [A fool and his money...]
 Intimidation: 3p [Transylvania, Instant, Crime] [Choose 2 of the following abilities:#gain 2 points.#Assault 2. #Spawn dark_mana dark_mana dark_mana.] [You can get more of what you want with a kind word and a knife than you can with just a kind word.]
 
-Bystander: 2/4p [Transylvania, Human] [When tapped, gain points equal to the provision cost of the next unit you assassinate or seize this turn.] [Oh wow, dinner AND a show!]
+Bystander: 2/4p [Transylvania, Human] [When played, become immune.; When tapped, gain points equal to the provision cost of the next unit you assassinate or seize this turn.] [Oh wow, dinner AND a show!]
 Hypnotist: 1/4p [Transylvania, Vampire, Spy] [Disloyal.; When played, seize a unit with 2 or less power.] [What a captivating performance!]
 Hitman: 1/4p [Transylvania, Human, Spy] [Disloyal.; When played (chaos X), assassinate X.] [I never hurt nobody that ain't had it comin'.]
 Vampire Aristocrat: 4/4p [Transylvania, Vampire] [When tapped, you may expend X dark mana to assault X.; Whenever you play a human, spawn dark_mana.; Whenever you play a vampire, untap this card.] [I'm a creature of refined taste.]
@@ -28,8 +28,8 @@ Maximillian, Slumlord: 5/4p [Transylvania, Human, Caporegime, Rare] [When played
 
 The Dollhouse: 5p [Transylvania, Emplacement, Location, Rare] [When played, become stalwart and play a Moomsh Addict or Landlady from your deck.; Adjacent Moomsh Addict and Landlady units do not destroy themselves.] [If home is where the heart is, then they're homeless.]
 Joanna the Thrall: 1a 3/5p [Transylvania, Human, Caporegime, Rare] [At turn start, either:#Spawn dark_mana for each adjacent vampire.#Expend dark_mana and assault 2.] [Some serve willingly.]
+Swapling: 1/5p [Transylvania, Monster, Rare] [Disloyal.; When played, banish an enemy unit and replace it with Swapling. This ability may target invisible units, but not machines or ships.; Any attached equipment is transferred to Swapling.] [A face that only a mother could love.]
 
-Swapling: 1/6p [Transylvania, Monster, Rare] [Disloyal.; When played, banish an enemy unit and replace it with Swapling. This ability may target invisible units.] [A face that only a mother could love.]
 Vampire Nightmaster: 2/6p [Transylvania, Vampire, Rare] [When played, either:#Become stalwart and invisible.#Spawn 3 dark_mana.; When tapped, repeat the "when played" ability.] [The night is dark and full of terrors.]
 The Quartermaster: 4/6p [Transylvania, Human, Spy, Rare] [When played, either:#Play a common Spy from your deck.#Expend dark_mana dark_mana and play a Spy from your deck.] [Take whatcha need for the job and scram.]
 
@@ -40,7 +40,7 @@ Chester Zilch: 2/7p [Transylvania, Vampire, Caporegime, Rare] [Chaos 4: Summon s
 Molgrippe, Master Assassin: 3/8p [Transylvania, Human, Henchman, Legendary] [When played, either:#Chaos 5: Assault 5.#Chaos 6: Assassinate 6.] [The anomaly will be corrected momentarily.]
 The Heist: 8p [Transylvania, Instant, Crime, Legendary] [When played, lose X points and seize X.;You cannot play this card in such a way that your score falls below zero.] [The perfect crime.]
 
-Jailbreak: 9p [Transylvania, Instant, Crime, Legendary] [Play a common or rare unit from your graveyard, and gain one of the following effects:#If it's a human, gain 4 points.#If it's a vampire, assault 2.] [Breaking out: not just for teenagers anymore.]
+Jailbreak: 9p [Transylvania, Instant, Crime, Legendary] [Play a common or rare unit from your graveyard.] [Breaking out: not just for teenagers anymore.]
 
 Yalmamir, Prince of Crime: 1a 2/10p [Transylvania, Vampire, Kingpin, Legendary] [Haste.; When tapped, you may expend X dark_mana to seize X.; Whenever you play a crime, untap this card.] [A single incompetent enemy is worth a thousand incompetent friends.]
 Gladys the Glorious: 1/10p [Transylvania, Vampire, Kingpin, Legendary] [When played, expend 2X dark_mana to summon X common Henchman units from your graveyard.] [I am big. It's the pictures that got smaller.]

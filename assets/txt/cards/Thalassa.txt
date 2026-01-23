@@ -31,7 +31,7 @@ Billy Bones: 5/5p [Thalassa, Human, Pirate, Rare] [When played, look through you
 Keel-Haul: 5p [Thalassa, Instant, Warfare, Rare] [When played, destroy an allied Human and spawn water_mana equal to its power.; Afterwards, play a Pirate from your graveyard.] [Welcome to the Crew!]
 
 Terror o' the Seas: 1a 2/6p [Thalassa, Ship, Rare] [When played, become immune.; Whenever you discard a Cannon card, equip it here instead.; Plunder 2.] [Ya can never have too many guns...]
-Jormungandir: 2a 4/6p [Thalassa, Monster, Rare] [When you pass, you may expend X water_mana to devour X allied units.] [The serpent at the end of the world!]
+Jormungandir: 2a 4/6p [Thalassa, Monster, Rare] [When played, become immune.; When tapped, expend X water_mana to devour X allied units.] [The serpent at the end of the world!]
 Captain Flint: 2/6p [Thalassa, Human, Pirate, Rare] [When played, either:#Play a Warfare card from your deck.#Expend fire_mana fire_mana and play a Warfare card from your graveyard.] [Yo-ho-ho, and a bottle of rum!]
 
 Anne Bonny: 3/7p [Thalassa, Human, Pirate, Rare] [When played, draw a card and discard a card.; Whenever you discard a card, gain 1 point. You may expend fire_mana to intensify the assault by 1.] [No need to call me lady. "Captain" will do just fine.]

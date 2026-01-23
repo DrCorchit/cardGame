@@ -15,7 +15,7 @@ Corruption: 3p [Equipment, Crime] [When equipped, gain 6 points.; If the equip t
 Emissary: 1/3p [Human, Spy] [Disloyal.; When played, play a unit from hand, then draw a card.] [Introducing his most gracious excellency...]
 Halberd: 3p [Equipment, Weapon] [When equipped, gain 2 points and assault 2.] [A soldier's weapon.]
 Meteorite Strike: 3p [Instant, Spell, Nature] [When played, either:#Spawn air_mana air_mana and assault 2.#Expend air_mana air_mana and assault 4.] [Krakowwww!]
-Saboteur: 2/3p [Human, Spy] [When played, either:#Lock an enemy protector.#Become disloyal and destroy an enemy emplacement.] [If I had a hammer...]
+Saboteur: 2/3p [Human, Spy] [When played, either:#Lock an enemy unit.#Become disloyal and destroy an enemy emplacement.] [If I had a hammer...]
 
 Assassin: 1/4p [Human, Spy] [Disloyal.; When played, Assassinate 4.] [Humans make good assassins. They also make good targets.]
 Living Armor: 3a 1/4p [Undead] [When tapped, choose a common weapon equipped to this card and replay it.;] [It's... moving?]
