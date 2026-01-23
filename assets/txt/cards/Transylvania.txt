@@ -41,10 +41,10 @@ Molgrippe, Master Assassin: 3/8p [Transylvania, Human, Henchman, Legendary] [Whe
 The Heist: 8p [Transylvania, Instant, Crime, Legendary] [When played, lose X points and seize X.;You cannot play this card in such a way that your score falls below zero.] [The perfect crime.]
 
 Jailbreak: 9p [Transylvania, Instant, Crime, Legendary] [Play a common or rare unit from your graveyard.] [Breaking out: not just for teenagers anymore.]
+Debutante Ball: 9p [Transylvania, Instant, Legendary] [Play a unit from your deck.; If it's a common or rare unit, gain one of the following effects:#If it's a human, give it stalwart.#If it's a vampire, give it invisible.] [Be there or be square.]
 
 Yalmamir, Prince of Crime: 1a 2/10p [Transylvania, Vampire, Kingpin, Legendary] [Haste.; When tapped, you may expend X dark_mana to seize X.; Whenever you play a crime, untap this card.] [A single incompetent enemy is worth a thousand incompetent friends.]
 Gladys the Glorious: 1/10p [Transylvania, Vampire, Kingpin, Legendary] [When played, expend 2X dark_mana to summon X common Henchman units from your graveyard.] [I am big. It's the pictures that got smaller.]
-Debutante Ball: 10p [Transylvania, Instant, Legendary] [Play a unit from your deck and gain one of the following effects:#If it's a human, give it stalwart.#If it's a vampire, give it invisible.] [Be there or be square.]
 
 Big Daddy: 1/11p [Transylvania, Human, Kingpin, Legendary] [When played (chaos X), seize up to 3 enemy units with a combined power less than or equal to X.] [More for me!]
 Phlegmtooth, Sewer Dragon: 7/11p [Transylvania, Dragon, Legendary] [When tapped, poison adjacent units.; For each unit poisoned, also poison an enemy unit.] [He thought he could handle riding the dragon.]
