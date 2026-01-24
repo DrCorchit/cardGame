@@ -108,8 +108,9 @@ class FantasyCard(
 
     var image: AnimatedSprite? = updateGraphic()
 
+    //We sort by rarity to so we can auto add cards as much as possible when using the MakePlayingCards.com website
     override val outputLocation =
-        "output/images/full/cards/${city.name.normalize()}/${name.normalize()}.png"
+        "output/images/full/cards/${rarity.name.normalize()}/${name.normalize()}.png"
 
     constructor(json: JsonObject) : this(
         json["name"].asString,
