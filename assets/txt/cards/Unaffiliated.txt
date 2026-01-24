@@ -45,7 +45,7 @@ Skeleton Key: 6p [Instant, Rare] [When played, lock or purify and enemy unit.; A
 
 Royal Envoy: 1/7p [Human, Legendary] [When played, play an instant, equipment, or emplacement from your deck.] [So let it be done!]
 Royal Guard: 2a 4/7p [Human, Knight, Legendary] [This card protects the unit to the right.] [They'll have to go through me.]
-Royal Decree: 7p [Instant, Law, Legendary] [When played, play a unit from your deck.] [So let it be written...]
+Royal Decree: 7p [Instant, Law, Legendary] [Play a unit from your deck.] [So let it be written...]
 Blistering Heatwave: 7p [Instant, Nature, Legendary] [When played, banish any card that is not protected.] [Just when you think it can't get any hotter...]
 Resurrection: 7p [Instant, Spell, Legendary] [Play a common or rare unit from your graveyard.] [A good character never stays dead for long.]
 
