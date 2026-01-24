@@ -56,7 +56,7 @@ class FantasyCard(
         try {
             City.valueOf(it)
         } catch (e: Exception) {
-            println("No city for card $name")
+            //println("No city for card $name")
             null
         }
     } ?: City.Unaffiliated

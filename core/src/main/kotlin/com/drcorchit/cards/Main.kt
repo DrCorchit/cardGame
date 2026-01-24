@@ -17,7 +17,7 @@ import kotlin.random.Random
  * [com.badlogic.gdx.ApplicationListener] implementation shared by all platforms.
  */
 class Main : ApplicationAdapter() {
-    var index = Random.Default.nextInt(240)
+    var index = 200//Random.Default.nextInt(240)
     val stage by lazy { Stage() }
 
     val spaceCards by lazy {

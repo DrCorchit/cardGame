@@ -104,7 +104,11 @@
   },
   {
     "name": "Poison",
-    "description": "A unit is destroyed if it receives two instances of this status."
+    "description": "Status that destroys a unit if inflicted a second time."
+  },
+  {
+    "name": "Doomed",
+    "description": "Status that banishes the card when it leaves the battlefield."
   },
   {
     "name": "Stalwart",

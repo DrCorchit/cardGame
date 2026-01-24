@@ -14,7 +14,7 @@ Mermaid: 3/3p [Avalon, Nymph] [At turn start, you may either:#Expend earth_mana 
 Warthog: 3/3p [Avalon, Beast] [When played, you may expend earth_mana earth_mana to assault 3.] [Oink! Oink!]
 Dryad Ranger: 4/3p [Avalon, Nymph] [When played, become immune.; You must expend air_mana to tap this unit.; When tapped, lock a unit.] [You ever feel like you're being watched?]
 Oceanid: 7/3p [Avalon, Nymph] [Expend water_mana water_mana to play this card.] [No man can withstand the wrath of the sea.]
-Lightning Strike: 3p [Avalon, Instant, Nature] [When played, assault 2.; You may expend X air_mana to increase the assault by X.] [You've been thunderstruck.]
+Lightning Strike: 3p [Avalon, Instant, Nature] [When played, assault 3.; You may expend X air_mana to increase the assault by X.] [You've been thunderstruck.]
 Lifegiving Rainfall: 3/3p [Avalon, Equipment, Nature] [At turn start, spawn earth_mana, water_mana, or air_mana.] [Every rainstorm begins with a single drop.]
 
 Heartwood Treant: 5/4p [Avalon, Treant] [You must expend earth_mana water_mana air_mana to tap this unit.; When tapped, become stalwart.] [Some people just can't see the forest for the trees.]

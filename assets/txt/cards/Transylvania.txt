@@ -23,7 +23,7 @@ Hitman: 1/4p [Transylvania, Human, Spy] [Disloyal.; When played (chaos X), assas
 Vampire Aristocrat: 4/4p [Transylvania, Vampire] [When tapped, you may expend X dark mana to assault X.; Whenever you play a human, spawn dark_mana.; Whenever you play a vampire, untap this card.] [I'm a creature of refined taste.]
 
 Inspector Culso: 1/4p [Transylvania, Human, Spy, Rare] [Disloyal.; When played (chaos X), play a card from your deck with a provision cost of X or less.] [With me, surprises are rarely unexpected.]
-The Butcher: 1/4p [Transylvania, Vampire, Spy, Rare] [Disloyal.; When played, either:#Assault 5.#Assassinate adjacent units by 3.] [Nice to meat you!]
+The Butcher: 1/4p [Transylvania, Vampire, Spy, Rare] [Disloyal.; This unit can be played between other units.; When played, either:#Assault 5.#Assassinate adjacent units by 3.] [Nice to meat you!]
 Maximillian, Slumlord: 5/4p [Transylvania, Human, Caporegime, Rare] [When played, move one of your opponent's mana dice to the common pool.; If this unit is destroyed, move it back.] [Su casa es mi casa.]
 
 The Dollhouse: 5p [Transylvania, Emplacement, Location, Rare] [When played, become stalwart and play a Moomsh Addict or Landlady from your deck.; Adjacent Moomsh Addict and Landlady units do not destroy themselves.] [If home is where the heart is, then they're homeless.]
@@ -40,8 +40,8 @@ Chester Zilch: 2/7p [Transylvania, Vampire, Caporegime, Rare] [Chaos 4: Summon s
 Molgrippe, Master Assassin: 3/8p [Transylvania, Human, Henchman, Legendary] [When played, either:#Chaos 5: Assault 5.#Chaos 6: Assassinate 6.] [The anomaly will be corrected momentarily.]
 The Heist: 8p [Transylvania, Instant, Crime, Legendary] [When played, lose X points and seize X.;You cannot play this card in such a way that your score falls below zero.] [The perfect crime.]
 
-Jailbreak: 9p [Transylvania, Instant, Crime, Legendary] [Play a common or rare unit from your graveyard.] [Breaking out: not just for teenagers anymore.]
-Debutante Ball: 9p [Transylvania, Instant, Legendary] [Play a unit from your deck.; If it's a common or rare unit, gain one of the following effects:#If it's a human, give it stalwart.#If it's a vampire, give it invisible.] [Be there or be square.]
+Jailbreak: 9p [Transylvania, Instant, Crime, Legendary] [Play a common or rare Transylvanian unit from your graveyard.] [Breaking out: not just for teenagers anymore.]
+Debutante Ball: 9p [Transylvania, Instant, Legendary] [Play a Transylvanian unit from your deck.; If it's a common or rare unit, gain one of the following effects:#If it's a human, give it stalwart.#If it's a vampire, give it invisible.] [Be there or be square.]
 
 Yalmamir, Prince of Crime: 1a 2/10p [Transylvania, Vampire, Kingpin, Legendary] [Haste.; When tapped, you may expend X dark_mana to seize X.; Whenever you play a crime, untap this card.] [A single incompetent enemy is worth a thousand incompetent friends.]
 Gladys the Glorious: 1/10p [Transylvania, Vampire, Kingpin, Legendary] [When played, expend 2X dark_mana to summon X common Henchman units from your graveyard.] [I am big. It's the pictures that got smaller.]

@@ -3,9 +3,9 @@ package com.drcorchit.cards.fantasy
 enum class Race {
     Human, Elf, Dwarf,
 
-    Fairy, Dryad, Nymph, Treant, Beast, Insect,
+    Fairy, Dryad, Nymph, Treant, Beast, Insectoid,
 
-    Dragon, Vampire, Undead, Monster,
+    Dragon, Ogroid, Vampire, Undead, Monster,
 
     Machine, Ship;
 
