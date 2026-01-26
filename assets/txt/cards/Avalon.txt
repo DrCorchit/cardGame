@@ -1,4 +1,4 @@
-Pixie: 1/2p [Avalon, Fairy] [When played, spawn earth_mana water_mana air_mana.; When tapped, repeat the "when played" ability.] [All you need is a little pixie dust.]
+Dryad Grovekeeper: 1/2p [Avalon, Nymph] [When played, spawn earth_mana earth_mana, water_mana water_mana, or air_mana air_mana.; When tapped, repeat the "when played" ability.] [Nature always provides.]
 Fairy Ring: 1/2p [Avalon, Fairy] [When tapped, lock an enemy protector.; At turn start, spawn earth_mana.] [Come dance with us!]
 Firefly: 1/2p [Avalon, Insectoid] [When played, spawn air_mana air_mana.;When played while paired, spawn air_mana air_mana air_mana instead.; When tapped, repeat the "when played" ability.] [Fireflies are proof that nature is magic.]
 Pond Naiad: 2/2p [Avalon, Nymph] [At turn start, either:#Spawn water_mana.#Expend water_mana to gain 1 point.] [Naiads agree that ponds are objectively cuter than lakes.]
@@ -8,14 +8,14 @@ Bullfrog Army: 3/2p [Avalon, Beast] [When tapped, assault 1.; When paired, assau
 Sleeping Bear: 5/2p [Avalon, Beast] [You must expend earth_mana to play this card.] [Let sleeping bears lie.]
 Forest Fire: 2p [Avalon, Instant, Nature] [When played, destroy an allied unit, then play a common Avalonian unit from your deck.] [Flames clear the way for new growth.]
 
-Dryad Grovekeeper: 2/3p [Avalon, Nymph] [When played, spawn earth_mana earth_mana, water_mana water_mana, or air_mana air_mana.; When tapped, repeat the "when played" ability.] [Nature always provides.]
+Pixie: 1/3p [Avalon, Fairy] [When played, spawn earth_mana water_mana air_mana.; When tapped, repeat the "when played" ability.] [All you need is a little pixie dust.]
 Treant Sage: 3/3p [Avalon, Treant] [When played, become immune.; When you pass, gain 1 point for each Nature card in your graveyard.] [I think, therefore... hmmm...]
 Mermaid: 3/3p [Avalon, Nymph] [At turn start, you may either:#Expend earth_mana to spawn water_mana water_mana.#Expend water_mana to spawn earth_mana air_mana.#Expend air_mana to spawn water_mana water_mana.] [Such a beautiful song...]
 Dryad Ranger: 4/3p [Avalon, Nymph] [When played, become immune.; You must expend air_mana to tap this unit.; When tapped, lock a unit.] [You ever feel like you're being watched?]
 Oceanid: 7/3p [Avalon, Nymph] [Expend water_mana water_mana to play this card.] [No man can withstand the wrath of the sea.]
 Lightning Strike: 3p [Avalon, Instant, Nature] [When played, assault 3.; You may expend X air_mana to increase the assault by X.] [You've been thunderstruck.]
 Lifegiving Rainfall: 3/3p [Avalon, Equipment, Nature] [At turn start, spawn earth_mana, water_mana, or air_mana.] [Every rainstorm begins with a single drop.]
-Harvest: 3p [Avalon, Instant, Nature] [Expend X earth_mana, water_mana, or air mana and gain 2X points.] [A time to sow, a time to reap...]
+Harvest: 3p [Avalon, Instant, Nature] [Expend X earth_mana, water_mana, and air mana and gain 2X points.] [A time to sow, a time to reap...]
 
 Heartwood Treant: 5/4p [Avalon, Treant] [You must expend earth_mana water_mana air_mana to tap this unit.; When tapped, become stalwart.] [Some people just can't see the forest for the trees.]
 Ancient Hamadryad: 1/4p [Avalon, Nymph] [When played, you may expend earth_mana water_mana air_mana to play a common unit from hand and draw a card.; This unit protects the unit to the right.] [The forest will never die!]
@@ -38,15 +38,15 @@ Lady of the Lake: 1/7p [Avalon, Human, Rare] [At the start of your turn, you may
 Merlin: 1/7p [Avalon, Human, Mage, Legendary] [When played, spawn up to 6 mana of any colors you want.; Whenever you play a unit, give it haste.] [Destiny is not a matter of chance. It's a matter of choice.]
 Excalibur: 7p [Avalon, Equipment, Weapon, Legendary] [When equipped, assault 6.; Overkill X: spawn X earth_mana, water_mana, or air_mana.] [Whoso draws this sword, shall be king of Avalon!]
 
-King Arthur: 1a 4/8p [Avalon, Human, Regent, Legendary] [When a weapon is equipped, either:#Become stalwart.#Gain 3 points.;] [One day, he will arise and save his homeland of Avalon.]
+King Arthur: 1a 4/8p [Avalon, Human, Regent, Legendary] [When a Weapon is equipped, either:#Become stalwart.#Gain 3 points.;] [One day, he will arise and save his homeland of Avalon.]
 Hurricane: 8p [Avalon, Instant, Nature, Rare] [Expend 2X air_mana to play the top X cards from your deck, in any order.] [She's a-gonna blow!]
 
 Treant King: 1/9p [Avalon, Treant, Regent, Legendary] [When played, play a Harvest from your deck.; When tapped, play a Harvest from your graveyard.] [My crown is called content, a crown that seldom kings enjoy.]
 Queen Titania: 4/9p [Avalon, Fairy, Regent, Legendary] [When played, summon a Pixie on either side of self, from deck or graveyard as desired.; When tapped, spawn earth_mana earth_mana, water_mana water_mana, or air_mana air_mana.] [Hand in hand, with fairy grace, we will sing and bless this place.]
 
 King Oberon: 4/10p [Avalon, Fairy, Regent, Legendary] [When played, become invisible.; At turn start, spawn air_mana.; When tapped, play a Lightning Strike from your graveyard.] [Ill met by moonlight, proud Titania.]
-Allmother: 5/10p [Avalon, Nymph, Legendary] [When played, either:#Expend earth_mana earth_mana earth_mana to play an Avalonian unit from your graveyard.#Expend water_mana water_mana water_mana to play an Avalonian unit from your deck.#Expend earth_mana water_mana air_mana to gain 8 points.] [No wound too deep, no bone too broken, no heart beyond repair.]
+Allmother: 5/10p [Avalon, Nymph, Legendary] [When played, either:#Expend earth_mana earth_mana earth_mana to play an Avalonian unit from your graveyard.#Expend water_mana water_mana water_mana to play an Avalonian unit from your deck.#Expend earth_mana water_mana air_mana to gain 9 points.] [No wound too deep, no bone too broken, no heart beyond repair.]
 
 The Pied Piper: 1/11p [Avalon, Human, Legendary] [When played, summon all 1-power Avalonian units from your graveyard to the right of self, in any order.] [You mustn't forget to pay the piper.]
 
-#Further ideas: Snow White, Undine, Gawain, Robin Hood, Centaurs, Seelie/Unseelie Court
+#Further ideas: Snow White, Undine, Gawain, Robin Hood, Centaurs, Seelie/Unseelie Court, Elves

@@ -17,7 +17,7 @@ import kotlin.random.Random
  * [com.badlogic.gdx.ApplicationListener] implementation shared by all platforms.
  */
 class Main : ApplicationAdapter() {
-    var index = 200//Random.Default.nextInt(240)
+    var index = Random.Default.nextInt(240)
     val stage by lazy { Stage() }
 
     val spaceCards by lazy {
@@ -54,12 +54,22 @@ class Main : ApplicationAdapter() {
         if (Gdx.input.isButtonJustPressed(Input.Buttons.LEFT)) {
             index = MathUtils.modulus(index + 1, cards.size)
         }
+        if (Gdx.input.isKeyJustPressed(Input.Keys.E)) {
+            index = MathUtils.modulus(index + 40, cards.size)
+        }
+
         if (Gdx.input.isButtonJustPressed(Input.Buttons.RIGHT)) {
             index = MathUtils.modulus(index - 1, cards.size)
         }
+        if (Gdx.input.isKeyJustPressed(Input.Keys.Q)) {
+            index = MathUtils.modulus(index - 40, cards.size)
+        }
+
+
         if (Gdx.input.isKeyJustPressed(Input.Keys.SPACE)) {
             card.drawable.updateGraphic()
         }
+
 
         card.drawable = cards[index]
 

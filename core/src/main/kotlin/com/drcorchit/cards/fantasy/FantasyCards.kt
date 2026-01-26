@@ -123,6 +123,16 @@ object FantasyCards {
         val cardsByType = cards.groupBy { it.type }
         cardsByType.forEach { (type, cards) -> println(" $type ${cards.size}") }
 
+        println("\nToughness count:")
+        cardsByType[CardType.Unit]!!
+            .groupBy { it.power + it.armor }
+            .entries.sortedBy { it.key }
+            .forEach {
+                val str = "%-2d -> %d".format(it.key, it.value.size)
+                println(str)
+            }
+
+
         println("\nTotal unique cards: ${cards.size}")
 
         fun factionCount(city: City): Int {
@@ -152,6 +162,8 @@ object FantasyCards {
                     println("Card ${it.name} has a long tag: $tag (${it.tags})")
                 }
             }
+
+
 
             val abilityTextH =
                 Draw.calculateDimensions(Fonts.abilityFont, it.abilityText, abilityTextW).second

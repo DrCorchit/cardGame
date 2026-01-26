@@ -1,6 +1,6 @@
 Unicorn: 2/2p [Beast] [At turn start, spawn a mana color of your choice.] [It's not always rainbows and unicorns. Sometimes it's just unicorns.]
+Apothecary: 2/2p [Human] [When played, purify a unit.] [An ounce of prevention is worth a pound of cure.]
 Squirrel: 3/2p [Beast] [When played, you may banish a card from your opponent's graveyard.] [Just one badass squirrel. Nothing more, nothing less.]
-Apothecary: 3/2p [Human] [When played, purify a unit.] [An ounce of prevention is worth a pound of cure.]
 Pack Wolf: 3/2p [Beast] [When played while paired, assault 2.] [Nice doggy...]
 Zombie: 3/3p [Undead] [Whenever you play a zombie, summon all zombies from your graveyard.] [This is me when I wake up in the morning.]
 Goblin Shaman: 3/2p [Ogroid, Tribal] [When tapped, either:#Give a unit doomed.#Give a unit immune.] [Double, double, toil and trouble!]
@@ -38,19 +38,18 @@ Giant Turtle: 6/5p [Beast, Rare] [When played, roll an additional mana die and a
 Ancient Vampire: 7/5p [Vampire, Rare] [When played, lose 1 point for each light_mana among common or allied mana dice.] [For some, the emo phase lasts a bit longer than others.]
 
 Distressed Damsel: 1/6p [Human, Rare] [When you pass, gain 10 points if this unit is protected.] [My hero!]
-Battering Ram: 1a 1/6p [Machine, Rare] [When played, either:#Assault 2.#Destroy an enemy equipment.#Destroy an enemy emplacement.; When tapped, repeat the "when played" ability.] [Another blow!]
+Battering Ram: 1a 1/6p [Machine, Rare] [When played, either:#Assault 2.#Destroy an enemy equipment.#Destroy an enemy emplacement.; When tapped, repeat the "when played" ability.] [Knock knock.]
 Gravetender: 2/6p [Undead, Rare] [When played, summon all zombies from your graveyard.; Whenever you play a card from graveyard, summon self from deck or graveyard.] [Yer only diggin' yer own grave.]
 Alpha Wolf: 3/6p [Beast, Rare] [When played, assault 2.; Increase the assault by 1 for each allied Pack Wolf.] [Arooooo!]
-Skeleton Key: 6p [Instant, Rare] [When played, lock or purify and enemy unit.; Afterwards, draw a card and play a card.] [Life is an open door.]
+Skeleton Key: 6p [Instant, Rare] [When played, lock or purify an enemy unit.; Afterwards, draw a card and play a card.] [Life is an open door.]
 
 Royal Envoy: 1/7p [Human, Legendary] [When played, play an instant, equipment, or emplacement from your deck.] [So let it be done!]
-Royal Guard: 2a 4/7p [Human, Knight, Legendary] [This card protects the unit to the right.] [They'll have to go through me.]
+Royal Guard: 2a 5/7p [Human, Knight, Legendary] [This card protects the unit to the right.] [They'll have to go through me.]
 Royal Decree: 7p [Instant, Law, Legendary] [Play a unit from your deck.] [So let it be written...]
 Blistering Heatwave: 7p [Instant, Nature, Legendary] [When played, banish any card that is not protected.] [Just when you think it can't get any hotter...]
-Resurrection: 7p [Instant, Spell, Legendary] [Play a common or rare unit from your graveyard.] [A good character never stays dead for long.]
 
-Caravan Merchant: 2/8p [Human, Rare] [When played, swap a card in hand with a card in your deck.; When tapped, repeat the "when played" ability.; When you pass, you need not shuffle your deck next round.] [With so much merchandise, you'll never catch him unawares.]
-Multitool: 8p [Instant, Weapon, Legendary] [When played, choose 3 of the following abilities in any order:#Lock a unit.#Purify a unit.#Assault 2.#Gain 3 points.] [Why don't YOU own one?]
+Caravan Merchant: 2/8p [Human, Legendary] [When played, swap a card in hand with a card in your deck.; When tapped, repeat the "when played" ability.; When you pass, you need not shuffle your deck next round.] [With so much merchandise, you'll never catch him unawares.]
+Resurrection: 8p [Instant, Spell, Rare] [Play a common or rare unit from your graveyard.] [A good character never stays dead for long.]Multitool: 8p [Instant, Weapon, Legendary] [When played, choose 3 of the following abilities in any order:#Lock a unit.#Purify a unit.#Assault 2.#Gain 3 points.] [Why don't YOU own one?]
 
 Field Marshall: 1/9p [Human, Soldier, Legendary] [When played, play all copies of a Warfare card from your deck.] [There's a world of difference between tactics and strategy.]
 Prophecy: 9p [Instant, Spell, Legendary] [Echo.; When played, play a card from your deck.] [If I foretold your fate, would so prophesying avert it—or seal it?]
@@ -59,3 +58,5 @@ Queen of Hearts: 1/10p [Human, Regent, Legendary] [Gain an additional effect for
 
 Leprechaun: 3/1p [Fairy, Legendary] [If this card is in your starting deck, you must inform your opponent.; If you have not played this card by the end of the game, you lose.] [Follow your dreams. Rainbows are an acceptable alternative, however.]
 Bird of Victory: 3/0p [Beast, Token, Legendary] [] [May the best man win!]
+
+#Ideas: Play an armored unit from deck

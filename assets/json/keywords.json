@@ -75,7 +75,7 @@
   },
   {
     "name": "Echo",
-    "description": "Before the mulligan phase, draw this card from your graveyard, once per game."
+    "description": "Before the mulligan phase, draw this card from your graveyard and give it doomed."
   },
   {
     "name": "Imbibe",
@@ -112,11 +112,11 @@
   },
   {
     "name": "Stalwart",
-    "description": "Status that allows the unit to remain on the battlefield after the round ends."
+    "description": "At round end, units with this status are purified instead of destroyed. Equipment is also removed."
   },
   {
     "name": "Immune",
-    "description": "Status that prevents the unit from receiving additional statuses."
+    "description": "Status that prevents receiving additional statuses."
   },
   {
     "name": "Invisible",

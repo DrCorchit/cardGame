@@ -9,7 +9,7 @@ Shore Leave: 2p [Thalassa, Instant, Warfare] [When played, lock a unit and spawn
 Walk the Plank: 2p [Thalassa, Instant, Warfare] [Draw a card and discard a card.; Afterwards, gain points equal to the provision cost of the discarded card.] [Next stop: Davy Jones' locker!]
 Hand Cannon: 2p [Thalassa, Equipment, Weapon, Warfare] [This card can only be equipped to a Pirate.; When equipped, assault 2.; Increases the damage of Broadside by 1.] [I always add a little extra powder.]
 
-Havoc Vanguard: 3/3p [Thalassa, Human, Pirate] [When discarded, summon self.] [Me first!]
+Havoc Vanguard: 2/3p [Thalassa, Human, Pirate] [When discarded, summon self.] [Me first!]
 Schooner: 1a 2/3p [Thalassa, Ship] [Plunder 5.] [Ships are a great place to keep all your drunken sailors.]
 Frigate: 1a 3/3p [Thalassa, Ship] [Whenever you overkill X, gain X points.; Plunder 2.] [This bad boy can fit so many cannons on it.]
 Havoc Corsair: 4/3p [Thalassa, Human, Pirate] [When played, either:#Expend X fire_mana and gain X points.#Expend X water_mana and gain X points.] [A pirate's life for me!]
@@ -22,7 +22,7 @@ Howitzer: 4p [Thalassa, Equipment, Weapon, Cannon] [This card can only be equipp
 Treasure Galleon: 2a 2/4p [Thalassa, Ship] [Plunder 6.] [Don't put all your gold on one ship.]
 Kraken: 1/4p [Thalassa, Monster] [When played, devour an allied ship.; If there is another copy in your deck, summon it.] [Now would be a good time to start screaming.]
 
-Moby Dick: 3/4p [Thalassa, Beast, Rare] [When tapped, devour an allied ship.; When discarded, summon self from your graveyard.] [Thar she blows!]
+Moby Dick: 2/4p [Thalassa, Beast, Rare] [When tapped, devour an allied ship.; When discarded, summon self.] [Thar she blows!]
 Davy Jones: 10/4p [Thalassa, Undead, Pirate, Rare] [This unit starts in your graveyard.] [Life is cruel. Why should the afterlife be any different?]
 Yarn-Spinner Calhoun: 5/4p [Thalassa, Human, Pirate, Rare] [When played, both players draw a card. This ability cannot be used if your opponent has passed.;Instead of drawing the top card from your deck, you may expend X water_mana to draw from the top 2X cards instead.; When tapped, repeat the "when played" ability.] [Lemme tell ya a tale...]
 
