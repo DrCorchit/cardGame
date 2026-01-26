@@ -5,6 +5,9 @@ import com.drcorchit.cards.fantasy.FantasyCard.Companion.totalAbilityTextH
 import com.drcorchit.cards.graphics.Draw
 import com.drcorchit.cards.graphics.Fonts
 import com.drcorchit.justice.utils.StringUtils.normalize
+import com.google.gson.JsonArray
+import com.google.gson.JsonObject
+import com.google.gson.JsonPrimitive
 import java.io.File
 
 object FantasyCards {
@@ -147,6 +150,19 @@ object FantasyCards {
 
         val count = City.entries.sumOf { factionCount(it) }
         println("Total printable cards: $count")
+
+//        cards.forEach { card -> println(card.name) }
+//        val json = JsonArray()
+//        cards.forEach {
+//            val obj = JsonObject()
+//            obj.addProperty("name", it.name)
+//            obj.addProperty("power", it.power)
+//            obj.addProperty("risk", 0)
+//            obj.addProperty("removal", 0)
+//            json.add(obj)
+//        }
+
+//        println(json)
 
         //print card issues here
         cards.forEach {

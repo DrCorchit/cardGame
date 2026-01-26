@@ -1,17 +1,17 @@
 #Faction identity: engines, limited hard removal
 Automaton: 2/2p [Technopolis, Machine] [At turn start, either:#Spawn air_mana.#Expend air_mana to gain 1 point.] [YES MASTER]
 Solar Panel: 2/2p [Technopolis, Machine] [At turn start, either:#Spawn light_mana.#Expend light_mana to gain 1 point.] [These things have a bright future.]
-Drone Swarm: 1a 2/2p [Technopolis, Machine] [When played while paired, lock an enemy unit.; When tapped, this unit protects adjacent units.] [Strength in numbers.]
+Drone Swarm: 1a 2/2p [Technopolis, Machine] [When played while paired, lock an enemy unit.; This unit protects adjacent units.] [Strength in numbers.]
 Scribe: 2/2p [Technopolis, Elf] [When played, become immune.; When you pass, gain 1 point for each allied machine you control.] [The records aren't going to keep themselves.]
-Capacitor: 3/2p [Technopolis, Machine] [When tapped, either:#Expend X light_mana to gain X points.#Expend X air_mana to assault X.] [Brzzzap!]
+Capacitor: 2/2p [Technopolis, Machine] [Haste.; When tapped, either:#Expend X light_mana to gain X points.#Expend X air_mana to assault X.] [Brzzzap!]
+Dynamo: 1a 2/2p [Technopolis, Machine] [At turn start, spawn light_mana or air_mana.] [Ol' Reliable.]
 Paper Shuffler: 3/2p [Technopolis, Elf] [At turn start, you may draw a card from the top of your deck and move a card from your hand to the top or bottom of your deck.] [Paper is actually kinda heavy.]
-Dynamo: 1a 3/2p [Technopolis, Machine] [At turn start, you may expend fire_mana to spawn air_mana or light_mana] [Ol' Reliable.]
 Cyborg: 1a 5/2p [Technopolis, Elf] [You must expend air_mana to play this card.] [More machine than man.]
 Electroshock: 2p [Technopolis, Instant, Technology] [When played, either:#Lock a unit and spawn air_mana air_mana air_mana.#Remove all equipments from a unit.] [Therapy not included.]
 
-Transformer: 1a 2/3p [Technopolis, Machine] [When played, either:#Convert all water_mana and dark_mana into light_mana.#Convert all fire_mana and earth_mana into air_mana.; When tapped, repeat the "when played" ability.] [Step up the voltage.]
 Messenger: 3/3p [Technopolis, Elf] [When moved to the top of your deck, summon self.] [The barristers send their regards.] [pointslam]
 Battery: 1a 3/3p [Technopolis, Machine] [When tapped, spawn light_mana light_mana light_mana or air_mana air_mana air_mana.] [Keeps going and going and... oh it's dead already.]
+Transformer: 4/3p [Technopolis, Machine] [When tapped either:#Convert all light_mana into air_mana.;#Convert all air_mana into light_mana.#Expend X light_mana and gain X points.#Expend X air_mana and gain X points.] [Step up the voltage.]
 Engineer: 4/3p [Technopolis, Elf] [When tapped, either:#Expend light_mana to purify a unit.#Expend air_mana to lock a unit.] [Fix-it Felix just doesn't have the same ring to it.]
 Archivist: 4/3p [Technopolis, Elf] [When played, look at the top 3 cards from either your or your opponent's deck and move one to the top.; When tapped, repeat the "when played" ability.] [Our records are perfect, according to our records.]
 Pulverizer: 1a 7/3p [Technopolis, Machine] [You must expend air_mana air_mana to play this unit.] [Resistance is futile.]
@@ -19,9 +19,9 @@ Power Surge: 3/3p [Technopolis, Equipment, Technology] [When equipped to a commo
 Product Recall: 3p [Technopolis, Instant, Technology] [Return a common allied unit to hand, then play a card.] [A class action lawsuit is underway.]
 
 Incinerator: 1a 3/4p [Technopolis, Machine] [When played, banish the top card of your opponent's deck.; When tapped, repeat the "when played" ability.] [Ashes to ashes.]
-Artificer: 3/4p [Technopolis, Elf] [When played, destroy an allied machine and play a common machine from your graveyard.] [Make it or break it.] [utility]
+Artificer: 3/4p [Technopolis, Elf] [When played, destroy an allied Machine and play a common Machine from your graveyard.] [Make it or break it.] [utility]
 Devastator: 1a 9/4p [Technopolis, Machine] [You must expend air_mana air_mana air_mana to play this unit.] [TARGET DESTROYED]
-Schematic: 4p [Technopolis, Instant, Technology] [Play a common machine from your deck.] [Great, they forgot to attach the parts list again.]
+Schematic: 4p [Technopolis, Instant, Technology] [Play a common Machine from your deck.] [Great, they forgot to attach the parts list again.]
 
 Armor Weave: 2a 4p [Technopolis, Equipment, Technology, Rare] [When moved to the top of your deck, play self.; You may also expend air_mana to play this card from your deck during your turn.] [No way they're getting through all that.]
 Eriathorn, Gemini: 1a 3/4p [Technopolis, Elf, Rare] [When tapped, spawn air_mana air_mana air_mana.; If you control Shuramorn, double that amount.] [Prepare for trouble!]

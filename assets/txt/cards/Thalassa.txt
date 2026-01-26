@@ -1,5 +1,5 @@
-Longshoreman Raider: 1a 2/2p [Thalassa, Human, Pirate] [At turn start, spawn fire_mana or water_mana.] [Tote that barge, lift that bale.]
 Dinghy: 2/2p [Thalassa, Ship] [Plunder 4.] [If it's dingy and dinky, it's a dinghy.]
+Longshoreman Raider: 1a 2/2p [Thalassa, Human, Pirate] [At turn start, spawn fire_mana or water_mana.] [Tote that barge, lift that bale.]
 Deckhand Fibber: 3/2p [Thalassa, Human, Pirate] [When played, draw a card and discard a card.] [Yeah, I know a good yarn...]
 Great White: 3/2p [Thalassa, Beast] [When played, devour an allied ship.] [They're already circling.]
 Havoc Longboat: 3/2p [Thalassa, Ship] [Whenever you equip a Cannon, assault 1.; Plunder 2.] [...put him in a longboat till he's sober...]
