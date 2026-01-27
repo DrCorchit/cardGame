@@ -22,13 +22,7 @@ import java.util.zip.Deflater
 class GenerateCards : ApplicationAdapter() {
     var index = 0
 
-    val spaceCards by lazy {
-        SpaceCards.cards + disasters + cardbacks
-    }
-
-    val fantasyCards by lazy { FantasyCards.cards }
-
-    val cards by lazy { fantasyCards }
+    val cards by lazy { Main.cards }
 
     override fun create() {
         //Load the batch

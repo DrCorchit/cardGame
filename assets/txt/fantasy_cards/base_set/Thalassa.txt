@@ -34,7 +34,7 @@ Terror o' the Seas: 1a 2/6p [Thalassa, Ship, Rare] [When played, become immune.;
 Jormungandir: 2a 4/6p [Thalassa, Monster, Rare] [When played, become immune.; When tapped, expend X water_mana to devour X allied units.] [The serpent at the end of the world!]
 Captain Flint: 2/6p [Thalassa, Human, Pirate, Rare] [When played, either:#Play a Warfare card from your deck.#Expend fire_mana fire_mana and play a Warfare card from your graveyard.] [Yo-ho-ho, and a bottle of rum!]
 
-Anne Bonny: 3/7p [Thalassa, Human, Pirate, Rare] [When played, draw a card and discard a card.; Whenever you discard a card, gain 1 point. You may expend fire_mana to intensify the assault by 1.] [No need to call me lady. "Captain" will do just fine.]
+Anne Bonny: 3/7p [Thalassa, Human, Pirate, Rare] [When played, draw a card and discard a card.; Whenever you discard a card, gain 1 point.] [No need to call me lady. "Captain" will do just fine.]
 Blackbeard: 6/7p [Thalassa, Human, Pirate, Rare] [When tapped, assault 6 and destroy self.; Overkill X: spawn X fire_mana.] [He died standing up.]
 Davy Jones' Locker: 7p [Thalassa, Emplacement, Legendary] [When played, draw a card and discard a card.; Whenever you discard a unit of X provisions, spawn X fire_mana.; Whenever you devour a unit of X provisions, spawn X water_mana.] [Sleep with the fishes.]
 

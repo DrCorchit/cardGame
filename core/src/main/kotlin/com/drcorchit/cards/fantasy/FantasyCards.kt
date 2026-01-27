@@ -5,88 +5,90 @@ import com.drcorchit.cards.fantasy.FantasyCard.Companion.totalAbilityTextH
 import com.drcorchit.cards.graphics.Draw
 import com.drcorchit.cards.graphics.Fonts
 import com.drcorchit.justice.utils.StringUtils.normalize
-import com.google.gson.JsonArray
-import com.google.gson.JsonObject
-import com.google.gson.JsonPrimitive
 import java.io.File
 
-object FantasyCards {
-    val nameRegex = "(?<name>.*)"
-    val powerRegex = "(?<power>\\d+)"
-    val costRegex = "(?<cost>\\d+)"
-    val armorRegex = "(?<armor>\\d+)a"
-    val statsRegex = "($armorRegex)? *($powerRegex\\/)?${costRegex}p"
-    val tagsRegex = "(?<tags>.*?)"
-    val abilityRegex = "(?<abilities>.*?)"
-    val quoteRegex = "(?<quote>.*?)"
-    val strategyRegex = "(?<strategy>.*)"
+class FantasyCards(path: String) {
+    val cards = readFrom(path)
 
-    val regex =
-        Regex("$nameRegex: *$statsRegex *\\[$tagsRegex] *\\[$abilityRegex] *\\[$quoteRegex]( *\\[$strategyRegex])?")
+    companion object {
+        val nameRegex = "(?<name>.*)"
+        val powerRegex = "(?<power>\\d+)"
+        val costRegex = "(?<cost>\\d+)"
+        val armorRegex = "(?<armor>\\d+)a"
+        val statsRegex = "($armorRegex)? *($powerRegex\\/)?${costRegex}p"
+        val tagsRegex = "(?<tags>.*?)"
+        val abilityRegex = "(?<abilities>.*?)"
+        val quoteRegex = "(?<quote>.*?)"
+        val strategyRegex = "(?<strategy>.*)"
 
-    @JvmStatic
-    fun parse(str: String): FantasyCard? {
-        if (str.isBlank() || str.startsWith("#")) {
-            return null
-        }
+        val regex =
+            Regex("$nameRegex: *$statsRegex *\\[$tagsRegex] *\\[$abilityRegex] *\\[$quoteRegex]( *\\[$strategyRegex])?")
 
-        try {
-            val match = regex.matchEntire(str)!!.groups
-            val name = match["name"]!!.value
-                .replace("(?<!\\w)\"(?=\\w)".toRegex(), "“")
-                .replace("\"", "”")
-                .replace("(?<!\\w)'(?=\\w)".toRegex(), "‘")
-                .replace("'", "’")
-            val armor = match["armor"]?.value?.toInt() ?: 0
-            val power = match["power"]?.value?.toInt() ?: 0
-            val cost = match["cost"]!!.value.toInt()
-            val tags = match["tags"]!!.value.split(",").map { it.trim() }
-            val abilities = match["abilities"]!!.value
-                .replace("(?<!\\w)\"(?=\\w)".toRegex(), "“")
-                .replace("\"", "”")
-                .replace("(?<!\\w)'(?=\\w)".toRegex(), "‘")
-                .replace("'", "’")
-                .split(";")
-            val quote = match["quote"]!!.value
-                .replace("(?<!\\w)\"(?=\\w)".toRegex(), "“")
-                .replace("\"", "”")
-                .replace("(?<!\\w)'(?=\\w)".toRegex(), "‘")
-                .replace("'", "’")
-            val strategyTags = match["strategy"]
-                ?.let { it.value.split(",").map { tag -> tag.trim() } }
-                ?: listOf()
-
-            return FantasyCard(name, power, cost, armor, tags, abilities, quote, strategyTags)
-        } catch (e: Exception) {
-            println("Error parsing line: $str")
-            e.printStackTrace()
-            return null
-        }
-    }
-
-    //val factions = Motive.entries.map { "$it.txt" }
-    val factions = City.entries.map { "$it.txt" }
-
-    fun readFrom(filename: String): List<FantasyCard> {
-        return File(filename).listFiles()!!
-            .flatMap { file ->
-                if (factions.contains(file.name)) {
-                    file.readLines().mapNotNull { parse(it) }
-                } else listOf()
+        @JvmStatic
+        fun parse(str: String): FantasyCard? {
+            if (str.isBlank() || str.startsWith("#")) {
+                return null
             }
-    }
 
-    val cards by lazy { readFrom("assets/txt/cards") }
+            try {
+                val match = regex.matchEntire(str)!!.groups
+                val name = match["name"]!!.value
+                    .replace("(?<!\\w)\"(?=\\w)".toRegex(), "“")
+                    .replace("\"", "”")
+                    .replace("(?<!\\w)'(?=\\w)".toRegex(), "‘")
+                    .replace("'", "’")
+                val armor = match["armor"]?.value?.toInt() ?: 0
+                val power = match["power"]?.value?.toInt() ?: 0
+                val cost = match["cost"]!!.value.toInt()
+                val tags = match["tags"]!!.value.split(",").map { it.trim() }
+                val abilities = match["abilities"]!!.value
+                    .replace("(?<!\\w)\"(?=\\w)".toRegex(), "“")
+                    .replace("\"", "”")
+                    .replace("(?<!\\w)'(?=\\w)".toRegex(), "‘")
+                    .replace("'", "’")
+                    .split(";")
+                val quote = match["quote"]!!.value
+                    .replace("(?<!\\w)\"(?=\\w)".toRegex(), "“")
+                    .replace("\"", "”")
+                    .replace("(?<!\\w)'(?=\\w)".toRegex(), "‘")
+                    .replace("'", "’")
+                val strategyTags = match["strategy"]
+                    ?.let { it.value.split(",").map { tag -> tag.trim() } }
+                    ?: listOf()
+
+                return FantasyCard(name, power, cost, armor, tags, abilities, quote, strategyTags)
+            } catch (e: Exception) {
+                println("Error parsing line: $str")
+                e.printStackTrace()
+                return null
+            }
+        }
+
+        val factions = City.entries.map { "$it.txt" }
+
+        val baseSet by lazy { FantasyCards("assets/txt/fantasy_cards/base_set") }
+        val expac1 by lazy { FantasyCards("assets/txt/fantasy_cards/expac_1") }
+
+        @JvmStatic
+        fun readFrom(filename: String): List<FantasyCard> {
+            return File(filename).listFiles()!!
+                .flatMap { file ->
+                    if (factions.contains(file.name)) {
+                        file.readLines().mapNotNull { parse(it) }
+                    } else listOf()
+                }
+        }
+    }
 
     init {
-        val folder =
+        val unusedArts =
             File("assets/images/fantasy_cards").listFiles()!!
                 .filter { it.isDirectory }
                 .flatMap { it.listFiles()!!.asList() }
                 .map { it.nameWithoutExtension.normalize() }
                 .toMutableSet()
-        folder.removeAll(cards.map { it.name.normalize() }.toSet())
-        if (folder.isNotEmpty()) {
+        unusedArts.removeAll(cards.map { it.name.normalize() }.toSet())
+        if (unusedArts.isNotEmpty()) {
             //println("Unused card arts {\n  ${folder.joinToString("\n  ")}\n}")
         }
 
@@ -135,7 +137,6 @@ object FantasyCards {
                 println(str)
             }
 
-
         println("\nTotal unique cards: ${cards.size}")
 
         fun factionCount(city: City): Int {
@@ -179,12 +180,14 @@ object FantasyCards {
                 }
             }
 
-
-
             val abilityTextH =
                 Draw.calculateDimensions(Fonts.abilityFont, it.abilityText, abilityTextW).second
             val keywordTextH =
-                Draw.calculateDimensions(Fonts.keywordHelpFont, it.keywordText, abilityTextW).second
+                Draw.calculateDimensions(
+                    Fonts.keywordHelpFont,
+                    it.keywordText,
+                    abilityTextW
+                ).second
             val overlap = totalAbilityTextH - (keywordTextH + abilityTextH)
             if (overlap < 0) {
                 println("Card has overlap: ${it.name} $overlap")

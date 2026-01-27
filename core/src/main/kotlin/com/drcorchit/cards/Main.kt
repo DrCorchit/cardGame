@@ -20,14 +20,6 @@ class Main : ApplicationAdapter() {
     var index = Random.Default.nextInt(240)
     val stage by lazy { Stage() }
 
-    val spaceCards by lazy {
-        SpaceCards.cards + disasters + cardbacks
-    }
-
-    val fantasyCards by lazy { FantasyCards.cards }
-
-    val cards by lazy { fantasyCards }
-
     val card by lazy { CardActor(cards[index]) }
 
     override fun create() {
@@ -93,5 +85,13 @@ class Main : ApplicationAdapter() {
         const val IMAGE_H = 1122
         const val W = IMAGE_W - (BORDER * 2)
         const val H = IMAGE_H - (BORDER * 2)
+
+        val spaceCards by lazy {
+            SpaceCards.cards + disasters + cardbacks
+        }
+
+        val fantasyCards by lazy { FantasyCards.baseSet.cards }
+
+        val cards by lazy { fantasyCards }
     }
 }

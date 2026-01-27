@@ -1,0 +1,17 @@
+Norseman
+Nithing: 3p [Thalassa, Emplacement] [When played, choose an enemy unit and gain 1 counter.; At turn start, gain 1 counter.; Whenever the number of counters exceeds the base power of the chosen unit, destroy that unit and self.] [Curse you!]
+
+Norse Longboat
+
+Mjolnir: 4p [Thalassa, Equipment, Weapon, Rare] [When equipped, assault 4.; When equipped to Thor, assault 8 instead.]
+Fenrir: 4/4p [Thalassa, Beast, Rare]
+Tyr:
+Freya:
+Hel:
+Heimdall: 8/6p [Thalassa, Deity, Rare]
+Odin: 4/7p [Thalassa, Deity, Legendary] [When played, look through your entire deck. You may discard a card of your choice.; At turn start, you may expend fire_mana water_mana to repeat the "when played" ability.] [Allfather knows best.]
+Baldur: 11/8p [Thalassa, Deity, Legendary] [When an adjacent unit is destroyed, poison self.] []
+Loki: 1/9p [Thalassa, Deity, Legendary] [When played, discard the top three cards from your deck.; Whenever you discard a card, you may expend fire_mana or water_mana equal to its provision cost to play it instead.] []
+Yggdrasil: 10p [Thalassa, Emplacement] [] []
+Thor: 5/11p [Thalassa, Deity, Legendary] [When played, become stalwart.; Whenever you destroy an enemy unit during your turn, gain 1 counter.; This unit's base power is increased by 1 for each counter.] []
+Asguard: 12p [Thalassa, Emplacement, Legendary] [] []
