@@ -17,7 +17,7 @@ import kotlin.random.Random
  * [com.badlogic.gdx.ApplicationListener] implementation shared by all platforms.
  */
 class Main : ApplicationAdapter() {
-    var index = Random.Default.nextInt(240)
+    var index = 0
     val stage by lazy { Stage() }
 
     val card by lazy { CardActor(cards[index]) }
@@ -90,7 +90,7 @@ class Main : ApplicationAdapter() {
             SpaceCards.cards + disasters + cardbacks
         }
 
-        val fantasyCards by lazy { FantasyCards.baseSet.cards }
+        val fantasyCards by lazy { FantasyCards.expac1.cards }
 
         val cards by lazy { fantasyCards }
     }

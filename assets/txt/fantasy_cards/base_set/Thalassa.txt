@@ -1,7 +1,7 @@
 Dinghy: 2/2p [Thalassa, Ship] [Plunder 4.] [If it's dingy and dinky, it's a dinghy.]
 Longshoreman Raider: 1a 2/2p [Thalassa, Human, Pirate] [At turn start, spawn fire_mana or water_mana.] [Tote that barge, lift that bale.]
 Deckhand Fibber: 3/2p [Thalassa, Human, Pirate] [When played, draw a card and discard a card.] [Yeah, I know a good yarn...]
-Great White: 3/2p [Thalassa, Beast] [When played, devour an allied ship.] [They're already circling.]
+Great White: 3/2p [Thalassa, Beast] [When played, devour an allied Ship.] [They're already circling.]
 Havoc Longboat: 3/2p [Thalassa, Ship] [Whenever you equip a Cannon, assault 1.; Plunder 2.] [...put him in a longboat till he's sober...]
 Havoc Raider: 3/2p [Thalassa, Human, Pirate] [When played, you may expend fire_mana water_mana to assault 2.] [Do what you want 'cause a pirate is free!]
 Drunken Sailor: 5/2p [Thalassa, Human, Pirate] [You must expend water_mana to play this unit.] [What DO you do with a drunken sailor?]
@@ -20,9 +20,9 @@ Jolly Roger: 2/3p [Thalassa, Equipment, Flag] [When equipped, trigger 1 of the f
 Harpooner: 3/4p [Thalassa, Human, Pirate] [When tapped, assault 1.; Increase the damage by 1 for each adjacent ship.;] [Do you get my thrust?]
 Howitzer: 4p [Thalassa, Equipment, Weapon, Cannon] [This card can only be equipped to a ship.; When equipped, assault 4.; Increases the damage of Broadside by 1.] [The biggest gun usually wins.]
 Treasure Galleon: 2a 2/4p [Thalassa, Ship] [Plunder 6.] [Don't put all your gold on one ship.]
-Kraken: 1/4p [Thalassa, Monster] [When played, devour an allied ship.; If there is another copy in your deck, summon it.] [Now would be a good time to start screaming.]
+Kraken: 1/4p [Thalassa, Monster] [When played, devour an allied Ship.; If there is another copy in your deck, summon it.] [Now would be a good time to start screaming.]
 
-Moby Dick: 2/4p [Thalassa, Beast, Rare] [When tapped, devour an allied ship.; When discarded, summon self.] [Thar she blows!]
+Moby Dick: 2/4p [Thalassa, Beast, Rare] [When tapped, devour an allied Ship.; When discarded, summon self.] [Thar she blows!]
 Davy Jones: 10/4p [Thalassa, Undead, Pirate, Rare] [This unit starts in your graveyard.] [Life is cruel. Why should the afterlife be any different?]
 Yarn-Spinner Calhoun: 5/4p [Thalassa, Human, Pirate, Rare] [When played, both players draw a card. This ability cannot be used if your opponent has passed.;Instead of drawing the top card from your deck, you may expend X water_mana to draw from the top 2X cards instead.; When tapped, repeat the "when played" ability.] [Lemme tell ya a tale...]
 
@@ -46,6 +46,7 @@ The White Cliffs: 9p [Thalassa, Emplacement, Location, Legendary] [When played, 
 Broadside: 9p [Thalassa, Instant, Warfare, Legendary] [Echo.; Assault 4.; Overkill X: look at the top X cards of your deck and play one.] [Full speed ahead!]
 
 Queen Anne's Revenge: 1a 1/10p [Thalassa, Ship, Legendary] [When played, assault 2. You may expend 2X fire_mana to intensify the assault by X.; This card's assault also hits units adjacent to the target.; Plunder 2.] [Shiver me timbers!]
-Cthulhu: 6/10p [Thalassa, Monster, Legendary] [When played, expend X water_mana to devour an enemy unit of X power.] [Cthulhu fhtagn!]
+Cthulhu: 6/10p [Thalassa, Monster, Legendary] [When played, expend X water_mana to devour an enemy unit of X or less power.] [Cthulhu fhtagn!]
 
-#Ideas: Moby Dick characters, Norse Pantheon, more gold warfare cards
+#Ideas: Moby Dick characters, Norse Pantheon, more gold warfare cards, Charybdis, Loch Ness Monster, Hafgufa, Hydra, Leviathan
+#https://en.wikipedia.org/wiki/Sea_monster#Examples

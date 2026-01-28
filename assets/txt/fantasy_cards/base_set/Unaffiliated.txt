@@ -1,4 +1,4 @@
-Unicorn: 2/2p [Beast] [At turn start, spawn a mana color of your choice.] [It's not always rainbows and unicorns. Sometimes it's just unicorns.]
+Unicorn: 2/2p [Beast] [At turn start, spawn a mana of any color.] [It's not always rainbows and unicorns. Sometimes it's just unicorns.]
 Apothecary: 2/2p [Human] [When played, purify a unit.] [An ounce of prevention is worth a pound of cure.]
 Squirrel: 3/2p [Beast] [When played, you may banish a card from your opponent's graveyard.] [Just one badass squirrel. Nothing more, nothing less.]
 Pack Wolf: 3/2p [Beast] [When played while paired, assault 2.] [Nice doggy...]

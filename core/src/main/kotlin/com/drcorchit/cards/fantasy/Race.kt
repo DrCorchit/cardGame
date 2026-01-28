@@ -1,12 +1,19 @@
 package com.drcorchit.cards.fantasy
 
 enum class Race {
+    //Standard races
     Human, Elf, Dwarf,
 
-    Fairy, Dryad, Nymph, Treant, Beast, Insectoid,
+    //Forest races
+    Fairy, Dryad, Nymph, Treant,
 
-    Dragon, Ogroid, Vampire, Undead, Monster,
+    //Other races
+    Beast, Insectoid, Dragon, Ogroid, Deity,
 
+    //Monster Races
+    Vampire, Undead, Monster,
+
+    //Nonliving races
     Machine, Ship;
 
     companion object {

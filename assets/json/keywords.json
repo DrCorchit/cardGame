@@ -95,6 +95,10 @@
     "description": "Triggers if your starting deck contains no unaffiliated cards."
   },
   {
+    "name": "Veteran",
+    "description": "Increase this unit's power at the start of the second and third round."
+  },
+  {
     "name": "Purify",
     "description": "Remove all statuses from a unit."
   },
