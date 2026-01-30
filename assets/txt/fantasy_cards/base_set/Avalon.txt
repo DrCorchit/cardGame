@@ -49,4 +49,4 @@ Allmother: 5/10p [Avalon, Nymph, Legendary] [When played, either:#Expend earth_m
 
 The Pied Piper: 1/11p [Avalon, Human, Legendary] [When played, summon all 1-power Avalonian units from your graveyard to the right of self, in any order.] [You mustn't forget to pay the piper.]
 
-#Further ideas: Snow White, Undine, Gawain, Robin Hood, Centaurs, Seelie/Unseelie Court, Elves
+#Further ideas: Snow White, Undine, Gawain, Centaurs, Seelie/Unseelie Court, Elves

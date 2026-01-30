@@ -83,7 +83,7 @@
   },
   {
     "name": "Devour",
-    "description": "Destroy a unit, then increase the devour unit's power by the target's power. If the target was in the graveyard, banish it instead."
+    "description": "Destroy a unit and boost own power by its power."
   },
   {
     "name": "Plunder X",
@@ -113,6 +113,10 @@
   {
     "name": "Doomed",
     "description": "Status that banishes the card when it leaves the battlefield."
+  },
+  {
+    "name": "Bounty",
+    "description": "Status that may be inflicted multiple times. Yields mana for your opponent when the unit is destroyed."
   },
   {
     "name": "Stalwart",
