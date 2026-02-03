@@ -33,7 +33,7 @@ Captain Ernesto: 4/4p [Human, Rare] [When tapped, assault 4 and destroy self.] [
 Goblin Chief: 1a 2/4p [Ogroid, Tribal, Rare] [When played, become immune.; When tapped, play a common Tribal card from deck.] [The biggest, fattest, meanest, ugliest of the lot.]
 
 Bounty Hunter: 4/5p [Human, Rare] [When played, lock a unit.] [You can run, but you can't hide.]
-Holy Crusader: 5/5p [Human, Knight, Rare] [When tapped, either:#Purify all enemy units.#Purify all allied units.] [Deus Vult.]
+Holy Crusader: 5/5p [Human, Knight, Rare] [Haste.; When tapped, either:#Purify all enemy units.#Purify all allied units.] [Deus Vult.]
 Giant Turtle: 6/5p [Beast, Rare] [When played, roll an additional mana die and add it to the common pool.] [Could this be a dog?]
 Ancient Vampire: 7/5p [Vampire, Rare] [When played, lose 1 point for each light_mana among common or allied mana dice.] [For some, the emo phase lasts a bit longer than others.]
 

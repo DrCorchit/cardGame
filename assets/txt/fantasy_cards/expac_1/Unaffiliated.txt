@@ -3,5 +3,9 @@ Merry Men: 2/2p [Human, Bandit] [When played, spawn 2 mana of any colors.; If yo
 Alan-a-Dale: 2/6p [Human, Bandit, Rare] [When tapped, play a unit from your deck.; If you control Robin Hood, gain Haste.] [Faint heart never won fair lady.]
 Little John: 9/7p [Human, Bandit, Rare] [When played, destroy an allied unit.; If you control Robin Hood, cancel this ability.] [If it's a fight ye wants...]
 Friar Tuck: 4/8p [Human, Bandit, Rare] [When played, become stalwart.; When tapped, make Robin Hood stalwart.] [The sins I commit in the green, I confess to the gray!]
+
+Caelo, Teenage Necromancer: 2/9p [Human, Mage, Legendary] [When played, you may play a common unit from your graveyard.; You must decline the "when played" ability in order to tap this unit.; When tapped, play a rare unit from your graveyard.] [I'll show you real magic.]
 Maid Marian: 2/9p [Human, Legendary] [At turn start, summon Robin Hood from deck.; If you already control Robin Hood, gain 2 points.] [Because God made me a woman is no reason to be such a woman as men wish to make me.]
+
+
 Robin Hood: 4/10p [Human, Bandit, Legendary] [When played, become invisible. When tapped, play the topmost Bandit from your deck.] [Better to jump for the moon than stoop for a penny in the mud.]

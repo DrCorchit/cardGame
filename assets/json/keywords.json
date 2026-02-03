@@ -1,20 +1,22 @@
 [
   {
     "name": "Spawn",
-    "description": "Turn a number of mana dice to the indicated faces.",
-    "synonyms": ["Spawns", "Spawned"]
+    "synonyms": ["spawns", "spawned"]
   },
   {
     "name": "Expend X",
-    "description": "Reroll the indicated dice to trigger the ability.",
-    "synonyms": ["Expend", "Expends", "Expended"]
+    "synonyms": ["expend", "expends", "expended"]
   },
-
   {
-  "name": "Haste",
-  "description": "The card can be tapped on the turn it is played.",
-  "synonyms": ["Hasten", "Hastened"]
-},
+    "name": "Create",
+    "description": "Introduce a card from outside the game.",
+    "synonyms": ["creates"]
+  },
+  {
+    "name": "Haste",
+    "description": "The card can be tapped on the turn it is played.",
+    "synonyms": ["Hasten", "Hastened"]
+  },
   {
     "name": "Summon",
     "description": "Move a card to the battlefield without playing it.",
@@ -31,17 +33,19 @@
   },
   {
     "name": "Destroy",
-    "description": "Move a card to the graveyard.",
     "synonyms": ["destroys", "destroyed"]
   },
   {
+    "name": "Discard",
+    "synonyms": ["discards", "discarded"]
+  },
+  {
     "name": "Banish",
-    "description": "Remove a card from the game.",
     "synonyms": ["Banishes", "Banished"]
   },
   {
     "name": "Assault X",
-    "description": "Destroy a unit whose power plus armor is X or less.",
+    "description": "Damage a unit by X.",
     "synonyms": ["Assault", "Assaults", "Assaulted"]
   },
   {
@@ -83,12 +87,21 @@
   },
   {
     "name": "Devour",
-    "description": "Destroy a unit and boost own power by its power."
+    "description": "Destroy a unit and increase own power by its power."
   },
   {
     "name": "Plunder X",
     "description": "Gain X points when the unit is destroyed.",
     "synonyms": ["plunder"]
+  },
+  {
+    "name": "Harmony",
+    "description": "Triggers whenever you play a unit with a unique racial category."
+  },
+  {
+    "name": "Diversity X",
+    "description": "Triggers when you control X unique racial categories.",
+    "synonyms": ["diversity"]
   },
   {
     "name": "Devotion",
@@ -116,11 +129,11 @@
   },
   {
     "name": "Bounty",
-    "description": "Status that may be inflicted multiple times. Yields mana for your opponent when the unit is destroyed."
+    "description": "When a unit with bounty is destroyed, the unit’s opponent may spawn 1 mana of any color for each bounty status it had."
   },
   {
     "name": "Stalwart",
-    "description": "At round end, units with this status are purified instead of destroyed. Equipment is also removed."
+    "description": "At round end, units with this status are purified instead of destroyed. Equipment is also destroyed."
   },
   {
     "name": "Immune",

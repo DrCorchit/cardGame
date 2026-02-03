@@ -47,14 +47,14 @@ class Main : ApplicationAdapter() {
             index = MathUtils.modulus(index + 1, cards.size)
         }
         if (Gdx.input.isKeyJustPressed(Input.Keys.E)) {
-            index = MathUtils.modulus(index + 40, cards.size)
+            index = MathUtils.modulus(index + 20, cards.size)
         }
 
         if (Gdx.input.isButtonJustPressed(Input.Buttons.RIGHT)) {
             index = MathUtils.modulus(index - 1, cards.size)
         }
         if (Gdx.input.isKeyJustPressed(Input.Keys.Q)) {
-            index = MathUtils.modulus(index - 40, cards.size)
+            index = MathUtils.modulus(index - 20, cards.size)
         }
 
 

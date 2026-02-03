@@ -1,0 +1,23 @@
+Alchemist: 2/2p [Metropolis, Elf] [At turn start, spawn air_mana or light_mana.] []
+Autognome: 2/2p [Metropolis, Machine] [] []
+Apprentice: 2/
+
+Steam Engine: 1a 2/3p [Metropolis, Machine] [At turn start, expend air_mana or light_mana and gain 2 points.] [Chitty chitty bang bang.]
+Library: 3p [Metropolis, Emplacement, Location] [When played, become stalwart and move a Technology to the top of your deck.; When tapped, expend X light_mana and gain 2X points.] []
+Cyborg Monk: 2/3p [Metropolis, Elf] [When played, become immune.; When tapped, transform into a common allied Machine.] []
+Journeyman
+
+Exhibitor: 3/4p [Metropolis, Elf] [When tapped, either:#Expend air_mana air_mana air_mana to play a common Machine from deck.#Expend light_mana light_mana light_mana to play a common Technology from deck.] []
+Professor: 1/4p [Metropolis, Elf] [] []
+
+Regeneration Weave: 1/6p [Metropolis, Equipment, Technology, Rare] [When moved to the top of your deck, play self.; During your turn, you may also expend air_mana air_mana to play this card from your deck.; When equipped, purify the target and give it immune.] []
+
+Plexi Glass: 5/7p [Metropolis, Machine, Rare] [At turn start, you may either:#Spawn light_mana light_mana.#Spawn air_mana.] [Sometimes autognomes need a feminine touch.]
+
+Stealth Weave: 2/8p [Metropolis, Equipment, Technology, Rare] [When moved to the top of your deck, play self.; During your turn, you may also expend air_mana air_mana air_mana to play this card from your deck.; When equipped, give the target immune.; If it's a common card, give it invisible.] []
+
+Fugg Raulner: 2a 5/9p [Metropolis, Machine, Mage, Legendary] [When played, become invisible.; At turn start, you may either:#Become invisible and spawn light_mana.; #Purify self and spawn air_mana air_mana.] [Beep boop.]
+
+Freder: 10p [Metropolis, Elf, Legendary] [] [The legendary inventor takes the stage!]
+
+World's Fair: 12p [Metropolis, Emplacement, Scenario, Legendary] [This scenario progresses whenever you play a Machine.; When played, create an Autognome.; Chapter 1: Give an allied unit Haste and immunity.; Chapter 2: Spawn 6 air_mana or 6 light_mana.] [Here's alchemy, Agronomy, Astronomy, Geometry...]

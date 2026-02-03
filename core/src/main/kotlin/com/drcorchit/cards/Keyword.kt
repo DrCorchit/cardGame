@@ -5,7 +5,7 @@ import com.drcorchit.justice.utils.json.JsonUtils
 data class Keyword(
     val id: Int,
     val name: String,
-    val description: String,
+    val description: String?,
     val synonyms: Set<String>
 ) {
     companion object {
@@ -18,7 +18,7 @@ data class Keyword(
             .map { it ->
                 val id = count++
                 val name = it["name"].asString
-                val description = it["description"].asString
+                val description = it["description"]?.asString
                 val synonyms = it["synonyms"]?.asJsonArray?.map { it.asString }?.toSet() ?: setOf()
                 Keyword(id, name, description, synonyms)
             }

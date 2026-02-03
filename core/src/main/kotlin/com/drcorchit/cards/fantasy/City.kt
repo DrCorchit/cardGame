@@ -23,7 +23,7 @@ enum class City(override val color: Color, val adj: String): Faction {
     //Air/Light land
     // Strengths: Excellent tutoring and various answers
     //Limitations: lacking tempo and direct removal
-    Technopolis("4060a0", "Technopolitan"),
+    Metropolis("4060a0", "Metropolitan"),
 
     //a84d2a, 930, 830
     //Identity: Fire land, dragons and dwarves.

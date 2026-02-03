@@ -5,8 +5,8 @@ Pond Naiad: 2/2p [Avalon, Nymph] [At turn start, either:#Spawn water_mana.#Expen
 Treant Sapling: 2/2p [Avalon, Treant] [At turn start, either:#Spawn earth_mana.#Expend earth_mana to gain 1 point.] [They grow up so fast.]
 Will-o'-the-Wisp: 3/2p [Avalon, Fairy] [When played, either:#Purify a unit.#Spawn air_mana.] [Where there's a will, there's a wisp.]
 Bullfrog Army: 3/2p [Avalon, Beast] [When tapped, assault 1.; When paired, assault 2 instead.] [Survivors describe their attacks as a ribbeting experience.]
-Sleeping Bear: 5/2p [Avalon, Beast] [You must expend earth_mana to play this card.] [Let sleeping bears lie.]
-Forest Fire: 2p [Avalon, Instant, Nature] [When played, destroy an allied unit, then play a common Avalonian unit from your deck.] [Flames clear the way for new growth.]
+Cave Bear: 5/2p [Avalon, Beast] [You must expend earth_mana to play this card.] [Let sleeping bears lie.]
+Forest Fire: 2p [Avalon, Instant, Nature] [When played, destroy an allied unit, then play a common Avalonian unit from your graveyard.] [Flames clear the way for new growth.]
 
 Pixie: 1/3p [Avalon, Fairy] [When played, spawn earth_mana water_mana air_mana.; When tapped, repeat the "when played" ability.] [All you need is a little pixie dust.]
 Treant Sage: 2/3p [Avalon, Treant] [When played, become immune.; When you pass, gain 1 point for each Nature card in your graveyard.] [I think, therefore... hmmm...]
@@ -30,7 +30,7 @@ Alraune: 2/5p [Avalon, Fairy, Rare] [When played, change all dark_mana into eart
 Thunderstorm: 5p [Avalon, Instant, Nature, Rare] [Echo.; When played, spawn water_mana air_mana and play a Nature card from your deck.] [She's a-gonna blow!]
 Puck: 1/5p [Avalon, Fairy, Rare] [Disloyal.; When played, play a unit from your deck whose provision cost exceeds Puck's.] [Give me your hands, if we be friends.]
 
-Guinevere: 2/6p [Avalon, Human, Rare] [Whenever you spawn 1 or more mana, gain 1 point.] [Talk not of faith, for you have none in you.]
+Guinevere: 2/6p [Avalon, Human, Regent, Rare] [Whenever you spawn 1 or more mana, gain 1 point.] [Talk not of faith, for you have none in you.]
 Lancelot: 2a 6/6p [Avalon, Human, Knight, Rare] [Whenever a Weapon is equipped, you may destroy an enemy equipment.] [I am never in the dark when I am protecting you.]
 Bamboo Grove: 6p [Avalon, Emplacement, Nature, Rare] [When played, gain 4 points.; At turn start, you may expend earth_mana water_mana to gain 3 points.] [Nothing grows faster, or thicker.]
 
@@ -45,7 +45,7 @@ Treant King: 1/9p [Avalon, Treant, Regent, Legendary] [When played, play a Harve
 Queen Titania: 3/9p [Avalon, Fairy, Regent, Legendary] [When played, summon a Pixie on either side of self, from deck or graveyard.;] [Hand in hand, with fairy grace, we will sing and bless this place.]
 
 King Oberon: 4/10p [Avalon, Fairy, Regent, Legendary] [When played, become invisible.; At turn start, spawn air_mana.; When tapped, play a Lightning Strike from your graveyard.] [Ill met by moonlight, proud Titania.]
-Allmother: 5/10p [Avalon, Nymph, Legendary] [When played, either:#Expend earth_mana earth_mana earth_mana to play an Avalonian unit from your graveyard.#Expend water_mana water_mana water_mana to play an Avalonian unit from your deck.#Expend earth_mana water_mana air_mana to gain 9 points.] [No wound too deep, no bone too broken, no heart beyond repair.]
+Allmother: 5/10p [Avalon, Nymph, Legendary] [When played, either:#Expend earth_mana earth_mana earth_mana to play a common or rare Avalonian unit from your graveyard.#Expend water_mana water_mana water_mana to play an Avalonian unit from your deck.#Expend earth_mana water_mana air_mana to gain 9 points.] [No wound too deep, no bone too broken, no heart beyond repair.]
 
 The Pied Piper: 1/11p [Avalon, Human, Legendary] [When played, summon all 1-power Avalonian units from your graveyard to the right of self, in any order.] [You mustn't forget to pay the piper.]
 

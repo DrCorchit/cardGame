@@ -1,5 +1,30 @@
+Elven Princess: 1/2p [Avalon, Elf] [When you pass (diversity X), gain X points.] []
+Tree Elf: 3/2p [Avalon, Elf] [Harmony: Gain 1 point.] []
+Elven Scout: 2/2p [Avalon, Elf, Tribal] [When played, you may expend air_mana to create and summon an Elven Archer.] []
+Elven Dagger: 2p [Avalon, Equipment, Weapon] [When equipped, Assault 1.; When tapped, assault 2.] []
 
-#Smoke Signals
+Hydriad: 2/3p [Avalon, Nymph] [Harmony: Gain 1 point.; When played, you may expend water_mana water_mana to create a Hydriad.] []
+Elven Druid: 3/3p [Avalon, Elf, Tribal] [Harmony: Spawn 2 of any color mana.] []
+Elven Trailblazer: 3/3p [Avalon, Elf, Tribal] [During your turn, you may expend 2X air_mana to create and summon X Elven Archer tokens.] []
+Elven Bow: 3p [Avalon, Equipment, Weapon] [When equipped, assault 2.; When tapped, poison an enemy unit.] []
 
+Elven Guerilla: 1a 1/4p [Avalon, Elf, Tribal] [When played, you may expend air_mana air_mana to become invisible.; Whenever an elf enters the battlefield, gain a counter.; Whenever an elf leaves the battlefield, lose a counter.; During your turn, you may remove X counters and assault X.; Maximum counters: 4.] []
+Smoke Signals: 4p [Avalon, Instant, Nature] [Play a common unit from your deck of a race you do not already control.] []
 
-#Yggdrasil
+Aelshamyr: 2a 2/5p [Avalon, Dragon, Rare] [Harmony: Gain 2 points.] []
+
+Hamadriel: 3a 1/6p [Avalon, Elf, Tribal, Rare] [When played, poison an enemy unit.; Whenever you equip an Elven Dagger or Elven Bow, repeat the "when played" ability.] []
+Tarzan: 1/6p [Avalon, Human, Tribal, Rare] [When played, assault 2.; During your turn, you may expend earth_mana earth_mana earth_mana to play Tarzan from deck.; Decrease this cost by 1 earth_mana for each allied Mountain Gorilla.; When tapped, move to the bottom of your deck.] []
+
+Queen Aelwyn: 2/7p [Avalon, Elf, Regent, Rare] [When played, expend X air_mana to create and summon X Elven Archer tokens.] []
+Iriviel: 1a 2/7p [Avalon, Elf, Tribal, Legendary] [When played, gain 1 counter for each allied Elf.; During your turn, you may remove X counters to assault X.; When you pass, gain 1 point for each remaining counter.] []
+
+Treant Stalker: 3/8p [Avalon, Treant, Rare] [When played, gain 1 counter.; During your turn (X counters), you may expend X earth_mana to poison an enemy unit and gain a counter.] []
+
+Anastasia, Wildshape: 2/9p [Avalon, Human, Mage, Legendary] [When played, play a common Beast from your deck.; When tapped, transform into an allied Beast.] [Look what I can do!]
+
+Treehomes: 10p [Avalon, Nature, Emplacement, Legendary] [When played, create a Tree Elf on either side of this card.] []
+
+Grandmother Autumn: 3/11p [Avalon, Fairy, Legendary] [When you pass (diversity X), gain X points.; At turn start (diversity 4), play self from your graveyard.] []
+
+Yggdrasil: 12p [Avalon, Emplacement, Scenario, Legendary] [This scenario progresses whenever you play an Elf.; When played, create an Elven Druid.; Chapter 1: Create and play Smoke Signals.; Chapter 2: Create an Elven Princess.] []

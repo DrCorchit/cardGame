@@ -43,15 +43,6 @@ class FantasyCard(
         throw Exception("Unknown card type: $this")
     }
 
-//    val motive = tags.firstNotNullOfOrNull {
-//        try {
-//            Motive.valueOf(it)
-//        } catch (e: Exception) {
-//            println("No motive for card $name")
-//            null
-//        }
-//    } ?: Motive.Neutral
-
     val city = tags.firstNotNullOfOrNull {
         try {
             City.valueOf(it)
@@ -70,12 +61,6 @@ class FantasyCard(
             null
         }
     } ?: Rarity.Common
-
-    /*
-    val tagsText =
-        tags.subtract(setOf("Common", "Rare", "Legendary", "Instant", "Equipment", "Emplacement"))
-            .joinToString(", ")
-     */
 
     val tagsText = run {
         val miscTags = tags.toSet()
@@ -101,6 +86,7 @@ class FantasyCard(
         .flatMap { it.split(Regex("[ #]")) }
         .map { it.normalize() }
         .mapNotNull { Keyword.keywordsDictionary[it] }
+        .filter { it.description != null }
         .distinct()
     //.sortedBy { it.id }
 

@@ -27,5 +27,5 @@ Loki: 3/9p [Thalassa, Deity, Legendary] [When played, become invisible and gain 
 
 Thor: 4/10p [Thalassa, Deity, Warrior, Legendary] [Veteran.; When played, become stalwart.; This unit's power is increased by 1 for each counter.; Maximum counters: 4.] []
 
-Valhalla: 11p [Thalassa, Emplacement, Legendary] [This card is a scenario, which progresses whenever you play a Warrior.; When played, summon a Viking Longship from the sideboard.; Chapter 1: Add 4 counters to an allied card.; Chapter 2: Move a unit from your graveyard to the top of your deck.] []
+Valhalla: 11p [Thalassa, Emplacement, Scenario, Legendary] [This scenario progresses whenever you play a Warrior.; When played, create a Viking Longship to the right of this card.; Chapter 1: Add 4 counters to an allied card.; Chapter 2: Move a unit from your graveyard to the top of your deck.] []
 
