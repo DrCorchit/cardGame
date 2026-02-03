@@ -1,2 +1,2 @@
 Elven Archer: 2/0p [Avalon, Elf, Token] [] [Who goes there?]
-Student: 3/0p [Avalon, Elf, Token] [] [e]
+Student: 3/0p [Avalon, Elf, Token] [] []
