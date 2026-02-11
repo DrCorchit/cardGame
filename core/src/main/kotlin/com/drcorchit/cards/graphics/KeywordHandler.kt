@@ -15,9 +15,10 @@ class KeywordHandler(
     val keywordColor: Color = defaultKeywordColor,
     val abilityFont: BitmapFont = Fonts.abilityFont,
     val keywordFont: BitmapFont = Fonts.keywordFont,
-    val lineHeight: Float = 32f
+    val lineHeight: Float = 34f
 ) {
-    private val spriteSize = lineHeight - 6
+    private val spriteSize = lineHeight - 4
+
     private val spriteVoff = lineHeight - 10
     private val lines = text.split("\n").mapNotNull { makeLine(it) }
 

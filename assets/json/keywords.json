@@ -86,6 +86,10 @@
     "description": "Triggers whenever a liquor card is equipped."
   },
   {
+    "name": "Labor",
+    "description": "Triggers whenever played next to a Dwarf, or a Dwarf is played next to self."
+  },
+  {
     "name": "Devour",
     "description": "Destroy a unit and increase own power by its power."
   },

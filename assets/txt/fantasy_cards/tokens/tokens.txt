@@ -1,2 +1,3 @@
 Elven Archer: 2/0p [Avalon, Elf, Token] [] [Who goes there?]
-Student: 3/0p [Avalon, Elf, Token] [] []
+Student: 3/0p [Metropolis, Elf, Token] [] [All work and no play...]
+Bird of Victory: 3/0p [Beast, Token, Legendary] [] [May the best man win!]

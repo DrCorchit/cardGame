@@ -1,2 +1,24 @@
+Spelunker: 2/2p [Vulcania, Dwarf] [At turn start, gain 1 point if you control a Mine.] [This next passage is called "Widow's Bend"...]
+Ore Hauler: 3/2p [Vulcania, Dwarf] [You must expend fire_mana to tap this unit.; When tapped, trigger the Labor ability of an allied common Mine.] ['Tis honest work, at least.]
+Sleepy: 1a 3/2p [Vulcania, Dwarf] [When tapped, you may expend X fire_mana to gain X points.; When you pass while paired, trigger the "when tapped" ability.] []
+Copper Mine: 3p [Vulcania, Emplacement, Mine] [Labor: Gain 2 points.] []
 
- Zark, Used Axe Salesman: 1a 1/9p [Ogroid, Legendary] [When played, play a common Weapon from your graveyard.; Whenever a weapon is equipped to Zark, assault 1.; If it's an axe, assault 2 instead.] []
+Dwarven Vanguard: 1a 1/3p [Vulcania, Dwarf] [When played next to a Mine, gain Haste.; When tapped, play a Dwarf from hand, then draw a card.] []
+Dwarven Berserker: 2/3p [Vulcania, Dwarf] [When played, assault 1.; When tapped, assault 1.] []
+Iron Mine: 3p [Vulcania, Emplacement, Mine] [Labor: Gain 1 point and assault 1.] [Iron sharpens iron.]
+Coal Mine: 3p [Vulcania, Emplacement, Mine] [Labor: Gain fire_mana fire_mana fire_mana.] []
+
+Pickaxe: 4p [Vulcania, Equipment, Weapon] [Assault 2.; When equipped to a Dwarf, trigger an adjacent common Mine card's Labor ability.] [Instructions: Bang pointy end against  rock. Repeat until arm tired.]
+Structural Engineer: 4/4p [Vulcania, Dwarf] [You must expend fire_mana fire_mana to tap this card.; When tapped, you may either:#Make a common allied Mine stalwart.#Trigger the Labor ability of an allied Mine.] [The weird noises means the mine is about to collapse.]
+
+Gold Mine: 4p [Vulcania, Emplacement, Mine, Rare] [Labor: Gain 3 points.] [Mine yer own business.]
+Prospector: 2/6p [Vulcania, Dwarf, Rare] [When played, play a Mine from your deck.] [I never knew a prospector that made a fortune who didn't blow it trying to make another.]
+Snort: 8/7p [Vulcania, Dragon, Rare] [You must control a Mine to play this card.; When played, destroy an allied Mine.] [Looks like someone woke up on the wrong side of the bed.]
+Diamond Mine: 7p [Vulcania, Emplacement, Mine, Rare] [Labor: Gain 2 points and spawn fire_mana fire_mana.] [Hard times? Remember that heat and pressure turn coal into diamond.]
+Myla: 1a 3/8p [Vulcania, Dwarf, Rare] [When played next to a Mine, become immune.; At turn start, trigger an adjacent common Mine's Labor ability.] [You start singing and I'll join in.]
+
+Mithril Mine: 8p [Vulcania, Emplacement, Mine, Legendary] [Labor: Gain 4 points and make it immune.] [The dwarves delved too greddily and too deep.]
+Gold Rush: 9p [Vulcania, Instant, Legendary] [When played, you may expend fire_mana fire_mana fire_mana to play up to 3 Mine or common Dwarf cards from hand, then draw as many cards.] [Better start selling shovels.]
+Mithril Mail: 4a 4/10p [Vulcania, Equipment, Armor, Legendary] [When equipped, make the target stalwart.; If the target is a common Dwarf, also make adjacent common units stalwart.] [Made to last; last of its make.]
+Volcanic Eruption: 11p [Vulcania, Emplacement, Scenario, Legendary] [This scenario progresses whenever you spawn fire_mana.; When played, create a Spelunker.; Chapter 1: Create and play Pickaxe.; Chapter 2: Expend X fire_mana and assault X.] [The dwarves describe their mountain as a smoking hot redhead with a fiery personality.]
+Old King Coal: 1a 6/12p [Vulcania, Dwarf, Regent, Legendary] [When you pass, trigger the Labor abilities of all allied Mine cards.] [A jolly old soul was he.]

@@ -58,6 +58,6 @@ Prophecy: 9p [Instant, Spell, Legendary] [Echo.; When played, play a card from y
 Queen of Hearts: 1/10p [Human, Regent, Legendary] [Gain an additional effect for each card in your graveyard:#Royal Guard: Units played by this card become immune.#Royal Decree: When played, play a unit from deck.#Royal Envoy: When tapped, play a unit from hand, then draw a card.] [Off with his head!]
 
 Leprechaun: 3/1p [Fairy, Legendary] [If this card is in your starting deck, you must inform your opponent.; If you have not played this card by the end of the game, you lose.] [Follow your dreams. Rainbows are an acceptable alternative, however.]
-Bird of Victory: 3/0p [Beast, Token, Legendary] [] [May the best man win!]
+
 
 #Ideas: Play an armored unit from deck

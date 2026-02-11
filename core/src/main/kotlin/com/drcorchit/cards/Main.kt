@@ -90,7 +90,7 @@ class Main : ApplicationAdapter() {
             SpaceCards.cards + disasters + cardbacks
         }
 
-        val fantasyCards by lazy { FantasyCards.expac1.cards }
+        val fantasyCards by lazy { FantasyCards.baseSet.cards + FantasyCards.expac1.cards + FantasyCards.tokens.cards }
 
         val cards by lazy { fantasyCards }
     }

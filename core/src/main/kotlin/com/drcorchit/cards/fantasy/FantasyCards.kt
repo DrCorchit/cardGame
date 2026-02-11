@@ -64,16 +64,15 @@ class FantasyCards(path: String) {
             }
         }
 
-        val factions = City.entries.map { "$it.txt" }
-
         val baseSet by lazy { FantasyCards("assets/txt/fantasy_cards/base_set") }
         val expac1 by lazy { FantasyCards("assets/txt/fantasy_cards/expac_1") }
+        val tokens by lazy { FantasyCards("assets/txt/fantasy_cards/tokens") }
 
         @JvmStatic
         fun readFrom(filename: String): List<FantasyCard> {
             return File(filename).listFiles()!!
                 .flatMap { file ->
-                    if (factions.contains(file.name)) {
+                    if (file.extension.equals("txt", true)) {
                         file.readLines().mapNotNull { parse(it) }
                     } else listOf()
                 }
@@ -165,13 +164,21 @@ class FantasyCards(path: String) {
 
 //        println(json)
 
+        val cardNames = mutableSetOf<String>()
+        val cardQuotes = mutableSetOf<String>()
+
         //print card issues here
         cards.forEach {
+            if (!cardNames.add(it.name.normalize())) {
+                println("Duplicate Card name: ${it.name}")
+            }
             if (it.image == null) {
                 println("Card ${it.name} has no art! (checked ${it.name.normalize()}.png and .jpg)")
             }
             if (it.quote.isBlank()) {
                 println("Card ${it.name} has no quote!")
+            } else if (!cardQuotes.add(it.quote.normalize())) {
+                println("Duplicate Card quote: ${it.quote}")
             }
 
             it.tags.forEach { tag ->
@@ -179,6 +186,7 @@ class FantasyCards(path: String) {
                     println("Card ${it.name} has a long tag: $tag (${it.tags})")
                 }
             }
+
 
             val abilityTextH =
                 Draw.calculateDimensions(Fonts.abilityFont, it.abilityText, abilityTextW).second
