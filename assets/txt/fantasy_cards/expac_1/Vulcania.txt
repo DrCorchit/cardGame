@@ -1,10 +1,10 @@
-Spelunker: 2/2p [Vulcania, Dwarf] [At turn start, gain 1 point if you control a Mine.] [This next passage is called "Widow's Bend"...]
+Spelunker: 2/2p [Vulcania, Dwarf] [At turn start, gain 1 point if you control a Mine.] [This next passage is called "Widow's Bend".]
 Ore Hauler: 3/2p [Vulcania, Dwarf] [You must expend fire_mana to tap this unit.; When tapped, trigger the Labor ability of an allied common Mine.] ['Tis honest work, at least.]
-Sleepy: 1a 3/2p [Vulcania, Dwarf] [When tapped, you may expend X fire_mana to gain X points.; When you pass while paired, trigger the "when tapped" ability.] []
+Sleepy: 1a 3/2p [Vulcania, Dwarf] [When tapped, you may expend X fire_mana to gain X points.; When you pass while paired, trigger the "when tapped" ability.] [Zzzzzzzzzzzzzzzz]
 Copper Mine: 3p [Vulcania, Emplacement, Mine] [Labor: Gain 2 points.] []
 
-Dwarven Vanguard: 1a 1/3p [Vulcania, Dwarf] [When played next to a Mine, gain Haste.; When tapped, play a Dwarf from hand, then draw a card.] []
-Dwarven Berserker: 2/3p [Vulcania, Dwarf] [When played, assault 1.; When tapped, assault 1.] []
+Dwarven Vanguard: 1a 1/3p [Vulcania, Dwarf] [When played next to a Mine, gain Haste.; When tapped, play a Dwarf from hand, then draw a card.] [First to fight, last to die.]
+Dwarven Berserker: 2/3p [Vulcania, Dwarf] [When played, assault 1.; When tapped, assault 1.] [Live by the axe...]
 Iron Mine: 3p [Vulcania, Emplacement, Mine] [Labor: Gain 1 point and assault 1.] [Iron sharpens iron.]
 Coal Mine: 3p [Vulcania, Emplacement, Mine] [Labor: Gain fire_mana fire_mana fire_mana.] []
 

@@ -31,7 +31,7 @@ Golden Dragon Egg: 1a 1/5p [Vulcania, Egg, Rare] [When tapped, destroy self and 
 Swoop: 5p [Vulcania, Dragon, Instant, Instinct, Rare] [You may either:#Spawn fire_mana fire_mana and play a common dragon from your deck.#Expend fire_mana fire_mana and play a dragon from your deck.] [Now you've made her mad!]
 
 The Eggspert: 1/6p [Vulcania, Dwarf, Rare] [When played, you may either:#Play an Egg from your deck.#Expend 2X fire_mana to play X dragon eggs from your graveyard.] [You mean you DON'T collect dragon eggs?]
-Shorty McGee: 2/6p [Vulcania, Dwarf, Rare] [When played, assault 3.; Imbibe to assault 2.] [Axe questions later.]
+Shorty McGee: 1/6p [Vulcania, Dwarf, Rare] [When played, assault 3.; Imbibe to assault 2.] []
 Pseudodragon: 1/6p [Vulcania, Dragon, Rare] [When played, play a common Liquor card from your graveyard and banish it.; When tapped, play a Dragon from hand and return to your hand.] [It's basically a scaly green chihuahua.]
 
 Guardian Dragon: 1a 3/7p [Vulcania, Dragon, Rare] [This card protects adjacent Egg cards.; Summon self from your deck whenever an allied dragon egg is destroyed.] [Ohhh now you've made 'er mad!]

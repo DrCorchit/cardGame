@@ -23,7 +23,7 @@ Manacles: 3p [Equipment, Technology] [Disloyal.; When equipped, lock the target 
 Mobilization: 3p [Instant, Warfare] [When played, play a 4 provision card from your deck.] [Hut, two, three, four!]
 
 Assassin: 1/4p [Human, Spy] [Disloyal.; When played, Assassinate 4.] [Humans make good assassins. They also make good targets.]
-Living Armor: 3a 1/4p [Undead] [When tapped, choose a common Weapon equipped to this card and replay it.;] [It's... moving?]
+Living Armor: 3a 1/4p [Undead] [When tapped, choose a common Weapon equipped to this card and replay it.] [It's... moving?]
 Boiling Oil: 4p [Instant, Warfare] [Assault 4.; Overkill X: Purify units adjacent to the target.] [Not good for your skin.]
 Halberd: 4p [Equipment, Weapon, Warfare] [When equipped, gain 2 points and assault 2.] [A soldier's weapon.]
 

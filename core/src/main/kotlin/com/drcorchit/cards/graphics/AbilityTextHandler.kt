@@ -8,7 +8,7 @@ import com.drcorchit.cards.graphics.Textures.asSprite
 import com.drcorchit.justice.utils.StringUtils.normalize
 import com.drcorchit.justice.utils.math.Compass
 
-class KeywordHandler(
+class AbilityTextHandler(
     val text: String,
     val keywords: Map<String, Keyword>,
     val abilityColor: Color = defaultAbilityColor,
@@ -21,6 +21,10 @@ class KeywordHandler(
 
     private val spriteVoff = lineHeight - 10
     private val lines = text.split("\n").mapNotNull { makeLine(it) }
+
+    fun calculateHeight(width: Float): Float {
+        return lines.sumOf { it.calculateHeight(width).toDouble() }.toFloat()
+    }
 
     fun render(x: Float, y: Float, width: Float) {
         var posY = y
@@ -41,6 +45,23 @@ class KeywordHandler(
             if (sprites[string.normalize()] != null) return SpriteWord(string)
             if (keywords[string.normalize()] != null) return KeywordWord(string)
             return TextWord(string)
+        }
+
+        fun calculateHeight(width: Float): Float {
+            var posX = 0f
+            var height = 0f
+
+            words.forEach {
+                val remainWidth = width - posX
+                if (it.width > remainWidth && it.width < width) {
+                    //word wrap
+                    posX = 0f
+                    height += lineHeight
+                }
+
+                posX += it.width + 2f
+            }
+            return height + lineHeight
         }
 
         fun render(x: Float, y: Float, width: Float): Float {

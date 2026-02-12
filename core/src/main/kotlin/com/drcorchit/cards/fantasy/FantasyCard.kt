@@ -80,7 +80,7 @@ class FantasyCard(
         .joinToString("\n") { it.trim() }
         .replace("#", "\n > ")
 
-    val keywordHandler = KeywordHandler(abilityText, Keyword.keywordsDictionary)
+    val abilityTextHandler = AbilityTextHandler(abilityText, Keyword.keywordsDictionary)
 
     val keywords = abilities
         .flatMap { it.split(Regex("[ #]")) }
@@ -199,6 +199,7 @@ class FantasyCard(
 
         val keywordTextX = abilityTextX
         val keywordTextY = lineY + 20
+        val keywordHelpW = abilityTextW - 30
         val totalAbilityTextH = abilityTextY - keywordTextY
     }
 
@@ -273,15 +274,17 @@ class FantasyCard(
         }
 
         //Cost
-        costBack.draw(batch, costX, costY, costBackSize, costBackSize)
-        Draw.drawText(
-            costX, costY + 2,
-            Fonts.numberFont,
-            cost.toString(),
-            100f,
-            Compass.CENTER,
-            Color.WHITE
-        )
+        if (cost > 0) {
+            costBack.draw(batch, costX, costY, costBackSize, costBackSize)
+            Draw.drawText(
+                costX, costY + 2,
+                Fonts.numberFont,
+                cost.toString(),
+                100f,
+                Compass.CENTER,
+                Color.WHITE
+            )
+        }
 
         //Card Name
         val dims1 = Draw.calculateDimensions(Fonts.nameFont, name, W - 50f)
@@ -331,7 +334,7 @@ class FantasyCard(
 //        )
 
         //Draw.drawRectangle(abilityTextX, abilityTextY, abilityTextW, 10f, Color.RED)
-        keywordHandler.render(abilityTextX, abilityTextY, abilityTextW)
+        abilityTextHandler.render(abilityTextX, abilityTextY, abilityTextW)
 
         //Keyword text
         Draw.drawText(
@@ -339,7 +342,7 @@ class FantasyCard(
             keywordTextY,
             Fonts.keywordHelpFont,
             keywordText,
-            abilityTextW - 30,
+            keywordHelpW,
             Compass.NORTHEAST,
             keywordHelpColor
         )
