@@ -1,11 +1,20 @@
-Merry Men: 2/2p [Human, Bandit] [When played, spawn 2 mana of any colors.; If you control Robin Hood, summon all Merry Men from deck or graveyard.] [Steal from the rich and give to the poor!]
+Merry Men: 2/2p [Human, Bandit] [When played, spawn 2 mana of any colors.; If you control Robin Hood, also summon all Merry Men from deck or graveyard.] [Steal from the rich and give to the poor!]
+Mimic: 2/2p [Monster] [When tapped, trigger an allied common unit's "when played" ability.] [Always give treasure chests a good whack first, just in case.]
+Spike Collar: 2p [Instant, Instinct] [When played, lock an unlocked unit or unlock a locked unit.; Whenever you play a Beast, play this card from your graveyard and banish it.] []
+Escaped Convict: 5/2p [Human] [When played, gain bounty 2.] [Nowhere to run, nowhere to hide.]
 
-Spike Collar: 2p [Instant] [When played, lock an unlocked unit or unlock a locked unit.; Whenever you play a Beast, play this card from your graveyard and banish it.] []
+Goblin Assassin: 1/3p [Ogroid, Tribal] [When played, assault 2.; If you already control a common Tribal unit, assassinate 2 instead.] []
+Cleric: 3/3p [Human, Mage] [When played, purify a unit and gain 1 point for each status removed.] []
+Goblin Dancer: 3/3p [Ogroid, Tribal] [When you pass, gain 1 point for each allied Tribal unit.] []
+Makeshift Bomb: 3p [Instant, Weapon] [When played, assault 1.; Increase the assault by 1 for each Weapon in your graveyard.] []
+
+Puffball: 4p [Instant, Nature] [When played, poison a unit.; If the target is already poisoned, also poison adjacent units.] []
+Flesh Golem: 6/4p [Undead] [When played, become immune.] []
 
 Bag of Vomit: 4p [Instant, Rare] [When played, play a second copy of a common unit you already control.; While in the graveyard, other cards cannot be banished from your graveyard.] [Sometimes a bag of vomit is just a bag of vomit.]
 
 Alan-a-Dale: 1a 2/6p [Human, Bandit, Rare] [When tapped, play a unit from your deck.; If you control Robin Hood, gain Haste.] [Faint heart never won fair lady.]
-Little John: 9/6p [Human, Bandit, Rare] [When played, destroy an allied unit.; If you control Robin Hood, cancel this ability.] [If it's a fight ye wants...]
+Little John: 8/6p [Human, Bandit, Rare] [When played, destroy an allied unit.; If you control Robin Hood, cancel this ability.] [If it's a fight ye wants...]
 Friar Tuck: 3/7p [Human, Bandit, Rare] [When played, become stalwart.; When tapped, make Robin Hood stalwart.] [The sins I commit in the green, I confess to the gray!]
 Maid Marian: 1/7p [Human, Rare] [At turn start, summon Robin Hood from deck.; If you already control Robin Hood, gain 2 points.] [Because God made me a woman is no reason to be such a woman as men wish to make me.]
 

@@ -24,8 +24,8 @@ Stealth Weave: 2/8p [Metropolis, Equipment, Technology, Legendary] [When moved t
 
 Fugg Raulner: 2a 5/9p [Metropolis, Machine, Mage, Legendary] [When played, become invisible.; At turn start, you may either:#Become invisible and spawn light_mana.; #Purify self and spawn air_mana air_mana.] [Beep boop.]
 
-Manufactory: 10p [Metropolis, Emplacement, Legendary] [When played, summon two copies of a common Machine from your graveyard.] []
+Manufactory: 10p [Metropolis, Emplacement, Legendary] [When played, summon two copies of a common Machine from your graveyard.] [Our work is never over.]
 
-Magnum Opus: 4/11p [Metropolis, Machine, Legendary] [Haste.; At turn start, spawn air_mana.; When tapped, expend X air_mana to assault 2X.] []
+Magnum Opus: 1a 3/11p [Metropolis, Machine, Legendary] [When played, assault 3.; When tapped, you may expend X air_mana to play a unit from hand of X provisions, then return to your hand.] []
 
-World's Fair: 12p [Metropolis, Emplacement, Scenario, Legendary] [This scenario progresses whenever you play a Machine.; When played, create a student.; Chapter 1: Give an allied unit Haste and immunity.; Chapter 2: Spawn 6 light_mana.] [Here's alchemy, and here's agronomy, astronomy, geometry...]
+World's Fair: 12p [Metropolis, Emplacement, Scenario, Legendary] [This scenario progresses whenever you play a Machine.; When played, create a student.; Chapter 1: Give an allied unit Haste and immunity.; Chapter 2: Spawn 6 light_mana.] [Here's alchemy, and there's agronomy, astronomy, geometry...]

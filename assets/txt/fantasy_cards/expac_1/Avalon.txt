@@ -23,8 +23,8 @@ Treant Stalker: 1/8p [Avalon, Treant, Rare] [When played, poison an enemy unit a
 
 Anastasia, Wildshape: 2/9p [Avalon, Human, Mage, Legendary] [When played, play a common Beast from your deck.; When tapped, replay an allied Beast.] [Look what I can do!]
 
-Treehomes: 10p [Avalon, Nature, Emplacement, Legendary] [When played, create a Tree Elf on either side of this card.] []
+Treehomes: 10p [Avalon, Nature, Emplacement, Legendary] [When played, create a Tree Elf on either side of this card.] [Home sweet home.]
 
-Grandmother Autumn: 3/11p [Avalon, Fairy, Legendary] [When you pass (diversity X), gain X points.; At turn start (diversity 4), play self from your graveyard.] []
+Grandmother Autumn: 1/11p [Avalon, Fairy, Legendary] [When you pass (diversity X), gain X points.; At turn start (diversity 3), play self from your graveyard.] [Behold, the season of fire and feast.]
 
-Yggdrasil: 12p [Avalon, Emplacement, Scenario, Legendary] [This scenario progresses whenever you play an elf.; When played, create an Elven Trailblazer.; Chapter 1: Create an Elven Druid.; Chapter 2: Expend X earth_mana and play one of the top X cards from your deck.] []
+Yggdrasil: 12p [Avalon, Emplacement, Scenario, Legendary] [This scenario progresses whenever you play an elf.; When played, create an Elven Trailblazer.; Chapter 1: Create an Elven Druid.; Chapter 2: Expend X earth_mana and play one of the top X cards from your deck.] [The roots of the world tree stretch all the way to the underworld.]

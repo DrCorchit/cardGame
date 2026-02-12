@@ -34,7 +34,7 @@ object Fonts {
     )
 
     val medFontSizes = FontSizes(96, 96, 40, 32)
-    val smFontSizes = FontSizes(72, 80, 26, 23)
+    val smFontSizes = FontSizes(72, 80, 25, 23)
 
     val xsFontSizes = FontSizes(72, 80, 24, 22)
     val fontSizes = smFontSizes
@@ -42,7 +42,7 @@ object Fonts {
     val numberFont = initFontSize("enchanted_land.ttf", fontSizes.numberFont)
     val nameFont = initFontSize("enchanted_land.ttf", fontSizes.nameFont)
 
-    val numberFontXS = initFontSize("enchanted_land.ttf", 64)
+    val numberFontXS = initFontSize("enchanted_land.ttf", 60)
 
     val defaultFont = "lato"
     val tagFont = initFontSize("$defaultFont.ttf", fontSizes.quoteFont)

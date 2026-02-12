@@ -29,7 +29,7 @@ Halberd: 4p [Equipment, Weapon, Warfare] [When equipped, gain 2 points and assau
 
 Chimney Sweep: 4/4p [Human, Rare] [When played, banish a card from your opponent's graveyard.; At turn start, repeat this ability.] [A sweep is as lucky as lucky can be.]
 Necromancy: 4p [Instant, Spell, Rare] [Play a common unit from your graveyard.] [The four stages of grief: denial, anger, despair... necromancy?]
-Captain Ernesto: 4/4p [Human, Rare] [When tapped, assault 4 and destroy self.] [If it's a fight ye wants...]
+Captain Ernesto: 4/4p [Human, Rare] [When tapped, assault 4 and destroy self.] [What do you mean, down-and-outer?]
 Goblin Chief: 1a 2/4p [Ogroid, Tribal, Rare] [When played, become immune.; When tapped, play a common Tribal card from deck.] [The biggest, fattest, meanest, ugliest of the lot.]
 
 Bounty Hunter: 4/5p [Human, Rare] [When played, lock a unit.] [You can run, but you can't hide.]
