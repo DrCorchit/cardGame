@@ -1,12 +1,12 @@
-Alchemist: 1a 2/2p [Metropolis, Elf] [At turn start, spawn air_mana or light_mana.] []
 Autognome: 2/2p [Metropolis, Machine] [When played, spawn air_mana light_mana.; When tapped, repeat the "when played" ability.] []
 Apprentice: 3/2p [Metropolis, Elf] [When played, you may expend light_mana light_mana to create a student.] []
+Alchemist: 3/2p [Metropolis, Elf] [At turn start (X counters), you may expend X light_mana and gain 1 counter to move a card to the top of your deck.; Maximum counters: 6.] []
 Journeyman: 4/2p [Metropolis, Elf] [When played, you may expend light_mana light_mana light_mana to create a student.; When tapped, repeat the "when played" ability.] []
 
-Tutor: 2/3p [Metropolis, Elf] [Whenever a card (other than a Tutor) creates a student, create an additional student.] []
+Tutor: 2/3p [Metropolis, Elf] [Whenever a card (other than a Tutor) creates a student, create an additional student.] [Can you explain it one more time?]
 Steam Engine: 1a 2/3p [Metropolis, Machine] [At turn start, you may expend air_mana or light_mana to gain 2 points.] [Chitty chitty bang bang.]
 Cyborg Monk: 2/3p [Metropolis, Elf] [When played, become immune.; When tapped, transform into a common allied Machine.] []
-Library: 3p [Metropolis, Emplacement, Location] [When played, become stalwart.; When tapped, expend X light_mana and gain 2X points.; If you control a Student, also move a Technology to the top of your deck.;] []
+Library: 3p [Metropolis, Emplacement, Location] [When played, become stalwart.; When tapped, expend X light_mana and gain 2X points.; If you control a Student, also move a Technology to the top of your deck.;] [So many books, so little time.]
 
 Exhibitor: 3/4p [Metropolis, Elf] [When tapped, either:#Expend air_mana air_mana air_mana to play a common Machine from deck.#Expend light_mana light_mana light_mana to play a common Technology from deck.] []
 Professor: 1/4p [Metropolis, Elf] [When played, create a student.; When you pass, gain 1 point for each allied student.] []
@@ -15,7 +15,7 @@ Kick it 'til it Works: 4p [Metropolis, Instant, Technology, Rare] [When played, 
 
 Opusculum: 1/5p [Metropolis, Machine, Rare] [Whenever this card is moved to the top of your deck, spawn air_mana or light_mana.; Whenever you pass, you may summon this unit from your deck.] []
 
-Regeneration Weave: 1/6p [Metropolis, Equipment, Technology, Rare] [When moved to the top of your deck, play self.; During your turn, you may also expend air_mana air_mana to play this card from your deck.; When equipped, purify the target and give it immune.] []
+Regeneration Weave: 1/6p [Metropolis, Equipment, Technology, Rare] [When moved to the top of your deck, play self.; During your turn, you may also expend air_mana air_mana to play this card from your deck.; When equipped, purify the target and make it immune.] []
 Magnetron: 6p [Metropolis, Instant, Technology, Rare] [Damage a unit by 5. If it has armor, destroy it instead.] []
 
 Plexi Glass: 5/7p [Metropolis, Machine, Rare] [At turn start, you may either:#Spawn light_mana light_mana.#Spawn air_mana.] [Sometimes autognomes need a feminine touch.]
@@ -26,6 +26,6 @@ Fugg Raulner: 2a 5/9p [Metropolis, Machine, Mage, Legendary] [When played, becom
 
 Manufactory: 10p [Metropolis, Emplacement, Legendary] [When played, summon two copies of a common Machine from your graveyard.] [Our work is never over.]
 
-Magnum Opus: 1a 3/11p [Metropolis, Machine, Legendary] [When played, assault 3.; When tapped, you may expend X air_mana to play a unit from hand of X provisions, then return to your hand.] []
+Magnum Opus: 1a 7/11p [Metropolis, Machine, Legendary] [Haste.; When tapped, expend X light_mana to move a unit of X or less power to the top of its owner's deck.; At turn start, spawn light_mana.] [The latest and the greatest of them all.]
 
-World's Fair: 12p [Metropolis, Emplacement, Scenario, Legendary] [This scenario progresses whenever you play a Machine.; When played, create a student.; Chapter 1: Give an allied unit Haste and immunity.; Chapter 2: Spawn 6 light_mana.] [Here's alchemy, and there's agronomy, astronomy, geometry...]
+World's Fair: 12p [Metropolis, Emplacement, Scenario, Legendary] [This scenario progresses whenever you play a Machine.; When played, create two students to the right of this card.; Chapter 1: Give an allied unit Haste and make it immune.; Chapter 2: Spawn 6 light_mana.] [Here's alchemy, and there's agronomy, astronomy, geometry...]

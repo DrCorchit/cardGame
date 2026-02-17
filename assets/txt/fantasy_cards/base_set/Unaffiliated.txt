@@ -1,4 +1,4 @@
-Unicorn: 2/2p [Beast] [At turn start, spawn a mana of any color.] [It's not always rainbows and unicorns. Sometimes it's just unicorns.]
+Unicorn: 2/2p [Beast] [At turn start, spawn 1 mana of any color.] [It's not always rainbows and unicorns. Sometimes it's just unicorns.]
 Apothecary: 2/2p [Human] [When played, purify a unit.] [An ounce of prevention is worth a pound of cure.]
 Squirrel: 3/2p [Beast] [When played, you may banish a card from your opponent's graveyard.] [Just one badass squirrel. Nothing more, nothing less.]
 Pack Wolf: 3/2p [Beast] [When played while paired, assault 2.] [Nice doggy...]
@@ -23,7 +23,7 @@ Manacles: 3p [Equipment, Technology] [Disloyal.; When equipped, lock the target 
 Mobilization: 3p [Instant, Warfare] [When played, play a 4 provision card from your deck.] [Hut, two, three, four!]
 
 Assassin: 1/4p [Human, Spy] [Disloyal.; When played, Assassinate 4.] [Humans make good assassins. They also make good targets.]
-Living Armor: 3a 1/4p [Undead] [When tapped, choose a common Weapon equipped to this card and replay it.] [It's... moving?]
+Living Armor: 3a 1/4p [Undead] [When tapped, replay a common equipment equipped to this card.] [It's... moving?]
 Boiling Oil: 4p [Instant, Warfare] [Assault 4.; Overkill X: Purify units adjacent to the target.] [Not good for your skin.]
 Halberd: 4p [Equipment, Weapon, Warfare] [When equipped, gain 2 points and assault 2.] [A soldier's weapon.]
 

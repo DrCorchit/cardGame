@@ -16,7 +16,7 @@ Buffy: 2/5p [Transylvania, Human, Slayer, Rare] [When played, give a unit bounty
 Hector: 1a 2/6p [Transylvania, Human, Rare] [When played, become stalwart.; When tapped, play a common unit from your graveyard.; Hector and Isaac may be tapped together to play any unit from your graveyard instead.] [Never enough time in the end, is there?]
 Isaac: 1a 3/6p [Transylvania, Human, Rare] [When played, become immune.; When tapped, play a common unit from your graveyard.; Hector and Isaac may be tapped together to play any unit from your graveyard instead.] [I've discovered to some surprise that I am interested in living.]
 
-Alucard: 1/7p [Transylvania, Vampire, Rare] [Whenever you destroy a unit with bounty, you may summon self from deck and gain points equal to the number of Bounty status it had.] [Magic and science are two sides of the same coin to me.]
+Alucard: 1/7p [Transylvania, Vampire, Rare] [Whenever you destroy a unit with bounty, you may summon self from deck and gain points equal to its Bounty.] [Magic and science are two sides of the same coin to me.]
 
 Saint Germain: 3/8p [Transylvania, Human, Legendary] [When played, play a common card from deck.; This unit's "when played" ability can be triggered while in hand or deck, but if not played by the end of the game, you create a time paradox and lose the game.] [I’m simply not used to people being kind to me for no reason.]
 
@@ -28,4 +28,4 @@ Trevor Belmont: 6/10p [Transylvania, Human, Slayer, Legendary] [When played, giv
 
 Count Dracula: 7/11p [Transylvania, Vampire, Regent, Legendary] [At turn start, gain a counter.; Chaos is increased by 1 for each counter on this card.; Maximum counters: 6.] [Will killing an old man make you less scared of the dark?]
 
-Pogrom: 12p [Transylvania, Emplacement, Scenario, Legendary] [This scenario progresses whenever you play a Slayer.; When played, create a Vigilante to the right of this card.; Chapter 1: Play Gossip from your sideboard.; Chapter 2: Play Hysteria from your sideboard.] [We got to kill them afore they kills us!]
+Pogrom: 12p [Transylvania, Emplacement, Scenario, Legendary] [This scenario progresses whenever you play a Slayer.; When played, create a Vigilante to the right of this card.; Chapter 1: Create and play Gossip.; Chapter 2: Create and play Hysteria.] [We got to kill them afore they kills us!]

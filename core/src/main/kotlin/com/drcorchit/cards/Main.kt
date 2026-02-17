@@ -6,13 +6,10 @@ import com.badlogic.gdx.Input
 import com.badlogic.gdx.scenes.scene2d.Stage
 import com.drcorchit.cards.SpaceCard2LargeWindow.Companion.cardbacks
 import com.drcorchit.cards.SpaceCard2LargeWindow.Companion.disasters
-import com.drcorchit.cards.fantasy.CardType
-import com.drcorchit.cards.fantasy.City
+import com.drcorchit.cards.fantasy.*
 import com.drcorchit.cards.fantasy.FantasyCard.Companion.abilityTextW
 import com.drcorchit.cards.fantasy.FantasyCard.Companion.keywordHelpW
 import com.drcorchit.cards.fantasy.FantasyCard.Companion.totalAbilityTextH
-import com.drcorchit.cards.fantasy.FantasyCards
-import com.drcorchit.cards.fantasy.Rarity
 import com.drcorchit.cards.graphics.CardActor
 import com.drcorchit.cards.graphics.Draw
 import com.drcorchit.cards.graphics.Fonts
@@ -46,8 +43,8 @@ class Main : ApplicationAdapter() {
             SpaceCards.cards + disasters + cardbacks
         }
 
-        val fantasyCards by lazy { FantasyCards.baseSet.cards + FantasyCards.expac1.cards }
-        val fantasyTokens by lazy { FantasyCards.tokens.cards }
+        val fantasyCards by lazy { FantasyCards.baseSet.cards }
+        val allFantasyCards by lazy { FantasyCards.baseSet.cards + FantasyCards.expac1.cards + FantasyCards.tokens.cards }
 
         val cards by lazy { fantasyCards }
     }

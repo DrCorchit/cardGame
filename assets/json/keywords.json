@@ -8,6 +8,23 @@
     "synonyms": ["expend", "expends", "expended"]
   },
   {
+    "name": "Destroy",
+    "synonyms": ["destroys", "destroyed"]
+  },
+  {
+    "name": "Discard",
+    "synonyms": ["discards", "discarded"]
+  },
+  {
+    "name": "Banish",
+    "synonyms": ["Banishes", "Banished"]
+  },
+  {
+    "name": "Assault X",
+    "_description": "Damage a unit by X.",
+    "synonyms": ["Assault", "Assaults", "Assaulted"]
+  },
+  {
     "name": "Create",
     "description": "Introduce a card from outside the game.",
     "synonyms": ["creates"]
@@ -30,23 +47,6 @@
   {
     "name": "Vulnerable",
     "description": "This card cannot receive protection."
-  },
-  {
-    "name": "Destroy",
-    "synonyms": ["destroys", "destroyed"]
-  },
-  {
-    "name": "Discard",
-    "synonyms": ["discards", "discarded"]
-  },
-  {
-    "name": "Banish",
-    "synonyms": ["Banishes", "Banished"]
-  },
-  {
-    "name": "Assault X",
-    "description": "Damage a unit by X.",
-    "synonyms": ["Assault", "Assaults", "Assaulted"]
   },
   {
     "name": "Assassinate X",

@@ -1,0 +1,41 @@
+#Avalon
+#Further ideas: Centaurs, Seelie/Unseelie Court, Elves, Snow White
+
+#Undine:
+#Gawain
+#Selkie: 3/3p [Avalon, Fairy] [During your turn, you may expend water_mana water_mana to play this card from deck.] []
+#Centaur: 9/4p [Avalon, Beast] [You must expend 3 air_mana to play this card.] []
+
+#Metropolis
+
+#Thalassa
+#Blackblood Corsair: 3/2p Draw a card, discard if common, move to bottom of deck if rare or legendary
+#
+#Abordage: 6p Destroy an allied unit of X power, then seize a unit of X or less power.
+#Lower the Boom: 10p Assault 8, overkill X: play a unit form graveyard of X or fewer provisions.
+
+
+#Transylvania
+#Transylvanian Werewolf [req dark mana]
+#Mafia Soldier
+#Nosferatu: 4/6p [Transylvania, Vampire, Rare] [When played, purify and lock an enemy unit.; When tapped, become invisible.] []
+#Frankenstein/Monster
+
+#Vulcania
+
+
+#Unaffiliated
+
+#Universal Soldier: 4/4p At turn start, gain 2 points if doomed.;
+#Armor Up: Play an armored unit from deck
+
+
+
+Pad monsters:
+Echidna, X Alraune, Siren, Lilith, Archangel
+Gigas, Highlander, Siegfried, Vampire, Valkyrie
+Phoenix, Fenrir, Zeal
+Shaitan, Sylph, Undine, Thanatos, Genie
+Yeti
+
+Paracelsus believed that each of the four classical elements—earth, water, air and fire—is inhabited by different categories of elemental spirits, liminal creatures that share our world: gnomes, undines, sylphs and salamanders respectively

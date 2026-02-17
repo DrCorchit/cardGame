@@ -38,6 +38,8 @@ Time Travel: 6p [Metropolis, Instant, Technology, Legendary] [When played, move 
 
 Android Replica: 3/7p [Metropolis, Machine, Rare] [Haste.; When tapped, trigger an enemy unit's "when played" ability.] [Anything you can do, I can do better.]
 X Æ A-12: 2a 4/7p [Metropolis, Machine, Legendary] [When tapped, give an allied unit haste.; At turn start, you may expend light_mana to untap this card.] [Work it harder, make it better, do it faster, makes us stronger!]
+Omega Defender: 12/7p [Metropolis, Machine, Rare] [You must expend light_mana light_mana light_mana light_mana to play this unit.] [Maximum power.]
+
 Codex Veritas: 8p [Metropolis, Emplacement, Book, Legendary] [When played, move 2 cards to the top of your deck.; When tapped, play the card at the top of your deck.] [No-one ever reads past the abstract because there's a paywall.]
 System Reboot: 8p [Metropolis, Instant, Rare] [Untap all allied units.; Units untapped by this card may not be tapped until your next turn.] [Have you tried turning it off and on again?]
 Reverse Engineering: 8p [Metropolis, Instant, Technology, Legendary] [Play a card from your opponent's graveyard.] [Sometimes, the imitation is better than the original.]
