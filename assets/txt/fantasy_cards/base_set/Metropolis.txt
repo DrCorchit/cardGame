@@ -18,6 +18,7 @@ Pulverizer: 1a 7/3p [Metropolis, Machine] [You must expend air_mana air_mana to 
 Power Surge: 3/3p [Metropolis, Equipment, Technology] [When equipped to a common unit, untap it.] [Power is always dangerous.] [utility, combo]
 Product Recall: 3p [Metropolis, Instant, Technology] [Return a common allied unit to hand, then play a card.] [A class action lawsuit is underway.]
 
+Thought Police: 1/4p [Metropolis, Elf] [When moved to the top of your deck, summon self.; When tapped, lock an enemy unit.] [Hold that thought.]
 Incinerator: 1a 3/4p [Metropolis, Machine] [When played, banish the top card of your opponent's deck.; When tapped, repeat the "when played" ability.] [Ashes to ashes.]
 Artificer: 3/4p [Metropolis, Elf] [When played, destroy an allied Machine and play a common Machine from your graveyard.] [Make it or break it.] [utility]
 Devastator: 1a 9/4p [Metropolis, Machine] [You must expend air_mana air_mana air_mana to play this unit.] [TARGET DESTROYED]
@@ -33,13 +34,15 @@ Pyros, Inquisitor: 1/5p [Metropolis, Elf, Rare] [When you pass, gain points equa
 Sophos, Ordinator: 2/5p [Metropolis, Elf, Rare] [When played, either:#Play the top card from your deck.#Disloyal. Play the top card from your opponent's deck.] [I am the decider!]
 
 Ultima, Prototype: 1a 2/6p [Metropolis, Machine, Rare] [When tapped, gain 1 point for each Technology in your graveyard.] [It's all in the name of progress.]
-Argos, Arbiter: 4/6p [Metropolis, Elf, Rare] [When played, move 2 cards to the top of your deck.; You must expend light_mana to tap this unit.; When tapped, repeat the "when played" ability.; When you pass, you need not shuffle your deck this round.] [No plan is ever perfect. Except mine.]
+Argos, Arbiter: 4/6p [Metropolis, Elf, Rare] [When played, move 2 cards to the top of your deck.; You must expend light_mana light_mana to tap this unit.; When tapped, repeat the "when played" ability.; When you pass, you need not shuffle your deck this round.] [No plan is ever perfect. Except mine.]
 Time Travel: 6p [Metropolis, Instant, Technology, Legendary] [When played, move a unit to the top of its owner's deck.] [In the year 2525...]
+Regeneration Weave: 1/6p [Metropolis, Equipment, Technology, Rare] [When moved to the top of your deck, play self.; During your turn, you may also expend air_mana air_mana to play this card from your deck.; When equipped, purify the target and make it immune.] []
 
 Android Replica: 3/7p [Metropolis, Machine, Rare] [Haste.; When tapped, trigger an enemy unit's "when played" ability.] [Anything you can do, I can do better.]
 X Æ A-12: 2a 4/7p [Metropolis, Machine, Legendary] [When tapped, give an allied unit haste.; At turn start, you may expend light_mana to untap this card.] [Work it harder, make it better, do it faster, makes us stronger!]
 Omega Defender: 12/7p [Metropolis, Machine, Rare] [You must expend light_mana light_mana light_mana light_mana to play this unit.] [Maximum power.]
 
+Stealth Weave: 2/8p [Metropolis, Equipment, Technology, Legendary] [When moved to the top of your deck, play self.; During your turn, you may also expend air_mana air_mana air_mana to play this card from your deck.; When equipped, make the target immune.; If the target is a common card, make it invisible instead.] []
 Codex Veritas: 8p [Metropolis, Emplacement, Book, Legendary] [When played, move 2 cards to the top of your deck.; When tapped, play the card at the top of your deck.] [No-one ever reads past the abstract because there's a paywall.]
 System Reboot: 8p [Metropolis, Instant, Rare] [Untap all allied units.; Units untapped by this card may not be tapped until your next turn.] [Have you tried turning it off and on again?]
 Reverse Engineering: 8p [Metropolis, Instant, Technology, Legendary] [Play a card from your opponent's graveyard.] [Sometimes, the imitation is better than the original.]
@@ -48,5 +51,5 @@ Logos, Oracle: 4/9p [Metropolis, Elf, Legendary] [When played, you may expend li
 Teleportation: 9p [Metropolis, Instant, Technology, Legendary] [Echo.; Play a unit from your deck.] [What could possibly go wrong?]
 
 Orthos, Orchestrator: 6/10p [Metropolis, Elf, Legendary] [When played, you may expend air_mana air_mana to gain haste.; When tapped, untap an allied card.] [Actually, science hasn't gone far enough.]
-Teknos, Grand Artificer: 1/10p [Metropolis, Elf, Legendary] [When played, you may expend 2X light_mana to resurrect X common machines.] ["Grand Artificer" is a code word for "Huge Nerd"]
+Teknos, Grand Artificer: 4/10p [Metropolis, Elf, Legendary] [Haste.; When tapped, you may expend 2X light_mana to resurrect X common machines.] ["Grand Artificer" is a code word for "Huge Nerd"]
 

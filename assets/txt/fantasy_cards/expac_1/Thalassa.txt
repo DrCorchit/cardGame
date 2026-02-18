@@ -1,10 +1,10 @@
 Viking Raider: 1/2p [Thalassa, Human, Warrior] [Veteran.; When played, become immune.; Gain 1 point whenever you destroy a unit during your turn.] []
 Viking Longship: 2/2p [Thalassa, Ship] [Plunder 2.; When played, gain 2 counters.; When tapped (X counters), spawn X fire_mana or X water_mana.; Maximum counters: 6.] []
-Skald: 2/2p [Thalassa, Human] [At turn start, gain 1 point if there is a Ship in your graveyard.] []
+Viking Skald: 2/2p [Thalassa, Human] [At turn start, gain 1 point if there is a Ship in your graveyard.] []
 Viking Shieldmaiden: 3/2p [Thalassa, Human, Warrior] [Veteran.; This unit's power is increased by 1 for each counter.; Maximum counters: 4.] []
 
 Blackblood Marauder: 2/3p [Thalassa, Human, Warrior] [Veteran.; At turn start, assault 1.] []
-Triton: 1a 2/3p [Thalassa, Monster] [At turn start, you may devour an allied Ship.] []
+Blackblood Swashbuckler: 1/3p [Thalassa, Human, Warrior] [Veteran.; When discarded, summon self.; When played, you may expend fire_mana fire_mana fire_mana to assault 3.]
 Pillage: 3p [Thalassa, Instant, Warfare] [Either:#Assault 2 and add 2 counters to an allied card.#Assault 3.#Remove 2 counters from an allied card, then assault 4.] []
 Nithing: 3p [Thalassa, Emplacement] [At turn start, gain 1 counter.; When tapped (X counters), assault X.; Maximum counters: 6.] [Curse you!]
 

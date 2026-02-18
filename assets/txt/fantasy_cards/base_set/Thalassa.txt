@@ -10,6 +10,7 @@ Walk the Plank: 2p [Thalassa, Instant, Warfare] [Draw a card and discard a card.
 Hand Cannon: 2p [Thalassa, Equipment, Weapon, Warfare] [This card can only be equipped to a Pirate.; When equipped, assault 2.; Increases the damage of Broadside by 1.] [I always add a little extra powder.]
 
 Havoc Vanguard: 2/3p [Thalassa, Human, Pirate] [When discarded, summon self.] [Me first!]
+Triton: 2/3p [Thalassa, Monster] [When played, become immune.; At turn start, you may devour an allied Ship.] []
 Schooner: 1a 2/3p [Thalassa, Ship] [Plunder 5.] [Ships are a great place to keep all your drunken sailors.]
 Frigate: 1a 3/3p [Thalassa, Ship] [Whenever you overkill X, gain X points.; Plunder 2.] [This bad boy can fit so many cannons on it.]
 Havoc Corsair: 4/3p [Thalassa, Human, Pirate] [When played, either:#Expend X fire_mana and gain X points.#Expend X water_mana and gain X points.] [A pirate's life for me!]
@@ -28,11 +29,12 @@ Yarn-Spinner Calhoun: 5/4p [Thalassa, Human, Pirate, Rare] [When played, both pl
 
 Captain Fribley: 4/5p [Thalassa, Human, Pirate, Rare] [When played, you may expend water_mana water_mana to place a unit from your graveyard into your hand, then discard a card.;] [A good captain goes down wit' his ship. But I ain't a good captain, har har!]
 Billy Bones: 5/5p [Thalassa, Human, Pirate, Rare] [When played, look through your deck and move any card to the bottom.; When you pass, you need not shuffle your deck next round.] [Only one 'i' in wisdom...]
-Keel-Haul: 5p [Thalassa, Instant, Warfare, Rare] [When played, destroy an allied Human and spawn water_mana equal to its power.; Afterwards, play a Pirate from your graveyard.] [Welcome to the Crew!]
+Abordage: 5p [Thalassa, Instant, Warfare, Rare] [When played, destroy an allied unit of X power, then seize an enemy unit of X or less power.] []
 
 Terror o' the Seas: 1a 2/6p [Thalassa, Ship, Rare] [When played, become immune.; Whenever you discard a Cannon card, equip it here instead.; Plunder 2.] [Ya can never have too many guns...]
 Jormungandir: 2a 4/6p [Thalassa, Monster, Rare] [When played, become immune.; When tapped, expend X water_mana to devour X allied units.] [The serpent at the end of the world!]
 Captain Flint: 2/6p [Thalassa, Human, Pirate, Rare] [When played, either:#Play a Warfare card from your deck.#Expend fire_mana fire_mana and play a Warfare card from your graveyard.] [Yo-ho-ho, and a bottle of rum!]
+Keel-Haul: 6p [Thalassa, Instant, Warfare, Rare] [When played, destroy an allied Human and spawn water_mana equal to its power.; Afterwards, play a Pirate from your graveyard.] [Welcome to the Crew!]
 
 Anne Bonny: 3/7p [Thalassa, Human, Pirate, Rare] [When played, draw a card and discard a card.; Whenever you discard a card, gain 1 point.] [No need to call me lady. "Captain" will do just fine.]
 Blackbeard: 6/7p [Thalassa, Human, Pirate, Rare] [When tapped, assault 6 and destroy self.; Overkill X: spawn X fire_mana.] [He died standing up.]
@@ -46,6 +48,7 @@ Rock of Gibraltar: 8p [Thalassa, Emplacement, Location, Legendary] [When played,
 The White Cliffs: 9p [Thalassa, Emplacement, Location, Legendary] [When played, become stalwart.; When tapped, you may expend 2X water_mana to play X Gun cards from your graveyard.; At the start of the round, untap this card.] [There'll be bluebirds over...]
 Broadside: 9p [Thalassa, Instant, Warfare, Legendary] [Echo.; Assault 4.; Overkill X: Look at the top X cards from your deck and play one.] [Full speed ahead!]
 
+Lower the Boom: 10p [Thalassa, Instant, Warfare, Legendary] [When played, assault 8. Overkill X: play a unit form graveyard of X or fewer provisions.] []
 Queen Anne's Revenge: 1a 1/10p [Thalassa, Ship, Legendary] [When played, assault 2. You may expend 2X fire_mana to intensify the assault by X.; This card's assault also hits units adjacent to the target.; Plunder 2.] [Shiver me timbers!]
 Cthulhu: 6/10p [Thalassa, Monster, Legendary] [When played, expend X water_mana to devour an enemy unit of X or less power.] [Cthulhu fhtagn!]
 

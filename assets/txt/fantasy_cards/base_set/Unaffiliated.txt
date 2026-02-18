@@ -5,14 +5,10 @@ Pack Wolf: 3/2p [Beast] [When played while paired, assault 2.] [Nice doggy...]
 Zombie: 3/3p [Undead] [Whenever you play a zombie, summon all zombies from your graveyard.] [This is me when I wake up in the morning.]
 Goblin Shaman: 3/2p [Ogroid, Tribal] [When tapped, either:#Give a unit doomed.#Give a unit immune.] [Double, double, toil and trouble!]
 Ghost: 4/2p [Undead] [When played, become invisible.] [Boo!]
-House Elf: 5/2p [Elf] [You must control an emplacement to play this card.] [Master has given <name redacted> a sock!]
 Icicle: 2p [Instant, Nature] [When played, you may either:#Spawn water_mana water_mana and gain 3 points.#Expend water_mana and assault 2.] [You'll shoot your eye out!]
-Feint Attack: 2p [Instant, Warfare] [Replay a common allied unit.] [Gotcha!]
 
 Emissary: 1/3p [Human, Spy] [Disloyal.; When played, play a unit from hand, then draw a card.] [Introducing his most gracious excellency...]
-Clay Golem: 3a 1/3p [Undead] [At turn start, gain 1 point.] [Whoever keeps making these, please stop.]
 Goblin Hunter: 1/3p [Ogroid, Tribal] [When played, poison a unit.; When tapped, play a common Tribal unit (except Goblin Hunter) from hand then move to your hand.] [They can't take us all!]
-Butler: 2/3p [Human] [When played, gain 2 points.; When you pass, gain 2 points.] [Anything you require, sir.]
 Saboteur: 2/3p [Human, Spy] [When played, either:#Lock an enemy unit.#Become disloyal and destroy an enemy emplacement.] [If I had a hammer...]
 Goblin Smitty: 1a 2/3p [Ogroid, Tribal] [When played, become stalwart.; When tapped, become stalwart.] [If you whistle while you work, you get fired.]
 Goblin Warrior: 2a 6/3p [Ogroid, Tribal, Warrior] [You must control another Tribal to play this unit.] [Quantity over quality.]
@@ -25,11 +21,10 @@ Mobilization: 3p [Instant, Warfare] [When played, play a 4 provision card from y
 Assassin: 1/4p [Human, Spy] [Disloyal.; When played, Assassinate 4.] [Humans make good assassins. They also make good targets.]
 Living Armor: 3a 1/4p [Undead] [When tapped, replay a common equipment equipped to this card.] [It's... moving?]
 Boiling Oil: 4p [Instant, Warfare] [Assault 4.; Overkill X: Purify units adjacent to the target.] [Not good for your skin.]
-Halberd: 4p [Equipment, Weapon, Warfare] [When equipped, gain 2 points and assault 2.] [A soldier's weapon.]
+Halberd: 2/4p [Equipment, Weapon, Warfare] [When equipped, assault 2.] [A soldier's weapon.]
 
 Chimney Sweep: 4/4p [Human, Rare] [When played, banish a card from your opponent's graveyard.; At turn start, repeat this ability.] [A sweep is as lucky as lucky can be.]
 Necromancy: 4p [Instant, Spell, Rare] [Play a common unit from your graveyard.] [The four stages of grief: denial, anger, despair... necromancy?]
-Captain Ernesto: 4/4p [Human, Rare] [When tapped, assault 4 and destroy self.] [What do you mean, down-and-outer?]
 Goblin Chief: 1a 2/4p [Ogroid, Tribal, Rare] [When played, become immune.; When tapped, play a common Tribal card from deck.] [The biggest, fattest, meanest, ugliest of the lot.]
 
 Bounty Hunter: 4/5p [Human, Rare] [When played, lock a unit.] [You can run, but you can't hide.]
@@ -48,7 +43,6 @@ Royal Guard: 2a 5/7p [Human, Knight, Legendary] [This card protects the unit to 
 Royal Decree: 7p [Instant, Law, Legendary] [Play a unit from your deck.] [So let it be written...]
 Blistering Heatwave: 7p [Instant, Nature, Legendary] [When played, banish any card that is not protected.] [Just when you think it can't get any hotter...]
 
-Caravan Merchant: 2/8p [Human, Legendary] [When played, swap a card in hand with a card in your deck.; When tapped, repeat the "when played" ability.; When you pass, you need not shuffle your deck next round.] [With so much merchandise, you'll never catch him unawares.]
 Resurrection: 8p [Instant, Spell, Rare] [Play a common or rare unit from your graveyard.] [A good character never stays dead for long.]
 Multitool: 8p [Instant, Weapon, Legendary] [When played, choose 3 of the following abilities in any order:#Lock a unit.#Purify a unit.#Assault 2.#Gain 3 points.] [Why don't YOU own one?]
 
@@ -59,5 +53,4 @@ Queen of Hearts: 1/10p [Human, Regent, Legendary] [Gain an additional effect for
 
 Leprechaun: 3/1p [Fairy, Legendary] [If this card is in your starting deck, you must inform your opponent.; If you have not played this card by the end of the game, you lose.] [Follow your dreams. Rainbows are an acceptable alternative, however.]
 
-
-#Ideas: Play an armored unit from deck
+Bird of Victory: 3/0p [Beast, Token, Legendary] [] [May the best man win!]

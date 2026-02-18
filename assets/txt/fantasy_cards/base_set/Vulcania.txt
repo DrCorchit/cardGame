@@ -9,6 +9,7 @@ Fireswill Wine: 3/2p [Vulcania, Equipment, Liquor] [When equipped, spawn fire_ma
 Old Warhammer: 2p [Vulcania, Equipment, Weapon] [When equipped, assault 2.; This card's assault ignores armor.] [If all you have is a hammer, everything looks like a nail.]
 
 Dragon Egg: 1a 1/3p [Vulcania, Egg] [When tapped, summon a common Dragon from your graveyard and destroy self.] [Probably best not to touch them.]
+Dragon Hatchling: 2/3p [Vulcania, Dragon] [During your turn, you may expend fire_mana fire_mana to summon this card from deck.] [They're cute when they're small.]
 Pit Wyvern: 3/3p [Vulcania, Dragon] [When played, you may expend fire_mana fire_mana to assault 2.] [Soft as barbed wire and charming as a gut punch.]
 Dwarven Brawler: 2/3p [Vulcania, Dwarf] [Imbibe to either:#When paired, assault 2.#Summon a Dwarven Brawler from your deck.] [If it's a fight yer lookin' fer, ye just found it.]
 Cave Dragon: 7/3p [Vulcania, Dragon] [Expend fire_mana fire_mana to play this card.] [Peaceful, as far as dragons go. (Run!)]
@@ -17,7 +18,7 @@ Dragonbrew Reserve: 3/3p [Vulcania, Equipment, Liquor] [At turn start, spawn fir
 Dwarfsteel Battleaxe: 3p [Vulcania, Equipment, Weapon] [When equipped, assault 2.; When tapped, assault 1.] [Even dwarven battleaxes have beards...]
 Natural Spring Water: 4/3p [Vulcania, Equipment] [When equipped, purify the target.] [Pure, refreshing goodness.]
 
-Dwarven Engineer: 3/4p [Vulcania, Dwarf] [You must expend fire_mana fire_mana to tap this card.; When tapped, make a common unit stalwart.; Imbibe to untap this card.] [Unlike elves, dwarves don't let computers do their thinkin' for 'em.]
+Dwarven Engineer: 2/4p [Vulcania, Dwarf] [You must expend fire_mana fire_mana to tap this card.; When tapped, make a common unit stalwart.; Imbibe to untap this card.] [Unlike elves, dwarves don't let computers do their thinkin' for 'em.]
 Dwarven Warrior: 1a 3/4p [Vulcania, Dwarf] [Imbibe to gain 2 points.; When tapped, assault 1 for each equipped Weapon or Liquor card.] [Born to drink, forced to fight.]
 Royal Wyvern: 9/4p [Vulcania, Dragon] [Expend fire_mana fire_mana fire_mana to play this card.] [Capable of turning a dwarf into barbecue in 3 seconds flat.]
 Guinness Stout: 2/4p [Vulcania, Equipment, Liquor] [Also triggers imbibe abilities on adjacent units.] [Take one down and pass it around...]
@@ -32,18 +33,21 @@ Swoop: 5p [Vulcania, Dragon, Instant, Instinct, Rare] [You may either:#Spawn fir
 
 The Eggspert: 1/6p [Vulcania, Dwarf, Rare] [When played, you may either:#Play an Egg from your deck.#Expend 2X fire_mana to play X dragon eggs from your graveyard.] [You mean you DON'T collect dragon eggs?]
 Shorty McGee: 1/6p [Vulcania, Dwarf, Rare] [When played, assault 3.; Imbibe to assault 2.] [Live by the axe...]
-Pseudodragon: 1/6p [Vulcania, Dragon, Rare] [When played, play a common Liquor card from your graveyard and banish it.; When tapped, play a Dragon from hand and return to your hand.] [It's basically a scaly green chihuahua.]
+Pseudodragon: 1/6p [Vulcania, Dragon, Rare] [When played, play a common Liquor card from your graveyard and banish it.; When tapped, play a Dragon from hand and return to your hand.] [It's basically a scaly red chihuahua.]
 
 Guardian Dragon: 1a 3/7p [Vulcania, Dragon, Rare] [This card protects adjacent Egg cards.; Summon self from your deck whenever an allied dragon egg is destroyed.] [Ohhh now you've made 'er mad!]
 Hoard Dragon: 9/7p [Vulcania, Dragon, Rare] [Your score must be at least 10 to play this card.] [Be fearful when others are greedy.]
 Magma Defender: 12/7p [Vulcania, Dragon, Rare] [You must expend fire_mana fire_mana fire_mana fire_mana to play this card.] [Now you're cooked.]
 
-Goryx, Golden Dragon: 1a 4/8p [Vulcania, Dragon, Legendary] [Haste.; When tapped, expend X fire_mana and play a card from your deck of up to 2X provisions.] [Be greedy when others are fearful.]
-Ale of the Ancestors: 5/8p [Vulcania, Equipment, Liquor, Legendary] [Echo.; When equipped, spawn fire_mana fire_mana fire_mana.] [The hard part isn't the brewing process, it's hiding it from all the dwarves for a hundred years.]
+Goryx, Golden Dragon: 1a 5/8p [Vulcania, Dragon, Legendary] [Haste.; When tapped, expend X fire_mana and play a card from your deck of up to 2X provisions.] [Be greedy when others are fearful.]
+Bloody Slash: [Vulcania, Instant, Instinct, Rare] [When played, assault X where X is the power of the most powerful dragon you control.; Overkill X: spawn X fire_mana.] [Might makes right.]
+Ale of the Ancestors: 5/8p [Vulcania, Equipment, Liquor, Rare] [Echo.; When equipped, spawn fire_mana fire_mana fire_mana.] [The hard part isn't the brewing process, it's hiding it from all the dwarves for a hundred years.]
 
-Neromir, Warrior Dragon: 2a 4/9p [Vulcania, Dragon, Legendary] [Haste.; When tapped, expend X fire_mana and assault X.; At turn start, untap this card.] [Look who woke up on the wrong side of the bed.]
+Neromir, Warrior Dragon: 2a 6/9p [Vulcania, Dragon, Legendary] [Haste.; When tapped, expend X fire_mana and assault X.; At turn start, untap this card.] [Look who woke up on the wrong side of the bed.]
 Treasure of all Treasures: 9p [Vulcania, Emplacement, Legendary] [When played, gain 4 points.; At turn start, gain 1 point for each adjacent dwarf.; This card is protected by adjacent dwarves.] [All that glitters is not gold. Could be diamonds, for instance.]
+Scaly Feast: 9p [Vulcania, Instant, Instinct, Legendary] [When played, each allied Dragon assaults an enemy unit with equal or lesser power by 2.] [It's a circle of life.]
 
+Mithril Mail: 4a 4/10p [Vulcania, Equipment, Armor, Legendary] [When you pass, make the target stalwart.] [Made to last; last of its make.]
 Dragonmother Erizyx: 2a 8/10p [Vulcania, Dragon, Legendary] [This card protects adjacent Egg cards.; When you pass, gain 2 points for each allied egg.] [She's a lady and you will treat her as such.]
 Dragon Emperor Coronakt: 3/10p [Vulcania, Dragon, Legendary] [Imbibe to devour a unit in your graveyard.] [Ever been so hungry you could eat a dragon?]
 

@@ -1,4 +1,4 @@
-Autognome: 2/2p [Metropolis, Machine] [When played, spawn air_mana light_mana.; When tapped, repeat the "when played" ability.] []
+Autognome: 1/2p [Metropolis, Machine] [When played, spawn air_mana light_mana.; When tapped, repeat the "when played" ability.] []
 Apprentice: 3/2p [Metropolis, Elf] [When played, you may expend light_mana light_mana to create a student.] []
 Alchemist: 3/2p [Metropolis, Elf] [At turn start (X counters), you may expend X light_mana and gain 1 counter to move a card to the top of your deck.; Maximum counters: 6.] []
 Journeyman: 4/2p [Metropolis, Elf] [When played, you may expend light_mana light_mana light_mana to create a student.; When tapped, repeat the "when played" ability.] []
@@ -15,12 +15,11 @@ Kick it 'til it Works: 4p [Metropolis, Instant, Technology, Rare] [When played, 
 
 Opusculum: 1/5p [Metropolis, Machine, Rare] [Whenever this card is moved to the top of your deck, spawn air_mana or light_mana.; Whenever you pass, you may summon this unit from your deck.] []
 
-Regeneration Weave: 1/6p [Metropolis, Equipment, Technology, Rare] [When moved to the top of your deck, play self.; During your turn, you may also expend air_mana air_mana to play this card from your deck.; When equipped, purify the target and make it immune.] []
 Magnetron: 6p [Metropolis, Instant, Technology, Rare] [Damage a unit by 5. If it has armor, destroy it instead.] []
 
 Plexi Glass: 5/7p [Metropolis, Machine, Rare] [At turn start, you may either:#Spawn light_mana light_mana.#Spawn air_mana.] [Sometimes autognomes need a feminine touch.]
 
-Stealth Weave: 2/8p [Metropolis, Equipment, Technology, Legendary] [When moved to the top of your deck, play self.; During your turn, you may also expend air_mana air_mana air_mana to play this card from your deck.; When equipped, make the target immune.; If the target is a common card, make it invisible instead.] []
+
 
 Fugg Raulner: 2a 5/9p [Metropolis, Machine, Mage, Legendary] [When played, become invisible.; At turn start, you may either:#Become invisible and spawn light_mana.; #Purify self and spawn air_mana air_mana.] [Beep boop.]
 

@@ -3,7 +3,6 @@ Snitch: 1/2p [Transylvania, Human, Spy] [Disloyal.; When played, play a common C
 Nightcrawler: 2/2p [Transylvania, Vampire] [At turn start, either:#Spawn dark_mana.#Expend dark_mana to gain 1 point.] [This is the nightcrawler!]
 Beggar: 2/2p [Transylvania, Human] [At turn start (chaos 5), gain 1 point.; Whenever you play a crime, you may spawn 1 mana of any color.] [Alms for the poor?]
 Constable: 2/2p [Transylvania, Human] [When played, lock a unit.] [You're under arrest.]
-Harlequin: 3/2p [Transylvania, Human, Henchman] [At turn start, reroll an enemy mana die.] [Tricked ya again!]
 Hired Muscle: 3/2p [Transylvania, Human, Henchman] [When an adjacent unit is destroyed, summon another Hired Muscle from deck or graveyard.] [Watch it, twerp.]
 Neighborhood Bully: 4/2p [Transylvania, Human, Henchman] [Chaos 5 is required to play this unit.; When paired, your chaos level is increased by 1. This effect resolves once for all Neighborhood Bully cards.] [Says who? My fist, that's who!]
 Feral Werewolf: 5/2p [Transylvania, Beast] [You must expend dark_mana to play this unit.] [More beast than man.]
