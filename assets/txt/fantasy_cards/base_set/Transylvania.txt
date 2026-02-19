@@ -18,7 +18,7 @@ Vampiric Abomination: 4/3p [Transylvania, Vampire] [When played, gain poison.; Y
 Landlady: 6/3p [Transylvania, Vampire] [When an adjacent unit is destroyed, also destroy self.] [It's a beautiful day for an eviction.]
 Pickpocket: 3p [Transylvania, Instant, Crime] [When played, reroll 6 common or allied mana dice.; Chaos X: gain X points and decrease the reroll amount by X. ] [A fool and his money...]
 
-Hitman: 1/4p [Transylvania, Human, Spy] [Disloyal.; When played (chaos X), assassinate X.] [I never hurt nobody that ain't had it comin'.]
+Hitman: 2/4p [Transylvania, Human, Spy] [Disloyal.; When played (chaos X), assassinate X.] [I never hurt nobody that ain't had it comin'.]
 Pyromaniac: 2/4p [Transylvania, Vampire, Henchman] [When played, spawn 2 mana of any colors.; When tapped (chaos X), assault X.] [Something not being on fire is usually a very easy problem to solve.]
 Bystander: 2/4p [Transylvania, Human] [When played, become immune.; When tapped, gain points equal to the provision cost of the most expensive unit you assassinated or seized this turn.] [Oh wow, dinner AND a show!]
 Vampire Aristocrat: 3/4p [Transylvania, Vampire] [When tapped, you may expend X dark mana to assault X.; Whenever you play a human, spawn dark_mana.; Whenever you play a vampire, untap this card.] [I'm a creature of refined taste.]
@@ -32,7 +32,7 @@ Joanna the Thrall: 1a 3/5p [Transylvania, Human, Caporegime, Rare] [At turn star
 The Dollhouse: 5p [Transylvania, Emplacement, Location, Rare] [When played, become stalwart and play a Moomsh Addict or Landlady from your deck.; Adjacent Moomsh Addict and Landlady units do not destroy themselves.] [If home is where the heart is, then they're homeless.]
 Vampire Nightmaster: 2/5p [Transylvania, Vampire, Rare] [When played, either:#Become stalwart and invisible.#Spawn 3 dark_mana.; When tapped, repeat the "when played" ability.] [The night is dark and full of terrors.]
 
-The Quartermaster: 3/6p [Transylvania, Human, Spy, Rare] [When played, either:#Play a common Spy from your deck.#Expend dark_mana dark_mana and play a Spy from your deck.] [Take whatcha need for the job and scram.]
+The Quartermaster: 1a 1/6p [Transylvania, Human, Spy, Rare] [When played, you may expend X dark_mana to play a spy from deck with a provision cost of 2+X.; When you pass, gain 1 point for each enemy spy.] [Take whatcha need for the job and scram.]
 Nosferatu: 5/6p [Transylvania, Vampire, Rare] [When played, purify and lock an enemy unit.; When tapped, become invisible.] [Does evil come from within us or from beyond?]
 Chester Zilch: 2/6p [Transylvania, Vampire, Caporegime, Rare] [Chaos 4: Summon self from your deck.; Chaos 6: Summon self from your graveyard.] [Ahead of schedule, as usual.]
 
