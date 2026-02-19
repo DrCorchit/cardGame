@@ -44,7 +44,7 @@ Royal Decree: 7p [Instant, Law, Legendary] [Play a unit from your deck.] [So let
 Blistering Heatwave: 7p [Instant, Nature, Legendary] [When played, banish any card that is not protected.] [Just when you think it can't get any hotter...]
 
 Resurrection: 8p [Instant, Spell, Rare] [Play a common or rare unit from your graveyard.] [A good character never stays dead for long.]
-Multitool: 8p [Instant, Weapon, Legendary] [When played, choose 3 of the following abilities in any order:#Lock a unit.#Purify a unit.#Assault 2.#Gain 3 points.] [Why don't YOU own one?]
+Multitool: 8p [Instant, Weapon, Rare] [When played, choose 3 of the following abilities in any order:#Lock a unit.#Purify a unit.#Assault 2.#Gain 3 points.] [Why don't YOU own one?]
 
 Field Marshall: 1/9p [Human, Soldier, Legendary] [When played, play all copies of a Warfare card from your deck.] [There's a world of difference between tactics and strategy.]
 Prophecy: 9p [Instant, Spell, Legendary] [Echo.; When played, play a card from your deck.] [If I foretold your fate, would so prophesying avert it—or seal it?]

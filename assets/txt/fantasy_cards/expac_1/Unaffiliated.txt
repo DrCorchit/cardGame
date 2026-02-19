@@ -13,7 +13,7 @@ Flesh Golem: 6/4p [Undead] [When played, become immune.] [And you thought the cl
 
 Bag of Vomit: 4p [Instant, Rare] [When played, play a second copy of a common unit you already control.; While in the graveyard, other cards cannot be banished from your graveyard.] [Sometimes a bag of vomit is just a bag of vomit.]
 Bolases: 5p [Equipment, Weapon, Rare] [When equipped, lock two units.; When tapped, assault all locked units by 2.] []
-Pyromaniaxe: 5p [Equipment, Weapon, Rare] [This weapon cannot be equipped to units with 4 or less power.; When equipped, assault 6.] []
+Pyromaniaxe: 6p [Equipment, Weapon, Rare] [This weapon cannot be equipped to units with 4 or less power.; When equipped, assault 6.] []
 Dragonslayer Lance: 6p [Equipment, Weapon, Rare] [When equipped, assault 4.; If the assault target is legendary, assault 8 instead.] []
 Blade Dancer: 2/7p [Human, Knight, Rare] [When played, become immune.; Whenever a weapon is equipped, assault 1.; When tapped, assault 1 for every equipped weapon.] []
 

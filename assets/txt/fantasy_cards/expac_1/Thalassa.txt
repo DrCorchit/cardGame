@@ -4,7 +4,7 @@ Viking Skald: 2/2p [Thalassa, Human] [At turn start, gain 1 point if there is a 
 Viking Shieldmaiden: 3/2p [Thalassa, Human, Warrior] [Veteran.; This unit's power is increased by 1 for each counter.; Maximum counters: 4.] []
 
 Blackblood Marauder: 2/3p [Thalassa, Human, Warrior] [Veteran.; At turn start, assault 1.] []
-Blackblood Swashbuckler: 1/3p [Thalassa, Human, Warrior] [Veteran.; When discarded, summon self.; When played, you may expend fire_mana fire_mana fire_mana to assault 3.]
+Blackblood Pillager: 1/3p [Thalassa, Human, Warrior] [Veteran.; When discarded, summon self.; When played, you may expend fire_mana fire_mana fire_mana to assault 3.] []
 Pillage: 3p [Thalassa, Instant, Warfare] [Either:#Assault 2 and add 2 counters to an allied card.#Assault 3.#Remove 2 counters from an allied card, then assault 4.] []
 Nithing: 3p [Thalassa, Emplacement] [At turn start, gain 1 counter.; When tapped (X counters), assault X.; Maximum counters: 6.] [Curse you!]
 

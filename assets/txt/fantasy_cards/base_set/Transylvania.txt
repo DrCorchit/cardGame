@@ -33,22 +33,22 @@ The Dollhouse: 5p [Transylvania, Emplacement, Location, Rare] [When played, beco
 
 Vampire Nightmaster: 2/6p [Transylvania, Vampire, Rare] [When played, either:#Become stalwart and invisible.#Spawn 3 dark_mana.; When tapped, repeat the "when played" ability.] [The night is dark and full of terrors.]
 The Quartermaster: 3/6p [Transylvania, Human, Spy, Rare] [When played, either:#Play a common Spy from your deck.#Expend dark_mana dark_mana and play a Spy from your deck.] [Take whatcha need for the job and scram.]
-Nosferatu: 5/6p [Transylvania, Vampire, Rare] [When played, purify and lock an enemy unit.; When tapped, become invisible.] []
+Nosferatu: 5/6p [Transylvania, Vampire, Rare] [When played, purify and lock an enemy unit.; When tapped, become invisible.] [Does evil come from within us or from beyond?]
 
 Chester Zilch: 2/7p [Transylvania, Vampire, Caporegime, Rare] [Chaos 4: Summon self from your deck.; Chaos 6: Summon self from your graveyard.] [Ahead of schedule, as usual.]
 Scarlet, Made Lady: 3/7p [Transylvania, Human, Caporegime, Rare] [When you pass, trigger one of the following abilities:#Gain 1 point for each allied Henchman unit.#Gain 2 points for each allied Caporegime. (Excluding self.)#Gain 3 points for each allied Kingpin.] [Wait 'til Big Daddy hears about this!]
 Pandemonium: 7p [Transylvania, Instant, Crime, Rare] [Echo.; When played, choose three cards from your deck and play one at random. Return the other two to your deck.; While in your graveyard, Chaos is increased by 1.] [Pandemonium did not reign; it poured.]
-Midnight Watcher: 12/7p [Transylvania, Vampire, Rare] [You must expend dark_mana dark_mana dark_mana dark_mana to play this card.] [Darkness consumes all.]
+Frankenstein's Monster: 12/7p [Transylvania, Monster, Rare] [You must expend dark_mana dark_mana dark_mana dark_mana to play this card.] [It's aliiiiive!]
 
-Molgrippe, Master Assassin: 4/8p [Transylvania, Human, Henchman, Legendary] [When played, either:#Chaos 5: Assault 5.#Chaos 6: Assassinate 6.] [The anomaly will be corrected momentarily.]
+Molgrippe, Master Assassin: 3/8p [Transylvania, Human, Henchman, Legendary] [When played, either:#Chaos 5: Assault 5.#Chaos 6: Assassinate 6.] [The anomaly will be corrected momentarily.]
 The Heist: 8p [Transylvania, Instant, Crime, Legendary] [When played, lose X points and seize X.;You cannot play this card in such a way that your score falls below zero.] [The perfect crime.]
-Frankenstein's Monster: 3/8p [Transylvania, Monster, Legendary] [Haste.; When tapped, assault 3.; When you pass, if not tapped become stalwart.] [It's aliiiiive!]
+Grim Reaper: 1/8p [Transylvania, Undead, Legendary] [When played, assault 10.; Overkill X: spawn X dark_mana.] [Darkness consumes all.]
 
-Jailbreak: 9p [Transylvania, Instant, Crime, Legendary] [When played (chaos X) play a Transylvanian unit from your graveyard of X or fewer provisions.; Increase the limit by X for each crime in your graveyard.] [Breaking out: not just for teenagers anymore.]
-Debutante Ball: 9p [Transylvania, Instant, Legendary] [Play a Transylvanian unit from your deck.; If it's a common or rare unit, gain one of the following effects:#If it's a human, make it stalwart.#If it's a vampire, make it invisible.] [Be there or be square.]
+Jailbreak: 9p [Transylvania, Instant, Crime, Legendary] [When played (chaos X) play a Transylvanian unit from your graveyard of X or fewer provisions.; Increase the provision limit by X for each crime in your graveyard.] [Breaking out: not just for teenagers anymore.]
+Debutante Ball: 9p [Transylvania, Instant, Legendary] [Play a Transylvanian unit from your deck and gain one of the following effects:#If it's a common Human, make it stalwart.#If it's a common Vampire, make it invisible.] [Be there or be square.]
 
-Yalmamir, Prince of Crime: 2/10p [Transylvania, Vampire, Kingpin, Regent, Legendary] [Haste.; When tapped, you may expend X dark_mana to seize X.; Whenever you play a crime, untap this card.] [A single incompetent enemy is worth a thousand incompetent friends.]
-Gladys the Glorious: 1/10p [Transylvania, Vampire, Kingpin, Legendary] [When played, you may expend 2X dark_mana to summon X common Henchman units from your graveyard.] []
+Yalmamir, Prince of Crime: 2/10p [Transylvania, Vampire, Kingpin, Regent, Legendary] [Haste.; When tapped, you may expend X dark_mana to seize X.; Whenever you play a Crime, untap this card.] [A single incompetent enemy is worth a thousand incompetent friends.]
+Gladys the Glorious: 1/10p [Transylvania, Vampire, Kingpin, Legendary] [When played, you may expend 2X dark_mana to play X common Crimes from your graveyard.] [Crime DOES pay.]
 
 Big Daddy: 1/11p [Transylvania, Human, Kingpin, Legendary] [When played (chaos X), seize up to 3 enemy units with a combined power less than or equal to X.] [More for me!]
 Phlegmtooth, Sewer Dragon: 7/11p [Transylvania, Dragon, Legendary] [When tapped, poison adjacent units.; For each unit poisoned, also poison an enemy unit.] [He thought he could handle riding the dragon.]
