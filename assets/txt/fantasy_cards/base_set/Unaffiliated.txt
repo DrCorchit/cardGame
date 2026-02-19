@@ -24,13 +24,13 @@ Boiling Oil: 4p [Instant, Warfare] [Assault 4.; Overkill X: Purify units adjacen
 Halberd: 2/4p [Equipment, Weapon, Warfare] [When equipped, assault 2.] [A soldier's weapon.]
 
 Chimney Sweep: 4/4p [Human, Rare] [When played, banish a card from your opponent's graveyard.; At turn start, repeat this ability.] [A sweep is as lucky as lucky can be.]
-Necromancy: 4p [Instant, Spell, Rare] [Play a common unit from your graveyard.] [The four stages of grief: denial, anger, despair... necromancy?]
-Goblin Chief: 1a 2/4p [Ogroid, Tribal, Rare] [When played, become immune.; When tapped, play a common Tribal card from deck.] [The biggest, fattest, meanest, ugliest of the lot.]
+Goblin Chief: 1a 2/4p [Ogroid, Tribal, Rare] [When played, become immune.; When tapped, play a common Tribal unit from deck.] [The biggest, fattest, meanest, ugliest of the lot.]
 
 Bounty Hunter: 4/5p [Human, Rare] [When played, lock a unit.] [You can run, but you can't hide.]
-Holy Crusader: 5/5p [Human, Knight, Rare] [Haste.; When tapped, either:#Purify all enemy units.#Purify all allied units.] [Deus Vult.]
+Holy Crusader: 4/5p [Human, Knight, Rare] [When tapped, either:#Purify all enemy units.#Purify all allied units.] [Deus Vult.]
 Giant Turtle: 6/5p [Beast, Rare] [When played, roll an additional mana die and add it to the common pool.] [Could this be a dog?]
 Ancient Vampire: 7/5p [Vampire, Rare] [When played, lose 1 point for each light_mana among common or allied mana dice.] [For some, the emo phase lasts a bit longer than others.]
+Necromancy: 5p [Instant, Spell, Rare] [Play a common unit from your graveyard.] [The four stages of grief: denial, anger, despair... necromancy?]
 
 Distressed Damsel: 1/6p [Human, Rare] [When you pass, gain 10 points if this unit is protected.] [My hero!]
 Battering Ram: 1a 1/6p [Machine, Rare] [When played, either:#Assault 2.#Destroy an enemy equipment.#Destroy an enemy emplacement.; When tapped, repeat the "when played" ability.] [Knock knock.]
@@ -39,14 +39,13 @@ Alpha Wolf: 3/6p [Beast, Rare] [When played, assault 2.; Increase the assault by
 Skeleton Key: 6p [Instant, Rare] [When played, lock or purify an enemy unit.; Afterwards, draw a card and play a card.] [Life is an open door.]
 
 Royal Envoy: 1/7p [Human, Legendary] [When played, play an instant, equipment, or emplacement from your deck.] [So let it be done!]
-Royal Guard: 2a 5/7p [Human, Knight, Legendary] [This card protects the unit to the right.] [They'll have to go through me.]
-Royal Decree: 7p [Instant, Law, Legendary] [Play a unit from your deck.] [So let it be written...]
+Royal Guard: 2a 5/7p [Human, Knight, Rare] [This card protects the unit to the right.] [They'll have to go through me.]
+Royal Decree: 7p [Instant, Legendary] [Play a unit from your deck.] [So let it be written...]
 Blistering Heatwave: 7p [Instant, Nature, Legendary] [When played, banish any card that is not protected.] [Just when you think it can't get any hotter...]
 
-Resurrection: 8p [Instant, Spell, Rare] [Play a common or rare unit from your graveyard.] [A good character never stays dead for long.]
-Multitool: 8p [Instant, Weapon, Rare] [When played, choose 3 of the following abilities in any order:#Lock a unit.#Purify a unit.#Assault 2.#Gain 3 points.] [Why don't YOU own one?]
+Multitool: 8p [Instant, Weapon, Legendary] [When played, choose 3 of the following abilities in any order:#Lock a unit.#Purify a unit.#Assault 2.#Gain 3 points.] [Why don't YOU own one?]
+Resurrection: 8p [Instant, Spell, Legendary] [Play a common or rare unit from your graveyard.] [A good character never stays dead for long.]
 
-Field Marshall: 1/9p [Human, Soldier, Legendary] [When played, play all copies of a Warfare card from your deck.] [There's a world of difference between tactics and strategy.]
 Prophecy: 9p [Instant, Spell, Legendary] [Echo.; When played, play a card from your deck.] [If I foretold your fate, would so prophesying avert it—or seal it?]
 
 Queen of Hearts: 1/10p [Human, Regent, Legendary] [Gain an additional effect for each card in your graveyard:#Royal Guard: Units played by this card become immune.#Royal Decree: When played, play a unit from deck.#Royal Envoy: When tapped, play a unit from hand, then draw a card.] [Off with his head!]

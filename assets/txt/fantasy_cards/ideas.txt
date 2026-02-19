@@ -11,6 +11,7 @@ Blackblood Skald: 4/4p [Thalassa, Human, Pirate] [At turn start, draw a card. If
 Harlequin: 3/2p [Transylvania, Human, Henchman] [At turn start, reroll an enemy mana die.] [Tricked ya again!]
 
 #Vulcania
+Bloody Slash: 8p [Vulcania, Instant, Instinct, Rare] [When played, assault X where X is the power of the most powerful dragon you control.; Overkill X: spawn X fire_mana.] [Might makes right.]
 
 #Unaffiliated
 House Elf: 6/3p [Elf] [You must control an emplacement to play this card.] [Master has given <name redacted> a sock!]

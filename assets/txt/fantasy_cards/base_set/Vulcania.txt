@@ -40,7 +40,6 @@ Hoard Dragon: 9/7p [Vulcania, Dragon, Rare] [Your score must be at least 10 to p
 Magma Defender: 12/7p [Vulcania, Dragon, Rare] [You must expend fire_mana fire_mana fire_mana fire_mana to play this card.] [Now you're cooked.]
 
 Goryx, Golden Dragon: 1a 5/8p [Vulcania, Dragon, Legendary] [Haste.; When tapped, expend X fire_mana and play a card from your deck of up to 2X provisions.] [Be greedy when others are fearful.]
-Bloody Slash: [Vulcania, Instant, Instinct, Rare] [When played, assault X where X is the power of the most powerful dragon you control.; Overkill X: spawn X fire_mana.] [Might makes right.]
 Ale of the Ancestors: 5/8p [Vulcania, Equipment, Liquor, Rare] [Echo.; When equipped, spawn fire_mana fire_mana fire_mana.] [The hard part isn't the brewing process, it's hiding it from all the dwarves for a hundred years.]
 
 Neromir, Warrior Dragon: 2a 6/9p [Vulcania, Dragon, Legendary] [Haste.; When tapped, expend X fire_mana and assault X.; At turn start, untap this card.] [Look who woke up on the wrong side of the bed.]
