@@ -39,7 +39,7 @@ Keel-Haul: 6p [Thalassa, Instant, Warfare, Rare] [When played, destroy an allied
 Anne Bonny: 3/7p [Thalassa, Human, Pirate, Rare] [When played, draw a card and discard a card.; Whenever you discard a card, gain 1 point.] [No need to call me lady. "Captain" will do just fine.]
 Blackbeard: 6/7p [Thalassa, Human, Pirate, Rare] [When tapped, assault 6 and destroy self.; Overkill X: spawn X fire_mana or X water_mana.] [He died standing up.]
 Davy Jones' Locker: 7p [Thalassa, Emplacement, Legendary] [When played, draw a card and discard a card.; Whenever you discard a unit of X provisions, spawn X fire_mana.; Whenever you devour a unit of X provisions, spawn X water_mana.] [Sleep with the fishes.]
-Admiral Boom: 12/7p [Thalassa, Undead, Pirate, Rare] [You must expend water_mana water_mana water_mana water_mana to play this unit.] [Nothing escapes his gaze.]
+Admiral Boom: 12/7p [Thalassa, Undead, Pirate, Rare] [You must expend water_mana water_mana water_mana water_mana to play this unit.] [He has something of an explosive personality.]
 
 Long John Silver: 2/8p [Thalassa, Human, Pirate, Legendary] [When played, banish a unit from your graveyard of X power, then assault X.] [I’m cap’n here because I’m the best man by a long sea-mile.]
 The Flying Dutchman: 4/8p [Thalassa, Ship, Legendary] [When played, become invisible.; When tapped, you may expend X fire_mana to assault 2X.; Plunder 2.] [Those who see the Flying Dutchman ne'er see the shore!]

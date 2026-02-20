@@ -27,8 +27,8 @@ Inspector Culso: 1/4p [Transylvania, Human, Spy, Rare] [Disloyal.; When played (
 The Butcher: 2/4p [Transylvania, Human, Spy, Rare] [Disloyal.; When played, assassinate adjacent units by 3.; This unit can be played between other units.] [Nice to meat you!]
 Maximillian, Slumlord: 4/4p [Transylvania, Human, Caporegime, Rare] [At turn start, move one of your opponent's mana dice to the common pool.] [Su casa es mi casa.]
 
-Swapling: 2/5p [Transylvania, Monster, Rare] [Disloyal.; When played, banish an enemy unit. This ability may target invisible units, but not Machines or Ships.] [A face that only a mother could love.]
-Joanna the Thrall: 1a 3/5p [Transylvania, Human, Caporegime, Rare] [At turn start, either:#Spawn dark_mana for each adjacent vampire.#Expend dark_mana and assault 2.] [Some serve willingly.]
+Swapling: 1/5p [Transylvania, Monster, Rare] [Disloyal.; When played, banish an enemy unit. This ability may target invisible units, but not Machines or Ships.] [A face that only a mother could love.]
+Joanna the Thrall: 1a 3/5p [Transylvania, Human, Caporegime, Rare] [At turn start, either:#Spawn dark_mana for each adjacent vampire.#Expend dark_mana dark_mana and assault 2.] [Some serve willingly.]
 The Dollhouse: 5p [Transylvania, Emplacement, Location, Rare] [When played, become stalwart and play a Moomsh Addict or Landlady from your deck.; Adjacent Moomsh Addict and Landlady units do not destroy themselves.] [If home is where the heart is, then they're homeless.]
 Vampire Nightmaster: 2/5p [Transylvania, Vampire, Rare] [When played, either:#Become stalwart and invisible.#Spawn 3 dark_mana.; When tapped, repeat the "when played" ability.] [The night is dark and full of terrors.]
 

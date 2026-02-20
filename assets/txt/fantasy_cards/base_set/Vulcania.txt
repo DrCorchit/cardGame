@@ -18,7 +18,7 @@ Dragonbrew Reserve: 3/3p [Vulcania, Equipment, Liquor] [At turn start, spawn fir
 Dwarfsteel Battleaxe: 3p [Vulcania, Equipment, Weapon] [When equipped, assault 2.; When tapped, assault 1.] [Even dwarven battleaxes have beards...]
 Natural Spring Water: 4/3p [Vulcania, Equipment] [When equipped, purify the target.] [Pure, refreshing goodness.]
 
-Dwarven Engineer: 2/4p [Vulcania, Dwarf] [You must expend fire_mana fire_mana to tap this card.; When tapped, make a common unit stalwart.; Imbibe to untap this card.] [Unlike elves, dwarves don't let computers do their thinkin' for 'em.]
+Mechanical Engineer: 2/4p [Vulcania, Dwarf] [Haste.; When tapped, you may expend X fire_mana to make a common unit of 2X power stalwart.; Imbibe to untap this card.] [Unlike elves, dwarves don't let their computers do their thinkin' for 'em.]
 Dwarven Warrior: 1a 3/4p [Vulcania, Dwarf] [Imbibe to gain 2 points.; When tapped, assault 1 for each equipped Weapon or Liquor card.] [Born to drink, forced to fight.]
 Royal Wyvern: 9/4p [Vulcania, Dragon] [Expend fire_mana fire_mana fire_mana to play this card.] [Capable of turning a dwarf into barbecue in 3 seconds flat.]
 Guinness Stout: 2/4p [Vulcania, Equipment, Liquor] [Also triggers imbibe abilities on adjacent units.] [Take one down and pass it around...]
@@ -48,7 +48,7 @@ Treasure of all Treasures: 9p [Vulcania, Emplacement, Legendary] [When played, p
 
 Mithril Mail: 4a 4/10p [Vulcania, Equipment, Armor, Legendary] [When equipped, make the target stalwart.] [Made to last; last of its make.]
 Dragonmother Erizyx: 2a 8/10p [Vulcania, Dragon, Legendary] [This card protects adjacent Eggs.; When you pass, gain 2 points for each allied Egg.] [She's a lady and you will treat her as such.]
-Dragon Emperor Coronakt: 1a 3/10p [Vulcania, Dragon, Legendary] [Imbibe to devour a unit in your graveyard.] [Ever been so hungry you could eat a dragon?]
+Dragon Emperor Coronakt: 1a 2/10p [Vulcania, Dragon, Legendary] [Imbibe to banish a common unit from your graveyard and gain points equal to its power.] [Ever been so hungry you could eat a dragon?]
 
 Drinking Contest: 11p [Vulcania, Instant, Legendary] [Play a common Dwarf and a common Liquor card from your deck.] [Nobody ever lost a drinking contest. — Dwarven proverb]
 Mountainlord Torbjorn: 1a 1/11p [Vulcania, Dwarf, Regent, Legendary] [When played, play a common Liquor card from your deck.; Imbibe to gain 3 points.] [He doesn't believe in discussing matters of state while sober.]

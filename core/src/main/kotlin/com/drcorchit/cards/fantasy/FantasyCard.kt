@@ -188,9 +188,9 @@ class FantasyCard(
         val strokeMinW = 200f
         val strokeMaxW = W - 50f
 
-        val abilityTextX = BORDER + 28f
+        val abilityTextX = BORDER + 30f
         val abilityTextY = strokeY - 60
-        val abilityTextW = W - 56f
+        val abilityTextW = W - 60f
 
         val lineY = 118f + BORDER
         val quoteTextX = midWidth
@@ -198,7 +198,7 @@ class FantasyCard(
         val quoteTextW = W - 350f
 
         val keywordTextX = abilityTextX
-        val keywordTextY = lineY + 12
+        val keywordTextY = lineY + 15
         val keywordHelpW = abilityTextW - 30
         val totalAbilityTextH = abilityTextY - keywordTextY
     }
