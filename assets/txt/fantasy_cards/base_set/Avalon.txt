@@ -21,7 +21,7 @@ Ancient Hamadryad: 2/4p [Avalon, Nymph] [When played, you may expend earth_mana 
 Centaur: 1a 4/4p [Avalon, Beast] [When played, you may expend air_mana air_mana air_mana to assault 3.] [A Centaur has a man-stomach and a horse-stomach. And of course both want breakfast.]
 Heartwood Treant: 5/4p [Avalon, Treant] [You must expend earth_mana water_mana air_mana to tap this unit.; When tapped, become stalwart.] [Some people just can't see the forest for the trees.]
 Mountain Gorilla: 5/4p [Avalon, Beast] [When played, become immune.; When tapped, you may expend X earth_mana to gain X points.] [A mountain of muscle.]
-Warthog: 9/4p [Avalon, Beast] [You must expend earth_mana earth_mana earth_mana to play this card.] [Oink! Oink!]
+Warthog: 1a 9/4p [Avalon, Beast] [You must expend earth_mana earth_mana earth_mana to play this card.] [Oink! Oink!]
 
 Arondight: 4p [Avalon, Equipment, Weapon, Rare] [When equipped, assault 4.; This card's assault ignores armor.] [Cuts like a knife through butter.] [removal]
 Jack Frost: 5/4p [Avalon, Fairy, Rare] [When played, you may expend X water_mana to lock or purify X units.] [Whose woods these are, I think I know...]

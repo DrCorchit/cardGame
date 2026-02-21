@@ -1,7 +1,7 @@
 #Faction identity: engines, limited hard removal (favor locks), self-tutoring cards
 Automaton: 2/2p [Metropolis, Machine] [At turn start, either:#Spawn air_mana.#Expend air_mana to gain 1 point.] [YES MASTER]
 Solar Panel: 2/2p [Metropolis, Machine] [At turn start, either:#Spawn light_mana.#Expend light_mana to gain 1 point.] [These things have a bright future.]
-Dynamo: 1a 2/2p [Metropolis, Machine] [At turn start, spawn light_mana or air_mana.] [Ol' Reliable.]
+Dynamo: 2/2p [Metropolis, Machine] [At turn start, spawn light_mana or air_mana.] [Ol' Reliable.]
 Drone Swarm: 1a 2/2p [Metropolis, Machine] [When played while paired, lock an enemy unit.; This unit protects adjacent units.] [Strength in numbers.]
 Scribe: 2/2p [Metropolis, Elf] [When played, become immune.; When you pass, gain 1 point for each allied machine you control.] [The records aren't going to keep themselves.]
 Capacitor: 2/2p [Metropolis, Machine] [Haste.; When tapped, either:#Expend X light_mana to gain X points.#Expend X air_mana to assault X.] [Brzzzap!]

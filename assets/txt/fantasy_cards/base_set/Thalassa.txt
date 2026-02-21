@@ -1,4 +1,4 @@
-Longshoreman Raider: 1a 2/2p [Thalassa, Human, Pirate] [At turn start, spawn fire_mana or water_mana.] [Tote that barge, lift that bale.]
+Longshoreman Raider: 2/2p [Thalassa, Human, Pirate] [At turn start, spawn fire_mana or water_mana.] [Tote that barge, lift that bale.]
 Dinghy: 2/2p [Thalassa, Ship] [Plunder 4.] [If it's dingy and dinky, it's a dinghy.]
 Havoc Raider: 2/2p [Thalassa, Human, Pirate] [When played, you may expend fire_mana water_mana to assault 2.] [Do what you want 'cause a pirate is free!]
 Havoc Longboat: 2/2p [Thalassa, Ship] [Whenever you equip a Cannon, assault 1.; Plunder 2.] [...put him in a longboat till he's sober...]

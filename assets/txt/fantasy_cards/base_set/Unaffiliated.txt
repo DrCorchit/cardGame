@@ -12,18 +12,18 @@ Goblin Hunter: 1/3p [Ogroid, Tribal] [When played, poison a unit.; When tapped, 
 Saboteur: 2/3p [Human, Spy] [When played, either:#Lock an enemy unit.#Become disloyal and destroy an enemy emplacement.] [If I had a hammer...]
 Goblin Smitty: 1a 2/3p [Ogroid, Tribal] [When played, become stalwart.; When tapped, become stalwart.] [If you whistle while you work, you get fired.]
 Goblin Warrior: 2a 6/3p [Ogroid, Tribal, Warrior] [You must control another Tribal to play this unit.] [Quantity over quality.]
-Fireball: 3p [Instant, Spell] [When played, you may either:#Spawn fire_mana and assault 2.#Expend fire_mana and assault 3.] [I didn't ask how big the room was. I said I cast fireball.]
+Fireball: 3p [Instant, Spell] [When played, you may either:#Spawn fire_mana and assault 3.] [I didn't ask how big the room was. I said I cast fireball.]
 Corruption: 3p [Equipment, Crime] [When equipped, gain 6 points.; If the equip target is destroyed, lose 6 points.] [For sale, world. Price: your soul.]
-Meteorite Strike: 3p [Instant, Spell, Nature] [When played, you may either:#Spawn air_mana air_mana and assault 2.#Expend air_mana air_mana and assault 4.] [Krakowwww!]
+Meteorite Strike: 3p [Instant, Spell, Nature] [When played, you may either:#Spawn air_mana and assault 2.#Expend air_mana and assault 4.] [Krakowwww!]
 Manacles: 3p [Equipment, Technology] [Disloyal.; When equipped, lock the target and remove any equipment.; No additional equipment can be assigned.] [Don't do anything rash.]
 Mobilization: 3p [Instant, Warfare] [When played, play a 4 provision card from your deck.] [Hut, two, three, four!]
 
 Assassin: 1/4p [Human, Spy] [Disloyal.; When played, Assassinate 4.] [Humans make good assassins. They also make good targets.]
 Living Armor: 3a 1/4p [Undead] [When tapped, replay a common equipment equipped to this card.] [It's... moving?]
-Boiling Oil: 4p [Instant, Warfare] [Assault 4.; Overkill X: Purify units adjacent to the target.] [Not good for your skin.]
-Halberd: 2/4p [Equipment, Weapon, Warfare] [When equipped, assault 2.] [A soldier's weapon.]
+Boiling Oil: 4p [Instant, Warfare] [Assault 4.; Overkill 1: Purify units adjacent to the target.] [Not good for your skin.]
+Halberd: 1/4p [Equipment, Weapon, Warfare] [When equipped, assault 3.] [A soldier's weapon.]
 
-Chimney Sweep: 4/4p [Human, Rare] [When played, banish a card from your opponent's graveyard.; At turn start, repeat this ability.] [A sweep is as lucky as lucky can be.]
+Chimney Sweep: 4/4p [Human, Rare] [When played, banish a card from either player's graveyard.; At turn start, repeat the "when played" ability.] [A sweep is as lucky as lucky can be.]
 Goblin Chief: 1a 2/4p [Ogroid, Tribal, Rare] [When played, become immune.; When tapped, play a common Tribal unit from deck.] [The biggest, fattest, meanest, ugliest of the lot.]
 
 Bounty Hunter: 4/5p [Human, Rare] [When played, lock a unit.] [You can run, but you can't hide.]
