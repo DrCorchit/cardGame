@@ -6,6 +6,8 @@
 
 #Thalassa
 Blackblood Skald: 4/4p [Thalassa, Human, Pirate] [At turn start, draw a card. If it was common, discard it. Otherwise, move it to the bottom of your deck.] []
+#Moby Dick characters, Norse Pantheon, more gold warfare cards, Charybdis, Loch Ness Monster, Hafgufa, Hydra, Leviathan, Atlantis
+#https://en.wikipedia.org/wiki/Sea_monster#Examples
 
 #Transylvania
 Harlequin: 3/2p [Transylvania, Human, Henchman] [At turn start, reroll an enemy mana die.] [Tricked ya again!]

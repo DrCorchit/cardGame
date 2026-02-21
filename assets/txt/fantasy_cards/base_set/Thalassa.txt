@@ -46,11 +46,8 @@ The Flying Dutchman: 4/8p [Thalassa, Ship, Legendary] [When played, become invis
 Rock of Gibraltar: 8p [Thalassa, Emplacement, Location, Legendary] [When played, become stalwart.; Double the plunder value of adjacent ships.] [Rock solid.]
 
 The White Cliffs: 9p [Thalassa, Emplacement, Location, Legendary] [When played, become stalwart.; When tapped, you may expend 2X water_mana to play X Cannon cards from your graveyard.; At the start of the round, untap this card.] [There'll be bluebirds over...]
-Broadside: 9p [Thalassa, Instant, Warfare, Legendary] [Echo.; When played, assault 4.; Intensify the assault by 1 for each allied Cannon.; Overkill X: Look at the top X cards from your deck and play one.] [Full speed ahead!]
+Broadside: 9p [Thalassa, Instant, Warfare, Legendary] [Echo.; When played, assault 4.; Intensify the assault by 1 for each allied Cannon.; Overkill X: Play one of the top X cards from your deck.] [Full speed ahead!]
 
-Lower the Boom: 10p [Thalassa, Instant, Warfare, Legendary] [When played, assault 5.; Intensify the assault by 1 for each allied Cannon.; Overkill X: play a unit form graveyard of X or fewer provisions.] [Did somebody say boom?]
+Lower the Boom: 10p [Thalassa, Instant, Warfare, Legendary] [When played, assault 5.; Intensify the assault by 1 for each allied Cannon.; Overkill X: Play a unit form graveyard of X or fewer provisions.] [Did somebody say boom?]
 Queen Anne's Revenge: 1a 1/10p [Thalassa, Ship, Legendary] [When played, assault 2. You may expend 2X fire_mana to intensify the assault by X.; This card's assault also hits units adjacent to the target.; Plunder 2.] [Shiver me timbers!]
 Cthulhu: 6/10p [Thalassa, Monster, Legendary] [When played, expend X water_mana to devour an enemy unit of X or less power.] [Cthulhu fhtagn!]
-
-#Ideas: Moby Dick characters, Norse Pantheon, more gold warfare cards, Charybdis, Loch Ness Monster, Hafgufa, Hydra, Leviathan
-#https://en.wikipedia.org/wiki/Sea_monster#Examples
