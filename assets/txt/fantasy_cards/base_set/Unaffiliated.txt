@@ -12,9 +12,9 @@ Goblin Hunter: 1/3p [Ogroid, Tribal] [When played, poison a unit.; When tapped, 
 Saboteur: 2/3p [Human, Spy] [When played, either:#Lock an enemy unit.#Become disloyal and destroy an enemy emplacement.] [If I had a hammer...]
 Goblin Smitty: 1a 2/3p [Ogroid, Tribal] [When played, become stalwart.; When tapped, become stalwart.] [If you whistle while you work, you get fired.]
 Goblin Warrior: 2a 6/3p [Ogroid, Tribal, Warrior] [You must control another Tribal to play this unit.] [Quantity over quality.]
-Fireball: 3p [Instant, Spell] [When played, either:#Spawn fire_mana and assault 2.#Expend fire_mana and assault 3.] [I didn't ask how big the room was. I said I cast fireball.]
+Fireball: 3p [Instant, Spell] [When played, you may either:#Spawn fire_mana and assault 2.#Expend fire_mana and assault 3.] [I didn't ask how big the room was. I said I cast fireball.]
 Corruption: 3p [Equipment, Crime] [When equipped, gain 6 points.; If the equip target is destroyed, lose 6 points.] [For sale, world. Price: your soul.]
-Meteorite Strike: 3p [Instant, Spell, Nature] [When played, either:#Spawn air_mana air_mana and assault 2.#Expend air_mana air_mana and assault 4.] [Krakowwww!]
+Meteorite Strike: 3p [Instant, Spell, Nature] [When played, you may either:#Spawn air_mana air_mana and assault 2.#Expend air_mana air_mana and assault 4.] [Krakowwww!]
 Manacles: 3p [Equipment, Technology] [Disloyal.; When equipped, lock the target and remove any equipment.; No additional equipment can be assigned.] [Don't do anything rash.]
 Mobilization: 3p [Instant, Warfare] [When played, play a 4 provision card from your deck.] [Hut, two, three, four!]
 
@@ -30,25 +30,25 @@ Bounty Hunter: 4/5p [Human, Rare] [When played, lock a unit.] [You can run, but 
 Holy Crusader: 4/5p [Human, Knight, Rare] [When tapped, either:#Purify all enemy units.#Purify all allied units.] [Deus Vult.]
 Giant Turtle: 6/5p [Beast, Rare] [When played, roll an additional mana die and add it to the common pool.] [Could this be a dog?]
 Ancient Vampire: 7/5p [Vampire, Rare] [When played, lose 1 point for each light_mana among common or allied mana dice.] [For some, the emo phase lasts a bit longer than others.]
-Necromancy: 5p [Instant, Spell, Rare] [Play a common unit from your graveyard.] [The four stages of grief: denial, anger, despair... necromancy?]
+Necromancy: 5p [Instant, Spell, Rare] [When played, play a common unit from your graveyard.] [The four stages of grief: denial, anger, despair... necromancy?]
 
 Battering Ram: 1a 1/6p [Machine, Rare] [When played, either:#Assault 2.#Destroy an enemy equipment.#Destroy an enemy emplacement.; When tapped, repeat the "when played" ability.] [Knock knock.]
 Distressed Damsel: 2/6p [Human, Rare] [When you pass, gain 10 points if this unit is protected.] [My hero!]
 Gravetender: 2/6p [Undead, Rare] [When played, summon all zombies from your graveyard.; Whenever you play a card from graveyard, summon self from deck or graveyard.] [Yer only diggin' yer own grave.]
 Alpha Wolf: 3/6p [Beast, Rare] [When played, assault 2.; Increase the assault by 1 for each allied Pack Wolf.] [Arooooo!]
-Skeleton Key: 6p [Instant, Rare] [When played, lock or purify an enemy unit.; Afterwards, draw a card and play a card.] [Life is an open door.]
+Skeleton Key: 6p [Instant, Rare] [When played, you may either:#Lock an enemy defender.#Purify an allied unit.; Afterwards, draw a card and play a card.] [Life is an open door.]
 
 Royal Envoy: 1/7p [Human, Legendary] [When played, play an instant, equipment, or emplacement from your deck.] [So let it be done!]
 Royal Guard: 2a 5/7p [Human, Knight, Rare] [This card protects the unit to the right.] [They'll have to go through me.]
-Royal Decree: 7p [Instant, Legendary] [Play a unit from your deck.] [So let it be written...]
+Royal Decree: 7p [Instant, Legendary] [When played, play a unit from your deck.] [So let it be written...]
 Blistering Heatwave: 7p [Instant, Nature, Legendary] [When played, banish any card that is not protected.] [Just when you think it can't get any hotter...]
 
 Multitool: 8p [Instant, Weapon, Legendary] [When played, activate any 3 of the following abilities:#Purify a unit.#Lock a unit.#Assault 2.#Gain 3 points.] [Why don't YOU own one?]
-Resurrection: 8p [Instant, Spell, Legendary] [Play a common or rare unit from your graveyard.] [A good character never stays dead for long.]
+Resurrection: 8p [Instant, Spell, Legendary] [When played, play a common or rare unit from your graveyard.] [A good character never stays dead for long.]
 
 Prophecy: 9p [Instant, Spell, Legendary] [Echo.; When played, play a card from your deck.] [If I foretold your fate, would so prophesying avert it—or seal it?]
 
-Queen of Hearts: 1/10p [Human, Regent, Legendary] [Gain an additional effect for each card in your graveyard:#Royal Guard: Units played by this card become immune.#Royal Decree: When played, play a unit from deck.#Royal Envoy: When tapped, play a unit from hand, then draw a card.] [Off with his head!]
+Queen of Hearts: 1/10p [Human, Regent, Legendary] [Gain an additional effect for each card in your graveyard:#Royal Guard: Units played by this card become immune.#Royal Decree: When played, play a unit from deck.#Royal Envoy: When tapped, play a unit from hand, then draw a card.] [Off with your head!]
 
 Leprechaun: 3/1p [Fairy, Legendary] [If this card is in your starting deck, you must inform your opponent.; If you have not played this card by the end of the game, you lose.] [Follow your dreams. Rainbows are an acceptable alternative, however.]
 

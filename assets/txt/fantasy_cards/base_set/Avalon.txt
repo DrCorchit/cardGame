@@ -14,7 +14,7 @@ Treant Sage: 2/3p [Avalon, Treant] [When played, become immune.; When you pass, 
 Selkie: 3/3p [Avalon, Fairy] [During your turn, you may expend water_mana water_mana water_mana to play this card from deck.] [To stay on land past midnight would surely be her death.]
 Dryad Ranger: 4/3p [Avalon, Nymph] [When played, become immune.; You must expend air_mana to tap this unit.; When tapped, lock a unit.] [You ever feel like you're being watched?]
 Oceanid: 7/3p [Avalon, Nymph] [You must expend water_mana water_mana to play this card.] [No man can withstand the wrath of the sea.]
-Lifegiving Rainfall: 3/3p [Avalon, Equipment, Nature] [At turn start, spawn earth_mana, water_mana, or air_mana.] [Every rainstorm begins with a single drop.]
+Lifegiving Rainfall: 2/3p [Avalon, Equipment, Nature] [When equipped, purify the target.; At turn start, spawn earth_mana, water_mana, or air_mana.] [Every rainstorm begins with a single drop.]
 Harvest: 3p [Avalon, Instant, Nature] [When played, expend X earth_mana, water_mana, and air_mana and gain 2X points.] [A time to sow, a time to reap.]
 
 Ancient Hamadryad: 2/4p [Avalon, Nymph] [When played, you may expend earth_mana water_mana air_mana to play a common card from hand and draw a card.; This unit protects the unit to the right.] [The forest will never die!]
