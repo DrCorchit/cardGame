@@ -14,17 +14,18 @@ Professor: 1/4p [Metropolis, Elf] [When played, create a student.; When you pass
 Kick it 'til it Works: 4p [Metropolis, Instant, Technology, Rare] [When played, purify an allied unit and gain 3 points.; If this card is in your graveyard, you may expend light_mana to replay and banish it.] [It was junk anyways.]
 
 Opusculum: 1/5p [Metropolis, Machine, Rare] [Whenever this card is moved to the top of your deck, spawn air_mana or light_mana.; Whenever you pass, you may summon this unit from your deck.] []
+Left Arm: 2/5p [Metropolis, Machine, Arm, Equipment, Rare] [When tapped, spawn 6 light_mana or 6 air_mana.] []
 
 Magnetron: 6p [Metropolis, Instant, Technology, Rare] [Damage a unit by 5. If it has armor, destroy it instead.] []
 
 Plexi Glass: 5/7p [Metropolis, Machine, Rare] [At turn start, you may either:#Spawn light_mana light_mana.#Spawn air_mana.] [Sometimes autognomes need a feminine touch.]
 
-
+Right Arm: 2/8p [Metropolis, Machine, Arm, Equipment, Legendary] [When tapped, assault 10.] []
 
 Fugg Raulner: 2a 5/9p [Metropolis, Machine, Mage, Legendary] [When played, become invisible.; At turn start, you may either:#Become invisible and spawn light_mana.; #Purify self and spawn air_mana air_mana.] [Beep boop.]
 
 Manufactory: 10p [Metropolis, Emplacement, Legendary] [When played, summon two copies of a common Machine from your graveyard.] [Our work is never over.]
 
-Magnum Opus: 1a 7/11p [Metropolis, Machine, Legendary] [Haste.; When tapped, expend X light_mana to move a unit of X or less power to the top of its owner's deck.; At turn start, spawn light_mana.] [The latest and the greatest of them all.]
+Magnum Opus: 1a 4/11p [Metropolis, Machine, Legendary] [When played, become invisible.; When tapped, untap any equipped arms.] [The latest and the greatest of them all.]
 
 World's Fair: 12p [Metropolis, Emplacement, Scenario, Legendary] [This scenario progresses whenever you play a Machine.; When played, create two students to the right of this card.; Chapter 1: Give an allied unit Haste and make it immune.; Chapter 2: Spawn 6 light_mana.] [Here's alchemy, and there's agronomy, astronomy, geometry...]

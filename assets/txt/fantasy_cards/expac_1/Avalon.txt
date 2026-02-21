@@ -14,7 +14,7 @@ Smoke Signals: 4p [Avalon, Instant, Nature] [Play a common unit from your deck o
 Aelshamyr: 2a 2/5p [Avalon, Dragon, Rare] [Harmony: Gain 2 points.] [He starts a forest fire every time he sneezes, but the elves love him anyway.]
 
 Hamadriel: 3a 1/6p [Avalon, Elf, Tribal, Rare] [When played, poison an enemy unit.; Whenever you equip an Elven Dagger or Elven Bow, repeat the "when played" ability.] [The only good human is a dead human.]
-Tarzan: 1/6p [Avalon, Human, Tribal, Rare] [When played, assault 2.; During your turn, you may expend earth_mana earth_mana to play Tarzan from deck.; Decrease this cost by 1 for each allied Mountain Gorilla.; When tapped, move to the bottom of your deck.] [AaaauuEiEiEiEiaaaahhhh!]
+Tarzan: 1/6p [Avalon, Human, Tribal, Rare] [When played, assault 2.; During your turn, you may expend earth_mana earth_mana earth_mana to play Tarzan from deck.; Decrease this cost by 1 for each allied Mountain Gorilla.; When tapped, move to the bottom of your deck.] [AaaauuEiEiEiEiaaaahhhh!]
 
 Queen Aelwyn: 2/7p [Avalon, Elf, Regent, Rare] [When played, expend X air_mana to create and summon X Elven Archer tokens.] [She doesn't hate humans. She merely despises them.]
 Iriviel: 1a 2/7p [Avalon, Elf, Tribal, Legendary] [When played, gain 1 counter for each allied Elf.; During your turn, you may remove X counters to assault X.; When you pass, gain 1 point for each remaining counter.] [He likes humans. Most of all, he likes killing them.]

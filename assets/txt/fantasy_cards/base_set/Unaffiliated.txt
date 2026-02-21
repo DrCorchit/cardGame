@@ -43,7 +43,7 @@ Royal Guard: 2a 5/7p [Human, Knight, Rare] [This card protects the unit to the r
 Royal Decree: 7p [Instant, Legendary] [Play a unit from your deck.] [So let it be written...]
 Blistering Heatwave: 7p [Instant, Nature, Legendary] [When played, banish any card that is not protected.] [Just when you think it can't get any hotter...]
 
-Multitool: 8p [Instant, Weapon, Legendary] [When played, choose 3 of the following abilities in any order:#Lock a unit.#Purify a unit.#Assault 2.#Gain 3 points.] [Why don't YOU own one?]
+Multitool: 8p [Instant, Weapon, Legendary] [When played, activate any 3 of the following abilities:#Purify a unit.#Lock a unit.#Assault 2.#Gain 3 points.] [Why don't YOU own one?]
 Resurrection: 8p [Instant, Spell, Legendary] [Play a common or rare unit from your graveyard.] [A good character never stays dead for long.]
 
 Prophecy: 9p [Instant, Spell, Legendary] [Echo.; When played, play a card from your deck.] [If I foretold your fate, would so prophesying avert it—or seal it?]

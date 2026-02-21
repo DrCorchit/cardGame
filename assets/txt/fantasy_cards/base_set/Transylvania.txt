@@ -32,7 +32,7 @@ Joanna the Thrall: 1a 3/5p [Transylvania, Human, Caporegime, Rare] [At turn star
 The Dollhouse: 5p [Transylvania, Emplacement, Location, Rare] [When played, become stalwart and play a Moomsh Addict or Landlady from your deck.; Adjacent Moomsh Addict and Landlady units do not destroy themselves.] [If home is where the heart is, then they're homeless.]
 Vampire Nightmaster: 2/5p [Transylvania, Vampire, Rare] [When played, either:#Become stalwart and invisible.#Spawn 3 dark_mana.; When tapped, repeat the "when played" ability.] [The night is dark and full of terrors.]
 
-The Quartermaster: 1a 1/6p [Transylvania, Human, Spy, Rare] [When played, you may expend X dark_mana to play a spy from deck with a provision cost of 2+X.; When you pass, gain 1 point for each enemy spy.] [Take whatcha need for the job and scram.]
+The Quartermaster: 1a 1/6p [Transylvania, Human, Spy, Rare] [When played, you may expend X dark_mana to play a spy from deck with a provision cost of 2+X.; When you pass, gain 1 point for each enemy Spy.] [Take whatcha need for the job and scram.]
 Nosferatu: 5/6p [Transylvania, Vampire, Rare] [When played, purify and lock an enemy unit.; When tapped, become invisible.] [Does evil come from within us or from beyond?]
 Chester Zilch: 2/6p [Transylvania, Vampire, Caporegime, Rare] [Chaos 4: Summon self from your deck.; Chaos 6: Summon self from your graveyard.] [Ahead of schedule, as usual.]
 
@@ -40,9 +40,9 @@ Scarlet, Made Lady: 4/7p [Transylvania, Human, Caporegime, Rare] [When you pass,
 Pandemonium: 7p [Transylvania, Instant, Crime, Rare] [Echo.; When played, choose three cards from your deck and play one at random. Return the other two to your deck.; While in your graveyard, Chaos is increased by 1.] [Pandemonium did not reign; it poured.]
 Frankenstein's Monster: 12/7p [Transylvania, Undead, Rare] [You must expend dark_mana dark_mana dark_mana dark_mana to play this card.] [It's aliiiiive!]
 
-Molgrippe, Master Assassin: 3/8p [Transylvania, Human, Henchman, Legendary] [When played, either:#Chaos 5: Assault 5.#Chaos 6: Assassinate 6.] [The anomaly will be corrected momentarily.]
+Molgrippe, Master Assassin: 1/8p [Transylvania, Human, Henchman, Legendary] [When played, assault 6.; When played (disloyal), assassinate 6.] [The anomaly will be corrected momentarily.]
+Grim Reaper: 2/8p [Transylvania, Undead, Legendary] [When played (chaos 6), assassinate 12.] [The reaper comes for us all.]
 The Heist: 8p [Transylvania, Instant, Crime, Legendary] [When played, lose X points and seize X.;You cannot play this card in such a way that your score falls below zero.] [The perfect crime.]
-Grim Reaper: 1/8p [Transylvania, Undead, Legendary] [When played, assassinate 6.; Overkill X: Spawn X dark_mana.] [Darkness consumes all.]
 
 Jailbreak: 9p [Transylvania, Instant, Crime, Legendary] [When played (chaos X) play a Transylvanian unit from your graveyard of X or fewer provisions.; Increase the provision limit by X for each crime in your graveyard.] [Breaking out: not just for teenagers anymore.]
 Debutante Ball: 9p [Transylvania, Instant, Legendary] [Play a Transylvanian unit from your deck and gain one of the following effects:#If it's a common Human, make it stalwart.#If it's a common Vampire, make it invisible.] [Be there or be square.]

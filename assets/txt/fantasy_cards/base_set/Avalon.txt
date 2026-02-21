@@ -11,7 +11,7 @@ Forest Fire: 2p [Avalon, Instant, Nature] [When played, destroy an allied unit, 
 Dryad Grovekeeper: 1/3p [Avalon, Nymph] [When played, spawn earth_mana earth_mana, water_mana water_mana, or air_mana air_mana.; When tapped, repeat the "when played" ability.] [Nature always provides.]
 Pixie: 1/3p [Avalon, Fairy] [When played, spawn earth_mana water_mana air_mana.; When tapped, repeat the "when played" ability.] [All you need is a little pixie dust.]
 Treant Sage: 2/3p [Avalon, Treant] [When played, become immune.; When you pass, gain 1 point for each Nature card in your graveyard.] [I think, therefore... hmmm...]
-Selkie: 3/3p [Avalon, Fairy] [During your turn, you may expend water_mana water_mana water_mana to play this card from deck.] [For a selkie to stay on land past midnight would surely be her death.]
+Selkie: 3/3p [Avalon, Fairy] [During your turn, you may expend water_mana water_mana water_mana to play this card from deck.] [To stay on land past midnight would surely be her death.]
 Dryad Ranger: 4/3p [Avalon, Nymph] [When played, become immune.; You must expend air_mana to tap this unit.; When tapped, lock a unit.] [You ever feel like you're being watched?]
 Oceanid: 7/3p [Avalon, Nymph] [You must expend water_mana water_mana to play this card.] [No man can withstand the wrath of the sea.]
 Lifegiving Rainfall: 3/3p [Avalon, Equipment, Nature] [At turn start, spawn earth_mana, water_mana, or air_mana.] [Every rainstorm begins with a single drop.]
