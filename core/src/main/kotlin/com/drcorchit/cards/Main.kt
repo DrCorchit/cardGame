@@ -6,18 +6,19 @@ import com.badlogic.gdx.Input
 import com.badlogic.gdx.scenes.scene2d.Stage
 import com.drcorchit.cards.SpaceCard2LargeWindow.Companion.cardbacks
 import com.drcorchit.cards.SpaceCard2LargeWindow.Companion.disasters
-import com.drcorchit.cards.fantasy.*
+import com.drcorchit.cards.fantasy.CardType
+import com.drcorchit.cards.fantasy.City
 import com.drcorchit.cards.fantasy.FantasyCard.Companion.abilityTextW
 import com.drcorchit.cards.fantasy.FantasyCard.Companion.keywordHelpW
 import com.drcorchit.cards.fantasy.FantasyCard.Companion.totalAbilityTextH
+import com.drcorchit.cards.fantasy.FantasyCards
+import com.drcorchit.cards.fantasy.Rarity
 import com.drcorchit.cards.graphics.CardActor
 import com.drcorchit.cards.graphics.Draw
 import com.drcorchit.cards.graphics.Fonts
 import com.drcorchit.justice.utils.StringUtils.normalize
 import com.drcorchit.justice.utils.logging.Logger
 import com.drcorchit.justice.utils.math.MathUtils
-import java.io.File
-import kotlin.random.Random
 
 /**
  * [com.badlogic.gdx.ApplicationListener] implementation shared by all platforms.
@@ -91,7 +92,7 @@ class Main : ApplicationAdapter() {
         val cardsByType = cards.groupBy { it.type }
         cardsByType.forEach { (type, cards) -> println(" $type ${cards.size}") }
 
-        println("\nToughness count:")
+        println("Toughness count:")
         cardsByType[CardType.Unit]!!
             .groupBy { it.power + it.armor }
             .entries.sortedBy { it.key }
@@ -99,6 +100,24 @@ class Main : ApplicationAdapter() {
                 val str = "%-2d -> %d".format(it.key, it.value.size)
                 println(str)
             }
+
+        val immuneCount = cards.filter { it.abilityText.contains("When played, become immune.") }.size
+        val immunePercent = immuneCount * 100.0f / cards.size
+        println("\nImmune %: $immuneCount/${cards.size} ($immunePercent%)")
+
+        val armorCount = cards.filter { it.armor > 0 }.size
+        val armorPercent = armorCount * 100.0f / cards.size
+        println("Armor %: $armorCount/${cards.size} ($armorPercent%)")
+
+        //Warhammer deals 2 damage, ignoring armor. I want to see how many units have 2 power and X > 1 armor.
+        val whTargets = cardsByType[CardType.Unit]!!
+            .filter { it.armor > 0 && it.power <= 2 && it.power + it.armor > 2 }.map { it.name }
+        println("Warhammer target count: ${whTargets.size} $whTargets")
+
+        //Arondight deals 4 damage, ignoring armor. I want to see how many units have 4 power and X > 1 armor.
+        val adTargets = cardsByType[CardType.Unit]!!
+            .filter { it.armor > 0 && it.power <= 4 && it.power + it.armor > 4 }.map { it.name }
+        println("Arondight target count: ${adTargets.size} $adTargets")
 
         println("\nTotal unique cards: ${cards.size}")
 
@@ -119,6 +138,7 @@ class Main : ApplicationAdapter() {
         val cardQuotes = mutableSetOf<String>()
 
         //print card issues here
+        println("\n ---- Displaying card issues ---- ")
         cards.forEach {
             if (!cardNames.add(it.name.normalize())) {
                 println("Duplicate Card name: ${it.name}")
@@ -153,8 +173,6 @@ class Main : ApplicationAdapter() {
                 println("Card has near overlap: ${it.name} $overlap")
             }
         }
-
-
     }
 
     override fun resize(width: Int, height: Int) {

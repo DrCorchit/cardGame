@@ -9,7 +9,7 @@ Fireswill Wine: 2/2p [Vulcania, Equipment, Liquor] [When equipped, spawn fire_ma
 Old Warhammer: 2p [Vulcania, Equipment, Weapon] [When equipped, assault 2.; This card's assault ignores armor.] [If all you have is a hammer, everything looks like a nail.]
 
 Dragon Egg: 1a 1/3p [Vulcania, Egg] [When tapped, summon a common Dragon from your graveyard and destroy self.] [Probably best not to touch them.]
-Dwarven Brawler: 2/3p [Vulcania, Dwarf] [Imbibe to summon a Dwarven Brawler from your deck or graveyard.; When paired, assault 2 instead.] [If it's a fight yer lookin' fer, ye just found it.]
+Dwarven Warrior: 1a 2/3p [Vulcania, Dwarf] [Imbibe to gain 2 points.; When tapped, assault X where X is the number of equipped Weapon and Liquor cards.] [Born to drink, forced to fight.]
 Dragon Hatchling: 3/3p [Vulcania, Dragon] [During your turn, if you control an Egg, you may expend fire_mana fire_mana to summon this card from deck.] [They're cute when they're small.]
 Pit Wyvern: 3/3p [Vulcania, Dragon] [When played, you may expend fire_mana fire_mana to assault 2.] [Soft as barbed wire and charming as a gut punch.]
 Cave Dragon: 1a 7/3p [Vulcania, Dragon] [Expend fire_mana fire_mana to play this card.] [Peaceful, as far as dragons go. (Run!)]
@@ -18,13 +18,13 @@ Dragonbrew Reserve: 3/3p [Vulcania, Equipment, Liquor] [At turn start, spawn fir
 Dwarfsteel Battleaxe: 3p [Vulcania, Equipment, Weapon] [When equipped, assault 2.; When tapped, assault 1.] [Even dwarven battleaxes have beards...]
 Natural Spring Water: 4/3p [Vulcania, Equipment] [When equipped, remove lock and poison from the target.] [Pure, refreshing goodness.]
 
+Dwarven Brawler: 2/4p [Vulcania, Dwarf] [Imbibe to summon a Dwarven Brawler from your deck or graveyard.; When paired, assault 2 instead.] [If it's a fight yer lookin' fer, ye just found it.]
 Mechanical Engineer: 4/4p [Vulcania, Dwarf] [Haste.; When tapped, you may expend X fire_mana to make a common unit of 2X power stalwart.; Imbibe to untap this card.] [Unlike elves, dwarves don't let their computers do their thinkin' for 'em.]
-Dwarven Warrior: 1a 3/4p [Vulcania, Dwarf] [Imbibe to gain 2 points.; When tapped, assault X where X is the number of equipped Weapon and Liquor cards.] [Born to drink, forced to fight.]
 Royal Wyvern: 1a 9/4p [Vulcania, Dragon] [Expend fire_mana fire_mana fire_mana to play this card.] [Capable of turning a dwarf into barbecue in 3 seconds flat.]
 Guinness Stout: 3/4p [Vulcania, Equipment, Liquor] [Also triggers imbibe abilities on adjacent units.] [Take one down and pass it around...]
 
 Shorty's Axe: 4p [Vulcania, Equipment, Weapon, Rare] [When equipped, assault 4.; If equipped to Shorty McGee, increase the assault by 1 for every Liquor card equipped to him.] [The one, the only.]
-Grandmaster Smitty: 4/4p [Vulcania, Dwarf, Rare] [At turn start, spawn fire_mana fire_mana.; Imbibe to spawn fire_mana fire_mana fire_mana.] [Ta master tha forge, ya gotta become one wit' 'er. Jus' kiddin, tha would be weird.]
+Grandmaster Smitty: 2a 3/4p [Vulcania, Dwarf, Rare] [At turn start, spawn fire_mana fire_mana.] [Ta master tha forge, ya gotta become one wit' 'er. Jus' kiddin, tha would be weird.]
 Lost Dragon Egg: 1a 1/4p [Vulcania, Egg, Rare] [When you pass, gain 9 points.; This card starts in your graveyard.] [It's a long way back to the nest.]
 
 Secret Brew: 4/5p [Vulcania, Equipment, Liquor, Rare] [When equipped, trigger the target's imbibe ability an additional time.] [What'd you even put in this stuff?]

@@ -11,7 +11,7 @@ Moomsh: 2p [Transylvania, Instant, Crime] [Spawn dark_mana dark_mana and poison 
 Intimidation: 2p [Transylvania, Instant, Crime] [Choose 2 of the following abilities:#Gain 2 points.#Assault 1. #Spawn 2 mana of any colors.] [You can get more of what you want with a kind word and a knife than you can with just a kind word.]
 
 Hypnotist: 1/3p [Transylvania, Vampire, Spy] [Disloyal.; When played, seize a unit with 2 or less power.] [What a captivating performance!]
-Mafia Soldier: 2/3p [Transylvania, Human, Henchman] [When you pass (chaos X), gain X points.] [Workin' for the man.]
+Mafia Soldier: 2/3p [Transylvania, Human, Henchman] [When played, become immune.; When you pass (chaos X), gain X points.] [Workin' for the man.]
 Street Thug: 1a 3/3p [Transylvania, Human, Henchman] [When tapped, lock an enemy unit.; Chaos 5: Gain haste.] [The enemy can't steal our plans if we don't have any plans.]
 Moomsh Dealer: 3/3p [Transylvania, Human, Henchman] [When played, poison a unit.] [First one's on the house.]
 Vampiric Abomination: 4/3p [Transylvania, Vampire] [When played, gain poison.; You must expend dark_mana dark_mana to tap this unit.; When tapped, move all statuses on self to another unit.] [The horror!]
@@ -19,24 +19,24 @@ Landlady: 6/3p [Transylvania, Vampire] [When an adjacent unit is destroyed, also
 Pickpocket: 3p [Transylvania, Instant, Crime] [When played, reroll 6 common or allied mana dice.; Chaos X: gain X points and decrease the reroll amount by X. ] [A fool and his money...]
 
 Hitman: 2/4p [Transylvania, Human, Spy] [Disloyal.; When played (chaos X), assassinate X.] [I never hurt nobody that ain't had it comin'.]
-Pyromaniac: 2/4p [Transylvania, Vampire, Henchman] [When played, spawn 2 mana of any colors.; When tapped (chaos X), assault X.] [Something not being on fire is usually a very easy problem to solve.]
+Pyromaniac: 2/4p [Transylvania, Vampire, Henchman] [When played, become immune.; When tapped (chaos X), assault X.] [Something not being on fire is usually a very easy problem to solve.]
 Bystander: 2/4p [Transylvania, Human] [When played, become immune.; When tapped, gain points equal to the provision cost of the most expensive unit you assassinated or seized this turn.] [Oh wow, dinner AND a show!]
 Vampire Aristocrat: 3/4p [Transylvania, Vampire] [When tapped, you may expend X dark mana to assault X.; Whenever you play a human, spawn dark_mana.; Whenever you play a vampire, untap this card.] [I'm a creature of refined taste.]
 
 Inspector Culso: 1/4p [Transylvania, Human, Spy, Rare] [Disloyal.; When played (chaos X), play a card from your deck with a provision cost of X or less.] [With me, surprises are rarely unexpected.]
 The Butcher: 2/4p [Transylvania, Human, Spy, Rare] [Disloyal.; When played, assassinate adjacent units by 3.; This unit can be played between other units.] [Nice to meat you!]
-Maximillian, Slumlord: 4/4p [Transylvania, Human, Caporegime, Rare] [At turn start, move one of your opponent's mana dice to the common pool.] [Su casa es mi casa.]
+Maximillian, Slumlord: 1a 4/4p [Transylvania, Human, Caporegime, Rare] [At turn start, move one of your opponent's mana dice to the common pool.] [Su casa es mi casa.]
 
 Swapling: 1/5p [Transylvania, Monster, Rare] [Disloyal.; When played, banish an enemy unit. This ability may target invisible units, but not Machines or Ships.] [A face that only a mother could love.]
+Vampire Nightmaster: 2/5p [Transylvania, Vampire, Rare] [When played, either:#Become stalwart and invisible.#Spawn 3 dark_mana.; When tapped, repeat the "when played" ability.] [The night is dark and full of terrors.]
 Joanna the Thrall: 1a 3/5p [Transylvania, Human, Caporegime, Rare] [At turn start, either:#Spawn dark_mana for each adjacent vampire.#Expend dark_mana dark_mana and assault 2.] [Some serve willingly.]
 The Dollhouse: 5p [Transylvania, Emplacement, Location, Rare] [When played, become stalwart and play a Moomsh Addict or Landlady from your deck.; Adjacent Moomsh Addict and Landlady units do not destroy themselves.] [If home is where the heart is, then they're homeless.]
-Vampire Nightmaster: 2/5p [Transylvania, Vampire, Rare] [When played, either:#Become stalwart and invisible.#Spawn 3 dark_mana.; When tapped, repeat the "when played" ability.] [The night is dark and full of terrors.]
 
 The Quartermaster: 1a 1/6p [Transylvania, Human, Spy, Rare] [When played, you may expend X dark_mana to play a spy from deck with a provision cost of 2+X.; When you pass, gain 1 point for each enemy Spy.] [Take whatcha need for the job and scram.]
 Nosferatu: 5/6p [Transylvania, Vampire, Rare] [When played, purify and lock an enemy unit.; When tapped, become invisible.] [Does evil come from within us or from beyond?]
 Chester Zilch: 2/6p [Transylvania, Vampire, Caporegime, Rare] [Chaos 4: Summon self from your deck.; Chaos 6: Summon self from your graveyard.] [Ahead of schedule, as usual.]
 
-Scarlet, Made Lady: 4/7p [Transylvania, Human, Caporegime, Rare] [When you pass, trigger one of the following abilities:#Gain 1 point for each allied Henchman unit.#Gain 2 points for each allied Caporegime. (Excluding self.)#Gain 3 points for each allied Kingpin.] [Wait 'til Big Daddy hears about this!]
+Scarlet, Made Lady: 1a 4/7p [Transylvania, Human, Caporegime, Rare] [When you pass, trigger one of the following abilities:#Gain 1 point for each allied Henchman unit.#Gain 2 points for each allied Caporegime. (Excluding self.)#Gain 3 points for each allied Kingpin.] [Wait 'til Big Daddy hears about this!]
 Pandemonium: 7p [Transylvania, Instant, Crime, Rare] [Echo.; When played, choose three cards from your deck and play one at random. Return the other two to your deck.; While in your graveyard, Chaos is increased by 1.] [Pandemonium did not reign; it poured.]
 Frankenstein's Monster: 12/7p [Transylvania, Undead, Rare] [You must expend dark_mana dark_mana dark_mana dark_mana to play this card.] [It's aliiiiive!]
 

@@ -47,9 +47,9 @@ Codex Veritas: 8p [Metropolis, Emplacement, Book, Legendary] [When played, move 
 System Reboot: 8p [Metropolis, Instant, Rare] [Untap all allied units.; Units untapped by this card may not be tapped until your next turn.] [Have you tried turning it off and on again?]
 Reverse Engineering: 8p [Metropolis, Instant, Technology, Legendary] [Play a card from your opponent's graveyard.] [Sometimes, the imitation is better than the original.]
 
-Logos, Oracle: 4/9p [Metropolis, Elf, Legendary] [When played, you may expend light_mana light_mana to gain haste.; When tapped, play a card from your deck.] [Know thyself.]
+Logos, Oracle: 1a 4/9p [Metropolis, Elf, Legendary] [When played, you may expend light_mana to become immune.; When tapped, play a card from your deck.] [Know thyself.]
 Teleportation: 9p [Metropolis, Instant, Technology, Legendary] [Echo.; Play a unit from your deck.] [What could possibly go wrong?]
 
-Orthos, Orchestrator: 6/10p [Metropolis, Elf, Legendary] [When played, you may expend air_mana air_mana to gain haste.; When tapped, untap an allied card.] [Actually, science hasn't gone far enough.]
+Orthos, Orchestrator: 6/10p [Metropolis, Elf, Legendary] [When played, you may expend air_mana to become immune.; When tapped, untap an allied card.] [Actually, science hasn't gone far enough.]
 Teknos, Grand Artificer: 4/10p [Metropolis, Elf, Legendary] [Haste.; When tapped, you may expend 2X light_mana to resurrect X common machines.] ["Grand Artificer" is a code word for "Huge Nerd"]
 

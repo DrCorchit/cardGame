@@ -11,7 +11,7 @@ Emissary: 1/3p [Human, Spy] [Disloyal.; When played, play a unit from hand, then
 Goblin Hunter: 1/3p [Ogroid, Tribal] [When played, poison a unit.; When tapped, play a common Tribal unit (except Goblin Hunter) from hand then move to your hand.] [They can't take us all!]
 Saboteur: 2/3p [Human, Spy] [When played, either:#Lock an enemy unit.#Become disloyal and destroy an enemy emplacement.] [If I had a hammer...]
 Goblin Smitty: 1a 2/3p [Ogroid, Tribal] [When played, become stalwart.; When tapped, become stalwart.] [If you whistle while you work, you get fired.]
-Goblin Warrior: 2a 6/3p [Ogroid, Tribal, Warrior] [You must control another Tribal to play this unit.] [Quantity over quality.]
+Goblin Warrior: 1a 5/3p [Ogroid, Tribal, Warrior] [You must control another Tribal to play this unit.] [Quantity over quality.]
 Fireball: 3p [Instant, Spell] [When played, you may either:#Spawn fire_mana and assault 3.] [I didn't ask how big the room was. I said I cast fireball.]
 Corruption: 3p [Equipment, Crime] [When equipped, gain 6 points.; If the equip target is destroyed, lose 6 points.] [For sale, world. Price: your soul.]
 Meteorite Strike: 3p [Instant, Spell, Nature] [When played, you may either:#Spawn air_mana and assault 2.#Expend air_mana and assault 4.] [Krakowwww!]
