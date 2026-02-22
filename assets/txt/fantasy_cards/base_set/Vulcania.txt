@@ -24,7 +24,7 @@ Royal Wyvern: 1a 9/4p [Vulcania, Dragon] [Expend fire_mana fire_mana fire_mana t
 Guinness Stout: 3/4p [Vulcania, Equipment, Liquor] [Also triggers imbibe abilities on adjacent units.] [Take one down and pass it around...]
 
 Shorty's Axe: 4p [Vulcania, Equipment, Weapon, Rare] [When equipped, assault 4.; If equipped to Shorty McGee, increase the assault by 1 for every Liquor card equipped to him.] [The one, the only.]
-Grandmaster Smitty: 2a 3/4p [Vulcania, Dwarf, Rare] [At turn start, spawn fire_mana fire_mana.] [Ta master tha forge, ya gotta become one wit' 'er. Jus' kiddin, tha would be weird.]
+Grandmaster Smitty: 4/4p [Vulcania, Dwarf, Rare] [At turn start, spawn fire_mana fire_mana.] [Ta master tha forge, ya gotta become one wit' 'er. Jus' kiddin, tha would be weird.]
 Lost Dragon Egg: 1a 1/4p [Vulcania, Egg, Rare] [When you pass, gain 9 points.; This card starts in your graveyard.] [It's a long way back to the nest.]
 
 Secret Brew: 4/5p [Vulcania, Equipment, Liquor, Rare] [When equipped, trigger the target's imbibe ability an additional time.] [What'd you even put in this stuff?]
