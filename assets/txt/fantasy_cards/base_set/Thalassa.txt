@@ -6,7 +6,7 @@ Deckhand Fibber: 3/2p [Thalassa, Human, Pirate] [When played, draw a card and di
 Drunken Sailor: 5/2p [Thalassa, Human, Pirate] [You must expend water_mana to play this unit.] [What DO you do with a drunken sailor?]
 Shore Leave: 2p [Thalassa, Instant, Warfare] [When played, lock a unit and spawn water_mana water_mana.] [Just what the doctor ordered.]
 Walk the Plank: 2p [Thalassa, Instant, Warfare] [Draw a card and discard a card.; Afterwards, gain points equal to the provision cost of the discarded card.] [Next stop: Davy Jones' locker!]
-Hand Cannon: 2p [Thalassa, Equipment, Weapon, Cannon] [This card can only be equipped to a Pirate.; When equipped, assault 2.] [I always add a little extra powder.]
+Hand Cannon: 2p [Thalassa, Equipment, Weapon, Cannon] [When equipped to a Pirate, gain Haste.; Tap to assault 2.] [I always add a little extra powder.]
 Jolly Roger: 2p [Thalassa, Equipment, Warfare] [When equipped, trigger 1 of the following effects:#If equipped to a Pirate, spawn fire_mana fire_mana.#If equipped to a Ship, spawn water_mana water_mana.#Spawn fire_mana water_mana.; When tapped, trigger the "when equipped" ability.] [Hoist the colors!]
 
 Havoc Vanguard: 2/3p [Thalassa, Human, Pirate] [When discarded, summon self.] [Me first!]
@@ -16,10 +16,10 @@ Schooner: 2/3p [Thalassa, Ship] [Plunder 5.] [Ships are a great place to keep al
 Frigate: 3/3p [Thalassa, Ship] [Whenever you overkill X, gain X points.; Plunder 2.] [This bad boy can fit so many cannons on it.]
 Havoc Corsair: 4/3p [Thalassa, Human, Pirate] [When played, either:#Expend X fire_mana and gain X points.#Expend X water_mana and gain X points.] [A pirate's life for me!]
 Treasure Hunter: 7/3p [Thalassa, Human, Pirate] [You must expend fire_mana water_mana to play this unit.] [Now all I need is a map.]
-Carronade: 3p [Thalassa, Equipment, Weapon, Cannon] [When equipped, gain 4 points.; If equipped to a ship, you may assault 3 instead.] [It goes boom.]
+Carronade: 3p [Thalassa, Equipment, Weapon, Cannon] [When played, if equipped to a Ship, gain haste.; Tap to assault 3.] [It goes boom.]
 
 Harpooner: 3/4p [Thalassa, Human, Pirate] [When tapped, assault 1.; Increase the damage by 1 for each adjacent ship.;] [Do you get my thrust?]
-Howitzer: 4p [Thalassa, Equipment, Weapon, Cannon] [This card can only be equipped to a ship.; When equipped, assault 4.] [The biggest gun usually wins.]
+Howitzer: 4p [Thalassa, Equipment, Weapon, Cannon] [When played, if equipped to a Ship, gain Haste.; Tap to assault 3.; When equipped to a Ship of X power, intensify the assault by X.] [The biggest gun usually wins.]
 Treasure Galleon: 2/4p [Thalassa, Ship] [Plunder 6.] [Don't put all your gold on one ship.]
 Kraken: 1/4p [Thalassa, Monster] [When played, devour an allied Ship.; If there is another copy in your deck, summon it.] [Now would be a good time to start screaming.]
 
@@ -49,5 +49,5 @@ The White Cliffs: 9p [Thalassa, Emplacement, Location, Legendary] [When played, 
 Broadside: 9p [Thalassa, Instant, Warfare, Legendary] [Echo.; When played, assault 4.; Intensify the assault by 1 for each allied Cannon.; Overkill X: Play one of the top X cards from your deck.] [Full speed ahead!]
 
 Lower the Boom: 10p [Thalassa, Instant, Warfare, Legendary] [When played, assault 5.; Intensify the assault by 1 for each allied Cannon.; Overkill X: Play a unit form graveyard of X or fewer provisions.] [Did somebody say boom?]
-Queen Anne's Revenge: 1a 1/10p [Thalassa, Ship, Legendary] [When played, assault 2. You may expend 2X fire_mana to intensify the assault by X.; This card's assault also hits units adjacent to the target.; Plunder 2.] [Shiver me timbers!]
+Queen Anne's Revenge: 1a 5/10p [Thalassa, Ship, Legendary] [Tap to untap all equipped Cannons.; Plunder 2.] [Shiver me timbers!]
 Cthulhu: 6/10p [Thalassa, Monster, Legendary] [When played, expend X water_mana to devour an enemy unit of X or less power.] [Cthulhu fhtagn!]
