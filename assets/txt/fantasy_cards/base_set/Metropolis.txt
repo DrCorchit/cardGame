@@ -1,9 +1,8 @@
-#Faction identity: engines, limited hard removal (favor locks), self-tutoring cards
 Automaton: 2/2p [Metropolis, Machine] [At turn start, either:#Spawn air_mana.#Expend air_mana to gain 1 point.] [YES MASTER]
 Solar Panel: 2/2p [Metropolis, Machine] [At turn start, either:#Spawn light_mana.#Expend light_mana to gain 1 point.] [These things have a bright future.]
 Dynamo: 2/2p [Metropolis, Machine] [At turn start, spawn light_mana or air_mana.] [Ol' Reliable.]
 Drone Swarm: 1a 2/2p [Metropolis, Machine] [When played while paired, lock an enemy unit.; This unit protects adjacent units.] [Strength in numbers.]
-Scribe: 2/2p [Metropolis, Elf] [When played, become immune.; When you pass, gain 1 point for each allied machine you control.] [The records aren't going to keep themselves.]
+Scribe: 2/3p [Metropolis, Elf] [When played, become immune.; When you pass, gain 1 point for each allied machine you control.] [The records aren't going to keep themselves.]
 Capacitor: 2/2p [Metropolis, Machine] [Haste.; When tapped, either:#Expend X light_mana to gain X points.#Expend X air_mana to assault X.] [Brzzzap!]
 Paper Shuffler: 3/2p [Metropolis, Elf] [At turn start, you may draw a card from the top of your deck and move a card from your hand to the top or bottom of your deck.] [Paper is actually kinda heavy.]
 Cyborg Soldier: 1a 5/2p [Metropolis, Elf] [You must expend air_mana to play this card.] [More machine than man.]

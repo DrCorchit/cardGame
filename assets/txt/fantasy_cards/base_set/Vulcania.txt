@@ -8,10 +8,10 @@ Lava Lizard: 1a 5/2p [Vulcania, Dragon] [Expend fire_mana to play this card.] [M
 Fireswill Wine: 2/2p [Vulcania, Equipment, Liquor] [When equipped, spawn fire_mana fire_mana.] [The cheapest booze that money can buy.]
 Old Warhammer: 2p [Vulcania, Equipment, Weapon] [When equipped, assault 2.; This card's assault ignores armor.] [If all you have is a hammer, everything looks like a nail.]
 
-Tiny: 1a 1/3p [Vulcania, Dwarf] [This unit protects adjacent units.; Tap to summon another Tiny from your deck.] [Small, but not small time.]+
+Tiny: 1a 1/3p [Vulcania, Dwarf] [This unit protects adjacent units.; Tap to summon another Tiny from your deck.] [Small, but not small time.]
 Dragon Egg: 1a 1/3p [Vulcania, Egg] [When tapped, summon a common Dragon from your graveyard and destroy self.] [Probably best not to touch them.]
 Dwarven Warrior: 1a 2/3p [Vulcania, Dwarf] [Imbibe to gain 2 points.; When tapped, assault X where X is the number of equipped Weapon and Liquor cards.] [Born to drink, forced to fight.]
-Dragon Hatchling: 2/3p [Vulcania, Dragon] [During your turn, if you control an Egg, you may expend fire_mana fire_mana to summon this card from deck.] [They're cute when they're small.]
+Dragon Hatchling: 3/3p [Vulcania, Dragon] [During your turn, if you control an Egg, you may expend fire_mana fire_mana fire_mana to summon this card from deck.] [They're cute when they're small.]
 Cave Dragon: 1a 7/3p [Vulcania, Dragon] [Expend fire_mana fire_mana to play this card.] [Peaceful, as far as dragons go. (Run!)]
 Golden Froth: 2/3p [Vulcania, Equipment, Liquor] [At turn start, gain 1 point.] [Beer is proof that God loves dwarves and wants them to be happy.]
 Dragonbrew Reserve: 3/3p [Vulcania, Equipment, Liquor] [At turn start, spawn fire_mana.] [Spill a barrel of this stuff, and you'll learn a thing or two about dwarven hospitality.]
@@ -32,7 +32,7 @@ Secret Brew: 3/5p [Vulcania, Equipment, Liquor, Rare] [When equipped, trigger th
 Swoop: 5p [Vulcania, Dragon, Instant, Instinct, Rare] [You may either:#Spawn fire_mana fire_mana and play a common Dragon from your deck.#Expend fire_mana fire_mana and play a Dragon from your deck.] [Now you've made her mad!]
 
 The Eggspert: 1/6p [Vulcania, Dwarf, Rare] [When played, you may either:#Play an Egg from your deck.#Expend 2X fire_mana to play X dragon eggs from your graveyard.] [You mean you DON'T collect dragon eggs?]
-Shorty McGee: 1/6p [Vulcania, Dwarf, Rare] [When played, assault 3.; Imbibe to assault 2.] [Live by the axe...]
+Shorty McGee: 2/6p [Vulcania, Dwarf, Rare] [When played, assault 2.; Imbibe to assault 2.] [Live by the axe...]
 Pseudodragon: 1/6p [Vulcania, Dragon, Rare] [When played, play a common Liquor card from your graveyard and banish it.; When tapped, play a Dragon from hand and return to your hand.] [It's basically a scaly red chihuahua.]
 
 Guardian Dragon: 1a 3/7p [Vulcania, Dragon, Rare] [This card protects adjacent Egg cards.; Summon self from your deck whenever an allied Egg is destroyed.] [Ohhh now you've made 'er mad!]

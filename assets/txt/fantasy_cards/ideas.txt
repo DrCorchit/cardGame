@@ -30,7 +30,7 @@ Pad monsters:
 Echidna, X Alraune, Siren, Lilith, Archangel
 Gigas, Highlander, Siegfried, Vampire, Valkyrie
 Phoenix, Fenrir, Zeal
-Shaitan, Sylph, Undine, Thanatos, Genie
+Shaitan, Oceanid, Undine, Thanatos, Genie
 Yeti, Mermaid
 
 Paracelsus believed that each of the four classical elements—earth, water, air and fire—is inhabited by different categories of elemental spirits, liminal creatures that share our world: gnomes, undines, sylphs and salamanders respectively

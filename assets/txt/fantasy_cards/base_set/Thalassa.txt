@@ -19,7 +19,7 @@ Treasure Hunter: 7/3p [Thalassa, Human, Pirate] [You must expend fire_mana water
 Carronade: 3p [Thalassa, Equipment, Weapon, Cannon] [When played, if equipped to a Ship, gain haste.; Tap to assault 3.] [It goes boom.]
 
 Harpooner: 3/4p [Thalassa, Human, Pirate] [When tapped, assault 1.; Increase the damage by 1 for each adjacent ship.;] [Do you get my thrust?]
-Howitzer: 4p [Thalassa, Equipment, Weapon, Cannon] [When played, if equipped to a Ship, gain Haste.; Tap to assault 3.; When equipped to a Ship of X power, intensify the assault by X.] [The biggest gun usually wins.]
+Howitzer: 4p [Thalassa, Equipment, Weapon, Cannon] [Haste.; Tap to assault 2.; When equipped to a Ship of X power, intensify the assault by X.] [The biggest gun usually wins.]
 Treasure Galleon: 2/4p [Thalassa, Ship] [Plunder 6.] [Don't put all your gold on one ship.]
 Kraken: 1/4p [Thalassa, Monster] [When played, devour an allied Ship.; If there is another copy in your deck, summon it.] [Now would be a good time to start screaming.]
 
@@ -31,7 +31,7 @@ Captain Fribley: 4/5p [Thalassa, Human, Pirate, Rare] [When played, you may expe
 Billy Bones: 5/5p [Thalassa, Human, Pirate, Rare] [When played, look through your deck and move any card to the bottom.; When you pass, you need not shuffle your deck next round.] [There's only one 'i' in wisdom...]
 Abordage: 5p [Thalassa, Instant, Warfare, Rare] [When played, destroy an allied unit of X power, then seize an enemy unit of X or less power.] [Don't you think you're going a bit overboard?]
 
-Terror o' the Seas: 2/6p [Thalassa, Ship, Rare] [When played, become immune.; Whenever you discard a Carronade or Howitzer, equip it here instead.; Plunder 2.] [Ya can never have too many guns...]
+Terror o' the Seas: 1a 1/6p [Thalassa, Ship, Rare] [When played, draw a card and discard a card.; Whenever you discard a Cannon, equip it here instead.; Plunder 2.] [Ya can never have too many guns...]
 Jormungandir: 2a 4/6p [Thalassa, Monster, Rare] [When played, become immune.; When tapped, expend X water_mana to devour X allied units.] [The serpent at the end of the world!]
 Captain Flint: 2/6p [Thalassa, Human, Pirate, Rare] [When played, either:#Play a Warfare card from your deck.#Expend fire_mana fire_mana and play a Warfare card from your graveyard.] [Yo-ho-ho, and a bottle of rum!]
 Keel-Haul: 6p [Thalassa, Instant, Warfare, Rare] [When played, destroy an allied Human and spawn water_mana equal to its power.; Afterwards, play a Pirate from your graveyard.] [Welcome to the Crew!]
@@ -49,5 +49,5 @@ The White Cliffs: 9p [Thalassa, Emplacement, Location, Legendary] [When played, 
 Broadside: 9p [Thalassa, Instant, Warfare, Legendary] [Echo.; When played, assault 4.; Intensify the assault by 1 for each allied Cannon.; Overkill X: Play one of the top X cards from your deck.] [Full speed ahead!]
 
 Lower the Boom: 10p [Thalassa, Instant, Warfare, Legendary] [When played, assault 5.; Intensify the assault by 1 for each allied Cannon.; Overkill X: Play a unit form graveyard of X or fewer provisions.] [Did somebody say boom?]
-Queen Anne's Revenge: 1a 5/10p [Thalassa, Ship, Legendary] [Tap to untap all equipped Cannons.; Plunder 2.] [Shiver me timbers!]
+Queen Anne's Revenge: 1a 5/10p [Thalassa, Ship, Legendary] [Tap to untap all allied Cannons.; Plunder 2.] [Shiver me timbers!]
 Cthulhu: 6/10p [Thalassa, Monster, Legendary] [When played, expend X water_mana to devour an enemy unit of X or less power.] [Cthulhu fhtagn!]

@@ -6,19 +6,17 @@ import com.badlogic.gdx.Input
 import com.badlogic.gdx.scenes.scene2d.Stage
 import com.drcorchit.cards.SpaceCard2LargeWindow.Companion.cardbacks
 import com.drcorchit.cards.SpaceCard2LargeWindow.Companion.disasters
-import com.drcorchit.cards.fantasy.CardType
-import com.drcorchit.cards.fantasy.City
+import com.drcorchit.cards.fantasy.*
 import com.drcorchit.cards.fantasy.FantasyCard.Companion.abilityTextW
 import com.drcorchit.cards.fantasy.FantasyCard.Companion.keywordHelpW
 import com.drcorchit.cards.fantasy.FantasyCard.Companion.totalAbilityTextH
-import com.drcorchit.cards.fantasy.FantasyCards
-import com.drcorchit.cards.fantasy.Rarity
 import com.drcorchit.cards.graphics.CardActor
 import com.drcorchit.cards.graphics.Draw
 import com.drcorchit.cards.graphics.Fonts
 import com.drcorchit.justice.utils.StringUtils.normalize
 import com.drcorchit.justice.utils.logging.Logger
 import com.drcorchit.justice.utils.math.MathUtils
+import java.io.File
 
 /**
  * [com.badlogic.gdx.ApplicationListener] implementation shared by all platforms.
@@ -26,8 +24,8 @@ import com.drcorchit.justice.utils.math.MathUtils
 class Main : ApplicationAdapter() {
     var index = 0
     val stage by lazy { Stage() }
-
-    val card by lazy { CardActor(cards[index]) }
+    val card get() = cards[index]
+    val actor by lazy { CardActor(card) }
 
     companion object {
         private val logger = Logger.getLogger(Main::class.java)
@@ -45,17 +43,30 @@ class Main : ApplicationAdapter() {
         }
 
         val fantasyCards by lazy { FantasyCards.baseSet.cards }
+
         //ALL fantasy cards, including expansions and tokens
         val allFantasyCards by lazy { FantasyCards.baseSet.cards + FantasyCards.expac1.cards + FantasyCards.tokens.cards }
 
         val cards by lazy { fantasyCards }
+
+        val approvedCards by lazy {
+            val cardsByName = cards.associateBy { it.name }
+
+            File("assets/approved.txt").readLines()
+                .map { cardsByName[it]!! }
+                .toMutableSet()
+                .let {
+                    println("Loaded ${it.size} approved cards")
+                    it
+                }
+        }
     }
 
     override fun create() {
         //Load the batch
         Draw.batch
         LocalAssets.getInstance().load()
-        stage.addActor(card)
+        stage.addActor(actor)
 
         //card sanity checks
         val tagsCount = cards.flatMap { it.tags }.groupBy { it }.mapValues { it.value.size }
@@ -101,7 +112,8 @@ class Main : ApplicationAdapter() {
                 println(str)
             }
 
-        val immuneCount = cards.filter { it.abilityText.contains("When played, become immune.") }.size
+        val immuneCount =
+            cards.filter { it.abilityText.contains("When played, become immune.") }.size
         val immunePercent = immuneCount * 100.0f / cards.size
         println("\nImmune %: $immuneCount/${cards.size} ($immunePercent%)")
 
@@ -182,27 +194,42 @@ class Main : ApplicationAdapter() {
     }
 
     override fun render() {
-        if (Gdx.input.isButtonJustPressed(Input.Buttons.LEFT)) {
-            index = MathUtils.modulus(index + 1, cards.size)
-        }
-        if (Gdx.input.isKeyJustPressed(Input.Keys.E)) {
-            index = MathUtils.modulus(index + 20, cards.size)
+        fun advanceBy(amount: Int) {
+            index = MathUtils.modulus(index + amount, cards.size)
         }
 
-        if (Gdx.input.isButtonJustPressed(Input.Buttons.RIGHT)) {
-            index = MathUtils.modulus(index - 1, cards.size)
-        }
-        if (Gdx.input.isKeyJustPressed(Input.Keys.Q)) {
-            index = MathUtils.modulus(index - 20, cards.size)
+        fun nextUnapproved() {
+            val initialIndex = index + 1
+            var counter = 0
+            val counterMaxValue = cards.size - approvedCards.size
+            while (counter < counterMaxValue && approvedCards.contains(card)) {
+                advanceBy(1)
+                counter++
+            }
+            //No unapproved cards
+            if (counter == counterMaxValue) index = initialIndex
         }
 
+        fun toggleApproved() {
+            if (approvedCards.contains(card)) {
+                approvedCards.remove(card)
+            } else approvedCards.add(card)
+            nextUnapproved()
+        }
+
+        if (Gdx.input.isKeyJustPressed(Input.Keys.Q)) advanceBy(-10)
+        if (Gdx.input.isKeyJustPressed(Input.Keys.A)) advanceBy(-1)
+        if (Gdx.input.isKeyJustPressed(Input.Keys.D)) advanceBy(1)
+        if (Gdx.input.isKeyJustPressed(Input.Keys.E)) advanceBy(10)
+
+        if (Gdx.input.isKeyJustPressed(Input.Keys.S)) nextUnapproved()
+        if (Gdx.input.isKeyJustPressed(Input.Keys.W)) toggleApproved()
 
         if (Gdx.input.isKeyJustPressed(Input.Keys.SPACE)) {
-            card.drawable.updateGraphic()
+            actor.drawable.updateGraphic()
         }
 
-
-        card.drawable = cards[index]
+        actor.drawable = cards[index]
 
         Draw.batch.begin()
         stage.draw()
@@ -211,6 +238,9 @@ class Main : ApplicationAdapter() {
     }
 
     override fun dispose() {
-        Draw.batch.dispose()
+        Draw.batch
+
+        File("assets/approved.txt")
+            .writeText(approvedCards.joinToString("\r\n") { it.name })
     }
 }

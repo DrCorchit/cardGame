@@ -94,7 +94,7 @@ class FantasyCard(
 
     var image: AnimatedSprite? = updateGraphic()
 
-    //We sort by rarity to so we can auto add cards as much as possible when using the MakePlayingCards.com website
+    //We sort by rarity so we can auto add cards when using the MakePlayingCards.com website
     override val outputLocation =
         "output/images/full/cards/${rarity.name.normalize()}/${name.normalize()}.png"
 
@@ -366,6 +366,17 @@ class FantasyCard(
         val tagsStr = tags.joinToString(", ")
         val abilitiesStr = abilities.joinToString("; ")
         return "$name: $statsStr [$tagsStr] [$abilitiesStr] [$quote]"
+    }
+
+    override fun equals(other: Any?): Boolean {
+        if (other is FantasyCard) {
+            return name == other.name
+        }
+        return false
+    }
+
+    override fun hashCode(): Int {
+        return name.hashCode()
     }
 
     override fun updateGraphic(): AnimatedSprite? {
