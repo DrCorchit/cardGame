@@ -1,20 +1,20 @@
-Dhampir: 1a 2/2p [Transylvania, Vampire] [At turn start, spawn light_mana or dark_mana.] [Afraid of the dark? You should be.]
-Witness: 2/2p [Transylvania, Human, Slayer] [Give an enemy unit bounty 2.; When tapped, repeat the "when played" ability.] [I know what I saw.]
+Dhampir: 1a 2/2p [Transylvania, Vampire] [At allied turn start, spawn light_mana or dark_mana.] [Afraid of the dark? You should be.]
+Witness: 2/2p [Transylvania, Human, Slayer] [Give an enemy unit bounty 2.; Tap to repeat the "when played" ability.] [I know what I saw.]
 Gossip: 2p [Transylvania, Instant, Crime] [You may either:#Spawn light_mana light_mana light_mana and give an enemy unit bounty 2.#Spawn dark_mana dark_mana dark_mana and purify an allied unit.] [You'll never believe what I heard!]
-Talisman: 2p [Transylvania, Emplacement] [When played, spawn 4 light_mana.; When tapped, expend X light_mana and gain X points.] [By holy vow and purest light, I proclaim day and banish night!]
+Talisman: 2p [Transylvania, Emplacement] [When played, spawn 4 light_mana.; Tap and expend X light_mana to gain X points.] [By holy vow and purest light, I proclaim day and banish night!]
 
 Vigilante: 2/3p [Transylvania, Human, Slayer] [Whenever an enemy unit gains bounty X, assault it by 1.] [Can't just stand around and do nothing.]
 Witch Hunter: 3/3p [Transylvania, Human, Slayer] [During your turn, you may expend X light_mana to assault the unit with bounty by X.] [If she floats, she's a witch. If she drowns... probably still a witch.]
 Hysteria: 3p [Transylvania, Instant, Crime] [Give a unit bounty 2 and assault it by 2.; If the target already had bounty, assault 4 instead.] [No-one is beyond suspicion!]
 Black Market: 3p [Transylvania, Emplacement, Crime] [When played, you may either:#Expend light_mana light_mana and play a common Crime from your deck.#Expend dark_mana dark_mana and play a common Crime from your graveyard.] [Caveat Emptor.]
 
-Night Watch: 4/3p [Transylvania, Human, Slayer] [At turn start, give an enemy unit bounty 1.] [There's evil everywhere.]
+Night Watch: 4/3p [Transylvania, Human, Slayer] [At allied turn start, give an enemy unit bounty 1.] [There's evil everywhere.]
 Silver Sword: 4p [Transylvania, Equipment, Weapon] [Assault 3.; Increase the assault by 1 for every bounty on the target.] [Through the heart, pure and simple.]
 
 Buffy: 2/5p [Transylvania, Human, Slayer, Rare] [When played, give a unit bounty 6.] [If the apocalypse comes, beep me.]
 
-Hector: 1a 2/6p [Transylvania, Human, Rare] [When played, become stalwart.; When tapped, play a common unit from your graveyard.; Hector and Isaac may be tapped together to play any unit from your graveyard instead.] [Never enough time in the end, is there?]
-Isaac: 1a 3/6p [Transylvania, Human, Rare] [When played, become immune.; When tapped, play a common unit from your graveyard.; Hector and Isaac may be tapped together to play any unit from your graveyard instead.] [I've discovered to some surprise that I am interested in living.]
+Hector: 1a 2/6p [Transylvania, Human, Rare] [When played, become stalwart.; Tap to play a common unit from your graveyard.; Hector and Isaac may be tapped together to play any unit from your graveyard instead.] [Never enough time in the end, is there?]
+Isaac: 1a 3/6p [Transylvania, Human, Rare] [When played, become immune.; Tap to play a common unit from your graveyard.; Hector and Isaac may be tapped together to play any unit from your graveyard instead.] [I've discovered to some surprise that I am interested in living.]
 
 Alucard: 1/7p [Transylvania, Vampire, Rare] [Whenever you destroy a unit with bounty, you may summon self from deck and gain points equal to its Bounty.] [Magic and science are two sides of the same coin to me.]
 
@@ -26,6 +26,6 @@ Sypha Belnades: 3/9p [Transylvania, Human, Slayer, Legendary] [When played, play
 
 Trevor Belmont: 6/10p [Transylvania, Human, Slayer, Legendary] [When played, give an enemy unit bounty 2.; During your turn, you may expend X light_mana to assault the unit with bounty by X.] [Killing you was the point. Living through it was just a luxury.]
 
-Count Dracula: 7/11p [Transylvania, Vampire, Regent, Legendary] [At turn start, gain a counter.; Chaos is increased by 1 for each counter on this card.; Maximum counters: 6.] [Will killing an old man make you less scared of the dark?]
+Count Dracula: 7/11p [Transylvania, Vampire, Regent, Legendary] [At allied turn start, gain a counter.; Chaos is increased by 1 for each counter on this card.; Maximum counters: 6.] [Will killing an old man make you less scared of the dark?]
 
 Pogrom: 12p [Transylvania, Emplacement, Scenario, Legendary] [This scenario progresses whenever you play a Slayer.; When played, create a Vigilante to the right of this card.; Chapter 1: Create and play Gossip.; Chapter 2: Create and play Hysteria.] [We got to kill them afore they kills us!]

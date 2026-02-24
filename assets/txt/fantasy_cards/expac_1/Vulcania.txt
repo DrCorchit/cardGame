@@ -1,26 +1,26 @@
-Spelunker: 2/2p [Vulcania, Dwarf] [At turn start, gain 1 point if you control a Mine.] [This next passage is called "Widow's Bend".]
-Ore Hauler: 3/2p [Vulcania, Dwarf] [You must expend fire_mana to tap this unit.; When tapped, trigger the Labor ability of an allied common Mine.] ['Tis honest work, at least.]
-Sleepy: 1a 3/2p [Vulcania, Dwarf] [When tapped, you may expend X fire_mana to gain X points.; When you pass while paired, trigger the "when tapped" ability.] [Zzzzzzzzzzzzzzzz]
+Spelunker: 2/2p [Vulcania, Dwarf] [At allied turn start, gain 1 point if you control a Mine.] [This next passage is called "Widow's Bend".]
+Ore Hauler: 3/2p [Vulcania, Dwarf] [You must expend fire_mana to tap this unit.; Tap to trigger the Labor ability of an allied common Mine.] ['Tis honest work, at least.]
+Sleepy: 3/2p [Vulcania, Dwarf] [When you pass while paired, become stalwart.] [Zzzzzzzzzzzzzzzz]
 Copper Mine: 3p [Vulcania, Emplacement, Mine] [Labor: Gain 2 points.] [Mine yer own business.]
 
-Dwarven Vanguard: 1a 1/3p [Vulcania, Dwarf] [When played next to a Mine, gain Haste.; When tapped, play a Dwarf from hand, then draw a card.] [First to fight, last to die.]
-Dwarven Berserker: 2/3p [Vulcania, Dwarf] [When played, assault 1.; When tapped, assault 1.] [Anger sounds more like a solution than a problem.]
+Dwarven Vanguard: 1a 1/3p [Vulcania, Dwarf] [When played next to a Mine, gain Haste.; Tap to play a Dwarf from hand, then draw a card.] [First to fight, last to die.]
+Dwarven Berserker: 2/3p [Vulcania, Dwarf] [When played, assault 1.; Tap to assault 1.] [Anger sounds more like a solution than a problem.]
 Iron Mine: 3p [Vulcania, Emplacement, Mine] [Labor: Gain 1 point and assault 1.] [Iron sharpens iron.]
 Coal Mine: 3p [Vulcania, Emplacement, Mine] [Labor: Gain fire_mana fire_mana fire_mana.] [Hard work. Low pay.]
 
 Pickaxe: 4p [Vulcania, Equipment, Weapon] [Assault 2.; When equipped to a Dwarf, trigger an adjacent common Mine's Labor ability.] [Instructions: Bang pointy end against  rock. Repeat until arm tired.]
-Structural Engineer: 4/4p [Vulcania, Dwarf] [You must expend fire_mana fire_mana to tap this card.; When tapped, trigger the Labor ability of adjacent Mines.] [The weird noises mean the mine is about to collapse.]
+Structural Engineer: 4/4p [Vulcania, Dwarf] [You must expend fire_mana fire_mana to tap this card.; Tap to trigger the Labor ability of adjacent Mines.] [The weird noises mean the mine is about to collapse.]
 
 Gold Mine: 4p [Vulcania, Emplacement, Mine, Rare] [Labor: Gain 3 points.] [Ooh, shiny!]
 The Prospector: 2/6p [Vulcania, Dwarf, Rare] [When played, play a Mine from your deck.] [I never knew a prospector that made a fortune who didn't blow it trying to make another.]
 Snort: 8/7p [Vulcania, Dragon, Rare] [You must control a Mine to play this card.; When played, destroy an allied Mine.] [We're gonna need a deeper mine.]
 Diamond Mine: 7p [Vulcania, Emplacement, Mine, Rare] [Labor: Gain 2 points and spawn fire_mana fire_mana.] [Hard times? Remember that heat and pressure turn coal into diamond.]
-Myla: 1a 2/8p [Vulcania, Dwarf, Rare] [At turn start, trigger an adjacent common or rare Mine's Labor ability.] [This is hard work, but I don't mind.]
+Myla: 1a 2/8p [Vulcania, Dwarf, Rare] [At allied turn start, trigger an adjacent common or rare Mine's Labor ability.] [This is hard work, but I don't mind.]
 
 Mithril Mine: 8p [Vulcania, Emplacement, Mine, Legendary] [Labor: Gain 4 points and make adjacent Dwarves immune.] [The dwarves delved too greedily and too deep.]
 Gold Rush: 9p [Vulcania, Instant, Legendary] [When played, you may expend fire_mana fire_mana fire_mana to play up to 3 Mine or common Dwarf cards from hand, then draw as many cards.] [Start selling shovels.]
 
 Bloody Slash: 10p [Vulcania, Instant, Instinct, Legendary] [When played, assault X where X is the power of the most powerful dragon you control.; Overkill X: spawn X fire_mana.] [Might makes right.]
 
-Volcanic Eruption: 11p [Vulcania, Emplacement, Scenario, Legendary] [This scenario progresses whenever you spawn fire_mana.; When played, create a Spelunker to the right of this card.; Chapter 1: Create and play Pickaxe.; Chapter 2: Expend X fire_mana and assault X.] [The dwarves describe their mountain as a smoking hot redhead with a fiery personality.]
-Old King Coal: 1a 6/12p [Vulcania, Dwarf, Regent, Legendary] [When tapped, trigger the Labor abilities of all allied Mine cards.] [A jolly old soul was he.]
+Volcanic Eruption: 10p [Vulcania, Emplacement, Scenario, Legendary] [This scenario progresses whenever you spawn fire_mana.; When played, create a Sleepy.; Chapter 1: Create a Sleepy.; Chapter 2: Expend X fire_mana and assault X.] [The dwarves describe their mountain as a smoking hot redhead with a fiery personality.]
+Old King Coal: 1a 6/12p [Vulcania, Dwarf, Regent, Legendary] [Tap to trigger the Labor abilities of all allied Mine cards.] [A jolly old soul was he.]

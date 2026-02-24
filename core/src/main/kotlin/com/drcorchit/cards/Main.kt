@@ -240,7 +240,7 @@ class Main : ApplicationAdapter() {
     override fun dispose() {
         Draw.batch
 
-        File("assets/approved.txt")
-            .writeText(approvedCards.joinToString("\r\n") { it.name })
+        val cards = approvedCards.map { it.name }.sorted().joinToString("\r\n")
+        File("assets/approved.txt").writeText(cards)
     }
 }

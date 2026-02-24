@@ -1,12 +1,12 @@
 Viking Raider: 1/2p [Thalassa, Human, Warrior] [Veteran.; When played, become immune.; Gain 1 point whenever you destroy a unit during your turn.] []
-Viking Longship: 2/2p [Thalassa, Ship] [Plunder 2.; When played, gain 2 counters.; When tapped (X counters), spawn X fire_mana or X water_mana.; Maximum counters: 6.] []
-Viking Skald: 2/2p [Thalassa, Human] [At turn start, gain 1 point if there is a Ship in your graveyard.] []
+Viking Longship: 2/2p [Thalassa, Ship] [Plunder 2.; When played, gain 2 counters.; Tap (X counters) to spawn X fire_mana or X water_mana.; Maximum counters: 6.] []
+Viking Skald: 2/2p [Thalassa, Human] [At allied turn start, gain 1 point if there is a Ship in your graveyard.] []
 Viking Shieldmaiden: 3/2p [Thalassa, Human, Warrior] [Veteran.; This unit's power is increased by 1 for each counter.; Maximum counters: 4.] []
 
-Blackblood Marauder: 2/3p [Thalassa, Human, Warrior] [Veteran.; At turn start, assault 1.] []
+Blackblood Marauder: 2/3p [Thalassa, Human, Warrior] [Veteran.; At allied turn start, assault 1.] []
 Blackblood Pillager: 1/3p [Thalassa, Human, Warrior] [Veteran.; When discarded, summon self.; When played, you may expend fire_mana fire_mana fire_mana to assault 3.] []
 Pillage: 3p [Thalassa, Instant, Warfare] [Either:#Assault 2 and add 2 counters to an allied card.#Assault 3.#Remove 2 counters from an allied card, then assault 4.] []
-Nithing: 3p [Thalassa, Emplacement] [At turn start, gain 1 counter.; When tapped (X counters), assault X.; Maximum counters: 6.] [Curse you!]
+Nithing: 3p [Thalassa, Emplacement] [At allied turn start, gain 1 counter.; Tap (X counters) to assault X.; Maximum counters: 6.] [Curse you!]
 
 Blackblood Swordsman: 1/4p [Thalassa, Human, Warrior] [Veteran.; When played, assault 2.] []
 Berserker: 3/4p [Thalassa, Human, Warrior] [Veteran.; When played, destroy an allied unit of X power and assault X.] [I'll get what I want... one way or another.]
@@ -15,15 +15,15 @@ Gungnir: 4p [Thalassa, Equipment, Weapon, Rare] [When equipped, assault 4.; When
 
 Mjolnir: 5p [Thalassa, Equipment, Weapon, Rare] [When equipped, assault 5.; When equipped to Thor, assault 10 instead.] [You are not worthy.]
 
-Fenrir: 3/6p [Thalassa, Beast, Rare] [At turn start, assault 1.; Intensify the assault by 1 for each allied Pack Wolf or Alpha Wolf.] [Prophesied to kill Odin and eat the world.]
+Fenrir: 3/6p [Thalassa, Beast, Rare] [At allied turn start, assault 1.; Intensify the assault by 1 for each allied Pack Wolf or Alpha Wolf.] [Prophesied to kill Odin and eat the world.]
 
 Tyr: 3/7p [Thalassa, Deity, Warrior, Rare] [Veteran.; When played, assault an enemy by Tyr's power.] [ ]
-Odin: 5/7p [Thalassa, Deity, Legendary] [When played, discard a card from your deck.; When tapped, repeat the "when played" ability.; When you pass, you need not shuffle your deck next round.] [Allfather knows best.]
+Odin: 5/7p [Thalassa, Deity, Legendary] [When played, discard a card from your deck.; Tap to repeat the "when played" ability.; When you pass, you need not shuffle your deck next round.] [Allfather knows best.]
 
 Baldr: 10/8p [Thalassa, Deity, Warrior, Rare] [When Baldr is destroyed, also destroy adjacent units.; When an adjacent unit is destroyed, poison self.] [Surely mistletoe is harmless...]
 Heimdall: 2/8p [Thalassa, Deity, Warrior, Legendary] [Veteran.; When played, swap your deck and graveyard.; This ability triggers discard abilities of cards in deck.] [I see the end of all things!]
 
-Loki: 3/9p [Thalassa, Deity, Legendary] [When played, become invisible and gain 12 counters.; At turn start, you may move 1 counter to an allied card.; When you pass, gain 1 point for every 2 counters on Loki.] [It was just a prank.]
+Loki: 3/9p [Thalassa, Deity, Legendary] [When played, become invisible and gain 12 counters.; At allied turn start, you may move 1 counter to an allied card.; When you pass, gain 1 point for every 2 counters on Loki.] [It was just a prank.]
 
 Thor: 4/10p [Thalassa, Deity, Warrior, Legendary] [Veteran.; When played, become stalwart.; This unit's power is increased by 1 for each counter.; Maximum counters: 4.] [Behold, the mightiest of the gods!]
 

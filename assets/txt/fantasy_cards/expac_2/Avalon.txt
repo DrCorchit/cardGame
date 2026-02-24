@@ -1,8 +1,8 @@
 Merry Men: 2/2p [Human, Bandit] [When played, spawn 2 mana of any colors.; If you control Robin Hood, also summon all Merry Men from deck or graveyard.] [Steal from the rich and give to the poor!]
 
-Alan-a-Dale: 1a 2/6p [Human, Bandit, Rare] [When tapped, play a unit from your deck.; If you control Robin Hood, gain Haste.] [Faint heart never won fair lady.]
+Alan-a-Dale: 1a 2/6p [Human, Bandit, Rare] [Tap to play a unit from your deck.; If you control Robin Hood, gain Haste.] [Faint heart never won fair lady.]
 Little John: 8/6p [Human, Bandit, Rare] [When played, destroy an allied unit.; If you control Robin Hood, cancel this ability.] [If it's a fight ye wants...]
-Friar Tuck: 3/7p [Human, Bandit, Rare] [When played, become stalwart.; When tapped, make Robin Hood stalwart.] [The sins I commit in the green, I confess to the gray!]
-Maid Marian: 1/7p [Human, Rare] [At turn start, summon Robin Hood from deck.; If you already control Robin Hood, gain 2 points.] [Because God made me a woman is no reason to be such a woman as men wish to make me.]
+Friar Tuck: 3/7p [Human, Bandit, Rare] [When played, become stalwart.; Tap to make Robin Hood stalwart.] [The sins I commit in the green, I confess to the gray!]
+Maid Marian: 1/7p [Human, Rare] [At allied turn start, summon Robin Hood from deck.; If you already control Robin Hood, gain 2 points.] [Because God made me a woman is no reason to be such a woman as men wish to make me.]
 
-Robin Hood: 4/8p [Human, Bandit, Legendary] [When played, become invisible. When tapped, play the topmost Bandit from your deck.] [Better to jump for the moon than stoop for a penny in the mud.]
+Robin Hood: 4/8p [Human, Bandit, Legendary] [When played, become invisible. Tap to play the topmost Bandit from your deck.] [Better to jump for the moon than stoop for a penny in the mud.]

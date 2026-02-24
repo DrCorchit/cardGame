@@ -40,15 +40,6 @@
     "synonyms": ["Summons", "Summoned"]
   },
   {
-    "name": "Protect",
-    "description": "Prevent a unit from being targeted by your opponent. A protector cannot be protected.",
-    "synonyms": ["Protects", "Protecting", "Protected", "Protector"]
-  },
-  {
-    "name": "Vulnerable",
-    "description": "This card cannot receive protection."
-  },
-  {
     "name": "Assassinate X",
     "description": "Assault X, bypassing protection and invisibility.",
     "synonyms": ["Assassinate", "Assassinates", "Assassinated"]
@@ -70,7 +61,7 @@
   },
   {
     "name": "Chaos X",
-    "description": "Triggers if there are at least X unique mana types.",
+    "description": "Triggers if there are at least X unique mana types among common and allied mana dice.",
     "synonyms": ["Chaos"]
   },
   {
@@ -79,7 +70,7 @@
   },
   {
     "name": "Echo",
-    "description": "Before the mulligan phase, draw this card from your graveyard and give it doomed."
+    "description": "Before drawing cards, move this card from graveyard to the top of your deck. The card is banished the second time it is played."
   },
   {
     "name": "Imbibe",
@@ -140,11 +131,16 @@
     "description": "At round end, units with this status are purified instead of destroyed. Equipment is also destroyed."
   },
   {
-    "name": "Immune",
-    "description": "Status that prevents receiving additional statuses."
+    "name": "Protector",
+    "description": "Status that prevents adjacent units from being targeted by their opponent. A protector cannot be protected.",
+    "synonyms": ["Protector", "Protection", "Protected"]
   },
   {
     "name": "Invisible",
     "description": "Status that prevents the unit from being targeted."
+  },
+  {
+    "name": "Immune",
+    "description": "Status that prevents receiving additional statuses."
   }
 ]
