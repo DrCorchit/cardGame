@@ -8,7 +8,7 @@ Dwarven Berserker: 2/3p [Vulcania, Dwarf] [When played, assault 1.; Tap to assau
 Iron Mine: 3p [Vulcania, Emplacement, Mine] [Labor: Gain 1 point and assault 1.] [Iron sharpens iron.]
 Coal Mine: 3p [Vulcania, Emplacement, Mine] [Labor: Gain fire_mana fire_mana fire_mana.] [Hard work. Low pay.]
 
-Pickaxe: 4p [Vulcania, Equipment, Weapon] [Assault 2.; When equipped to a Dwarf, trigger an adjacent common Mine's Labor ability.] [Instructions: Bang pointy end against  rock. Repeat until arm tired.]
+Pickaxe: 4p [Vulcania, Equipment, Weapon] [When played, assault 2.; If equipped to a Dwarf, trigger an adjacent common Mine's Labor ability.] [Instructions: Bang pointy end against  rock. Repeat until arm tired.]
 Structural Engineer: 4/4p [Vulcania, Dwarf] [You must expend fire_mana fire_mana to tap this card.; Tap to trigger the Labor ability of adjacent Mines.] [The weird noises mean the mine is about to collapse.]
 
 Gold Mine: 4p [Vulcania, Emplacement, Mine, Rare] [Labor: Gain 3 points.] [Ooh, shiny!]
@@ -20,7 +20,7 @@ Myla: 1a 2/8p [Vulcania, Dwarf, Rare] [At allied turn start, trigger an adjacent
 Mithril Mine: 8p [Vulcania, Emplacement, Mine, Legendary] [Labor: Gain 4 points and make adjacent Dwarves immune.] [The dwarves delved too greedily and too deep.]
 Gold Rush: 9p [Vulcania, Instant, Legendary] [When played, you may expend fire_mana fire_mana fire_mana to play up to 3 Mine or common Dwarf cards from hand, then draw as many cards.] [Start selling shovels.]
 
-Bloody Slash: 10p [Vulcania, Instant, Instinct, Legendary] [When played, assault X where X is the power of the most powerful dragon you control.; Overkill X: spawn X fire_mana.] [Might makes right.]
+Bloody Slash: 10p [Vulcania, Instant, Instinct, Legendary] [When played, assault X where X is the power of the most powerful dragon you control.; Overkill X: Spawn X fire_mana.] [Might makes right.]
 
 Volcanic Eruption: 10p [Vulcania, Emplacement, Scenario, Legendary] [This scenario progresses whenever you spawn fire_mana.; When played, create a Sleepy.; Chapter 1: Create a Sleepy.; Chapter 2: Expend X fire_mana and assault X.] [The dwarves describe their mountain as a smoking hot redhead with a fiery personality.]
 Old King Coal: 1a 6/12p [Vulcania, Dwarf, Regent, Legendary] [Tap to trigger the Labor abilities of all allied Mine cards.] [A jolly old soul was he.]

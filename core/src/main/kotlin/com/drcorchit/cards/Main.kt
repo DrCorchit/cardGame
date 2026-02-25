@@ -7,12 +7,9 @@ import com.badlogic.gdx.scenes.scene2d.Stage
 import com.drcorchit.cards.SpaceCard2LargeWindow.Companion.cardbacks
 import com.drcorchit.cards.SpaceCard2LargeWindow.Companion.disasters
 import com.drcorchit.cards.fantasy.*
-import com.drcorchit.cards.fantasy.FantasyCard.Companion.abilityTextW
-import com.drcorchit.cards.fantasy.FantasyCard.Companion.keywordHelpW
 import com.drcorchit.cards.fantasy.FantasyCard.Companion.totalAbilityTextH
 import com.drcorchit.cards.graphics.CardActor
 import com.drcorchit.cards.graphics.Draw
-import com.drcorchit.cards.graphics.Fonts
 import com.drcorchit.justice.utils.StringUtils.normalize
 import com.drcorchit.justice.utils.logging.Logger
 import com.drcorchit.justice.utils.math.MathUtils
@@ -170,27 +167,16 @@ class Main : ApplicationAdapter() {
                 }
             }
 
-            val abilityTextH = it.abilityTextHandler.calculateHeight(abilityTextW)
-
-            val keywordTextH =
-                Draw.calculateDimensions(
-                    Fonts.keywordHelpFont,
-                    it.keywordText,
-                    keywordHelpW
-                ).second
-            val overlap = totalAbilityTextH - (keywordTextH + abilityTextH)
+            val overlap = totalAbilityTextH - (it.keywordTextH + it.abilityTextH)
             if (overlap < 0) {
                 println("Card has overlap: ${it.name} $overlap")
-            } else if (overlap < 20) {
-                println("Card has near overlap: ${it.name} $overlap")
             }
         }
     }
 
     override fun resize(width: Int, height: Int) {
         Gdx.app.graphics.setWindowedMode(width, height)
-
-        println("$width x $height")
+        //println("$width x $height")
     }
 
     override fun render() {
@@ -207,13 +193,14 @@ class Main : ApplicationAdapter() {
                 counter++
             }
             //No unapproved cards
-            if (counter == counterMaxValue) index = initialIndex
+            if (counter == counterMaxValue) {
+                println("No unapproved cards!")
+                index = initialIndex
+            }
         }
 
         fun toggleApproved() {
-            if (approvedCards.contains(card)) {
-                approvedCards.remove(card)
-            } else approvedCards.add(card)
+            approvedCards.add(card)
             nextUnapproved()
         }
 
@@ -225,9 +212,7 @@ class Main : ApplicationAdapter() {
         if (Gdx.input.isKeyJustPressed(Input.Keys.S)) nextUnapproved()
         if (Gdx.input.isKeyJustPressed(Input.Keys.W)) toggleApproved()
 
-        if (Gdx.input.isKeyJustPressed(Input.Keys.SPACE)) {
-            actor.drawable.updateGraphic()
-        }
+        if (Gdx.input.isKeyJustPressed(Input.Keys.SPACE)) actor.drawable.updateGraphic()
 
         actor.drawable = cards[index]
 

@@ -5,8 +5,8 @@ Elven Trailblazer: 3/2p [Avalon, Elf, Tribal] [During your turn, you may expend 
 
 Elven Guerilla: 2/3p [Avalon, Elf, Tribal] [Whenever an elf enters the battlefield, gain a counter.; Whenever an elf leaves the battlefield, lose a counter.; During your turn, you may remove X counters to assault X.; Maximum counters: 4.] [Did you hear something?]
 Elven Druid: 3/3p [Avalon, Elf, Tribal] [Whenever an elf enters the battlefield, spawn 1 mana of any color.] [In the elven tongue, they are called "Tree Whisperers".]
-Elven Dagger: 3p [Avalon, Equipment, Weapon] [When equipped to an elf, gain haste.; Tap to assault 3.] [Such exquisite craftmanship.]
-Elven Bow: 3p [Avalon, Equipment, Weapon] [When equipped, assault 2.; Tap to poison an enemy unit.] [You can pull out the arrow, but you can't suck out the poison.]
+Elven Dagger: 3p [Avalon, Equipment, Weapon] [If equipped to an Elf, gain haste.; Tap to assault 3.] [Such exquisite craftmanship.]
+Elven Bow: 3p [Avalon, Equipment, Weapon] [When played, assault 2.; Tap to poison an enemy unit.] [You can pull out the arrow, but you can't suck out the poison.]
 
 Hydriad: 2/4p [Avalon, Nymph] [Harmony: Gain 1 point.; When played, you may expend water_mana water_mana to create a Hydriad.] [They can appear humanoid, but in truth they are formless like water.]
 Smoke Signals: 4p [Avalon, Instant, Nature] [Play a common unit from your deck of a race you do not already control.] [Any burning questions?]

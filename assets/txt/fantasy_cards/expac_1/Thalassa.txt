@@ -11,9 +11,9 @@ Nithing: 3p [Thalassa, Emplacement] [At allied turn start, gain 1 counter.; Tap 
 Blackblood Swordsman: 1/4p [Thalassa, Human, Warrior] [Veteran.; When played, assault 2.] []
 Berserker: 3/4p [Thalassa, Human, Warrior] [Veteran.; When played, destroy an allied unit of X power and assault X.] [I'll get what I want... one way or another.]
 
-Gungnir: 4p [Thalassa, Equipment, Weapon, Rare] [When equipped, assault 4.; When equipped to Odin, untap him and assassinate 4 instead.] []
+Gungnir: 4p [Thalassa, Equipment, Weapon, Rare] [When played, assault 4.; If equipped to Odin, untap him and assassinate 4 instead.] []
 
-Mjolnir: 5p [Thalassa, Equipment, Weapon, Rare] [When equipped, assault 5.; When equipped to Thor, assault 10 instead.] [You are not worthy.]
+Mjolnir: 5p [Thalassa, Equipment, Weapon, Rare] [When played, assault 5.; If equipped to Thor, assault 10 instead.] [You are not worthy.]
 
 Fenrir: 3/6p [Thalassa, Beast, Rare] [At allied turn start, assault 1.; Intensify the assault by 1 for each allied Pack Wolf or Alpha Wolf.] [Prophesied to kill Odin and eat the world.]
 

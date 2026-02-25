@@ -8,13 +8,13 @@ Cleric: 3/3p [Human, Mage] [When played, purify a unit and gain 1 points for eac
 Makeshift Bomb: 3p [Instant, Weapon] [When played, assault 1.; Increase the assault by 1 for each Weapon in your graveyard.] [It just has to go boom.]
 Puffball: 3p [Instant, Nature] [When played, poison a unit.; If the target is already poisoned, poison adjacent units.] [Yuck.]
 
-Glass Dagger: 4p [Equipment, Weapon] [When equipped, assault 2.; Tap to give an allied unit haste.] [They'll never see it coming.]
+Glass Dagger: 4p [Equipment, Weapon] [When played, assault 2.; Tap to give an allied unit haste.] [They'll never see it coming.]
 Flesh Golem: 6/4p [Undead] [When played, become immune.] [And you thought the clay golems were bad enough.]
 
 Bag of Vomit: 4p [Instant, Rare] [When played, play a second copy of a common unit you already control.; While in the graveyard, other cards cannot be banished from your graveyard.] [Sometimes a bag of vomit is just a bag of vomit.]
-Bolases: 5p [Equipment, Weapon, Rare] [When equipped, lock two cards.; Tap to assault all locked units by 2.] []
-Pyromaniaxe: 6p [Equipment, Weapon, Rare] [This weapon cannot be equipped to units with 4 or less power.; When equipped, assault 6.] []
-Dragonslayer Lance: 6p [Equipment, Weapon, Rare] [When equipped, assault 4.; If the assault target is legendary, assault 8 instead.] []
+Bolases: 5p [Equipment, Weapon, Rare] [When played, lock two cards.; Tap to assault all locked units by 2.] []
+Pyromaniaxe: 6p [Equipment, Weapon, Rare] [This weapon cannot be equipped to units with 4 or less power.; When played, assault 6.] []
+Dragonslayer Lance: 6p [Equipment, Weapon, Rare] [When played, assault 4.; If the assault target is legendary, assault 8 instead.] []
 Blade Dancer: 2/7p [Human, Knight, Rare] [When played, become immune.; Whenever a weapon is equipped, assault 1.; Tap to assault 1 for every equipped weapon.] []
 
 Doco the Paladin: 5/8p [Ogroid, Legendary] [When played, assault 2.; If Bag of Vomit is in your graveyard, assault 3 instead.] [Don't ask about the bag.]

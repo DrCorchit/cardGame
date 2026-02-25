@@ -94,6 +94,15 @@ class FantasyCard(
 
     var image: AnimatedSprite? = updateGraphic()
 
+    val abilityTextH = abilityTextHandler.calculateHeight(abilityTextW)
+
+    val keywordTextH =
+        Draw.calculateDimensions(
+            Fonts.keywordHelpFont,
+            keywordText,
+            keywordTextW
+        ).second
+
     //We sort by rarity so we can auto add cards when using the MakePlayingCards.com website
     override val outputLocation =
         "output/images/full/cards/${rarity.name.normalize()}/${name.normalize()}.png"
@@ -199,7 +208,7 @@ class FantasyCard(
 
         val keywordTextX = abilityTextX
         val keywordTextY = lineY + 15
-        val keywordHelpW = abilityTextW - 30
+        val keywordTextW = abilityTextW - 30
         val totalAbilityTextH = abilityTextY - keywordTextY
     }
 
@@ -322,27 +331,17 @@ class FantasyCard(
             faction.color
         )
 
-        //Ability Text
-//        Draw.drawText(
-//            abilityTextX,
-//            abilityTextY,
-//            Fonts.abilityFont,
-//            styledAbilityText,
-//            abilityTextW,
-//            Compass.SOUTHEAST,
-//            Color.WHITE
-//        )
-
-        //Draw.drawRectangle(abilityTextX, abilityTextY, abilityTextW, 10f, Color.RED)
+        //Draw.drawRectangle(abilityTextX, abilityTextY, abilityTextW, -abilityTextH, Color.RED)
         abilityTextHandler.render(abilityTextX, abilityTextY, abilityTextW)
 
+        //Draw.drawRectangle(keywordTextX, keywordTextY, keywordTextW, keywordTextH, Color.BLUE)
         //Keyword text
         Draw.drawText(
             keywordTextX,
             keywordTextY,
             Fonts.keywordHelpFont,
             keywordText,
-            keywordHelpW,
+            keywordTextW,
             Compass.NORTHEAST,
             keywordHelpColor
         )
