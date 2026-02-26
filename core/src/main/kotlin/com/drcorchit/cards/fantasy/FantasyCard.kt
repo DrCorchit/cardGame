@@ -158,7 +158,7 @@ class FantasyCard(
         val keywordColor = Color.valueOf("#502800ff")
         val keywordHelpColor = Color.valueOf("#806040ff") //was 405060
 
-        val stroke = Textures.brushStroke.asSprite().setOffset(Compass.CENTER)
+        val brushStroke = Textures.brushStroke.asSprite().setOffset(Compass.CENTER)
         val tray = Textures.tray.asSprite().setOffset(Compass.SOUTH)
         val armorBack = Textures.armorBack.asSprite().setOffset(Compass.CENTER)
         val costBack = Textures.costBack.asSprite().setOffset(200f, 150f)
@@ -298,8 +298,7 @@ class FantasyCard(
         //Card Name
         val dims1 = Draw.calculateDimensions(Fonts.nameFont, name, W - 50f)
         val dims2 = Draw.calculateDimensions(Fonts.tagFont, tagsText, W - 50f)
-        stroke.blend = faction.secondaryColor
-
+        brushStroke.blend = faction.secondaryColor
 
         val strokeW = MathUtils.clamp(
             strokeMinW,
@@ -309,7 +308,7 @@ class FantasyCard(
             ), strokeMaxW
         )
 
-        stroke.draw(batch, midWidth, strokeY, strokeW, strokeH)
+        brushStroke.draw(batch, midWidth, strokeY, strokeW, strokeH)
         Draw.drawText(
             midWidth,
             strokeY + 27,

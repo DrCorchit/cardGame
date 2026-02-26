@@ -50,7 +50,7 @@ class Main : ApplicationAdapter() {
             val cardsByName = cards.associateBy { it.name }
 
             File("assets/approved.txt").readLines()
-                .map { cardsByName[it]!! }
+                .mapNotNull { cardsByName[it] }
                 .toMutableSet()
                 .let {
                     println("Loaded ${it.size} approved cards")
@@ -187,7 +187,7 @@ class Main : ApplicationAdapter() {
         fun nextUnapproved() {
             val initialIndex = index + 1
             var counter = 0
-            val counterMaxValue = cards.size - approvedCards.size
+            val counterMaxValue = cards.size
             while (counter < counterMaxValue && approvedCards.contains(card)) {
                 advanceBy(1)
                 counter++

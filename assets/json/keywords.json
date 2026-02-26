@@ -66,11 +66,11 @@
   },
   {
     "name": "Paired",
-    "description": "Triggers if you play or control a second copy of this card."
+    "description": "Triggers if you control another copy of this card."
   },
   {
     "name": "Echo",
-    "description": "Before drawing cards, move this card from graveyard to the top of your deck. The card is banished the second time it is played."
+    "description": "At round 3, before drawing cards, move this card from your graveyard to the top of your deck."
   },
   {
     "name": "Imbibe",
