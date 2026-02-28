@@ -19,7 +19,7 @@ Landlady: 6/3p [Transylvania, Vampire] [When an adjacent unit is destroyed, also
 Pickpocket: 3p [Transylvania, Instant, Crime] [When played, reroll 6 common or allied mana dice.; Chaos X: gain X points and decrease the reroll amount by X. ] [A fool and his money...]
 
 Hitman: 1/4p [Transylvania, Human, Henchman, Spy] [Disloyal.; When played (chaos X), assassinate X.] [I never hurt nobody that ain't had it comin'.]
-Pyromaniac: 2/4p [Transylvania, Vampire, Henchman] [When played, become immune.; Tap (chaos X) to assault X.] [Something not being on fire is usually a very easy problem to solve.]
+Pyromaniac: 2/4p [Transylvania, Human, Henchman] [When played, become immune.; Tap (chaos X) to assault X.] [Something not being on fire is usually a very easy problem to solve.]
 Bystander: 2/4p [Transylvania, Human] [When played, become immune.; Tap to gain points equal to the provision cost of the most expensive unit you assassinated or seized this turn.] [Oh wow, dinner AND a show!]
 Vampire Aristocrat: 1a 3/4p [Transylvania, Vampire] [Tap and expend X dark mana to assault X.; Whenever you play a human, spawn dark_mana.; Whenever you play a vampire, untap this card.] [I'm a creature of refined taste.]
 

@@ -4,8 +4,9 @@ import com.badlogic.gdx.graphics.Color
 import com.drcorchit.cards.graphics.Textures
 import com.drcorchit.cards.graphics.Textures.asSprite
 import com.drcorchit.justice.utils.math.Compass
+import kotlin.random.Random
 
-enum class City(override val color: Color, val adj: String): Faction {
+enum class City(override val color: Color, val adj: String) : Faction {
     //Earth/Water/Air land, diverse racial groups
     //Has:
     // Good land sources
@@ -72,5 +73,22 @@ enum class City(override val color: Color, val adj: String): Faction {
     val texture by lazy { Textures.initTexture("${name.lowercase()}.png") }
     override val image by lazy { texture.asSprite().setOffset(Compass.CENTER) }
     override val secondaryColor = Color(color.r + .12f, color.g + .12f, color.b + .12f, .35f)
-}
 
+    val aiPrompts = mutableListOf<String>()
+
+    fun randomPrompt(): String {
+        if (aiPrompts.isEmpty()) return ""
+        val index = Random.Default.nextInt(aiPrompts.size)
+        return aiPrompts[index]
+    }
+
+    companion object {
+        init {
+            Avalon.aiPrompts.add("The card is for the Avalon faction, which is set in large, quiet, and lonely temperate forest.")
+            Metropolis.aiPrompts.add("The card is for the Metropolis faction, with steampunk characters in industrial rooms.")
+            Transylvania.aiPrompts.add("The card is for the Transylvania faction, which includes a mix of humans and vampires living in a victorian era city.")
+            Thalassa.aiPrompts.add("The card is for the Thalassa faction, which involves sailors and ships on the open seas.")
+            Vulcania.aiPrompts.add("The card is for the Vulcania faction, which features deep dark caves.")
+        }
+    }
+}

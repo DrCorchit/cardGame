@@ -12,7 +12,7 @@ Product Recall: 2p [Metropolis, Instant, Technology] [Return a common allied uni
 Messenger: 2/3p [Metropolis, Elf] [When moved to the top of your deck, summon self.] [The barristers send their regards.] [pointslam]
 Battery: 3/3p [Metropolis, Machine] [Tap to spawn light_mana light_mana light_mana or air_mana air_mana air_mana.] [Keeps going and going and... oh it's dead already.]
 Transformer: 4/3p [Metropolis, Machine] [Tap to either:#Convert all light_mana into air_mana.;#Convert all air_mana into light_mana.#Expend X light_mana and gain X points.#Expend X air_mana and gain X points.] [Step up the voltage.]
-Engineer: 4/3p [Metropolis, Elf] [Tap to either:#Expend light_mana to purify a card.#Expend air_mana to lock a card.] [Fix-it Felix just doesn't have the same ring to it.]
+Electrical Engineer: 4/3p [Metropolis, Elf] [Tap to either:#Expend light_mana to purify a card.#Expend air_mana to lock a card.] [Fix-it Felix just doesn't have the same ring to it.]
 Archivist: 4/3p [Metropolis, Elf] [When played, look at the top 3 cards from either your or your opponent's deck and move one to the top.; Tap to repeat the "when played" ability.] [Our records are perfect, according to our records.]
 Pulverizer: 1a 7/3p [Metropolis, Machine] [You must expend air_mana air_mana to play this unit.] [Resistance is futile.]
 Power Surge: 3/3p [Metropolis, Equipment, Technology] [When played, if equipped to a common unit, untap it.] [Power is always dangerous.] [utility, combo]

@@ -5,7 +5,7 @@ enum class Race {
     Human, Elf, Dwarf,
 
     //Forest races
-    Fairy, Dryad, Nymph, Treant,
+    Fairy, Nymph, Treant,
 
     //Other races
     Beast, Insectoid, Dragon, Ogroid, Deity,

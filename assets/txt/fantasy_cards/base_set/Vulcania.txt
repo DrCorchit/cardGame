@@ -20,7 +20,7 @@ Natural Spring Water: 4/3p [Vulcania, Equipment] [When played, remove lock and p
 Dwarven Brawler: 2/4p [Vulcania, Dwarf] [Imbibe to summon a Dwarven Brawler from your deck or graveyard.; When paired, assault 2 instead.] [If it's a fight yer lookin' fer, ye just found it.]
 Mechanical Engineer: 4/4p [Vulcania, Dwarf] [Haste.; Tap and expend X fire_mana to make a common unit of 2X power stalwart.; Imbibe to untap this card.] [Unlike elves, dwarves don't let their computers do their thinkin' for 'em.]
 Royal Wyvern: 1a 9/4p [Vulcania, Dragon] [Expend fire_mana fire_mana fire_mana to play this card.] [Capable of turning a dwarf into barbecue in 3 seconds flat.]
-Guinness Stout: 3/4p [Vulcania, Equipment, Liquor] [Also triggers imbibe abilities on adjacent units.] [Take one down and pass it around...]
+Guinness Stout: 3/4p [Vulcania, Equipment, Liquor] [When played, also trigger the imbibe abilities of units adjacent to the equip target.] [Take one down and pass it around...]
 Dwarfsteel Battleaxe: 4p [Vulcania, Equipment, Weapon] [When played, assault 2.; Tap to assault 2.] [Even dwarven battleaxes have beards...]
 
 Shorty's Axe: 4p [Vulcania, Equipment, Weapon, Rare] [When played, assault 4.; If equipped to Shorty McGee, increase the assault by 1 for every Liquor card equipped to him.] [The one, the only.]

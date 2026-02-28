@@ -4,6 +4,7 @@ import com.badlogic.gdx.graphics.Color
 import com.badlogic.gdx.graphics.Texture
 import com.badlogic.gdx.utils.ScreenUtils
 import com.drcorchit.cards.Keyword
+import com.drcorchit.cards.Main
 import com.drcorchit.cards.Main.Companion.BORDER
 import com.drcorchit.cards.Main.Companion.H
 import com.drcorchit.cards.Main.Companion.IMAGE_H
@@ -379,7 +380,7 @@ class FantasyCard(
 
     override fun updateGraphic(): AnimatedSprite? {
         val normalized = name.normalize()
-        val base = "assets/images/fantasy_cards/${city.name}"
+        val base = "assets/images/fantasy_cards/ai/${Main.style}/${city.name}"
         val png = "$base/$normalized.png"
         val jpg = "$base/$normalized.jpg"
         val texture = if (File(png).exists()) Texture(png)

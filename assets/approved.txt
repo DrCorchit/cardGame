@@ -58,7 +58,6 @@ Dynamo
 Earth Titan
 Electroshock
 Emissary
-Engineer
 Epocha, Harbinger
 Eriathorn, Gemini
 Excalibur

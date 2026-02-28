@@ -46,6 +46,9 @@ class Main : ApplicationAdapter() {
 
         val cards by lazy { fantasyCards }
 
+        //realistic, digital, digital_color
+        val style = "digital"
+
         val approvedCards by lazy {
             val cardsByName = cards.associateBy { it.name }
 
