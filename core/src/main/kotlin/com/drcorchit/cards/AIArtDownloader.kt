@@ -16,12 +16,12 @@ import java.io.File
 import javax.imageio.ImageIO
 import kotlin.random.Random
 
-class GenerateCardArtChatGPT : ApplicationAdapter() {
+class AIArtDownloader : ApplicationAdapter() {
 
     val cards by lazy { Main.cards }
     val skipExistingCards = true
 
-    fun downloadCardArts(style: String) {
+    fun downloadCardArts(style: AIStyle) {
         println("Sending requests...")
         cards.filter {
             val canonicalFile =
@@ -39,7 +39,7 @@ class GenerateCardArtChatGPT : ApplicationAdapter() {
         LocalAssets.getInstance().load()
 
         for (i in 1..4) {
-            downloadCardArts(Main.style)
+            downloadCardArts(AIStyle.Realistic)
         }
 
         dispose()
@@ -53,6 +53,7 @@ class GenerateCardArtChatGPT : ApplicationAdapter() {
 
         val apiKey = File("api_key_do_not_commit.txt").readLines().first()
         val client = OpenAIOkHttpClient.builder().apiKey(apiKey).build()
+        val style = AIStyle.Realistic
 
         @JvmStatic
         fun main(args: Array<String>) {
@@ -62,15 +63,23 @@ class GenerateCardArtChatGPT : ApplicationAdapter() {
             val prompt2 =
                 "Give me a photorealistic image of a skeletal pirate. Avoid having ships in the background."
             val prompt3 =
-                "Give me a realistic image of two dragons feasting on a carcass, but minimize gore"
+                "Give me a realistic image of two dragons feasting on a carcass, but minimize gore."
+            val prompt4 =
+                "Give me a photorealistic image of a drinking contest between two dwarves with a fight in the background."
 
             for (i in 1..runs) {
-                createImage(prompt1, uniqueFile("assets/images/fantasy_cards/ai/temp"))
+                createImage(prompt4, uniqueFile("assets/images/fantasy_cards/ai/temp"))
                 println("progress: $i/$runs")
             }
         }
 
-        fun makePrompt(card: FantasyCard, style: String): String {
+        enum class AIStyle {
+            Realistic, RealisticColored,
+            Digital, DigitalColored,
+            HandDrawn, HandDrawnColored
+        }
+
+        fun makePrompt(card: FantasyCard, style: AIStyle): String {
             val raceText = when (Race.detectRacialTag(card.tags, card.type)) {
                 "Beast" -> "The image must feature an animal."
                 "Deity" -> "The image must focus on a caucasian human."
@@ -116,19 +125,23 @@ class GenerateCardArtChatGPT : ApplicationAdapter() {
             val colorText = "Allow subtle $color hues to predominate."
 
             return when (style) {
-                "photorealistic" -> "I'm making art for a game which uses a realistic art style." +
+                AIStyle.Realistic -> "I'm making art for a game which uses a realistic art style." +
                     "Please make a photorealistic image for a card named \"${card.name}\". $raceText $factionText" +
                     "Do not include any card labels. Avoid excessive visual clutter in the background."
 
-                "digital" -> "I'm making art for a game which uses a realistic digital art style." +
+                AIStyle.RealisticColored -> "I'm making art for a game which uses a realistic art style." +
+                    "Please make a photorealistic image for a card named \"${card.name}\". $raceText $factionText" +
+                    "Do not include any card labels. Avoid excessive visual clutter in the background. $colorText"
+
+                AIStyle.Digital -> "I'm making art for a game which uses a realistic digital art style." +
                     "Please make a realistic image for a card named \"${card.name}\". $raceText $factionText" +
                     "Do not include any card labels. Avoid excessive visual clutter in the background."
 
-                "digital_colored" -> "I'm making art for a game which uses a realistic digital art style." +
+                AIStyle.DigitalColored -> "I'm making art for a game which uses a realistic digital art style." +
                     "Please make a realistic image for a card named \"${card.name}\". $raceText $factionText" +
                     "Do not include any card labels. Avoid excessive visual clutter in the background. $colorText"
 
-                else -> throw IllegalArgumentException("Flavor not supported: $style")
+                else -> throw IllegalArgumentException("AIStyle not supported: $style")
             }
         }
 
@@ -140,6 +153,7 @@ class GenerateCardArtChatGPT : ApplicationAdapter() {
         }
 
         fun saveImageToFile(image: Image, file: File) {
+            file.parentFile.mkdirs()
             val base64 = image.b64Json().get()
             val bytes = Base64.decode(base64)
             val png = ImageIO.read(ByteArrayInputStream(bytes));
@@ -157,12 +171,12 @@ class GenerateCardArtChatGPT : ApplicationAdapter() {
             response.forEach { saveImageToFile(it, file) }
         }
 
-        fun createImageForCard(card: FantasyCard, style: String) {
+        fun createImageForCard(card: FantasyCard, style: AIStyle) {
             try {
                 print("Getting art for ${card.name}...")
                 val prompt = makePrompt(card, style)
                 val file = uniqueFile(
-                    "assets/images/fantasy_cards/ai/$style/${card.city.name}/${card.name.normalize()}",
+                    "assets/images/fantasy_cards/ai/${style.name}/${card.city.name}/${card.name.normalize()}",
                     "png"
                 )
                 createImage(prompt, file)

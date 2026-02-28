@@ -1,13 +1,7 @@
 package com.drcorchit.cards.lwjgl3;
 
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
-import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
-import com.drcorchit.cards.GenerateCardArtChatGPT;
-import com.drcorchit.cards.GenerateCards;
-import com.drcorchit.cards.Main;
-
-import static com.drcorchit.cards.Main.IMAGE_H;
-import static com.drcorchit.cards.Main.IMAGE_W;
+import com.drcorchit.cards.AIArtDownloader;
 
 /** Launches the desktop (LWJGL3) application. */
 public class GenerateCardArtChatGPTLauncher {
@@ -17,6 +11,6 @@ public class GenerateCardArtChatGPTLauncher {
     }
 
     private static Lwjgl3Application createApplication() {
-        return new Lwjgl3Application(new GenerateCardArtChatGPT(), DisplayCardsLauncher.getDefaultConfiguration());
+        return new Lwjgl3Application(new AIArtDownloader(), DisplayCardsLauncher.getDefaultConfiguration());
     }
 }
