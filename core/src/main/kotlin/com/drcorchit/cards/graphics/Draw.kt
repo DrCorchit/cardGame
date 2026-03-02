@@ -58,7 +58,7 @@ object Draw {
             }
         }
 
-        return LocalAssets.create(output)
+        return LocalAssets.getInstance().create(output)
     }
 
     fun precolorTexture(texture: Texture, color: Color): Texture {
@@ -76,7 +76,7 @@ object Draw {
             }
         }
 
-        return LocalAssets.create(output)
+        return LocalAssets.getInstance().create(output)
     }
 
     //Splits a given image into hue and shading components

@@ -5,7 +5,6 @@ import com.badlogic.gdx.graphics.g2d.NinePatch
 import com.badlogic.gdx.graphics.g2d.TextureRegion
 import com.drcorchit.cards.LocalAssets
 import com.drcorchit.justice.utils.logging.Logger
-import java.io.IOException
 
 object Textures {
 
@@ -80,12 +79,6 @@ object Textures {
     }
 
     fun initTexture(name: String): Texture {
-        val output = LocalAssets.getInstance().getTexture(name)
-        if (output == null) {
-            val error = IOException("Missing Texture: $name")
-            log.error("Texture $name failed to load", error)
-            throw error
-        }
-        return output
+        return LocalAssets.getInstance().create(name)
     }
 }

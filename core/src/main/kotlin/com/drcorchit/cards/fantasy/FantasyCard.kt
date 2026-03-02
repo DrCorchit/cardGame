@@ -380,7 +380,7 @@ class FantasyCard(
 
     override fun updateGraphic(): AnimatedSprite? {
         val normalized = name.normalize()
-        val base = "assets/images/fantasy_cards/ai/${AIArtDownloader.style}/${city.name}"
+        val base = "assets/images/fantasy_cards/cards/ChatGPT/Realistic/${city.name}"
         val png = "$base/$normalized.png"
         val jpg = "$base/$normalized.jpg"
         val texture = if (File(png).exists()) Texture(png)

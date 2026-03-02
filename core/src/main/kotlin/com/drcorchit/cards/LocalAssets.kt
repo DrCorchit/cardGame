@@ -14,33 +14,35 @@ import java.io.File
 import java.util.*
 import java.util.function.Consumer
 import java.util.stream.Collectors
+import kotlin.collections.HashMap
 
 class LocalAssets {
     private val manager = AssetManager()
-    private val localTextures = HashMap<String, Texture>()
+    private val localTextures = HashMap<String, File>()
+    private val textureCache = HashMap<String, Texture>()
+
     private val unusedTextures = HashMap<String, File>()
     private val localFonts = HashMap<String, BitmapFont>()
 
+    fun loadSprite(sprite: File) {
+        val key = sprite.name.lowercase(Locale.getDefault())
+        //val value = create(sprite.path)
+        val oldFile = localTextures.put(key, sprite)
+        unusedTextures[key] = sprite
+        if (oldFile != null) {
+            log.warn("File ${sprite.path} exists in multiple folders. One will be selected at random.")
+        }
+
+        log.debug("Loaded sprite from local resources: ${sprite.path}")
+    }
+
     //Method for loading the assets into the manager
     fun load() {
-        val sprites = ArrayList<File>()
-        artFolder.traverse(Consumer<File?> { file: File? ->
+        artFolder.traverse { file: File? ->
             if (file != null &&
                 (file.getName().endsWith(".png")
                     || file.getName().endsWith(".jpg"))
-            ) sprites.add(file)
-        })
-
-        for (sprite in sprites) {
-            val key = sprite.name.lowercase(Locale.getDefault())
-            val value = create(sprite.path)
-            val oldTexture = localTextures.put(key, value)
-            unusedTextures[key] = sprite
-            if (oldTexture != null) {
-                log.warn("File ${sprite.path} exists in multiple folders. One will be selected at random.")
-            }
-
-            log.debug("Loaded sprite from local resources: ${sprite.path}")
+            ) loadSprite(file)
         }
     }
 
@@ -69,17 +71,29 @@ class LocalAssets {
         return value
     }
 
-    fun getTexture(name: String): Texture? {
+    fun create(name: String): Texture {
         val key = name.lowercase(Locale.getDefault())
+        if (textureCache[key] != null) return textureCache[key]!!
+
+        val file = localTextures[key]!!.path
+        val output = Texture(Gdx.files.internal(file), true)
+        output.setFilter(Texture.TextureFilter.MipMap, Texture.TextureFilter.Linear)
+
         unusedTextures.remove(key)
-        val file = File(key)
-        return localTextures[key]
+        textureCache[file] = output
+        return output
+    }
+
+    fun create(px: Pixmap?): Texture {
+        val output = Texture(px, true)
+        output.setFilter(Texture.TextureFilter.MipMap, Texture.TextureFilter.Linear)
+        return output
     }
 
     //Easy asset disposing, whenever you are done with it just dispose the manager instead of many files.
     fun dispose() {
         manager.dispose()
-        for (texture in localTextures.values) {
+        for (texture in textureCache.values) {
             texture.dispose()
         }
         for (font in localFonts.values) {
@@ -121,18 +135,6 @@ class LocalAssets {
                 }
                 .collect(Collectors.joining("\n"))
             log.info("Listing unused assets: \n$unused")
-        }
-
-        fun create(file: String?): Texture {
-            val output = Texture(Gdx.files.internal(file), true)
-            output.setFilter(Texture.TextureFilter.MipMap, Texture.TextureFilter.Linear)
-            return output
-        }
-
-        fun create(px: Pixmap?): Texture {
-            val output = Texture(px, true)
-            output.setFilter(Texture.TextureFilter.MipMap, Texture.TextureFilter.Linear)
-            return output
         }
     }
 }

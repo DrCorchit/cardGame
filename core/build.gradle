@@ -7,6 +7,8 @@ dependencies {
   api "com.github.tommyettinger:cringe:$cringeVersion"
   api "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
 
+  // Source: https://mvnrepository.com/artifact/com.google.genai/google-genai
+  implementation 'com.google.genai:google-genai:1.41.0'
   // Source: https://mvnrepository.com/artifact/com.openai/openai-java
   implementation 'com.openai:openai-java:4.23.0'
   // https://mvnrepository.com/artifact/com.google.code.gson/gson
@@ -16,7 +18,7 @@ dependencies {
 
   implementation 'com.github.DrCorchit:justice-utils:1.5.1'
 
-  if(enableGraalNative == 'true') {
+  if (enableGraalNative == 'true') {
     implementation "io.github.berstanio:gdx-svmhelper-annotations:$graalHelperVersion"
   }
 }
