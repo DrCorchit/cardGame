@@ -6,7 +6,7 @@ Talisman: 2p [Transylvania, Emplacement] [When played, spawn 4 light_mana.; Tap 
 Vigilante: 2/3p [Transylvania, Human, Slayer] [Whenever an enemy unit gains bounty X, assault it by 1.] [Can't just stand around and do nothing.]
 Witch Hunter: 3/3p [Transylvania, Human, Slayer] [During your turn, you may expend X light_mana to assault the unit with bounty by X.] [If she floats, she's a witch. If she drowns... probably still a witch.]
 Hysteria: 3p [Transylvania, Instant, Crime] [When played, give a unit bounty 2 and assault it by 2.; If the target already had bounty, assault 4 instead.] [No-one is beyond suspicion!]
-Black Market: 3p [Transylvania, Emplacement, Crime] [When played, you may either:#Expend light_mana light_mana and play a common Crime from your deck.#Expend dark_mana dark_mana and play a common Crime from your graveyard.] [Caveat Emptor.]
+Black Market: 3p [Transylvania, Emplacement, Crime] [When played, you may either:#Expend light_mana and play a common Crime from your deck.#Expend dark_mana and play a common Crime from your graveyard.] [Caveat Emptor.]
 
 Night Watch: 4/3p [Transylvania, Human, Slayer] [At allied turn start, give an enemy unit bounty 1.] [There's evil everywhere.]
 Silver Sword: 4p [Transylvania, Equipment, Weapon] [When played, assault 3.; Increase the assault by 1 for every bounty on the target.] [Through the heart, pure and simple.]
