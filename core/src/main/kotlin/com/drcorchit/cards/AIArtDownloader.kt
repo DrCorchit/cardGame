@@ -4,6 +4,7 @@ import com.badlogic.gdx.ApplicationAdapter
 import com.badlogic.gdx.Gdx
 import com.drcorchit.cards.AIUtils.createImage
 import com.drcorchit.cards.AIUtils.createImageForCard
+import com.drcorchit.cards.AIUtils.customPrompts
 import com.drcorchit.cards.AIUtils.model
 import com.drcorchit.cards.AIUtils.uniqueFile
 import com.drcorchit.cards.AIUtils.runs
@@ -65,6 +66,22 @@ class AIArtDownloader : ApplicationAdapter() {
 
         @JvmStatic
         fun main(args: Array<String>) {
+            generateCustomCards()
+        }
+
+        fun generateCustomCards() {
+            val executor = Executors.newFixedThreadPool(model.concurrency)
+
+            customPrompts.map { (key, value) ->
+                Runnable {
+                    for (i in 1..runs) {
+                        createImage(value, uniqueFile("assets/images/fantasy_cards/$key"))
+                    }
+                }
+            }.forEach { executor.execute(it) }
+        }
+
+        fun generateStatusArts() {
             val statuses = mapOf(
                 "stalwart" to "castle",
                 "protector" to "shield",
@@ -76,14 +93,20 @@ class AIArtDownloader : ApplicationAdapter() {
                 "bounty" to "scroll"
             )
 
-            statuses.forEach { (key, value) ->
-                for (i in 1..runs) {
-                    val prompt =
-                        "Give me an icon for the status effect \"$key\". The effect should include the \"$key\" label in a fantasy font, centered below a $value icon."
-                    createImage(prompt, uniqueFile("assets/images/fantasy_cards/statuses/fancy/$key"))
-                    println("progress: $i/$runs")
+            val executor = Executors.newFixedThreadPool(model.concurrency)
+            statuses.map { (key, value) ->
+                Runnable {
+                    for (i in 1..runs) {
+                        val prompt =
+                            "Give me an icon for the status effect \"$key\". The effect should include the \"$key\" label in a fantasy font, centered below a $value icon."
+                        createImage(
+                            prompt,
+                            uniqueFile("assets/images/fantasy_cards/statuses/fancy/$key")
+                        )
+                        println("progress: $i/$runs")
+                    }
                 }
-            }
+            }.forEach { executor.execute(it) }
         }
     }
 }

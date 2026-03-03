@@ -35,16 +35,18 @@ class Main : ApplicationAdapter() {
         const val W = IMAGE_W - (BORDER * 2)
         const val H = IMAGE_H - (BORDER * 2)
 
+        var showStolenArt = false
+
         val spaceCards by lazy {
             SpaceCards.cards + disasters + cardbacks
         }
 
-        val fantasyCards by lazy { FantasyCards.expac1.cards }
+        val fantasyCards by lazy { FantasyCards.baseSet.cards }
 
         //ALL fantasy cards, including expansions and tokens
         val allFantasyCards by lazy { FantasyCards.baseSet.cards + FantasyCards.expac1.cards + FantasyCards.tokens.cards }
 
-        val cards by lazy { fantasyCards }
+        val cards by lazy { allFantasyCards }
 
         val approvedCards by lazy {
             val cardsByName = cards.associateBy { it.name }
@@ -182,6 +184,7 @@ class Main : ApplicationAdapter() {
     override fun render() {
         fun advanceBy(amount: Int) {
             index = MathUtils.modulus(index + amount, cards.size)
+            showStolenArt = false
         }
 
         fun nextUnapproved() {
@@ -211,6 +214,11 @@ class Main : ApplicationAdapter() {
 
         if (Gdx.input.isKeyJustPressed(Input.Keys.S)) nextUnapproved()
         if (Gdx.input.isKeyJustPressed(Input.Keys.W)) toggleApproved()
+
+        if (Gdx.input.isKeyJustPressed(Input.Keys.Z)) {
+            showStolenArt = !showStolenArt
+            actor.drawable.updateGraphic()
+        }
 
         if (Gdx.input.isKeyJustPressed(Input.Keys.SPACE)) actor.drawable.updateGraphic()
 

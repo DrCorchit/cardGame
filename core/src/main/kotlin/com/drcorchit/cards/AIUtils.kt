@@ -33,7 +33,8 @@ object AIUtils {
     val skipExistingCards = true
 
     enum class Model(val model: String, val concurrency: Int) {
-        Gemini("gemini-3-pro-image-preview", 1),
+        GeminiNanoBananaPro("gemini-3-pro-image-preview", 10),
+        GeminiNanoBanana2("gemini-3.1-flash-image-preview", 1),
         ChatGPT("gpt-image-1.5", 4);
 
         override fun toString(): String {
@@ -66,9 +67,14 @@ object AIUtils {
         "volcanic_eruption" to "Give me a ${style.description} image of a large volcano spewing flames and smoke, surrouneded by dark rocky terrain.",
         "makeshift_bomb" to "Give me a ${style.description} image of a crude shrapnel bomb laying on a workman's table.",
         "bloody_slash" to "Give me a ${style.description} image of a dragon slashing wildly with a foreclaw, with blood trailing from the claws.",
-        "zark_used_axe_salesman" to "Give me a ${style.description} image of a half-orc with a fez dressed in a shabby suit.",
+        "zark_used_axe_salesman" to "Give me a ${style.description} image of a half-orc with a fez dressed in a shabby suit with an axe slung across his shoulders.",
+        "doco_the_paladin" to "Give me a ${style.description} image of a firbolg paladin with a large sword and a rubber duck hanging from his pack.",
         "gold_rush" to "Give me a ${style.description} image of three dwarves prospecting for gold, with one dwarf gleefully holding up a gold nugget.",
-        "myla" to "Give me a ${style.description} image of a beardless female dwarf wearing mining equipment with a pickaxe slung across her shoulders."
+        "myla" to "Give me a ${style.description} image of a beardless female dwarf wearing mining equipment with a pickaxe slung across her shoulders.",
+        "hydriad" to "Give me a ${style.description} image of a blue-skinned nymph who swims happily beneath the waters of a small pond. Let the camera angle be underwater, pointing slightly upwards toward the surface of the water from below.",
+        "hector" to "Give me a ${style.description} image of Hector, a victorian era occultist who wields a magic hammer. Hector wears a tunic.",
+        "isaac" to "Give me a ${style.description} image of Isaac, a victorian era occultist who wields a magic dagger. Isaac is of arabic ancestry, and wears a tunic.",
+        "plexi_glass" to "Give me a ${style.description} image of a sleek silver female robot. Make the background a brutalist industrial laboratory."
     )
 
     fun makePrompt(card: FantasyCard, style: AIStyle): String {
@@ -183,7 +189,7 @@ object AIUtils {
         println("model=${model} file=${file} prompt=$prompt")
 
         when (model) {
-            Model.Gemini -> {
+            Model.GeminiNanoBanana2, Model.GeminiNanoBananaPro -> {
                 val response: GenerateContentResponse = geminiClient.models.generateContent(
                     model.model,
                     prompt,
@@ -204,7 +210,6 @@ object AIUtils {
                 val params = ImageGenerateParams.builder()
                     .size(ImageGenerateParams.Size._1536X1024)
                     .prompt(prompt)
-                    .style(ImageGenerateParams.Style.NATURAL)
                     .model(model.model)
                     .build()
 
@@ -226,5 +231,4 @@ object AIUtils {
             println("Error downloading card ${card.name} ($e)")
         }
     }
-
 }

@@ -11,7 +11,7 @@ Lifegiving Rainfall: 2/2p [Avalon, Equipment, Nature] [Haste.; Tap to purify the
 Dryad Grovekeeper: 1/3p [Avalon, Nymph] [When played, spawn earth_mana earth_mana, water_mana water_mana, or air_mana air_mana.; Tap to repeat the "when played" ability.] [Nature always provides.]
 Pixie: 1/3p [Avalon, Fairy] [When played, spawn earth_mana water_mana air_mana.; Tap to repeat the "when played" ability.] [All you need is a little pixie dust.]
 Treant Sage: 1a 2/3p [Avalon, Treant] [When you pass, gain 1 point for each Nature card in your graveyard.] [I think, therefore... hmmm...]
-Bullfrog Army: 3/3p [Avalon, Beast] [You must expend water_mana water_mana to tap this card.; Tap to summon another Bullfrog Army from deck.; If tapped while paired, assault 2 instead.] [Survivors describe their attacks as a ribbeting experience.]
+Bullfrog Army: 3/3p [Avalon, Beast] [You must expend water_mana water_mana to tap this unit.; Tap to summon another Bullfrog Army from deck.; If tapped while paired, assault 2 instead.] [Survivors describe their attacks as a ribbeting experience.]
 Selkie: 3/3p [Avalon, Fairy] [During your turn, if you control a Human, you may expend water_mana water_mana water_mana to summon this card from deck.] [To stay on land past midnight would surely be her death.]
 Mountain Gorilla: 4/3p [Avalon, Beast] [When played, become immune.; Tap and expend X earth_mana to gain X points.] [A mountain of muscle.]
 Warthog: 7/3p [Avalon, Beast] [You must expend earth_mana earth_mana to play this card.] [Oink! Oink!]
@@ -20,14 +20,14 @@ Lightning Strike: 3p [Avalon, Instant, Nature] [When played, assault 2.; You may
 
 Ancient Hamadryad: 2/4p [Avalon, Nymph] [When played, become a protector.; Afterward, you may expend earth_mana water_mana air_mana to play a common card from hand and draw a card.] [The forest will never die!]
 Centaur: 1a 3/4p [Avalon, Beast] [When played, you may expend air_mana air_mana to assault 3.] [A centaur has a man-stomach and a horse-stomach. And of course both want breakfast.]
-Heartwood Treant: 1a 4/4p [Avalon, Treant] [You must expend earth_mana water_mana air_mana to tap this unit.; Tap to become stalwart.] [Some people just can't see the forest for the trees.]
+Heartwood Treant: 1a 4/4p [Avalon, Treant] [You must expend earth_mana water_mana air_mana to tap this unit.; Tap to either:#Become stalwart.#Play a Nature card from hand and draw a card.] [Some people just can't see the forest for the trees.]
 Earth Titan: 9/4p [Avalon, Treant] [You must expend earth_mana earth_mana earth_mana to play this card.] [If a tree falls in the forest and no-one is around to hear it, a treant probably knocked it over by mistake.]
 
-Arondight: 4p [Avalon, Equipment, Weapon, Rare] [When played, assault 4.; This card's assault ignores armor.] [Cuts like a knife through butter.] [removal]
+Arondight: 4p [Avalon, Equipment, Weapon, Rare] [When played, assault 4.; This card's assault ignores armor.] [The sharpest blades belong rightly in the hands of the bravest knights.] [removal]
 Jack Frost: 5/4p [Avalon, Fairy, Rare] [When played, you may expend X water_mana to lock or purify X units.] [Whose woods these are, I think I know...]
 
 Lady of the Lake: 1/5p [Avalon, Human, Rare] [During your turn, you may expend water_mana water_mana water_mana to play this card from your deck.; Tap to play a Weapon from your deck.] [One so fair and full of grace.]
-Lancelot: 2a 5/5p [Avalon, Human, Knight, Rare] [Whenever a Weapon is equipped, destroy an enemy equipment.] [I am never in the dark when I am protecting you.]
+Lancelot: 2a 4/5p [Avalon, Human, Knight, Rare] [Tap to expend X air_mana and assault X.; Whenever you equip a Weapon, untap Lancelot.] [I am never in the dark when I am protecting you.]
 Bamboo Grove: 5p [Avalon, Emplacement, Nature, Rare] [At allied turn start, if not tapped, spawn earth_mana or water_mana.; Tap to expend X earth_mana water_mana and gain 2X points.] [Nothing grows faster, or thicker.]
 
 Puck: 1/6p [Avalon, Fairy, Rare] [Disloyal.; When played, play a unit from your deck whose provision cost exceeds Puck's.] [Give me your hands, if we be friends.]

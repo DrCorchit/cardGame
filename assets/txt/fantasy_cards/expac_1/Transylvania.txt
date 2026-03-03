@@ -11,20 +11,20 @@ Black Market: 3p [Transylvania, Emplacement, Crime] [When played, you may either
 Night Watch: 4/3p [Transylvania, Human, Slayer] [At allied turn start, give an enemy unit bounty 1.] [There's evil everywhere.]
 Silver Sword: 4p [Transylvania, Equipment, Weapon] [When played, assault 3.; Increase the assault by 1 for every bounty on the target.] [Through the heart, pure and simple.]
 
-Buffy: 2/5p [Transylvania, Human, Slayer, Rare] [When played, give a unit bounty 6.] []
+Buffy: 2/5p [Transylvania, Human, Slayer, Rare] [When played, give a unit bounty 6.] [Not so tough now, are ya?]
 
 Hector: 1a 2/6p [Transylvania, Human, Rare] [When played, become stalwart.; Tap to play a common unit from your graveyard.; Hector and Isaac may be tapped together to play any unit from your graveyard instead.] [Never enough time in the end, is there?]
 Isaac: 1a 3/6p [Transylvania, Human, Rare] [When played, become immune.; Tap to play a common unit from your graveyard.; Hector and Isaac may be tapped together to play any unit from your graveyard instead.] [I've discovered to some surprise that I am interested in living.]
 
-Alucard: 1/7p [Transylvania, Vampire, Rare] [Whenever you destroy a unit with bounty, you may summon self from deck and gain points equal to its Bounty.] []
+Alucard: 1/7p [Transylvania, Vampire, Rare] [Whenever you destroy a unit with bounty, you may summon self from deck and gain points equal to its Bounty.] [I am a vampire. Well, a dhampir. Same thing, to most people.]
 
-Saint Germain: 3/8p [Transylvania, Human, Legendary] [When played, play a common card from deck.; This unit's "when played" ability can be triggered while in hand or deck, but if not played by the end of the game, you create a time paradox and lose the game.] []
+Saint Germain: 3/8p [Transylvania, Human, Legendary] [When played, play a common card from deck.; This unit's "when played" ability can be triggered while in hand or deck, but if not played by the end of the game, you create a time paradox and lose the game.] [Say when.]
 
-Van Helsing: 2/8p [Transylvania, Human, Slayer, Rare] [When played, destroy the enemy unit with bounty.] [My life, my job, my curse is to vanquish evil.]
+Van Helsing: 2/8p [Transylvania, Human, Slayer, Rare] [When played, destroy the enemy unit with bounty.] [To extinguish the flames of evil is my only purpose.]
 
-Cynthia Beaumont: 3/9p [Transylvania, Human, Slayer, Legendary] [When played, play a Talisman from your graveyard.; During your turn, you may expend X light_mana to assault the unit with bounty by X.] []
+Cynthia Beaumont: 3/9p [Transylvania, Human, Slayer, Legendary] [When played, play a Talisman from your graveyard.; During your turn, you may expend X light_mana to assault the unit with bounty by X.] [Let's send the freaks back to hell!]
 
-Terrence Beaumont: 6/10p [Transylvania, Human, Slayer, Legendary] [When played, give an enemy unit bounty 2.; During your turn, you may expend X light_mana to assault the unit with bounty by X.] [It's in my blood.]
+Terrence Beaumont: 6/10p [Transylvania, Human, Slayer, Legendary] [When played, give an enemy unit bounty 2.; During your turn, you may expend X light_mana to assault the unit with bounty by X.] [Blood is thicker than water.]
 
 Count Dracula: 7/11p [Transylvania, Vampire, Regent, Legendary] [At allied turn start, gain a counter.; Chaos is increased by 1 for each counter on this card.; Maximum counters: 6.] [Will killing an old man make you less scared of the dark?]
 

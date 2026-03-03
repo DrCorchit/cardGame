@@ -4,7 +4,7 @@ Dynamo: 2/2p [Metropolis, Machine] [At allied turn start, spawn light_mana or ai
 Drone Swarm: 1a 2/2p [Metropolis, Machine] [When played, become a protector.; When played while paired, lock an enemy card instead.] [Strength in numbers.]
 Scribe: 2/3p [Metropolis, Elf] [When played, become immune.; When you pass, gain 1 point for each allied machine you control.] [The records aren't going to keep themselves.]
 Capacitor: 2/2p [Metropolis, Machine] [Haste.; Tap to either:#Expend X light_mana to gain X points.#Expend X air_mana to assault X.] [Brzzzap!]
-Paper Shuffler: 2/2p [Metropolis, Elf] [At allied turn start, you may draw a card from the top of your deck and move a card from your hand to the top or bottom of your deck.] [Paper is actually kinda heavy.]
+Paper Shuffler: 2/2p [Metropolis, Elf] [At allied turn start, you may draw a card and place a card from your hand at the top or bottom of your deck.] [Paper is actually kinda heavy.]
 Cyborg Soldier: 1a 5/2p [Metropolis, Elf] [You must expend air_mana to play this card.] [More machine than man.]
 Electroshock: 2p [Metropolis, Instant, Technology] [When played, you may either:#Lock a card and spawn air_mana air_mana.#Remove all equipments from a unit.] [Therapy not included.]
 Product Recall: 2p [Metropolis, Instant, Technology] [Return a common allied unit to hand, then play a card.] [A class action lawsuit is underway.]

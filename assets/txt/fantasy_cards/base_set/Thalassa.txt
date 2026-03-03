@@ -21,7 +21,7 @@ Carronade: 3p [Thalassa, Equipment, Weapon, Cannon] [If equipped to a Ship, gain
 Harpooner: 3/4p [Thalassa, Human, Pirate] [Tap to assault 1.; Increase the damage by 1 for each adjacent ship.;] [Do you get my thrust?]
 Howitzer: 4p [Thalassa, Equipment, Weapon, Cannon] [If equipped to a Ship, gain haste.; Tap to assault 2.; If equipped to a Ship of X power, intensify the assault by X.] [The biggest gun usually wins.]
 Treasure Galleon: 2/4p [Thalassa, Ship] [Plunder 6.] [Don't put all your gold on one ship.]
-Kraken: 1/4p [Thalassa, Monster] [When played, devour an allied Ship.; If there is another copy in your deck, summon it.] [Now would be a good time to start screaming.]
+Kraken: 1/4p [Thalassa, Monster] [When played, devour an allied Ship.; If there is another copy of that Ship in your deck, play it.] [Now would be a good time to start screaming.]
 
 Moby Dick: 2/4p [Thalassa, Beast, Rare] [Tap to devour an allied Ship.; When discarded, summon self.] [Thar she blows!]
 Davy Jones: 10/4p [Thalassa, Undead, Pirate, Rare] [This unit starts in your graveyard.] [Life is cruel. Why should the afterlife be any different?]
