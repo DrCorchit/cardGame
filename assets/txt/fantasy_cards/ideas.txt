@@ -21,7 +21,7 @@ Clay Golem: 3a 1/3p [Undead] [At allied turn start, gain 1 point.] [Whoever keep
 Feint Attack: 2p [Instant, Warfare] [Replay a common allied unit.] [Gotcha!]
 Butler: 2/3p [Human] [When played, gain 2 points.; When you pass, gain 2 points.] [Anything you require, sir.]
 Universal Soldier: 4/4p [Human, Rare] [At allied turn start, gain 2 points if doomed.] [He's the one who must decide who's to live and who's to die.]
-Armor Up: 6p [Instant, Warfare] [When played, play an armored unit from deck.] []
+Armor Up: 6p [Instant, Warfare] [When played, play an armored unit from your deck.] []
 Captain Ernesto: 4/4p [Human, Rare] [Tap to assault 4 and destroy self.] [What do you mean, down-and-outer?]
 Caravan Merchant: 2/8p [Human, Legendary] [When played, swap a card in hand with a card in your deck.; Tap to repeat the "when played" ability.; When you pass, you need not shuffle your deck next round.] [With so much merchandise, you'll never catch him unawares.]
 #When you pass, half your points carry over.

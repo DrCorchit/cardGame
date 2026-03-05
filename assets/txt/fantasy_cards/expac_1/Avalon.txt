@@ -1,20 +1,20 @@
 Tree Elf: 2/2p [Avalon, Elf] [Harmony: Gain 1 point.] [She knows every tree and calls them by name.]
 Elven Princess: 2/2p [Avalon, Elf] [When you pass (diversity X), gain X points.] [Most of them have at least three or four middle names.]
 Elven Scout: 2/2p [Avalon, Elf, Tribal] [When played, become invisible.; When played, you may expend air_mana to create and summon an Elven Archer.] [They don't always fire a warning shot.]
-Elven Trailblazer: 3/2p [Avalon, Elf, Tribal] [During your turn, you may expend 2X air_mana to create and summon X Elven Archer tokens.] [Elven trails need no markers.]
+Elven Trailblazer: 3/2p [Avalon, Elf, Tribal] [During your turn, you may expend air_mana air_mana to create and summon X Elven Archer tokens.] [Elven trails need no markers.]
 
 Elven Guerilla: 2/3p [Avalon, Elf, Tribal] [Whenever an elf enters the battlefield, gain a counter.; Whenever an elf leaves the battlefield, lose a counter.; During your turn, you may remove X counters to assault X.; Maximum counters: 4.] [Did you hear something?]
-Elven Druid: 3/3p [Avalon, Elf, Tribal] [Whenever an elf enters the battlefield, spawn 1 mana of any color.] [In the elven tongue, they are called "Tree Whisperers".]
+Elven Druid: 3/3p [Avalon, Elf, Tribal] [Whenever an elf enters the battlefield, spawn earth_mana or water_mana.] [In the elven tongue, they are called "Tree Whisperers".]
 Elven Dagger: 3p [Avalon, Equipment, Weapon] [If equipped to an Elf, gain haste.; Tap to assault 3.] [Such exquisite craftmanship.]
 Elven Bow: 3p [Avalon, Equipment, Weapon] [When played, assault 2.; Tap to poison an enemy unit.] [You can pull out the arrow, but you can't suck out the poison.]
 
-Hydriad: 2/4p [Avalon, Nymph] [Harmony: Gain 1 point.; When played, you may expend water_mana water_mana to create a Hydriad.] [They can appear humanoid, but in truth they are formless like water.]
+Hydriad: 2/4p [Avalon, Nymph] [Harmony: Gain 1 point.; When played, you may expend water_mana water_mana to create and summon a Hydriad.] [They can appear humanoid, but in truth they are formless like water.]
 Smoke Signals: 4p [Avalon, Instant, Nature] [Play a common unit from your deck of a race you do not already control.] [Any burning questions?]
 
 Aelshamyr: 2a 2/5p [Avalon, Dragon, Rare] [Harmony: Gain 2 points.] [He starts a forest fire every time he sneezes, but the elves love him anyway.]
 
 Iriviel: 3a 1/6p [Avalon, Elf, Tribal, Rare] [When played, poison an enemy unit.; Whenever you equip an Elven Dagger or Elven Bow, repeat the "when played" ability.] [The only good human is a dead human.]
-Tarzan: 1/6p [Avalon, Human, Tribal, Rare] [When played, assault 2.; During your turn, you may expend earth_mana earth_mana earth_mana to play Tarzan from deck.; Decrease this cost by 1 for each allied Mountain Gorilla.; Tap to move to the bottom of your deck.] [AaaauuEiEiEiEiaaaahhhh!]
+Tarzan: 1/6p [Avalon, Human, Tribal, Rare] [When played, assault 2.; During your turn, you may expend earth_mana earth_mana earth_mana to play Tarzan from your deck.; Decrease this cost by 1 for each allied Mountain Gorilla.; Tap to move to the bottom of your deck.] [AaaauuEiEiEiEiaaaahhhh!]
 
 Queen Aelwyn: 2/7p [Avalon, Elf, Regent, Rare] [When played, expend X air_mana to create and summon X Elven Archer tokens.] [She doesn't hate humans. She merely despises them.]
 Hamadriel: 1a 2/7p [Avalon, Elf, Tribal, Legendary] [When played, gain 1 counter for each allied Elf.; During your turn, you may remove X counters to assault X.; When you pass, gain 1 point for each remaining counter.] [He likes humans. Most of all, he likes killing them.]
@@ -23,8 +23,8 @@ Treant Stalker: 1/8p [Avalon, Treant, Rare] [When played, poison an enemy unit a
 
 Anastasia, Wildshape: 2/9p [Avalon, Human, Mage, Legendary] [When played, play a common Beast from your deck.; Tap to replay an allied Beast.] [Look what I can do!]
 
-Treehomes: 10p [Avalon, Nature, Emplacement, Legendary] [When played, create a Tree Elf on either side of this card.; This card protects adjacent Tree Elves.; When destroyed, destroy adjacent Tree Elves.] [Home sweet home.]
+Treehomes: 10p [Avalon, Nature, Emplacement, Legendary] [When played, create and summon a Tree Elf on either side of this card.; When destroyed or banished, destroy adjacent Tree Elves.] [Home sweet home.]
 
 Grandmother Autumn: 1/11p [Avalon, Fairy, Legendary] [When you pass (diversity X), gain X points.; At allied turn start (diversity 4), play self from your graveyard.] [Behold, the season of fire and feast.]
 
-Yggdrasil: 12p [Avalon, Emplacement, Scenario, Legendary] [This scenario progresses whenever you play an elf.; When played, create an Elven Trailblazer.; Chapter 1: Create an Elven Druid to the right of this card.; Chapter 2: Expend X earth_mana and play one of the top X cards from your deck.] [The roots of the world tree stretch all the way to the underworld.]
+Yggdrasil: 12p [Avalon, Emplacement, Scenario, Legendary] [This scenario progresses whenever you play an elf.; When played, create and summon an Elven Druid.; Chapter 1: Create and summon an Elven Archer.; Chapter 2: Create and summon an Elven Archer.] [The roots of the world tree stretch all the way to the underworld.]

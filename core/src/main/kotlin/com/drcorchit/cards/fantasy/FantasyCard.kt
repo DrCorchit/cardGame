@@ -1,5 +1,6 @@
 package com.drcorchit.cards.fantasy
 
+import com.badlogic.gdx.files.FileHandle
 import com.badlogic.gdx.graphics.Color
 import com.badlogic.gdx.graphics.Texture
 import com.badlogic.gdx.utils.ScreenUtils
@@ -228,7 +229,12 @@ class FantasyCard(
                     imageH / image.getFrames().height
                 }
 
-            image.draw(batch, midWidth, H + BORDER - 10f, imageScale, imageScale, 0f)
+            val x = Math.round(midWidth).toFloat()
+            val y = Math.round(H + BORDER - 10f).toFloat()
+            val w = Math.round(image.getFrames().width * imageScale).toFloat()
+            val h = Math.round(image.getFrames().height * imageScale).toFloat()
+
+            image.draw(batch, x, y, w, h)
         }
 
         Draw.drawRectangle(0f, 0f, IMAGE_W.toFloat(), BORDER, Color.BLACK)
@@ -390,13 +396,14 @@ class FantasyCard(
 
         val png = "$base/$normalized.png"
         val jpg = "$base/$normalized.jpg"
-        val texture = if (File(png).exists()) Texture(png)
-        else if (File(jpg).exists()) Texture(jpg)
+        val texture = if (File(png).exists()) Texture(FileHandle(png), true)
+        else if (File(jpg).exists()) Texture(FileHandle(jpg), true)
         else null
 
         if (texture == null) {
             println("Could not load $png or $jpg")
         } else {
+            texture.setFilter(Texture.TextureFilter.MipMap, Texture.TextureFilter.MipMap)
             image = texture.asSprite().setOffset(Compass.NORTH)
         }
         return image

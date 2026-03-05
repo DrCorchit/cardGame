@@ -19,6 +19,6 @@ Blade Dancer: 2/7p [Human, Knight, Rare] [When played, become immune.; Whenever 
 
 Doco the Paladin: 5/8p [Ogroid, Legendary] [When played, assault 2.; If Rubber Duck is in your graveyard, assault 3 instead.] [Don't ask about the duck.]
 Yorsig, Moomsh Monk: 5/9p [Human, Legendary] [When played, if neither player has passed, draw any card from your deck while your opponent draws the top card from their deck.] [Make me one with everything.]
-Caelo, Teenage Necromancer: 2/9p [Human, Mage, Legendary] [When played, you may play a common unit from your graveyard.; You must decline the "when played" ability in order to tap this unit.; Tap to play a unit from your graveyard.] [It's not just a phase, mom.]
-Meezurk, Arisen: 3/10p [Beast, Dragon, Legendary] [Summon self from deck whenever you play a legendary card.; Summon self from graveyard whenever you destroy a legendary card.] [He knows calculus 4.]
+Caelo, Teenage Necromancer: 2/9p [Human, Mage, Legendary] [When played, you may play a common unit from your graveyard.; You must decline the "when played" ability in order to tap this unit.; Tap to play a common or rare unit from your graveyard.] [It's not just a phase, mom.]
+Meezurk, Arisen: 3/10p [Beast, Dragon, Legendary] [Summon self from your deck whenever you play a legendary card.; Summon self from your graveyard whenever you destroy a legendary card.] [He knows calculus 4.]
 Zark, Used Axe Salesman: 5/11p [Ogroid, Tribal, Legendary] [When played, play a rare Weapon from your graveyard.] [Axe questions later.]

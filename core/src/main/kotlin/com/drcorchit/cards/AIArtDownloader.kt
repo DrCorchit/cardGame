@@ -75,7 +75,7 @@ class AIArtDownloader : ApplicationAdapter() {
             customPrompts.map { (key, value) ->
                 Runnable {
                     for (i in 1..runs) {
-                        createImage(value, uniqueFile("assets/images/fantasy_cards/$key"))
+                        createImage(value, uniqueFile("assets/images/fantasy_cards/cards/ChatGPT/Realistic/$key"))
                     }
                 }
             }.forEach { executor.execute(it) }

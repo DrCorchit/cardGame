@@ -183,8 +183,9 @@ class Main : ApplicationAdapter() {
 
     override fun render() {
         fun advanceBy(amount: Int) {
-            index = MathUtils.modulus(index + amount, cards.size)
             showStolenArt = false
+            card.updateGraphic()
+            index = MathUtils.modulus(index + amount, cards.size)
         }
 
         fun nextUnapproved() {
@@ -217,7 +218,7 @@ class Main : ApplicationAdapter() {
 
         if (Gdx.input.isKeyJustPressed(Input.Keys.Z)) {
             showStolenArt = !showStolenArt
-            actor.drawable.updateGraphic()
+            card.updateGraphic()
         }
 
         if (Gdx.input.isKeyJustPressed(Input.Keys.SPACE)) actor.drawable.updateGraphic()

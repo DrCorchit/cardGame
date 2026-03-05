@@ -1,15 +1,15 @@
 Autognome: 1/2p [Metropolis, Machine] [When played, spawn light_mana air_mana.; Tap to repeat the "when played" ability.] [No job too small.]
-Apprentice: 3/2p [Metropolis, Elf] [When played, you may expend light_mana air_mana to create a student.] [Practice makes perfect.]
+Apprentice: 3/2p [Metropolis, Elf] [When played, you may expend light_mana air_mana to create and summon a Student.] [Practice makes perfect.]
 Steam Engine: 1a 3/2p [Metropolis, Machine] [At allied turn start, you may expend light_mana air_mana to gain 2 points.] [Chitty chitty bang bang.]
 Alchemist: 4/2p [Metropolis, Elf] [When played, you may expend light_mana light_mana to move a card from your deck to the top.] [Many an alchemist has died searching for the elixir of life.]
 
 Cyborg Monk: 1/3p [Metropolis, Elf] [When played, become immune.; Tap to play a common Machine from your graveyard and give it doomed.] [Become the machine you wish to be in the world.]
-Journeyman: 3/3p [Metropolis, Elf] [Tap and expend X light_mana air_mana to create X students.] [The best teachers are those that continue to learn after they are no longer a student.]
-Tutor: 3/3p [Metropolis, Elf] [Whenever you create X Students, gain X points.] [With the right teacher, learning is a joy.]
-Library: 3p [Metropolis, Emplacement, Location] [When played, become stalwart and spawn 4 light_mana.; Afterward, if you control a Student, move a Technology to the top of your deck.; Tap to expend light_mana light_mana light mana and create a student.] [So many books, so little time.]
+Journeyman: 3/3p [Metropolis, Elf] [Tap and expend X light_mana air_mana to Create and summon X students.] [The best teachers are those that continue to learn after they are no longer a student.]
+Tutor: 3/3p [Metropolis, Elf] [Whenever you Create X Students, gain X points.] [With the right teacher, learning is a joy.]
+Library: 3p [Metropolis, Emplacement, Location] [When played, become stalwart and spawn 6 light_mana.; Tap and expend light_mana light_mana light_mana to create and summon a student.] [So many books, so little time.]
 
-Professor: 1/4p [Metropolis, Elf] [When played, create a student.; When you pass, gain 1 point for each allied student.] [Piled higher and deeper.]
-Exhibitor: 3/4p [Metropolis, Elf] [Tap to either:#Expend air_mana air_mana air_mana to play a common Machine from deck.#Expend light_mana light_mana light_mana to play a common Technology from deck.] [It's my life's work!]
+Professor: 1/4p [Metropolis, Elf] [When played, create and summon a student.; When you pass, gain 1 point for each allied student.] [Piled higher and deeper.]
+Exhibitor: 3/4p [Metropolis, Elf] [Tap to either:#Expend air_mana air_mana to play a common Machine from your deck.#Expend light_mana light_mana to play a common Technology from your deck.] [It's my life's work!]
 
 Kick it 'til it Works: 4p [Metropolis, Instant, Technology, Rare] [When played, gain 2 points for each allied Machine that is not locked.; Afterward, purify an allied Machine.] [It was junk anyways.]
 
@@ -28,4 +28,4 @@ Manufactory: 10p [Metropolis, Emplacement, Legendary] [When played, summon two c
 
 Magnum Opus: 1a 4/11p [Metropolis, Machine, Legendary] [When played, become invisible.; Tap to untap any equipped arms.] [The latest and the greatest of them all.]
 
-World's Fair: 12p [Metropolis, Emplacement, Scenario, Legendary] [This scenario progresses whenever you play a Machine.; When played, create two students to the right of this card.; Chapter 1: Give an allied unit Haste and make it immune.; Chapter 2: Spawn 6 light_mana.] [Here's alchemy, and there's agronomy, astronomy, geometry...]
+World's Fair: 12p [Metropolis, Emplacement, Scenario, Legendary] [This scenario progresses whenever you play a Machine.; When played, create and summon a student.; Chapter 1: Give an allied unit Haste and make it immune.; Chapter 2: Untap an allied unit.] [Here's alchemy, and there's agronomy, astronomy, geometry...]

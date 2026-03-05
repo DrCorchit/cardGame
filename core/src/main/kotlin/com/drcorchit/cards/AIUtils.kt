@@ -29,13 +29,13 @@ object AIUtils {
 
     val model = Model.ChatGPT
     val style = AIStyle.Realistic
-    val runs = 5
+    val runs = 3
     val skipExistingCards = true
 
     enum class Model(val model: String, val concurrency: Int) {
         GeminiNanoBananaPro("gemini-3-pro-image-preview", 10),
         GeminiNanoBanana2("gemini-3.1-flash-image-preview", 1),
-        ChatGPT("gpt-image-1.5", 4);
+        ChatGPT("gpt-image-1.5", 2);
 
         override fun toString(): String {
             return "$name model=$model concurrency=$concurrency"
@@ -53,29 +53,58 @@ object AIUtils {
         CartoonishColored("colorful cartoonish")
     }
 
+    val prefix = "Give me a ${style.description} image of"
     val customPrompts = mapOf(
-        "neromir_warrior_dragon" to "Give me a ${style.description} image of a dragon perched on a mountaintop with his wings spread imposingly.",
-        "davy_jones" to "Give me a ${style.description} image of a skeletal pirate. Avoid having ships in the background.",
+        "arondight" to "$prefix a sword being held aloft from the hilt by a caucasian female, with a large lake in the background. The scene is shown from a low camera angle.",
+        "dryad_ranger" to "$prefix a green-skinned dryad clad in leaves, crouching in the undergrowth. She wields a bow threateningly.",
+        "elven_archer" to "$prefix a male elven archer, standing with his bow at the ready atop a craggy hillside.",
+        "fairy_ring" to "$prefix a ring of mushrooms surrounding a dancing fairy, seen from a low camera angle.",
+        "hydriad" to "$prefix a blue-skinned nymph who swims happily beneath the waters of a small pond. Let the camera angle be underwater, pointing slightly upwards toward the surface of the water from below.",
+        "tree_elf" to "$prefix a female elf perched on a tree branch, wearing barely any clothing or carrying any gear.",
+        "undine" to "$prefix an elven woman with pale blue skin, clad in a leaf bikini while wading through shallow water. She faces the camera with a suggestive smile.",
+
+        "codex_veritas" to "$prefix a large open book laying on a black marble table, atop a purple cloth and surrounded by white and yellow particle effects.",
+        "eriathorn_gemini" to "$prefix a male elf wielding green magic, wearing green robes.",
+        "plexi_glass" to "$prefix a sleek silver female robot. Make the background a brutalist industrial laboratory.",
+        "regeneration_weave" to "$prefix a magical woven technology being used to heal an elf's wounded arm.",
+        "shuramorn_gemini" to "$prefix a female elf wielding green magic, wearing green robes with a leather corset.",
+
+        "admiral_boom" to "$prefix a courageous sea captain standing tall on his ship amidst a frightening thunderstorm. The camera views him from a low angle.",
+        "blackbeard" to "$prefix blackbeard, but without any smoke or firecrackers in his beard.",
+        "captain_flint" to "$prefix a pirate captain trying to steer his ship desperately during a torrential rainstorm.",
+        "captain fribley" to "$prefix a pirate captain with a round face and a sneering expression smoking a pipe.",
+        "davy_jones" to "$prefix a skeletal pirate. Avoid having ships in the background.",
+        "davy_jones_locker" to "$prefix a decaying shipwreck on the bottom of the sea.",
+        "howitzer" to "$prefix a large cannon on a sailing ship.",
+        "keel_haul" to "$prefix an unfortunate sailor being keel-hauled, bound with ropes as he is dragged beneath the hull of a ship.",
+        "long_john_silver" to "$prefix Long John Silver, the notorious pirate captain with a hard facial expression and a handcannon leveled threateningly at the camera.",
+        "lower_the_boom" to "$prefix an large iron cannon being fired on the deck of a ship, with a sailor reacting to the explosion. Make sure the cannon is pointing away from the ship, toward the sea.",
+
+        "casimir_blood_rival" to "$prefix Casimir, a victorian era occultist who wields a small magic hammer. Casimir is cleanshaven with long wavy hair, and wears a tunic.",
+        "pogrom" to "$prefix a mob of angry humans with torches storming up to a barricaded victorian-era building.",
+        "raj_blood_rival" to "$prefix Raj, a Victorian era occultist who wields a magic dagger. Raj wears a black turban and tunic, has dark skin, and a thin nose with a thin goatee.",
+
+        "battering_ram" to "$prefix a battering ram. Make sure the ram is lifted up away from the chassis by chains.",
+        "doco_the_paladin" to "$prefix a firbolg paladin with a large sword and a rubber duck hanging from his pack.",
+        "fugg_raulner" to "$prefix an imposing male automaton made of iron.",
+        "meezurk_arisen" to "$prefix a donkey with dragon wings.",
+        "meteorite_strike" to "$prefix a meteor descending through the earth's atmosphere.",
+        "mortar_bomb" to "$prefix a round black bomb with the fuse unlit, laying on a cluttered wooden workbench.",
+        "multitool" to "$prefix a multitool from the medieval era, with no more than 4 attachments.",
+        "queen_of_hearts" to "$prefix a cruel queen clad in a red dress decorated with white diamonds. She draws her finger across her neck, warning of an impending execution.",
+        "skeleton_key" to "$prefix an old key laying atop a cluttered desk.",
+        "zark_used_axe_salesman" to "$prefix a half-orc with a fez dressed in a shabby suit with an axe slung across his shoulders.",
+
+        "bloody_slash" to "$prefix a dragon slashing wildly with a foreclaw, with blood trailing from the claws.",
+        "drinking_contest" to "$prefix a drinking contest between two dwarves with a fight in the background.",
+        "gold_rush" to "$prefix three dwarves prospecting for gold, with one dwarf gleefully holding up a gold nugget.",
+        "myla" to "$prefix a beardless female dwarf wearing mining equipment with a pickaxe slung across her shoulders.",
+        "neromir_warrior_dragon" to "$prefix a dragon perched on a mountaintop with his wings spread imposingly.",
         "scaly_feast" to "Give me a realistic image of two dragons feasting on a carcass, but minimize gore.",
-        "drinking_contest" to "Give me a ${style.description} image of a drinking contest between two dwarves with a fight in the background.",
-        "skeleton_key" to "Give me a ${style.description} image of an old key laying atop a cluttered desk.",
-        "treasure_of_all_treasures" to "Give me a ${style.description} image of a stone hallway filled with gold",
-        "fugg_raulner" to "Give me a ${style.description} image of an imposing male automaton made of iron.",
-        "meezurk_arisen" to "Give me a ${style.description} image of a donkey with dragon wings.",
-        "battering_ram" to "Give me a ${style.description} image of a battering ram.",
-        "snort" to "Give me a ${style.description} image of a black dragon exhaling smoke from his nostrils.",
-        "volcanic_eruption" to "Give me a ${style.description} image of a large volcano spewing flames and smoke, surrouneded by dark rocky terrain.",
-        "makeshift_bomb" to "Give me a ${style.description} image of a crude shrapnel bomb laying on a workman's table.",
-        "bloody_slash" to "Give me a ${style.description} image of a dragon slashing wildly with a foreclaw, with blood trailing from the claws.",
-        "zark_used_axe_salesman" to "Give me a ${style.description} image of a half-orc with a fez dressed in a shabby suit with an axe slung across his shoulders.",
-        "doco_the_paladin" to "Give me a ${style.description} image of a firbolg paladin with a large sword and a rubber duck hanging from his pack.",
-        "gold_rush" to "Give me a ${style.description} image of three dwarves prospecting for gold, with one dwarf gleefully holding up a gold nugget.",
-        "myla" to "Give me a ${style.description} image of a beardless female dwarf wearing mining equipment with a pickaxe slung across her shoulders.",
-        "hydriad" to "Give me a ${style.description} image of a blue-skinned nymph who swims happily beneath the waters of a small pond. Let the camera angle be underwater, pointing slightly upwards toward the surface of the water from below.",
-        "hector" to "Give me a ${style.description} image of Hector, a victorian era occultist who wields a magic hammer. Hector wears a tunic.",
-        "isaac" to "Give me a ${style.description} image of Isaac, a victorian era occultist who wields a magic dagger. Isaac is of arabic ancestry, and wears a tunic.",
-        "plexi_glass" to "Give me a ${style.description} image of a sleek silver female robot. Make the background a brutalist industrial laboratory."
-    )
+        "snort" to "$prefix a black dragon exhaling smoke from his nostrils, with a vivid orange sunset in the background.",
+        "treasure_of_all_treasures" to "$prefix a stone hallway filled with gold",
+        "volcanic_eruption" to "$prefix a large volcano spewing flames and smoke, surrounded by dark rocky terrain.",
+        )
 
     fun makePrompt(card: FantasyCard, style: AIStyle): String {
         val temp = customPrompts[card.name.normalize()]

@@ -6,26 +6,26 @@ Talisman: 2p [Transylvania, Emplacement] [When played, spawn 4 light_mana.; Tap 
 Vigilante: 2/3p [Transylvania, Human, Slayer] [Whenever an enemy unit gains bounty X, assault it by 1.] [Can't just stand around and do nothing.]
 Witch Hunter: 3/3p [Transylvania, Human, Slayer] [During your turn, you may expend X light_mana to assault the unit with bounty by X.] [If she floats, she's a witch. If she drowns... probably still a witch.]
 Hysteria: 3p [Transylvania, Instant, Crime] [When played, give a unit bounty 2 and assault it by 2.; If the target already had bounty, assault 4 instead.] [No-one is beyond suspicion!]
-Black Market: 3p [Transylvania, Emplacement, Crime] [When played, you may either:#Expend light_mana and play a common Crime from your deck.#Expend dark_mana and play a common Crime from your graveyard.] [Caveat Emptor.]
+Black Market: 4p [Transylvania, Emplacement, Crime] [When played, either:#Expend light_mana and play a common Crime from your deck.#Expend dark_mana and play a common Crime from your graveyard.] [Caveat Emptor.]
 
 Night Watch: 4/3p [Transylvania, Human, Slayer] [At allied turn start, give an enemy unit bounty 1.] [There's evil everywhere.]
 Silver Sword: 4p [Transylvania, Equipment, Weapon] [When played, assault 3.; Increase the assault by 1 for every bounty on the target.] [Through the heart, pure and simple.]
 
 Buffy: 2/5p [Transylvania, Human, Slayer, Rare] [When played, give a unit bounty 6.] [Not so tough now, are ya?]
 
-Hector: 1a 2/6p [Transylvania, Human, Rare] [When played, become stalwart.; Tap to play a common unit from your graveyard.; Hector and Isaac may be tapped together to play any unit from your graveyard instead.] [Never enough time in the end, is there?]
-Isaac: 1a 3/6p [Transylvania, Human, Rare] [When played, become immune.; Tap to play a common unit from your graveyard.; Hector and Isaac may be tapped together to play any unit from your graveyard instead.] [I've discovered to some surprise that I am interested in living.]
+Casimir, Blood Rival: 3/6p [Transylvania, Human, Rare] [When played, become immune.; Tap and destroy Raj to play a common or rare unit from your graveyard and give it doomed.] [Sometimes truth is stranger than fiction.]
+Raj, Blood Rival: 1a 3/6p [Transylvania, Human, Rare] [Tap and destroy Casimir to play a common or rare unit from your graveyard and give it doomed.] [The boundary between life and death can be crossed in more than one direction.]
 
-Alucard: 1/7p [Transylvania, Vampire, Rare] [Whenever you destroy a unit with bounty, you may summon self from deck and gain points equal to its Bounty.] [I am a vampire. Well, a dhampir. Same thing, to most people.]
+Alucard: 1/7p [Transylvania, Vampire, Rare] [Whenever you destroy a unit with bounty, you may summon self from your deck and gain points equal to its bounty.] [I am a vampire. Well, a dhampir. Same thing, to most people.]
 
-Saint Germain: 3/8p [Transylvania, Human, Legendary] [When played, play a common card from deck.; This unit's "when played" ability can be triggered while in hand or deck, but if not played by the end of the game, you create a time paradox and lose the game.] [Say when.]
+Saint Germain: 2/8p [Transylvania, Human, Legendary] [When played, become invisible.; Tap to play a common card from your deck.; This unit can be tapped during your opponent's turn.] [Say when.]
 
 Van Helsing: 2/8p [Transylvania, Human, Slayer, Rare] [When played, destroy the enemy unit with bounty.] [To extinguish the flames of evil is my only purpose.]
 
-Cynthia Beaumont: 3/9p [Transylvania, Human, Slayer, Legendary] [When played, play a Talisman from your graveyard.; During your turn, you may expend X light_mana to assault the unit with bounty by X.] [Let's send the freaks back to hell!]
+Cynthia Beaumont: 3/9p [Transylvania, Human, Slayer, Legendary] [When played, play a Talisman from your graveyard.; During your turn, you may expend X light_mana to assault a unit with bounty by X.] [Blood is thicker than water!]
 
-Terrence Beaumont: 6/10p [Transylvania, Human, Slayer, Legendary] [When played, give an enemy unit bounty 2.; During your turn, you may expend X light_mana to assault the unit with bounty by X.] [Blood is thicker than water.]
+Terrence Beaumont: 6/10p [Transylvania, Human, Slayer, Legendary] [When played, give an enemy unit bounty 2.; During your turn, you may expend X light_mana to assault a unit with bounty by X.] [I got your back, sis.]
 
 Count Dracula: 7/11p [Transylvania, Vampire, Regent, Legendary] [At allied turn start, gain a counter.; Chaos is increased by 1 for each counter on this card.; Maximum counters: 6.] [Will killing an old man make you less scared of the dark?]
 
-Pogrom: 12p [Transylvania, Emplacement, Scenario, Legendary] [This scenario progresses whenever you play a Slayer.; When played, create a Vigilante to the right of this card.; Chapter 1: Create and play Gossip.; Chapter 2: Create and play Hysteria.] [We got to kill them afore they kills us!]
+Pogrom: 12p [Transylvania, Emplacement, Scenario, Legendary] [This scenario progresses whenever you play a Slayer.; When played, create and summon a Vigilante to the right of this card.; Chapter 1: Create and play Gossip.; Chapter 2: Create and play Hysteria.] [We got to kill them afore they kills us!]

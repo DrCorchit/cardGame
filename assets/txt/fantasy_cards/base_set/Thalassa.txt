@@ -16,16 +16,16 @@ Schooner: 2/3p [Thalassa, Ship] [Plunder 5.] [Ships are a great place to keep al
 Frigate: 3/3p [Thalassa, Ship] [Whenever you overkill X, gain X points.; Plunder 2.] [This bad boy can fit so many cannons on it.]
 Havoc Corsair: 4/3p [Thalassa, Human, Pirate] [When played, either:#Expend X fire_mana and gain X points.#Expend X water_mana and gain X points.] [A pirate's life for me!]
 Treasure Hunter: 7/3p [Thalassa, Human, Pirate] [You must expend fire_mana water_mana to play this unit.] [Now all I need is a map.]
-Carronade: 3p [Thalassa, Equipment, Weapon, Cannon] [If equipped to a Ship, gain haste.; Tap to assault 3.] [It goes boom.]
+Carronade: 3p [Thalassa, Equipment, Weapon, Cannon] [When played, if equipped to a Ship, gain haste.; Tap to assault 3.] [It goes boom.]
 
 Harpooner: 3/4p [Thalassa, Human, Pirate] [Tap to assault 1.; Increase the damage by 1 for each adjacent ship.;] [Do you get my thrust?]
-Howitzer: 4p [Thalassa, Equipment, Weapon, Cannon] [If equipped to a Ship, gain haste.; Tap to assault 2.; If equipped to a Ship of X power, intensify the assault by X.] [The biggest gun usually wins.]
+Howitzer: 4p [Thalassa, Equipment, Weapon, Cannon] [When played, if equipped to a Ship, gain haste.; Tap to assault 2.; If equipped to a Ship of X power, intensify the assault by X.] [The biggest gun usually wins.]
 Treasure Galleon: 2/4p [Thalassa, Ship] [Plunder 6.] [Don't put all your gold on one ship.]
 Kraken: 1/4p [Thalassa, Monster] [When played, devour an allied Ship.; If there is another copy of that Ship in your deck, play it.] [Now would be a good time to start screaming.]
 
 Moby Dick: 2/4p [Thalassa, Beast, Rare] [Tap to devour an allied Ship.; When discarded, summon self.] [Thar she blows!]
 Davy Jones: 10/4p [Thalassa, Undead, Pirate, Rare] [This unit starts in your graveyard.] [Life is cruel. Why should the afterlife be any different?]
-Yarn-Spinner Calhoun: 6/4p [Thalassa, Human, Pirate, Rare] [When played, both players draw a card. This ability cannot be used if your opponent has passed.;Instead of drawing the top card from your deck, you may expend X water_mana to draw from the top 2X cards instead.; Tap to repeat the "when played" ability.] [Lemme tell ya a tale...]
+Yarn-Spinner Calhoun: 6/4p [Thalassa, Human, Pirate, Rare] [When played, if your opponent has not passed and their hand is not full, both players draw a card.; Instead of drawing the top card from your deck, you may expend X water_mana to draw from the top 2X cards instead.; Tap to repeat the "when played" ability.] [Lemme tell ya a tale...]
 
 Captain Fribley: 5/5p [Thalassa, Human, Pirate, Rare] [When played, you may expend water_mana water_mana to place a unit from your graveyard into your hand, then discard a card.;] [A good captain goes down wit' his ship. But I ain't a good captain, har har!]
 Billy Bones: 6/5p [Thalassa, Human, Pirate, Rare] [When played, search your deck and move any card to the bottom.; When you pass, you need not shuffle your deck next round.] [There's only one 'i' in wisdom...]

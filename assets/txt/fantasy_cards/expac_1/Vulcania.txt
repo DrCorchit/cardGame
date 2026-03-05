@@ -18,7 +18,7 @@ Diamond Mine: 7p [Vulcania, Emplacement, Mine, Rare] [Labor: Gain 2 points and s
 Myla: 1a 2/8p [Vulcania, Dwarf, Rare] [At allied turn start, trigger an adjacent common or rare Mine's Labor ability.] [This is hard work, but I don't mind.]
 
 Mithril Mine: 8p [Vulcania, Emplacement, Mine, Legendary] [Labor: Gain 4 points and make adjacent Dwarves immune.] [The dwarves delved too greedily and too deep.]
-Gold Rush: 9p [Vulcania, Instant, Legendary] [When played, you may expend fire_mana fire_mana fire_mana to play up to 3 Mine or common Dwarf cards from hand, then draw as many cards.] [Start selling shovels.]
-Bloody Slash: 10p [Vulcania, Instant, Instinct, Legendary] [When played, assault X where X is the power of the most powerful dragon you control.; Overkill X: Spawn X fire_mana.] [Might makes right.]
+Bloody Slash: 9p [Vulcania, Instant, Instinct, Legendary] [When played, assault X where X is the power of the most powerful dragon you control.; Overkill X: Spawn X fire_mana.] [Might makes right.]
+Gold Rush: 10p [Vulcania, Instant, Legendary] [When played, you may expend fire_mana fire_mana fire_mana to play up to 3 Mine or common Dwarf cards from hand, then draw as many cards.] [Start selling shovels.]
 Old King Coal: 1a 6/11p [Vulcania, Dwarf, Regent, Legendary] [Tap to trigger the Labor abilities of all allied Mine cards.] [A jolly old soul was he.]
-Volcanic Eruption: 12p [Vulcania, Emplacement, Scenario, Legendary] [This scenario progresses whenever you spawn fire_mana.; When played, create a Sleepy.; Chapter 1: Create a Sleepy.; Chapter 2: Expend X fire_mana and assault X.] [The dwarves describe their mountain as a smoking hot redhead with a fiery personality.]
+Volcanic Eruption: 12p [Vulcania, Emplacement, Scenario, Legendary] [This scenario progresses whenever you spawn fire_mana.; When played, create and summon a Sleepy.; Chapter 1: Create and summon a Sleepy.; Chapter 2: Expend X fire_mana and assault X.] [The dwarves describe their mountain as a smoking hot redhead with a fiery personality.]
