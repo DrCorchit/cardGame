@@ -54,14 +54,35 @@ object AIUtils {
     }
 
     val prefix = "Give me a ${style.description} image of"
+
+    val wotaPrompts = mapOf(
+        "hector" to "$prefix hector, the knight in shining armor. He wears an open helmet with a red plume.",
+        "camilla" to "$prefix camilla, the beguiling red-headed enchantress with a golden tiara and an aqua colored princess gown.",
+        "wynna" to "$prefix wynna, the enchanting amazon with long brown hair and scant leather armor. She wields a hunting bow and has green eyes. A dagger rests at her hip.",
+        "lyle" to "$prefix lyle, the genius alchemist. He has wild white hair lab goggles, a beige linen apron, and black leather gloves.",
+        "smolvi" to "$prefix smolvi, the irish thief who wears a blue cloak. He has a triangular brown hat with a white feather in it, and throwing knives strapped across his chest.",
+        "takulev" to "$prefix takulev, the mysterious gray-skinned ex-monk who wears a black cloak. He has a white beard and eyebrows. His eyes are yellow.",
+
+        "lutis" to "$prefix lutis, the crazed archmage who downed a fifth of vodka and disappeared into the abyss forever.",
+        "constantia" to "$prefix constantia, the beautiful wife of lutis the archmage. She has long straight blonde hair and wears a white and purple ball gown.",
+        "vladimir_ironheart" to "$prefix vladimir ironheart, the medieval russian blacksmith. Give him a crew cut, a brown shirt, black pants, and a leather apron. He should be seen from roughly the knees up, with his hands in his pockets and a sullen expression on his face",
+        "dr_corpseheart" to "$prefix dr. corpseheart, the eccentric surgeon who performs surgery with a butterfly knife. He wears a white bloodstained labcoat and has greasy black hair. Give him a grave expression.",
+        "bonifaz_farflestein" to "$prefix bonifaz farflestein, the eccentric merchant who wears layers of brown and purple robes and a hate with a colorful feather in it. He carries brown leather pouches bag dangling from his waistband.",
+        "natasha_scalyhook" to "$prefix give me an image of natasha, the sexy medieval barmaid who is always slightly drunk and wears slightly too much makeup.",
+        "octicia" to "$prefix octicia, the beautiful witch who has four black tentacles sprouting from her back wears a tight leather dress",
+        "kraken_priest" to "$prefix a dark undead priest in a black robe and hood. Avoid using any crosses or other religious symbols."
+    )
+
     val customPrompts = mapOf(
-        "arondight" to "$prefix a sword being held aloft from the hilt by a caucasian female, with a large lake in the background. The scene is shown from a low camera angle.",
+        "arondight" to "$prefix a sword being held aloft from the hilt by a caucasian woman, with a large lake in the background. The scene is shown from a low camera angle.",
         "dryad_ranger" to "$prefix a green-skinned dryad clad in leaves, crouching in the undergrowth. She wields a bow threateningly.",
+        "dryad_grovekeeper" to "$prefix a green-skinned dryad with magic swirling from her hand. She smiles slyly. Show her midriff.",
         "elven_archer" to "$prefix a male elven archer, standing with his bow at the ready atop a craggy hillside.",
-        "fairy_ring" to "$prefix a ring of mushrooms surrounding a dancing fairy, seen from a low camera angle.",
+        "fairy_ring" to "$prefix a ring of mushrooms surrounding a colorful dancing fairy, seen from a low camera angle.",
         "hydriad" to "$prefix a blue-skinned nymph who swims happily beneath the waters of a small pond. Let the camera angle be underwater, pointing slightly upwards toward the surface of the water from below.",
         "tree_elf" to "$prefix a female elf perched on a tree branch, wearing barely any clothing or carrying any gear.",
-        "undine" to "$prefix an elven woman with pale blue skin, clad in a leaf bikini while wading through shallow water. She faces the camera with a suggestive smile.",
+        "queen_titania" to "$prefix queen titania, illuminated from behind by a sunset in the forest. make the image rainbow colored but don't go overboard.",
+        "undine" to "$prefix a dryad with pale blue skin, clad in a leaves while wading through shallow water. She faces the camera with a smile.",
 
         "codex_veritas" to "$prefix a large open book laying on a black marble table, atop a purple cloth and surrounded by white and yellow particle effects.",
         "eriathorn_gemini" to "$prefix a male elf wielding green magic, wearing green robes.",
@@ -69,7 +90,7 @@ object AIUtils {
         "regeneration_weave" to "$prefix a magical woven technology being used to heal an elf's wounded arm.",
         "shuramorn_gemini" to "$prefix a female elf wielding green magic, wearing green robes with a leather corset.",
 
-        "admiral_boom" to "$prefix a courageous sea captain standing tall on his ship amidst a frightening thunderstorm. The camera views him from a low angle.",
+        "admiral_boom" to "$prefix a courageous admiral standing tall on his ship amidst a frightening thunderstorm. The camera views him from a low angle.",
         "blackbeard" to "$prefix blackbeard, but without any smoke or firecrackers in his beard.",
         "captain_flint" to "$prefix a pirate captain trying to steer his ship desperately during a torrential rainstorm.",
         "captain fribley" to "$prefix a pirate captain with a round face and a sneering expression smoking a pipe.",
@@ -100,11 +121,12 @@ object AIUtils {
         "gold_rush" to "$prefix three dwarves prospecting for gold, with one dwarf gleefully holding up a gold nugget.",
         "myla" to "$prefix a beardless female dwarf wearing mining equipment with a pickaxe slung across her shoulders.",
         "neromir_warrior_dragon" to "$prefix a dragon perched on a mountaintop with his wings spread imposingly.",
+        "pseudodragon" to "$prefix a pseudodragon resting on a wooden desk next to a bottle labeled \"XXX\"",
         "scaly_feast" to "Give me a realistic image of two dragons feasting on a carcass, but minimize gore.",
         "snort" to "$prefix a black dragon exhaling smoke from his nostrils, with a vivid orange sunset in the background.",
         "treasure_of_all_treasures" to "$prefix a stone hallway filled with gold",
         "volcanic_eruption" to "$prefix a large volcano spewing flames and smoke, surrounded by dark rocky terrain.",
-        )
+    )
 
     fun makePrompt(card: FantasyCard, style: AIStyle): String {
         val temp = customPrompts[card.name.normalize()]

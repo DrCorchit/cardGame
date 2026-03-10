@@ -32,7 +32,6 @@ Giant Turtle: 6/5p [Beast, Rare] [When played, roll an additional mana die and a
 Ancient Vampire: 7/5p [Vampire, Rare] [When played, lose 1 point for each light_mana among common or allied mana dice.] [For some, the emo phase lasts a bit longer than others.]
 Necromancy: 5p [Instant, Spell, Rare] [When played, play a common unit from your graveyard.] [The four stages of grief: denial, anger, despair... necromancy?]
 
-Battering Ram: 1a 1/6p [Machine, Rare] [When played, either:#Assault 2.#Destroy an enemy equipment.#Destroy an enemy emplacement.; Tap to repeat the "when played" ability.] [Knock knock.]
 Distressed Damsel: 1/6p [Human, Rare] [When you pass, gain 10 points if this unit is protected.] [My hero!]
 Alpha Wolf: 3/6p [Beast, Rare] [When played, assault 2.; Increase the assault by 1 for each allied Pack Wolf.] [Arooooo!]
 Skeleton Key: 6p [Instant, Rare] [When played, purify a unit.; Afterward, draw a card and play a card.] [Life is an open door.]
@@ -40,9 +39,10 @@ Skeleton Key: 6p [Instant, Rare] [When played, purify a unit.; Afterward, draw a
 Royal Envoy: 1/7p [Human, Rare] [When played, play an instant, equipment, or emplacement from your deck.] [So let it be done!]
 Gravetender: 2/7p [Undead, Rare] [When played, summon all zombies from your graveyard.; Whenever you play a card from your graveyard, summon self from your graveyard.] [Yer only diggin' yer own grave.]
 Royal Guard: 2a 5/7p [Human, Knight, Legendary] [When played, become a protector and doomed.] [They'll have to go through me.]
-Royal Decree: 7p [Instant, Legendary] [When played, play a unit from your deck.] [So let it be written...]
+Royal Decree: 7p [Instant, Rare] [When played, play a unit from your deck.] [So let it be written...]
 Blistering Heatwave: 7p [Instant, Nature, Legendary] [When played, banish any card that is not protected.] [Just when you think it can't get any hotter...]
 
+Battering Ram: 1a 1/8p [Machine, Legendary] [When played, either:#Assault 2.#Destroy an enemy equipment.#Destroy an enemy emplacement.; Tap to repeat the "when played" ability.] [Knock knock.]
 Multitool: 8p [Instant, Weapon, Legendary] [When played, activate any 3 of the following abilities:#Purify a unit.#Lock a card.#Assault 2.#Gain 3 points.] [Why don't YOU own one?]
 Resurrection: 8p [Instant, Spell, Legendary] [When played, play a common or rare unit from your graveyard.] [A good character never stays dead for long.]
 

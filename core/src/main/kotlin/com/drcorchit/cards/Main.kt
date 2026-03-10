@@ -46,7 +46,7 @@ class Main : ApplicationAdapter() {
         //ALL fantasy cards, including expansions and tokens
         val allFantasyCards by lazy { FantasyCards.baseSet.cards + FantasyCards.expac1.cards + FantasyCards.tokens.cards }
 
-        val cards by lazy { allFantasyCards }
+        val cards by lazy { fantasyCards }
 
         val approvedCards by lazy {
             val cardsByName = cards.associateBy { it.name }
