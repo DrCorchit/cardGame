@@ -1,0 +1,20 @@
+#Cheap power for heavy gunships. Low evasion.
+1x U238 Drive MK I          6k | Power output: 39; Passive evasion: 12; When manned, increase evasion to 14.
+1x U238 Drive MK II         7k | Power output: 41; Passive evasion: 11; When manned, increase evasion to 13.
+1x U238 Drive MK III        8k | Power output: 43; Passive evasion: 11; When manned, increase evasion to 13.
+1x U238 Drive MK IV         9k | Power output: 45; Passive evasion: 10; When manned, increase evasion to 12.
+1x U238 Drive MK V         10k | Power output: 47; Passive evasion: 10; When manned, increase evasion to 12.
+
+#High power and evasion for mid-level prices
+1x Deuterium Drive MK I     9k | Power output: 42; Passive evasion: 14; When manned, increase evasion to 17.
+1x Deuterium Drive MK II   10k | Power output: 44; Passive evasion: 13; When manned, increase evasion to 16.
+1x Deuterium Drive MK III  11k | Power output: 46; Passive evasion: 13; When manned, increase evasion to 16.
+1x Deuterium Drive MK IV   12k | Power output: 48; Passive evasion: 12; When manned, increase evasion to 15.
+1x Deuterium Drive MK V    13k | Power output: 50; Passive evasion: 12; When manned, increase evasion to 15.
+
+#Expensive, but high evasion.
+1x Positron Drive 360cc    11k | Power output: 37; Passive evasion: 16; When manned, increase evasion to 20.
+1x Positron Drive 380cc    12k | Power output: 39; Passive evasion: 16; When manned, increase evasion to 20.
+1x Positron Drive 400cc    13k | Power output: 41; Passive evasion: 15; When manned, increase evasion to 19.
+1x Positron Drive 420cc    14k | Power output: 43; Passive evasion: 15; When manned, increase evasion to 19.
+1x Positron Drive 440cc    15k | Power output: 45; Passive evasion: 14; When manned, increase evasion to 18.

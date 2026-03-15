@@ -1,0 +1,54 @@
+Moomsh Addict: 1/2p [Transylvania, Human] [When played, become immune.; Tap to destroy self and play a common Transylvanian unit from your deck.] [Wish I had some moomsh.]
+Snitch: 1/2p [Transylvania, Human, Spy] [Disloyal.; When played, play a common Crime from your graveyard.] [Hey, pssst!]
+Nightcrawler: 2/2p [Transylvania, Vampire] [At allied turn start, either:#Spawn dark_mana.#Expend dark_mana to gain 1 point.] [This is the nightcrawler!]
+Beggar: 2/2p [Transylvania, Human] [At allied turn start (chaos 5), gain 1 point.] [Alms for the poor?]
+Constable: 2/2p [Transylvania, Human] [When played, lock a unit.] [You're under arrest.]
+Hired Muscle: 3/2p [Transylvania, Human, Henchman] [When an adjacent unit is destroyed, summon another Hired Muscle from your deck or graveyard.] [Watch it, twerp.]
+Neighborhood Bully: 4/2p [Transylvania, Human, Henchman] [Chaos 5 is required to play this unit.; When paired, your chaos level is increased by 1. This effect resolves once for all Neighborhood Bully cards.] [Says who? My fist, that's who!]
+Feral Werewolf: 5/2p [Transylvania, Beast] [You must expend dark_mana to play this unit.] [More beast than man.]
+Shiv: 2p [Transylvania, Equipment, Weapon, Crime] [When played, assault 2.; If equipped to a Henchman, assassinate 2 instead.] [In prison, these things are cutting-edge technology.]
+Moomsh: 2p [Transylvania, Instant, Crime] [When played, spawn dark_mana dark_mana and poison an enemy unit.] [The high to die for?]
+Intimidation: 2p [Transylvania, Instant, Crime] [When played, activate any 2 of the following abilities:#Gain 2 points.#Assault 1. #Spawn 2 mana of any colors.] [You can get more of what you want with a kind word and a knife than you can with just a kind word.]
+
+Hypnotist: 1/3p [Transylvania, Vampire, Spy] [Disloyal.; When played, seize a unit with 2 or less power.] [What a captivating performance!]
+Mafia Soldier: 2/3p [Transylvania, Human, Henchman] [When played, become immune.; Whenever you play a Crime, you may spawn 1 mana of any color.; When you pass (chaos X), gain X points.] [Workin' for the man.]
+Street Thug: 4/3p [Transylvania, Human, Henchman] [When played (chaos 5), gain haste.; Tap to lock a card.] [The enemy can't steal our plans if we don't have any plans.]
+Moomsh Dealer: 3/3p [Transylvania, Human, Henchman] [When played, poison a unit.] [First one's on the house.]
+Vampiric Abomination: 4/3p [Transylvania, Vampire] [When played, gain poison.; You must expend dark_mana dark_mana to tap this unit.; Tap to move all statuses on self to another unit.] [The horror!]
+Landlady: 6/3p [Transylvania, Vampire] [When an adjacent unit is destroyed, also destroy self.] [It's a beautiful day for an eviction.]
+Pickpocket: 3p [Transylvania, Instant, Crime] [When played, reroll 6 common or allied mana dice.; Chaos X: gain X points and decrease the reroll amount by X. ] [A fool and his money...]
+
+Hitman: 1/4p [Transylvania, Human, Henchman, Spy] [Disloyal.; When played (chaos X), assassinate X.] [I never hurt nobody that ain't had it comin'.]
+Pyromaniac: 2/4p [Transylvania, Human, Henchman] [When played, become immune.; Tap (chaos X) to assault X.] [Something not being on fire is usually a very easy problem to solve.]
+Bystander: 2/4p [Transylvania, Human] [When played, become immune.; Tap to gain points equal to the provision cost of the most expensive unit you assassinated or seized this turn.] [Oh wow, dinner AND a show!]
+Vampire Aristocrat: 1a 3/4p [Transylvania, Vampire] [Tap and expend X dark mana to assault X.; Whenever you play a human, spawn dark_mana.; Whenever you play a vampire, untap this card.] [I'm a creature of refined taste.]
+
+Inspector Culso: 1/4p [Transylvania, Human, Spy, Rare] [Disloyal.; When played (chaos X), play a card from your deck with a provision cost of X or less.] [With me, surprises are rarely unexpected.]
+The Butcher: 2/4p [Transylvania, Human, Spy, Rare] [Disloyal.; When played, assassinate adjacent units by 3.; This unit can be played between other units.] [Nice to meat you!]
+Maximillian, Slumlord: 1a 4/4p [Transylvania, Human, Caporegime, Rare] [At allied turn start, move one of your opponent's mana dice to the common pool.] [Su casa es mi casa.]
+
+Swapling: 1/5p [Transylvania, Monster, Rare] [Disloyal.; When played, banish an enemy unit. This ability may target invisible units, but not Machines or Ships.] [A face that only a mother could love.]
+Vampire Nightmaster: 2/5p [Transylvania, Vampire, Rare] [When played, either:#Become stalwart and invisible.#Spawn dark_mana dark_mana dark_mana.; Tap to repeat the "when played" ability.] [The night is dark and full of terrors.]
+Joanna the Thrall: 1a 3/5p [Transylvania, Human, Caporegime, Rare] [At allied turn start, either:#Spawn dark_mana for each adjacent vampire.#Expend dark_mana dark_mana and assault 2.] [Some serve willingly.]
+The Dollhouse: 5p [Transylvania, Emplacement, Location, Rare] [When played, become stalwart and play a Moomsh Addict or Landlady from your deck.; Adjacent Moomsh Addict and Landlady units do not destroy themselves.] [If home is where the heart is, then they're homeless.]
+
+The Quartermaster: 1a 1/6p [Transylvania, Human, Spy, Rare] [When played, play a 2 provision cost spy from your deck.; You may expend X dark_mana to increase the provision cost by X.; When you pass, gain 1 point for each enemy Spy.] [Take whatcha need for the job and scram.]
+Nosferatu: 5/6p [Transylvania, Vampire, Rare] [When played, purify and lock an enemy unit.] [Does evil come from within us or from beyond?]
+Chester Zilch: 2/6p [Transylvania, Vampire, Caporegime, Rare] [At allied turn start, trigger one of the following abilities:#Chaos 5: Summon self from your deck.#Chaos 6: Summon self from your graveyard.] [Behind schedule, as usual.]
+
+Scarlet, Made Lady: 1a 4/7p [Transylvania, Human, Caporegime, Rare] [When you pass, trigger one of the following abilities:#Gain 1 point for each allied Henchman unit.#Gain 2 points for each allied Caporegime.#Gain 3 points for each allied Kingpin.] [Wait 'til Big Daddy hears about this!]
+Pandemonium: 7p [Transylvania, Instant, Crime, Rare] [Echo.; When played, choose three cards from your deck and play one at random. Return the others to your deck and shuffle.; While in your graveyard, Chaos is increased by 1.] [Pandemonium did not reign; it poured.]
+Frankenstein's Monster: 12/7p [Transylvania, Undead, Rare] [You must expend dark_mana dark_mana dark_mana dark_mana to play this card.] [It's aliiiiive!]
+Debutante Ball: 7p [Transylvania, Instant, Legendary] [Play a Transylvanian unit from your deck and gain one of the following effects:#If it's a common Human, make it stalwart.#If it's a common Vampire, make it invisible.] [Be there or be square.]
+
+Molgrippe, Master Assassin: 1/8p [Transylvania, Human, Henchman, Legendary] [When played, assault 6.; When played (disloyal), assassinate 6.] [The anomaly will be corrected momentarily.]
+Grim Reaper: 2/8p [Transylvania, Undead, Legendary] [When played (chaos 6), assassinate 12.] [The reaper comes for us all.]
+The Heist: 8p [Transylvania, Instant, Crime, Legendary] [When played, lose X points and seize X.; You cannot play this card if your score is less than X.] [The perfect crime.]
+
+Jailbreak: 9p [Transylvania, Instant, Crime, Legendary] [When played (chaos X) play a Transylvanian unit from your graveyard with a provision cost of X or less.; Increase the maximum provision cost by 1 for each Crime in your graveyard.] [Breaking out: not just for teenagers anymore.]
+
+Yalmamir, Prince of Crime: 2/10p [Transylvania, Vampire, Kingpin, Regent, Legendary] [Haste.; Tap and expend X dark_mana to seize X.; Whenever you play a Crime, untap this card.] [A single incompetent enemy is worth a thousand incompetent friends.]
+Gladys the Glorious: 3/10p [Transylvania, Vampire, Kingpin, Legendary] [When played, you may expend 2X dark_mana to play X common Crimes or Henchmen from your graveyard.] [Crime DOES pay.]
+
+Big Daddy: 1/11p [Transylvania, Human, Kingpin, Legendary] [When played (chaos X), seize up to 3 enemy units with a combined power less than or equal to X.] [More for me!]
+Phlegmtooth, Sewer Dragon: 7/11p [Transylvania, Dragon, Legendary] [Tap to poison adjacent units.; For each unit poisoned, also poison an enemy unit.] [He thought he could handle riding the dragon.]

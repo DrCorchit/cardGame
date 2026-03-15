@@ -1,0 +1,36 @@
+#Avalon
+#Further ideas: Seelie/Unseelie Court, Snow White?
+#Untap adjacent common units.;
+
+#Metropolis
+
+#Thalassa
+Blackblood Skald: 4/4p [Thalassa, Human, Pirate] [At allied turn start, draw a card. If it was common, discard it. Otherwise, move it to the bottom of your deck.] []
+#Moby Dick characters, Norse Pantheon, more gold warfare cards, Charybdis, Loch Ness Monster, Hafgufa, Hydra, Leviathan, Atlantis
+#https://en.wikipedia.org/wiki/Sea_monster#Examples
+
+#Transylvania
+Harlequin: 3/2p [Transylvania, Human, Henchman] [At allied turn start, reroll an enemy mana die.] [Tricked ya again!]
+
+#Vulcania
+
+
+#Unaffiliated
+House Elf: 6/3p [Elf] [You must control an emplacement to play this card.] [Master has given <name redacted> a sock!]
+Clay Golem: 3a 1/3p [Undead] [At allied turn start, gain 1 point.] [Whoever keeps making these, please stop.]
+Feint Attack: 2p [Instant, Warfare] [Replay a common allied unit.] [Gotcha!]
+Butler: 2/3p [Human] [When played, gain 2 points.; When you pass, gain 2 points.] [Anything you require, sir.]
+Universal Soldier: 4/4p [Human, Rare] [At allied turn start, gain 2 points if doomed.] [He's the one who must decide who's to live and who's to die.]
+Armor Up: 6p [Instant, Warfare] [When played, play an armored unit from your deck.] []
+Captain Ernesto: 4/4p [Human, Rare] [Tap to assault 4 and destroy self.] [What do you mean, down-and-outer?]
+Caravan Merchant: 2/8p [Human, Legendary] [When played, swap a card in hand with a card in your deck.; Tap to repeat the "when played" ability.; When you pass, you need not shuffle your deck next round.] [With so much merchandise, you'll never catch him unawares.]
+#When you pass, half your points carry over.
+
+Pad monsters:
+Echidna, X Alraune, Siren, Lilith, Archangel
+Gigas, Highlander, Siegfried, Vampire, Valkyrie
+Phoenix, Fenrir, Zeal
+Shaitan, Oceanid, Undine, Thanatos, Genie
+Yeti, Mermaid
+
+Paracelsus believed that each of the four classical elements—earth, water, air and fire—is inhabited by different categories of elemental spirits, liminal creatures that share our world: gnomes, undines, sylphs and salamanders respectively

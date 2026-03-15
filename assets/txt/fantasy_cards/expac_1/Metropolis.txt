@@ -1,0 +1,31 @@
+Autognome: 1/2p [Metropolis, Machine] [When played, spawn light_mana air_mana.; Tap to repeat the "when played" ability.] [No job too small.]
+Apprentice: 3/2p [Metropolis, Elf] [When played, you may expend light_mana air_mana to create and summon a Student.] [Practice makes perfect.]
+Steam Engine: 1a 3/2p [Metropolis, Machine] [At allied turn start, you may expend light_mana air_mana to gain 2 points.] [Chitty chitty bang bang.]
+Alchemist: 4/2p [Metropolis, Elf] [When played, you may expend light_mana light_mana to move a card from your deck to the top.] [Many an alchemist has died searching for the elixir of life.]
+
+Cyborg Monk: 1/3p [Metropolis, Elf] [When played, become immune.; Tap to play a common Machine from your graveyard and give it doomed.] [Become the machine you wish to be in the world.]
+Journeyman: 3/3p [Metropolis, Elf] [Tap and expend X light_mana air_mana to Create and summon X students.] [The best teachers are those that continue to learn after they are no longer a student.]
+Tutor: 3/3p [Metropolis, Elf] [Whenever you Create X Students, gain X points.] [With the right teacher, learning is a joy.]
+Library: 3p [Metropolis, Emplacement, Location] [When played, become stalwart and spawn 6 light_mana.; Tap and expend light_mana light_mana light_mana to create and summon a student.] [So many books, so little time.]
+
+Professor: 1/4p [Metropolis, Elf] [When played, create and summon a student.; When you pass, gain 1 point for each allied student.] [Piled higher and deeper.]
+Exhibitor: 3/4p [Metropolis, Elf] [Tap to either:#Expend air_mana air_mana to play a common Machine from your deck.#Expend light_mana light_mana to play a common Technology from your deck.] [It's my life's work!]
+
+Kick it 'til it Works: 4p [Metropolis, Instant, Technology, Rare] [When played, gain 2 points for each allied Machine that is not locked.; Afterward, purify an allied Machine.] [It was junk anyways.]
+
+Opusculum: 1/5p [Metropolis, Machine, Rare] [Whenever this card is moved to the top of your deck, spawn air_mana or light_mana.; Whenever you pass, you may summon this unit from your deck.] [Any fool can use a computer. Many do.]
+Left Arm: 2/5p [Metropolis, Machine, Arm, Equipment, Rare] [Tap to spawn 6 light_mana or 6 air_mana.] [Not to be underestimated.]
+
+Magnetron: 6p [Metropolis, Instant, Technology, Rare] [When played, damage a unit by 5. If it has armor, destroy it instead.] [Never ask a physicist to explain how magnets actually work.]
+
+Plexi Glass: 5/7p [Metropolis, Machine, Rare] [At allied turn start, you may either:#Spawn light_mana light_mana.#Spawn air_mana.] [Sometimes autognomes need a feminine touch.]
+
+Right Arm: 2/8p [Metropolis, Machine, Arm, Equipment, Legendary] [Tap to assault 10.] [It packs a whallop.]
+
+Fugg Raulner: 2a 5/9p [Metropolis, Machine, Mage, Legendary] [When played, become invisible.; At allied turn start, you may either:#Become invisible and spawn light_mana.; #Purify self and spawn air_mana air_mana.] [Beep boop.]
+
+Manufactory: 10p [Metropolis, Emplacement, Legendary] [When played, summon two copies of a common Machine from your graveyard.] [Our work is never over.]
+
+Magnum Opus: 1a 4/11p [Metropolis, Machine, Legendary] [When played, become invisible.; Tap to untap any equipped arms.] [The latest and the greatest of them all.]
+
+World's Fair: 12p [Metropolis, Emplacement, Scenario, Legendary] [This scenario progresses whenever you play a Machine.; When played, create and summon a student.; Chapter 1: Give an allied unit Haste and make it immune.; Chapter 2: Untap an allied unit.] [Here's alchemy, and there's agronomy, astronomy, geometry...]

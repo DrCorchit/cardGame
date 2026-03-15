@@ -1,0 +1,9 @@
+1x Standard Mainframe    2k 5p | Targeting: 6; Hacking: 0; Firewall: 20; When manned, attempt to hack an enemy system.
+1x Seek-n-Destroy       5k 7p | Targeting: 8; Hacking: 3; Firewall: 20; When manned, attempt to hack an enemy system.
+1x WeebOS               7k 10p | Targeting: 4; Hacking: 9; Firewall: 25; When manned, attempt to hack an enemy system.
+1x Nemesis AI           10k 12p | Targeting: 12; Hacking: 3; Firewall: 20; When manned, attempt to hack an enemy system.
+1x Iron Curtain         12k 15p | Targeting: 8; Hacking: 6; Firewall: 30; When manned, attempt to hack an enemy system.
+
+1x Haxorz 1337.1        5k 8p  | Targeting: 4; Hacking: 9; Firewall: 15; When manned, attempt to hack an enemy system.
+1x Haxorz 1337.2       7k 10p | Targeting: 6; Hacking: 12; Firewall: 15; When manned, attempt to hack an enemy system.
+1x Haxorz 1337.3       10k 12p | Targeting: 8; Hacking: 15; Firewall: 15; When manned, attempt to hack an enemy system.

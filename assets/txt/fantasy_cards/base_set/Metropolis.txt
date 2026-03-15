@@ -1,0 +1,53 @@
+Automaton: 2/2p [Metropolis, Machine] [At allied turn start, either:#Spawn air_mana.#Expend air_mana to gain 1 point.] [YES MASTER]
+Solar Panel: 2/2p [Metropolis, Machine] [At allied turn start, either:#Spawn light_mana.#Expend light_mana to gain 1 point.] [These things have a bright future.]
+Dynamo: 2/2p [Metropolis, Machine] [At allied turn start, spawn light_mana or air_mana.] [Ol' Reliable.]
+Drone Swarm: 1a 2/2p [Metropolis, Machine] [When played, become a protector and doomed.; When played while paired, lock an enemy card instead.] [Strength in numbers.]
+Scribe: 2/3p [Metropolis, Elf] [When played, become immune.; When you pass, gain 1 point for each allied machine you control.] [The records aren't going to keep themselves.]
+Capacitor: 2/2p [Metropolis, Machine] [Haste.; Tap to either:#Expend X light_mana to gain X points.#Expend X air_mana to assault X.] [Brzzzap!]
+Paper Shuffler: 2/2p [Metropolis, Elf] [At allied turn start, you may draw a card and place a card from your hand at the top or bottom of your deck.] [Paper is actually kinda heavy.]
+Cyborg Soldier: 1a 5/2p [Metropolis, Elf] [You must expend air_mana to play this card.] [More machine than man.]
+Electroshock: 2p [Metropolis, Instant, Technology] [When played, either:#Lock a card and spawn air_mana air_mana.#Remove all equipments from a unit.] [Therapy not included.]
+Product Recall: 2p [Metropolis, Instant, Technology] [Return a common allied unit to hand, then play a card.] [A class action lawsuit is underway.]
+
+Messenger: 2/3p [Metropolis, Elf] [When moved to the top of your deck, summon self.] [The barristers send their regards.] [pointslam]
+Battery: 3/3p [Metropolis, Machine] [Tap to spawn light_mana light_mana light_mana or air_mana air_mana air_mana.] [Keeps going and going and... oh it's dead already.]
+Transformer: 4/3p [Metropolis, Machine] [Tap to either:#Convert all light_mana into air_mana.;#Convert all air_mana into light_mana.#Expend X light_mana and gain X points.#Expend X air_mana and gain X points.] [Step up the voltage.]
+Electrical Engineer: 4/3p [Metropolis, Elf] [Tap to either:#Expend light_mana to purify a card.#Expend air_mana to lock a card.] [Fix-it Felix just doesn't have the same ring to it.]
+Archivist: 4/3p [Metropolis, Elf] [When played, look at the top 3 cards from either your or your opponent's deck and move one to the top.; Tap to repeat the "when played" ability.] [Our records are perfect, according to our records.]
+Pulverizer: 1a 7/3p [Metropolis, Machine] [You must expend air_mana air_mana to play this unit.] [Resistance is futile.]
+Power Surge: 3/3p [Metropolis, Equipment, Technology] [When played, if equipped to a common unit, untap it.] [Power is always dangerous.] [utility, combo]
+
+Incinerator: 1a 3/4p [Metropolis, Machine] [When played, banish the top card of your opponent's deck.; Tap to repeat the "when played" ability.] [Ashes to ashes.]
+Artificer: 4/4p [Metropolis, Elf] [When played, destroy an allied Machine and play a common Machine from your graveyard and give it doomed.] [Make it or break it.] [utility]
+Devastator: 1a 9/4p [Metropolis, Machine] [You must expend air_mana air_mana air_mana to play this unit.] [TARGET DESTROYED]
+Schematic: 4p [Metropolis, Instant, Technology] [Play a common Machine from your deck.] [Great, they forgot to attach the parts list again.]
+Armor Weave: 2a 4p [Metropolis, Equipment, Technology] [During your turn, you may expend light_mana to play this card from your deck.] [No way they're getting through all that.]
+
+Thought Police: 1/4p [Metropolis, Elf, Rare] [When moved to the top of your deck, summon self.; Tap to lock an enemy unit.] [Hold that thought.]
+Eriathorn, Gemini: 1a 3/4p [Metropolis, Elf, Rare] [Tap to spawn air_mana air_mana air_mana.; If you control Shuramorn, double that amount.] [Prepare for trouble!]
+Shuramorn, Gemini: 3/4p [Metropolis, Elf, Rare] [When played, become immune.; Tap to spawn light_mana light_mana light_mana.; If you control Eriathorn, double that amount.] [Make it double!]
+
+Censorship: 5p [Metropolis, Instant, Technology, Rare] [When played, banish the top card of your opponent's deck and gain points equal to its provision cost.] [It's a trip down memory hole lane.]
+Epocha, Harbinger: 3/5p [Metropolis, Elf, Rare] [At allied turn start, you may expend light_mana to gain 1 point.; When moved to the top of your deck, summon self.] [When the new age comes, there will be no turning back.]
+Pyros, Inquisitor: 1/5p [Metropolis, Elf, Rare] [When you pass, gain points equal to the most expensive card that has been banished this game.] [Beware the point of no return.]
+Sophos, Ordinator: 2/5p [Metropolis, Elf, Rare] [When played, either:#Play the top card from your deck.#Disloyal. Play the top card from your opponent's deck.] [I am the decider!]
+Ultima, Prototype: 2a 3/5p [Metropolis, Machine, Rare] [Tap to gain 1 point for each Technology in your graveyard.] [It's all in the name of progress.]
+
+Argos, Arbiter: 4/6p [Metropolis, Elf, Rare] [When played, move 2 cards to the top of your deck.; You must expend light_mana light_mana to tap this unit.; Tap to repeat the "when played" ability.; When you pass, you need not shuffle your deck this round.] [No plan is ever perfect. Except mine.]
+X Æ A-12: 2a 4/6p [Metropolis, Machine, Legendary] [Tap to give an allied unit haste.; At allied turn start, you may expend light_mana to untap this card.] [Work it harder, make it better, do it faster, makes us stronger!]
+Time Travel: 6p [Metropolis, Instant, Technology, Legendary] [When played, move a unit to the top of its owner's deck.; Afterward, either:#If it was an allied Elf, spawn 6 light_mana.#If it was an allied Machine, spawn 6 air_mana.] [In the year 2525...]
+Regeneration Weave: 2/6p [Metropolis, Equipment, Technology, Rare] [During your turn, you may expend light_mana to play this card from your deck.; When played, purify the equip target.] [Modern healthcare costs an arm and a leg.]
+
+Android Replica: 1a 4/7p [Metropolis, Machine, Rare] [Tap to trigger an enemy unit's "when played" ability.] [Anything you can do, I can do better.]
+Omega Defender: 12/7p [Metropolis, Machine, Rare] [You must expend air_mana air_mana air_mana air_mana to play this unit.] [Maximum power.]
+Stealth Weave: 2/7p [Metropolis, Equipment, Technology, Legendary] [During your turn, you may expend light_mana to play this card from your deck.; When played, make the equip target invisible. If the equip target is a legendary card, make it immune instead.] [Now you see me, now you don't.]
+Reverse Engineering: 7p [Metropolis, Instant, Technology, Legendary] [Play a card from your opponent's graveyard.] [Sometimes, the imitation is better than the original.]
+
+Codex Veritas: 8p [Metropolis, Emplacement, Book, Legendary] [When played, move 2 cards to the top of your deck.; Tap to play the card at the top of your deck.] [No-one ever reads past the abstract because there's a paywall.]
+System Reboot: 8p [Metropolis, Instant, Rare] [Untap all allied units.] [Have you tried turning it off and on again?]
+
+Logos, Oracle: 1a 4/9p [Metropolis, Elf, Legendary] [Tap to play a card from your deck.] [Know thyself.]
+Teleportation: 9p [Metropolis, Instant, Technology, Legendary] [Echo.; Play a unit from your deck.] [What could possibly go wrong?]
+
+Orthos, Orchestrator: 6/10p [Metropolis, Elf, Legendary] [Tap to untap an allied card.] [Actually, science hasn't gone far enough.]
+Teknos, Grand Artificer: 3/10p [Metropolis, Elf, Legendary] [Haste.; Tap and expend 2X light_mana to play X common machines from your graveyard.] ["Grand Artificer" is a code word for "Huge Nerd"]

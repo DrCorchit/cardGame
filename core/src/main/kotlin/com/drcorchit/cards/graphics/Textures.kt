@@ -5,7 +5,6 @@ import com.badlogic.gdx.graphics.g2d.NinePatch
 import com.badlogic.gdx.graphics.g2d.TextureRegion
 import com.drcorchit.cards.LocalAssets
 import com.drcorchit.justice.utils.logging.Logger
-import java.io.IOException
 
 object Textures {
 
@@ -13,7 +12,8 @@ object Textures {
 
     val white = initTexture("white.png")
 
-    val border = initTexture("border.png")
+    val fantasyBorder = initTexture("border_fantasy.png")
+    val spaceBorder = initTexture("border_space.png")
     val tray = initTexture("paper.png")
     val brushStroke = initTexture("brush_stroke.png")
     val line = initTexture("line.png")
@@ -26,7 +26,35 @@ object Textures {
     val provisionsBlack = initTexture("provisions_black.png")
 
     val land = initTexture("land.png")
+    val air = initTexture("air_sharp.png")
+    val dark = initTexture("dark_sharp.png")
+    val earth = initTexture("earth_sharp.png")
+    val fire = initTexture("fire_sharp.png")
+    val light = initTexture("light_sharp.png")
+    val water = initTexture("water_sharp.png")
+
     val manaWhite = initTexture("mana_white.png")
+
+    val metal = initTexture("metal.jpg")
+    val power = initTexture("power.png")
+    val blackHole= initTexture("black_hole.jpg")
+    val card3Back = initTexture("cardback.jpg")
+
+    //card
+    val cardWithInset = initTexture("card_with_inset.png")
+    val cardWithCutaway = initTexture("card_cutaway.png")
+    val cardWithText = initTexture("card_with_text.png")
+
+    val titleBar = initTexture("title_bar_2.png")
+    val scoreArea = initTexture("score_area.png")
+    val artBorder = initTexture("art_border.png")
+    val textArea = initTexture("text_area.png")
+
+    //card2
+    val border2 = initTexture("border_space.png")
+    val card2SmallWindow = initTexture("card2_small_window.png")
+    val card2LargeWindow = initTexture("card2_large_window.png")
+    val numberBox = initTexture("number_box.png")
 
     //Arrow
     val arrowLeft = initTexture("arrow_left.png")
@@ -51,12 +79,6 @@ object Textures {
     }
 
     fun initTexture(name: String): Texture {
-        val output = LocalAssets.getInstance().getTexture(name)
-        if (output == null) {
-            val error = IOException("Missing Texture: $name")
-            log.error("Texture $name failed to load", error)
-            throw error
-        }
-        return output
+        return LocalAssets.getInstance().create(name)
     }
 }

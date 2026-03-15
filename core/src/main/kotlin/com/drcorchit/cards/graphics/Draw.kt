@@ -58,7 +58,7 @@ object Draw {
             }
         }
 
-        return LocalAssets.create(output)
+        return LocalAssets.getInstance().create(output)
     }
 
     fun precolorTexture(texture: Texture, color: Color): Texture {
@@ -76,7 +76,7 @@ object Draw {
             }
         }
 
-        return LocalAssets.create(output)
+        return LocalAssets.getInstance().create(output)
     }
 
     //Splits a given image into hue and shading components
@@ -346,7 +346,7 @@ object Draw {
     }
 
     fun drawText(x: Float, y: Float, font: BitmapFont?, text: String?): Pair<Float, Float> {
-        return drawText(x, y, font, text, 0f, Compass.CENTER, Color.WHITE)
+        return drawText(x, y, font, text, -1f, Compass.CENTER, Color.WHITE)
     }
 
     fun drawText(

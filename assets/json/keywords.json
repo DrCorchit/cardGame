@@ -1,22 +1,37 @@
 [
   {
-    "name": "Activate",
-    "description": "An ability that can be used once, after the first turn.",
-    "synonyms": ["Activates", "Activated"]
+    "name": "Spawn",
+    "synonyms": ["spawns", "spawned"]
   },
   {
-    "name": "Deactivate",
-    "description": "Re-enable use of the active ability.",
-    "synonyms": ["Deactivates", "Deactivated"]
+    "name": "Expend X",
+    "synonyms": ["expend", "expends", "expended"]
   },
   {
-    "name": "Reactivate",
-    "description": "Retrigger the active ability immediately.",
-    "synonyms": ["Reactivates", "Reactivated"]
+    "name": "Destroy",
+    "synonyms": ["destroys", "destroyed"]
+  },
+  {
+    "name": "Discard",
+    "synonyms": ["discards", "discarded"]
+  },
+  {
+    "name": "Banish",
+    "synonyms": ["Banishes", "Banished"]
+  },
+  {
+    "name": "Assault X",
+    "_description": "Damage a unit by X.",
+    "synonyms": ["Assault", "Assaults", "Assaulted"]
+  },
+  {
+    "name": "Create",
+    "description": "Introduce a card from outside the game.",
+    "synonyms": ["creates"]
   },
   {
     "name": "Haste",
-    "description": "The card can be activated on the turn it is played.",
+    "description": "The card can be tapped on the turn it is played.",
     "synonyms": ["Hasten", "Hastened"]
   },
   {
@@ -25,85 +40,19 @@
     "synonyms": ["Summons", "Summoned"]
   },
   {
-    "name": "Expend X",
-    "description": "Triggers if X land dice are rerolled.",
-    "synonyms": ["Expend", "Expends", "Expended"]
-  },
-  {
-    "name": "Spawn",
-    "description": "Turn a number of land dice to the indicated faces.",
-    "synonyms": ["Spawns", "Spawnd"]
-  },
-  {
-    "name": "Reroll X",
-    "description": "Reroll X common or allied land dice.",
-    "synonyms": ["Reroll", "Rerolls"]
-  },
-  {
-    "name": "Rally X",
-    "description": "Add X points to your score.",
-    "synonyms": ["Rally", "Rallies"]
-  },
-  {
-    "name": "Rout X",
-    "description": "Subtract X points from your score.",
-    "synonyms": ["Rout", "Routs"]
-  },
-  {
-    "name": "Score",
-    "description": "The running total of points gained from Rally or lost from Rout."
-  },
-  {
-    "name": "Protect",
-    "description": "Prevent a unit from being targeted by hostile abilities.",
-    "synonyms": ["Protects", "Protecting", "Protected"]
-  },
-  {
-    "name": "Vulnerable",
-    "description": "The card cannot receive protection."
-  },
-  {
-    "name": "Displace",
-    "description": "Move an opponent's card, normally away from protection."
-  },
-  {
-    "name": "Destroy",
-    "description": "Move a card to the graveyard.",
-    "synonyms": ["Destroys", "Destroyed"]
-  },
-  {
-    "name": "Banish",
-    "description": "Remove a card from the game.",
-    "synonyms": ["Banishes", "Banished"]
-  },
-  {
-    "name": "Assault X",
-    "description": "Destroy an enemy unit of X or less power.",
-    "synonyms": ["Assault", "Assaults", "Assaulted"]
-  },
-  {
     "name": "Assassinate X",
-    "description": "Assault X, bypassing Protection.",
+    "description": "Assault X, bypassing protection and invisibility.",
     "synonyms": ["Assassinate", "Assassinates", "Assassinated"]
   },
   {
-    "name": "Seize X",
-    "description": "Move an enemy unit of X or less power to your battlefield.",
-    "synonyms": ["Seize", "Seizes", "Seized"]
-  },
-  {
-    "name": "Armor",
-    "description": "Increases resistance to Assault, Assassinate, or Seize abilities.",
-    "synonym": ["Armor"]
-  },
-  {
-    "name": "Piercing",
-    "description": "This card's attack ignores armor."
+    "name": "Seize",
+    "description": "Move a unit to its opponent's battlefield.",
+    "synonyms": ["Seize", "seizes", "seized"]
   },
   {
     "name": "Overkill X",
-    "description": "Triggers if an assault or assassination exceeds the target's power by at least X.",
-    "synonyms": ["Overkill"]
+    "description": "Triggers when an assault deals X excess damage.",
+    "synonyms": ["overkill"]
   },
   {
     "name": "Disloyal",
@@ -112,21 +61,50 @@
   },
   {
     "name": "Chaos X",
-    "description": "Triggers if there are at least X unique land types.",
+    "description": "Triggers if there are at least X unique mana types among common and allied mana dice.",
     "synonyms": ["Chaos"]
   },
   {
-    "name": "Armor Up",
-    "description": "Triggers when an armor card is equipped to the unit.",
-    "synonyms": ["armor_up"]
-  },
-  {
-    "name": "Bonded",
-    "description": "Triggers if you control more than one copy of this card."
+    "name": "Paired",
+    "description": "Triggers if you control another copy of this card."
   },
   {
     "name": "Echo",
-    "description": "Move this card to the top of your deck between rounds, once per game."
+    "description": "At round 3, before drawing cards, move this card from your graveyard to the top of your deck."
+  },
+  {
+    "name": "Imbibe",
+    "description": "Triggers whenever a liquor card is equipped."
+  },
+  {
+    "name": "Labor",
+    "description": "Triggers whenever played next to a Dwarf, or a Dwarf is played next to self."
+  },
+  {
+    "name": "Devour",
+    "description": "Destroy a unit and increase own power by its power."
+  },
+  {
+    "name": "Plunder X",
+    "description": "Gain X points when the unit is destroyed.",
+    "synonyms": ["plunder"]
+  },
+  {
+    "name": "Harmony",
+    "description": "Triggers whenever you play a unit with a unique racial category."
+  },
+  {
+    "name": "Diversity X",
+    "description": "Triggers when you control X unique racial categories.",
+    "synonyms": ["diversity"]
+  },
+  {
+    "name": "Devotion",
+    "description": "Triggers if your starting deck contains no unaffiliated cards."
+  },
+  {
+    "name": "Veteran",
+    "description": "Increase this unit's power at the start of the second and third round."
   },
   {
     "name": "Purify",
@@ -138,22 +116,31 @@
   },
   {
     "name": "Poison",
-    "description": "A unit is destroyed if it receives two instances of this status."
+    "description": "Status that destroys a unit if inflicted a second time."
   },
   {
-    "name": "Contract",
-    "description": "Status that causes the opponent to rally 3 when this unit is destroyed or banished."
+    "name": "Doomed",
+    "description": "Status that banishes a card when it leaves the battlefield."
+  },
+  {
+    "name": "Bounty",
+    "description": "When a unit with bounty is destroyed, the unit’s opponent may spawn 1 mana of any color for each bounty status it had."
   },
   {
     "name": "Stalwart",
-    "description": "Status that allows the unit to remain on the battlefield after the round ends."
+    "description": "At round end, units with this status are purified instead of destroyed. Equipment is also destroyed."
   },
   {
-    "name": "Immune",
-    "description": "Status that prevents the unit from receiving additional statuses."
+    "name": "Protector",
+    "description": "Status that prevents adjacent units from being targeted by their opponent. A protector cannot be protected.",
+    "synonyms": ["Protector", "Protection", "Protected"]
   },
   {
     "name": "Invisible",
-    "description": "Status that prevents the unit from being targeted by hostile abilities."
+    "description": "Status that prevents the unit from being targeted."
+  },
+  {
+    "name": "Immune",
+    "description": "Status that prevents receiving additional statuses."
   }
 ]
