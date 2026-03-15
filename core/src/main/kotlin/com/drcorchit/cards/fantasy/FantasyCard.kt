@@ -110,7 +110,7 @@ class FantasyCard(
 
     //We sort by rarity to so we can auto add cards as much as possible when using the MakePlayingCards.com website
     override val outputLocation =
-        "output/images/full/cards/${rarity.name.normalize()}/${name.normalize()}.png"
+        "output/images/full/cards/${city.name.normalize()}/${name.normalize()}.png"
 
     constructor(json: JsonObject) : this(
         json["name"].asString,
@@ -381,7 +381,7 @@ class FantasyCard(
 
     override fun updateGraphic(): AnimatedSprite? {
         val normalized = name.normalize()
-        val base = "assets/images/fantasy_cards/${city.name}"
+        val base = "assets/images/fantasy_cards/cards/other/Stolen/${city.name}"
         val png = "$base/$normalized.png"
         val jpg = "$base/$normalized.jpg"
         val texture = if (File(png).exists()) Texture(png)

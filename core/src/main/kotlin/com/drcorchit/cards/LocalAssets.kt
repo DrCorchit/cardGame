@@ -17,7 +17,7 @@ import java.util.stream.Collectors
 
 class LocalAssets {
     private val manager = AssetManager()
-    private val localTextures = HashMap<String, Texture>()
+    private val localTextures = HashMap<String, File>()
     private val unusedTextures = HashMap<String, File>()
     private val localFonts = HashMap<String, BitmapFont>()
 
@@ -33,8 +33,8 @@ class LocalAssets {
 
         for (sprite in sprites) {
             val key = sprite.name.lowercase(Locale.getDefault())
-            val value = create(sprite.path)
-            val oldTexture = localTextures.put(key, value)
+            //val value = create(sprite.path)
+            val oldTexture = localTextures.put(key, sprite)
             unusedTextures[key] = sprite
             if (oldTexture != null) {
                 log.warn("File ${sprite.path} exists in multiple folders. One will be selected at random.")
@@ -73,14 +73,14 @@ class LocalAssets {
         val key = name.lowercase(Locale.getDefault())
         unusedTextures.remove(key)
         val file = File(key)
-        return localTextures[key]
+        return Texture(FileHandle(localTextures[key]))
     }
 
     //Easy asset disposing, whenever you are done with it just dispose the manager instead of many files.
     fun dispose() {
         manager.dispose()
         for (texture in localTextures.values) {
-            texture.dispose()
+            //texture.dispose()
         }
         for (font in localFonts.values) {
             font.dispose()
