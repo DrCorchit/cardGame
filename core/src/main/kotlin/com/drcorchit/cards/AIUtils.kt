@@ -55,24 +55,6 @@ object AIUtils {
 
     val prefix = "Give me a ${style.description} image of"
 
-    val wotaPrompts = mapOf(
-        "hector" to "$prefix hector, the knight in shining armor. He wears an open helmet with a red plume.",
-        "camilla" to "$prefix camilla, the beguiling red-headed enchantress with a golden tiara and an aqua colored princess gown.",
-        "wynna" to "$prefix wynna, the enchanting amazon with long brown hair and scant leather armor. She wields a hunting bow and has green eyes. A dagger rests at her hip.",
-        "lyle" to "$prefix lyle, the genius alchemist. He has wild white hair lab goggles, a beige linen apron, and black leather gloves.",
-        "smolvi" to "$prefix smolvi, the irish thief who wears a blue cloak. He has a triangular brown hat with a white feather in it, and throwing knives strapped across his chest.",
-        "takulev" to "$prefix takulev, the mysterious gray-skinned ex-monk who wears a black cloak. He has a white beard and eyebrows. His eyes are yellow.",
-
-        "lutis" to "$prefix lutis, the crazed archmage who downed a fifth of vodka and disappeared into the abyss forever.",
-        "constantia" to "$prefix constantia, the beautiful wife of lutis the archmage. She has long straight blonde hair and wears a white and purple ball gown.",
-        "vladimir_ironheart" to "$prefix vladimir ironheart, the medieval russian blacksmith. Give him a crew cut, a brown shirt, black pants, and a leather apron. He should be seen from roughly the knees up, with his hands in his pockets and a sullen expression on his face",
-        "dr_corpseheart" to "$prefix dr. corpseheart, the eccentric surgeon who performs surgery with a butterfly knife. He wears a white bloodstained labcoat and has greasy black hair. Give him a grave expression.",
-        "bonifaz_farflestein" to "$prefix bonifaz farflestein, the eccentric merchant who wears layers of brown and purple robes and a hate with a colorful feather in it. He carries brown leather pouches bag dangling from his waistband.",
-        "natasha_scalyhook" to "$prefix give me an image of natasha, the sexy medieval barmaid who is always slightly drunk and wears slightly too much makeup.",
-        "octicia" to "$prefix octicia, the beautiful witch who has four black tentacles sprouting from her back wears a tight leather dress",
-        "kraken_priest" to "$prefix a dark undead priest in a black robe and hood. Avoid using any crosses or other religious symbols."
-    )
-
     val customPrompts = mapOf(
         "arondight" to "$prefix a sword being held aloft from the hilt by a caucasian woman, with a large lake in the background. The scene is shown from a low camera angle.",
         "dryad_ranger" to "$prefix a green-skinned dryad clad in leaves, crouching in the undergrowth. She wields a bow threateningly.",

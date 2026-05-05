@@ -1,5 +1,5 @@
 Dhampir: 1a 2/2p [Transylvania, Vampire] [At allied turn start, spawn light_mana or dark_mana.] [Afraid of the dark? You should be.]
-Witness: 2/2p [Transylvania, Human, Slayer] [Give an enemy unit bounty 2.; Tap to repeat the "when played" ability.] [I know what I saw.]
+Witness: 2/2p [Transylvania, Human, Slayer] [When played, give an enemy unit bounty 2.] [I know what I saw.]
 Gossip: 2p [Transylvania, Instant, Crime] [You may either:#Spawn light_mana light_mana light_mana and give an enemy unit bounty 2.#Spawn dark_mana dark_mana dark_mana and purify an allied unit.] [You'll never believe what I heard!]
 Talisman: 2p [Transylvania, Emplacement] [When played, spawn 4 light_mana.; Tap and expend X light_mana to gain X points.] [By holy vow and purest light, I proclaim day and banish night!]
 
@@ -13,14 +13,14 @@ Silver Sword: 4p [Transylvania, Equipment, Weapon] [When played, assault 3.; Inc
 
 Buffy: 2/5p [Transylvania, Human, Slayer, Rare] [When played, give a unit bounty 6.] [Not so tough now, are ya?]
 
-Casimir, Blood Rival: 3/6p [Transylvania, Human, Rare] [When played, become immune.; Tap and destroy Raj to play a common or rare unit from your graveyard and give it doomed.] [Sometimes truth is stranger than fiction.]
-Raj, Blood Rival: 1a 3/6p [Transylvania, Human, Rare] [Tap and destroy Casimir to play a common or rare unit from your graveyard and give it doomed.] [The boundary between life and death can be crossed in more than one direction.]
+Casimir, Blood Rival: 3/6p [Transylvania, Human, Rare] [When played, become immune.; Tap and destroy "Raj, Blood Rival" to play a unit from your graveyard and give it doomed.] [Sometimes truth is stranger than fiction.]
+Raj, Blood Rival: 1a 3/6p [Transylvania, Human, Rare] [Tap and destroy "Casimir, Blood Rival" to play a unit from your graveyard and give it doomed.] [The boundary between life and death can be crossed in more than one direction.]
 
-Alucard: 1/7p [Transylvania, Vampire, Rare] [Whenever you destroy a unit with bounty, you may summon self from your deck and gain points equal to its bounty.] [I am a vampire. Well, a dhampir. Same thing, to most people.]
+Alucard: 1/7p [Transylvania, Vampire, Rare] [Fragile.; Whenever you collect a bounty, you may summon self from your graveyard, gain doomed, and gain points equal to the number of bounty status collected.] [I am a vampire. Well, a dhampir. Same thing, to most people.]
 
 Saint Germain: 2/8p [Transylvania, Human, Legendary] [When played, become invisible.; Tap to play a common card from your deck.; This unit can be tapped during your opponent's turn.] [Say when.]
 
-Van Helsing: 2/8p [Transylvania, Human, Slayer, Rare] [When played, destroy the enemy unit with bounty.] [To extinguish the flames of evil is my only purpose.]
+Van Helsing: 2/8p [Transylvania, Human, Slayer, Rare] [When played, destroy an enemy unit with bounty.] [To extinguish the flames of evil is my only purpose.]
 
 Cynthia Beaumont: 3/9p [Transylvania, Human, Slayer, Legendary] [When played, play a Talisman from your graveyard.; During your turn, you may expend X light_mana to assault a unit with bounty by X.] [Blood is thicker than water!]
 
@@ -28,4 +28,4 @@ Terrence Beaumont: 6/10p [Transylvania, Human, Slayer, Legendary] [When played, 
 
 Count Dracula: 7/11p [Transylvania, Vampire, Regent, Legendary] [At allied turn start, gain a counter.; Chaos is increased by 1 for each counter on this card.; Maximum counters: 6.] [Will killing an old man make you less scared of the dark?]
 
-Pogrom: 12p [Transylvania, Emplacement, Scenario, Legendary] [This scenario progresses whenever you play a Slayer.; When played, create and summon a Vigilante to the right of this card.; Chapter 1: Create and play Gossip.; Chapter 2: Create and play Hysteria.] [We got to kill them afore they kills us!]
+Pogrom: 12p [Transylvania, Emplacement, Scenario, Legendary] [This scenario progresses whenever you play a Slayer.; When played, create a Vigilante to the right of this card.; Chapter 1: Create and play Gossip.; Chapter 2: Create and play Hysteria.] [We got to kill them afore they kills us!]

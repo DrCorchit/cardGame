@@ -15,16 +15,16 @@ Gungnir: 4p [Thalassa, Equipment, Weapon, Rare] [When played, assault 4.; If equ
 
 Mjolnir: 5p [Thalassa, Equipment, Weapon, Rare] [When played, assault 5.; If equipped to Thor, assault 10 instead.] [You are not worthy.]
 
-Fenrir: 3/6p [Thalassa, Beast, Rare] [At allied turn start, assault 1.; Intensify the assault by 1 for each allied Pack Wolf or Alpha Wolf.] [Prophesied to kill Odin and eat the world.]
+Fenrir: 3/6p [Thalassa, Beast, Rare] [At allied turn start, assault 1.; Intensify the assault by 1 for each allied card named "Pack Wolf" or "Alpha Wolf".] [Prophesied to kill Odin and eat the world.]
 
 Tyr: 3/7p [Thalassa, Deity, Warrior, Rare] [Veteran.; When played, assault an enemy by Tyr's power.] [The greatest warrior must master peace as well as war.]
-Odin: 5/7p [Thalassa, Deity, Legendary] [When played, discard a card from your deck.; Tap to repeat the "when played" ability.; When you pass, you need not shuffle your deck next round.] [Allfather knows best.]
+Odin: 5/7p [Thalassa, Deity, Legendary] [When played, discard a card from your deck.; Tap to repeat the "when played" ability.; When you pass, you need not shuffle your deck next round.] [There's only one 'i' in wisdom.]
 
-Baldr: 10/8p [Thalassa, Deity, Warrior, Rare] [When Baldr is destroyed, also destroy adjacent units.; When an adjacent unit is destroyed, poison self.] [Surely mistletoe is harmless...]
+Baldr: 10/8p [Thalassa, Deity, Warrior, Rare] [When an adjacent unit is destroyed, poison self.] [Surely mistletoe is harmless...]
 Heimdall: 2/8p [Thalassa, Deity, Warrior, Legendary] [Veteran.; When played, swap your deck and graveyard.; This ability triggers discard abilities of cards in deck.] [I see the end of all things!]
 
 Loki: 3/9p [Thalassa, Deity, Legendary] [When played, become invisible and gain 12 counters.; At allied turn start, you may move 1 counter to an allied card.; When you pass, gain 1 point for every 2 counters on Loki.] [It was just a prank.]
 
 Thor: 4/10p [Thalassa, Deity, Warrior, Legendary] [Veteran.; When played, become stalwart.; This unit's power is increased by 1 for each counter.; Maximum counters: 4.] [Behold, the mightiest of the gods!]
 
-Valhalla: 11p [Thalassa, Emplacement, Scenario, Legendary] [This scenario progresses whenever you play a Warrior.; When played, create and summon a Viking Longship.; Chapter 1: Add 4 counters to an allied card.; Chapter 2: Move a unit from your graveyard to the top of your deck.] [Glory and honor evermore!]
+Valhalla: 11p [Thalassa, Emplacement, Scenario, Legendary] [This scenario progresses whenever you play a Warrior.; When played, create and play a Viking Longship.; Chapter 1: Add 4 counters to an allied card.; Chapter 2: Move a unit from your graveyard to the top of your deck.] [Glory and honor evermore!]

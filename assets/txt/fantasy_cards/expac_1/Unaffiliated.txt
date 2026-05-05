@@ -1,5 +1,5 @@
-Mimic: 2/2p [Monster] [Tap to trigger an allied common unit's "when played" ability.] [Always give treasure chests a good whack first, just in case.]
-Spike Collar: 3p [Instant, Instinct] [When played, lock a card or remove lock from a card.; Whenever you play a Beast, play this card from your graveyard and banish it.] [Better behave yourself.]
+Mimic: 2/2p [Monster] [Tap to trigger an common allied unit's "when played" ability.] [Always give treasure chests a good whack first, just in case.]
+Spike Collar: 3p [Instant, Instinct] [When played, lock a unit or remove lock from a unit.; Whenever you play a Beast, play this card from your graveyard and banish it.] [Better behave yourself.]
 Escaped Convict: 3/2p [Human] [At allied turn start, gain 1 point and bounty 1.] [Nowhere to run, nowhere to hide.]
 Goblin Dancer: 2/2p [Ogroid, Tribal] [When you pass, gain 1 point for each allied Tribal unit.] [You spin my head right round.]
 
@@ -9,7 +9,7 @@ Makeshift Bomb: 3p [Instant, Weapon] [When played, assault 1.; Increase the assa
 Puffball: 3p [Instant, Nature] [When played, poison a unit.; If the target is already poisoned, poison adjacent units.] [Yuck.]
 
 Glass Dagger: 4p [Equipment, Weapon] [When played, assault 2.; Tap to give an allied unit haste.] [They'll never see it coming.]
-Flesh Golem: 6/4p [Undead] [When played, become immune.] [And you thought the clay golems were bad enough.]
+Flesh Golem: 6/4p [Undead] [When played, become immune.] [And you thought the clay golems were bad.]
 
 Rubber Duck: 4p [Instant, Rare] [When played, play a second copy of a common unit you already control.; While in the graveyard, other cards cannot be banished from your graveyard.] [Rumored to have applications beyond software development.]
 Bolases: 5p [Equipment, Weapon, Rare] [When played, lock two cards.; Tap to assault all locked units by 2.] [Feeling a little tied up at the moment?]

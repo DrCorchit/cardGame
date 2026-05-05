@@ -26,7 +26,7 @@
   },
   {
     "name": "Create",
-    "description": "Introduce a card from outside the game.",
+    "description": "Introduce a card to the game.",
     "synonyms": ["creates"]
   },
   {
@@ -82,7 +82,7 @@
   },
   {
     "name": "Devour",
-    "description": "Destroy a unit and increase own power by its power."
+    "description": "Destroy a unit and gain power counters equal to its power."
   },
   {
     "name": "Plunder X",
@@ -107,6 +107,10 @@
     "description": "Increase this unit's power at the start of the second and third round."
   },
   {
+    "name": "Fragile",
+    "description": "When mulliganed, this card moves to the graveyard."
+  },
+  {
     "name": "Purify",
     "description": "Remove all statuses from a unit."
   },
@@ -124,7 +128,7 @@
   },
   {
     "name": "Bounty",
-    "description": "When a unit with bounty is destroyed, the unit’s opponent may spawn 1 mana of any color for each bounty status it had."
+    "description": "Status that lets your opponent spawn mana of any colors when the unit is destroyed."
   },
   {
     "name": "Stalwart",

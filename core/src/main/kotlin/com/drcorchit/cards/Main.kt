@@ -41,7 +41,7 @@ class Main : ApplicationAdapter() {
             SpaceCards.cards + disasters + cardbacks
         }
 
-        val fantasyCards by lazy { FantasyCards.baseSet.cards }
+        val fantasyCards by lazy { FantasyCards.expac1.cards }
 
         //ALL fantasy cards, including expansions and tokens
         val allFantasyCards by lazy { FantasyCards.baseSet.cards + FantasyCards.expac1.cards + FantasyCards.tokens.cards }
@@ -144,6 +144,7 @@ class Main : ApplicationAdapter() {
 
         val count = City.entries.sumOf { factionCount(it) }
         println("Total printable cards: $count")
+        println("MPC thresholds are 396, 504, and 612")
 
         val cardNames = mutableSetOf<String>()
         val cardQuotes = mutableSetOf<String>()
@@ -174,6 +175,8 @@ class Main : ApplicationAdapter() {
                 println("Card has overlap: ${it.name} $overlap")
             }
         }
+
+        println(" ---- End of card issues ---- ")
     }
 
     override fun resize(width: Int, height: Int) {
