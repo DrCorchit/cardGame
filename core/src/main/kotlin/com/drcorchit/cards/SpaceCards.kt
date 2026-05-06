@@ -50,18 +50,4 @@ object SpaceCards {
             else type.file.readLines().mapNotNull { parse(type, it) }
         }
     }
-
-    init {
-        cards.groupBy { it.type }
-            .forEach { group, cards ->
-                val count = cards.sumOf { it.count }
-                val avgPower = cards.sumOf { it.power * it.count } / count.toFloat()
-                val avgCost = cards.sumOf { it.cost * it.count } / count.toFloat()
-                println("${group.text}: $count Average Power: $avgPower Average Cost: $avgCost")
-            }
-        val total = cards.sumOf { it.count }
-        println("Unique: ${cards.size} Total: $total")
-
-
-    }
 }

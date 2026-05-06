@@ -14,6 +14,8 @@ import com.drcorchit.justice.utils.StringUtils.normalize
 import com.drcorchit.justice.utils.logging.Logger
 import com.drcorchit.justice.utils.math.MathUtils
 import java.io.File
+import kotlin.collections.get
+import kotlin.compareTo
 
 /**
  * [com.badlogic.gdx.ApplicationListener] implementation shared by all platforms.
@@ -46,7 +48,7 @@ class Main : ApplicationAdapter() {
         //ALL fantasy cards, including expansions and tokens
         val allFantasyCards by lazy { FantasyCards.baseSet.cards + FantasyCards.expac1.cards + FantasyCards.tokens.cards }
 
-        val cards by lazy { fantasyCards }
+        val cards by lazy { spaceCards }
 
         val approvedCards by lazy {
             val cardsByName = cards.associateBy { it.name }
@@ -68,6 +70,23 @@ class Main : ApplicationAdapter() {
         stage.addActor(actor)
 
         //card sanity checks
+        //runSanityChecks(cards)
+        runSanityChecks2(SpaceCards.cards)
+    }
+
+    fun runSanityChecks2(cards: List<SpaceCard>) {
+        cards.groupBy { it.type }
+            .forEach { (group, cards) ->
+                val count = cards.sumOf { it.count }
+                val avgPower = cards.sumOf { it.power * it.count } / count.toFloat()
+                val avgCost = cards.sumOf { it.cost * it.count } / count.toFloat()
+                println("${group.text}: $count Average Power: $avgPower Average Cost: $avgCost")
+            }
+        val total = cards.sumOf { it.count }
+        println("Unique: ${cards.size} Total: $total")
+    }
+
+    fun runSanityChecks(cards: List<FantasyCard>) {
         val tagsCount = cards.flatMap { it.tags }.groupBy { it }.mapValues { it.value.size }
         tagsCount.forEach { (tag, count) -> println("Tag [$tag]: $count") }
 
@@ -113,12 +132,12 @@ class Main : ApplicationAdapter() {
 
         val immuneCount =
             cards.filter { it.abilityText.contains("When played, become immune.") }.size
-        val immunePercent = immuneCount * 100.0f / cards.size
-        println("\nImmune %: $immuneCount/${cards.size} ($immunePercent%)")
+        val immunePercent = immuneCount * 100.0f / Companion.cards.size
+        println("\nImmune %: $immuneCount/${Companion.cards.size} ($immunePercent%)")
 
         val armorCount = cards.filter { it.armor > 0 }.size
-        val armorPercent = armorCount * 100.0f / cards.size
-        println("Armor %: $armorCount/${cards.size} ($armorPercent%)")
+        val armorPercent = armorCount * 100.0f / Companion.cards.size
+        println("Armor %: $armorCount/${Companion.cards.size} ($armorPercent%)")
 
         //Warhammer deals 2 damage, ignoring armor. I want to see how many units have 2 power and X > 1 armor.
         val whTargets = cardsByType[CardType.Unit]!!
@@ -130,7 +149,7 @@ class Main : ApplicationAdapter() {
             .filter { it.armor > 0 && it.power <= 4 && it.power + it.armor > 4 }.map { it.name }
         println("Arondight target count: ${adTargets.size} $adTargets")
 
-        println("\nTotal unique cards: ${cards.size}")
+        println("\nTotal unique cards: ${Companion.cards.size}")
 
         fun factionCount(city: City): Int {
             val cards = cardsByCity[city]
