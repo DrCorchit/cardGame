@@ -23,6 +23,7 @@ import com.google.gson.JsonObject
 import com.google.gson.JsonPrimitive
 import java.io.File
 import kotlin.math.max
+import kotlin.math.roundToInt
 
 class FantasyCard(
     override val name: String,
@@ -95,7 +96,7 @@ class FantasyCard(
 
     val keywordText = keywords.joinToString("\n") { "${it.name}: ${it.description}" }
 
-    var image: AnimatedSprite? = updateGraphic()
+    var image: AnimatedSprite? = null
 
     val abilityTextH = abilityTextHandler.calculateHeight(abilityTextW)
 
@@ -170,9 +171,11 @@ class FantasyCard(
 
         val scale = W / tray.getFrames().width
         val trayHeight = tray.getFrames().height * scale
+
+        val imageX = W / 2
+        val imageY = (H + BORDER - 10f).roundToInt().toFloat()
         val imageW = W
         val imageH = H + 10 - trayHeight
-        val imageRatio = imageH / imageW
 
         val midWidth = IMAGE_W / 2f
         val midHeight = tray.getFrames().height - 22f
@@ -220,21 +223,7 @@ class FantasyCard(
         //Draw card art
         val image = this.image
         if (image != null) {
-            val sourceImageRatio = image.getFrames().ratio
-            val destImageRatio = imageRatio
-            val imageScale =
-                if (sourceImageRatio > destImageRatio) {
-                    imageW / image.getFrames().width
-                } else {
-                    imageH / image.getFrames().height
-                }
-
-            val x = Math.round(midWidth).toFloat()
-            val y = Math.round(H + BORDER - 10f).toFloat()
-            val w = Math.round(image.getFrames().width * imageScale).toFloat()
-            val h = Math.round(image.getFrames().height * imageScale).toFloat()
-
-            image.draw(batch, x, y, w, h)
+            Draw.drawCardImage(image, imageX, imageY, imageW, imageH)
         }
 
         Draw.drawRectangle(0f, 0f, IMAGE_W.toFloat(), BORDER, Color.BLACK)

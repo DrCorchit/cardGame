@@ -3,7 +3,7 @@ package com.drcorchit.cards
 import com.badlogic.gdx.ApplicationAdapter
 import com.badlogic.gdx.Gdx
 import com.drcorchit.cards.AIUtils.createImage
-import com.drcorchit.cards.AIUtils.createImageForCard
+import com.drcorchit.cards.AIUtils.createImageForFantasyCard
 import com.drcorchit.cards.AIUtils.customPrompts
 import com.drcorchit.cards.AIUtils.model
 import com.drcorchit.cards.AIUtils.uniqueFile
@@ -12,6 +12,8 @@ import com.drcorchit.cards.AIUtils.skipExistingCards
 import com.drcorchit.cards.AIUtils.style
 import com.drcorchit.cards.fantasy.FantasyCards
 import com.drcorchit.cards.graphics.Draw
+import com.drcorchit.cards.space.SpaceCard
+import com.drcorchit.cards.space.SpaceCards
 import com.drcorchit.justice.utils.StringUtils.normalize
 import java.io.File
 import java.util.concurrent.ConcurrentLinkedQueue
@@ -25,7 +27,9 @@ class AIArtDownloader : ApplicationAdapter() {
     override fun create() {
         Draw.batch
         LocalAssets.getInstance().load()
-        downloadCardArts()
+        //downloadFantasyCardArts()
+        //downloadSpaceCardArts()
+        //downloadRobots()
         dispose()
     }
 
@@ -33,7 +37,39 @@ class AIArtDownloader : ApplicationAdapter() {
         Gdx.app.exit()
     }
 
-    fun downloadCardArts() {
+    fun downloadRobots() {
+        val corePrompt =
+            "generate an image of a female cyborg %s. Make her look feminine, with her entire body being made of mechanical parts except for her head. Make sure her entire figure is visible, set against a cyberpunk dance studio. make her pose slightly suggestive."
+        val robotPrompts =
+            mapOf(
+                "rose" to "made of polished red metal and a black rubber accordion joint around the midsection, and dark red hair",
+                "flamme" to "made of polished orange metal, with a look vaguely reminiscent of an orange and black muscle car, and short black hair",
+                "fuschia" to "made of glittery pink metal, with a look vaguely reminiscent of a ballerina in a leotard, and long blonde hair",
+                "violet" to "made of polished purple metal, with a black pattern reminiscent of fishnets on her legs, and long wavy purple hair",
+                "lotus" to "made of polished white metal with black seams running between plates, and platinum blonde hair with bangs",
+                "noir" to "made of polished black and gray worn metal, with a subtle goth look",
+            )
+
+        repeat(1) {
+            robotPrompts.mapValues { String.format(corePrompt, it.value) }
+                .forEach {
+                    val prompt = it.value
+                    val file = uniqueFile("assets/images/robots/${it.key}", "png")
+                    //createImage(prompt, file, true)
+                    println(prompt)
+                }
+        }
+    }
+
+    fun downloadSpaceCardArts() {
+        val cards = SpaceCards.cards
+            .filter { it.type == SpaceCard.Type.Weapon }
+            .forEach {
+                AIUtils.createImageForSpaceCard(it, AIUtils.AIStyle.Realistic)
+            }
+    }
+
+    fun downloadFantasyCardArts() {
         val cards = cards.filter {
             val canonicalFile =
                 File("assets/images/fantasy_cards/cards/${model.name}/${style.name}/${it.city.name}/${it.name.normalize()}.png")
@@ -52,7 +88,7 @@ class AIArtDownloader : ApplicationAdapter() {
                 threadCount.incrementAndGet()
                 for (i in 1..runs) {
                     println("Downloading card ${it.name} $i/$runs")
-                    createImageForCard(it, style)
+                    createImageForFantasyCard(it, style)
                 }
                 println("thread_count: ${threadCount.decrementAndGet()}")
             }
@@ -75,7 +111,7 @@ class AIArtDownloader : ApplicationAdapter() {
             customPrompts.map { (key, value) ->
                 Runnable {
                     for (i in 1..runs) {
-                        createImage(value, uniqueFile("assets/images/fantasy_cards/cards/ChatGPT/Realistic/$key"))
+                        createImage(value, uniqueFile("assets/images/fantasy_cards/cards/ChatGPT/Realistic/$key"), false)
                     }
                 }
             }.forEach { executor.execute(it) }
@@ -101,7 +137,8 @@ class AIArtDownloader : ApplicationAdapter() {
                             "Give me an icon for the status effect \"$key\". The effect should include the \"$key\" label in a fantasy font, centered below a $value icon."
                         createImage(
                             prompt,
-                            uniqueFile("assets/images/fantasy_cards/statuses/fancy/$key")
+                            uniqueFile("assets/images/fantasy_cards/statuses/fancy/$key"),
+                            false
                         )
                         println("progress: $i/$runs")
                     }

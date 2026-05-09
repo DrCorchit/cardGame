@@ -3,6 +3,7 @@ package com.drcorchit.cards
 import com.drcorchit.cards.fantasy.City
 import com.drcorchit.cards.fantasy.FantasyCard
 import com.drcorchit.cards.fantasy.Race
+import com.drcorchit.cards.space.SpaceCard
 import com.drcorchit.justice.utils.StringUtils.normalize
 import com.google.genai.Client
 import com.google.genai.types.Blob
@@ -109,6 +110,13 @@ object AIUtils {
         "treasure_of_all_treasures" to "$prefix a stone hallway filled with gold",
         "volcanic_eruption" to "$prefix a large volcano spewing flames and smoke, surrounded by dark rocky terrain.",
     )
+
+    fun makeSpacePrompt(card: SpaceCard, style: AIStyle): String {
+        return "I'm making art for a futuristic card game which uses a ${style.description} art style." +
+            "Please make a an image for a card named \"${card.name}\". " +
+            "The card art must depict a ${card.type.aiHelp}" +
+            "Do not include any card labels or UI elements. Avoid excessive visual clutter in the background."
+    }
 
     fun makePrompt(card: FantasyCard, style: AIStyle): String {
         val temp = customPrompts[card.name.normalize()]
@@ -218,7 +226,7 @@ object AIUtils {
         file.writeBytes(blob.data().get())
     }
 
-    fun createImage(prompt: String, file: File) {
+    fun createImage(prompt: String, file: File, portrait: Boolean) {
         println("model=${model} file=${file} prompt=$prompt")
 
         when (model) {
@@ -240,8 +248,9 @@ object AIUtils {
             }
 
             Model.ChatGPT -> {
+                val size = if (portrait) ImageGenerateParams.Size._1024X1536 else ImageGenerateParams.Size._1536X1024
                 val params = ImageGenerateParams.builder()
-                    .size(ImageGenerateParams.Size._1536X1024)
+                    .size(size)
                     .prompt(prompt)
                     .model(model.model)
                     .build()
@@ -252,14 +261,27 @@ object AIUtils {
         }
     }
 
-    fun createImageForCard(card: FantasyCard, style: AIStyle) {
+    fun createImageForFantasyCard(card: FantasyCard, style: AIStyle) {
         try {
             val prompt = makePrompt(card, style)
             val file = uniqueFile(
                 "assets/images/fantasy_cards/cards/${model.name}/${style.name}/${card.city.name}/${card.name.normalize()}",
                 "png"
             )
-            createImage(prompt, file)
+            createImage(prompt, file, false)
+        } catch (e: Exception) {
+            println("Error downloading card ${card.name} ($e)")
+        }
+    }
+
+    fun createImageForSpaceCard(card: SpaceCard, style: AIStyle) {
+        try {
+            val prompt = makeSpacePrompt(card, style)
+            val file = uniqueFile(
+                "assets/images/space_cards/cards/${model.name}/${style.name}/${card.name.normalize()}",
+                "png"
+            )
+            createImage(prompt, file, false)
         } catch (e: Exception) {
             println("Error downloading card ${card.name} ($e)")
         }

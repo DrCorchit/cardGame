@@ -3,14 +3,10 @@ package com.drcorchit.cards
 import com.badlogic.gdx.ApplicationAdapter
 import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.files.FileHandle
-import com.badlogic.gdx.graphics.Color
 import com.badlogic.gdx.graphics.Pixmap
 import com.badlogic.gdx.graphics.PixmapIO
 import com.drcorchit.cards.Main.Companion.IMAGE_H
 import com.drcorchit.cards.Main.Companion.IMAGE_W
-import com.drcorchit.cards.SpaceCard2LargeWindow.Companion.cardbacks
-import com.drcorchit.cards.SpaceCard2LargeWindow.Companion.disasters
-import com.drcorchit.cards.fantasy.FantasyCards
 import com.drcorchit.cards.graphics.Draw
 import com.drcorchit.cards.graphics.Drawable
 import java.io.File

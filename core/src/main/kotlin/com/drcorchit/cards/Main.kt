@@ -4,18 +4,18 @@ import com.badlogic.gdx.ApplicationAdapter
 import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.Input
 import com.badlogic.gdx.scenes.scene2d.Stage
-import com.drcorchit.cards.SpaceCard2LargeWindow.Companion.cardbacks
-import com.drcorchit.cards.SpaceCard2LargeWindow.Companion.disasters
+import com.drcorchit.cards.space.SpaceCard2LargeWindow.Companion.cardbacks
+import com.drcorchit.cards.space.SpaceCard2LargeWindow.Companion.disasters
 import com.drcorchit.cards.fantasy.*
 import com.drcorchit.cards.fantasy.FantasyCard.Companion.totalAbilityTextH
 import com.drcorchit.cards.graphics.CardActor
 import com.drcorchit.cards.graphics.Draw
+import com.drcorchit.cards.space.SpaceCard
+import com.drcorchit.cards.space.SpaceCards
 import com.drcorchit.justice.utils.StringUtils.normalize
 import com.drcorchit.justice.utils.logging.Logger
 import com.drcorchit.justice.utils.math.MathUtils
 import java.io.File
-import kotlin.collections.get
-import kotlin.compareTo
 
 /**
  * [com.badlogic.gdx.ApplicationListener] implementation shared by all platforms.

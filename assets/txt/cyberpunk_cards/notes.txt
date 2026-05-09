@@ -1,0 +1,27 @@
+Stores:
+    Cyberself
+    Bad Robot
+    Punk Planet
+    Noo Yoo
+
+Stats:
+    Rizz -> The pink stat
+    Chic -> The blue stat
+    Panache -> The lime green stat
+    Ersatz -> The yellow stat, sometimes bad (can't exceed your dominant stat)
+
+Outfits have COST, plus STATS
+
+Items (some are rare)
+
+Textures -> Glitter/Disco, Tiger Stripes, Checkered, Plaid, Colored, Leather
+
+Scarf -> Glitter, Tiger Stripes, Checkered,
+Glasses -> Aviator, Wraparound, Welding Goggles
+Handbag -> Leather, Disco, Tiger Stripes,
+Shoes -> Pumps, Sandals, Gogo Boots, Thigh Highs, Goth Boots
+
+6 players times 12 cards times 2 = 144
+
+
+prompt = I'm making a card game involving cyberpunk fashion items. Make an image of a leopard print scarf. Use a square orientation and do not include any text or UI elements on the image.

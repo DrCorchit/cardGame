@@ -10,6 +10,8 @@ import com.badlogic.gdx.math.Vector2
 import com.badlogic.gdx.scenes.scene2d.Actor
 import com.badlogic.gdx.utils.Align
 import com.drcorchit.cards.Main
+import com.drcorchit.cards.Main.Companion.BORDER
+import com.drcorchit.cards.Main.Companion.H
 import com.drcorchit.justice.utils.math.Compass
 import java.io.File
 import java.util.*
@@ -472,5 +474,21 @@ object Draw {
         val sat = if (saturated) 1f else r.nextFloat()
         val lum = r.nextFloat()
         return Color.WHITE.cpy().fromHsv(hue, sat, lum)
+    }
+
+    fun drawCardImage(image: AnimatedSprite, x: Float, y: Float, windowW: Float, windowH: Float) {
+        val sourceImageRatio = image.getFrames().ratio
+        val destImageRatio = windowW / windowH
+        val imageScale =
+            if (sourceImageRatio > destImageRatio) {
+                windowW / image.getFrames().width
+            } else {
+                windowH / image.getFrames().height
+            }
+
+        val w = (image.getFrames().width * imageScale).roundToInt().toFloat()
+        val h = (image.getFrames().height * imageScale).roundToInt().toFloat()
+
+        image.draw(batch, x, y, w, h)
     }
 }
