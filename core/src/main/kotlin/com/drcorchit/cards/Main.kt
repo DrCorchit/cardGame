@@ -4,6 +4,7 @@ import com.badlogic.gdx.ApplicationAdapter
 import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.Input
 import com.badlogic.gdx.scenes.scene2d.Stage
+import com.drcorchit.cards.cyberpunk.CyberpunkCards
 import com.drcorchit.cards.space.SpaceCard2LargeWindow.Companion.cardbacks
 import com.drcorchit.cards.space.SpaceCard2LargeWindow.Companion.disasters
 import com.drcorchit.cards.fantasy.*
@@ -43,12 +44,14 @@ class Main : ApplicationAdapter() {
             SpaceCards.cards + disasters + cardbacks
         }
 
+        val cyberpunkCards by lazy { CyberpunkCards.baseSet.cards }
+
         val fantasyCards by lazy { FantasyCards.expac1.cards }
 
         //ALL fantasy cards, including expansions and tokens
         val allFantasyCards by lazy { FantasyCards.baseSet.cards + FantasyCards.expac1.cards + FantasyCards.tokens.cards }
 
-        val cards by lazy { spaceCards }
+        val cards by lazy { cyberpunkCards }
 
         val approvedCards by lazy {
             val cardsByName = cards.associateBy { it.name }
@@ -72,6 +75,7 @@ class Main : ApplicationAdapter() {
         //card sanity checks
         //runSanityChecks(cards)
         runSanityChecks2(SpaceCards.cards)
+        card.updateGraphic()
     }
 
     fun runSanityChecks2(cards: List<SpaceCard>) {
@@ -206,8 +210,8 @@ class Main : ApplicationAdapter() {
     override fun render() {
         fun advanceBy(amount: Int) {
             showStolenArt = false
-            card.updateGraphic()
             index = MathUtils.modulus(index + amount, cards.size)
+            card.updateGraphic()
         }
 
         fun nextUnapproved() {

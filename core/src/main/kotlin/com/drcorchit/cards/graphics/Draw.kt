@@ -476,7 +476,9 @@ object Draw {
         return Color.WHITE.cpy().fromHsv(hue, sat, lum)
     }
 
-    fun drawCardImage(image: AnimatedSprite, x: Float, y: Float, windowW: Float, windowH: Float) {
+    fun drawCardImage(image: AnimatedSprite?, x: Float, y: Float, windowW: Float, windowH: Float) {
+        if (image == null) return
+
         val sourceImageRatio = image.getFrames().ratio
         val destImageRatio = windowW / windowH
         val imageScale =

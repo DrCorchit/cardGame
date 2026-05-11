@@ -56,6 +56,9 @@ object Textures {
     val card2LargeWindow = initTexture("card2_large_window.png")
     val numberBox = initTexture("number_box.png")
 
+    //cyberpunk cards
+    val card3 = initTexture("card_art.png")
+
     //Arrow
     val arrowLeft = initTexture("arrow_left.png")
     val arrowRight = initTexture("arrow_right.png")

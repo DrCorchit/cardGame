@@ -1,0 +1,13 @@
+#Accessory (Handbag)
+Checkered Handbag: 100$ 1, 1, 0, 0
+Disco Handbag: 100$ 1, 1, 0, 0
+Golden Handbag: 100$ 1, 1, 0, 0
+Italian Designer Handbag: 100$ 1, 1, 0, 0
+Leather Handbag: 100$ 1, 1, 0, 0
+Leopard Print Handbag: 100$ 1, 1, 0, 0
+Red Sequin Handbag: 100$ 1, 1, 0, 0
+Tiger Striped Handbag: 100$ 1, 1, 0, 0
+
+#Belt
+
+

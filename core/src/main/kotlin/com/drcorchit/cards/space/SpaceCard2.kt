@@ -28,7 +28,7 @@ class SpaceCard2(
 
         //Draw card art
         //this.image?.draw(batch, imageX, imageY)
-        image?.let { Draw.drawCardImage(it, imageX, imageY, imageW, imageH) }
+        Draw.drawCardImage(image, imageX, imageY, imageW, imageH)
         card.draw(batch, BORDER, BORDER, W, H)
         border.draw(batch, 0f, 0f)
 

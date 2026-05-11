@@ -57,6 +57,12 @@ object Fonts {
     val abilityFont2 = initFontSizeAndStroke("exo_medium.ttf", 28)
     val cardTypeFont = initFontSizeAndStroke("conthrax.otf", 40)
 
+    //Cyberpunk fonts
+    val costFont3 = initFontSize("tulpen_one.ttf", 64)
+    val nameFont3 = initFontSize("tulpen_one.ttf", 48)
+    val statsFont3 = initFontSize("syne_mono.ttf", 32)
+    val abilityFont3 = initFontSize("tulpen_one.ttf", 48)
+
     init {
         numberFont2.addTexture(Textures.power, '\u0010')
 
