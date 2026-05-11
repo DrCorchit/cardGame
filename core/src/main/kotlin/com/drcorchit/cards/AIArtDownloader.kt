@@ -38,8 +38,12 @@ class AIArtDownloader : ApplicationAdapter() {
     }
 
     fun downloadRobots() {
+        val locations = listOf("cyberpunk dance studio",
+            "cyberpunk alley",
+            "cyberpunk mall")
+
         val corePrompt =
-            "generate an image of a female cyborg %s. Make her look feminine, with her entire body being made of mechanical parts except for her head. Make sure her entire figure is visible, set against a cyberpunk dance studio. make her pose slightly suggestive."
+            "generate an image of a female cyborg %s. Make her look feminine, with her entire body being made of mechanical parts except for her head. Make sure her entire figure is visible, set against a cyberpunk skyline. make her pose slightly suggestive."
         val robotPrompts =
             mapOf(
                 "rose" to "made of polished red metal and a black rubber accordion joint around the midsection, and dark red hair",
@@ -48,6 +52,8 @@ class AIArtDownloader : ApplicationAdapter() {
                 "violet" to "made of polished purple metal, with a black pattern reminiscent of fishnets on her legs, and long wavy purple hair",
                 "lotus" to "made of polished white metal with black seams running between plates, and platinum blonde hair with bangs",
                 "noir" to "made of polished black and gray worn metal, with a subtle goth look",
+                "sapphire" to "made of gleaming blue metal, with small airplane wings sprouting from her ankles and forearms. Give her a subtle jet engine intake valve on her chest, and wavy blonde hair",
+                "viridia" to "made of polished green metal, with black corrugated tubing running along her thighs in a manner reminiscent of musculature, and medium length wavy brown hair"
             )
 
         repeat(1) {

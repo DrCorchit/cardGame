@@ -58,6 +58,8 @@ object Textures {
 
     //cyberpunk cards
     val card3 = initTexture("card_art.png")
+    val signatures = initTexture("signatures_strip8.png").asSprite(8)
+    val placard = initTexture("placard_with_shading_and_subtle_overlay.png")
 
     //Arrow
     val arrowLeft = initTexture("arrow_left.png")

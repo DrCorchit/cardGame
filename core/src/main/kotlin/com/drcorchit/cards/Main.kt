@@ -258,8 +258,7 @@ class Main : ApplicationAdapter() {
     }
 
     override fun dispose() {
-        Draw.batch
-
+        Draw.batch.dispose()
         val cards = approvedCards.map { it.name }.sorted().joinToString("\r\n")
         File("assets/approved.txt").writeText(cards)
     }

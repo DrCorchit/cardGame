@@ -348,7 +348,7 @@ object Draw {
     }
 
     fun drawText(x: Float, y: Float, font: BitmapFont?, text: String?): Pair<Float, Float> {
-        return drawText(x, y, font, text, -1f, Compass.CENTER, Color.WHITE)
+        return drawText(x, y, font, text, 4000f, Compass.CENTER, Color.WHITE)
     }
 
     fun drawText(
