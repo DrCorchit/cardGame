@@ -19,8 +19,8 @@ class Placard(val bot: Rococobot): Drawable {
         //val mx = Gdx.input.x.toFloat()
         //val my = Gdx.graphics.height - Gdx.input.y.toFloat()
 
-        bot.image.draw(Draw.batch, 270f, 130f)
-        bot.signature.draw(Draw.batch, 700f, 300f, rotation = 20f)
+        bot.image.draw(Draw.batch, 125f, 130f)
+        bot.signature.draw(Draw.batch, 555f, 300f, rotation = 20f)
         placard.draw(Draw.batch, 0f, 0f)
 
         //Draw.drawText(100f, 100f, Fonts.abilityFont, "$mx, $my")
@@ -31,7 +31,7 @@ class Placard(val bot: Rococobot): Drawable {
     }
 
     companion object {
-        val placard = Textures.placard.asSprite()
+        val placard = Textures.placard2.asSprite()
 
         val bots = Rococobot.entries.map { Placard(it) }
 
