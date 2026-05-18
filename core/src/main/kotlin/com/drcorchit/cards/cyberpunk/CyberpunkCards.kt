@@ -9,7 +9,7 @@ class CyberpunkCards(path: String) {
         val nameRegex = "(?<name>.+)"
         val categoryRegex = "(?<category>\\w+)"
         val costRegex = "(?<cost>\\d+)"
-        val statsRegex = "(?<rizz>\\d+), (?<chic>\\d+), (?<glam>\\d+), (?<panache>\\d+)"
+        val statsRegex = "(?<rizz>\\d+), (?<chic>\\d+), (?<glam>\\d+), (?<pizzazz>\\d+)"
         val effectRegex = "(?<effect>\\.*)"
 
         val regex =
@@ -33,10 +33,10 @@ class CyberpunkCards(path: String) {
                 val rizz = match["rizz"]!!.value.toInt()
                 val chic = match["chic"]!!.value.toInt()
                 val glam = match["glam"]!!.value.toInt()
-                val panache = match["panache"]!!.value.toInt()
+                val pizzazz = match["pizzazz"]!!.value.toInt()
                 val effect = match["effect"]?.value
 
-                return CyberpunkCard(name, category, cost, rizz, chic, glam, panache, effect)
+                return CyberpunkCard(name, category, cost, rizz, chic, glam, pizzazz, effect)
             } catch (e: Exception) {
                 println("Error parsing line: $str")
                 e.printStackTrace()

@@ -2,15 +2,17 @@ Stores:
     Bad Robot (Rizz)
     Cyberself (Chic)
     Punk Planet (Glam)
-    Noo Yoo (Panache)
+    Noo Yoo (Pizzazz)
 
 Stats:
     Rizz -> The pink stat
     Chic -> The blue stat
     Glam -> The orange stat
-    Panache -> The lime green stat, sometimes bad (can't exceed your dominant stat)
+    Pizzazz -> The lime green stat
 
-What about: Poise, Balance, Elan, Pizzazz
+   Weakest stat is dropped
+
+What about: Poise, Balance, Elan, Panache
 
 Outfits have COST, plus STATS
 

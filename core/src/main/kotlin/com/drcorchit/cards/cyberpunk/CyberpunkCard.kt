@@ -20,7 +20,7 @@ class CyberpunkCard(
     val rizz: Int,
     val chic: Int,
     val glam: Int,
-    val panache: Int,
+    val pizzazz: Int,
     val effect: String? = "Card ability text goes here.",
     val shiny: Boolean = false
 ) : Drawable {
@@ -36,7 +36,7 @@ class CyberpunkCard(
             Stat.Rizz to rizz,
             Stat.Chic to chic,
             Stat.Glam to glam,
-            Stat.Panache to panache
+            Stat.Pizzazz to pizzazz
         )
             .filter { it.value > 0 }
             .mapValues { String.format("%-8s%d", it.key, it.value) }
@@ -52,7 +52,7 @@ class CyberpunkCard(
         val cardShiny = Textures.card3Shiny.asSprite()
 
         val imageX = BORDER + (W / 2f)
-        val imageY = BORDER + 900f
+        val imageY = BORDER + 950f
         val imageW = 650f
         val imageH = 650f
 
