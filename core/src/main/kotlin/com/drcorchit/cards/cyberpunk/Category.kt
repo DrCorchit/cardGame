@@ -2,9 +2,11 @@ package com.drcorchit.cards.cyberpunk
 
 enum class Category {
     Belt,
-    Clothing,
+    Top,
+    Bottom,
     Eyewear,
+    Jewelry,
     Scarf,
-    Accessory,
+    Handbag,
     Footwear
 }

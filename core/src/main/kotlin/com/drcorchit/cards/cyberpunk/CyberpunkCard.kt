@@ -15,15 +15,21 @@ import java.io.File
 
 class CyberpunkCard(
     override val name: String,
+    val category: Category,
     val cost: Int,
     val rizz: Int,
     val chic: Int,
     val glam: Int,
     val panache: Int,
-    val effect: String? = "Card ability text goes here."
+    val effect: String? = "Card ability text goes here.",
+    val shiny: Boolean = false
 ) : Drawable {
 
     val costStr = "$cost$"
+
+    val cardSpr = if (shiny) cardShiny else card
+    val textColor = if (shiny) Color.BLACK else Color(.85f, .85f, .85f, 1f)
+    val statFont = if (shiny) Fonts.statsFontStroke3 else Fonts.statsFont3
 
     val stats =
         mapOf(
@@ -34,6 +40,7 @@ class CyberpunkCard(
         )
             .filter { it.value > 0 }
             .mapValues { String.format("%-8s%d", it.key, it.value) }
+            //.mapValues { it.value.replace(' ', '.') }
 
     private var image: AnimatedSprite? = null
 
@@ -42,6 +49,7 @@ class CyberpunkCard(
 
     companion object {
         val card = Textures.card3.asSprite()
+        val cardShiny = Textures.card3Shiny.asSprite()
 
         val imageX = BORDER + (W / 2f)
         val imageY = BORDER + 900f
@@ -50,18 +58,15 @@ class CyberpunkCard(
 
         val costX = BORDER + 78f
         val costY = BORDER + H - 95f
-        val costColor = Color(.85f, .85f, .85f, 1f)
 
         val nameX = BORDER + (W / 2f)
 
         //was BORDER + 300f
         val nameY = BORDER + 955f
-        val nameColor = Color(.85f, .85f, .85f, 1f)
 
         val textX = BORDER + 80f
         val textY = BORDER + 285f
         val textVSep = 40f
-        val effectColor = Color(.85f, .85f, .85f, 1f)
 
         val effectX = BORDER + 300f
         val effectY = BORDER + 285f
@@ -70,32 +75,33 @@ class CyberpunkCard(
 
     override fun draw() {
         Draw.drawCardImage(image, imageX, imageY, imageW, imageH)
-        card.draw(batch, BORDER, BORDER, W, H)
+
+        cardSpr.draw(batch, BORDER, BORDER, W, H)
 
         //Cost
-        Draw.drawText(costX, costY, Fonts.costFont3, costStr, 1000f, Compass.CENTER, costColor)
+        Draw.drawText(costX, costY, Fonts.costFont3, costStr, 1000f, Compass.CENTER, textColor)
 
         //Name
-        Draw.drawText(nameX, nameY, Fonts.nameFont3, name, 1000f, Compass.CENTER, nameColor)
+        Draw.drawText(nameX, nameY, Fonts.nameFont3, name, 1000f, Compass.CENTER, textColor)
 
         //Stats
         val x = textX
         var y = textY
         stats.forEach { (stat, string) ->
             //val color = Color(.85f, .85f, .85f, 1f)
-            Draw.drawText(x, y, Fonts.statsFont3, string, 1000f, Compass.SOUTHEAST, stat.color)
+            Draw.drawText(x, y, statFont, string, 1000f, Compass.SOUTHEAST, stat.color)
             y -= textVSep
         }
 
         if (effect != null) {
-            Draw.drawText(effectX, effectY, Fonts.abilityFont3, effect, effectW, Compass.SOUTHEAST, effectColor)
+            Draw.drawText(effectX, effectY, Fonts.abilityFont3, effect, effectW, Compass.SOUTHEAST, textColor)
         }
     }
 
     override fun updateGraphic(): AnimatedSprite? {
         val normalized = name.normalize()
 
-        val base = "assets/images/cyberpunk_cards/fashion"
+        val base = "assets/images/cyberpunk_cards/fashion/${category.name.lowercase()}"
 
         val png = "$base/$normalized.png"
         val jpg = "$base/$normalized.jpg"

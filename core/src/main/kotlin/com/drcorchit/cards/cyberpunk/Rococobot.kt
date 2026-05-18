@@ -14,18 +14,19 @@ enum class Rococobot(val color: Color, val isMale: Boolean) {
     Lotus(Color.WHITE, false),
     Noir(Color.BLACK, false),
     Viridia(Color.GREEN, false),
-    Sapphire(Color.BLUE, false),
-    Spike(Color.RED, true),
-    Turbo(Color.ORANGE, true),
-    Rage(Color.PINK, true),
-    Storm(Color.PURPLE, true),
-    Lightning(Color.WHITE, true),
-    Ash(Color.BLACK, true),
-    Greene(Color.GREEN, true),
-    Bolt(Color.BLUE, true);
+    Sapphire(Color.BLUE, false);
+//    Spike(Color.RED, true),
+//    Turbo(Color.ORANGE, true),
+//    Rage(Color.PINK, true),
+//    Storm(Color.PURPLE, true),
+//    Lightning(Color.WHITE, true),
+//    Ash(Color.BLACK, true),
+//    Green(Color.GREEN, true),
+//    Bolt(Color.BLUE, true);
 
     val image = LocalAssets.getInstance().create("$name.png").asSprite()
-    private val signatureStrip = if (isMale) Textures.signatures else Textures.signatures2
+    val imageSilly = LocalAssets.getInstance().create("silly_$name.png").asSprite()
+    private val signatureStrip = if (isMale) Textures.signatures2 else Textures.signatures
     private val signatureIndex = if (isMale) ordinal - 8.0 else ordinal.toDouble()
     val signature = AnimatedSprite(signatureStrip.getFrames()).let { it.index = signatureIndex; it }
 

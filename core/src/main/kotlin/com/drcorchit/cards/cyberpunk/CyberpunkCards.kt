@@ -6,13 +6,14 @@ class CyberpunkCards(path: String) {
     val cards: List<CyberpunkCard> = readFrom(path)
 
     companion object {
-        val nameRegex = "(?<name>.*)"
+        val nameRegex = "(?<name>.+)"
+        val categoryRegex = "(?<category>\\w+)"
         val costRegex = "(?<cost>\\d+)"
         val statsRegex = "(?<rizz>\\d+), (?<chic>\\d+), (?<glam>\\d+), (?<panache>\\d+)"
         val effectRegex = "(?<effect>\\.*)"
 
         val regex =
-            Regex("$nameRegex: $costRegex\\$ $statsRegex( | $effectRegex)?")
+            Regex("$nameRegex: $categoryRegex $costRegex\\$ $statsRegex( | $effectRegex)?")
 
         @JvmStatic
         fun parse(str: String): CyberpunkCard? {
@@ -27,6 +28,7 @@ class CyberpunkCards(path: String) {
                     .replace("\"", "”")
                     .replace("(?<!\\w)'(?=\\w)".toRegex(), "‘")
                     .replace("'", "’")
+                val category = match["category"]!!.value.let { Category.valueOf(it) }
                 val cost = match["cost"]!!.value.toInt()
                 val rizz = match["rizz"]!!.value.toInt()
                 val chic = match["chic"]!!.value.toInt()
@@ -34,7 +36,7 @@ class CyberpunkCards(path: String) {
                 val panache = match["panache"]!!.value.toInt()
                 val effect = match["effect"]?.value
 
-                return CyberpunkCard(name, cost, rizz, chic, glam, panache, effect)
+                return CyberpunkCard(name, category, cost, rizz, chic, glam, panache, effect)
             } catch (e: Exception) {
                 println("Error parsing line: $str")
                 e.printStackTrace()

@@ -7,6 +7,8 @@ import com.badlogic.gdx.graphics.Pixmap
 import com.badlogic.gdx.graphics.PixmapIO
 import com.drcorchit.cards.Main.Companion.IMAGE_H
 import com.drcorchit.cards.Main.Companion.IMAGE_W
+import com.drcorchit.cards.cyberpunk.DisplayPlacards
+import com.drcorchit.cards.cyberpunk.Placard
 import com.drcorchit.cards.graphics.Draw
 import com.drcorchit.cards.graphics.Drawable
 import java.io.File
@@ -18,7 +20,8 @@ import java.util.zip.Deflater
 class GenerateCards : ApplicationAdapter() {
     var index = 0
 
-    val cards by lazy { Main.cards }
+    //val cards by lazy { Main.cards }
+    val cards by lazy { DisplayPlacards.placards }
 
     override fun create() {
         //Load the batch
@@ -43,7 +46,7 @@ class GenerateCards : ApplicationAdapter() {
     }
 
     fun screenshot(card: Drawable) {
-        val pixmap = Pixmap.createFromFrameBuffer(0, 0, IMAGE_W, IMAGE_H)
+        val pixmap = Pixmap.createFromFrameBuffer(0, 0, Gdx.graphics.width, Gdx.graphics.height)
         val file = FileHandle(card.outputLocation)
         PixmapIO.writePNG(file, pixmap, Deflater.DEFAULT_COMPRESSION, true)
     }

@@ -22,9 +22,12 @@ import java.io.File
 class DisplayPlacards : ApplicationAdapter() {
     var index = 0
     val stage by lazy { Stage() }
-    val placards by lazy { Placard.bots }
     val card get() = placards[index]
     val actor by lazy { CardActor(card) }
+
+    companion object {
+        val placards by lazy { Placard.bots + Placard.botsSilly }
+    }
 
     override fun create() {
         //Load the batch

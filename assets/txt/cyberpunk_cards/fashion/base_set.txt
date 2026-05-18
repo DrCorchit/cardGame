@@ -1,13 +1,79 @@
-#Accessory (Handbag)
-Checkered Handbag: 100$ 1, 1, 0, 0
-Disco Handbag: 100$ 1, 1, 0, 0
-Golden Handbag: 100$ 1, 1, 0, 0
-Italian Designer Handbag: 100$ 1, 1, 0, 0
-Leather Handbag: 100$ 1, 1, 0, 0
-Leopard Print Handbag: 100$ 1, 1, 0, 0
-Red Sequin Handbag: 100$ 1, 1, 0, 0
-Tiger Striped Handbag: 100$ 1, 1, 0, 0
-
 #Belt
+Disco Belt: Belt 200$ 1, 1, 1, 1
+Golden Belt: Belt 200$ 1, 1, 1, 1
+Italian Designer Belt: Belt 200$ 1, 1, 1, 1
+Leather Belt: Belt 200$ 1, 1, 1, 1
+Leopard Print Belt: Belt 200$ 1, 1, 1, 1
+Sequin Belt: Belt 200$ 1, 1, 1, 1
+Studded Leather Belt: Belt 200$ 1, 1, 1, 1
+Tiger Striped Belt: Belt 200$ 1, 1, 1, 1
 
+#Pants
+Disco Suit Pants: Bottom 200$ 1, 1, 1, 1
+Golden Suit Pants: Bottom 200$ 1, 1, 1, 1
+Leather Pants: Bottom 200$ 1, 1, 1, 1
+Leopard Shorts: Bottom 200$ 1, 1, 1, 1
+Miniskirt: Bottom 200$ 1, 1, 1, 1
+Pleated Skirt: Bottom 200$ 1, 1, 1, 1
+Blue Jeans: Bottom 200$ 1, 1, 1, 1
+Tiger Striped Pants: Bottom 200$ 1, 1, 1, 1
 
+#Eyewear
+Aviator Sunglasses: Eyewear 200$ 1, 1, 1, 1
+Disco Visor: Eyewear 200$ 1, 1, 1, 1
+Golden Sunglasses: Eyewear 200$ 1, 1, 1, 1
+Italian Designer Sunglasses: Eyewear 200$ 1, 1, 1, 1
+Sleek Glasses: Eyewear 200$ 1, 1, 1, 1
+Star Glasses: Eyewear 200$ 1, 1, 1, 1
+Welding Goggles: Eyewear 200$ 1, 1, 1, 1
+Wraparound Sunglasses: Eyewear 200$ 1, 1, 1, 1
+
+#Footwear
+Ankle Strap Sandals: Footwear 200$ 1, 1, 1, 1
+Chucks: Footwear 200$ 1, 1, 1, 1
+Cowgirl Boots: Footwear 200$ 1, 1, 1, 1
+Gogo Boots: Footwear 200$ 1, 1, 1, 1
+Kitten Heels: Footwear 200$ 1, 1, 1, 1
+Platform Boots: Footwear 200$ 1, 1, 1, 1
+Stiletto Heels: Footwear 200$ 1, 1, 1, 1
+Thigh High Boots: Footwear 200$ 1, 1, 1, 1
+
+#Handbag
+Checkered Handbag: Handbag 200$ 1, 1, 1, 1
+Disco Handbag: Handbag 200$ 1, 1, 1, 1
+Golden Handbag: Handbag 200$ 1, 1, 1, 1
+Italian Designer Handbag: Handbag 200$ 1, 1, 1, 1
+Leather Handbag: Handbag 200$ 1, 1, 1, 1
+Leopard Print Handbag: Handbag 200$ 1, 1, 1, 1
+Red Sequin Handbag: Handbag 200$ 1, 1, 1, 1
+Tiger Striped Handbag: Handbag 200$ 1, 1, 1, 1
+
+#Jewelry
+Gold Bracelet: Jewelry 200$ 1, 1, 1, 1
+Gold Necklace: Jewelry 200$ 1, 1, 1, 1
+Gold Ring: Jewelry 200$ 1, 1, 1, 1
+Gold Tiara: Jewelry 200$ 1, 1, 1, 1
+Silver Bracelet: Jewelry 200$ 1, 1, 1, 1
+Silver Necklace: Jewelry 200$ 1, 1, 1, 1
+Silver Ring: Jewelry 200$ 1, 1, 1, 1
+Silver Tiara: Jewelry 200$ 1, 1, 1, 1
+
+#Scarf
+Black Scarf: Scarf 200$ 1, 1, 1, 1
+Checkered Scarf: Scarf 200$ 1, 1, 1, 1
+Glitter Scarf: Scarf 200$ 1, 1, 1, 1
+Golden Scarf: Scarf 200$ 1, 1, 1, 1
+Italian Designer Scarf: Scarf 200$ 1, 1, 1, 1
+Leopard Print Scarf: Scarf 200$ 1, 1, 1, 1
+Tiger Striped Scarf: Scarf 200$ 1, 1, 1, 1
+Red Wool Scarf: Scarf 200$ 1, 1, 1, 1
+
+#Top
+Disco Suit Top: Top 200$ 1, 1, 1, 1
+Gold Suit Top: Top 200$ 1, 1, 1, 1
+Halter Top: Top 200$ 1, 1, 1, 1
+Hoodie: Top 200$ 1, 1, 1, 1
+Leather Jacket: Top 200$ 1, 1, 1, 1
+Leopard Print Top: Top 200$ 1, 1, 1, 1
+Plaid Blouse: Top 200$ 1, 1, 1, 1
+Tiger Striped Suit: Top 200$ 1, 1, 1, 1
