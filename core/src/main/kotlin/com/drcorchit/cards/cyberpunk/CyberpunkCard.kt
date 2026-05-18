@@ -29,7 +29,7 @@ class CyberpunkCard(
 
     val cardSpr = if (shiny) cardShiny else card
     val textColor = if (shiny) Color.BLACK else Color(.85f, .85f, .85f, 1f)
-    val statFont = if (shiny) Fonts.statsFontStroke3 else Fonts.statsFont3
+    val monoFont = if (shiny) Fonts.statsFontStroke3 else Fonts.statsFont3
 
     val stats =
         mapOf(
@@ -60,16 +60,17 @@ class CyberpunkCard(
         val costY = BORDER + H - 95f
 
         val nameX = BORDER + (W / 2f)
-
-        //was BORDER + 300f
         val nameY = BORDER + 955f
 
+        val categoryX = BORDER + W/2f
+        val categoryY = BORDER + 290f
+
         val textX = BORDER + 80f
-        val textY = BORDER + 285f
-        val textVSep = 40f
+        val textY = BORDER + 250f
+        val textVSep = 35f
 
         val effectX = BORDER + 300f
-        val effectY = BORDER + 285f
+        val effectY = BORDER + 250f
         val effectW = 370f
     }
 
@@ -84,17 +85,20 @@ class CyberpunkCard(
         //Name
         Draw.drawText(nameX, nameY, Fonts.nameFont3, name, 1000f, Compass.CENTER, textColor)
 
+        //category
+        Draw.drawText(categoryX, categoryY, Fonts.categoryFont3, category.displayName, 1000f, Compass.CENTER, textColor)
+
         //Stats
         val x = textX
         var y = textY
         stats.forEach { (stat, string) ->
             //val color = Color(.85f, .85f, .85f, 1f)
-            Draw.drawText(x, y, statFont, string, 1000f, Compass.SOUTHEAST, stat.color)
+            Draw.drawText(x, y, monoFont, string, 1000f, Compass.SOUTHEAST, stat.color)
             y -= textVSep
         }
 
         if (effect != null) {
-            Draw.drawText(effectX, effectY, Fonts.abilityFont3, effect, effectW, Compass.SOUTHEAST, textColor)
+            Draw.drawText(effectX, effectY, monoFont, effect, effectW, Compass.SOUTHEAST, textColor)
         }
     }
 

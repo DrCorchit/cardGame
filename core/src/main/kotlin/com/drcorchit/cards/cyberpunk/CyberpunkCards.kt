@@ -1,5 +1,6 @@
 package com.drcorchit.cards.cyberpunk
 
+import com.drcorchit.cards.Utils.replaceQuotes
 import java.io.File
 
 class CyberpunkCards(path: String) {
@@ -10,10 +11,10 @@ class CyberpunkCards(path: String) {
         val categoryRegex = "(?<category>\\w+)"
         val costRegex = "(?<cost>\\d+)"
         val statsRegex = "(?<rizz>\\d+), (?<chic>\\d+), (?<glam>\\d+), (?<pizzazz>\\d+)"
-        val effectRegex = "(?<effect>\\.*)"
+        val effectRegex = "(?<effect>.+)"
 
         val regex =
-            Regex("$nameRegex: $categoryRegex $costRegex\\$ $statsRegex( | $effectRegex)?")
+            Regex("$nameRegex: $categoryRegex $costRegex\\$ $statsRegex( \\| $effectRegex)?")
 
         @JvmStatic
         fun parse(str: String): CyberpunkCard? {
@@ -23,11 +24,7 @@ class CyberpunkCards(path: String) {
 
             try {
                 val match = regex.matchEntire(str)!!.groups
-                val name = match["name"]!!.value
-                    .replace("(?<!\\w)\"(?=\\w)".toRegex(), "“")
-                    .replace("\"", "”")
-                    .replace("(?<!\\w)'(?=\\w)".toRegex(), "‘")
-                    .replace("'", "’")
+                val name = match["name"]!!.value.replaceQuotes()
                 val category = match["category"]!!.value.let { Category.valueOf(it) }
                 val cost = match["cost"]!!.value.toInt()
                 val rizz = match["rizz"]!!.value.toInt()
