@@ -4,7 +4,9 @@ import com.badlogic.gdx.ApplicationAdapter
 import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.Input
 import com.badlogic.gdx.scenes.scene2d.Stage
+import com.drcorchit.cards.cyberpunk.CyberpunkCard
 import com.drcorchit.cards.cyberpunk.CyberpunkCards
+import com.drcorchit.cards.cyberpunk.StatBox
 import com.drcorchit.cards.space.SpaceCard2LargeWindow.Companion.cardbacks
 import com.drcorchit.cards.space.SpaceCard2LargeWindow.Companion.disasters
 import com.drcorchit.cards.fantasy.*
@@ -74,7 +76,8 @@ class Main : ApplicationAdapter() {
 
         //card sanity checks
         //runSanityChecks(cards)
-        runSanityChecks2(SpaceCards.cards)
+        //runSanityChecks2(SpaceCards.cards)
+        runSanityChecks3(CyberpunkCards.baseSet.cards)
         card.updateGraphic()
     }
 
@@ -88,6 +91,12 @@ class Main : ApplicationAdapter() {
             }
         val total = cards.sumOf { it.count }
         println("Unique: ${cards.size} Total: $total")
+    }
+
+    fun runSanityChecks3(cards: List<CyberpunkCard>) {
+        val stats = cards.groupBy { StatBox(it) }.mapValues { it.value.size }
+        val statsStr = stats.entries.joinToString("\n") { "${it.key}: ${it.value}" }
+        println("Stats count: \n$statsStr")
     }
 
     fun runSanityChecks(cards: List<FantasyCard>) {
