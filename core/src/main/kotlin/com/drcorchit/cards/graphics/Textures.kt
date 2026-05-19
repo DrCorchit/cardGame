@@ -37,7 +37,7 @@ object Textures {
 
     val metal = initTexture("metal.jpg")
     val power = initTexture("power.png")
-    val blackHole= initTexture("black_hole.jpg")
+    val blackHole = initTexture("black_hole.jpg")
     val card3Back = initTexture("cardback.jpg")
 
     //card
@@ -65,6 +65,8 @@ object Textures {
     val placard2 = initTexture("placard_shortened.png")
     val screen = initTexture("screen.png")
     val screen2 = initTexture("screen_white.png")
+    val divider = initTexture("divider.png")
+    val divider2 = initTexture("divider2.png")
 
     //Arrow
     val arrowLeft = initTexture("arrow_left.png")

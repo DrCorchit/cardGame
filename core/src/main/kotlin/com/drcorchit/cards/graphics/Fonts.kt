@@ -61,7 +61,6 @@ object Fonts {
     val costFont3 = initFontSize("tulpen_one.ttf", 64)
     val nameFont3 = initFontSize("tulpen_one.ttf", 48)
     val statsFont3 = initFontSize("syne_mono.ttf", 32)
-    val statsFontStroke3 = initFontSizeAndStroke("syne_mono.ttf", 32, 1f, Color.BLACK)
     val categoryFont3 = initFontSize("syne_mono.ttf", 48)
 
     init {

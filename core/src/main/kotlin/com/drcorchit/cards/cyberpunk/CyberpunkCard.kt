@@ -22,14 +22,9 @@ class CyberpunkCard(
     val glam: Int,
     val pizzazz: Int,
     val effect: String? = "Card ability text goes here.",
-    val shiny: Boolean = false
 ) : Drawable {
 
     val costStr = "$cost$"
-
-    val cardSpr = if (shiny) cardShiny else card
-    val textColor = if (shiny) Color.BLACK else Color(.85f, .85f, .85f, 1f)
-    val monoFont = if (shiny) Fonts.statsFontStroke3 else Fonts.statsFont3
 
     val stats =
         mapOf(
@@ -40,7 +35,6 @@ class CyberpunkCard(
         )
             .filter { it.value > 0 }
             .mapValues { String.format("%-8s%d", it.key, it.value) }
-            //.mapValues { it.value.replace(' ', '.') }
 
     private var image: AnimatedSprite? = null
 
@@ -49,7 +43,9 @@ class CyberpunkCard(
 
     companion object {
         val card = Textures.card3.asSprite()
-        val cardShiny = Textures.card3Shiny.asSprite()
+
+        val textColor = Color(.85f, .85f, .85f, 1f)
+        val monoFont = Fonts.statsFont3
 
         val imageX = BORDER + (W / 2f)
         val imageY = BORDER + 950f
@@ -59,34 +55,43 @@ class CyberpunkCard(
         val costX = BORDER + 78f
         val costY = BORDER + H - 95f
 
-        val nameX = BORDER + (W / 2f)
-        val nameY = BORDER + 955f
+        val categoryX = BORDER + (W / 2f)
+        val categoryY = BORDER + 955f
 
-        val categoryX = BORDER + W/2f
-        val categoryY = BORDER + 290f
+        val nameX = BORDER + W / 2f
+        val nameY = BORDER + 290f
+
+        val divider = Textures.divider2.asSprite().setOffset(Compass.CENTER)
+        val dividerX = nameX
+        val dividerY = nameY - 32
+        val dividerW = W * .7f
+        val dividerH = 2f //was dividerW / 20f
 
         val textX = BORDER + 80f
-        val textY = BORDER + 250f
+        val textY = BORDER + 240f
         val textVSep = 35f
 
         val effectX = BORDER + 300f
-        val effectY = BORDER + 250f
+        val effectY = textY
         val effectW = 370f
     }
 
     override fun draw() {
         Draw.drawCardImage(image, imageX, imageY, imageW, imageH)
 
-        cardSpr.draw(batch, BORDER, BORDER, W, H)
+        card.draw(batch, BORDER, BORDER, W, H)
 
         //Cost
         Draw.drawText(costX, costY, Fonts.costFont3, costStr, 1000f, Compass.CENTER, textColor)
 
-        //Name
-        Draw.drawText(nameX, nameY, Fonts.nameFont3, name, 1000f, Compass.CENTER, textColor)
+        //Category
+        Draw.drawText(categoryX, categoryY, Fonts.nameFont3, category.displayName, 1000f, Compass.CENTER, textColor)
 
-        //category
-        Draw.drawText(categoryX, categoryY, Fonts.categoryFont3, category.displayName, 1000f, Compass.CENTER, textColor)
+        //Name
+        Draw.drawText(nameX, nameY, Fonts.categoryFont3, name, 1000f, Compass.CENTER, textColor)
+
+        divider.draw(batch, dividerX, dividerY, dividerW, dividerH)
+
 
         //Stats
         val x = textX

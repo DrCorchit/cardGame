@@ -60,7 +60,7 @@ Golden Tiara: Jewelry 500$ 0, 0, 3, 3
 
 #Scarf
 Black Scarf: Scarf 200$ 1, 1, 1, 1 | Can be worn at the Metron Gala even after a fashion fight.
-Red Wool Scarf: Scarf 200$ 1, 1, 1, 1 | At the Metron Gala, keep your weakest stat if it exceeds 5.
+Red Wool Scarf: Scarf 200$ 1, 1, 1, 1 | At the Metron Gala, keep your weakest stat if it equals or exceeds 5.
 Checkered Scarf: Scarf 200$ 0, 2, 0, 1
 Leopard Print Scarf: Scarf 200$ 1, 0, 2, 0
 Tiger Striped Scarf: Scarf 300$ 2, 0, 0, 2
