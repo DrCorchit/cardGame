@@ -50,7 +50,7 @@ class CyberpunkCard(
         val imageX = BORDER + (W / 2f)
         val imageY = BORDER + 950f
         val imageW = 650f
-        val imageH = 650f
+        val imageH = 600f
 
         val costX = BORDER + 78f
         val costY = BORDER + H - 95f
