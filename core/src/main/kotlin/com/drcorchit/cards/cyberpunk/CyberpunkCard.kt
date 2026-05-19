@@ -33,8 +33,10 @@ class CyberpunkCard(
             Stat.Glam to glam,
             Stat.Pizzazz to pizzazz
         )
-            .filter { it.value > 0 }
-            .mapValues { String.format("%-8s%d", it.key, it.value) }
+
+    val statStr = stats
+        .filter { it.value > 0 }
+        .mapValues { String.format("%-8s%d", it.key, it.value) }
 
     private var image: AnimatedSprite? = null
 
@@ -96,8 +98,7 @@ class CyberpunkCard(
         //Stats
         val x = textX
         var y = textY
-        stats.forEach { (stat, string) ->
-            //val color = Color(.85f, .85f, .85f, 1f)
+        statStr.forEach { (stat, string) ->
             Draw.drawText(x, y, monoFont, string, 1000f, Compass.SOUTHEAST, stat.color)
             y -= textVSep
         }

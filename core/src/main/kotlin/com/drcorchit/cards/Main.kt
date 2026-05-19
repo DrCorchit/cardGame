@@ -95,8 +95,13 @@ class Main : ApplicationAdapter() {
 
     fun runSanityChecks3(cards: List<CyberpunkCard>) {
         val stats = cards.groupBy { StatBox(it) }.mapValues { it.value.size }
-        val statsStr = stats.entries.joinToString("\n") { "${it.key}: ${it.value}" }
-        println("Stats count: \n$statsStr")
+        stats.forEach { (box, count) ->
+            if (count != box.desiredCount) {
+                println("Incorrect Stat Count: ${box.hash} (expected ${box.desiredCount}, got $count)")
+            }
+        }
+        //val statsStr = stats.entries.joinToString("\n") { "${it.key}: ${it.value}" }
+        //println("Stats count: \n$statsStr")
     }
 
     fun runSanityChecks(cards: List<FantasyCard>) {

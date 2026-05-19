@@ -61,7 +61,7 @@ object Fonts {
     val costFont3 = initFontSize("tulpen_one.ttf", 64)
     val nameFont3 = initFontSize("tulpen_one.ttf", 48)
     val statsFont3 = initFontSize("syne_mono.ttf", 32)
-    val categoryFont3 = initFontSize("syne_mono.ttf", 48)
+    val categoryFont3 = initFontSize("syne_mono.ttf", 42)
 
     init {
         numberFont2.addTexture(Textures.power, '\u0010')
