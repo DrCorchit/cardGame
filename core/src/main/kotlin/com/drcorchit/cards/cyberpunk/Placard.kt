@@ -10,11 +10,11 @@ import com.drcorchit.cards.graphics.Textures
 import com.drcorchit.cards.graphics.Textures.asSprite
 import com.drcorchit.justice.utils.StringUtils.normalize
 
-class Placard(val bot: Rococobot, val isSilly: Boolean): Drawable {
+class Placard(val bot: Rococobot, val prefix: String): Drawable {
 
     override val name = bot.name
 
-    val image = if (isSilly) { bot.imageSilly } else bot.image
+    val image = bot.getImage(prefix)
 
     override val outputLocation = "output/images/full/cyberpunk/placard/${name.normalize()}.png"
 
@@ -31,12 +31,16 @@ class Placard(val bot: Rococobot, val isSilly: Boolean): Drawable {
     }
 
     override fun updateGraphic(): AnimatedSprite {
-        return bot.image
+        return image
     }
 
     companion object {
-        val bots = Rococobot.entries.map { Placard(it, false) }
-        val botsSilly = Rococobot.entries.map { Placard(it, true) }
+        val botsPretty = Rococobot.entries.map { Placard(it, "pretty") }
+        val botsSilly = Rococobot.entries.map { Placard(it, "silly") }
+        val botsSilly2 = Rococobot.entries.map { Placard(it, "silly2") }
+        val botsConfident = Rococobot.entries.map { Placard(it, "confident") }
+
+        val bots = botsSilly2 + botsConfident
 
         val placard = Textures.placard2.asSprite()
         val screen = Textures.screen2.asSprite()

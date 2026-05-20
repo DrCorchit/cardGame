@@ -26,7 +26,7 @@ class DisplayPlacards : ApplicationAdapter() {
     val actor by lazy { CardActor(card) }
 
     companion object {
-        val placards by lazy { Placard.bots + Placard.botsSilly }
+        val placards by lazy { Placard.bots }
     }
 
     override fun create() {

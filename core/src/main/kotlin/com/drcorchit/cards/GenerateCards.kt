@@ -5,10 +5,7 @@ import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.files.FileHandle
 import com.badlogic.gdx.graphics.Pixmap
 import com.badlogic.gdx.graphics.PixmapIO
-import com.drcorchit.cards.Main.Companion.IMAGE_H
-import com.drcorchit.cards.Main.Companion.IMAGE_W
 import com.drcorchit.cards.cyberpunk.DisplayPlacards
-import com.drcorchit.cards.cyberpunk.Placard
 import com.drcorchit.cards.graphics.Draw
 import com.drcorchit.cards.graphics.Drawable
 import java.io.File
