@@ -5,12 +5,11 @@ import com.badlogic.gdx.graphics.Color
 import com.drcorchit.cards.graphics.AnimatedSprite
 import com.drcorchit.cards.graphics.Draw
 import com.drcorchit.cards.graphics.Drawable
-import com.drcorchit.cards.graphics.Fonts
 import com.drcorchit.cards.graphics.Textures
 import com.drcorchit.cards.graphics.Textures.asSprite
 import com.drcorchit.justice.utils.StringUtils.normalize
 
-class Placard(val bot: Rococobot, val prefix: String): Drawable {
+class Placard(val bot: Rococobot, val prefix: String) : Drawable {
 
     override val name = bot.name
 
@@ -23,7 +22,8 @@ class Placard(val bot: Rococobot, val prefix: String): Drawable {
         val my = Gdx.graphics.height - Gdx.input.y.toFloat()
 
         image.draw(Draw.batch, 125f, 130f)
-        bot.signature.draw(Draw.batch, 555f, 300f, rotation = 20f)
+        bot.signatureGlow.draw(Draw.batch, sigX, sigY, rotation = sigAngle)
+        bot.signature.draw(Draw.batch, sigX, sigY, rotation = sigAngle)
         screen.draw(Draw.batch, 136f, 136f, 1000f, 1523f)
         placard.draw(Draw.batch, 0f, 0f)
 
@@ -35,15 +35,28 @@ class Placard(val bot: Rococobot, val prefix: String): Drawable {
     }
 
     companion object {
-        val botsPretty = Rococobot.entries.map { Placard(it, "pretty") }
-        val botsSilly = Rococobot.entries.map { Placard(it, "silly") }
-        val botsSilly2 = Rococobot.entries.map { Placard(it, "silly2") }
+        val botsBallerina = Rococobot.entries.map { Placard(it, "ballerina") }
         val botsConfident = Rococobot.entries.map { Placard(it, "confident") }
+        val botsPretty = Rococobot.entries.map { Placard(it, "pretty") }
+        val botsSilly0 = Rococobot.entries.map { Placard(it, "silly") }
+        val botsSilly1 = Rococobot.entries.map { Placard(it, "silly1") }
+        val botsSilly2 = Rococobot.entries.map { Placard(it, "silly2") }
+        val botsSilly3 = Rococobot.entries.map { Placard(it, "silly3") }
 
-        val bots = botsSilly2 + botsConfident
+        val oneColor = listOf("pretty", "ballerina", "confident", "silly", "silly1", "silly2", "silly3").map {
+            Placard(Rococobot.Flamme, it)
+        }
+
+        val all = botsBallerina + botsConfident + botsPretty + botsSilly0 + botsSilly1 + botsSilly2 + botsSilly3
+
+        val bots = botsSilly1 + botsSilly2
 
         val placard = Textures.placard2.asSprite()
         val screen = Textures.screen2.asSprite()
+
+        val sigX = 750f
+        val sigY = 500f
+        val sigAngle = 20f
 
         init {
             screen.blend.set(Color(.4f, .6f, .8f, 1f))

@@ -5,16 +5,17 @@ import com.drcorchit.cards.LocalAssets
 import com.drcorchit.cards.graphics.AnimatedSprite
 import com.drcorchit.cards.graphics.Textures
 import com.drcorchit.cards.graphics.Textures.asSprite
+import com.drcorchit.justice.utils.math.Compass
 
-enum class Rococobot(val color: Color, val isMale: Boolean) {
-    Rose(Color.RED, false),
-    Flamme(Color.ORANGE, false),
-    Fuschia(Color.PINK, false),
-    Violet(Color.PURPLE, false),
-    Lotus(Color.WHITE, false),
-    Noir(Color.BLACK, false),
-    Viridia(Color.GREEN, false),
-    Sapphire(Color.BLUE, false);
+enum class Rococobot(val color: Color) {
+    Rose(Color.RED),
+    Flamme(Color.ORANGE),
+    Fuschia(Color.PINK),
+    Violet(Color.PURPLE),
+    Lotus(Color.WHITE),
+    Noir(Color.BLACK),
+    Viridia(Color.GREEN),
+    Sapphire(Color.BLUE);
 //    Spike(Color.RED, true),
 //    Turbo(Color.ORANGE, true),
 //    Rage(Color.PINK, true),
@@ -30,8 +31,18 @@ enum class Rococobot(val color: Color, val isMale: Boolean) {
         return LocalAssets.getInstance().create("${prefix}_$name.png").asSprite()
     }
 
-    private val signatureStrip = if (isMale) Textures.signatures2 else Textures.signatures
-    private val signatureIndex = if (isMale) ordinal - 8.0 else ordinal.toDouble()
-    val signature = AnimatedSprite(signatureStrip.getFrames()).let { it.index = signatureIndex; it }
+    val signature = AnimatedSprite(Textures.signatures.getFrames())
+        .let {
+            it.setOffset(Compass.CENTER)
+            it.index = ordinal.toDouble()
+            it
+        }
+    val signatureGlow = AnimatedSprite(Textures.signaturesGlow.getFrames())
+        .let {
+            it.setOffset(Compass.CENTER)
+            it.index = ordinal.toDouble();
+            it.blend.set(color)
+            it
+        }
 
 }
