@@ -13,7 +13,7 @@ class Placard(val bot: Rococobot, val prefix: String) : Drawable {
 
     override val name = bot.name
 
-    val image = bot.getImage(prefix)
+    var image: AnimatedSprite? = null
 
     override val outputLocation = "output/images/full/cyberpunk/placard/${name.normalize()}.png"
 
@@ -21,7 +21,7 @@ class Placard(val bot: Rococobot, val prefix: String) : Drawable {
         val mx = Gdx.input.x.toFloat()
         val my = Gdx.graphics.height - Gdx.input.y.toFloat()
 
-        image.draw(Draw.batch, 125f, 130f)
+        image?.draw(Draw.batch, 125f, 130f)
         bot.signatureGlow.draw(Draw.batch, sigX, sigY, rotation = sigAngle)
         bot.signature.draw(Draw.batch, sigX, sigY, rotation = sigAngle)
         screen.draw(Draw.batch, 136f, 136f, 1000f, 1523f)
@@ -30,13 +30,16 @@ class Placard(val bot: Rococobot, val prefix: String) : Drawable {
         //Draw.drawText(100f, 100f, Fonts.abilityFont, "$mx, $my")
     }
 
-    override fun updateGraphic(): AnimatedSprite {
+    override fun updateGraphic(): AnimatedSprite? {
+        image = bot.getImage(prefix)
         return image
     }
 
     companion object {
+        val botsMixed = Rococobot.entries.map { Placard(it, "mixed") }
         val botsBallerina = Rococobot.entries.map { Placard(it, "ballerina") }
         val botsConfident = Rococobot.entries.map { Placard(it, "confident") }
+        val botsDramatic = Rococobot.entries.map { Placard(it, "dramatic") }
         val botsPretty = Rococobot.entries.map { Placard(it, "pretty") }
         val botsSilly0 = Rococobot.entries.map { Placard(it, "silly") }
         val botsSilly1 = Rococobot.entries.map { Placard(it, "silly1") }
@@ -47,9 +50,10 @@ class Placard(val bot: Rococobot, val prefix: String) : Drawable {
             Placard(Rococobot.Flamme, it)
         }
 
-        val all = botsBallerina + botsConfident + botsPretty + botsSilly0 + botsSilly1 + botsSilly2 + botsSilly3
+        val all =
+            botsBallerina + botsConfident + botsDramatic + botsPretty + botsSilly0 + botsSilly1 + botsSilly2 + botsSilly3
 
-        val bots = botsSilly1 + botsSilly2
+        val bots = botsMixed + botsSilly2
 
         val placard = Textures.placard2.asSprite()
         val screen = Textures.screen2.asSprite()
