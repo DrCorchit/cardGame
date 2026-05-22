@@ -17,21 +17,22 @@ import java.util.zip.Deflater
 class GenerateCards : ApplicationAdapter() {
     var index = 0
 
-    //val cards by lazy { Main.cards }
-    val cards by lazy { DisplayPlacards.placards }
+    val cards by lazy { Main.cards }
+    //val cards by lazy { DisplayPlacards.placards }
 
     override fun create() {
         //Load the batch
         Draw.batch
         LocalAssets.getInstance().load()
 
-        val output = File("output/images/full")
+        val output = File("output/images/temporary")
         output.deleteRecursively()
     }
 
     override fun render() {
         val card = cards[index]
         Draw.batch.begin()
+        card.updateGraphic()
         card.draw()
         Draw.batch.end()
         screenshot(card)

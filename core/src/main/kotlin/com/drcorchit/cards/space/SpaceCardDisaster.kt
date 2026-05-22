@@ -14,7 +14,7 @@ import java.io.File
 
 class SpaceCardDisaster(override val name: String, val file: String) : Drawable {
     var image: AnimatedSprite? = null
-    override val outputLocation = "output/images/full/cards/large/${name.normalize()}.png"
+    override val outputLocation = "output/images/temporary/cards/large/${name.normalize()}.png"
 
     override fun draw() {
         ScreenUtils.clear(Color.BLACK)

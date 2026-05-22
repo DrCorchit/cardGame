@@ -16,7 +16,7 @@ import java.io.File
 class SpaceCard2LargeWindow(override val name: String, val file: String, val textColor: Color) : Drawable {
     var image: AnimatedSprite? = updateGraphic()
 
-    override val outputLocation = "output/images/full/space_cards/large/${name.normalize()}.png"
+    override val outputLocation = "output/images/temporary/space_cards/large/${name.normalize()}.png"
 
     override fun draw() {
         ScreenUtils.clear(Color.BLACK)

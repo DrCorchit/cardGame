@@ -109,7 +109,7 @@ class FantasyCard(
 
     //We sort by rarity so we can auto add cards when using the MakePlayingCards.com website
     override val outputLocation =
-        "output/images/full/cards/${rarity.name.normalize()}/${name.normalize()}.png"
+        "output/images/temporary/cards/${rarity.name.normalize()}/${name.normalize()}.png"
 
     constructor(json: JsonObject) : this(
         json["name"].asString,

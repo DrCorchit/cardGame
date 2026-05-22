@@ -11,7 +11,7 @@ import com.drcorchit.justice.utils.StringUtils.normalize
 import com.drcorchit.justice.utils.math.Compass
 
 class SpaceCardBack(override val name: String) : Drawable {
-    override val outputLocation = "output/images/full/cards/large/${name.normalize()}.png"
+    override val outputLocation = "output/images/temporary/cards/large/${name.normalize()}.png"
 
     override fun draw() {
         ScreenUtils.clear(Color.BLACK)

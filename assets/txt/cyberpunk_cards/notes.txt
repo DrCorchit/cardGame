@@ -18,6 +18,15 @@ Outfits have COST, plus STATS
 
 Items (some are rare)
 
+
+Gift Card -- 200 x2 = 400
+Payday -- 300 x3 = 900
+Debt Limit Increase -- 400 x1 = 400
+Tax Refund  -- 500 x1 = 500
+New Credit Card -- 700 x1 = 700
+TOTAL = 2900
+
+
 Textures -> Glitter/Disco, Goth, Tiger Stripes, Leather, Plain
 
 Belt -> Tiger, Gold, Studded, Designer, Disco, Leather

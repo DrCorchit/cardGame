@@ -41,7 +41,7 @@ class CyberpunkCard(
     private var image: AnimatedSprite? = null
 
     override val outputLocation =
-        "output/images/full/cyberpunk/${name.normalize()}.png"
+        "output/images/temporary/cyberpunk/cards/${name.normalize()}.png"
 
     companion object {
         val card = Textures.card3.asSprite()

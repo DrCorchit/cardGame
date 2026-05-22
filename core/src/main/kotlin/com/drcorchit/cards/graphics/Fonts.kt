@@ -58,6 +58,9 @@ object Fonts {
     val cardTypeFont = initFontSizeAndStroke("conthrax.otf", 40)
 
     //Cyberpunk fonts
+    val creditAmountFont3 = initFontSize("tulpen_one.ttf", 128)
+    val creditNameFont3 = initFontSize("tulpen_one.ttf", 96)
+
     val costFont3 = initFontSize("tulpen_one.ttf", 64)
     val nameFont3 = initFontSize("tulpen_one.ttf", 48)
     val statsFont3 = initFontSize("syne_mono.ttf", 32)

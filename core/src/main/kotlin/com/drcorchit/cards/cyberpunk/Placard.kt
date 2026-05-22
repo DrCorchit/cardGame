@@ -15,7 +15,7 @@ class Placard(val bot: Rococobot, val prefix: String) : Drawable {
 
     var image: AnimatedSprite? = null
 
-    override val outputLocation = "output/images/full/cyberpunk/placard/${name.normalize()}.png"
+    override val outputLocation = "output/images/temporary/cyberpunk/placards/${prefix}_${name.normalize()}.png"
 
     override fun draw() {
         val mx = Gdx.input.x.toFloat()

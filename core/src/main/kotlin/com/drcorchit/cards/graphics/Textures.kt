@@ -68,6 +68,8 @@ object Textures {
     val screen2 = initTexture("screen_white.png")
     val divider = initTexture("divider.png")
     val divider2 = initTexture("divider2.png")
+    val ccFront = initTexture("cc_front_2.png")
+    val ccBack  = initTexture("cc_back_2.png")
 
     //Arrow
     val arrowLeft = initTexture("arrow_left.png")

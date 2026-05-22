@@ -30,7 +30,7 @@ open class SpaceCard(
         .replace("#", "\n • ")
 
     override val outputLocation =
-        "output/images/full/space_cards/${type.name.normalize()}/${name.normalize()}.png"
+        "output/images/temporary/space_cards/${type.name.normalize()}/${name.normalize()}.png"
 
     enum class Type(file: String?, val text: String, val aiHelp: String) {
         Computer("computer", "Computer Module", "mainframe computer"),
