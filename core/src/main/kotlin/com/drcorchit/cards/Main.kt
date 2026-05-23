@@ -7,6 +7,8 @@ import com.badlogic.gdx.scenes.scene2d.Stage
 import com.drcorchit.cards.cyberpunk.CyberpunkCard
 import com.drcorchit.cards.cyberpunk.CyberpunkCards
 import com.drcorchit.cards.cyberpunk.CyberpunkCredit
+import com.drcorchit.cards.cyberpunk.CyberpunkCreditBack
+import com.drcorchit.cards.cyberpunk.Placard
 import com.drcorchit.cards.cyberpunk.StatBox
 import com.drcorchit.cards.space.SpaceCard2LargeWindow.Companion.cardbacks
 import com.drcorchit.cards.space.SpaceCard2LargeWindow.Companion.disasters
@@ -48,14 +50,14 @@ class Main : ApplicationAdapter() {
         }
 
         val cyberpunkCards by lazy { CyberpunkCards.baseSet.cards }
-        val cyberpunkCredits by lazy { CyberpunkCredit.credits }
+        val cyberpunkCredits by lazy { CyberpunkCredit.credits + listOf(CyberpunkCreditBack) }
 
         val fantasyCards by lazy { FantasyCards.expac1.cards }
 
         //ALL fantasy cards, including expansions and tokens
         val allFantasyCards by lazy { FantasyCards.baseSet.cards + FantasyCards.expac1.cards + FantasyCards.tokens.cards }
 
-        val cards by lazy { cyberpunkCredits }
+        val cards by lazy { Placard.bots }
 
         val approvedCards by lazy {
             val cardsByName = cards.associateBy { it.name }

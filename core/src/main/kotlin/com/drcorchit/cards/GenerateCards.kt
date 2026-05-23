@@ -5,7 +5,6 @@ import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.files.FileHandle
 import com.badlogic.gdx.graphics.Pixmap
 import com.badlogic.gdx.graphics.PixmapIO
-import com.drcorchit.cards.cyberpunk.DisplayPlacards
 import com.drcorchit.cards.graphics.Draw
 import com.drcorchit.cards.graphics.Drawable
 import java.io.File
@@ -18,7 +17,6 @@ class GenerateCards : ApplicationAdapter() {
     var index = 0
 
     val cards by lazy { Main.cards }
-    //val cards by lazy { DisplayPlacards.placards }
 
     override fun create() {
         //Load the batch

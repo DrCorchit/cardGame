@@ -5,4 +5,5 @@ interface Drawable {
     fun draw()
     fun updateGraphic(): AnimatedSprite?
     val outputLocation: String
+    val multiplicity: Int
 }

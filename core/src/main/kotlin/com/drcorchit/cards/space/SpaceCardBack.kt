@@ -13,6 +13,8 @@ import com.drcorchit.justice.utils.math.Compass
 class SpaceCardBack(override val name: String) : Drawable {
     override val outputLocation = "output/images/temporary/cards/large/${name.normalize()}.png"
 
+    override val multiplicity = 1
+
     override fun draw() {
         ScreenUtils.clear(Color.BLACK)
         raw.draw(Draw.batch, BORDER, BORDER, W, H)

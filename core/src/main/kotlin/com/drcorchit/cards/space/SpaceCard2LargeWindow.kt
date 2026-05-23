@@ -18,6 +18,8 @@ class SpaceCard2LargeWindow(override val name: String, val file: String, val tex
 
     override val outputLocation = "output/images/temporary/space_cards/large/${name.normalize()}.png"
 
+    override val multiplicity = 1
+
     override fun draw() {
         ScreenUtils.clear(Color.BLACK)
         this.image?.draw(batch, imageX, imageY)

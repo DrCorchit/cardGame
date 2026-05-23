@@ -43,6 +43,8 @@ class CyberpunkCard(
     override val outputLocation =
         "output/images/temporary/cyberpunk/cards/${name.normalize()}.png"
 
+    override val multiplicity = 1
+
     companion object {
         val card = Textures.card3.asSprite()
 

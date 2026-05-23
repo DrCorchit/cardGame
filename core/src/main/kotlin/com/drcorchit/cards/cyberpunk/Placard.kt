@@ -2,6 +2,7 @@ package com.drcorchit.cards.cyberpunk
 
 import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.graphics.Color
+import com.badlogic.gdx.utils.ScreenUtils
 import com.drcorchit.cards.graphics.AnimatedSprite
 import com.drcorchit.cards.graphics.Draw
 import com.drcorchit.cards.graphics.Drawable
@@ -17,15 +18,18 @@ class Placard(val bot: Rococobot, val prefix: String) : Drawable {
 
     override val outputLocation = "output/images/temporary/cyberpunk/placards/${prefix}_${name.normalize()}.png"
 
-    override fun draw() {
-        val mx = Gdx.input.x.toFloat()
-        val my = Gdx.graphics.height - Gdx.input.y.toFloat()
+    override val multiplicity = 1
 
-        image?.draw(Draw.batch, 125f, 130f)
+    override fun draw() {
+//        val mx = Gdx.input.x.toFloat()
+//        val my = Gdx.graphics.height - Gdx.input.y.toFloat()
+
+        ScreenUtils.clear(Color.BLACK)
+        image?.draw(Draw.batch, BORDER_X + 125f, BORDER_Y + 130f)
         bot.signatureGlow.draw(Draw.batch, sigX, sigY, rotation = sigAngle)
         bot.signature.draw(Draw.batch, sigX, sigY, rotation = sigAngle)
-        screen.draw(Draw.batch, 136f, 136f, 1000f, 1523f)
-        placard.draw(Draw.batch, 0f, 0f)
+        screen.draw(Draw.batch, BORDER_X + 136f, BORDER_Y + 136f, 1000f, 1523f)
+        placard.draw(Draw.batch, BORDER_X, BORDER_Y)
 
         //Draw.drawText(100f, 100f, Fonts.abilityFont, "$mx, $my")
     }
@@ -58,8 +62,10 @@ class Placard(val bot: Rococobot, val prefix: String) : Drawable {
         val placard = Textures.placard2.asSprite()
         val screen = Textures.screen2.asSprite()
 
-        val sigX = 750f
-        val sigY = 500f
+        const val BORDER_X = 10f
+        const val BORDER_Y = 20f
+        val sigX = 750f + BORDER_X
+        val sigY = 500f + BORDER_Y
         val sigAngle = 20f
 
         init {

@@ -16,6 +16,8 @@ class SpaceCardDisaster(override val name: String, val file: String) : Drawable 
     var image: AnimatedSprite? = null
     override val outputLocation = "output/images/temporary/cards/large/${name.normalize()}.png"
 
+    override val multiplicity = 1
+
     override fun draw() {
         ScreenUtils.clear(Color.BLACK)
         disasterCutaway.draw(Draw.batch, BORDER, BORDER, W, H)

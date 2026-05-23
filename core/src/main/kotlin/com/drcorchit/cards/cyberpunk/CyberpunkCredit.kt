@@ -13,7 +13,7 @@ import com.drcorchit.cards.graphics.Textures.asSprite
 import com.drcorchit.justice.utils.StringUtils.normalize
 import com.drcorchit.justice.utils.math.Compass
 
-class CyberpunkCredit(override val name: String, val amount: Int) : Drawable {
+class CyberpunkCredit(override val name: String, val amount: Int, override val multiplicity: Int) : Drawable {
 
     val combined = "$name — $$amount"
 
@@ -36,13 +36,13 @@ class CyberpunkCredit(override val name: String, val amount: Int) : Drawable {
         "output/images/temporary/cyberpunk/credits/${name.normalize()}.png"
 
     companion object {
-        val credits = mapOf(
-            "Gift Card" to 200,
-            "Payday" to 300,
-            "Debt Limit Increase" to 400,
-            "Tax Refund" to 500,
-            "New Credit Card" to 700
-        ).map { CyberpunkCredit(it.key, it.value) }
+        val credits = listOf(
+            CyberpunkCredit("Gift Card", 200, 2),
+            CyberpunkCredit("Debt Limit Increase", 300, 2),
+            CyberpunkCredit("Payday", 400, 2),
+            CyberpunkCredit("Tax Refund", 500, 1),
+            CyberpunkCredit("New Credit Card", 700, 1)
+        )
 
         val ccBack = Textures.ccBack.asSprite()
 

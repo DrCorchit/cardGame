@@ -32,6 +32,8 @@ open class SpaceCard(
     override val outputLocation =
         "output/images/temporary/space_cards/${type.name.normalize()}/${name.normalize()}.png"
 
+    override val multiplicity = 1
+
     enum class Type(file: String?, val text: String, val aiHelp: String) {
         Computer("computer", "Computer Module", "mainframe computer"),
         Crew("crew", "Crew", "crewmember"),

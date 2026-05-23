@@ -111,6 +111,8 @@ class FantasyCard(
     override val outputLocation =
         "output/images/temporary/cards/${rarity.name.normalize()}/${name.normalize()}.png"
 
+    override val multiplicity = if (rarity == Rarity.Common) 2 else 1
+
     constructor(json: JsonObject) : this(
         json["name"].asString,
         json["power"]?.asInt ?: 0,
