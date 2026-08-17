@@ -19,6 +19,10 @@ class FantasyCards(path: String) {
         val regex =
             Regex("$nameRegex: *$statsRegex *\\[$tagsRegex] *\\[$abilityRegex] *\\[$quoteRegex]( *\\[$strategyRegex])?")
 
+        init {
+            println(regex.toString())
+        }
+
         @JvmStatic
         fun parse(str: String): FantasyCard? {
             if (str.isBlank() || str.startsWith("#")) {
@@ -62,6 +66,8 @@ class FantasyCards(path: String) {
         val baseSet by lazy { FantasyCards("assets/txt/fantasy_cards/base_set") }
         val expac1 by lazy { FantasyCards("assets/txt/fantasy_cards/expac_1") }
         val tokens by lazy { FantasyCards("assets/txt/fantasy_cards/tokens") }
+        val leaders by lazy { FantasyCards("assets/txt/fantasy_cards/wizards") }
+
 
         @JvmStatic
         fun readFrom(filename: String): List<FantasyCard> {

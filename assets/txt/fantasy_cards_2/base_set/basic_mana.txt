@@ -1,0 +1,47 @@
+#Basic Lands
+Geyser: 2p [Volcanic, Land, Emplacement] [Haste.; Tap to spawn fire_mana.] []
+Lake: 2p [Aquatic, Land, Emplacement] [Haste.; Tap to spawn water_mana.] []
+Hill: 2p [Terrestrial, Land, Emplacement] [Haste.; Tap to spawn earth_mana.] []
+Thunderstorm: 2p [Electric, Land, Emplacement] [Haste.; Tap to spawn air_mana.] []
+Sunbeam: 2p [Solar, Land, Emplacement] [Haste.; Tap to spawn light_mana.] []
+Graveyard: 2p [Lunar, Land, Emplacement] [Haste.; Tap to spawn dark_mana.] []
+
+#Persistent Lands
+Volcano: 4p [Volcanic, Land, Emplacement, Location] [When played, become stalwart.; Haste.; Tap to spawn fire_mana.] []
+Ocean: 4p [Aquatic, Land, Emplacement, Location] [When played, become stalwart.; Haste.; Tap to spawn water_mana.] []
+Mountain: 4p [Terrestrial, Land, Emplacement, Location] [When played, become stalwart.; Haste.; Tap to spawn earth_mana.] []
+Plains: 4p [Electric, Land, Emplacement, Location] [When played, become stalwart.; Haste.; Tap to spawn air_mana.] []
+Desert: 4p [Solar, Land, Emplacement, Location] [When played, become stalwart.; Haste.; Tap to spawn light_mana.] []
+Swamp: 4p [Lunar, Land, Emplacement, Location] [When played, become stalwart.; Haste.; Tap to spawn dark_mana.] []
+
+#Basic Mana Units
+ Apprentice Smitty: 2/2p [Vulcanic, Dwarf] [Tap to either:#Spawn fire_mana.#Expend fire_mana to gain 1 point.] [Just like my father, and his father, and his father's father...]
+Pond Naiad: 2/2p [Aquatic, Nymph] [Tap to either:#Spawn water_mana.#Expend water_mana to gain 1 point.] [Naiads agree that ponds are objectively cuter than lakes.]
+Treant Sapling: 2/2p [Terrestrial, Treant] [Tap to either:#Spawn earth_mana.#Expend earth_mana to gain 1 point.] [They grow up so fast.]
+Dynamo: 2/2p [Electric, Fairy] [Tap to either:#Spawn air_mana.#Expend air_mana to gain 1 point.] [Ol' Reliable.]
+Solar Panel: 2/2p [Solar, Machine] [Tap to either:#Spawn light_mana.#Expend light_mana to gain 1 point.] [These things have a bright future.]
+Nightcrawler: 2/2p [Lunar, Vampire] [Tap to either:#Spawn dark_mana.#Expend dark_mana to gain 1 point.] [This is the nightcrawler!]
+
+#Pointslam
+Cave Bear: 5/2p [Terrestrial, Beast] [You must expend earth_mana to play this card.] [Let sleeping bears lie.]
+Cyborg Soldier: 5/2p [Electric, Elf] [You must expend air_mana to play this card.] [More machine than man.]
+
+
+#Fire+Water = Pirates
+#Fire+Earth
+#Fire+Air
+#Fire+Light
+#Fire+Dark
+#Water+Earth = Dryads
+#Water+Air
+#Water+Light
+#Water+Dark
+#Earth+Air
+#Earth+Light
+#Earth+Dark
+#Air+Light = Tech Elves
+#Air+Dark =
+#Light+Dark = Vamp Slayers
+
+#Earth+Water+Air
+#Fire+Light+Dark

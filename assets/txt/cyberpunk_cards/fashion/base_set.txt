@@ -73,7 +73,7 @@ Hoodie: Top 200$ 1, 0, 0, 2
 Plaid Blouse: Top 200$ 0, 3, 0, 0
 Halter Top: Top 300$ 0, 4, 0, 0
 Leather Jacket: Top 300$ 0, 0, 4, 0
-Leopard Print Top: Top 400$ 0, 0, 5, 0 | At Metron Gala, +2 Glam if paired with Leopard Shorts
-Tiger Striped Suit: Top 400$ 0, 0, 0, 5 | At Metron Gala, +2 Pizzazz if paired with Tiger Striped Pants
-Disco Suit Top: Top 500$ 0, 6, 0, 0 | At Metron Gala, +2 Chic if paired with Disco Suit Pants
-Golden Suit Top: Top 500$ 6, 0, 0, 0 | At Metron Gala, +2 Rizz if paired with Golden Suit Pants
+Leopard Print Top: Top 400$ 0, 0, 5, 0 | At Metron Gala, +1 Glam if paired with Leopard Shorts
+Tiger Striped Suit: Top 400$ 0, 0, 0, 5 | At Metron Gala, +1 Pizzazz if paired with Tiger Striped Pants
+Disco Suit Top: Top 500$ 0, 6, 0, 0 | At Metron Gala, +1 Chic if paired with Disco Suit Pants
+Golden Suit Top: Top 500$ 6, 0, 0, 0 | At Metron Gala, +1 Rizz if paired with Golden Suit Pants

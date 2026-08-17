@@ -30,11 +30,38 @@ class AIArtDownloader : ApplicationAdapter() {
         //downloadFantasyCardArts()
         //downloadSpaceCardArts()
         //downloadRobots()
+        downloadWizards()
         dispose()
     }
 
     override fun dispose() {
         Gdx.app.exit()
+    }
+
+    fun downloadWizards() {
+        val corePrompt = "Create an image of %s Use landscape orientation. Do not include any text on the image."
+
+        val wizardPrompts = mapOf(
+            "Alice the Wonder" to "a witch named \"Alice the Wonder\". She wears a green dress with a plunging V neckline and a long and tight fitting satin skirt. Her dress has a subtle hexagonal pattern. She has black hair with piercing green eyes, and strikes an assertive and active pose, shooting magic from her bare hands towards the camera. In the background is a mysterious green palace interior.",
+            "Bertcalf the Tall" to "a wizard named \"Bertcalf the Tall\" He wears luxurious turquoise robes with gold trim and a tall green wizard hat with gold stars. He has wispy white eyebrows and a beard, and a slightly nefarious expression on his face. Give him white gloves and a golden wizard staff. The background features a desk cluttered with trinkets and a stack of gold coins.",
+            "Lutis the Mad" to "a wizard named \"Lutis the Mad\", the crazed archmage who downed a fifth of vodka and disappeared into the Abyss forever. Give the image an edgy and serious tone, but make Lutis a younger man with wild white hair.",
+            "Newtonia the White" to "a witch named \"Newtonia the White\". She wears a white hat and a short frilly white dress with a plunging neckline. She has pale white skin and piercingly intelligent yellow eyes, and wields a gnarled white staff. The background features a subtle checkerboard pattern of black and white.",
+            "Octicia the Cunning" to "a witch named \"Octicia the Cunning\". She wears a black witch hat and a tight fitting and well worn leather dress. She has gray skin and piercing purple eyes, with magic crackling from the fingers of her left hand. She strikes a seductive pose and octopus tentacles sprout from her back ominously. The background features a bleak gray fortress perched on a cliff.",
+            "Rhodango the Red" to "a wizard named \"Rhodango the Red\". He wears red and burgundy robes and a crimson pointed wizard hat. He has a full curly red beard and red hair, and a slightly angry expression on his face. Give him black gloves and a gnarled brown wizard staff. The background features a dense and foggy autumn forest.",
+            "Samray the Swift" to "a wizard named \"Samray the Swift\". He wears light blue and white satin robes and has jet black hair, with a large scar running down one side of his face over his eye. He has a devious expression on his face, blue eyes, and a silver pendant dangles from his left hand. The background features a large placid lake seen through dense fog.",
+            "Takulev the Undying" to "a wizard named \"Takulev the Undying\". He wears a dark black robe and has gray skin with piercing yellow eyes. The background is a gray and misty graveyard scene.",
+            "Vizimir the Golden" to "a wizard named \"Vizimir the Golden\". He wears ornate black robes with gold trim, a black turban, and black gloves. He has a black mustache and dark skin with yellow eyes, and a boldly confident look on his face. He holds a crystal ball aloft in one of his hands. The background is comprised of a dark purple satin curtain."
+        )
+
+        repeat(1) {
+            wizardPrompts.mapValues { String.format(corePrompt, it.value) }
+                .forEach {
+                    val prompt = it.value
+                    //val file = uniqueFile("assets/images/wizards/${it.key}", "png")
+                    //createImage(prompt, file, true)
+                    println(prompt)
+                }
+        }
     }
 
     fun downloadRobots() {
