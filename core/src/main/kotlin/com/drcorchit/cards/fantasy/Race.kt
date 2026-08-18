@@ -8,7 +8,7 @@ enum class Race {
     Fairy, Nymph, Treant,
 
     //Other races
-    Beast, Insectoid, Dragon, Ogroid, Deity,
+    Beast, Insectoid, Dragon, Ogroid, Celestial,
 
     //Monster Races
     Vampire, Undead, Monster,

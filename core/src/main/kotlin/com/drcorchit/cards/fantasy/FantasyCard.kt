@@ -4,9 +4,7 @@ import com.badlogic.gdx.files.FileHandle
 import com.badlogic.gdx.graphics.Color
 import com.badlogic.gdx.graphics.Texture
 import com.badlogic.gdx.utils.ScreenUtils
-import com.drcorchit.cards.AIArtDownloader
 import com.drcorchit.cards.Keyword
-import com.drcorchit.cards.Main
 import com.drcorchit.cards.Main.Companion.BORDER
 import com.drcorchit.cards.Main.Companion.H
 import com.drcorchit.cards.Main.Companion.IMAGE_H
@@ -26,6 +24,7 @@ import kotlin.math.max
 import kotlin.math.roundToInt
 
 class FantasyCard(
+    val cards: FantasyCards,
     override val name: String,
     val power: Int,
     val cost: Int,
@@ -61,7 +60,7 @@ class FantasyCard(
     val rarity = tags.firstNotNullOfOrNull {
         try {
             Rarity.valueOf(it)
-        } catch (e: Exception) {
+        } catch (_: Exception) {
             null
         }
     } ?: Rarity.Common
@@ -113,7 +112,8 @@ class FantasyCard(
 
     override val multiplicity = if (rarity == Rarity.Common) 2 else 1
 
-    constructor(json: JsonObject) : this(
+    constructor(json: JsonObject, cards: FantasyCards) : this(
+        cards,
         json["name"].asString,
         json["power"]?.asInt ?: 0,
         json["cost"].asInt,
@@ -169,7 +169,8 @@ class FantasyCard(
         val armorBack = Textures.armorBack.asSprite().setOffset(Compass.CENTER)
         val costBack = Textures.costBack.asSprite().setOffset(200f, 150f)
         val line = Textures.line.asSprite().setOffset(Compass.CENTER)
-        val border = Textures.fantasyBorder.asSprite()
+        val border = Textures.frameBack.asSprite()
+
 
         val scale = W / tray.getFrames().width
         val trayHeight = tray.getFrames().height * scale
@@ -344,7 +345,9 @@ class FantasyCard(
             keywordHelpColor
         )
 
-        line.draw(batch, midWidth, lineY, 3f, 1f, 0f)
+        if (!quote.isBlank()) {
+            line.draw(batch, midWidth, lineY, 3f, 1f, 0f)
+        }
 
         //Quote text
         Draw.drawText(
@@ -377,16 +380,8 @@ class FantasyCard(
     }
 
     override fun updateGraphic(): AnimatedSprite? {
-        val normalized = name.normalize()
-
-        val base = if (Main.showStolenArt) {
-            "assets/images/fantasy_cards/cards/other/Stolen/${city.name}"
-        } else {
-            "assets/images/fantasy_cards/cards/ChatGPT/Realistic/${city.name}"
-        }
-
-        val png = "$base/$normalized.png"
-        val jpg = "$base/$normalized.jpg"
+        val png = "${cards.imageRoot}/${city.name}/${name.normalize()}.png"
+        val jpg = "${cards.imageRoot}/${city.name}/${name.normalize()}.jpg"
         val texture = if (File(png).exists()) Texture(FileHandle(png), true)
         else if (File(jpg).exists()) Texture(FileHandle(jpg), true)
         else null

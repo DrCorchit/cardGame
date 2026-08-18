@@ -51,7 +51,7 @@
   },
   {
     "name": "Overkill X",
-    "description": "Triggers when an assault deals X excess damage.",
+    "description": "Triggers when dealing X or more excess damage.",
     "synonyms": ["overkill"]
   },
   {

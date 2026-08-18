@@ -105,7 +105,7 @@ class AIArtDownloader : ApplicationAdapter() {
     fun downloadFantasyCardArts() {
         val cards = cards.filter {
             val canonicalFile =
-                File("assets/images/fantasy_cards/cards/${model.name}/${style.name}/${it.city.name}/${it.name.normalize()}.png")
+                File("resources/images/fantasy_cards/cards/${model.name}/${style.name}/${it.city.name}/${it.name.normalize()}.png")
             if (skipExistingCards && canonicalFile.exists()) {
                 println("Art for ${it.name} already exists; skipping.")
                 false
@@ -144,7 +144,7 @@ class AIArtDownloader : ApplicationAdapter() {
             customPrompts.map { (key, value) ->
                 Runnable {
                     for (i in 1..runs) {
-                        createImage(value, uniqueFile("assets/images/fantasy_cards/cards/ChatGPT/Realistic/$key"), false)
+                        createImage(value, uniqueFile("resources/images/fantasy_cards/cards/ChatGPT/Realistic/$key"), false)
                     }
                 }
             }.forEach { executor.execute(it) }

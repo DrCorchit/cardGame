@@ -265,7 +265,7 @@ object AIUtils {
         try {
             val prompt = makePrompt(card, style)
             val file = uniqueFile(
-                "assets/images/fantasy_cards/cards/${model.name}/${style.name}/${card.city.name}/${card.name.normalize()}",
+                "resources/images/fantasy_cards/cards/${model.name}/${style.name}/${card.city.name}/${card.name.normalize()}",
                 "png"
             )
             createImage(prompt, file, false)

@@ -2,8 +2,9 @@ package com.drcorchit.cards.fantasy
 
 import java.io.File
 
-class FantasyCards(path: String) {
-    val cards = readFrom(path)
+class FantasyCards(path: String, var imageRoot: String = "resources/images/fantasy_cards/cards/ChatGPT/Realistic/") {
+
+    val cards = readFrom(path, this)
 
     companion object {
         val nameRegex = "(?<name>.*)"
@@ -24,7 +25,7 @@ class FantasyCards(path: String) {
         }
 
         @JvmStatic
-        fun parse(str: String): FantasyCard? {
+        fun parse(str: String, cards: FantasyCards): FantasyCard? {
             if (str.isBlank() || str.startsWith("#")) {
                 return null
             }
@@ -55,7 +56,7 @@ class FantasyCards(path: String) {
                     ?.let { it.value.split(",").map { tag -> tag.trim() } }
                     ?: listOf()
 
-                return FantasyCard(name, power, cost, armor, tags, abilities, quote, strategyTags)
+                return FantasyCard(cards, name, power, cost, armor, tags, abilities, quote, strategyTags)
             } catch (e: Exception) {
                 println("Error parsing line: $str")
                 e.printStackTrace()
@@ -66,15 +67,16 @@ class FantasyCards(path: String) {
         val baseSet by lazy { FantasyCards("assets/txt/fantasy_cards/base_set") }
         val expac1 by lazy { FantasyCards("assets/txt/fantasy_cards/expac_1") }
         val tokens by lazy { FantasyCards("assets/txt/fantasy_cards/tokens") }
-        val leaders by lazy { FantasyCards("assets/txt/fantasy_cards/wizards") }
+
+        val baseSet2 by lazy { FantasyCards("assets/txt/fantasy_cards_2/base_set", "resources/images/fantasy_cards_2") }
 
 
         @JvmStatic
-        fun readFrom(filename: String): List<FantasyCard> {
+        fun readFrom(filename: String, cards: FantasyCards): List<FantasyCard> {
             return File(filename).listFiles()!!
                 .flatMap { file ->
                     if (file.extension.equals("txt", true)) {
-                        file.readLines().mapNotNull { parse(it) }
+                        file.readLines().mapNotNull { parse(it, cards) }
                     } else listOf()
                 }
         }

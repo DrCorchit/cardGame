@@ -57,7 +57,7 @@ class Main : ApplicationAdapter() {
         //ALL fantasy cards, including expansions and tokens
         val allFantasyCards by lazy { FantasyCards.baseSet.cards + FantasyCards.expac1.cards + FantasyCards.tokens.cards }
 
-        val cards by lazy { FantasyCards.leaders.cards }
+        val cards by lazy { FantasyCards.baseSet2.cards }
 
         val approvedCards by lazy {
             val cardsByName = cards.associateBy { it.name }
@@ -79,9 +79,9 @@ class Main : ApplicationAdapter() {
         stage.addActor(actor)
 
         //card sanity checks
-        //runSanityChecks(cards)
+        runSanityChecks(cards)
         //runSanityChecks2(SpaceCards.cards)
-        runSanityChecks3(CyberpunkCards.baseSet.cards)
+        //runSanityChecks3(CyberpunkCards.baseSet.cards)
         card.updateGraphic()
     }
 
@@ -196,6 +196,7 @@ class Main : ApplicationAdapter() {
             if (!cardNames.add(it.name.normalize())) {
                 println("Duplicate Card name: ${it.name}")
             }
+            it.updateGraphic()
             if (it.image == null) {
                 println("Card ${it.name} has no art! (checked ${it.name.normalize()}.png and .jpg)")
             }
@@ -262,6 +263,8 @@ class Main : ApplicationAdapter() {
 
         if (Gdx.input.isKeyJustPressed(Input.Keys.Z)) {
             showStolenArt = !showStolenArt
+            if (showStolenArt) card.cards.imageRoot = "resources/images/fantasy_cards/cards/other/Stolen/"
+            else card.cards.imageRoot = "resources/images/fantasy_cards/cards/ChatGPT/Realistic/"
             card.updateGraphic()
         }
 

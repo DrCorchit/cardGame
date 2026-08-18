@@ -12,18 +12,19 @@ object Textures {
 
     val white = initTexture("white.png")
 
-    val fantasyBorder = initTexture("border_fantasy.png")
     val spaceBorder = initTexture("border_space.png")
     val tray = initTexture("paper.png")
     val brushStroke = initTexture("brush_stroke.png")
     val line = initTexture("line.png")
     val diamondBlack = initTexture("diamond_black.png")
+    val frameBack = initTexture("frame_back.png")
 
     val armorBack = initTexture("armor.png")
     val armorBlack = initTexture("armor_black.png")
 
     val costBack = initTexture("provisions.png")
     val provisionsBlack = initTexture("provisions_black.png")
+
 
     val land = initTexture("land.png")
     val air = initTexture("air_sharp.png")

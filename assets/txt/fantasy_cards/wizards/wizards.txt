@@ -1,26 +1,26 @@
 #Mana control
-Alice the Wonder: 1/0p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; When played, spawn 6 mana of any colors.] [Any color you like. (Especially green.)]
+Alice the Wonder: 1/0p [Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; When played, spawn 6 mana of any colors.] [Any color you like. (Especially green.)]
 
 #Maximizes points and dominates a round.
-Bertcalf the Tall: 7/0p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; When played, become invisible.] [A penny saved is a moment wasted.]
+Bertcalf the Tall: 8/0p [Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; When played, become invisible.] [A penny saved is a moment wasted.]
 
-#Tempo control
-Lutis the Mad: 5/0p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; Tap to return to your sideboard.] [Downing a fifth of vodka, he and his favorite plane of reality disappeared for millennia.]
+#Control over time.
+Lutis the Mad: 1/0p [Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; When played, assault 5.; Overkill 2: Additionally banish the targeted unit.] [Downing a fifth of vodka, he and his favorite plane of reality disappeared for millennia.]
 
 #Extra engine or combo potential.
-Newtonia the White: 2/0p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; Tap to play a common card from your graveyard and banish self.] [Act like a pawn, and you will be treated as such.]
+Newtonia the White: 2/0p [Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; Tap to play a common card from your sideboard and destroy self.] [Act like a pawn, and you will be treated as such.]
 
 #More precise control than Rhodango, but fewer points and less re-usability.
-Octicia the Cunning: 2/0p [Legendary, Human, Mage, Leader] [This card starts in your sideboard with 3 charges.; During your turn, you may spend a charge to assault 1.; When all charges are used up, summon Octicia from your sideboard to the battlefield.] [Do I make you squirm?]
+Octicia the Cunning: 2/0p [Human, Mage, Leader] [This card starts in your sideboard with 3 counters.; During your turn, you may remove a counter to assassinate 1.; When all charges are used up, summon Octicia from your sideboard to the battlefield.] [I know what makes you squirm.]
 
-#Control plus pointslam.
-Rhodango the Red: 2/0p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; Tap to assassinate 1.; You may play this card from your graveyard and give it doomed during your turn.] [Alone? But I have so many friends: wisdom, silence, solitude, peace of mind... ]
+#Tempo control
+Rhodango the Red: 5/0p [Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; Tap to return to your sideboard.] [Alone? But I have so many friends: wisdom, silence, solitude, peace of mind... ]
 
 #Allows building sideboard quickly and effectively.
-Samray the Swift: 5/0p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; When played, draw three cards, then move three cards from your hand into your sideboard.] [Whatever you require in others, require in yourself first.]
+Samray the Swift: 5/0p [Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; When played, draw three cards, then move three cards from your hand into your sideboard.] [Whatever you require in others, require in yourself first.]
 
 #Graveyard and combo play.
-Takulev the Undying: 6/0p [Legendary, Undead, Mage, Leader] [Disloyal.; This card starts in your sideboard. You may play this card from your sideboard during your turn.; When played, play a unit from your graveyard.] [I died once. I didn't like it, so I came back.]
+Takulev the Undying: 6/0p [Undead, Mage, Leader] [Disloyal.; This card starts in your sideboard. You may play this card from your sideboard during your turn.; When played, play a unit from your graveyard.] [I died once. I didn't like it, so I came back.]
 
 #Maximizes round but requires commitment.
-Vizimir the Golden: 3/0p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; Whenever you play a card, gain 1 point.] [Respect must be learned before it can be earned.]
+Vizimir the Golden: 3/0p [Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; Whenever you play a card, gain 1 point.] [Respect must be learned before it can be earned.]
