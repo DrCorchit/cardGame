@@ -19,12 +19,12 @@ Guinness Stout: 3/4p [Vulcania, Equipment, Liquor] [When played, also trigger th
 Dwarfsteel Battleaxe: 4p [Vulcania, Equipment, Weapon] [When played, assault 2.; Tap to assault 2.] [Even dwarven battleaxes have beards...]
 
 Shorty's Axe: 4p [Vulcania, Equipment, Weapon, Rare] [When played, assault 4.; If equipped to Shorty McGee, intensify the assault by 1 for every Liquor card equipped to him.] [The one, the only.]
-Grandmaster Smitty: 1a 3/4p [Vulcania, Dwarf, Rare] [At allied turn start, spawn fire_mana fire_mana.] [Ta master tha forge, ya gotta become one wit' 'er. Jus' kiddin, tha would be weird.]
+
 Lost Dragon Egg: 1a 1/4p [Vulcania, Egg, Rare] [When you pass, gain 9 points.; This card starts in your graveyard.] [It's a long way back to the nest.]
 
 Golden Dragon Egg: 1/5p [Vulcania, Egg, Rare] [Tap to destroy self and play a Dragon from your deck.] [Oooh, shiny!]
 Secret Brew: 3/5p [Vulcania, Equipment, Liquor, Rare] [When played, trigger the equip target's imbibe ability an additional time.] [What'd you even put in this stuff?]
-Swoop: 5p [Vulcania, Dragon, Instant, Instinct, Rare] [When played, either:#Spawn fire_mana fire_mana and play a common Dragon from your deck.#Expend fire_mana fire_mana and play a Dragon from your deck.] [Now you've made her mad!]
+Swoop: 5p [Vulcania, Dragon, Tactic, Instinct, Rare] [When played, either:#Spawn fire_mana fire_mana and play a common Dragon from your deck.#Expend fire_mana fire_mana and play a Dragon from your deck.] [Now you've made her mad!]
 
 The Eggspert: 1/6p [Vulcania, Dwarf, Rare] [When played, either:#Play an Egg from your deck.#Expend 2X fire_mana to play X Egg cards from your graveyard.] [You mean you DON'T collect dragon eggs?]
 Shorty McGee: 2/6p [Vulcania, Dwarf, Rare] [When played, assault 2.; Imbibe to assault 2.] [Live by the axe...]
@@ -32,11 +32,10 @@ Pseudodragon: 1/6p [Vulcania, Dragon, Rare] [When played, play a common Liquor c
 
 Guardian Dragon: 1a 3/7p [Vulcania, Dragon, Rare] [Fragile.; When played, become a protector and doomed.; This card only protects adjacent Egg cards.; You may play this card from your graveyard whenever an allied Egg is destroyed.] [Ohhh now you've made 'er mad!]
 Hoard Dragon: 9/7p [Vulcania, Dragon, Rare] [Your score must be at least 10 to play this card.] [Be fearful when others are greedy.]
-Magma Defender: 12/7p [Vulcania, Dragon, Rare] [You must expend fire_mana fire_mana fire_mana fire_mana to play this card.] [Now you're cooked.]
 
 Goryx, Golden Dragon: 1a 6/8p [Vulcania, Dragon, Legendary] [Haste.; Tap and expend X fire_mana to play a card from your deck of up to 2X provisions.] [Be greedy when others are fearful.]
 Ale of the Ancestors: 5/8p [Vulcania, Equipment, Liquor, Rare] [Echo.; When played, spawn fire_mana fire_mana fire_mana.] [The hard part isn't the brewing process, it's hiding it from all the dwarves for a hundred years.]
-Scaly Feast: 8p [Vulcania, Instant, Instinct, Legendary] [When played, each allied Dragon assaults an enemy unit with equal or lesser power by 2.] [It's a circle of life.]
+Scaly Feast: 8p [Vulcania, Tactic, Instinct, Legendary] [When played, each allied Dragon assaults an enemy unit with equal or lesser power by 2.] [It's a circle of life.]
 
 Neromir, Warrior Dragon: 1a 4/9p [Vulcania, Dragon, Legendary] [Haste.; Tap and expend X fire_mana to assault X.; Imbibe to untap this card.] [Look who woke up on the wrong side of the bed.]
 Treasure of all Treasures: 9p [Vulcania, Emplacement, Legendary] [When played, play a unit from hand and draw a card.; At allied turn start, gain 1 point if you control the highest provision cost card. If there's a tie, gain 0 points.] [All that glitters is not gold. Could be diamonds, for instance.]
@@ -45,5 +44,5 @@ Mithril Mail: 4a 2/10p [Vulcania, Equipment, Armor, Legendary] [Tap to make the 
 Dragonmother Erizyx: 2a 8/10p [Vulcania, Dragon, Legendary] [When played, become a protector.; This card only protects adjacent Egg cards.; When you pass, gain 2 points for each allied Egg.] [She's a lady and you will treat her as such.]
 Dragon Emperor Coronakt: 1a 4/10p [Vulcania, Dragon, Legendary] [When played, banish a lowest-provision unit from your graveyard and gain points equal to its power.; Imbibe to repeat the "when played" ability.] [Ever been so hungry you could eat a dragon?]
 
-Drinking Contest: 11p [Vulcania, Instant, Legendary] [Play a common Dwarf and a Liquor card from your deck.] [Nobody ever lost a drinking contest. — Dwarven proverb]
+Drinking Contest: 11p [Vulcania, Tactic, Legendary] [Play a common Dwarf and a Liquor card from your deck.] [Nobody ever lost a drinking contest. — Dwarven proverb]
 Mountainlord Torbjorn: 1a 1/11p [Vulcania, Dwarf, Regent, Legendary] [When played, play a common Liquor card from your deck.; Imbibe to gain 3 points.] [He doesn't believe in discussing matters of state while sober.]

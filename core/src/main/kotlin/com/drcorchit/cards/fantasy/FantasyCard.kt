@@ -99,12 +99,17 @@ class FantasyCard(
 
     val abilityTextH = abilityTextHandler.calculateHeight(abilityTextW)
 
+    val hasQuote = !quote.isBlank()
+
+    val keywordTextW = if (hasQuote) { keywordTextQuoteW } else { keywordTextNoQuoteW }
     val keywordTextH =
         Draw.calculateDimensions(
             Fonts.keywordHelpFont,
             keywordText,
             keywordTextW
         ).second
+
+    val keywordTextY = if (hasQuote) Companion.keywordTextY else keywordTextNoQuoteY
 
     //We sort by rarity so we can auto add cards when using the MakePlayingCards.com website
     override val outputLocation =
@@ -217,7 +222,9 @@ class FantasyCard(
 
         val keywordTextX = abilityTextX
         val keywordTextY = lineY + 15
-        val keywordTextW = abilityTextW - 30
+        val keywordTextNoQuoteY = BORDER + 35f
+        val keywordTextQuoteW = abilityTextW - 30
+        val keywordTextNoQuoteW = abilityTextW - 150f
         val totalAbilityTextH = abilityTextY - keywordTextY
     }
 
@@ -345,20 +352,20 @@ class FantasyCard(
             keywordHelpColor
         )
 
-        if (!quote.isBlank()) {
+        if (hasQuote) {
             line.draw(batch, midWidth, lineY, 3f, 1f, 0f)
-        }
 
-        //Quote text
-        Draw.drawText(
-            quoteTextX,
-            quoteTextY,
-            Fonts.quoteFont,
-            quote,
-            quoteTextW,
-            Compass.CENTER,
-            textColor
-        )
+            //Quote text
+            Draw.drawText(
+                quoteTextX,
+                quoteTextY,
+                Fonts.quoteFont,
+                quote,
+                quoteTextW,
+                Compass.CENTER,
+                textColor
+            )
+        }
     }
 
     override fun toString(): String {
