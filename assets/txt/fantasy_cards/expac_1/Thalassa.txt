@@ -5,7 +5,7 @@ Viking Shieldmaiden: 3/2p [Thalassa, Human, Warrior] [Veteran.; This unit's powe
 
 Blackblood Marauder: 2/3p [Thalassa, Human, Warrior] [Veteran.; At allied turn start, assault 1.] [Spendin' gold's only half the fun. Takin' it's the other half!]
 Blackblood Vanguard: 1/3p [Thalassa, Human, Warrior] [Veteran.; When discarded, summon self.; When played, you may expend fire_mana fire_mana to assault 3.] [The first of the worst.]
-Pillage: 3p [Thalassa, Instant, Warfare] [Either:#Assault 2 and add 2 counters to an allied card.#Assault 3.#Remove 2 counters from an allied card, then assault 4.] [Not one gold coin left.]
+Pillage: 3p [Thalassa, Tactic, Warfare] [Either:#Assault 2 and add 2 counters to an allied card.#Assault 3.#Remove 2 counters from an allied card, then assault 4.] [Not one gold coin left.]
 Nithing: 3p [Thalassa, Emplacement] [At allied turn start, gain 1 counter.; Tap (X counters) to assault X.; Maximum counters: 6.] [Curse you!]
 
 Blackblood Swordsman: 1/4p [Thalassa, Human, Warrior] [Veteran.; When played, assault 2.] [This sword? You couldn't even grip it, let alone gut me with it.]

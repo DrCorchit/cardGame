@@ -21,7 +21,7 @@ Grandmaster Smitty: 1a 3/4p [Dwarf, Rare] [Engine.; Tap to spawn fire_mana fire_
 Naiad Grandmother: 1a 3/4p [Nymph, Rare] [Engine.; Tap to spawn water_mana water_mana.] [Granny just might know a story or two...]
 Treant Wizard: 1a 3/4p [Treant, Rare] [Engine.; Tap to spawn earth_mana earth_mana.] [The magic of the forest is deeper and older than the ken of any man.]
 Storm Priest: 1a 3/4p [Human, Rare] [Engine.; Tap to spawn air_mana air_mana.] [Storms are pretty cool, so these guys are fairly common.]
-Cherubim Swarm: 1a 3/4p [Angel, Rare] [Engine.; Tap to spawn light_mana light_mana.] [Vampires are genuinely terrified of these things.]
+Cherubim Swarm: 1a 3/4p [Celestial, Rare] [Engine.; Tap to spawn light_mana light_mana.] [Vampires are genuinely terrified of these things.]
 Vampire Nightmaster: 1a 3/4p [Vampire, Rare] [Engine.; Tap to spawn dark_mana dark_mana.] [I am the night.]
 
 #Pointslam
@@ -50,7 +50,7 @@ Admiral Boom: 12/7p [Undead, Pirate, Rare] [You must expend water_mana water_man
 Forest Defender: 12/7p [Human, Knight, Rare] [You must expend earth_mana earth_mana earth_mana earth_mana to play this unit.] [You shall not pass.]
 Omega Defender: 12/7p [Machine, Rare] [You must expend air_mana air_mana air_mana air_mana to play this unit.] [Maximum power.]
 Throne Defender: 12/7p [Celestial, Rare] [You must expend light_mana light_mana light_mana light_mana to play this unit.] [You are unworthy.]
-Frankenstein's Monster: 12/7p [Transylvania, Undead, Rare] [You must expend dark_mana dark_mana dark_mana dark_mana to play this card.] [It's aliiiiive!]
+Frankenstein's Monster: 12/7p [Undead, Rare] [You must expend dark_mana dark_mana dark_mana dark_mana to play this card.] [It's aliiiiive!]
 
 #Spenders
 Smelter: 4/3p [Dwarf] [Engine.; When played, become immune.; Tap and expend X fire_mana to gain X points.] [This is what they call a hot job.]

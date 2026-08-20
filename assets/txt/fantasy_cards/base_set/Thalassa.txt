@@ -4,8 +4,8 @@ Havoc Raider: 2/2p [Thalassa, Human, Pirate] [When played, you may expend fire_m
 Deckhand Fibber: 3/2p [Thalassa, Human, Pirate] [When played, draw a card and discard a card.] [Yeah, I know a good yarn...]
 Barracuda: 3/2p [Thalassa, Beast] [When played, devour an allied Ship.] [They're already circling.]
 Drunken Sailor: 5/2p [Thalassa, Human, Pirate] [You must expend water_mana to play this unit.] [What DO you do with a drunken sailor?]
-Shore Leave: 2p [Thalassa, Instant, Warfare] [When played, trigger any 2 of the following abilities:#Lock an enemy unit.#Assault 1.#Spawn water_mana water_mana.] [Just what the doctor ordered.]
-Walk the Plank: 2p [Thalassa, Instant, Warfare] [Draw a card and discard a card.; Afterwards, gain points equal to the provision cost of the discarded card.] [Next stop: Davy Jones' locker!]
+Shore Leave: 2p [Thalassa, Tactic, Warfare] [When played, trigger any 2 of the following abilities:#Lock an enemy unit.#Assault 1.#Spawn water_mana water_mana.] [Just what the doctor ordered.]
+Walk the Plank: 2p [Thalassa, Tactic, Warfare] [Draw a card and discard a card.; Afterwards, gain points equal to the provision cost of the discarded card.] [Next stop: Davy Jones' locker!]
 Hand Cannon: 2p [Thalassa, Equipment, Weapon, Cannon] [If equipped to a Pirate, gain Haste.; Tap to assault 2.] [I always add a little extra powder.]
 Jolly Roger: 2/2p [Thalassa, Equipment, Warfare] [Tap to either:#If equipped to a Pirate, spawn fire_mana fire_mana.#If equipped to a Ship, spawn water_mana water_mana.#Spawn fire_mana water_mana.] [Hoist the colors!]
 
@@ -29,12 +29,12 @@ Davy Jones: 10/4p [Thalassa, Undead, Pirate, Rare] [This unit starts in your gra
 
 Captain Fribley: 5/5p [Thalassa, Human, Pirate, Rare] [When played, you may expend water_mana water_mana to place a unit from your graveyard into your hand, then discard a card.;] [A good captain goes down wit' his ship. But I ain't a good captain, har har!]
 Billy Bones: 6/5p [Thalassa, Human, Pirate, Rare] [When played, search your deck and move any card to the bottom.; When you pass, you need not shuffle your deck next round.] []
-Abordage: 5p [Thalassa, Instant, Warfare, Rare] [When played, destroy an allied unit of X power, then seize an enemy unit of X or less power.] [Don't you think you're going a bit overboard?]
+Abordage: 5p [Thalassa, Tactic, Warfare, Rare] [When played, destroy an allied unit of X power, then seize an enemy unit of X or less power.] [Don't you think you're going a bit overboard?]
 
 Anne Bonny: 4/6p [Thalassa, Human, Pirate, Rare] [When played, draw a card and discard a card.; Whenever you discard a card, gain 1 point.] [No need to call me lady. "Captain" will do just fine.]
 Jormungandir: 2a 4/6p [Thalassa, Monster, Rare] [When played, become immune.; Tap and expend X water_mana to devour X allied units.] [The serpent at the end of the world!]
 Captain Flint: 2/6p [Thalassa, Human, Pirate, Rare] [When played, either:#Play a Warfare card from your deck.#Expend fire_mana fire_mana and play a Warfare card from your graveyard.] [Yo-ho-ho, and a bottle of rum!]
-Keel-Haul: 6p [Thalassa, Instant, Warfare, Rare] [When played, destroy an allied Human of X power and spawn X water_mana.; Afterwards, play a Pirate from your graveyard.] [Welcome to the crew!]
+Keel-Haul: 6p [Thalassa, Tactic, Warfare, Rare] [When played, destroy an allied Human of X power and spawn X water_mana.; Afterwards, play a Pirate from your graveyard.] [Welcome to the crew!]
 
 Terror o' the Seas: 3/6p [Thalassa, Ship, Rare] [When played, become immune.; Whenever you discard a Cannon, equip it here instead.; Plunder 2.] [Ya can never have too many guns...]
 Blackbeard: 6/7p [Thalassa, Human, Pirate, Rare] [Tap to assault 6 and destroy self.; Overkill X: Spawn X fire_mana or X water_mana.] [He died standing up.]
@@ -46,9 +46,9 @@ The Flying Dutchman: 4/8p [Thalassa, Ship, Legendary] [When played, become invis
 The White Cliffs: 8p [Thalassa, Emplacement, Location, Legendary] [When played, become stalwart.; Tap and expend 2X water_mana to play X Cannon cards from your graveyard.; At the start of the round, untap this card.] [There'll be bluebirds over...]
 
 Rock of Gibraltar: 9p [Thalassa, Emplacement, Location, Legendary] [When played, become stalwart.; Double the plunder value of adjacent ships.] [Rock solid.]
-Broadside: 9p [Thalassa, Instant, Warfare, Legendary] [Echo.; When played, assault 4.; Intensify the assault by 1 for each allied Cannon.; Overkill X: Play one of the top X cards from your deck.] [Full speed ahead!]
+Broadside: 9p [Thalassa, Tactic, Warfare, Legendary] [Echo.; When played, assault 4.; Intensify the assault by 1 for each allied Cannon.; Overkill X: Play one of the top X cards from your deck.] [Full speed ahead!]
 
-Lower the Boom: 10p [Thalassa, Instant, Warfare, Legendary] [When played, assault 5.; Intensify the assault by 1 for each allied Cannon.; Overkill X: Play a unit from your graveyard of X or fewer provisions.] [Did somebody say boom?]
+Lower the Boom: 10p [Thalassa, Tactic, Warfare, Legendary] [When played, assault 5.; Intensify the assault by 1 for each allied Cannon.; Overkill X: Play a unit from your graveyard of X or fewer provisions.] [Did somebody say boom?]
 
 Cthulhu: 7/11p [Thalassa, Monster, Legendary] [When played, expend X water_mana to devour an enemy unit of X or less power.] [Cthulhu fhtagn!]
 Queen Anne's Revenge: 1a 5/11p [Thalassa, Ship, Legendary] [Tap to untap all equipped Cannon cards.; Plunder 2.] [Shiver me timbers!]

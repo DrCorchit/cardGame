@@ -7,7 +7,7 @@ import com.drcorchit.justice.utils.math.Compass
 
 enum class CardType(file: String?) {
     Unit(null),
-    Instant("instant.png"),
+    Tactic("tactic.png"),
     Equipment("equipment.png"),
     Emplacement("emplacement.png");
 

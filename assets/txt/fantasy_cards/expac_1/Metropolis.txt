@@ -11,12 +11,12 @@ Library: 3p [Metropolis, Emplacement, Location] [When played, become stalwart an
 Professor: 1/4p [Metropolis, Elf] [When played, create a student.; When you pass, gain 1 point for each allied student.] [Piled higher and deeper.]
 Exhibitor: 3/4p [Metropolis, Elf] [Tap to either:#Expend air_mana air_mana to play a common Machine from your deck.#Expend light_mana light_mana to play a common Technology from your deck.] [It's my life's work!]
 
-Kick it 'til it Works: 4p [Metropolis, Instant, Technology, Rare] [When played, gain 2 points for each allied Machine that is not locked.; Afterward, purify an allied Machine.] [It was junk anyways.]
+Kick it 'til it Works: 4p [Metropolis, Tactic, Technology, Rare] [When played, gain 2 points for each allied Machine that is not locked.; Afterward, purify an allied Machine.] [It was junk anyways.]
 
 Opusculum: 1/5p [Metropolis, Machine, Rare] [Fragile.; Whenever this card is moved to the top of your deck, spawn light_mana air_mana.; Whenever you pass, you may summon this unit from your graveyard.] [Any fool can use a computer. Many do.]
 Left Arm: 2/5p [Metropolis, Machine, Arm, Equipment, Rare] [Tap to spawn 6 light_mana or 6 air_mana.] [Not to be underestimated.]
 
-Magnetron: 6p [Metropolis, Instant, Technology, Rare] [When played, damage a unit by 5. If it has armor, destroy it instead.] [Never ask a physicist to explain how magnets actually work.]
+Magnetron: 6p [Metropolis, Tactic, Technology, Rare] [When played, damage a unit by 5. If it has armor, destroy it instead.] [Never ask a physicist to explain how magnets actually work.]
 
 Plexi Glass: 5/7p [Metropolis, Machine, Rare] [At allied turn start, you may either:#Spawn light_mana light_mana.#Spawn air_mana.] [Sometimes autognomes need a feminine touch.]
 

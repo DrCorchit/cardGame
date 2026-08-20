@@ -35,7 +35,7 @@ class FantasyCard(
     val strategyTags: List<String>
 ) : Drawable {
     val type = if (tags.contains("Instant")) {
-        CardType.Instant
+        CardType.Tactic
     } else if (tags.contains("Equipment")) {
         CardType.Equipment
     } else if (tags.contains("Emplacement")) {

@@ -29,7 +29,7 @@ Lost Dragon Egg: 1a 1/4p [Vulcania, Egg, Rare] [When you pass, gain 9 points.; T
 
 Golden Dragon Egg: 1/5p [Vulcania, Egg, Rare] [Tap to destroy self and play a Dragon from your deck.] [Oooh, shiny!]
 Secret Brew: 3/5p [Vulcania, Equipment, Liquor, Rare] [When played, trigger the equip target's imbibe ability an additional time.] [What'd you even put in this stuff?]
-Swoop: 5p [Vulcania, Dragon, Instant, Instinct, Rare] [When played, either:#Spawn fire_mana fire_mana and play a common Dragon from your deck.#Expend fire_mana fire_mana and play a Dragon from your deck.] [Now you've made her mad!]
+Swoop: 5p [Vulcania, Dragon, Tactic, Instinct, Rare] [When played, either:#Spawn fire_mana fire_mana and play a common Dragon from your deck.#Expend fire_mana fire_mana and play a Dragon from your deck.] [Now you've made her mad!]
 
 The Eggspert: 1/6p [Vulcania, Dwarf, Rare] [When played, either:#Play an Egg from your deck.#Expend 2X fire_mana to play X Egg cards from your graveyard.] [You mean you DON'T collect dragon eggs?]
 Shorty McGee: 2/6p [Vulcania, Dwarf, Rare] [When played, assault 2.; Imbibe to assault 2.] [Live by the axe...]
@@ -41,7 +41,7 @@ Magma Defender: 12/7p [Vulcania, Dragon, Rare] [You must expend fire_mana fire_m
 
 Goryx, Golden Dragon: 1a 6/8p [Vulcania, Dragon, Legendary] [Haste.; Tap and expend X fire_mana to play a card from your deck of up to 2X provisions.] [Be greedy when others are fearful.]
 Ale of the Ancestors: 5/8p [Vulcania, Equipment, Liquor, Rare] [Echo.; When played, spawn fire_mana fire_mana fire_mana.] [The hard part isn't the brewing process, it's hiding it from all the dwarves for a hundred years.]
-Scaly Feast: 8p [Vulcania, Instant, Instinct, Legendary] [When played, each allied Dragon assaults an enemy unit with equal or lesser power by 2.] [It's a circle of life.]
+Scaly Feast: 8p [Vulcania, Tactic, Instinct, Legendary] [When played, each allied Dragon assaults an enemy unit with equal or lesser power by 2.] [It's a circle of life.]
 
 Neromir, Warrior Dragon: 1a 4/9p [Vulcania, Dragon, Legendary] [Haste.; Tap and expend X fire_mana to assault X.; Imbibe to untap this card.] [Look who woke up on the wrong side of the bed.]
 Treasure of all Treasures: 9p [Vulcania, Emplacement, Legendary] [When played, play a unit from hand and draw a card.; At allied turn start, gain 1 point if you control the highest provision cost card. If there's a tie, gain 0 points.] [All that glitters is not gold. Could be diamonds, for instance.]
@@ -50,5 +50,5 @@ Mithril Mail: 4a 2/10p [Vulcania, Equipment, Armor, Legendary] [Tap to make the 
 Dragonmother Erizyx: 2a 8/10p [Vulcania, Dragon, Legendary] [When played, become a protector.; This card only protects adjacent Egg cards.; When you pass, gain 2 points for each allied Egg.] [She's a lady and you will treat her as such.]
 Dragon Emperor Coronakt: 1a 4/10p [Vulcania, Dragon, Legendary] [When played, banish a lowest-provision unit from your graveyard and gain points equal to its power.; Imbibe to repeat the "when played" ability.] [Ever been so hungry you could eat a dragon?]
 
-Drinking Contest: 11p [Vulcania, Instant, Legendary] [Play a common Dwarf and a Liquor card from your deck.] [Nobody ever lost a drinking contest. — Dwarven proverb]
+Drinking Contest: 11p [Vulcania, Tactic, Legendary] [Play a common Dwarf and a Liquor card from your deck.] [Nobody ever lost a drinking contest. — Dwarven proverb]
 Mountainlord Torbjorn: 1a 1/11p [Vulcania, Dwarf, Regent, Legendary] [When played, play a common Liquor card from your deck.; Imbibe to gain 3 points.] [He doesn't believe in discussing matters of state while sober.]

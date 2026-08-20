@@ -9,7 +9,7 @@ Elven Dagger: 3p [Avalon, Equipment, Weapon] [If equipped to an Elf, gain haste.
 Elven Bow: 3p [Avalon, Equipment, Weapon] [When played, assault 2.; Tap to poison an enemy unit.] [You can pull out the arrow, but you can't suck out the poison.]
 
 Hydriad: 2/4p [Avalon, Nymph] [Harmony: Gain 1 point.; When played, you may expend water_mana water_mana to create another copy of self.] [They can appear humanoid, but in truth they are formless like water.]
-Smoke Signals: 4p [Avalon, Instant, Nature] [Play a common unit from your deck of a race you do not already control.] [Any burning questions?]
+Smoke Signals: 4p [Avalon, Tactic, Nature] [Play a common unit from your deck of a race you do not already control.] [Any burning questions?]
 
 Aelshamyr: 2a 2/5p [Avalon, Dragon, Rare] [Harmony: Gain 2 points.] [He starts a forest fire every time he sneezes, but the elves love him anyway.]
 
