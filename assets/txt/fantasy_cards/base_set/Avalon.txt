@@ -23,7 +23,7 @@ Heartwood Treant: 1a 4/4p [Avalon, Treant] [You must expend earth_mana water_man
 Centaur: 4/4p [Avalon, Beast] [When played, you may either: #Spawn air_mana. #Expend air_mana air_mana to assault 3.] [A centaur has a man-stomach and a horse-stomach. And of course both want breakfast.]
 Earth Titan: 9/4p [Avalon, Treant] [You must expend earth_mana earth_mana earth_mana to play this card.] [If a tree falls in the forest and no-one is around to hear it, a treant probably knocked it over by mistake.]
 
-Arondight: 4p [Avalon, Equipment, Weapon, Rare] [When played, assault 4.; This card's assault ignores armor.] [The sharpest blades belong rightly in the hands of the bravest knights.] [removal]
+Arondight: 4p [Avalon, Equipment, Weapon, Rare] [When played, assault 4.; This card's assault ignores armor.] [The sharpest blades belong rightly in the hands of the bravest knights.]
 Jack Frost: 5/4p [Avalon, Fairy, Rare] [When played, you may either: #Expend X water_mana to lock X enemy units. #Expend X water_mana to purify X allied units.] [Whose woods these are, I think I know...]
 
 Lady of the Lake: 2/5p [Avalon, Human, Rare] [Fragile.; You may expend water_mana water_mana water_mana to play this card from your graveyard and give it doomed.; Tap to play a Weapon from your deck.] [One so fair and full of grace.]

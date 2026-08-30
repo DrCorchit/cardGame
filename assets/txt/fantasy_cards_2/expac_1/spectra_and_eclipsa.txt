@@ -1,0 +1,14 @@
+#Spectra and Eclipsa
+Pixie: 1/3p [Fairy] [When played, spawn earth_mana water_mana air_mana.; Tap to repeat the "when played" ability.] [All you need is a little pixie dust.]
+Harvest: 4p [Tactic, Nature] [When played, expend all X earth_mana, water_mana, and air_mana and gain 2X points.] [A time to sow, a time to reap.]
+
+Blessed Aura: 4p [Tactic, Instinct] [When played, either#Play "Spectra" from your deck or sideboard.#Play "Spectra" from your hand and draw a card.#Spawn earth_mana earth_mana water_mana water_mana air_mana air_mana.] []
+
+Spectra's Paintbrush: 4p [Emplacement, Rare] [Tap to purify and untap an allied unit.] [Isn't it amazing how every color is beautiful in its own unique way?]
+Spectra: 3/10p [Celestial, Mage, Legendary] [Haste.; Tap to trigger up to 3 of the following abilities:#Expend earth_mana earth_mana to move a card from your hand to your sideboard and draw a card.#Expend water_mana water_mana to untap self and purify an allied unit.#Expend air_mana air_mana to play a card from your sideboard.] []
+
+Imp: 1/3p [Demon] [When played, spawn fire_mana light_mana dark_mana.; Tap to repeat the "when played" ability.] []
+Foreboding Aura: 4p [Tactic, Spell] [When played, either#Play "Eclipsa" from your deck or sideboard.#Play "Eclipsa" from your hand and draw a card.#Spawn fire_mana fire_mana light_mana light_mana dark_mana dark_mana.] []
+
+Eclipsa's Wrath: 5p [Tactic, Instinct, Rare] [When played, expend all X fire_mana, light_mana, and dark_mana and assault 2X. If you control Eclipsa, assassinate instead.] []
+Eclipsa: 3/10p [Celestial, Mage, Legendary] [Haste.; Tap to trigger up to 3 of the following abilities: Expend fire_mana fire_mana and assassinate 2.; Expend light_mana light_mana to untap self and lock an enemy unit.#Expend dark_mana dark_mana to poison an enemy unit.; ] []

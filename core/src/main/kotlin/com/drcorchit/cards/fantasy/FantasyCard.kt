@@ -32,9 +32,10 @@ class FantasyCard(
     val tags: List<String>,
     val abilities: List<String>,
     val quote: String,
-    val strategyTags: List<String>
+    val sideboardCards: Map<String, Int> = mapOf(),
+    val strategyTags: List<String> = listOf()
 ) : Drawable {
-    val type = if (tags.contains("Instant")) {
+    val type = if (tags.contains("Tactic")) {
         CardType.Tactic
     } else if (tags.contains("Equipment")) {
         CardType.Equipment
@@ -65,11 +66,15 @@ class FantasyCard(
         }
     } ?: Rarity.Common
 
+    val rarityBorder = if (tags.contains("Leader")) Rarity.shinyBorder else rarity.image
+
+    val cardCount = (1 + sideboardCards.values.sum()).let { if (rarity == Rarity.Common) it * 2 else it }
+
     val tagsText = run {
         val miscTags = tags.toSet()
             .subtract(Rarity.entries.map { it.name }.toSet())
             .subtract(setOf(city.name))
-            .subtract(setOf("Unit", "Instant", "Equipment", "Emplacement"))
+            .subtract(setOf("Unit", "Tactic", "Equipment", "Emplacement"))
             .subtract(Race.entries.map { it.name }.toSet())
 
         val race = Race.detectRacialTag(tags, type)
@@ -126,6 +131,7 @@ class FantasyCard(
         json.getAsJsonArray("tags").map { it.asString },
         loadAbility(json),
         json["quote"].asString,
+        json.getAsJsonObject("sideboard").entrySet().associate { it.key to it.value.asInt },
         json["strategy"]?.let { it.asJsonArray.map { ele -> ele.asString } } ?: listOf()
     )
 
@@ -245,7 +251,7 @@ class FantasyCard(
 
         tray.draw(batch, midWidth, BORDER, W, trayHeight)
         border.draw(batch, BORDER, BORDER, W, H)
-        rarity.image.draw(batch, BORDER, BORDER, W, H)
+        rarityBorder.draw(batch, BORDER, BORDER, W, H)
 
         //Power diamond
         val diamond = faction.image

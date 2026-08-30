@@ -30,11 +30,6 @@
     "synonyms": ["Assault", "Assaults", "Assaulted"]
   },
   {
-    "name": "Create",
-    "description": "Introduce a card to the game.",
-    "synonyms": ["creates"]
-  },
-  {
     "name": "Haste",
     "description": "The card can be tapped on the turn it is played.",
     "synonyms": ["Hasten", "Hastened"]

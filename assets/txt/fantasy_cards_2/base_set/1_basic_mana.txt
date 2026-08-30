@@ -1,4 +1,4 @@
-#Basic lands
+#Lands
 Volcano: 2p [Emplacement, Land] [Engine, Haste.; Tap to spawn fire_mana.] []
 Ocean: 2p [Emplacement, Land] [Engine, Haste.; Tap to spawn water_mana.] []
 Mountain: 2p [Emplacement, Land] [Engine, Haste.; Tap to spawn earth_mana.] []
@@ -37,7 +37,7 @@ Earth Titan: 9/4p [Treant] [You must expend earth_mana earth_mana earth_mana to 
 Cyborg Soldier: 5/2p [Elf] [You must expend air_mana to play this card.] [More machine than man.]
 Pulverizer: 7/3p [Machine] [You must expend air_mana air_mana to play this unit.] [Resistance is futile.]
 Devastator: 9/4p [Machine] [You must expend air_mana air_mana air_mana to play this unit.] [TARGET DESTROYED]
-Genie: 5/2p [Celestial] [You must expend light_mana to play this card.] [No wishing for more wishes.]
+Ophanim: 5/2p [Celestial] [You must expend light_mana to play this card.] [He's keeping an eye on things.]
 Seraphim: 7/3p [Celestial] [You must expend light_mana light_mana to play this card.] [On a wing and a prayer!]
 Archangel: 9/4p [Celestial] [You must expend light_mana light_mana light_mana to play this card.] [Heaven's heavy hitter.]
 Slime: 5/2p [Undead] [You must expend dark_mana to play this unit.] [You have to kill a bunch of these to level up.]
@@ -53,24 +53,24 @@ Throne Defender: 12/7p [Celestial, Rare] [You must expend light_mana light_mana 
 Frankenstein's Monster: 12/7p [Undead, Rare] [You must expend dark_mana dark_mana dark_mana dark_mana to play this card.] [It's aliiiiive!]
 
 #Spenders
-Smelter: 4/3p [Dwarf] [Engine.; When played, become immune.; Tap and expend X fire_mana to gain X points.] [This is what they call a hot job.]
+Ifrit: 4/3p [Celestial] [Engine.; When played, become immune.; Tap and expend X fire_mana to gain X points.] [Like a genie... only hotter.]
 Barracuda: 4/3p [Beast] [Engine.; When played, become immune.; Tap and expend X water_mana to gain X points.] [Ok Mr. Grumpy Gills...]
 Mountain Gorilla: 4/3p [Beast] [Engine.; When played, become immune.; Tap and expend X earth_mana to gain X points.] [A mountain of muscle.]
 Radio: 4/3p [Machine] [Engine.; When played, become immune.; Tap and expend X air_mana to gain X points.] [Roger, over.]
-Ophanim: 4/3p [Celestial] [Engine.; When played, become immune.; Tap and expend X light_mana to gain X points.] [He's keeping an eye on things.]
+Genie: 4/3p [Celestial] [Engine.; When played, become immune.; Tap and expend X light_mana to gain X points.] [No wishing for more wishes.]
 Werebat: 4/3p [Beast] [Engine.; When played, become immune.; Tap and expend X dark_mana to gain X points.] [Nana nana... wait, wrong bat.]
 
-#Fairies
-Red-Eyed Fairy: 3/3p [Fairy] [Tap to expend fire_mana and assault 2.] [Burn!]
-Blue-Eyed Fairy: 3/2p [Fairy] [Haste.; Tap to expend water_mana and purify an allied unit.] [Freeze!]
-Green-Eyed Fairy: 3/3p [Fairy] [Tap to expend earth_mana and become stalwart.] [Grow!]
-Gray-Eyed Fairy: 3/2p [Fairy] [Tap to expend air_mana and banish a card from your opponent's graveyard.] [Zap!]
-Yellow-Eyed Fairy: 3/2p [Fairy] [Tap to expend light_mana and purify an enemy unit.] [Shine!]
-Violet-Eyed Fairy: 3/2p [Fairy] [Tap to expend dark_mana and lock an enemy unit.] [Die!]
+#Red-Eyed Fairy: 3/2p [Fairy] [Engine.; Tap to expend fire_mana and assault 1.] [Burn!]
+#Blue-Eyed Fairy: 3/2p [Fairy] [Tap to expend water_mana and lock an enemy unit.] [Freeze!]
+#Green-Eyed Fairy: 3/2p [Fairy] [Tap to expend earth_mana and become stalwart.] [Grow!]
+#Gray-Eyed Fairy: 3/2p [Fairy] [Haste.; Tap to expend air_mana and banish a card from your opponent's graveyard..] [Zap!]
+#Yellow-Eyed Fairy: 3/2p [Fairy] [Haste.; Tap to expend light_mana and purify a unit.] [Shine!]
+#Violet-Eyed Fairy: 3/2p [Fairy] [Tap to expend dark_mana dark_mana and poison an enemy unit.] [Die!]
 
-
-
-
+#Tactic Types: Nature, Instinct, Crime, Technology, Spell, Warfare
+Sojourn: 4p [Tactic, Instinct] [Play a Land card from your deck.] [In a land far far away...]
+Homeland: 6p [Tactic, Nature, Rare] [Play a Land card from your deck and make it stalwart.] [There's no place like home.]
+Settlement: 7p [Tactic, Instinct, Rare] [Play up to 2 Land cards from hand, then draw as many cards.] [Home is where the heart is.]
 
 #Fire+Water = Pirates
 #Fire+Earth

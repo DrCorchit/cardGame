@@ -15,10 +15,13 @@ class FantasyCards(path: String, var imageRoot: String = "resources/images/fanta
         val tagsRegex = "(?<tags>.*?)"
         val abilityRegex = "(?<abilities>.*?)"
         val quoteRegex = "(?<quote>.*?)"
-        val strategyRegex = "(?<strategy>.*)"
+        val sideboardRegex = "(?<sideboard>.*?)"
+        //val strategyRegex = "(?<strategy>.*)"
 
         val regex =
-            Regex("$nameRegex: *$statsRegex *\\[$tagsRegex] *\\[$abilityRegex] *\\[$quoteRegex]( *\\[$strategyRegex])?")
+            Regex("$nameRegex: *$statsRegex *\\[$tagsRegex] *\\[$abilityRegex] *\\[$quoteRegex]( *\\[$sideboardRegex])?")
+
+        val cardRefRegex = Regex("(?<count>\\d+)x\"(?<name>.*?)\"")
 
         init {
             println(regex.toString())
@@ -52,11 +55,22 @@ class FantasyCards(path: String, var imageRoot: String = "resources/images/fanta
                     .replace("\"", "”")
                     .replace("(?<!\\w)'(?=\\w)".toRegex(), "‘")
                     .replace("'", "’")
-                val strategyTags = match["strategy"]
-                    ?.let { it.value.split(",").map { tag -> tag.trim() } }
-                    ?: listOf()
+                val sideboard = match["sideboard"]
+                    ?.let {
+                        it.value.split(",").associate { entry ->
+                            val parsed = cardRefRegex.matchEntire(entry.trim())
+                            if (parsed != null) {
+                                val count = parsed.groups["count"]?.value?.toInt() ?: 0
+                                val name = parsed.groups["name"]?.value!!
+                                name to count
+                            } else {
+                                throw IllegalArgumentException("Invalid card reference: <$entry>")
+                            }
+                        }
+                    }
+                    ?: mapOf()
 
-                return FantasyCard(cards, name, power, cost, armor, tags, abilities, quote, strategyTags)
+                return FantasyCard(cards, name, power, cost, armor, tags, abilities, quote, sideboard)
             } catch (e: Exception) {
                 println("Error parsing line: $str")
                 e.printStackTrace()
@@ -69,7 +83,6 @@ class FantasyCards(path: String, var imageRoot: String = "resources/images/fanta
         val tokens by lazy { FantasyCards("assets/txt/fantasy_cards/tokens") }
 
         val baseSet2 by lazy { FantasyCards("assets/txt/fantasy_cards_2/base_set", "resources/images/fantasy_cards_2") }
-
 
         @JvmStatic
         fun readFrom(filename: String, cards: FantasyCards): List<FantasyCard> {

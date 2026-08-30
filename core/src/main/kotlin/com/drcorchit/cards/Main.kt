@@ -154,12 +154,12 @@ class Main : ApplicationAdapter() {
 
         val immuneCount =
             cards.filter { it.abilityText.contains("When played, become immune.") }.size
-        val immunePercent = immuneCount * 100.0f / Companion.cards.size
-        println("\nImmune %: $immuneCount/${Companion.cards.size} ($immunePercent%)")
+        val immunePercent = immuneCount * 100.0f / cards.size
+        println("\nImmune %: $immuneCount/${cards.size} ($immunePercent%)")
 
         val armorCount = cards.filter { it.armor > 0 }.size
-        val armorPercent = armorCount * 100.0f / Companion.cards.size
-        println("Armor %: $armorCount/${Companion.cards.size} ($armorPercent%)")
+        val armorPercent = armorCount * 100.0f / cards.size
+        println("Armor %: $armorCount/${cards.size} ($armorPercent%)")
 
         //Warhammer deals 2 damage, ignoring armor. I want to see how many units have 2 power and X > 1 armor.
         val whTargets = cardsByType[CardType.Unit]!!
@@ -171,19 +171,9 @@ class Main : ApplicationAdapter() {
             .filter { it.armor > 0 && it.power <= 4 && it.power + it.armor > 4 }.map { it.name }
         println("Arondight target count: ${adTargets.size} $adTargets")
 
-        println("\nTotal unique cards: ${Companion.cards.size}")
+        println("\nTotal unique cards: ${cards.size}")
 
-        fun factionCount(city: City): Int {
-            val cards = cardsByCity[city]
-
-            fun rarityCount(rarity: Rarity): Int {
-                val count = cards?.get(rarity)?.size ?: 0
-                return if (rarity == Rarity.Common) count * 2 else count
-            }
-            return Rarity.entries.sumOf { rarityCount(it) }
-        }
-
-        val count = City.entries.sumOf { factionCount(it) }
+        val count = cards.sumOf { it.cardCount }
         println("Total printable cards: $count")
         println("MPC thresholds are 396, 504, and 612")
 
