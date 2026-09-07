@@ -56,13 +56,13 @@ Neromir, Warrior Dragon: 1a 4/9p [Vulcania, Dragon, Legendary] [Haste.; Tap and 
 Treasure of all Treasures: 9p [Vulcania, Emplacement, Legendary] [When played, play a unit from hand and draw a card.; At allied turn start, gain 1 point if you control the highest provision cost card. If there's a tie, gain 0 points.] [All that glitters is not gold. Could be diamonds, for instance.]
 Bloody Slash: 9p [Vulcania, Tactic, Instinct, Legendary] [When played, assault X where X is the power of the most powerful dragon you control.; Overkill X: Spawn X fire_mana.] [Might makes right.]
 
-Mithril Mail: 4a 2/10p [Vulcania, Equipment, Armor, Legendary] [Tap to make the equip target stalwart.] [Made to last; last of its make.]
+Mithril Mail: 4a 8p [Vulcania, Equipment, Armor, Legendary] [Tap to make the equip target stalwart.] [Made to last; last of its make.]
 Dragonmother Erizyx: 2a 8/10p [Vulcania, Dragon, Legendary] [When played, become a protector.; This card only protects adjacent Egg cards.; When you pass, gain 2 points for each allied Egg.] [She's a lady, and you will treat her as such.]
 Dragon Emperor Coronakt: 1a 4/10p [Vulcania, Dragon, Regent, Legendary] [When played, banish a lowest-provision unit from your graveyard and gain points equal to its power.; Imbibe to repeat the "when played" ability.] [Ever been so hungry you could eat a dragon?]
 Gold Rush: 10p [Vulcania, Tactic, Legendary] [When played, you may expend fire_mana fire_mana fire_mana to play up to 3 Mine or common Dwarf cards from hand, then draw as many cards.] [Start selling shovels.]
 
 Drinking Contest: 11p [Vulcania, Tactic, Legendary] [Play a common Dwarf and a Liquor card from your deck.] [Nobody ever lost a drinking contest. — Dwarven proverb]
 Mountainlord Torbjorn: 1a 1/11p [Vulcania, Dwarf, Regent, Legendary] [When played, play a common Liquor card from your deck.; Imbibe to gain 3 points.] [He doesn't believe in discussing matters of state while sober.]
-Old King Coal: 1a 6/11p [Vulcania, Dwarf, Regent, Legendary] [Tap to trigger the Labor abilities of all allied Mine cards.] [A jolly old soul was he.]
+Old King Coal: 1a 4/11p [Vulcania, Dwarf, Regent, Legendary] [Tap to trigger the Labor abilities of all allied Mine cards.] [A jolly old soul was he.]
 
 Volcanic Eruption: 12p [Vulcania, Emplacement, Scenario, Legendary] [At the start of the game, add 2x "Sleepy" to your sideboard.; This scenario progresses whenever you play a Dwarf.; When played, summon a "Sleepy" from your sideboard.; Chapter 1: Summon a "Sleepy" from your sideboard.; Chapter 2: Expend X fire_mana and assault 2X.] [The dwarves describe their mountain as a smoking hot redhead with a fiery personality.] [2x"Sleepy"]

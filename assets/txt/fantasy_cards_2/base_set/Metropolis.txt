@@ -58,7 +58,7 @@ Codex Veritas: 8p [Metropolis, Emplacement, Book, Legendary] [When played, move 
 System Reboot: 8p [Metropolis, Tactic, Rare] [Untap all allied units.] [Have you tried turning it off and on again?]
 Right Arm: 2/8p [Metropolis, Machine, Arm, Equipment, Legendary] [Tap to assault 7.] [It packs a whallop.]
 
-Fugg Raulner: 2a 5/9p [Metropolis, Machine, Mage, Legendary] [Haste, Engine.; Tap to either:#Become invisible and spawn light_mana.; #Purify self and spawn air_mana air_mana.] [Beep boop.]
+Fugg Raulner: 2a 5/9p [Metropolis, Machine, Mage, Legendary] [Engine, Haste.; Tap to either:#Become invisible and spawn light_mana.; #Purify self and spawn air_mana air_mana.] [Beep boop.]
 Logos, Oracle: 1a 4/9p [Metropolis, Elf, Legendary] [Tap to play a card from your deck.] [Know thyself.]
 Teleportation: 9p [Metropolis, Tactic, Technology, Legendary] [Echo.; Play a unit from your deck.] [What could possibly go wrong?]
 

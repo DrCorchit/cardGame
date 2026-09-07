@@ -53,7 +53,7 @@ Grim Reaper: 2/8p [Transylvania, Undead, Legendary] [When played (chaos 6), assa
 Debutante Ball: 8p [Transylvania, Tactic, Legendary] [Play a Transylvanian unit from your deck and gain one of the following effects:#If it's a common Human, make it stalwart.#If it's a common Vampire, make it invisible.] [Be there or be square.]
 
 Jailbreak: 9p [Transylvania, Tactic, Crime, Legendary] [When played (chaos X) play a Transylvanian unit from your graveyard with a provision cost of X or less.; Increase the maximum provision cost by 1 for each Crime in your graveyard.] [Breaking out: not just for teenagers anymore.]
-Cynthia Beaumont: 3/9p [Transylvania, Human, Slayer, Legendary] [Haste, Engine.; When played, play a Talisman from your graveyard.; Tap and expend X light_mana to assault X. The assault target must have a bounty.] [Blood is thicker than water!]
+Cynthia Beaumont: 3/9p [Transylvania, Human, Slayer, Legendary] [Engine, Haste.; When played, play a Talisman from your graveyard.; Tap and expend X light_mana to assault X. The assault target must have a bounty.] [Blood is thicker than water!]
 
 Yalmamir, Prince of Crime: 1/10p [Transylvania, Vampire, Kingpin, Regent, Legendary] [Haste.; Tap and expend X dark_mana to seize X.; Whenever you play a Crime, untap this card.] [A single incompetent enemy is worth a thousand incompetent friends.]
 Gladys the Glorious: 4/10p [Transylvania, Vampire, Kingpin, Legendary] [When played, play a common Henchman from your graveyard.; Whenever you play a Henchman of X provisions, spawn X dark_mana.] [Crime DOES pay.]

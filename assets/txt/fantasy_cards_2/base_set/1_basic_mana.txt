@@ -28,8 +28,8 @@ Vampire Nightmaster: 1a 3/4p [Vampire, Rare] [Engine.; Tap to spawn dark_mana da
 Lava Lizard: 5/2p [Dragon] [You must expend fire_mana to play this card.] [Manageable in small numbers, with the ideal number being zero.]
 Cave Dragon: 7/3p [Dragon] [You must expend fire_mana fire_mana to play this card.] [Peaceful, as far as dragons go. (Run!)]
 Royal Wyvern: 9/4p [Dragon] [You must expend fire_mana fire_mana fire_mana to play this card.] [Capable of turning a dwarf into barbecue in 3 seconds flat.]
-River Naiad: 5/2p [Beast] [You must expend water_mana to play this card.] [How narrow can a river be before its a brook?]
-Mermaid: 7/3p [Fairy] [You must expend water_mana water_mana to play this card.] [The seaweed is always greener on the other side.]
+River Naiad: 5/2p [Nymph] [You must expend water_mana to play this card.] [How narrow can a river be before its a brook?]
+Mermaid: 7/3p [Nymph] [You must expend water_mana water_mana to play this card.] [The seaweed is always greener on the other side.]
 Oceanid: 9/4p [Fairy] [You must expend water_mana water_mana water_mana to play this card.] [Behold, the wrath of the sea!]
 Warthog: 5/2p [Beast] [You must expend earth_mana to play this card.] [Oink! Oink!]
 Cave Bear: 7/3p [Beast] [You must expend earth_mana earth_mana to play this card.] [Let sleeping bears lie.]
@@ -70,7 +70,7 @@ Werebat: 4/3p [Beast] [Engine.; When played, become immune.; Tap and expend X da
 #Tactic Types: Nature, Instinct, Crime, Technology, Spell, Warfare
 Sojourn: 4p [Tactic, Instinct] [Play a Land card from your deck.] [In a land far far away...]
 Homeland: 6p [Tactic, Nature, Rare] [Play a Land card from your deck and make it stalwart.] [There's no place like home.]
-Settlement: 7p [Tactic, Instinct, Rare] [Play up to 2 Land cards from hand, then draw as many cards.] [Home is where the heart is.]
+Settlement: 7p [Tactic, Nature, Rare] [Play up to 2 Land cards from hand, then draw as many cards.] [Home is where the heart is.]
 
 #Fire+Water = Pirates
 #Fire+Earth
