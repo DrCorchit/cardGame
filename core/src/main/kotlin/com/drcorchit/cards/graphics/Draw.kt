@@ -480,7 +480,7 @@ object Draw {
         if (image == null) return
 
         val sourceImageRatio = image.getFrames().ratio
-        val destImageRatio = windowW / windowH
+        val destImageRatio = windowH / windowW
         val imageScale =
             if (sourceImageRatio > destImageRatio) {
                 windowW / image.getFrames().width

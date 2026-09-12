@@ -36,7 +36,7 @@
   },
   {
     "name": "Engine",
-    "description": "This card untaps at allied turn start."
+    "description": "This card may be untapped at allied turn start."
   },
   {
     "name": "Summon",
@@ -95,7 +95,7 @@
   },
   {
     "name": "Harmony",
-    "description": "Triggers whenever you play a unit with a unique racial category."
+    "description": "Triggers whenever you play or summon a unit with a unique racial category."
   },
   {
     "name": "Diversity X",
@@ -145,7 +145,7 @@
   },
   {
     "name": "Invisible",
-    "description": "Status that prevents the unit from being targeted."
+    "description": "Status that prevents the unit from being assaulted, locked, or poisoned."
   },
   {
     "name": "Immune",

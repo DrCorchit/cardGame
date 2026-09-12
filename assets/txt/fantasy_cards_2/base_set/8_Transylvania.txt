@@ -6,10 +6,15 @@ Shiv: 2p [Transylvania, Equipment, Weapon, Crime] [When played, assault 2.; If e
 Moomsh: 2p [Transylvania, Tactic, Crime] [When played, spawn dark_mana dark_mana and poison an enemy unit.] [The high to die for?]
 Intimidation: 2p [Transylvania, Tactic, Crime] [When played, activate 2 of the following abilities:#Gain 2 points.#Assault 1. #Spawn 2 mana of any colors.] [You can get more of what you want with a kind word and a knife than you can with just a kind word.]
 Witness: 2/2p [Transylvania, Human, Slayer] [When played, give an enemy unit bounty 2.] [I know what I saw.]
+Beggar: 2/2p [Transylvania, Human] [At allied turn start (chaos 5), gain 1 point.] [Alms for the poor?]
+Neighborhood Bully: 4/2p [Transylvania, Human, Henchman] [Chaos 5 is required to play this unit.; When paired, your chaos level is increased by 1. This effect resolves once for all Neighborhood Bully cards.] [Says who? My fist, that's who!]
 Gossip: 2p [Transylvania, Tactic, Crime] [You may either:#Spawn light_mana light_mana light_mana and give an enemy unit bounty 2.#Spawn dark_mana dark_mana dark_mana and purify an allied unit.] [You'll never believe what I heard!]
 Talisman: 2p [Transylvania, Emplacement] [When played, spawn 4 light_mana.; Tap and expend X light_mana to gain X points.] [By holy vow and purest light, I proclaim day and banish night!]
 
+Street Thug: 4/3p [Transylvania, Human, Henchman] [When played (chaos 6), gain haste.; Tap to lock a card.] [The enemy can't steal our plans if we don't have any plans.]
+Emissary: 1/3p [Transylvania, Human, Spy] [Disloyal.; When played, play a unit from hand, then draw a card.] [Introducing his most gracious excellency...]
 Hypnotist: 1/3p [Transylvania, Vampire, Spy] [Disloyal.; When played, seize a unit with 2 or less power.] [What a captivating performance!]
+Mafia Soldier: 2/3p [Human, Henchman] [When played, become immune.; Whenever you play a Crime, spawn 1 mana of any color.; Tap (chaos X) to gain X points.] [Workin' for the man.]
 Moomsh Dealer: 3/3p [Transylvania, Human, Henchman] [When played, poison a unit.] [First one's on the house.]
 Vampiric Abomination: 4/3p [Transylvania, Vampire] [When played, gain poison.; During your turn, you may expend dark_mana dark_mana to move all statuses on self to another unit.] [The horror!]
  Landlady: 6/3p [Transylvania, Vampire] [When an adjacent unit is destroyed, also destroy self.] [It's a beautiful day for an eviction.]
@@ -18,6 +23,7 @@ Witch Hunter: 3/3p [Transylvania, Human, Slayer] [During your turn, you may expe
 Hysteria: 3p [Transylvania, Tactic, Crime] [When played, give a unit bounty 2 and assault it by 2.; If the target already had bounty, assault 4 instead.] [No-one is beyond suspicion!]
 #Black Market: 4p [Transylvania, Emplacement, Crime] [When played, either:#Expend light_mana and play a common Crime from your deck.#Expend dark_mana and play a common Crime from your graveyard.] [Caveat Emptor.]
 Night Watch: 4/3p [Transylvania, Human, Slayer] [At allied turn start, give an enemy unit bounty 1.] [There's evil everywhere.]
+Pickpocket: 3p [Transylvania, Tactic, Crime] [When played, reroll 6 common or allied mana dice.; Chaos X: gain X points and decrease the reroll amount by X. ] [A fool and his money...]
 
 Silver Sword: 4p [Transylvania, Equipment, Weapon] [When played, assault 3.; Increase the assault by 1 for every bounty on the target.] [Through the heart, pure and simple.]
 Hitman: 1/4p [Transylvania, Human, Henchman, Spy] [Disloyal.; When played (chaos X), assassinate X.] [I never hurt nobody that ain't had it comin'.]

@@ -33,6 +33,7 @@ Moby Dick: 2/4p [Thalassa, Beast, Rare] [Tap to devour an allied Ship.; When dis
 Yarn-Spinner Calhoun: 5/4p [Thalassa, Human, Pirate, Rare] [When played, draw a card and discard a card.; Instead of drawing the top card from your deck, you may expend X water_mana to draw from the top 2X cards instead.; Tap to repeat the "when played" ability.] [Lemme tell ya a tale...]
 Davy Jones: 10/4p [Thalassa, Undead, Pirate, Rare] [This unit starts in your graveyard.] [Life is cruel. Why should the afterlife be any different?]
 Gungnir: 4p [Thalassa, Equipment, Weapon, Rare] [When played, assault 4.; If equipped to Odin, untap him and assassinate 4 instead.] [Crafted by the wise dwarf Dvalinn, it never misses.]
+Nithing: 4p [Thalassa, Emplacement, Spell, Rare] [Engine.; Tap to either:#Gain 1 counter.#Remove X counters to assault X and lock this card.; Maximum counters: 4.] [Curse you!]
 
 Captain Fribley: 5/5p [Thalassa, Human, Pirate, Rare] [When played, you may expend water_mana water_mana to place a unit from your graveyard into your hand, then discard a card.;] [A good captain goes down wit' his ship. But I ain't a good captain, har har!]
 Billy Bones: 6/5p [Thalassa, Human, Pirate, Rare] [When played, search your deck and move any card to the bottom.; When you pass, you need not shuffle your deck next round.] []

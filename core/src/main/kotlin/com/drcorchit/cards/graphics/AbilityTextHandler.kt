@@ -15,6 +15,7 @@ class AbilityTextHandler(
     val keywordColor: Color = defaultKeywordColor,
     val abilityFont: BitmapFont = Fonts.abilityFont,
     val keywordFont: BitmapFont = Fonts.keywordFont,
+    val spaceWidth: Float = 8f,
     val lineHeight: Float = 34f
 ) {
     private val spriteSize = lineHeight - 4
@@ -39,12 +40,17 @@ class AbilityTextHandler(
     }
 
     inner class Line(text: String) {
-        val words = wordSplit.split(text).map { makeWord(it) }
+        val words = wordSplit2.split(text).mapNotNull { makeWord(it) }
 
-        private fun makeWord(string: String): Word {
-            if (sprites[string.normalize()] != null) return SpriteWord(string)
-            if (keywords[string.normalize()] != null) return KeywordWord(string)
-            return TextWord(string)
+        //“”
+
+        private fun makeWord(string: String): Word? {
+            val trimmed = string.trim()
+            val normalized = trimmed.normalize()
+            if (string.isEmpty()) return null
+            if (sprites[normalized] != null) return SpriteWord(trimmed)
+            if (keywords[normalized] != null) return KeywordWord(trimmed)
+            return TextWord(trimmed)
         }
 
         fun calculateHeight(width: Float): Float {
@@ -78,7 +84,7 @@ class AbilityTextHandler(
 
                 //Draw.drawRectangle(posX, posY - lineHeight, it.width, 10f, Color.RED)
                 it.render(posX, posY)
-                posX += it.width + 2f
+                posX += it.width + spaceWidth
             }
             return posY - lineHeight
         }
@@ -88,7 +94,7 @@ class AbilityTextHandler(
         }
     }
 
-    abstract inner class Word(val text: String) {
+    abstract class Word(val text: String) {
         abstract val width: Float
 
         abstract fun render(x: Float, y: Float)
@@ -124,6 +130,7 @@ class AbilityTextHandler(
 
     companion object {
         val wordSplit = Regex("\\b")
+        val wordSplit2 = Regex("(?= )")
 
         val defaultAbilityColor = FantasyCard.textColor
         val defaultKeywordColor = FantasyCard.keywordColor

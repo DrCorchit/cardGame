@@ -1,5 +1,6 @@
 package com.drcorchit.cards.fantasy
 
+import com.drcorchit.cards.Utils.replaceQuotes
 import java.io.File
 
 class FantasyCards(path: String, var imageRoot: String = "resources/images/fantasy_cards/cards/ChatGPT/Realistic/") {
@@ -35,26 +36,13 @@ class FantasyCards(path: String, var imageRoot: String = "resources/images/fanta
 
             try {
                 val match = regex.matchEntire(str)!!.groups
-                val name = match["name"]!!.value
-                    .replace("(?<!\\w)\"(?=\\w)".toRegex(), "“")
-                    .replace("\"", "”")
-                    .replace("(?<!\\w)'(?=\\w)".toRegex(), "‘")
-                    .replace("'", "’")
+                val name = match["name"]!!.value.replaceQuotes()
                 val armor = match["armor"]?.value?.toInt() ?: 0
                 val power = match["power"]?.value?.toInt() ?: 0
                 val cost = match["cost"]!!.value.toInt()
                 val tags = match["tags"]!!.value.split(",").map { it.trim() }
-                val abilities = match["abilities"]!!.value
-                    .replace("(?<!\\w)\"(?=\\w)".toRegex(), "“")
-                    .replace("\"", "”")
-                    .replace("(?<!\\w)'(?=\\w)".toRegex(), "‘")
-                    .replace("'", "’")
-                    .split(";")
-                val quote = match["quote"]!!.value
-                    .replace("(?<!\\w)\"(?=\\w)".toRegex(), "“")
-                    .replace("\"", "”")
-                    .replace("(?<!\\w)'(?=\\w)".toRegex(), "‘")
-                    .replace("'", "’")
+                val abilities = match["abilities"]!!.value.replaceQuotes().split(";")
+                val quote = match["quote"]!!.value.replaceQuotes()
                 val sideboard = match["sideboard"]
                     ?.let {
                         it.value.split(",").associate { entry ->

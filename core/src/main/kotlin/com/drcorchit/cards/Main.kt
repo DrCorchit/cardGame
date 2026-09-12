@@ -116,10 +116,46 @@ class Main : ApplicationAdapter() {
             cards.flatMap { it.keywords }.groupBy { it }.mapValues { it.value.size }
         keywordsCount.forEach { (keyword, count) -> println("Keyword [${keyword.name}]: $count") }
 
+        val cardsByType = cards.groupBy { it.type }
+
+        //Warhammer deals 2 damage, ignoring armor. I want to see how many units have 2 power and X > 1 armor.
+        val whTargets = cardsByType[CardType.Unit]!!
+            .filter { it.armor > 0 && it.power <= 2 && it.power + it.armor > 2 }.map { it.name }
+        println("Warhammer target count: ${whTargets.size} $whTargets")
+
+        //Arondight deals 4 damage, ignoring armor. I want to see how many units have 4 power and X > 1 armor.
+        val adTargets = cardsByType[CardType.Unit]!!
+            .filter { it.armor > 0 && it.power <= 4 && it.power + it.armor > 4 }.map { it.name }
+
+        println("Toughness count:")
+        cardsByType[CardType.Unit]!!
+            .groupBy { it.power + it.armor }
+            .entries.sortedBy { it.key }
+            .forEach {
+                val str = "%-2d -> %d".format(it.key, it.value.size)
+                println(str)
+            }
+
+        val immuneCount =
+            cards.filter { it.abilityText.contains("immune") }.size
+        val immunePercent = immuneCount * 100.0f / cards.size
+        println("\nImmune %: $immuneCount/${cards.size} ($immunePercent%)")
+
+        val armorCount = cards.filter { it.armor > 0 }.size
+        val armorPercent = armorCount * 100.0f / cards.size
+        println("Armor %: $armorCount/${cards.size} ($armorPercent%)")
+
+        println("\nCards by rarity:")
+        val cardsByRarity = cards.groupBy { it.rarity }
+        cardsByRarity.forEach { (rarity, cards) -> println(" $rarity ${cards.size}") }
+
+        println("\nCards by type:")
+        cardsByType.forEach { (type, cards) -> println(" $type ${cards.size}") }
+
+        println("Arondight target count: ${adTargets.size} $adTargets")
+        println("\nCards by city:")
         val cardsByCity = cards.groupBy { card -> card.city }
             .mapValues { it.value.groupBy { card -> card.rarity } }
-
-        println("\nCards by city:")
         cardsByCity.entries
             .forEach { entry ->
                 fun count(rarity: Rarity): Int {
@@ -134,42 +170,6 @@ class Main : ApplicationAdapter() {
                 )
                 println(str)
             }
-
-        println("\nCards by rarity:")
-        val cardsByRarity = cards.groupBy { it.rarity }
-        cardsByRarity.forEach { (rarity, cards) -> println(" $rarity ${cards.size}") }
-
-        println("\nCards by type:")
-        val cardsByType = cards.groupBy { it.type }
-        cardsByType.forEach { (type, cards) -> println(" $type ${cards.size}") }
-
-        println("Toughness count:")
-        cardsByType[CardType.Unit]!!
-            .groupBy { it.power + it.armor }
-            .entries.sortedBy { it.key }
-            .forEach {
-                val str = "%-2d -> %d".format(it.key, it.value.size)
-                println(str)
-            }
-
-        val immuneCount =
-            cards.filter { it.abilityText.contains("When played, become immune.") }.size
-        val immunePercent = immuneCount * 100.0f / cards.size
-        println("\nImmune %: $immuneCount/${cards.size} ($immunePercent%)")
-
-        val armorCount = cards.filter { it.armor > 0 }.size
-        val armorPercent = armorCount * 100.0f / cards.size
-        println("Armor %: $armorCount/${cards.size} ($armorPercent%)")
-
-        //Warhammer deals 2 damage, ignoring armor. I want to see how many units have 2 power and X > 1 armor.
-        val whTargets = cardsByType[CardType.Unit]!!
-            .filter { it.armor > 0 && it.power <= 2 && it.power + it.armor > 2 }.map { it.name }
-        println("Warhammer target count: ${whTargets.size} $whTargets")
-
-        //Arondight deals 4 damage, ignoring armor. I want to see how many units have 4 power and X > 1 armor.
-        val adTargets = cardsByType[CardType.Unit]!!
-            .filter { it.armor > 0 && it.power <= 4 && it.power + it.armor > 4 }.map { it.name }
-        println("Arondight target count: ${adTargets.size} $adTargets")
 
         println("\nTotal unique cards: ${cards.size}")
 
@@ -240,6 +240,7 @@ class Main : ApplicationAdapter() {
 
         fun toggleApproved() {
             approvedCards.add(card)
+            println("Approved ${card.name}")
             nextUnapproved()
         }
 

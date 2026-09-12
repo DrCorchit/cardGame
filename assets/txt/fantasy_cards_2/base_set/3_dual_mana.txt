@@ -10,5 +10,5 @@ Longshoreman Raider: 2/2p [Thalassa, Human, Pirate] [Engine.; Tap to spawn fire_
 University: 2p [Metropolis, Emplacement, Land] [Engine.; Tap to spawn air_mana or light_mana.] []
 Research Fellow: 2/2p [Metropolis, Elf, Scholar] [Engine.; Tap to spawn air_mana or light_mana.] [According to my research...]
 
-Caldera: 2p [Vulcania, Emplacement, Land] [Engine.; Tap to either:#Spawn fire_mana.#Expend X fire_mana and destroy this card to gain X points.] []
-Smelter: 1a 2/2p [Vulcania, Dwarf] [Engine.; Tap to spawn fire_mana.] [This is what they call a hot job.]
+Volcano: 4p [Vulcania, Emplacement, Land] [Engine.; Tap to either:#Spawn fire_mana.#Expend X fire_mana and destroy this card to assault X.] []
+Smelter: 2/2p [Vulcania, Dwarf] [Engine.; Tap to either:#Spawn fire_mana.#Expend fire_mana fire_mana fire_mana fire_mana and become stalwart.] [This is what they call a hot job.]

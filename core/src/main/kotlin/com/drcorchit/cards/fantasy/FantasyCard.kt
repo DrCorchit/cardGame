@@ -182,11 +182,10 @@ class FantasyCard(
         val line = Textures.line.asSprite().setOffset(Compass.CENTER)
         val border = Textures.frameBack.asSprite()
 
-
         val scale = W / tray.getFrames().width
         val trayHeight = tray.getFrames().height * scale
 
-        val imageX = W / 2
+        val imageX = BORDER + W / 2
         val imageY = (H + BORDER - 10f).roundToInt().toFloat()
         val imageW = W
         val imageH = H + 10 - trayHeight

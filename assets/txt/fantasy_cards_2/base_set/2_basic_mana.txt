@@ -1,5 +1,5 @@
 #Lands
-Volcano: 2p [Emplacement, Land] [Engine, Haste.; Tap to spawn fire_mana.] []
+Caldera: 2p [Emplacement, Land] [Engine, Haste.; Tap to spawn fire_mana.] []
 Ocean: 2p [Emplacement, Land] [Engine, Haste.; Tap to spawn water_mana.] []
 Mountain: 2p [Emplacement, Land] [Engine, Haste.; Tap to spawn earth_mana.] []
 Cliffs: 2p [Emplacement, Land] [Engine, Haste.; Tap to spawn air_mana.] []
@@ -60,12 +60,12 @@ Radio: 4/3p [Machine] [Engine.; When played, become immune.; Tap and expend X ai
 Genie: 4/3p [Celestial] [Engine.; When played, become immune.; Tap and expend X light_mana to gain X points.] [No wishing for more wishes.]
 Werebat: 4/3p [Beast] [Engine.; When played, become immune.; Tap and expend X dark_mana to gain X points.] [Nana nana... wait, wrong bat.]
 
-#Red-Eyed Fairy: 3/2p [Fairy] [Engine.; Tap to expend fire_mana and assault 1.] [Burn!]
-#Blue-Eyed Fairy: 3/2p [Fairy] [Tap to expend water_mana and lock an enemy unit.] [Freeze!]
-#Green-Eyed Fairy: 3/2p [Fairy] [Tap to expend earth_mana and become stalwart.] [Grow!]
-#Gray-Eyed Fairy: 3/2p [Fairy] [Haste.; Tap to expend air_mana and banish a card from your opponent's graveyard..] [Zap!]
-#Yellow-Eyed Fairy: 3/2p [Fairy] [Haste.; Tap to expend light_mana and purify a unit.] [Shine!]
-#Violet-Eyed Fairy: 3/2p [Fairy] [Tap to expend dark_mana dark_mana and poison an enemy unit.] [Die!]
+Red-Eyed Fairy: 3/2p [Fairy] [Engine.; Tap to expend fire_mana and assault 1.] [Burn!]
+Blue-Eyed Fairy: 3/2p [Fairy] [When played, you may expend water_mana and lock an enemy unit.] [Freeze!]
+Green-Eyed Fairy: 3/2p [Fairy] [Tap to expend earth_mana and become stalwart.] [Grow!]
+Gray-Eyed Fairy: 3/2p [Fairy] [Haste.; Tap to expend air_mana and banish a card from your opponent's graveyard..] [Zap!]
+Yellow-Eyed Fairy: 3/2p [Fairy] [When played, you may expend light_mana and purify a unit.] [Shine!]
+Violet-Eyed Fairy: 3/2p [Fairy] [When played, you may expend dark_mana and poison an enemy unit.] [Die!]
 
 #Tactic Types: Nature, Instinct, Crime, Technology, Spell, Warfare
 Sojourn: 4p [Tactic, Instinct] [Play a Land card from your deck.] [In a land far far away...]
