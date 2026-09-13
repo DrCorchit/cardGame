@@ -86,7 +86,11 @@
   },
   {
     "name": "Devour",
-    "description": "Destroy a unit and gain power counters equal to its power."
+    "description": "Destroy a unit and gain counters equal to its power."
+  },
+  {
+    "name": "Tall",
+    "description": "Counters on this unit contribute towards its power."
   },
   {
     "name": "Plunder X",

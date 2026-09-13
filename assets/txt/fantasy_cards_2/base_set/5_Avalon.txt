@@ -4,7 +4,7 @@ Tree Elf: 2/2p [Avalon, Elf] [Harmony: Gain 1 point.] [She knows every tree and 
 Elven Princess: 2/2p [Avalon, Elf] [When you pass (diversity X), gain X points.] [Most of them have at least three or four middle names.]
 Elven Scout: 2/2p [Avalon, Elf, Tribal] [When played, you may expend earth_mana to create an "Elven Archer" token.] [They don't always fire a warning shot.]
 Dryad Ranger: 2/2p [Avalon, Nymph] [When played, either:#Expend earth_mana and become stalwart.#Expend water_mana and purify a unit.#Expend air_mana and lock a unit.] [You ever feel like you're being watched?]
-#Goblin Shaman: 2/2p [Avalon, Ogroid, Tribal] [When played, spawn earth_mana water_mana.; Tap to either:#Expend earth_mana and give a unit doomed.#Expend water_mana and give a unit immune.] [Double, double, toil and trouble!]
+Goblin Shaman: 2/2p [Avalon, Ogroid, Tribal] [When played, spawn earth_mana water_mana.; Tap to either:#Expend earth_mana and give a unit doomed.#Expend water_mana and give a unit immune.] [Double, double, toil and trouble!]
 Goblin Frogman: 2/2p [Avalon, Ogroid, Tribal] [When played, become invisible.; Tap to either:#Spawn earth_mana water_mana.#Expend earth_mana water_mana and assault 2.] [You can kiss one, but it ain't gonna turn into no prince!]
 Lifegiving Rainfall: 2/2p [Avalon, Equipment, Nature] [Engine.; When played, purify the equip target.; Tap to spawn water_mana.] [Every rainstorm begins with a single drop.]
 Elven Trailblazer: 3/2p [Avalon, Elf, Tribal] [Engine.; Tap and expend earth_mana earth_mana to create an "Elven Archer" token.] [Elven trails need no markers.]
@@ -49,7 +49,7 @@ Thunderstorm: 6p [Avalon, Tactic, Nature, Rare] [Echo.; When played, spawn water
 Gawain: 2/7p [Avalon, Human, Knight, Rare] [When played, assault 1.; Intensify the assault by 1 for every Nature card in your graveyard.] [Never so fair and noble a man as he.]
 Flash Flood: 7p [Avalon, Tactic, Nature, Rare] [When played, you may expend X water_mana to assassinate X.; Afterward, spawn 6 water_mana.] [Six feet high and rising.]
 
-Excalibur: 7p [Avalon, Equipment, Weapon, Legendary] [When played, assault 7.; Overkill X: Spawn X earth_mana, water_mana, or air_mana.] [Whoso draws this sword, shall be king of Avalon!]
+Excalibur: 7p [Avalon, Equipment, Weapon, Legendary] [When played, assault 6.; Overkill X: Spawn X earth_mana, water_mana, or air_mana.] [Whoso draws this sword, shall be king of Avalon!]
 Queen Aelwyn: 4/7p [Avalon, Elf, Regent, Rare] [When played, expend X air_mana to create X "Elven Archer" tokens.] [She doesn't hate humans. She merely despises them.]
 
 Undine: 2/8p [Avalon, Nymph, Legendary] [When played, you may expend X water_mana and play a unit from your deck of X + 1 or fewer provisions.; Tap to repeat the "when played" ability.] [You now see before you, my love, an undine.]

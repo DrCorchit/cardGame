@@ -162,11 +162,14 @@ class Main : ApplicationAdapter() {
                     return entry.value[rarity]?.size ?: 0
                 }
 
-                val str = " %-12s %3d %3d %3d".format(
+                val totalCount = count(Rarity.Common) * 2 + count(Rarity.Rare) + count(Rarity.Legendary)
+
+                val str = " %-12s %3d %3d %3d --> %4d printable cards".format(
                     entry.key,
                     count(Rarity.Common),
                     count(Rarity.Rare),
-                    count(Rarity.Legendary)
+                    count(Rarity.Legendary),
+                    totalCount
                 )
                 println(str)
             }
