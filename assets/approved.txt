@@ -6,6 +6,7 @@ Alice the Wonder
 Allmother
 Alpha Wolf
 Alraune
+Alucard
 Anastasia, Wildshape
 Ancient Hamadryad
 Android Replica
@@ -28,6 +29,7 @@ Battery
 Beggar
 Berserker
 Bertcalf the Tall
+Big Daddy
 Billy Bones
 Bird of Victory
 Blackbeard
@@ -37,30 +39,41 @@ Blistering Heatwave
 Blue-Eyed Fairy
 Bolases
 Bounty Hunter
+Broadside
 Bullfrog Army
+Bystander
 Caelo, Teenage Necromancer
 Caldera
 Capacitor
 Captain Flint
 Captain Fribley
+Carolina Buford
 Carronade
+Casimir, Blood Rival
 Cave Bear
 Cave Dragon
 Censorship
 Cherubim Swarm
+Chester Zilch
 Chimney Sweep
 Cliffs
 Codex Veritas
+Constable
+Contract Kill
+Count Dracula, Final Form
 Cthulhu
 Cyborg Soldier
+Cynthia Beaumont
 Davy Jones
 Davy Jones’ Locker
+Debutante Ball
 Deckhand Fibber
 Desert
 Devastator
 Dhampir
 Dinghy
 Doco the Paladin
+Dracula, First Form
 Dragonslayer Lance
 Drone Swarm
 Dryad Enchantress
@@ -94,6 +107,7 @@ Fugg Raulner
 Gawain
 Genie
 Giant Turtle
+Gladys the Glorious
 Glass Dagger
 Goblin Assassin
 Goblin Bow
@@ -104,6 +118,7 @@ Goblin Hunter
 Goblin Shaman
 Goblin Smitty
 Goblin Warrior
+Gossip
 Grandmaster Smitty
 Grandmother Autumn
 Gravetender
@@ -111,6 +126,7 @@ Graveyard
 Gray-Eyed Fairy
 Great White
 Green-Eyed Fairy
+Grim Reaper
 Guinevere
 Gungnir
 Halberd
@@ -125,13 +141,20 @@ Havoc Raider
 Havoc Vanguard
 Heartwood Treant
 Heimdall
+Hired Muscle
+Hitman
 Homeland
 Howitzer
 Hurricane
+Hypnotist
+Hysteria
 Ifrit
 Incinerator
+Inspector Culso
+Intimidation
 Iriviel
 Jack Frost
+Jailbreak
 Jolly Roger
 Jormungandir
 Journeyman
@@ -144,6 +167,7 @@ Kraken
 Lady in Waiting
 Lady of the Lake
 Lancelot
+Landlady
 Lava Lizard
 Left Arm
 Leprechaun
@@ -156,18 +180,24 @@ Long John Silver
 Longshoreman Raider
 Lower the Boom
 Lutis the Mad
+Mafia Soldier
 Magma Defender
 Magnetron
 Magnum Opus
 Makeshift Bomb
 Manacles
 Manufactory
+Maximillian, Slumlord
 Meezurk, Arisen
 Merlin
 Mermaid
 Messenger
 Mjolnir
 Moby Dick
+Molgrippe, Master Assassin
+Moomsh
+Moomsh Addict
+Moomsh Dealer
 Mountain
 Mountain Gorilla
 Multitool
@@ -175,8 +205,10 @@ Naiad Grandmother
 Necromancy
 Neighborhood Bully
 Newtonia the White
+Night Watch
 Nightcrawler
 Nithing
+Nosferatu
 Oasis
 Ocean
 Oceanid
@@ -187,11 +219,14 @@ Ophanim
 Opusculum
 Orthos, Orchestrator
 Pack Wolf
+Pandemonium
 Paper Shuffler
+Phlegmtooth, Sewer Dragon
 Pickpocket
 Pillage
 Piranha Swarm
 Plexi Glass
+Pogrom
 Poltergeist
 Pond Naiad
 Power Surge
@@ -201,6 +236,7 @@ Prophecy
 Puck
 Puffball
 Pulverizer
+Pyromaniac
 Pyromaniaxe
 Pyros, Inquisitor
 Queen Aelwyn
@@ -208,6 +244,7 @@ Queen Anne’s Revenge
 Queen Titania
 Queen of Hearts
 Radio
+Raj, Blood Rival
 Red-Eyed Fairy
 Regeneration Weave
 Research Fellow
@@ -223,18 +260,23 @@ Royal Guard
 Royal Wyvern
 Rubber Duck
 Saboteur
+Saint Germain
 Samray the Swift
+Scarlet, Made Lady
 Schematic
 Schooner
 Scribe
 Selkie
 Seraphim
 Settlement
+Shiv
 Shore Leave
 Shuramorn, Gemini
+Silver Sword
 Skeleton Key
 Slime
 Smelter
+Snitch
 Sojourn
 Solar Panel
 Sophos, Ordinator
@@ -245,15 +287,22 @@ Street Thug
 Student
 Surrender
 Swamp
+Swapling
 System Reboot
 Takulev the Undying
+Talisman
 Tarzan
 Teknos, Grand Artificer
 Teleportation
+Terrence Beaumont
 Terror o’ the Seas
+The Butcher
+The Dollhouse
 The Flying Dutchman
 The Pied Piper
+The Quartermaster
 The White Cliffs
+Thor
 Thought Police
 Throne Defender
 Thunderstorm
@@ -273,7 +322,11 @@ Ultima, Prototype
 Undine
 Unicorn
 University
+Valhalla
+Vampire Aristocrat
 Vampire Nightmaster
+Vampiric Abomination
+Van Helsing
 Viking Longship
 Viking Raider
 Viking Shieldmaiden
@@ -284,8 +337,11 @@ Volcano
 Walk the Plank
 Warthog
 Werebat
+Witch Hunter
+Witness
 World’s Fair
 X Æ A-12
+Yalmamir, Prince of Crime
 Yarn-Spinner Calhoun
 Yellow-Eyed Fairy
 Yggdrasil

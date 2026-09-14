@@ -46,7 +46,7 @@ Merlin: 3/6p [Avalon, Human, Mage, Rare] [Engine.; When played, gain haste or be
 Treant Stalker: 1a 3/6p [Avalon, Treant, Rare] [Engine, Haste.; Tap (X counters) and expend X earth_mana to poison an enemy unit, then gain 1 counter.; Initial counters: 1. Max counters: 4.] [Threat detected.]
 Thunderstorm: 6p [Avalon, Tactic, Nature, Rare] [Echo.; When played, spawn water_mana air_mana and play a Nature card from your deck.] [A bright flash of lightning followed by deep rolling thunder.]
 
-Gawain: 2/7p [Avalon, Human, Knight, Rare] [When played, assault 1.; Intensify the assault by 1 for every Nature card in your graveyard.] [Never so fair and noble a man as he.]
+Gawain: 2/7p [Avalon, Human, Knight, Rare] [When played, assault 1.; Increase the assault by 1 for every Nature card in your graveyard.] [Never so fair and noble a man as he.]
 Flash Flood: 7p [Avalon, Tactic, Nature, Rare] [When played, you may expend X water_mana to assassinate X.; Afterward, spawn 6 water_mana.] [Six feet high and rising.]
 
 Excalibur: 7p [Avalon, Equipment, Weapon, Legendary] [When played, assault 6.; Overkill X: Spawn X earth_mana, water_mana, or air_mana.] [Whoso draws this sword, shall be king of Avalon!]

@@ -230,15 +230,16 @@ class Main : ApplicationAdapter() {
             val initialIndex = index + 1
             var counter = 0
             val counterMaxValue = cards.size
-            while (counter < counterMaxValue && approvedCards.contains(card)) {
-                advanceBy(1)
-                counter++
+            while (counter++ < counterMaxValue && approvedCards.contains(card)) {
+                index = MathUtils.modulus(index + 1, cards.size)
             }
             //No unapproved cards
             if (counter == counterMaxValue) {
                 println("No unapproved cards!")
                 index = initialIndex
             }
+
+            card.updateGraphic()
         }
 
         fun toggleApproved() {
