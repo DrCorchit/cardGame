@@ -155,6 +155,7 @@ Intimidation
 Iriviel
 Jack Frost
 Jailbreak
+Joanna the Thrall
 Jolly Roger
 Jormungandir
 Journeyman
@@ -340,6 +341,7 @@ Werebat
 Witch Hunter
 Witness
 World’s Fair
+Wyvern Egg
 X Æ A-12
 Yalmamir, Prince of Crime
 Yarn-Spinner Calhoun
