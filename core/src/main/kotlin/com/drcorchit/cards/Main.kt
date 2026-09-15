@@ -227,7 +227,7 @@ class Main : ApplicationAdapter() {
         }
 
         fun nextUnapproved() {
-            val initialIndex = index + 1
+            val initialIndex = index
             var counter = 0
             val counterMaxValue = cards.size
             while (counter++ < counterMaxValue && approvedCards.contains(card)) {

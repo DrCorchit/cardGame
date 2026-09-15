@@ -66,7 +66,7 @@ Gladys the Glorious: 4/10p [Transylvania, Vampire, Kingpin, Legendary] [When pla
 Terrence Beaumont: 6/10p [Transylvania, Human, Slayer, Legendary] [Engine, Haste.; When played, give an enemy unit 2 bounty.; Tap and expend X light_mana to assault X.; The assault target must have a bounty.] [I got your back, sis.]
 
 Phlegmtooth, Sewer Dragon: 7/11p [Transylvania, Dragon, Legendary] [Engine, Haste.; Tap and poison an adjacent unit to poison an enemy unit.] [He thought he could handle riding the dragon.]
-Count Dracula, Final Form: 7/11p [Transylvania, Vampire, Legendary] [Engine.; Tap to gain a counter.; Chaos is increased by 1 for each counter on this card.; Max counters: 6.] [I am the night.]
+Count Dracula, Final Form: 7/11p [Transylvania, Vampire, Legendary] [Engine.; Tap to gain a counter.; Chaos is increased by 1 for each counter on this card.; Max counters: 6.] [Humans are but cattle, and I am their shepherd.]
 
 Big Daddy: 1/12p [Transylvania, Human, Kingpin, Legendary] [When played (chaos X), seize up to 3 enemy units with a combined power less than or equal to X.] [More for me!]
 Pogrom: 12p [Transylvania, Emplacement, Scenario, Legendary] [This scenario progresses whenever you play a Slayer.; When played, create and summon a "Night Watch".; Chapter 1: Create and play "Gossip".; Chapter 2: Create and play "Hysteria".] [We got to kill them afore they kills us!] [1x"Night Watch", 1x"Gossip", 1x"Hysteria"]

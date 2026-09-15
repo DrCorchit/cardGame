@@ -45,7 +45,7 @@ Argos, Arbiter: 4/6p [Metropolis, Elf, Rare] [When played, draw 2 cards and move
 X Æ A-12: 2a 4/6p [Metropolis, Machine, Legendary] [Engine.; Tap and expend air_mana to give an allied unit haste.] [Work it harder, make it better, do it faster, makes us stronger!]
 Time Travel: 6p [Metropolis, Tactic, Technology, Legendary] [When played, move a unit to the top of its owner's deck.; Afterward, either:#If it was an allied Elf, spawn 6 light_mana.#If it was an allied Machine, spawn 6 air_mana.] [In the year 2525...]
 Regeneration Weave: 2/6p [Metropolis, Equipment, Technology, Rare] [During your turn, you may expend light_mana to play this card from your sideboard.; When played, make the equip target immune.] [Modern healthcare costs an arm and a leg.]
-Magnetron: 6p [Metropolis, Tactic, Technology, Rare] [When played, damage a unit by 5. If it has armor, destroy it instead.] [Never ask a physicist to explain how magnets actually work.]
+Magnetron: 6p [Metropolis, Tactic, Technology, Rare] [When played, damage a unit by 4. If it has armor, destroy it instead.] [Never ask a physicist to explain how magnets actually work.]
 
 Stealth Weave: 2/7p [Metropolis, Equipment, Technology, Legendary] [During your turn, you may expend light_mana to play this card from your sideboard.; When played, make the equip target invisible.] [Now you see me, now you don't.]
 Android Replica: 2a 2/7p [Metropolis, Machine, Rare] [When played, you may expend air_mana air_mana to become stalwart.; Tap to swap this card with a Common unit in your sideboard.] [Anything you can do, I can do better.]

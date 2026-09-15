@@ -85,7 +85,7 @@
   },
   {
     "name": "Labor",
-    "description": "Triggers whenever played next to a Dwarf, or a Dwarf is played next to self."
+    "description": "Triggers whenever an adjacent card is tapped."
   },
   {
     "name": "Devour",
