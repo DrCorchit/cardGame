@@ -9,6 +9,7 @@ Goblin Frogman: 2/2p [Avalon, Ogroid, Tribal] [When played, become invisible.; T
 Lifegiving Rainfall: 2/2p [Avalon, Equipment, Nature] [Engine.; When played, purify the equip target.; Tap to spawn water_mana.] [Every rainstorm begins with a single drop.]
 Elven Trailblazer: 3/2p [Avalon, Elf, Tribal] [Engine.; Tap and expend earth_mana earth_mana to create an "Elven Archer" token.] [Elven trails need no markers.]
 Lightning Strike: 2p [Avalon, Tactic, Nature] [When played, assault 2.; You may expend X air_mana to increase the assault by X.] [You've been thunderstruck.]
+Barkskin Armor: 1a 4/2p [Avalon, Equipment, Nature] [Tap to remove the equip target's lock.] [It's only weakness? Termites.]
 
 Goblin Hunter: 1/3p [Avalon, Ogroid, Tribal] [When played, poison a unit.; Tap and expend earth_mana water_mana to play a common Tribal unit from hand and return this card to your hand.] [They can't take us all!]
 Goblin Assassin: 1/3p [Avalon, Ogroid, Tribal] [When played, you may expend water_mana to become invisible.; Tap to assault 3. If invisible, assassinate 3 instead.] [You're all out of luck.]

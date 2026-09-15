@@ -37,6 +37,7 @@ Blackbeard
 Blackblood Marauder
 Blade Dancer
 Blistering Heatwave
+Bloody Slash
 Blue-Eyed Fairy
 Bolases
 Bounty Hunter
@@ -146,6 +147,7 @@ Gray-Eyed Fairy
 Great White
 Green-Eyed Fairy
 Grim Reaper
+Guardian Dragon
 Guinevere
 Guinness Stout
 Gungnir
@@ -175,7 +177,6 @@ Incinerator
 Inspector Culso
 Intimidation
 Iriviel
-Iron Mine
 Jack Frost
 Jailbreak
 Joanna the Thrall
@@ -218,6 +219,8 @@ Meezurk, Arisen
 Merlin
 Mermaid
 Messenger
+Metronome
+Mithril Mine
 Mjolnir
 Moby Dick
 Molgrippe, Master Assassin
@@ -232,6 +235,7 @@ Naiad Grandmother
 Natural Spring Water
 Necromancy
 Neighborhood Bully
+Neromir, Warrior Dragon
 Newtonia the White
 Night Watch
 Nightcrawler
@@ -285,6 +289,8 @@ Resurrection
 Reverse Engineering
 Rhodango the Red
 Right Arm
+Rite of Passage
+Ritual Master
 River Naiad
 Rock of Gibraltar
 Royal Decree
