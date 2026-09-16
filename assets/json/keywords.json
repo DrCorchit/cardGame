@@ -16,6 +16,10 @@
     "synonyms": ["destroys", "destroyed"]
   },
   {
+    "name": "Create",
+    "synonyms": ["creates", "created"]
+  },
+  {
     "name": "Discard",
     "synonyms": ["discards", "discarded"]
   },
@@ -49,7 +53,7 @@
   {
     "name": "Assassinate X",
     "description": "Assault X, bypassing protection and invisibility.",
-    "synonyms": ["Assassinate", "Assassinates", "Assassinated"]
+    "synonyms": ["assassinate", "assassinates", "assassinated", "assassination", "assassinations"]
   },
   {
     "name": "Seize",
@@ -82,10 +86,6 @@
   {
     "name": "Imbibe",
     "description": "Triggers whenever a liquor card is equipped."
-  },
-  {
-    "name": "Labor",
-    "description": "Triggers whenever an adjacent card is tapped."
   },
   {
     "name": "Devour",

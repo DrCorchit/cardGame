@@ -22,8 +22,10 @@ Arondight
 Artificer
 Assassin
 Autognome
+Automaton
 Baldr
 Bamboo Grove
+Barkskin Armor
 Barracuda
 Battering Ram
 Battery
@@ -43,6 +45,7 @@ Bolases
 Bounty Hunter
 Broadside
 Bullfrog Army
+Butler
 Bystander
 Caelo, Teenage Necromancer
 Caldera
@@ -55,6 +58,7 @@ Casimir, Blood Rival
 Cave Bear
 Cave Dragon
 Censorship
+Champion
 Cherubim Swarm
 Chester Zilch
 Chimney Sweep
@@ -79,9 +83,12 @@ Doco the Paladin
 Dracula, First Form
 Dragon Cultist
 Dragon Egg
+Dragon Emperor Coronakt
 Dragon Hatchling
 Dragonbrew Reserve
+Dragonmother Erizyx
 Dragonslayer Lance
+Drinking Contest
 Drone Swarm
 Dryad Enchantress
 Dryad Grovekeeper
@@ -91,7 +98,7 @@ Dwarven Berserker
 Dwarven Brawler
 Dwarven Drunkard
 Dwarven Miner
-Dwarven Vanguard
+Dwarven Spec Ops
 Dwarven Warrior
 Dynamo
 Earth Titan
@@ -112,13 +119,13 @@ Exhibitor
 Fairy Ring
 Fenrir
 Feral Werewolf
+Fire Breath
 Fireswill Wine
 Fjord
 Flash Flood
 Forest Defender
 Forest Fire
 Frankenstein’s Monster
-Frenzy
 Fugg Raulner
 Gawain
 Genie
@@ -135,6 +142,7 @@ Goblin Shaman
 Goblin Smitty
 Goblin Warrior
 Gold Mine
+Gold Rush
 Golden Dragon Egg
 Golden Froth
 Goryx, Golden Dragon
@@ -220,6 +228,7 @@ Merlin
 Mermaid
 Messenger
 Metronome
+Mithril Mail
 Mithril Mine
 Mjolnir
 Moby Dick
@@ -229,6 +238,7 @@ Moomsh Addict
 Moomsh Dealer
 Mountain
 Mountain Gorilla
+Mountainlord Torbjorn
 Multitool
 Myla
 Naiad Grandmother
@@ -325,7 +335,6 @@ Snort
 Sojourn
 Solar Panel
 Sophos, Ordinator
-Spelunker
 Stealth Weave
 Steam Engine
 Storm Priest
@@ -385,6 +394,7 @@ Viking Shieldmaiden
 Viking Skald
 Violet-Eyed Fairy
 Vizimir the Golden
+Volcanic Eruption
 Volcano
 Walk the Plank
 Warthog

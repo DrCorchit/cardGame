@@ -36,7 +36,7 @@ Gungnir: 4p [Thalassa, Equipment, Weapon, Rare] [When played, assault 4.; If equ
 Nithing: 4p [Thalassa, Emplacement, Spell, Rare] [Engine.; Tap to either:#Gain 1 counter.#Remove X counters to assault X and lock this card.; Maximum counters: 4.] [Curse you!]
 
 Captain Fribley: 5/5p [Thalassa, Human, Pirate, Rare] [When played, you may expend water_mana water_mana to place a unit from your graveyard into your hand, then discard a card.;] [A good captain goes down wit' his ship. But I ain't a good captain, har har!]
-Billy Bones: 6/5p [Thalassa, Human, Pirate, Rare] [When played, search your deck and move any card to the bottom.; When you pass, you need not shuffle your deck this round.] []
+Billy Bones: 6/5p [Thalassa, Human, Pirate, Rare] [When played, search your deck and move any card to the bottom.; When you pass, you need not shuffle your deck this round.] [Fifteen men on the dead man's chest]
 Abordage: 5p [Thalassa, Tactic, Warfare, Rare] [When played, destroy an allied unit of X power, then seize an enemy unit of X or less power.] [Don't you think you're going a bit overboard?]
 Mjolnir: 5p [Thalassa, Equipment, Weapon, Rare] [When played, assault 5.; If equipped to Thor, assault 10 instead.] [You are not worthy.]
 
