@@ -49,7 +49,7 @@ Fenrir: 3/6p [Thalassa, Beast, Rare] [Engine.; Tap to assault 1. Increase the as
 
 Blackbeard: 6/7p [Thalassa, Human, Pirate, Rare] [Tap to assault 6 and destroy self.; Overkill X: Spawn X fire_mana or X water_mana.] [He died standing up.]
 Davy Jones' Locker: 7p [Thalassa, Emplacement, Legendary] [When played, draw a card and discard a card.; Whenever you discard a unit of X provisions, spawn X fire_mana.; Whenever you devour a unit of X provisions, spawn X water_mana.] [Sleep with the fishes.]
-Tyr: 2/7p [Thalassa, Celestial, Warrior, Rare] [When played, assault an enemy by Tyr's power.; Tyr's power increases by 1 at the start of the second and third round, wherever it is.] [The greatest warrior must master peace as well as war.]
+Tyr: 2/7p [Thalassa, Celestial, Warrior, Rare] [When played, assault an enemy by Tyr's power.; Tyr's power increases by 1 at the start of the second and third round, wherever he is.] [The greatest warrior must master peace as well as war.]
 Odin: 6/7p [Thalassa, Celestial, Legendary] [When played, discard a card from your deck.; Tap to repeat the "when played" ability.; When you pass, you need not shuffle your deck next round.] [There's only one 'i' in wisdom.]
 
 Long John Silver: 2/8p [Thalassa, Human, Pirate, Legendary] [When played, banish a unit from your graveyard of X power, then assault X.] [I’m cap’n here because I’m the best man by a long sea-mile.]
@@ -68,4 +68,4 @@ Thor: 1a 4/10p [Thalassa, Celestial, Warrior, Legendary] [Tall.; When played, be
 Queen Anne's Revenge: 1a 5/11p [Thalassa, Ship, Legendary] [Tap to untap all equipped Cannon cards.; Plunder 2.] [Shiver me timbers!]
 Cthulhu: 7/11p [Thalassa, Monster, Legendary] [Tall.; When played, expend X water_mana to devour an enemy unit of X or less power.] [Cthulhu fhtagn!]
 
-Valhalla: 12p [Thalassa, Emplacement, Scenario, Legendary] [This scenario progresses whenever you play a Warrior.; When played, create a "Viking Longship" card and summon it to the battlefield.; Chapter 1: Add 4 counters to an allied card.; Chapter 2: Move a unit from your graveyard to the top of your deck.] [Glory and honor evermore!] [1x"Viking Longship"]
+Valhalla: 12p [Thalassa, Emplacement, Scenario, Legendary] [This scenario progresses whenever you play a Warrior.; When played, create and play a "Viking Longship".; Chapter 1: Add 4 counters to an allied card.; Chapter 2: Move a card from your graveyard to your hand, then discard a card.] [Glory and honor evermore!] [1x"Viking Longship"]

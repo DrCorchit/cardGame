@@ -5,27 +5,33 @@
   },
   {
     "name": "Spawn",
-    "synonyms": ["spawns", "spawned"]
+    "synonyms": ["spawns", "spawned"],
+    "_description": "Turn a number of mana dice to the indicated faces."
   },
   {
-    "name": "Expend X",
-    "synonyms": ["expend", "expends", "expended"]
+    "name": "Expend",
+    "synonyms": ["expend", "expends", "expended"],
+    "_description": "Reroll a number of mana dice with the indicated faces."
   },
   {
     "name": "Destroy",
-    "synonyms": ["destroys", "destroyed"]
+    "synonyms": ["destroys", "destroyed"],
+    "description": "Move a card from the battlefield to the graveyard."
   },
   {
     "name": "Create",
-    "synonyms": ["creates", "created"]
+    "synonyms": ["creates", "created"],
+    "description": "Introduce a card to the game."
   },
   {
     "name": "Discard",
-    "synonyms": ["discards", "discarded"]
+    "synonyms": ["discards", "discarded"],
+    "description": "Move a card from hand or deck to the graveyard."
   },
   {
     "name": "Banish",
-    "synonyms": ["Banishes", "Banished"]
+    "synonyms": ["Banishes", "Banished"],
+    "description": "Remove a card from the game."
   },
   {
     "name": "Assault X",
