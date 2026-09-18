@@ -8,7 +8,6 @@ import com.drcorchit.cards.cyberpunk.CyberpunkCard
 import com.drcorchit.cards.cyberpunk.CyberpunkCards
 import com.drcorchit.cards.cyberpunk.CyberpunkCredit
 import com.drcorchit.cards.cyberpunk.CyberpunkCreditBack
-import com.drcorchit.cards.cyberpunk.Placard
 import com.drcorchit.cards.cyberpunk.StatBox
 import com.drcorchit.cards.space.SpaceCard2LargeWindow.Companion.cardbacks
 import com.drcorchit.cards.space.SpaceCard2LargeWindow.Companion.disasters
@@ -117,19 +116,23 @@ class Main : ApplicationAdapter() {
         keywordsCount.forEach { (keyword, count) -> println("Keyword [${keyword.name}]: $count") }
 
         val cardsByType = cards.groupBy { it.type }
+        val units = cardsByType[CardType.Unit]!!
 
         //Warhammer deals 2 damage, ignoring armor. I want to see how many units have 2 power and X > 1 armor.
-        val whTargets = cardsByType[CardType.Unit]!!
-            .filter { it.armor > 0 && it.power <= 2 && it.power + it.armor > 2 }.map { it.name }
-        println("Warhammer target count: ${whTargets.size} $whTargets")
+        val whTargets = units.filter { it.armor > 0 && it.power <= 2 && it.toughness > 2 }.map { it.name }
+        println("\nWarhammer target count: ${whTargets.size} $whTargets")
 
         //Arondight deals 4 damage, ignoring armor. I want to see how many units have 4 power and X > 1 armor.
-        val adTargets = cardsByType[CardType.Unit]!!
-            .filter { it.armor > 0 && it.power <= 4 && it.power + it.armor > 4 }.map { it.name }
+        val adTargets = units.filter { it.armor > 0 && it.power <= 4 && it.toughness > 4 }.map { it.name }
+        println("Arondight target count: ${adTargets.size} $adTargets")
 
-        println("Toughness count:")
-        cardsByType[CardType.Unit]!!
-            .groupBy { it.power + it.armor }
+        //Dragonslayer Lance deals 7 damage to Legendary units. I want to see who survives.
+        val toughLegendaryUnits = units.filter { it.rarity == Rarity.Legendary && it.toughness > 4 }
+        val dsSurvivors = toughLegendaryUnits.filter { it.toughness >= 8 }.map { it.name }
+        println("DS Lance survivors: ${dsSurvivors.size}/${toughLegendaryUnits.size} $dsSurvivors")
+
+        println("\nToughness count:")
+        units.groupBy { it.toughness }
             .entries.sortedBy { it.key }
             .forEach {
                 val str = "%-2d -> %d".format(it.key, it.value.size)
@@ -137,13 +140,13 @@ class Main : ApplicationAdapter() {
             }
 
         val immuneCount =
-            cards.filter { it.abilityText.contains("immune") }.size
-        val immunePercent = immuneCount * 100.0f / cards.size
-        println("\nImmune %: $immuneCount/${cards.size} ($immunePercent%)")
+            units.filter { it.abilityText.contains("immune") }.size
+        val immunePercent = immuneCount * 100.0f / units.size
+        println("\nImmune %: $immuneCount/${units.size} ($immunePercent%)")
 
-        val armorCount = cards.filter { it.armor > 0 }.size
-        val armorPercent = armorCount * 100.0f / cards.size
-        println("Armor %: $armorCount/${cards.size} ($armorPercent%)")
+        val armorCount = units.filter { it.armor > 0 }.size
+        val armorPercent = armorCount * 100.0f / units.size
+        println("Armor %: $armorCount/${units.size} ($armorPercent%)")
 
         println("\nCards by rarity:")
         val cardsByRarity = cards.groupBy { it.rarity }
@@ -152,7 +155,6 @@ class Main : ApplicationAdapter() {
         println("\nCards by type:")
         cardsByType.forEach { (type, cards) -> println(" $type ${cards.size}") }
 
-        println("Arondight target count: ${adTargets.size} $adTargets")
         println("\nCards by city:")
         val cardsByCity = cards.groupBy { card -> card.city }
             .mapValues { it.value.groupBy { card -> card.rarity } }

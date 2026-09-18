@@ -47,6 +47,8 @@ class FantasyCard(
         throw Exception("Unknown card type: $this")
     }
 
+    val toughness = power + armor
+
     val city = tags.firstNotNullOfOrNull {
         try {
             City.valueOf(it)
@@ -104,9 +106,9 @@ class FantasyCard(
 
     val abilityTextH = abilityTextHandler.calculateHeight(abilityTextW)
 
-    val hasQuote = !quote.isBlank()
+    val compactKeywordTextArea = !(quote.isBlank() && armor == 0)
 
-    val keywordTextW = if (hasQuote) { keywordTextQuoteW } else { keywordTextNoQuoteW }
+    val keywordTextW = if (compactKeywordTextArea) { keywordTextQuoteW } else { keywordTextNoQuoteW }
     val keywordTextH =
         Draw.calculateDimensions(
             Fonts.keywordHelpFont,
@@ -114,7 +116,7 @@ class FantasyCard(
             keywordTextW
         ).second
 
-    val keywordTextY = if (hasQuote) Companion.keywordTextY else keywordTextNoQuoteY
+    val keywordTextY = if (compactKeywordTextArea) Companion.keywordTextY else keywordTextNoQuoteY
 
     //We sort by rarity so we can auto add cards when using the MakePlayingCards.com website
     override val outputLocation =
@@ -357,7 +359,7 @@ class FantasyCard(
             keywordHelpColor
         )
 
-        if (hasQuote) {
+        if (compactKeywordTextArea) {
             line.draw(batch, midWidth, lineY, 3f, 1f, 0f)
 
             //Quote text

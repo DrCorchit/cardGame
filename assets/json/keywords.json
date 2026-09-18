@@ -124,10 +124,6 @@
     "description": "Increase this unit's power at the start of the second and third round."
   },
   {
-    "name": "Fragile",
-    "description": "When mulliganed, this card moves to the graveyard."
-  },
-  {
     "name": "Purify",
     "description": "Remove all statuses from a unit."
   },
@@ -158,7 +154,7 @@
   },
   {
     "name": "Invisible",
-    "description": "Status that prevents the unit from being assaulted, locked, or poisoned."
+    "description": "Status that prevents the unit from being targeted by the opponent (except purify)."
   },
   {
     "name": "Immune",

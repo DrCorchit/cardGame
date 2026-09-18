@@ -8,6 +8,7 @@ enum class Race {
     Fairy, Nymph, Treant,
 
     //Other races
+    //Insectoid tag not currently used in V2.0
     Beast, Insectoid, Dragon, Ogroid, Celestial,
 
     //Monster Races

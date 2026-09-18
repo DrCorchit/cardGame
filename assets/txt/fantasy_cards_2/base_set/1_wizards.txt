@@ -13,7 +13,7 @@ Newtonia the White: 3/0p [Legendary, Human, Mage, Leader] [This card starts in y
 Octicia the Cunning: 2/0p [Legendary, Human, Mage, Leader] [This card starts in your sideboard with 3 counters. During your turn, you may remove a counter to assassinate 1.; When all charges are used up, summon Octicia from your sideboard to the battlefield.] [I know what makes you squirm.]
 
 #Tempo control
-Rhodango the Red: 5/0p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; When played, become stalwart.] [Alone? But I have so many friends: wisdom, silence, solitude, peace of mind... ]
+Rhodango the Red: 4/0p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; When played, become stalwart.] [Alone? But I have so many friends: wisdom, silence, solitude, peace of mind... ]
 
 #Allows building sideboard quickly and effectively.
 Samray the Swift: 5/0p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; When played, draw three cards, then place three cards from your hand at the top of your deck in any order.] [Whatever you require in others, require in yourself first.]

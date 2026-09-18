@@ -46,7 +46,7 @@ Scaly Feast: 8p [Vulcania, Tactic, Instinct, Legendary] [When played, each allie
 Neromir, Warrior Dragon: 1a 4/9p [Vulcania, Dragon, Legendary] [Haste.; Tap and expend X fire_mana to assault X.; Imbibe to untap this card.] [Look who woke up on the wrong side of the bed.]
 Treasure of all Treasures: 9p [Vulcania, Emplacement, Legendary] [When played, play a unit from hand and draw a card.; At allied turn start, gain 1 point if you control the highest provision cost card. If there's a tie, gain 0 points.] [All that glitters is not gold. Could be diamonds, for instance.]
 
-Mithril Mail: 4a 2/10p [Vulcania, Equipment, Armor, Legendary] [Tap to make the equip target stalwart.] [Made to last; last of its make.]
+Mithril Mail: 4a 2/10p [Vulcania, Equipment, Legendary] [Tap to make the equip target stalwart.] [Made to last; last of its make.]
 Dragonmother Erizyx: 2a 8/10p [Vulcania, Dragon, Legendary] [When played, become a protector.; This card only protects adjacent Egg cards.; When you pass, gain 2 points for each allied Egg.] [She's a lady and you will treat her as such.]
 Dragon Emperor Coronakt: 1a 4/10p [Vulcania, Dragon, Legendary] [When played, banish a lowest-provision unit from your graveyard and gain points equal to its power.; Imbibe to repeat the "when played" ability.] [Ever been so hungry you could eat a dragon?]
 
