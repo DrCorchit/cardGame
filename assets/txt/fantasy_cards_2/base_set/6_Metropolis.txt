@@ -7,9 +7,9 @@ Paper Shuffler: 3/2p [Metropolis, Elf] [Engine.; Tap to either:#Expend light_man
 Apprentice: 3/2p [Metropolis, Elf] [Haste.; Tap and expend light_mana air_mana to create a "Student" token.] [Practice makes perfect.]
 Steam Engine: 1a 3/2p [Metropolis, Machine] [Engine, Haste.; Tap and expend light_mana air_mana to gain 2 points.] [Chitty chitty bang bang.]
 Alchemist: 3/3p [Metropolis, Elf] [When played, draw a card and move a card from your hand to your sideboard.; Tap and expend light_mana to repeat the "when played" ability.] [Many an alchemist has died searching for the elixir of life.]
-Electroshock: 2p [Metropolis, Tactic, Technology] [When played, either:#Lock a card and spawn air_mana air_mana.#Remove an equipment from a unit.] [Therapy not included.]
+Electroshock: 2p [Metropolis, Tactic, Technology] [When played, either:#Lock a Common card and spawn air_mana air_mana air_mana.#Destroy an enemy equipment.] [Therapy not included.]
 Product Recall: 2p [Metropolis, Tactic, Technology] [Return an allied Common Machine to hand, then play a card.] [A class action lawsuit is underway.]
-Junkyard:
+Manipulator Arm: 3/2p [Metropolis, Equipment, Technology] [Tap to either:#Expend light_mana to purify an allied unit of the same or lower rarity as the equip target.#Expend air_mana to lock an enemy unit of the same or lower rarity as the equip target.] [These things are mostly for aura farming.]
 
 Artificer: 2/3p [Metropolis, Elf] [When played, either:#Become immune.#Move a Common Machine from your graveyard to your sideboard.; Tap and expend light_mana to play a Common Machine from your sideboard.] [Make it or break it.]
 Messenger: 2/3p [Metropolis, Elf] [When moved to your sideboard, summon self.] [The barristers send their regards.]
@@ -18,12 +18,13 @@ Battery: 3/3p [Metropolis, Machine] [Tap to spawn light_mana light_mana light_ma
 Journeyman: 3/3p [Metropolis, Elf] [Engine, Haste.; Tap and expend light_mana air_mana to create a "Student" token.] [The best teachers are those that continue to learn after they are no longer a student.]
 Tutor: 3/3p [Metropolis, Elf] [When you pass, gain 1 point for each allied student.] [With the right teacher, learning is a joy.]
 Electrical Engineer: 4/3p [Metropolis, Elf] [Tap to either:#Expend light_mana to purify a card.#Expend air_mana to lock a card.] [Fix-it Felix just doesn't have the same ring to it.]
+Cyborg Monk: 4/3p [Metropolis, Elf] [Tap and expend light_mana air_mana to either:#Become invisible.#If invisible, become stalwart.#If stalwart, assault 2.] [Become the machine you wish to be in the world.]
 Archivist: 4/3p [Metropolis, Elf] [When played, look at the top 3 cards from either your or your opponent's deck and put them back in any order.; Tap to repeat the "when played" ability.] [Our records are perfect, according to our records.]
 Transformer: 5/3p [Metropolis, Machine] [Tap to either:#Convert all light_mana into air_mana.;#Convert all air_mana into light_mana.#Expend X light_mana and gain X points.#Expend X air_mana and gain X points.] [Step up the voltage.]
+Landship: 2a 4/3p [Metropolis, Machine] [Tap and expend X air_mana to destroy an enemy emplacement of X provisions.] [The tank was invented to clear a way for the infantry. Now it is the infantry who clear a way for the tanks.]
 Power Surge: 3/3p [Metropolis, Equipment, Technology] [When played, if equipped to a Common unit, untap it.] [Power is always dangerous.]
 Library: 3p [Metropolis, Emplacement, Location] [When played, become stalwart and spawn 4 light_mana or 4 air_mana.; Tap and expend light_mana air_mana to create a "Student" token.] [So many books, so little time.]
 
-#Cyborg Monk: 1/4p [Metropolis, Elf] [When played, become immune.; Tap to play a Common Machine from your graveyard and give it doomed.] [Become the machine you wish to be in the world.]
 Professor: 2/4p [Metropolis, Elf] [When played, play a Common card from your deck of X or fewer provisions, where X is the number of "Student" tokens you control.] [Piled higher and deeper.]
 Exhibitor: 3/4p [Metropolis, Elf] [Tap to either:#Expend air_mana air_mana to play a Common Machine from your deck.#Expend light_mana light_mana to play a Common Technology from your deck.] [It's my life's work!]
 Schematic: 4p [Metropolis, Tactic, Technology] [When played, either:#Play a Common Machine from your deck.#Play a Machine from your sideboard.] [Great, they forgot to attach the parts list again.]
@@ -43,30 +44,29 @@ Opusculum: 1a 4/5p [Metropolis, Machine, Rare] [Engine.; Tap to either:#Gain 1 c
 Left Arm: 2/5p [Metropolis, Machine, Equipment, Rare] [Tap to spawn 6 light_mana or 6 air_mana.] [Not to be underestimated.]
 
 Metronome: 1a 2/6p [Metropolis, Machine, Rare] [Whenever an allied unit untaps, gain 1 point.] [Click, click, click, click...]
-Argos, Arbiter: 4/6p [Metropolis, Elf, Rare] [When played, draw 2 cards and move 2 cards from your hand into your sideboard.; Tap and expend light_mana light_mana to repeat the "when played" ability.] [No plan is ever perfect. Except mine.]
+Argos, Arbiter: 5/6p [Metropolis, Elf, Rare] [When played, draw 2 cards and move 2 cards from your hand into your sideboard.; Tap and expend light_mana light_mana to repeat the "when played" ability.] [No plan is ever perfect. Except mine.]
 X Æ A-12: 2a 4/6p [Metropolis, Machine, Legendary] [Engine.; Tap and expend air_mana to give haste to an allied unit.] [Work it harder, make it better, do it faster, makes us stronger!]
 Time Travel: 6p [Metropolis, Tactic, Technology, Legendary] [When played, move a unit to the top of its owner's deck.; Afterward, either:#If it was an allied Elf, spawn 6 light_mana.#If it was an allied Machine, spawn 6 air_mana.] [In the year 2525...]
 Regeneration Weave: 2/6p [Metropolis, Equipment, Technology, Rare] [When mulliganed, this card moves to your sideboard.; During your turn, you may expend light_mana to play this card from your sideboard.; When played, make the equip target immune.] [Modern healthcare costs an arm and a leg.]
 Magnetron: 6p [Metropolis, Tactic, Technology, Rare] [When played, damage a unit by 4. If it has armor, destroy it instead.] [Never ask a physicist to explain how magnets actually work.]
 
 Stealth Weave: 1/7p [Metropolis, Equipment, Technology, Legendary] [When mulliganed, this card moves to your sideboard.; During your turn, you may expend light_mana to play this card from your sideboard.; When played, make the equip target invisible.] [Now you see me, now you don't.]
-Android Replica: 2a 2/7p [Metropolis, Machine, Rare] [When played, you may expend air_mana air_mana to become stalwart.; Tap to swap this card with a Common unit in your sideboard.] [Anything you can do, I can do better.]
+Android Replica: 2a 2/7p [Metropolis, Machine, Rare] [] [Anything you can do, I can do better.]
 Plexi Glass: 4/7p [Metropolis, Machine, Rare] [Engine.; Tap to spawn light_mana air_mana.] [Even autognomes need a feminine touch.]
 Reverse Engineering: 7p [Metropolis, Tactic, Technology, Legendary] [When played, you may either:#Play a unit from your opponent's graveyard.#Play the top card of your oppoonent's deck.] [Sometimes, the imitation is better than the original.]
 
 Codex Veritas: 8p [Metropolis, Emplacement, Book, Legendary] [When played, move 2 cards from your deck to your sideboard.; Tap to play a card from your sideboard.] [No-one ever reads past the abstract because there's a paywall.]
 System Reboot: 8p [Metropolis, Tactic, Rare] [When played, untap all allied units.] [Have you tried turning it off and on again?]
 Right Arm: 2/8p [Metropolis, Equipment, Machine, Legendary] [Tap to assault 6.] [It packs a whallop.]
-#Commented out because its just a worse Teknos
-#Manufactory: 1/8p [Metropolis, Emplacement, Technology, Legendary] [Tap and expend air_mana air_mana to play 2 Common Machine cards from your sideboard.] [Our work is never over.]
 
-Fugg Raulner: 1a 2/9p [Metropolis, Machine, Mage, Legendary] [When played, either:#Expend air_mana air_mana to become invisible.#Expend light_mana light_mana to gain haste.; Tap to destroy an enemy unit.] [Beep boop.]
-Logos, Oracle: 1a 4/9p [Metropolis, Elf, Legendary] [Tap and expend light_mana light_mana to play a card from your deck or sideboard.] [Know thyself.]
+Fugg Raulner: 1a 2/9p [Metropolis, Machine, Mage, Legendary] [When played, you may either:#Expend air_mana air_mana to become invisible.#Expend light_mana light_mana to gain haste.; Tap to destroy an enemy unit.] [Beep boop.]
+Logos, Oracle: 5/9p [Metropolis, Elf, Legendary] [Tap and expend light_mana to play a card from your deck or sideboard.] [Know thyself.]
 Teleportation: 9p [Metropolis, Tactic, Technology, Legendary] [Echo.; When played, either:#Play a unit from your deck or sideboard.] [What could possibly go wrong?]
 
-Orthos, Orchestrator: 6/10p [Metropolis, Elf, Legendary] [Tap and expend air_mana air_mana to untap an allied card.] [Actually, science hasn't gone far enough.]
+Orthos, Orchestrator: 6/10p [Metropolis, Elf, Legendary] [Tap and expend air_mana to untap an allied card.] [Actually, science hasn't gone far enough.]
 Teknos, Grand Artificer: 3/10p [Metropolis, Elf, Legendary] [Haste.; When played, move a Common Machine from your graveyard to your sideboard.; Tap and expend 2X light_mana to play X Common Machine cards from your sideboard.] ["Grand Artificer" is a code word for "Huge Nerd"]
 
 Magnum Opus: 2a 5/11p [Metropolis, Machine, Legendary] [When played, become immune.; Tap to untap all equipped equipment.] [The latest and the greatest of them all.]
+Zeppelin Prime: 2a 4/11p [Metropolis, Machine, Legendary] [When played, you may expend X air_mana to gain X counters.; Any number of times during your turn, you may:#Remove 2 counters to assault 3.#Remove 3 counters to destroy an enemy emplacement.; Tap to repeat the "when played" ability.; Max counters: 12.] [Bearing two point one eight five, velocity eighty-five knots.]
 
 World's Fair: 12p [Metropolis, Emplacement, Scenario, Legendary] [This scenario progresses whenever you play a Machine.; When played, create a "Student" token.; Chapter 1: Create a "Student" token.; Chapter 2: Create a "Student" token and untap an allied unit.] [Here's alchemy, and there's agronomy, astronomy, geometry...]

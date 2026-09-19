@@ -1,8 +1,8 @@
 Moomsh Addict: 1/2p [Transylvania, Human] [When played, become immune.; Tap to destroy self and play a Common Henchman from your deck.] [Wish I had some moomsh.]
 Snitch: 1/2p [Transylvania, Human, Spy] [Disloyal.; When played, play a Common Crime from your graveyard.] [Hey, pssst!]
-Constable: 2/2p [Transylvania, Human] [When played, lock a Common unit.] [You're under arrest.]
 Witness: 2/2p [Transylvania, Human, Slayer] [When played, give an enemy unit bounty 3.] [I know what I saw.]
 Beggar: 2/2p [Transylvania, Human] [Engine.; Tap (chaos 5) to gain 1 point.] [Alms for the poor?]
+Constable: 3/2p [Transylvania, Human] [When played, lock a Common unit.] [You're under arrest.]
 Neighborhood Bully: 4/2p [Transylvania, Human, Henchman] [Chaos 5 is required to play this unit.; When paired, chaos is increased by 1. This effect resolves once for all "Neighborhood Bully" cards.] [Says who? My fist, that's who!]
 Shiv: 2p [Transylvania, Equipment, Weapon, Crime] [When played, assault 2.; If equipped to a Henchman, assassinate 2 instead.] [In prison, these things are cutting-edge technology.]
 Moomsh: 2p [Transylvania, Tactic, Crime] [When played, spawn dark_mana dark_mana and poison a unit.] [The high to die for?]
@@ -46,7 +46,7 @@ The Dollhouse: 5p [Transylvania, Emplacement, Location, Rare] [When played, beco
 
 The Quartermaster: 1a 1/6p [Transylvania, Human, Spy, Rare] [When played, play a Common Spy from your deck.; When you pass, gain 1 point for each enemy Spy.] [Take whatcha need for the job and scram.]
 Carolina Buford: 2/6p [Transylvania, Human, Slayer, Rare] [When played, give a unit bounty 6.] [Not so tough now, are ya?]
-Nosferatu: 5/6p [Transylvania, Vampire, Rare] [When played, purify and lock an enemy unit.; This ability may target invisible units.] [Does evil come from within us or from beyond?]
+Nosferatu: 6/6p [Transylvania, Vampire, Rare] [When played, you may expend light_mana dark_mana to purify and lock an enemy unit.; This ability may target invisible units.] [Does evil come from within us or from beyond?]
 Chester Zilch: 2/6p [Transylvania, Vampire, Caporegime, Rare] [This card starts in your graveyard.; During your turn (chaos 6), summon self from your graveyard.] [Behind schedule, as usual.]
 Contract Kill: 6p [Transylvania, Tactic, Crime, Rare] [When played, destroy an enemy unit whose power is less than or equal to your score.] [The perfect crime.]
 
@@ -69,7 +69,7 @@ Terrence Beaumont: 6/10p [Transylvania, Human, Slayer, Legendary] [Engine, Haste
 
 Phlegmtooth, Sewer Dragon: 7/11p [Transylvania, Dragon, Legendary] [Tap and poison adjacent units to poison an enemy unit.; This unit may be played between other units.] [He thought he could handle riding the dragon.]
 Count Dracula, Final Form: 7/11p [Transylvania, Vampire, Legendary] [Engine.; Tap to gain a counter.; Chaos is increased by 1 for each counter on this card.; Max counters: 6.] [Humans are but cattle, and I am their shepherd.]
+Dracula's Castle: 11p [Transylvania, Emplacement, Land, Legendary] [Engine.; When played, create and play a "Vampire Aristocrat".; Tap to either:#Spawn dark_mana.#Spawn 6 light_mana and destroy this card.] [The night is darkest before the dawn.] [1x"Vampire Aristocrat"]
 
 Big Daddy: 1/12p [Transylvania, Human, Kingpin, Legendary] [When played (chaos X), seize up to 3 enemy units with a combined power less than or equal to X.] [More for me!]
 Pogrom: 12p [Transylvania, Emplacement, Scenario, Legendary] [This scenario progresses whenever you play a Slayer.; When played, create and summon a "Night Watch".; Chapter 1: Create and play "Gossip".; Chapter 2: Create and play "Hysteria".] [We got to kill them afore they kills us!] [1x"Night Watch", 1x"Gossip", 1x"Hysteria"]
-Dracula's Castle: 12p [Transylvania, Emplacement, Land, Legendary] [Engine.; When played, create and play a "Vampire Aristocrat".; Tap to either:#Spawn dark_mana.#Spawn 6 light_mana and destroy this card.] [The night is darkest before the dawn.] [1x"Vampire Aristocrat"]

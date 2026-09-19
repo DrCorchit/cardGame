@@ -40,7 +40,7 @@ Lady of the Lake: 1/5p [Avalon, Human, Rare] [This card starts in your sideboard
 Aelshamyr: 2a 2/5p [Avalon, Dragon, Rare] [Harmony: Gain 2 points.] [He starts a forest fire every time he sneezes, but the elves love him anyway.]
 Lancelot: 1a 4/5p [Avalon, Human, Knight, Rare] [Tap and expend earth_mana water_mana to assault 3.; Whenever you equip a Weapon, untap Lancelot.] [I am never in the dark when I am protecting you.]
 Guinevere: 4/5p [Avalon, Human, Regent, Rare] [Engine.; While untapped, all allied units have 1 additional armor.; While tapped, gain 1 point whenever you play a unit.] [Talk not of faith, for you have none in you.]
-Bamboo Grove: 5p [Avalon, Emplacement, Nature, Land, Rare] [Engine, Haste.; When played, become stalwart.; Tap and expend earth_mana water_mana to gain 3 points.] [Nothing grows faster, or thicker.]
+Bamboo Grove: 5p [Avalon, Emplacement, Nature, Land, Rare] [Engine, Haste.; When played, become stalwart.; Tap to either:#Spawn earth_mana.#Expend earth_mana water_mana to gain 3 points.] [Nothing grows faster, or thicker.]
 
 Puck: 1/6p [Avalon, Fairy, Rare] [Disloyal.; When played, play a unit from your deck whose provision cost exceeds Puck's.] [Give me your hands, if we be friends.]
 Tarzan: 1/6p [Avalon, Human, Tribal, Rare] [This card starts in your sideboard. During your turn, you may expend earth_mana earth_mana earth_mana to play Tarzan from your sideboard. Decrease this cost by 1 for each allied "Mountain Gorilla".; When played, assault 2.; Tap to return to your sideboard.] [AaaauuEiEiEiEiaaaahhhh!]

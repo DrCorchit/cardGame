@@ -125,11 +125,13 @@
   },
   {
     "name": "Purify",
-    "description": "Remove all statuses from a unit."
+    "description": "Remove all statuses from a unit.",
+    "synonyms": ["purifies", "purified"]
   },
   {
     "name": "Lock",
-    "description": "Status that disables all of a card's abilities."
+    "description": "Status that disables all of a card's abilities.",
+    "synonyms": ["locks", "locked"]
   },
   {
     "name": "Poison",
