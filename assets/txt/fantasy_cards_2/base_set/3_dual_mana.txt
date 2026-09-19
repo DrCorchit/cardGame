@@ -8,4 +8,4 @@ Fjord: 2p [Thalassa, Emplacement, Land] [Engine.; Tap to spawn fire_mana or wate
 Longshoreman Raider: 2/2p [Thalassa, Human, Pirate] [Engine.; Tap to spawn fire_mana or water_mana.] [Tote that barge, lift that bale.]
 
 University: 2p [Metropolis, Emplacement, Land] [Engine.; Tap to spawn air_mana or light_mana.] []
-Research Fellow: 2/2p [Metropolis, Elf, Scholar] [Engine.; Tap to spawn air_mana or light_mana.] [According to my research...]
+Research Fellow: 2/2p [Metropolis, Elf] [Engine.; Tap to spawn air_mana or light_mana.] [According to my research...]

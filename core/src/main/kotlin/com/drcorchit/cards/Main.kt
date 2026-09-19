@@ -57,10 +57,27 @@ class Main : ApplicationAdapter() {
         val allFantasyCards by lazy { FantasyCards.baseSet.cards + FantasyCards.expac1.cards + FantasyCards.tokens.cards }
 
         val cards by lazy { FantasyCards.baseSet2.cards }
+        val cardsByName by lazy { cards.associateBy { it.name } }
+        val cardCounts by lazy {
+            val counts = cards.associateWith {
+                if (it.tags.contains("Token") && it.rarity == Rarity.Common) 10
+                else if (it.rarity == Rarity.Common) 2
+                else 1
+            }.toMutableMap()
+            cards.forEach {
+                try {
+                    it.sideboardCards.forEach { pair ->
+                        val key = cardsByName[pair.key]!!
+                        counts[key] = (counts[key] ?: 0) + pair.value
+                    }
+                } catch (e: Exception) {
+                    println("Could not add sideboard cards for card ${it.name}")
+                }
+            }
+            counts.toMap()
+        }
 
         val approvedCards by lazy {
-            val cardsByName = cards.associateBy { it.name }
-
             File("assets/approved.txt").readLines()
                 .mapNotNull { cardsByName[it] }
                 .toMutableSet()
@@ -139,6 +156,16 @@ class Main : ApplicationAdapter() {
                 println(str)
             }
 
+        //Displays the card counts for cards that are to be printed more than 2 (common) or 1 (rare/legendary) times
+        println("\nExtra Cards: ")
+        cardCounts.filter {
+            val card = it.key
+            val count = it.value
+            if (card.rarity == Rarity.Common) count > 2 else count > 1
+        }.forEach { (card, count) ->
+            println("${card.name} -> $count")
+        }
+
         val immuneCount =
             units.filter { it.abilityText.contains("immune") }.size
         val immunePercent = immuneCount * 100.0f / units.size
@@ -156,15 +183,15 @@ class Main : ApplicationAdapter() {
         cardsByType.forEach { (type, cards) -> println(" $type ${cards.size}") }
 
         println("\nCards by city:")
-        val cardsByCity = cards.groupBy { card -> card.city }
-            .mapValues { it.value.groupBy { card -> card.rarity } }
-        cardsByCity.entries
+        val cardCountsByCity =
+            cardCounts.entries.groupBy { it.key.city }.mapValues { it.value.groupBy { card -> card.key.rarity } }
+        cardCountsByCity.entries
             .forEach { entry ->
                 fun count(rarity: Rarity): Int {
-                    return entry.value[rarity]?.size ?: 0
+                    return entry.value[rarity]?.sumOf { it.value } ?: 0
                 }
 
-                val totalCount = count(Rarity.Common) * 2 + count(Rarity.Rare) + count(Rarity.Legendary)
+                val totalCount = count(Rarity.Common) + count(Rarity.Rare) + count(Rarity.Legendary)
 
                 val str = " %-12s %3d %3d %3d --> %4d printable cards".format(
                     entry.key,
@@ -191,9 +218,8 @@ class Main : ApplicationAdapter() {
             if (!cardNames.add(it.name.normalize())) {
                 println("Duplicate Card name: ${it.name}")
             }
-            it.updateGraphic()
-            if (it.image == null) {
-                println("Card ${it.name} has no art! (checked ${it.name.normalize()}.png and .jpg)")
+            if (!it.hasImage) {
+                println("Card ${it.name} has no art! (checked ${it.pngImage} and .jpg)")
             }
             if (it.quote.isBlank()) {
                 println("Card ${it.name} has no quote!")

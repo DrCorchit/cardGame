@@ -28,14 +28,14 @@ Glass Dagger: 4p [Equipment, Weapon] [When played, assault 2.; Tap to give an al
 Chimney Sweep: 4/4p [Human, Rare] [Engine, Haste.; Tap to banish a card from either player's graveyard.] [A sweep is as lucky as lucky can be.]
 Bounty Hunter: 4/4p [Human, Rare] [When played, lock a unit.] [You can run, but you can't hide.]
 Rubber Duck: 4p [Tactic, Rare] [When played, play a second copy of a common unit you already control.; While in the graveyard, other cards cannot be banished from your graveyard.] [Rumored to have applications beyond software development.]
-Pyromaniaxe: 4p [Equipment, Weapon, Rare] [This weapon cannot be equipped to units with 4 or less power.; When played, assault 6.] [Cuts like a hot knife through butter.]
 
 #Holy Crusader: 4/5p [Human, Knight, Rare] [Tap to purify all units.] [Deus Vult.]
 Giant Turtle: 6/5p [Beast, Rare] [When played, roll an additional mana die and add it to the common pool.] [Could this be a dog?]
 #Ancient Vampire: 7/5p [Vampire, Rare] [When played, lose 1 point for each light_mana among common or allied mana dice.] [For some, the emo phase lasts a bit longer than others.]
 Necromancy: 5p [Tactic, Spell, Rare] [When played, play a Common unit from your graveyard.] [The four stages of grief: denial, anger, despair... necromancy?]
 Bolases: 5p [Equipment, Weapon, Rare] [When played, lock two units.; Tap to assault all locked units by 2.] [Feeling a little tied up at the moment?]
-Dragonslayer Lance: 5p [Equipment, Weapon, Rare] [When played, assault 4.; If the assault target is Legendary, assault 7 instead.] [A deadly weapon for a deadly foe!]
+Dragonslayer Lance: 5p [Equipment, Weapon, Rare] [When played, assault 4.; If the assault target is Legendary, assault 6 instead.] [A deadly weapon for a deadly foe!]
+Pyromaniaxe: 5p [Equipment, Weapon, Rare] [This weapon cannot be equipped to units with 4 or less power.; When played, assault 6.] [Cuts like a hot knife through butter.]
 
 Lady in Waiting: 1/6p [Human, Rare] [When you pass, gain 8 points if this unit is protected.] [My hero!]
 Alpha Wolf: 3/6p [Beast, Rare] [When played, assault 2.; Increase the assault by 1 for each allied "Pack Wolf" card.] [Arooooo!]

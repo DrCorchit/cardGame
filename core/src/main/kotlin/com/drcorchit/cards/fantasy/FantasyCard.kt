@@ -102,6 +102,9 @@ class FantasyCard(
 
     val keywordText = keywords.joinToString("\n") { "${it.name}: ${it.description}" }
 
+    val pngImage = File("${cards.imageRoot}/${city.name}/${name.normalize()}.png")
+    val jpgImage = File("${cards.imageRoot}/${city.name}/${name.normalize()}.jpg")
+    val hasImage = pngImage.exists() || jpgImage.exists()
     var image: AnimatedSprite? = null
 
     val abilityTextH = abilityTextHandler.calculateHeight(abilityTextW)
@@ -394,14 +397,12 @@ class FantasyCard(
     }
 
     override fun updateGraphic(): AnimatedSprite? {
-        val png = "${cards.imageRoot}/${city.name}/${name.normalize()}.png"
-        val jpg = "${cards.imageRoot}/${city.name}/${name.normalize()}.jpg"
-        val texture = if (File(png).exists()) Texture(FileHandle(png), true)
-        else if (File(jpg).exists()) Texture(FileHandle(jpg), true)
+        val texture = if (pngImage.exists()) Texture(FileHandle(pngImage), true)
+        else if (jpgImage.exists()) Texture(FileHandle(jpgImage), true)
         else null
 
         if (texture == null) {
-            println("Could not load $png or $jpg")
+            println("Could not load $pngImage or $jpgImage")
         } else {
             texture.setFilter(Texture.TextureFilter.MipMap, Texture.TextureFilter.MipMap)
             image = texture.asSprite().setOffset(Compass.NORTH)

@@ -62,7 +62,7 @@ Anastasia, Wildshape: 2/8p [Avalon, Human, Mage, Legendary] [When played, play a
 Hurricane: 8p [Avalon, Tactic, Nature, Legendary] [When played, you may expend X air_mana to look at the top 2X cards from your deck. You may play any 2 of these cards.; Afterward, return the unplayed cards to your deck and shuffle.] [She's a-gonna blow!]
 
 #Treant King: 4/9p [Avalon, Treant, Regent, Legendary] [Haste.; Tap to play a "Harvest" from your deck.; If haste was not used, you may play a "Harvest" from your graveyard instead.] [My crown is called content, a crown that seldom kings enjoy.]
-Queen Titania: 4/9p [Avalon, Fairy, Regent, Legendary] [Haste.; Tap to play a Common Fairy from your deck.; If haste was not used, you may play a Rare Fairy instead.] [Hand in hand, with fairy grace, we will sing and bless this place.]
+Queen Titania: 4/9p [Avalon, Fairy, Regent, Legendary] [Haste.; Tap to play a Fairy from your deck.; If haste was not used, you may play a Fairy from your graveyard instead.] [Hand in hand, with fairy grace, we will sing and bless this place.]
 Hamadriel: 3/9p [Avalon, Elf, Legendary] [When played, gain a counter for each allied Elf (including self).; Any number of times during your turn, you may remove X counters to assault X.] [She likes humans. Most of all, she likes killing them.]
 
 Grandmother Autumn: 3/10p [Avalon, Fairy, Legendary] [When you pass (diversity X), gain X points.; During your turn (diversity 4), you may play this card from your graveyard and give it doomed.] [Behold, the season of fire and feast.]
@@ -70,7 +70,7 @@ King Oberon: 5/10p [Avalon, Fairy, Regent, Legendary] [Engine, Haste.; Tap to ei
 Allmother: 6/10p [Avalon, Nymph, Legendary] [When played, either:#Expend earth_mana earth_mana to play a Common or Rare unit from your graveyard and give it doomed. #Expend water_mana water_mana to play a unit from your deck.#Expend earth_mana water_mana to gain 7 points.] [No wound too deep, no bone too broken, no heart beyond repair.]
 Treehomes: 10p [Avalon, Emplacement, Nature, Legendary] [When played, create and summon 2 "Tree Elf" units, one on either side of this card.; When this card leaves the battlefield, destroy any adjacent "Tree Elf" units.] [Home sweet home.] [2x"Tree Elf"]
 
-The Pied Piper: 1/11p [Avalon, Human, Legendary] [When played, expend X earth_mana to summon X Common units with 1 power from your graveyard and give them doomed. Units are summoned to the right of self in any order.] [You mustn't forget to pay the piper.]
-Grima, Goblin Hag Queen: 8/11p [Avalon, Ogroid, Tribal, Legendary] [When played, you may expend X water_mana to replay X allied Tribal units.] [You should probably wash your hands after playing this card.]
+The Pied Piper: 1/11p [Avalon, Human, Legendary] [When played, expend X water_mana to summon X Common units with 1 power from your graveyard and give them doomed. Units are summoned to the right of self in any order.] [You mustn't forget to pay the piper.]
+Grima, Goblin Hag Queen: 6/11p [Avalon, Ogroid, Tribal, Legendary] [When played while X cards are in your hand, give doomed to X enemy units. Afterward, become immune.; When you pass, you may expend earth_mana water_mana to destroy a doomed enemy unit.] [You should probably wash your hands after playing this card.]
 
 Yggdrasil: 12p [Avalon, Emplacement, Scenario, Legendary] [This Scenario progresses whenever you play an Elf.; When played, create an "Elven Druid" and summon it to the battlefield.; Chapter 1: Create an "Elven Archer" token.; Chapter 2: Create 2 "Elven Archer" tokens.] [The roots of the world tree stretch all the way to the underworld.] [1x"Elven Druid"]

@@ -14,7 +14,7 @@ Jolly Roger: 3/2p [Thalassa, Equipment, Warfare] [Tap to either:#If equipped to 
 
 Havoc Vanguard: 2/3p [Thalassa, Human, Pirate] [When discarded, summon self.] [Me first!]
 Schooner: 2/3p [Thalassa, Ship] [Plunder 5.] [Ships are a great place to keep all your drunken sailors.]
-Harpooner: 2/3p [Thalassa, Human, Pirate] [Tap to assault 2.; Increase the damage by 1 for each adjacent ship.; This unit can be played between other units.] [Do you get my thrust?]
+Harpooner: 2/3p [Thalassa, Human, Pirate] [Tap to assault 2.; Increase the damage by 1 for each adjacent ship.; This unit may be played between other units.] [Do you get my thrust?]
 #Frigate: 3/3p [Thalassa, Ship] [Whenever you overkill X, gain X points.; Plunder 2.] [This bad boy can fit so many cannons on it.]
 Great White: 3/3p [Thalassa, Beast] [Engine, Tall.; When played, become immune.; Tap and expend water_mana to devour an allied Ship.] [Who ordered fish and ships?]
 Havoc Longboat: 3/3p [Thalassa, Ship] [Whenever you equip a Cannon, you may expend fire_mana to assault 1.; Plunder 2.] [...put him in a longboat till he's sober...]
@@ -43,6 +43,7 @@ Captain Fribley: 5/5p [Thalassa, Human, Pirate, Rare] [When played, you may expe
 Billy Bones: 6/5p [Thalassa, Human, Pirate, Rare] [When played, you may expend X water_mana to discard X cards from your hand, then draw X cards.] [Fifteen men on the dead man's chest]
 #Abordage: 5p [Thalassa, Tactic, Warfare, Rare] [When played, destroy an allied unit of X power, then seize an enemy unit of X or less power.] [Don't you think you're going a bit overboard?]
 Mjolnir: 5p [Thalassa, Equipment, Weapon, Rare] [When played, assault 5.; If equipped to "Thor", assault 10 instead.] [You are not worthy.]
+The White Cliffs: 5p [Thalassa, Emplacement, Location, Legendary] [When played, become stalwart and play a Cannon from your deck.; Tap to give haste to an allied Cannon.] [There'll be bluebirds over...]
 
 Anne Bonny: 4/6p [Thalassa, Human, Pirate, Rare] [When played, draw a card and discard a card.; Whenever you discard a card, gain 1 point.] [No need to call me lady. "Captain" will do just fine.]
 Terror o' the Seas: 3/6p [Thalassa, Ship, Rare] [When played, become immune.; Whenever you discard a Cannon, equip it here instead.; Plunder 2.] [Ya can never have too many guns...]
@@ -64,12 +65,12 @@ Baldr: 10/8p [Thalassa, Celestial, Warrior, Rare] [When an adjacent unit is dest
 Loki: 3/9p [Thalassa, Celestial, Legendary] [Engine, Haste.; When played, become invisible and gain 12 counters.; Tap to move up to 2 counters to an allied card.; When you pass, gain 1 point for every 2 counters on Loki.] [It was just a prank.]
 Rock of Gibraltar: 9p [Thalassa, Emplacement, Location, Legendary] [When played, become stalwart.; Whenever an adjacent Ship is destroyed, you may remove a counter to double its plunder value.; Initial counters: 4. Max counters: 4.] [Rock solid.]
 Broadside: 9p [Thalassa, Tactic, Warfare, Legendary] [Echo.; When played, assault 4.;Increase the assault by 1 for each allied Cannon.; Overkill X: Play one of the top X cards from your deck, then return the remaining cards to your deck and shuffle.] [Full speed ahead!]
-The White Cliffs: 9p [Thalassa, Emplacement, Location, Legendary] [When played, become stalwart and play a Cannon from your deck.; Tap to either:#Expend fire_mana fire_mana to play a Common Cannon from your deck.#Expend water_mana water_mana to play a Common Cannon from your graveyard.] [There'll be bluebirds over...]
+
 
 Lower the Boom: 10p [Thalassa, Tactic, Warfare, Legendary] [When played, assault 5.;Increase the assault by 1 for each allied Cannon.; Overkill X: Play a unit from your graveyard of X or fewer provisions.] [Did somebody say boom?]
 Thor: 1a 4/10p [Thalassa, Celestial, Warrior, Legendary] [Tall.; When played, become stalwart.; Maximum counters: 4.] [Behold, the mightiest of the gods!]
 
-Queen Anne's Revenge: 3a 5/11p [Thalassa, Ship, Legendary] [Tap and expend X fire_mana to untap X equipped Cannon cards.; Plunder 2.] [Shiver me timbers!]
+Queen Anne's Revenge: 2a 5/11p [Thalassa, Ship, Legendary] [Tap and expend X fire_mana to untap X equipped Cannon cards.; Plunder 2.] [Shiver me timbers!]
 Cthulhu: 7/11p [Thalassa, Monster, Legendary] [Tall.; When played, expend X water_mana to devour an enemy unit of X or less power.] [Cthulhu fhtagn!]
 
 Valhalla: 12p [Thalassa, Emplacement, Scenario, Legendary] [This scenario progresses whenever you play a Warrior.; When played, create and play a "Viking Longship".; Chapter 1: Add 4 counters to an allied card.; Chapter 2: Move a unit from your graveyard to the top of your deck.] [Glory and honor evermore!] [1x"Viking Longship"]
