@@ -39,7 +39,7 @@ Shorty's Axe: 4p [Vulcania, Equipment, Weapon, Rare] [When played, assault 4.; I
 
 Golden Dragon Egg: 1/5p [Vulcania, Egg, Rare] [Tap to destroy self and play a Dragon from your deck.] [Oooh, shiny!]
 Secret Brew: 4/5p [Vulcania, Equipment, Liquor, Rare] [When played, trigger the equip target's imbibe ability an additional time.] [What'd you even put in this stuff?]
-Swoop: 5p [Vulcania, Dragon, Tactic, Instinct, Rare] [When played, either:#Spawn fire_mana fire_mana and play a common Dragon from your deck.#Expend fire_mana fire_mana and play a Dragon from your deck.] [Now you've made her mad!]
+Swoop: 5p [Vulcania, Dragon, Tactic, Instinct, Rare] [When played, either:#Spawn fire_mana fire_mana and play a Common Dragon from your deck.#Expend fire_mana fire_mana and play a Dragon from your deck.] [Now you've made her mad!]
 Rite of Passage: 5p [Vulcania, Tactic, Instinct, Rare] [When played, spawn 6 fire_mana.; Whenever you play a Dragon, you may banish this card from your graveyard to purify a unit.] [If you survive...]
 Dwarven Spec Ops: 5p [Vulcania, Tactic, Rare] [When played, play a Dwarf from hand and draw a card.; All assaults are promoted to assassinations this turn.] [...so that his place shall never be with those cold and timid souls who knew neither victory nor defeat.]
 

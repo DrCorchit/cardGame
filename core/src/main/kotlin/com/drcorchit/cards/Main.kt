@@ -60,7 +60,7 @@ class Main : ApplicationAdapter() {
         val cardsByName by lazy { cards.associateBy { it.name } }
         val cardCounts by lazy {
             val counts = cards.associateWith {
-                if (it.tags.contains("Token") && it.rarity == Rarity.Common) 10
+                if (it.isToken && it.rarity == Rarity.Common) 10
                 else if (it.rarity == Rarity.Common) 2
                 else 1
             }.toMutableMap()
@@ -183,15 +183,25 @@ class Main : ApplicationAdapter() {
         cardsByType.forEach { (type, cards) -> println(" $type ${cards.size}") }
 
         println("\nCards by city:")
-        val cardCountsByCity =
-            cardCounts.entries.groupBy { it.key.city }.mapValues { it.value.groupBy { card -> card.key.rarity } }
+        val cardCountsByCity = cards
+            //We don't count tokens as part of the normal card roster
+            .filter { !it.isToken }
+            //we want to map first by city/faction, then by rarity
+            .groupBy { it.city }
+            .mapValues {
+                it.value
+                    .groupBy { card -> card.rarity }
+                    //map to total count of cards
+                    .mapValues { entry -> entry.value.size }
+            }
+
         cardCountsByCity.entries
             .forEach { entry ->
                 fun count(rarity: Rarity): Int {
-                    return entry.value[rarity]?.sumOf { it.value } ?: 0
+                    return entry.value[rarity] ?: 0
                 }
 
-                val totalCount = count(Rarity.Common) + count(Rarity.Rare) + count(Rarity.Legendary)
+                val totalCount = cardCounts.entries.filter { it.key.city == entry.key }.sumOf { it.value }
 
                 val str = " %-12s %3d %3d %3d --> %4d printable cards".format(
                     entry.key,

@@ -11,7 +11,7 @@ Elven Trailblazer: 3/2p [Avalon, Elf] [Engine.; Tap and expend earth_mana earth_
 Lightning Strike: 2p [Avalon, Tactic, Nature] [When played, assault 2.; You may expend X air_mana to increase the assault by X.] [You've been thunderstruck.]
 Barkskin Armor: 3/2p [Avalon, Equipment, Nature] [The equip target cannot receive poison status.] [Its only weakness? Termites.]
 
-Goblin Hunter: 1/3p [Avalon, Ogroid, Tribal] [When played, poison a unit.; Tap and expend earth_mana water_mana to play a common Tribal unit from hand and return this card to your hand.] [They can't take us all!]
+Goblin Hunter: 1/3p [Avalon, Ogroid, Tribal] [When played, poison a unit.; Tap and expend earth_mana water_mana to play a Common Tribal unit (except "Goblin Hunter") from hand and return this card to your hand.] [They can't take us all!]
 Goblin Assassin: 1/3p [Avalon, Ogroid, Tribal] [When played, you may expend water_mana to become invisible.; Tap to assault 3. If invisible, assassinate 3 instead.] [You're all out of luck.]
 Dryad Grovekeeper: 1/3p [Avalon, Nymph] [When played, spawn earth_mana earth_mana, water_mana water_mana, or air_mana air_mana.; Tap to repeat the "when played" ability.] [Nature always provides.]
 Treant Sage: 1a 2/3p [Avalon, Treant] [When you pass, gain 1 point for each Nature card in your graveyard.] [I think, therefore... hmmm...]
@@ -26,13 +26,13 @@ Harvest: 3p [Avalon, Tactic, Nature] [When played, expend all X earth_mana and/o
 Elven Dagger: 3p [Avalon, Equipment, Weapon] [If equipped to an Elf, gain haste.; Tap to assault 3. If equipped to a Tribal unit, assassinate 3 instead.] [Such exquisite craftmanship.]
 Goblin Bow: 3p [Avalon, Equipment, Weapon] [When played, assault 2.; Tap to poison an enemy unit.] [You can pull out the arrow, but you can't suck out the poison.]
 
-Ancient Hamadryad: 2/4p [Avalon, Nymph] [When played, play a common Nature card from hand and draw a card.; Tap and expend earth_mana water_mana to become a protector and doomed.] [The forest will never die!]
-Heartwood Treant: 1a 4/4p [Avalon, Treant] [You must expend earth_mana earth_mana to tap this unit.; Tap to either:#Become stalwart.#Play a common Nature card from hand and draw a card.] [Some people just can't see the forest for the trees.]
+Ancient Hamadryad: 2/4p [Avalon, Nymph] [When played, play a Common Nature card from hand and draw a card.; Tap and expend earth_mana water_mana to become a protector and doomed.] [The forest will never die!]
+Heartwood Treant: 1a 4/4p [Avalon, Treant] [You must expend earth_mana earth_mana to tap this unit.; Tap to either:#Become stalwart.#Play a Common Nature card from hand and draw a card.] [Some people just can't see the forest for the trees.]
 Elven Lorekeeper: 4/4p [Avalon, Elf] [When played, become immune.; When you pass, gain 1 point for each allied Elf.] [According to an old legend...]
 Dwarven Hermit: 2a 4/4p [Avalon, Dwarf] [When you pass (diversity 5), become stalwart.] [You can take the Dwarf out of the volcano, but you can't take the volcano out of the dwarf.]
 #Centaur: 3/4p [Avalon, Beast] [When played, either:#Spawn air_mana air_mana air_mana. #Expend air_mana air_mana to assault 3.] [A centaur has a man-stomach and a horse-stomach. And of course both want breakfast.]
 
-Goblin Chief: 1a 2/4p [Avalon, Ogroid, Tribal, Rare] [When played, become immune.; Tap to play a common Tribal unit from your deck.] [The biggest, fattest, meanest, ugliest of the lot.]
+Goblin Chief: 1a 2/4p [Avalon, Ogroid, Tribal, Rare] [When played, become immune.; Tap to play a Common Tribal unit from your deck.] [The biggest, fattest, meanest, ugliest of the lot.]
 Jack Frost: 5/4p [Avalon, Fairy, Rare] [When played, either: #Expend X water_mana to lock X enemy units. #Expend X water_mana to purify X allied units.] [Whose woods these are, I think I know...]
 Arondight: 4p [Avalon, Equipment, Weapon, Rare] [When played, assault 4.; This card's assault ignores armor.] [The sharpest blades belong rightly in the hands of the bravest knights.]
 

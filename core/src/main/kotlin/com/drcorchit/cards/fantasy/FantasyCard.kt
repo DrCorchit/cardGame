@@ -72,6 +72,7 @@ class FantasyCard(
 
     val cardCount = (1 + sideboardCards.values.sum()).let { if (rarity == Rarity.Common) it * 2 else it }
 
+    val isToken = tags.contains("Token")
     val tagsText = run {
         val miscTags = tags.toSet()
             .subtract(Rarity.entries.map { it.name }.toSet())
