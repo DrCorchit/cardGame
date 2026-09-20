@@ -12,7 +12,7 @@ Lightning Strike: 2p [Avalon, Tactic, Nature] [When played, assault 2.; You may 
 Barkskin Armor: 3/2p [Avalon, Equipment, Nature] [The equip target cannot receive poison status.] [Its only weakness? Termites.]
 
 Goblin Hunter: 1/3p [Avalon, Ogroid, Tribal] [When played, poison a unit.; Tap and expend earth_mana water_mana to play a Common Tribal unit (except "Goblin Hunter") from hand and return this card to your hand.] [They can't take us all!]
-Goblin Assassin: 1/3p [Avalon, Ogroid, Tribal] [When played, you may expend water_mana to become invisible.; Tap to assault 3. If invisible, assassinate 3 instead.] [You're all out of luck.]
+Goblin Assassin: 1/3p [Avalon, Ogroid, Tribal] [When played, you may expend earth_mana water_mana to become invisible.; Tap to assault 3. If invisible, assassinate 3 instead.] [You're all out of luck.]
 Dryad Grovekeeper: 1/3p [Avalon, Nymph] [When played, spawn earth_mana earth_mana, water_mana water_mana, or air_mana air_mana.; Tap to repeat the "when played" ability.] [Nature always provides.]
 Treant Sage: 1a 2/3p [Avalon, Treant] [When you pass, gain 1 point for each Nature card in your graveyard.] [I think, therefore... hmmm...]
 Selkie: 2/3p [Avalon, Fairy] [When mulliganed, this card moves to your sideboard.; During your turn, you may expend water_mana water_mana to play this card from your sideboard.] [To stay on land past midnight would surely be her death.]
@@ -34,12 +34,12 @@ Dwarven Hermit: 2a 4/4p [Avalon, Dwarf] [When you pass (diversity 5), become sta
 
 Goblin Chief: 1a 2/4p [Avalon, Ogroid, Tribal, Rare] [When played, become immune.; Tap to play a Common Tribal unit from your deck.] [The biggest, fattest, meanest, ugliest of the lot.]
 Jack Frost: 5/4p [Avalon, Fairy, Rare] [When played, either: #Expend X water_mana to lock X enemy units. #Expend X water_mana to purify X allied units.] [Whose woods these are, I think I know...]
+Bamboo Grove: 4p [Avalon, Emplacement, Nature, Land, Rare] [Engine.; Tap to either:#Spawn earth_mana.#Expend earth_mana water_mana to gain 3 points.] [Nothing grows faster, or thicker.]
 
 Lady of the Lake: 1/5p [Avalon, Human, Rare] [This card starts in your sideboard.; During your turn, you may expend water_mana water_mana water_mana to play this card from your sideboard.; Tap to play a Weapon from your deck.] [One so fair and full of grace.]
 Aelshamyr: 2a 2/5p [Avalon, Dragon, Rare] [Harmony: Gain 2 points.] [He starts a forest fire every time he sneezes, but the elves love him anyway.]
 Lancelot: 1a 4/5p [Avalon, Human, Knight, Rare] [Tap and expend earth_mana water_mana to assault 3.; Whenever you equip a Weapon, untap Lancelot.] [I am never in the dark when I am protecting you.]
 Guinevere: 4/5p [Avalon, Human, Regent, Rare] [Engine.; While untapped, all allied units have 1 additional armor.; While tapped, gain 1 point whenever you play a unit.] [Talk not of faith, for you have none in you.]
-Bamboo Grove: 5p [Avalon, Emplacement, Nature, Land, Rare] [Engine, Haste.; When played, become stalwart.; Tap to either:#Spawn earth_mana.#Expend earth_mana water_mana to gain 3 points.] [Nothing grows faster, or thicker.]
 Arondight: 5p [Avalon, Equipment, Weapon, Rare] [When played, assault 4.; This card's assault ignores armor.] [The sharpest blades belong rightly in the hands of the bravest knights.]
 
 Puck: 1/6p [Avalon, Fairy, Rare] [Disloyal.; When played, play a unit from your deck whose provision cost exceeds Puck's.] [Give me your hands, if we be friends.]
