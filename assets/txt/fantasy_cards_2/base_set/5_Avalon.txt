@@ -23,7 +23,7 @@ Bullfrog Army: 3/3p [Avalon, Beast] [Tap and expend water_mana water_mana to sum
 Goblin Warrior: 7/3p [Avalon, Ogroid, Tribal, Warrior] [You must expend earth_mana water_mana to play this unit.] [Quantity over quality.]
 Forest Fire: 3p [Avalon, Tactic, Nature] [When played, destroy an allied unit of X power to spawn X mana of any color.; Afterward, play a unit from hand and draw a card.] [Flames clear the way for new growth.]
 Harvest: 3p [Avalon, Tactic, Nature] [When played, expend all X earth_mana and/or water_mana and gain 2X points.] [A time to sow, a time to reap.]
-Elven Dagger: 3p [Avalon, Equipment, Weapon] [If equipped to an Elf, gain haste.; Tap to assault 3. If equipped to a Tribal unit, assassinate 3 instead.] [Such exquisite craftmanship.]
+Elven Dagger: 3p [Avalon, Equipment, Weapon] [When played, if equipped to an Elf, gain haste.; Tap to assault 3. If equipped to a Tribal unit, assassinate 3 instead.] [Such exquisite craftmanship.]
 Goblin Bow: 3p [Avalon, Equipment, Weapon] [When played, assault 2.; Tap to poison an enemy unit.] [You can pull out the arrow, but you can't suck out the poison.]
 
 Ancient Hamadryad: 2/4p [Avalon, Nymph] [When played, play a Common Nature card from hand and draw a card.; Tap and expend earth_mana water_mana to become a protector and doomed.] [The forest will never die!]
@@ -34,13 +34,13 @@ Dwarven Hermit: 2a 4/4p [Avalon, Dwarf] [When you pass (diversity 5), become sta
 
 Goblin Chief: 1a 2/4p [Avalon, Ogroid, Tribal, Rare] [When played, become immune.; Tap to play a Common Tribal unit from your deck.] [The biggest, fattest, meanest, ugliest of the lot.]
 Jack Frost: 5/4p [Avalon, Fairy, Rare] [When played, either: #Expend X water_mana to lock X enemy units. #Expend X water_mana to purify X allied units.] [Whose woods these are, I think I know...]
-Arondight: 4p [Avalon, Equipment, Weapon, Rare] [When played, assault 4.; This card's assault ignores armor.] [The sharpest blades belong rightly in the hands of the bravest knights.]
 
 Lady of the Lake: 1/5p [Avalon, Human, Rare] [This card starts in your sideboard.; During your turn, you may expend water_mana water_mana water_mana to play this card from your sideboard.; Tap to play a Weapon from your deck.] [One so fair and full of grace.]
 Aelshamyr: 2a 2/5p [Avalon, Dragon, Rare] [Harmony: Gain 2 points.] [He starts a forest fire every time he sneezes, but the elves love him anyway.]
 Lancelot: 1a 4/5p [Avalon, Human, Knight, Rare] [Tap and expend earth_mana water_mana to assault 3.; Whenever you equip a Weapon, untap Lancelot.] [I am never in the dark when I am protecting you.]
 Guinevere: 4/5p [Avalon, Human, Regent, Rare] [Engine.; While untapped, all allied units have 1 additional armor.; While tapped, gain 1 point whenever you play a unit.] [Talk not of faith, for you have none in you.]
 Bamboo Grove: 5p [Avalon, Emplacement, Nature, Land, Rare] [Engine, Haste.; When played, become stalwart.; Tap to either:#Spawn earth_mana.#Expend earth_mana water_mana to gain 3 points.] [Nothing grows faster, or thicker.]
+Arondight: 5p [Avalon, Equipment, Weapon, Rare] [When played, assault 4.; This card's assault ignores armor.] [The sharpest blades belong rightly in the hands of the bravest knights.]
 
 Puck: 1/6p [Avalon, Fairy, Rare] [Disloyal.; When played, play a unit from your deck whose provision cost exceeds Puck's.] [Give me your hands, if we be friends.]
 Tarzan: 1/6p [Avalon, Human, Tribal, Rare] [This card starts in your sideboard. During your turn, you may expend earth_mana earth_mana earth_mana to play Tarzan from your sideboard. Decrease this cost by 1 for each allied "Mountain Gorilla".; When played, assault 2.; Tap to return to your sideboard.] [AaaauuEiEiEiEiaaaahhhh!]

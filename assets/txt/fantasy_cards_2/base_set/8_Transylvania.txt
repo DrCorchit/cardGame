@@ -8,7 +8,7 @@ Shiv: 2p [Transylvania, Equipment, Weapon, Crime] [When played, assault 2.; If e
 Moomsh: 2p [Transylvania, Tactic, Crime] [When played, spawn dark_mana dark_mana and poison a unit.] [The high to die for?]
 Intimidation: 2p [Transylvania, Tactic, Crime] [When played, activate 2 of the following abilities:#Gain 2 points.#Assault 1. #Spawn 2 mana of any colors.] [You can get more of what you want with a kind word and a knife than you can with just a kind word.]
 Gossip: 2p [Transylvania, Tactic, Crime] [When played, either:#Spawn light_mana light_mana light_mana and give an enemy unit bounty 2.#Spawn dark_mana dark_mana dark_mana and purify an allied unit.] [You'll never believe what I heard!]
-Talisman: 2p [Transylvania, Emplacement] [When played, spawn 4 light_mana.; Tap and expend X light_mana to gain X points.] [By holy vow and purest light, I proclaim day and banish night!]
+Talisman: 2p [Transylvania, Emplacement] [When played, spawn 5 light_mana.; Tap and expend X light_mana to gain X points.] [By holy vow and purest light, I proclaim day and banish night!]
 #Coffin: 2p [Transylvania, Emplacement] [Haste.; Tap and expend X dark_mana to play an X + 1 provision Vampire from your graveyard.] []
 
 Emissary: 1/3p [Transylvania, Human, Spy] [Disloyal.; When played, play a Rare or Legendary unit from hand, then draw a card.] [Introducing his most gracious excellency...]
@@ -66,10 +66,10 @@ Cynthia Beaumont: 4/9p [Transylvania, Human, Slayer, Legendary] [Engine, Haste.;
 Yalmamir, Prince of Crime: 2/10p [Transylvania, Vampire, Kingpin, Legendary] [Haste.; Tap and expend X dark_mana to seize a unit of X or less power.; Whenever you play a Crime, untap this card.] [A single incompetent enemy is worth a thousand incompetent friends.]
 Gladys the Glorious: 4/10p [Transylvania, Vampire, Kingpin, Legendary] [When played, play a Common Henchman from your graveyard.; Tap to destroy an allied Henchman and play a Caporegime from your graveyard.] [Crime DOES pay.]
 Terrence Beaumont: 6/10p [Transylvania, Human, Slayer, Legendary] [Engine, Haste.; When played, give an enemy unit 2 bounty.; Tap and expend X light_mana to assault X.; The assault target must have a bounty.] [I got your back, sis.]
+Dracula's Castle: 10p [Transylvania, Emplacement, Land, Location, Legendary] [Engine.; When played, become stalwart and create and play a "Vampire Aristocrat".; Tap to spawn dark_mana.; Whenever you spawn light_mana, destroy this card.] [The night is darkest before the dawn.] [1x"Vampire Aristocrat"]
 
-Phlegmtooth, Sewer Dragon: 7/11p [Transylvania, Dragon, Legendary] [Tap and poison adjacent units to poison an enemy unit.; This unit may be played between other units.] [He thought he could handle riding the dragon.]
+Phlegmtooth, Sewer Dragon: 6/11p [Transylvania, Dragon, Legendary] [Tap and poison X adjacent units to poison X enemy units.; This unit may be played between other units.] [He thought he could handle riding the dragon.]
 Count Dracula, Final Form: 7/11p [Transylvania, Vampire, Legendary] [Engine.; Tap to gain a counter.; Chaos is increased by 1 for each counter on this card.; Max counters: 6.] [Humans are but cattle, and I am their shepherd.]
-Dracula's Castle: 11p [Transylvania, Emplacement, Land, Legendary] [Engine.; When played, create and play a "Vampire Aristocrat".; Tap to either:#Spawn dark_mana.#Spawn 6 light_mana and destroy this card.] [The night is darkest before the dawn.] [1x"Vampire Aristocrat"]
 
 Big Daddy: 1/12p [Transylvania, Human, Kingpin, Legendary] [When played (chaos X), seize up to 3 enemy units with a combined power less than or equal to X.] [More for me!]
 Pogrom: 12p [Transylvania, Emplacement, Scenario, Legendary] [This scenario progresses whenever you play a Slayer.; When played, create and summon a "Night Watch".; Chapter 1: Create and play "Gossip".; Chapter 2: Create and play "Hysteria".] [We got to kill them afore they kills us!] [1x"Night Watch", 1x"Gossip", 1x"Hysteria"]

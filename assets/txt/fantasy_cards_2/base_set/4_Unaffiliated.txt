@@ -48,11 +48,10 @@ Royal Decree: 7p [Tactic, Rare] [When played, play a unit from your deck.] [So l
 Skeleton Key: 7p [Tactic, Rare] [When played, purify an enemy unit.; Afterward, draw a card and play a card.] [Life is an open door.]
 
 Battering Ram: 1a 1/8p [Machine, Legendary] [When played, either:#Assault 2.#Destroy an enemy equipment.#Destroy an enemy emplacement.; Tap to repeat the "when played" ability.] [Knock knock.]
-Blade Dancer: 2/8p [Human, Knight, Rare] [When played, become invisible.; Whenever a Weapon is equipped, assault 1.; Tap to assault 1 for every equipped Weapon.] [A whirlwind of steel.]
+Blade Dancer: 2/8p [Human, Knight, Rare] [When played, become immune.; Whenever a Weapon is equipped, assault 1.; Tap to assault 1 for every equipped Weapon.] [A whirlwind of steel.]
 Multitool: 8p [Tactic, Weapon, Legendary] [When played, activate 3 of the following abilities in any order:#Purify a card.#Lock a card.#Assault 2.#Gain 3 points.] [Why don't YOU own one?]
-Blistering Heatwave: 8p [Tactic, Nature, Legendary] [When played, banish any card that is not protected.] [Just when you think it can't get any hotter...]
+Blistering Heatwave: 8p [Tactic, Nature, Legendary] [When played, banish any card that is not protected or invisible.] [Just when you think it can't get any hotter...]
 
-Prophecy: 9p [Tactic, Spell, Legendary] [Echo.; When played, play a card from your deck.] [If I foretold your fate, would so prophesying avert it—or seal it?]
 Caelo, Teenage Necromancer: 3/9p [Human, Mage, Legendary] [Haste.; Tap to play a Common unit from your graveyard.; If haste was not used, you may play a Rare unit instead.] [It's not just a phase, mom.]
 Yorsig, Moomsh Monk: 5/9p [Human, Legendary] [When played, if neither player has passed and their hand is not full, draw any card from your deck while your opponent draws the top card from their deck.] [Make me one with everything.]
 Doco the Paladin: 5/9p [Ogroid, Legendary] [When played, assault 2.; If "Rubber Duck" is in your graveyard, assault 3 instead.] [Don't ask about the duck.]
@@ -60,6 +59,7 @@ Resurrection: 9p [Tactic, Spell, Legendary] [When played, play a Common or Rare 
 
 Queen of Hearts: 1/10p [Human, Regent, Legendary] [Gain an additional effect for each card in your graveyard:#Royal Guard: Units played by this card become immune.#Royal Decree: When played, play a unit from your deck.#Royal Envoy: Tap to play a unit from hand, then draw a card.] [Off with your head!]
 Meezurk, Arisen: 3/10p [Beast, Dragon, Legendary] [This card starts in your sideboard.; Summon self from your sideboard whenever you play a Legendary card.; Summon self from your graveyard whenever you destroy a Legendary card.] [He knows calculus 4.]
+Prophecy: 10p [Tactic, Spell, Legendary] [Echo.; When played, play a card from your deck.] [If I foretold your fate, would so prophesying avert it—or seal it?]
 
 Zark, Used Axe Salesman: 5/11p [Ogroid, Legendary] [When played, play a Common or Rare Weapon from your graveyard.] [Axe questions later.]
 
