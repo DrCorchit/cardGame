@@ -20,7 +20,6 @@ Dwarven Berserker: 1/3p [Vulcania, Dwarf, Warrior] [When played, assault 2.; Tap
 Dwarven Warrior: 2a 2/3p [Vulcania, Dwarf, Warrior] [Imbibe to gain 2 points.; Tap to assault X where X is the total number of equipped Weapon and Liquor cards.] [Born to drink, forced to fight.]
 Dwarven Vanguard: 1a 2/3p [Vulcania, Dwarf, Warrior] [When played next to a Mine, gain haste.; Tap to play a Dwarf from hand, then draw a card.] [First to fight, last to die.]
 Dwarven Veteran: 4/3p [Vulcania, Dwarf, Warrior] [Engine.; You must expend 4 fire_mana to tap this unit.; Tap to either:#Create a "Champion" token.#Make an allied "Champion" token stalwart.] []
-
 Butler: 3/3p [Vulcania, Dwarf] [Tap and expend fire_mana fire_mana fire_mana to play a Common Liquor card from your graveyard.] [Pray he doesn't get into the liquor.]
 Structural Engineer: 3/3p [Vulcania, Dwarf] [Tap and expend X fire_mana to add X counters to an allied Mine.] [The weird noises mean the mine is about to collapse.]
 Mechanical Engineer: 4/3p [Vulcania, Dwarf] [Tap and expend fire_mana fire_mana to untap an adjacent Common unit.] [Unlike elves, dwarves don't let the computers do their thinkin' for 'em.]

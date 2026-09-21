@@ -31,7 +31,6 @@ Dryad Enchantress
 Dynamo
 Earth Titan
 Elven Archer
-Fairy Ring
 Feral Werewolf
 Fjord
 Forest Defender
@@ -79,7 +78,6 @@ Prophecy
 Puffball
 Pulverizer
 Pyromaniaxe
-Queen Aelwyn
 Queen of Hearts
 Radio
 Red-Eyed Fairy

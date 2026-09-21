@@ -60,7 +60,7 @@ class Main : ApplicationAdapter() {
         val cardsByName by lazy { cards.associateBy { it.name } }
         val cardCounts by lazy {
             val counts = cards.associateWith {
-                if (it.isToken && it.rarity == Rarity.Common) 10
+                if (it.isToken && it.rarity == Rarity.Common) 6
                 else if (it.rarity == Rarity.Common) 2
                 else 1
             }.toMutableMap()
@@ -215,7 +215,7 @@ class Main : ApplicationAdapter() {
 
         println("\nTotal unique cards: ${cards.size}")
 
-        val count = cards.sumOf { it.cardCount }
+        val count = cardCounts.values.sum()
         println("Total printable cards: $count")
         println("MPC thresholds are 396, 504, and 612")
 
@@ -286,10 +286,10 @@ class Main : ApplicationAdapter() {
             nextUnapproved()
         }
 
-        if (Gdx.input.isKeyJustPressed(Input.Keys.Q)) advanceBy(-10)
+        if (Gdx.input.isKeyJustPressed(Input.Keys.Q)) advanceBy(-15)
         if (Gdx.input.isKeyJustPressed(Input.Keys.A)) advanceBy(-1)
         if (Gdx.input.isKeyJustPressed(Input.Keys.D)) advanceBy(1)
-        if (Gdx.input.isKeyJustPressed(Input.Keys.E)) advanceBy(10)
+        if (Gdx.input.isKeyJustPressed(Input.Keys.E)) advanceBy(15)
 
         if (Gdx.input.isKeyJustPressed(Input.Keys.S)) nextUnapproved()
         if (Gdx.input.isKeyJustPressed(Input.Keys.W)) toggleApproved()

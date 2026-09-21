@@ -57,7 +57,7 @@ Pandemonium: 7p [Transylvania, Tactic, Crime, Rare] [Echo.; When played, choose 
 
 Saint Germain: 2/8p [Transylvania, Human, Legendary] [When played, become invisible.; Tap to play a Common card from your deck.; This unit can be tapped during your opponent's turn.] [Say when.]
 Van Helsing: 2/8p [Transylvania, Human, Slayer, Legendary] [When played, destroy an enemy unit with bounty.] [To extinguish the flames of evil is my only purpose.]
-Grim Reaper: 2/8p [Transylvania, Undead, Legendary] [When played (chaos 6), assault 12.] [The reaper comes for us all.]
+Grim Reaper: 2/8p [Transylvania, Undead, Legendary] [When played (chaos 6), destroy an enemy unit.] [The reaper comes for us all.]
 Debutante Ball: 8p [Transylvania, Tactic, Legendary] [Play a Transylvanian unit from your deck and gain one of the following effects:#If it's a Common Human, make it stalwart.#If it's a Common Vampire, make it invisible.] [Be there or be square.]
 
 Jailbreak: 9p [Transylvania, Tactic, Crime, Legendary] [When played (chaos X) play a Transylvanian unit from your graveyard with a provision cost of X or less and give it doomed.; Increase X by 1 for each Crime in your graveyard.] [Breaking out: not just for teenagers anymore.]
