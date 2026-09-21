@@ -65,8 +65,9 @@ Grandmother Autumn: 2/9p [Avalon, Fairy, Legendary] [When you pass (diversity X)
 Hamadriel: 2/9p [Avalon, Elf, Legendary] [When played, gain a counter for each allied Elf (including self).; Any number of times during your turn, you may remove X counters to assault X.; Max counters: 12.] [She likes humans. Most of all, she likes killing them.]
 Queen Titania: 2/9p [Avalon, Fairy, Regent, Legendary] [When played, play a Fairy from your deck.; If it was Common, play all copies instead.] [Hand in hand, with fairy grace, we will sing and bless this place.]
 #Treant King: 4/9p [Avalon, Treant, Regent, Legendary] [Haste.; Tap to play a "Harvest" from your deck.; If haste was not used, you may play a "Harvest" from your graveyard instead.] [My crown is called content, a crown that seldom kings enjoy.]
-King Oberon: 5/10p [Avalon, Fairy, Regent, Legendary] [Engine, Haste.; Tap to either:#Spawn air_mana.#Play a "Lightning Strike" from your graveyard and become locked.] [Ill met by moonlight, proud Titania.]
+
 Allmother: 4/10p [Avalon, Nymph, Legendary] [When played, either:#Expend earth_mana earth_mana earth_mana to play a Common or Rare unit from your graveyard and give it doomed. #Expend water_mana water_mana water_mana to play a unit from your deck.#Expend earth_mana water_mana to gain 8 points.] [No wound too deep, no bone too broken, no heart beyond repair.]
+King Oberon: 5/10p [Avalon, Fairy, Regent, Legendary] [Engine, Haste.; Tap to either:#Spawn air_mana.#Play a "Lightning Strike" from your graveyard and become locked.] [Ill met by moonlight, proud Titania.]
 Treehomes: 10p [Avalon, Emplacement, Nature, Legendary] [When played, create and summon 2 "Tree Elf" units, one on either side of this card.; When this card is destroyed or banished, destroy any adjacent "Tree Elf" units.] [Home sweet home.] [2x"Tree Elf"]
 
 Grima, Goblin Hag Queen: 6/11p [Avalon, Ogroid, Tribal, Legendary] [When played while X cards are in your hand, give doomed to X enemy units. Afterward, become immune.; When you pass, you may expend earth_mana water_mana to destroy a doomed enemy unit.] [You should probably wash your hands after playing this card.]
