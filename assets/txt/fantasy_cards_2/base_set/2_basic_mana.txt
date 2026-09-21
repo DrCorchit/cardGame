@@ -63,7 +63,7 @@ Werebat: 1a 4/3p [Beast] [Engine.; When played, become immune.; Tap and expend X
 Red-Eyed Fairy: 3/2p [Fairy] [Engine.; Tap and expend fire_mana to assault 1.] [Burn!]
 Blue-Eyed Fairy: 3/2p [Fairy] [When played, you may expend water_mana to lock an enemy unit.] [Freeze!]
 Green-Eyed Fairy: 3/2p [Fairy] [Tap and expend earth_mana to become stalwart.] [Grow!]
-Gray-Eyed Fairy: 3/2p [Fairy] [Haste.; Tap and expend air_mana to banish a card from your opponent's graveyard.] [Zap!]
+Gray-Eyed Fairy: 3/2p [Fairy] [When played, you may expend air_mana to banish a card from your opponent's graveyard.; Tap to repeat the "when played" ability.] [Zap!]
 Yellow-Eyed Fairy: 3/2p [Fairy] [When played, you may expend light_mana to purify a unit.] [Shine!]
 Violet-Eyed Fairy: 3/2p [Fairy] [When played, you may expend dark_mana to poison an enemy unit.] [Die!]
 

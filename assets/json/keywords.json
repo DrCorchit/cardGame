@@ -39,6 +39,25 @@
     "synonyms": ["Assault", "Assaults", "Assaulted"]
   },
   {
+  "name": "Assassinate X",
+  "description": "Assault X, bypassing protection and invisibility.",
+  "synonyms": ["assassinate", "assassinates", "assassinated", "assassination", "assassinations"]
+  },
+  {
+  "name": "Seize",
+  "description": "Move a unit to its opponent's battlefield.",
+  "synonyms": ["Seize", "seizes", "seized"]
+  },
+  {
+    "name": "Toughness X",
+    "description": "A unit's power plus armor. Includes armor and power from equipment."
+  },
+  {
+    "name": "Overkill X",
+    "description": "Triggers when dealing X or more excess damage.",
+    "synonyms": ["overkill"]
+  },
+  {
     "name": "Haste",
     "description": "The card can be tapped on the turn it is played.",
     "synonyms": ["Hasten", "Hastened"]
@@ -55,21 +74,6 @@
   {
     "name": "Create",
     "description": "Introduce a card to the game."
-  },
-  {
-    "name": "Assassinate X",
-    "description": "Assault X, bypassing protection and invisibility.",
-    "synonyms": ["assassinate", "assassinates", "assassinated", "assassination", "assassinations"]
-  },
-  {
-    "name": "Seize",
-    "description": "Move a unit to its opponent's battlefield.",
-    "synonyms": ["Seize", "seizes", "seized"]
-  },
-  {
-    "name": "Overkill X",
-    "description": "Triggers when dealing X or more excess damage.",
-    "synonyms": ["overkill"]
   },
   {
     "name": "Disloyal",
@@ -129,9 +133,9 @@
     "synonyms": ["purifies", "purified"]
   },
   {
-    "name": "Lock",
+    "name": "Locked",
     "description": "Status that disables all of a card's abilities.",
-    "synonyms": ["locks", "locked"]
+    "synonyms": ["lock", "locks"]
   },
   {
     "name": "Poison",

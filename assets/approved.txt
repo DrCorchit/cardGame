@@ -1,9 +1,17 @@
 Admiral Boom
+Aelshamyr
 Alice the Wonder
+Allmother
 Alpha Wolf
+Alraune
+Anastasia, Wildshape
+Ancient Hamadryad
+Apothecary
 Apprentice Smitty
 Archangel
+Arondight
 Assassin
+Bamboo Grove
 Barracuda
 Battering Ram
 Bertcalf the Tall
@@ -13,6 +21,7 @@ Blistering Heatwave
 Blue-Eyed Fairy
 Bolases
 Bounty Hunter
+Bullfrog Army
 Caelo, Teenage Necromancer
 Caldera
 Cave Bear
@@ -28,36 +37,79 @@ Dhampir
 Doco the Paladin
 Dragonslayer Lance
 Dryad Enchantress
+Dryad Grovekeeper
+Dryad Ranger
+Dwarven Hermit
 Dynamo
 Earth Titan
 Elven Archer
+Elven Dagger
+Elven Druid
+Elven Guerilla
+Elven Lorekeeper
+Elven Princess
+Elven Scout
+Elven Trailblazer
+Excalibur
+Fairy Ring
 Feral Werewolf
+Firefly
 Fjord
+Flash Flood
 Forest Defender
+Forest Fire
 Frankenstein’s Monster
+Gawain
 Genie
+Ghost
 Giant Turtle
 Glass Dagger
+Goblin Assassin
+Goblin Bow
+Goblin Chief
+Goblin Dancer
+Goblin Frogman
+Goblin Hunter
+Goblin Shaman
+Goblin Smitty
+Goblin Warrior
 Grandmaster Smitty
+Grandmother Autumn
 Gravetender
 Graveyard
 Gray-Eyed Fairy
 Green-Eyed Fairy
+Grima, Goblin Hag Queen
+Guinevere
 Halberd
+Hamadriel
+Harvest
 Haunted Armor
+Heartwood Treant
 Homeland
+Hurricane
 Ifrit
+Iriviel
+Jack Frost
 Jungle
+King Arthur
+King Oberon
 Lady in Waiting
+Lady of the Lake
+Lancelot
 Lava Lizard
 Leprechaun
+Lifegiving Rainfall
+Lightning Strike
 Longshoreman Raider
 Lutis the Mad
 Magma Defender
 Makeshift Bomb
 Manacles
 Meezurk, Arisen
+Merlin
 Mermaid
+Mimic
 Mountain
 Mountain Gorilla
 Multitool
@@ -75,9 +127,12 @@ Pack Wolf
 Poltergeist
 Pond Naiad
 Prophecy
+Puck
 Puffball
 Pulverizer
 Pyromaniaxe
+Queen Aelwyn
+Queen Titania
 Queen of Hearts
 Radio
 Red-Eyed Fairy
@@ -92,21 +147,31 @@ Royal Wyvern
 Rubber Duck
 Saboteur
 Samray the Swift
+Selkie
 Seraphim
 Settlement
 Skeleton Key
 Slime
 Sojourn
 Solar Panel
+Squirrel
 Steel Cuirass
 Storm Priest
 Student
 Surrender
 Swamp
 Takulev the Undying
+Tarzan
+The Pied Piper
 Throne Defender
+Thunderstorm
+Treant Sage
 Treant Sapling
+Treant Stalker
 Treant Wizard
+Tree Elf
+Treehomes
+Undine
 Unicorn
 University
 Vampire Nightmaster
@@ -115,6 +180,7 @@ Vizimir the Golden
 Warthog
 Werebat
 Yellow-Eyed Fairy
+Yggdrasil
 Yorsig, Moomsh Monk
 Zark, Used Axe Salesman
 Zombie
