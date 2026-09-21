@@ -15,6 +15,7 @@ class AbilityTextHandler(
     val keywordColor: Color = defaultKeywordColor,
     val abilityFont: BitmapFont = Fonts.abilityFont,
     val keywordFont: BitmapFont = Fonts.keywordFont,
+    val sequenceSpace: Float = 2f,
     val spaceWidth: Float = 8f,
     val lineHeight: Float = 32f
 ) {
@@ -40,18 +41,7 @@ class AbilityTextHandler(
     }
 
     inner class Line(text: String) {
-        val words = wordSplit2.split(text).mapNotNull { makeWord(it) }
-
-        //“”
-
-        private fun makeWord(string: String): Word? {
-            val trimmed = string.trim()
-            val normalized = trimmed.normalize()
-            if (string.isEmpty()) return null
-            if (sprites[normalized] != null) return SpriteWord(trimmed)
-            if (keywords[normalized] != null) return KeywordWord(trimmed)
-            return TextWord(trimmed)
-        }
+        val words = wordSplit2.split(text).map { Sequence(it) }
 
         fun calculateHeight(width: Float): Float {
             var posX = 0f
@@ -94,6 +84,29 @@ class AbilityTextHandler(
         }
     }
 
+    inner class Sequence(val text: String) {
+        val words = text.split(sequenceSplit).mapNotNull { makeWord(it) }
+
+        val width = words.sumOf { it.width.toInt() } + ((words.size - 1) * sequenceSpace).toInt()
+
+        private fun makeWord(string: String): Word? {
+            val trimmed = string.trim()
+            val normalized = trimmed.normalize()
+            if (string.isEmpty()) return null
+            if (sprites[normalized] != null) return SpriteWord(trimmed)
+            if (keywords[normalized] != null) return KeywordWord(trimmed)
+            return TextWord(trimmed)
+        }
+
+        fun render(x: Float, y: Float) {
+            var cursorX = x
+            words.forEach {
+                it.render(cursorX, y)
+                cursorX += it.width + sequenceSpace
+            }
+        }
+    }
+
     abstract class Word(val text: String) {
         abstract val width: Float
 
@@ -129,7 +142,7 @@ class AbilityTextHandler(
     }
 
     companion object {
-        val wordSplit = Regex("\\b")
+        val sequenceSplit = Regex("\\b")
         val wordSplit2 = Regex("(?= )")
 
         val defaultAbilityColor = FantasyCard.textColor
