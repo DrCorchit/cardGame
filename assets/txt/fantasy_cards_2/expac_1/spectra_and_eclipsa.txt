@@ -1,6 +1,6 @@
 #Spectra and Eclipsa
 Pixie: 1/3p [Fairy] [When played, spawn earth_mana water_mana air_mana.; Tap to repeat the "when played" ability.] [All you need is a little pixie dust.]
-Harvest: 4p [Tactic, Nature] [When played, expend all X earth_mana, water_mana, and air_mana and gain 2X points.] [A time to sow, a time to reap.]
+#Harvest: 4p [Tactic, Nature] [When played, expend all X earth_mana, water_mana, and air_mana and gain 2X points.] [A time to sow, a time to reap.]
 
 Blessed Aura: 4p [Tactic, Instinct] [When played, either#Play "Spectra" from your deck or sideboard.#Play "Spectra" from your hand and draw a card.#Spawn earth_mana earth_mana water_mana water_mana air_mana air_mana.] []
 

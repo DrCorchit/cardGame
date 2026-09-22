@@ -6,14 +6,23 @@ Alpha Wolf
 Alraune
 Anastasia, Wildshape
 Ancient Hamadryad
+Android Replica
 Apothecary
+Apprentice
 Apprentice Smitty
 Archangel
+Archivist
+Argos, Arbiter
+Armor Weave
 Arondight
+Artificer
+Artillery
 Assassin
+Autognome
 Bamboo Grove
 Barracuda
 Battering Ram
+Battery
 Bertcalf the Tall
 Bird of Victory
 Blade Dancer
@@ -24,24 +33,34 @@ Bounty Hunter
 Bullfrog Army
 Caelo, Teenage Necromancer
 Caldera
+Capacitor
 Cave Bear
 Cave Dragon
+Censorship
 Champion
+Cheerleader
 Cherubim Swarm
 Chimney Sweep
 Cliffs
+Codex Veritas
+Corruption
+Cyborg Monk
 Cyborg Soldier
 Desert
 Devastator
 Dhampir
 Doco the Paladin
 Dragonslayer Lance
+Drone Swarm
 Dryad Enchantress
 Dryad Grovekeeper
 Dryad Ranger
 Dwarven Hermit
 Dynamo
 Earth Titan
+Electrical Engineer
+Electrode
+Electroshock
 Elven Archer
 Elven Dagger
 Elven Druid
@@ -50,15 +69,21 @@ Elven Lorekeeper
 Elven Princess
 Elven Scout
 Elven Trailblazer
+Epocha, Harbinger
+Eriathorn, Gemini
 Excalibur
+Exhibitor
 Fairy Ring
 Feral Werewolf
+Fireball
 Firefly
 Fjord
 Flash Flood
+Flesh Golem
 Forest Defender
 Forest Fire
 Frankenstein’s Monster
+Fugg Raulner
 Gawain
 Genie
 Ghost
@@ -86,30 +111,45 @@ Hamadriel
 Harvest
 Haunted Armor
 Heartwood Treant
+Holy Crusader
 Homeland
 Hurricane
 Ifrit
+Incinerator
 Iriviel
 Jack Frost
+Journeyman
 Jungle
+Kick it ‘til it Works
 King Arthur
 King Oberon
 Lady in Waiting
 Lady of the Lake
 Lancelot
+Landship
 Lava Lizard
+Left Arm
 Leprechaun
+Library
 Lifegiving Rainfall
 Lightning Strike
+Logos, Oracle
 Longshoreman Raider
 Lutis the Mad
 Magma Defender
+Magnetron
+Magnum Opus
 Makeshift Bomb
 Manacles
+Manipulator Arm
 Meezurk, Arisen
 Merlin
 Mermaid
+Messenger
+Meteorite Strike
+Metronome
 Mimic
+Mobilization
 Mountain
 Mountain Gorilla
 Multitool
@@ -123,22 +163,33 @@ Oceanid
 Octicia the Cunning
 Omega Defender
 Ophanim
+Opusculum
+Orthos, Orchestrator
 Pack Wolf
+Paper Shuffler
+Plexi Glass
 Poltergeist
 Pond Naiad
+Power Surge
+Product Recall
+Professor
 Prophecy
 Puck
 Puffball
 Pulverizer
 Pyromaniaxe
+Pyros, Inquisitor
 Queen Aelwyn
 Queen Titania
 Queen of Hearts
 Radio
 Red-Eyed Fairy
+Regeneration Weave
 Research Fellow
 Resurrection
+Reverse Engineering
 Rhodango the Red
+Right Arm
 River Naiad
 Royal Decree
 Royal Envoy
@@ -147,30 +198,44 @@ Royal Wyvern
 Rubber Duck
 Saboteur
 Samray the Swift
+Schematic
+Scribe
 Selkie
 Seraphim
 Settlement
+Shuramorn, Gemini
 Skeleton Key
 Slime
 Sojourn
 Solar Panel
+Sophos, Ordinator
 Squirrel
+Stealth Weave
+Steam Engine
 Steel Cuirass
 Storm Priest
 Student
 Surrender
 Swamp
+System Reboot
 Takulev the Undying
 Tarzan
+Teknos, Grand Artificer
+Teleportation
 The Pied Piper
+Thought Police
 Throne Defender
 Thunderstorm
+Time Travel
+Transformer
 Treant Sage
 Treant Sapling
 Treant Stalker
 Treant Wizard
 Tree Elf
 Treehomes
+Tutor
+Ultima, Prototype
 Undine
 Unicorn
 University
@@ -179,8 +244,11 @@ Violet-Eyed Fairy
 Vizimir the Golden
 Warthog
 Werebat
+World’s Fair
+X Æ A-12
 Yellow-Eyed Fairy
 Yggdrasil
 Yorsig, Moomsh Monk
 Zark, Used Axe Salesman
+Zeppelin Prime
 Zombie

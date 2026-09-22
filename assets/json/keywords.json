@@ -30,13 +30,13 @@
   },
   {
     "name": "Banish",
-    "synonyms": ["Banishes", "Banished"],
+    "synonyms": ["banishes", "banished"],
     "description": "Remove a card from the game."
   },
   {
     "name": "Assault X",
     "_description": "Damage a unit by X.",
-    "synonyms": ["Assault", "Assaults", "Assaulted"]
+    "synonyms": ["assault", "assaults", "assaulted"]
   },
   {
   "name": "Assassinate X",
@@ -46,11 +46,16 @@
   {
   "name": "Seize",
   "description": "Move a unit to its opponent's battlefield.",
-  "synonyms": ["Seize", "seizes", "seized"]
+  "synonyms": ["seize", "seizes", "seized"]
   },
   {
     "name": "Toughness X",
-    "description": "A unit's power plus armor. Includes armor and power from equipment."
+    "description": "Power plus armor, including armor and power from equipment.",
+    "synonyms": ["toughness"]
+  },
+  {
+    "name": "Armor",
+    "description": "Increases a unit's resistance to assault."
   },
   {
     "name": "Overkill X",
