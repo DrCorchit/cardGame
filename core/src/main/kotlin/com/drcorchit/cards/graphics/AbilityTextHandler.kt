@@ -16,7 +16,7 @@ class AbilityTextHandler(
     val abilityFont: BitmapFont = Fonts.abilityFont,
     val keywordFont: BitmapFont = Fonts.keywordFont,
     val sequenceSpace: Float = 2f,
-    val spaceWidth: Float = 8f,
+    val spaceWidth: Float = 7f,
     val lineHeight: Float = 32f
 ) {
     private val spriteSize = lineHeight - 4
