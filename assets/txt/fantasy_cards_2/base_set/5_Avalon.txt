@@ -8,7 +8,7 @@ Dryad Ranger: 2/2p [Avalon, Nymph] [When played, either:#Expend earth_mana and b
 Goblin Shaman: 2/2p [Avalon, Ogroid, Tribal] [When played, spawn earth_mana water_mana.; Tap to either:#Expend earth_mana and give a unit doomed.#Expend water_mana and give a unit immune.] [Double, double, toil and trouble!]
 Goblin Frogman: 2/2p [Avalon, Ogroid, Tribal] [When played, become invisible.; Tap to either:#Spawn earth_mana water_mana.#Expend earth_mana water_mana and assault 2.] [You can kiss one, but it ain't gonna turn into no prince!]
 Elven Trailblazer: 3/2p [Avalon, Elf] [Engine.; Tap and expend earth_mana earth_mana to create an "Elven Archer" token.] [Elven trails need no markers.]
-Lifegiving Rainfall: 2/2p [Avalon, Equipment, Nature] [Engine.; When played, purify the equip target.; Tap to spawn water_mana.] [Every rainstorm begins with a single drop.]
+Lifegiving Rainfall: 1/2p [Avalon, Equipment, Nature] [Engine.; When played, purify the equip target.; Tap to spawn water_mana.] [Every rainstorm begins with a single drop.]
 #Barkskin Armor: 3/2p [Avalon, Equipment, Nature] [When played, remove poison from the equip target.] [Its only weakness? Termites.]
 
 Goblin Hunter: 1/3p [Avalon, Ogroid, Tribal] [When played, poison a unit.; Tap and expend earth_mana water_mana to play a Common Tribal unit (except "Goblin Hunter") from hand and return this card to your hand.] [They can't take us all!]

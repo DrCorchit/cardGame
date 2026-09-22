@@ -1,5 +1,6 @@
 Admiral Boom
 Aelshamyr
+Ale of the Ancestors
 Alice the Wonder
 Allmother
 Alpha Wolf
@@ -30,6 +31,7 @@ Beggar
 Berserker
 Bertcalf the Tall
 Big Bertha
+Big Daddy
 Billy Bones
 Bird of Victory
 Black Market
@@ -37,11 +39,13 @@ Blackbeard
 Blackblood Marauder
 Blade Dancer
 Blistering Heatwave
+Bloody Slash
 Blue-Eyed Fairy
 Bolases
 Bounty Hunter
 Broadside
 Bullfrog Army
+Butler
 Bystander
 Caelo, Teenage Necromancer
 Caldera
@@ -60,6 +64,7 @@ Cherubim Swarm
 Chester Zilch
 Chimney Sweep
 Cliffs
+Coal Mine
 Codex Veritas
 Constable
 Contract Kill
@@ -80,13 +85,29 @@ Dinghy
 Doco the Paladin
 Dracula, First Form
 Dracula’s Castle
+Dragon Cultist
+Dragon Egg
+Dragon Emperor Coronakt
+Dragon Hatchling
+Dragonbrew Reserve
+Dragonmother Erizyx
 Dragonslayer Lance
+Drinking Contest
 Drone Swarm
 Drunken Sailor
 Dryad Enchantress
 Dryad Grovekeeper
 Dryad Ranger
+Dwarfsteel Battleaxe
+Dwarven Berserker
+Dwarven Brawler
+Dwarven Drunkard
 Dwarven Hermit
+Dwarven Miner
+Dwarven Spec Ops
+Dwarven Vanguard
+Dwarven Veteran
+Dwarven Warrior
 Dynamo
 Earth Titan
 Electrical Engineer
@@ -108,8 +129,10 @@ Exhibitor
 Fairy Ring
 Fenrir
 Feral Werewolf
+Fire Breath
 Fireball
 Firefly
+Fireswill Wine
 Fjord
 Flash Flood
 Flesh Golem
@@ -133,6 +156,11 @@ Goblin Hunter
 Goblin Shaman
 Goblin Smitty
 Goblin Warrior
+Gold Mine
+Gold Rush
+Golden Dragon Egg
+Golden Froth
+Goryx, Golden Dragon
 Gossip
 Grandmaster Smitty
 Grandmother Autumn
@@ -143,7 +171,9 @@ Great White
 Green-Eyed Fairy
 Grim Reaper
 Grima, Goblin Hag Queen
+Guardian Dragon
 Guinevere
+Guinness Stout
 Gungnir
 Halberd
 Hamadriel
@@ -159,6 +189,7 @@ Heartwood Treant
 Heimdall
 Hired Muscle
 Hitman
+Hoard Dragon
 Holy Crusader
 Homeland
 Howitzer
@@ -166,6 +197,7 @@ Hurricane
 Hypnotist
 Hysteria
 Ifrit
+Immortal Dragon
 Incinerator
 Inspector Culso
 Intimidation
@@ -197,6 +229,7 @@ Logos, Oracle
 Loki
 Long John Silver
 Longshoreman Raider
+Lost Dragon Egg
 Lower the Boom
 Lutis the Mad
 Mafia Soldier
@@ -207,6 +240,7 @@ Makeshift Bomb
 Manacles
 Manipulator Arm
 Maximillian, Slumlord
+Mechanical Engineer
 Meezurk, Arisen
 Merlin
 Mermaid
@@ -214,6 +248,8 @@ Messenger
 Meteorite Strike
 Metronome
 Mimic
+Mithril Mail
+Mithril Mine
 Mjolnir
 Mobilization
 Moby Dick
@@ -223,10 +259,14 @@ Moomsh Addict
 Moomsh Dealer
 Mountain
 Mountain Gorilla
+Mountainlord Torbjorn
 Multitool
+Myla
 Naiad Grandmother
+Natural Spring Water
 Necromancy
 Neighborhood Bully
+Neromir, Warrior Dragon
 Newtonia the White
 Night Watch
 Nightcrawler
@@ -237,17 +277,22 @@ Ocean
 Oceanid
 Octicia the Cunning
 Odin
+Old King Coal
+Old Warhammer
 Omega Defender
 Ophanim
 Opusculum
+Ore Hauler
 Orthos, Orchestrator
 Pack Wolf
 Pandemonium
 Paper Shuffler
 Phlegmtooth, Sewer Dragon
+Pickaxe
 Pickpocket
 Pillage
 Piranha Swarm
+Pit Wyvern
 Plexi Glass
 Pogrom
 Poltergeist
@@ -256,6 +301,7 @@ Power Surge
 Product Recall
 Professor
 Prophecy
+Pseudodragon
 Puck
 Puffball
 Pulverizer
@@ -275,6 +321,8 @@ Resurrection
 Reverse Engineering
 Rhodango the Red
 Right Arm
+Rite of Passage
+Ritual Master
 River Naiad
 Rock of Gibraltar
 Royal Decree
@@ -285,34 +333,44 @@ Rubber Duck
 Saboteur
 Saint Germain
 Samray the Swift
+Scaly Feast
 Scarlet, Made Lady
 Schematic
 Schooner
 Scribe
+Secret Brew
 Selkie
 Seraphim
 Settlement
 Shipyard
 Shiv
 Shore Leave
+Shorty McGee
+Shorty’s Axe
 Shuramorn, Gemini
 Silver Sword
 Skeleton Key
+Sleepy
 Slime
+Smelter
 Snitch
+Snort
 Sojourn
 Solar Panel
 Sophos, Ordinator
+Spelunker
 Squirrel
 Stealth Weave
 Steam Engine
 Steel Cuirass
 Storm Priest
 Street Thug
+Structural Engineer
 Student
 Surrender
 Swamp
 Swapling
+Swoop
 System Reboot
 Takulev the Undying
 Talisman
@@ -323,8 +381,10 @@ Terrence Beaumont
 Terror o’ the Seas
 The Butcher
 The Dollhouse
+The Eggspert
 The Flying Dutchman
 The Pied Piper
+The Prospector
 The Quartermaster
 The White Cliffs
 Thor
@@ -332,6 +392,7 @@ Thought Police
 Throne Defender
 Thunderstorm
 Time Travel
+Tiny
 Transformer
 Treant Sage
 Treant Sapling
@@ -339,6 +400,7 @@ Treant Stalker
 Treant Wizard
 Treasure Galleon
 Treasure Hunter
+Treasure of all Treasures
 Tree Elf
 Treehomes
 Tutor
@@ -360,12 +422,15 @@ Viking Skald
 Viking Smitty
 Violet-Eyed Fairy
 Vizimir the Golden
+Volcanic Eruption
+Volcano
 Walk the Plank
 Warthog
 Werebat
 Witch Hunter
 Witness
 World’s Fair
+Wyvern Egg
 X Æ A-12
 Yalmamir, Prince of Crime
 Yarn-Spinner Calhoun

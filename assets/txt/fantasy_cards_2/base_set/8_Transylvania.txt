@@ -15,7 +15,7 @@ Talisman: 2p [Transylvania, Emplacement] [When played, spawn 5 light_mana.; Tap 
 Hypnotist: 1/3p [Transylvania, Vampire, Spy] [Disloyal.; When played, seize a unit with 2 or less power.] [What a captivating performance!]
 Hitman: 2/3p [Transylvania, Human, Henchman, Spy] [Disloyal.; When played (chaos X), assassinate X.] [I never hurt nobody that ain't had it comin'.]
 Mafia Soldier: 2/3p [Transylvania, Human, Henchman] [When played, become immune.; Whenever you play a Crime, spawn 1 mana of any color.; Tap (chaos X) to gain X points.] [Workin' for the man.]
-Vigilante: 1a 2/3p [Transylvania, Human, Slayer] [Engine, Haste.; Tap to give an enemy unit bounty 1.] [Can't just stand around and do nothing.]
+Vigilante: 1a 2/3p [Transylvania, Human, Slayer] [Engine.; Tap to give an enemy unit bounty 1.] [Can't just stand around and do nothing.]
 Moomsh Dealer: 3/3p [Transylvania, Human, Henchman] [When played, poison a unit.] [First one's on the house.]
 Witch Hunter: 3/3p [Transylvania, Human, Slayer] [Engine, Haste.; Tap and expend X light_mana to assault X.; The assault target must have a bounty.] [If she floats, she's a witch. If she drowns... probably still a witch.]
 Night Watch: 3/3p [Transylvania, Human, Slayer] [Whenever you apply bounty X, gain 1 point.] [There's evil everywhere.]

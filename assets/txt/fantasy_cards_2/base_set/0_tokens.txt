@@ -2,4 +2,4 @@ Bird of Victory: 3/0p [Beast, Token, Legendary] [This card is always doomed.] [M
 Elven Archer: 2/0p [Avalon, Elf, Token] [This card is always doomed.] [Who goes there?]
 Student: 3/0p [Metropolis, Elf, Token] [This card is always doomed.] [All work and no play...]
 Steel Cuirass: 2a 0p [Thalassa, Equipment, Token] [This card is always doomed.] [The uglier the better.]
-Champion: 4/0p [Vulcania, Dwarf, Warrior, Token] [This card is always doomed.] [Full of good wine and tall tales.]
+Champion: 1a 4/0p [Vulcania, Dwarf, Warrior, Token] [This card is always doomed.] [Full of good wine and tall tales.]
