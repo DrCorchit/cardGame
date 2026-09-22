@@ -50,7 +50,7 @@
   },
   {
     "name": "Toughness X",
-    "description": "Power plus armor, including armor and power from equipment.",
+    "description": "A unit's power plus its armor.",
     "synonyms": ["toughness"]
   },
   {
@@ -151,8 +151,9 @@
     "description": "Status that banishes a card when it leaves the battlefield."
   },
   {
-    "name": "Bounty",
-    "description": "Status that lets your opponent spawn mana of any colors when the unit is destroyed. Stackable."
+    "name": "Bounty X",
+    "description": "Status that lets your opponent spawn X mana of any colors when the unit is destroyed.",
+    "synonyms": ["bounty"]
   },
   {
     "name": "Stalwart",
