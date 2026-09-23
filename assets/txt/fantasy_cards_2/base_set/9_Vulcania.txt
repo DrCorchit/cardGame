@@ -9,8 +9,8 @@ Spelunker: 3/2p [Vulcania, Dwarf] [When played, add a counter to an allied Mine.
 Ore Hauler: 3/2p [Vulcania, Dwarf] [Engine.; Tap and expend fire_mana fire_mana to gain 2 points.] ['Tis honest work, at least.]
 Sleepy: 3/2p [Vulcania, Dwarf] [When you pass, you may expend fire_mana fire_mana to become stalwart.] [Zzzzzzzzzzzzzzzz]
 Fire Breath: 2p [Vulcania, Tactic, Instinct] [When played, spawn fire_mana fire_mana.; Whenever you play a Dragon, you may expend fire_mana fire_mana to banish this card from your graveyard and assault 2.] [BURN BABY BURN!!!]
-Dragonbrew Reserve: 1/2p [Vulcania, Equipment, Liquor] [Engine.; Tap to spawn fire_mana.] [Spill a barrel of this stuff, and you'll learn a thing or two about dwarven hospitality.]
-Fireswill Wine: 2/2p [Vulcania, Equipment, Liquor] [When played, spawn fire_mana fire_mana.] [The cheapest booze that money can buy.]
+Dragonbrew Reserve: 2/2p [Vulcania, Equipment, Liquor] [Engine.; Tap to spawn fire_mana.] [Spill a barrel of this stuff, and you'll learn a thing or two about dwarven hospitality.]
+Fireswill Wine: 3/2p [Vulcania, Equipment, Liquor] [When played, spawn fire_mana.] [The cheapest booze that money can buy.]
 Natural Spring Water: 3/2p [Vulcania, Equipment] [When played, purify the equip target.] [Pure, refreshing goodness.]
 Old Warhammer: 1a 2p [Vulcania, Equipment, Weapon] [When played, assault 2.; This card's assault ignores armor.] [If all you have is a hammer, everything looks like a nail.]
 
@@ -23,7 +23,7 @@ Dwarven Veteran: 4/3p [Vulcania, Dwarf, Warrior] [Engine.; You must expend 4 fir
 Butler: 3/3p [Vulcania, Dwarf] [Tap and expend fire_mana fire_mana fire_mana to play a Common Liquor card from your graveyard and give it doomed.] [Pray he doesn't get into the liquor.]
 Structural Engineer: 4/3p [Vulcania, Dwarf] [When played, you may expend fire_mana to make an allied Mine stalwart.] [The weird noises mean the mine is about to collapse.]
 Mechanical Engineer: 4/3p [Vulcania, Dwarf] [Tap and expend fire_mana fire_mana to untap an adjacent Common unit.] [Unlike elves, dwarves don't let the computers do their thinkin' for 'em.]
-Golden Froth: 2/3p [Vulcania, Equipment, Liquor] [Engine.; Tap to gain 1 point.] [Beer is proof that God loves dwarves and wants them to be happy.]
+Golden Froth: 2/3p [Vulcania, Equipment, Liquor] [When played, gain ] [Beer is proof that God loves dwarves and wants them to be happy.]
 Dwarfsteel Battleaxe: 3p [Vulcania, Equipment, Weapon] [When played, assault 2.; If equipped to a Warrior, either:#Assault 3 instead.#Play another "Dwarfsteel Battleaxe" from hand and draw a card.] [Even dwarven battleaxes have beards...]
 Pickaxe: 3p [Vulcania, Equipment, Weapon] [When played, assault 2.; If equipped to a Dwarf, untap an allied Mine.] [Instructions: Bang pointy end against rock. Repeat until arm tired.]
 Volcano: 3p [Vulcania, Emplacement, Land] [Engine.; Tap to either:#Spawn fire_mana.#Expend X fire_mana to assault X and destroy this card.] []
@@ -51,7 +51,7 @@ Gold Mine: 6p [Vulcania, Emplacement, Mine, Rare] [Tap and remove 1 counter to g
 The Prospector: 2/7p [Vulcania, Dwarf, Rare] [Haste.; Tap and expend fire_mana fire_mana to play a Mine from your deck.; If haste was not used, you may play a Mine from your graveyard and give it doomed instead.] [I never knew a prospector that made a fortune who didn't blow it trying to make another.]
 Hoard Dragon: 8/7p [Vulcania, Dragon, Rare] [Your score must be at least 10 to play this card.; If you control "Treasure of All Treasures", ignore this condition.] [Be fearful when others are greedy.]
 Snort: 9/7p [Vulcania, Dragon, Rare] [You must control a Mine to play this card.; When played, destroy an allied Mine.] [We're gonna need a deeper mine.]
-Treasure of all Treasures: 7p [Vulcania, Emplacement, Legendary] [When played, you may expend fire_mana fire_mana fire_mana to become stalwart.; When you pass, gain 1 point for each allied Dwarf.] [All that glitters is not gold. Could be diamonds, for instance.]
+Treasure of all Treasures: 7p [Vulcania, Emplacement, Legendary] [When you pass, gain 1 point for each allied Dwarf.] [All that glitters is not gold. Could be diamonds, for instance.]
 Mithril Mail: 4a 7p [Vulcania, Equipment, Legendary] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; When played, if the equip target is a Dwarf, make it immune.] [Made to last; last of its make.]
 
 Myla: 1a 2/8p [Vulcania, Dwarf, Rare] [Engine.; Tap to either:#Untap an allied Mine.#Give an allied Mine a counter.] [This is hard work, but I don't mind.]

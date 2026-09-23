@@ -33,7 +33,8 @@ class GenerateCards : ApplicationAdapter() {
         card.updateGraphic()
         card.draw()
         Draw.batch.end()
-        screenshot(card)
+        val count = Main.cardCounts[card] ?: 1
+        screenshot(card, count)
 
         val percent = (index + 1) * 100f / cards.size
         println("%.1f%% complete - %s".format(percent, card.name))
@@ -41,10 +42,13 @@ class GenerateCards : ApplicationAdapter() {
         if (index >= cards.size) Gdx.app.exit()
     }
 
-    fun screenshot(card: Drawable) {
+    fun screenshot(card: Drawable, count: Int) {
         val pixmap = Pixmap.createFromFrameBuffer(0, 0, Gdx.graphics.width, Gdx.graphics.height)
-        val file = FileHandle(card.outputLocation)
-        PixmapIO.writePNG(file, pixmap, Deflater.DEFAULT_COMPRESSION, true)
+        for (i in 0..<count) {
+            val path = "${card.outputLocation}_$i.png"
+            val file = FileHandle(path)
+            PixmapIO.writePNG(file, pixmap, Deflater.DEFAULT_COMPRESSION, true)
+        }
     }
 
     override fun dispose() {

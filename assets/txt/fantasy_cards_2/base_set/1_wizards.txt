@@ -1,17 +1,21 @@
-Alice the Wonder: 1/0p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; When played, spawn 6 mana of any colors.] [Any color you like. (Especially green.)]
+Alice the Wonder: 1/13p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; When played, spawn 6 mana of any colors.] [Any color you like. (Especially green.)]
 
-Bertcalf the Tall: 8/0p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; When played, become invisible.] [A penny saved is a moment wasted.]
+Anzia the Yeek: 4/12p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; When played, purify a card.; Tap to lock a card.] [The rumors about her are mostly true, I'm afraid.]
 
-Lutis the Mad: 1/0p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; When played, assault 5.; Overkill 1: Additionally banish the targeted unit.] [Downing a fifth of vodka, he and his favorite plane of reality disappeared for millennia.]
+Bertcalf the Tall: 8/12p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; When played, become invisible.] [A penny saved is a moment wasted.]
 
-Newtonia the White: 3/0p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; Tap to play a Common card from your hand and draw a card.] [Act like a pawn, and you will be treated as such.]
+Lutis the Mad: 1/14p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; When played, assault 5.; Overkill 1: Additionally banish the targeted unit.] [Downing a fifth of vodka, he and his favorite plane of reality disappeared for millennia.]
 
-Octicia the Cunning: 2/0p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. During your turn, you may remove a counter to assassinate 1.; When all counters are used up, summon Octicia from your sideboard.; Initial counters: 3.] [I know what makes you squirm.]
+Newtonia the White: 3/13p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; Tap to play a Common card from your hand and draw a card.] [Act like a pawn, and you will be treated as such.]
 
-Rhodango the Red: 4/0p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; When played, become stalwart.] [Alone? But I have so many friends: wisdom, silence, solitude, peace of mind... ]
+Octicia the Cunning: 2/14p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. During your turn, you may remove a counter to assassinate 1.; When all counters are used up, summon Octicia from your sideboard.; Initial counters: 3.] [I know what makes you squirm.]
 
-Samray the Swift: 5/0p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; When played, draw three cards, then place three cards from your hand at the top of your deck in any order.] [Whatever you require in others, require in yourself first.]
+Rhodango the Red: 4/12p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; When played, become stalwart.] [Alone? But I have so many friends: wisdom, silence, solitude, peace of mind... ]
 
-Takulev the Undying: 4/0p [Legendary, Undead, Mage, Leader] [Disloyal.; This card starts in your sideboard. You may play this card from your sideboard during your turn.; When played, play a unit from your graveyard.] [I still breathe — purely out of habit, of course.]
+Samray the Swift: 5/12p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; When played, draw three cards, then place three cards from your hand at the top of your deck in any order.] [Whatever you require in others, require in yourself first.]
 
-Vizimir the Golden: 3/0p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; Whenever you play a card, gain 1 point.] [Respect must be learned before it can be earned.]
+Takulev the Undying: 4/14p [Legendary, Undead, Mage, Leader] [Disloyal.; This card starts in your sideboard. You may play this card from your sideboard during your turn.; When played, play a unit from your graveyard.] [I still breathe — purely out of habit, of course.]
+
+Vizimir the Golden: 3/12p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; Whenever you play a card, gain 1 point.] [Respect must be learned before it can be earned.]
+
+

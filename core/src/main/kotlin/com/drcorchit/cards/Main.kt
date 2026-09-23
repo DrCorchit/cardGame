@@ -60,7 +60,7 @@ class Main : ApplicationAdapter() {
         val cardsByName by lazy { cards.associateBy { it.name } }
         val cardCounts by lazy {
             val counts = cards.associateWith {
-                if (it.isToken && it.rarity == Rarity.Common) 6
+                if (it.isToken && it.rarity == Rarity.Common) 9
                 else if (it.rarity == Rarity.Common) 2
                 else 1
             }.toMutableMap()
@@ -145,7 +145,7 @@ class Main : ApplicationAdapter() {
 
         //Dragonslayer Lance deals 7 damage to Legendary units. I want to see who survives.
         val toughLegendaryUnits = units.filter { it.rarity == Rarity.Legendary && it.toughness > 4 }
-        val dsSurvivors = toughLegendaryUnits.filter { it.toughness >= 8 }.map { it.name }
+        val dsSurvivors = toughLegendaryUnits.filter { it.toughness >= 7 }.map { it.name }
         println("DS Lance survivors: ${dsSurvivors.size}/${toughLegendaryUnits.size} $dsSurvivors")
 
         println("\nToughness count:")

@@ -17,12 +17,12 @@ Nightcrawler: 2/2p [Vampire] [Engine.; Tap to either:#Spawn dark_mana.#Expend da
 Unicorn: 2/3p [Beast] [Engine.; Tap to spawn 1 mana of any color.] [It's not always rainbows and unicorns. Sometimes it's just unicorns.]
 
 #2x Mana engines
-Grandmaster Smitty: 1a 3/4p [Dwarf, Rare] [Engine.; Tap to spawn fire_mana fire_mana.] [Ta master tha forge, ya gotta become one wit' 'er. Jus' kiddin, tha would be weird.]
-Naiad Grandmother: 1a 3/4p [Nymph, Rare] [Engine.; Tap to spawn water_mana water_mana.] [Granny just might know a story or two...]
-Treant Wizard: 1a 3/4p [Treant, Rare] [Engine.; Tap to spawn earth_mana earth_mana.] [The magic of the forest is deeper and older than the ken of any man.]
-Storm Priest: 1a 3/4p [Human, Rare] [Engine.; Tap to spawn air_mana air_mana.] [Storms are pretty cool, so these guys are fairly common.]
-Cherubim Swarm: 1a 3/4p [Celestial, Rare] [Engine.; Tap to spawn light_mana light_mana.] [Vampires are genuinely terrified of these things.]
-Vampire Nightmaster: 1a 3/4p [Vampire, Rare] [Engine.; Tap to spawn dark_mana dark_mana.] [I am the night.]
+Grandmaster Smitty: 3/4p [Dwarf, Rare] [Engine.; Tap to spawn fire_mana fire_mana.] [Ta master tha forge, ya gotta become one wit' 'er. Jus' kiddin, tha would be weird.]
+Naiad Grandmother: 3/4p [Nymph, Rare] [Engine.; Tap to spawn water_mana water_mana.] [Granny just might know a story or two...]
+Treant Wizard: 3/4p [Treant, Rare] [Engine.; Tap to spawn earth_mana earth_mana.] [The magic of the forest is deeper and older than the ken of any man.]
+Storm Priest: 3/4p [Human, Rare] [Engine.; Tap to spawn air_mana air_mana.] [Storms are pretty cool, so these guys are fairly common.]
+Cherubim Swarm: 3/4p [Celestial, Rare] [Engine.; Tap to spawn light_mana light_mana.] [Vampires are genuinely terrified of these things.]
+Vampire Nightmaster: 3/4p [Vampire, Rare] [Engine.; Tap to spawn dark_mana dark_mana.] [I am the night.]
 
 #Pointslam
 Lava Lizard: 5/2p [Dragon] [You must expend fire_mana to play this card.] [Manageable in small numbers, with the ideal number being zero.]

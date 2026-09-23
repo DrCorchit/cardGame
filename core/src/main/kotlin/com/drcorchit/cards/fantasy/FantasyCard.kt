@@ -70,8 +70,6 @@ class FantasyCard(
 
     val rarityBorder = if (tags.contains("Leader")) Rarity.shinyBorder else rarity.image
 
-    val cardCount = (1 + sideboardCards.values.sum()).let { if (rarity == Rarity.Common) it * 2 else it }
-
     val isToken = tags.contains("Token")
     val tagsText = run {
         val miscTags = tags.toSet()
@@ -124,7 +122,7 @@ class FantasyCard(
 
     //We sort by rarity so we can auto add cards when using the MakePlayingCards.com website
     override val outputLocation =
-        "output/images/temporary/cards/${rarity.name.normalize()}/${name.normalize()}.png"
+        "resources/images/temporary/cards/${city.name.normalize()}/${name.normalize()}"
 
     override val multiplicity = if (rarity == Rarity.Common) 2 else 1
 
