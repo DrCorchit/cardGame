@@ -4,8 +4,6 @@ Squirrel: 2/2p [Beast] [When played, banish a card from your opponent's graveyar
 Pack Wolf: 1a 2/2p [Beast] [When played while paired, assault 2.] [Nice doggy...]
 Ghost: 2/2p [Undead] [When played, become invisible.] [Boo!]
 #Icicle: 2p [Tactic, Spell] [When played, either:#Spawn water_mana and lock a unit.#Expend water_mana to assault 2.] [You'll shoot your eye out!]
-
-#Spike Collar: 3p [Tactic, Instinct] [When played, lock a unit or remove lock from a unit.; Whenever you play a Beast, play this card from your graveyard and banish it.] [Better behave yourself.]
 #Escaped Convict: 3/2p [Human] [At allied turn start, gain 1 point and bounty 1.] [Nowhere to run, nowhere to hide.]
 Zombie: 3/2p [Undead] [When played, summon another "Zombie" from your graveyard.] [This is me when I wake up in the morning.]
 Manacles: 2p [Equipment, Technology] [Disloyal.; When played, lock the equip target and destroy any equipment.; No additional equipment can be assigned.] [Don't do anything rash.]
@@ -19,6 +17,7 @@ Puffball: 3p [Tactic, Nature] [When played, poison a unit.; If the target is alr
 Fireball: 3p [Tactic, Spell] [When played, either:#Spawn fire_mana and assault 2.#Expend fire_mana and assault 3.] [I didn't ask how big the room was. I said I cast fireball.]
 Corruption: 3p [Equipment, Crime] [When played, gain 6 points.; If the equip target is destroyed, lose 6 points.] [For sale, world. Price: your soul.]
 #Cleric: 3/3p [Human, Mage] [When played, purify a unit and gain 1 point for each status removed.] [May the flames guide thee.]
+#Spike Collar: 3p [Tactic, Instinct] [When played, lock a unit or remove lock from a unit.; Whenever you play a Beast, play this card from your graveyard and banish it.] [Better behave yourself.]
 
 Haunted Armor: 3a 1/4p [Undead] [Tap to replay a Common Weapon equipped to this card.] [It's... moving?]
 Halberd: 1a 4p [Equipment, Weapon, Warfare] [When played, assault 4.] [A soldier's weapon.]

@@ -23,7 +23,7 @@ class GenerateCards : ApplicationAdapter() {
         Draw.batch
         LocalAssets.getInstance().load()
 
-        val output = File("output/images/temporary")
+        val output = File("resources/images/temporary")
         output.deleteRecursively()
     }
 

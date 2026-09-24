@@ -8,10 +8,13 @@ Anastasia, Wildshape
 Ancient Hamadryad
 Anzia the Yeek
 Apothecary
+Apprentice
 Apprentice Smitty
 Archangel
 Arondight
+Artificer
 Assassin
+Autognome
 Bamboo Grove
 Barracuda
 Battering Ram
@@ -25,9 +28,11 @@ Bounty Hunter
 Bullfrog Army
 Caelo, Teenage Necromancer
 Caldera
+Capacitor
 Cave Bear
 Cave Dragon
 Champion
+Cheerleader
 Cherubim Swarm
 Chimney Sweep
 Clay Golem
@@ -39,12 +44,16 @@ Devastator
 Dhampir
 Doco the Paladin
 Dragonslayer Lance
+Drone Swarm
 Dryad Enchantress
 Dryad Grovekeeper
 Dryad Ranger
 Dwarven Hermit
 Dynamo
 Earth Titan
+Electrical Engineer
+Electrode
+Electroshock
 Elven Archer
 Elven Dagger
 Elven Druid
@@ -112,6 +121,7 @@ Lutis the Mad
 Magma Defender
 Makeshift Bomb
 Manacles
+Manipulator Arm
 Meezurk, Arisen
 Merlin
 Mermaid
@@ -132,8 +142,10 @@ Octicia the Cunning
 Omega Defender
 Ophanim
 Pack Wolf
+Paper Shuffler
 Poltergeist
 Pond Naiad
+Product Recall
 Prophecy
 Puck
 Puffball
@@ -155,6 +167,7 @@ Royal Wyvern
 Rubber Duck
 Saboteur
 Samray the Swift
+Scribe
 Selkie
 Seraphim
 Settlement
@@ -163,6 +176,7 @@ Slime
 Sojourn
 Solar Panel
 Squirrel
+Steam Engine
 Steel Cuirass
 Storm Priest
 Student
@@ -173,6 +187,7 @@ Tarzan
 The Pied Piper
 Throne Defender
 Thunderstorm
+Transformer
 Treant Sage
 Treant Sapling
 Treant Stalker

@@ -51,7 +51,7 @@ Nosferatu: 6/6p [Transylvania, Vampire, Rare] [When played, either:#Expend light
 Chester Zilch: 2/6p [Transylvania, Vampire, Caporegime, Rare] [This card starts in your graveyard.; During your turn (chaos 6), you may summon this card from your graveyard.] [Behind schedule, as usual.]
 
 Molgrippe, Master Assassin: 1/7p [Transylvania, Human, Henchman, Rare] [When played, either: #Assault 6. #Become disloyal and assassinate 6.] [The anomaly will be corrected momentarily.]
-Scarlet, Made Lady: 5/7p [Transylvania, Human, Caporegime, Rare] [When you pass, either:#Gain 1 point for each allied Henchman.#Gain 2 points for each allied Kingpin.] [Wait 'til Big Daddy hears about this!]
+Scarlet, Made Lady: 5/7p [Transylvania, Human, Caporegime, Rare] [When played, either:#Gain 1 point for each allied Henchman.#Gain 2 points for each allied Kingpin.] [Wait 'til Big Daddy hears about this!]
 Pandemonium: 7p [Transylvania, Tactic, Crime, Rare] [Echo.; When played, choose three cards from your deck and play one at random. Return the others to your deck and shuffle.; While in your graveyard, chaos is increased by 1.] [Pandemonium did not reign; it poured.]
 Contract Kill: 7p [Transylvania, Tactic, Crime, Rare] [When played, destroy an enemy unit whose power is less than or equal to your score.] [The perfect crime is never solved.]
 

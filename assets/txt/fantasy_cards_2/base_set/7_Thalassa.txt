@@ -1,4 +1,4 @@
-Viking Skald: 1/2p [Thalassa, Human] [When you pass, gain 1 point for each Ship in your graveyard.] [His songs rarely rhyme, but they're never boring.]
+Viking Skald: 1/2p [Thalassa, Human] [When played, gain 1 point for each Ship in your graveyard.] [His songs rarely rhyme, but they're never boring.]
 Viking Raider: 2/2p [Thalassa, Human, Warrior] [When played, become immune.; Gain 1 point whenever you destroy a unit during your turn.] [The only thing worse than a Blackblood is a Viking.]
 Viking Longship: 2/2p [Thalassa, Ship] [Engine.; Plunder 2.; Tap and remove X counters to spawn X fire_mana or X water_mana.; Initial counters: 2. Max counters: 6.] [Here comes trouble.]
 Dinghy: 2/2p [Thalassa, Ship] [Plunder 4.] [If it's dingy and dinky, it's a dinghy.]
