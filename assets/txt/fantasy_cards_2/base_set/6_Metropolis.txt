@@ -38,18 +38,18 @@ Eriathorn, Gemini: 1a 3/4p [Metropolis, Elf, Rare] [Tap to spawn air_mana air_ma
 Shuramorn, Gemini: 3/4p [Metropolis, Elf, Rare] [When played, become immune.; Tap to spawn light_mana light_mana light_mana.; If you control "Eriathorn, Gemini", double that amount.] [Make it double!]
 Kick it 'til it Works: 4p [Metropolis, Tactic, Instinct, Rare] [When played, gain 2 points for each allied Machine that is not locked. Afterward, purify an allied Machine.] [It was junk anyways.]
 
-Epocha, Harbinger: 3/5p [Metropolis, Elf, Rare] [Engine.; When moved to the sideboard, summon self.; Tap to either:#Expend light_mana to gain 1 point.#Expend air_mana to assault 1.] [When the new age comes, there will be no turning back.]
-Pyros, Inquisitor: 1/5p [Metropolis, Elf, Rare] [When you pass, gain points equal to the most expensive card that has been banished this game.] [Beware the point of no return.]
+Pyros, Inquisitor: 2/5p [Metropolis, Elf, Rare] [When you pass, gain points equal to the most expensive card that has been banished this game.] [Pray, if it comforts you.]
 Sophos, Ordinator: 2/5p [Metropolis, Elf, Rare] [When played, either:#Play a card from your sideboard.#Become disloyal and play a card from your deck.] [I am the decider!]
 Ultima, Prototype: 1a 2/5p [Metropolis, Machine, Rare] [Tap to gain 1 point for each Technology in your graveyard.] [It's all in the name of progress.]
-Opusculum: 2a 3/5p [Metropolis, Machine, Rare] [Engine.; Tap to either:#Gain 1 counter.#Remove X counters and spawn X light_mana.#Remove X counters and spawn X air_mana.; Max counters: 6.] [Any fool can use a computer. Many do.]
+Epocha, Harbinger: 3/5p [Metropolis, Elf, Rare] [Engine.; When moved to the sideboard, summon self.; Tap to either:#Expend light_mana to gain 1 point.#Expend air_mana to assault 1.] [When the new age comes, there will be no turning back.]
+Opusculum: 4/5p [Metropolis, Machine, Rare] [Engine.; Tap to either:#Gain 1 counter.#Remove X counters and spawn X light_mana.#Remove X counters and spawn X air_mana.; Max counters: 6.] [Any fool can use a computer. Many do.]
 Left Arm: 2/5p [Metropolis, Machine, Equipment, Rare] [Tap to spawn 6 light_mana or 6 air_mana.] [Not to be underestimated.]
 Censorship: 5p [Metropolis, Tactic, Technology, Rare] [When played, banish the top card of your opponent's deck and gain points equal to its provision cost.] [It's a trip down memory hole lane.]
 
 Metronome: 1a 2/6p [Metropolis, Machine, Rare] [Whenever an allied unit untaps, gain 1 point.] [Click, click, click, click...]
+Plexi Glass: 3/6p [Metropolis, Machine, Rare] [Engine.; When played, become immune.; Tap to spawn light_mana air_mana.] [Even autognomes need a feminine touch.]
+X Æ A-12: 1a 4/6p [Metropolis, Machine, Legendary] [Engine.; Tap and expend light_mana to give haste to an allied unit.] [Work it harder, make it better, do it faster, makes us stronger!]
 Argos, Arbiter: 5/6p [Metropolis, Elf, Rare] [When played, draw 2 cards and move 2 cards from your hand into your sideboard.; Tap and expend light_mana light_mana to repeat the "when played" ability.] [No plan is ever perfect. Except mine.]
-X Æ A-12: 2a 4/6p [Metropolis, Machine, Legendary] [Engine.; Tap and expend light_mana to give haste to an allied unit.] [Work it harder, make it better, do it faster, makes us stronger!]
-Plexi Glass: 4/6p [Metropolis, Machine, Rare] [Engine.; When played, become immune.; Tap to spawn light_mana air_mana.] [Even autognomes need a feminine touch.]
 Regeneration Weave: 2/6p [Metropolis, Equipment, Technology, Rare] [When mulliganed, this card moves to your sideboard.; During your turn, you may expend light_mana to play this card from your sideboard.; When played, make the equip target immune.] [Modern healthcare costs an arm and a leg.]
 Magnetron: 6p [Metropolis, Tactic, Technology, Rare] [When played, damage a unit by 4. If it has armor, destroy it instead.] [Never ask a physicist to explain how magnets actually work.]
 
@@ -61,12 +61,12 @@ Time Travel: 7p [Metropolis, Tactic, Technology, Legendary] [When played, move a
 Codex Veritas: 8p [Metropolis, Emplacement, Book, Legendary] [When played, move 2 cards from your deck to your sideboard.; Tap to play a card from your sideboard.] [No-one ever reads past the abstract because there's a paywall.]
 Right Arm: 2/8p [Metropolis, Equipment, Machine, Legendary] [Tap and expend air_mana air_mana to destroy an enemy unit.] [It packs a whallop.]
 Teleportation: 8p [Metropolis, Tactic, Technology, Legendary] [Echo.; When played, play a unit from your deck or sideboard.] [What could possibly go wrong?]
+Reverse Engineering: 8p [Metropolis, Tactic, Technology, Legendary] [When played, play a Machine or Technology from your graveyard of 6 or fewer provisions.; Afterward, spawn X light_mana or X air_mana, where X is the number of provisions the chosen card is below the limit.] [Sometimes, the imitation is better than the original.]
 
 Fugg Raulner: 1a 2/9p [Metropolis, Machine, Mage, Legendary] [When played, you may either:#Expend air_mana air_mana air_mana to become invisible.#Expend light_mana light_mana light_mana to gain haste.; Tap to destroy an enemy unit.] [Beep boop.]
 Logos, Oracle: 4/9p [Metropolis, Elf, Legendary] [Tap to play a card from your deck or sideboard.] [Know thyself.]
-Reverse Engineering: 9p [Metropolis, Tactic, Technology, Legendary] [When played, play a Machine or Technology from your graveyard of 6 or fewer provisions.; Afterward, spawn X light_mana or X air_mana, where X is the number of provisions the chosen card is below the limit.] [Sometimes, the imitation is better than the original.]
 
-Teknos, Grand Artificer: 3/10p [Metropolis, Elf, Legendary] [Haste.; When played, move a Common Machine from your graveyard to your sideboard.; Tap and expend 2X light_mana to play X Common Machine cards from your sideboard.] ["Grand Artificer" is a code word for "Huge Nerd"]
+Teknos, Grand Artificer: 2/10p [Metropolis, Elf, Legendary] [Haste.; When played, move a Common Machine from your graveyard to your sideboard.; Tap and expend 2X light_mana to play X Common Machine cards from your sideboard.] ["Grand Artificer" is a code word for "Huge Nerd"]
 Orthos, Orchestrator: 5/10p [Metropolis, Elf, Legendary] [Tap to untap an allied unit.] [Actually, science hasn't gone far enough.]
 
 Zeppelin Prime: 2a 4/11p [Metropolis, Machine, Legendary] [When played, you may expend X air_mana to gain X counters.; Any number of times during your turn, you may:#Remove 2 counters to assault 3.#Remove 3 counters to destroy an enemy emplacement.; Tap to repeat the "when played" ability.; Max counters: 12.] [Bearing north northeast, velocity eighty-five knots.]

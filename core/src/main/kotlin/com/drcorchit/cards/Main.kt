@@ -175,6 +175,13 @@ class Main : ApplicationAdapter() {
         val armorPercent = armorCount * 100.0f / units.size
         println("Armor %: $armorCount/${units.size} ($armorPercent%)")
 
+        println("Armor Distribution:")
+        units.groupBy { it.armor }
+            .mapValues { it.value.size }
+            .forEach { (armor, count) ->
+            println("$armor -> $count")
+        }
+
         println("\nCards by rarity:")
         val cardsByRarity = cards.groupBy { it.rarity }
         cardsByRarity.forEach { (rarity, cards) -> println(" $rarity ${cards.size}") }

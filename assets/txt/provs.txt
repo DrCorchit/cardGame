@@ -14,7 +14,7 @@ provs/power|provs/power
 12 -> 12   | 14 -> 18
 
 Key idea:
-10+ power is reserved for golds/payoff bronzes
+7+ power is reserved for golds/payoff bronzes
 
 Lock                                    chains/handcuffs icon
 Stalwart (survives round end)
