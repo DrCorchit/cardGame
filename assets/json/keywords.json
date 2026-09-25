@@ -100,16 +100,17 @@
   },
   {
     "name": "Imbibe",
-    "description": "Triggers whenever a liquor card is equipped."
+    "description": "Triggers whenever a Liquor card is equipped."
   },
+  {
+  "name": "Tall",
+  "description": "Counters on this unit contribute towards its power."
+},
   {
     "name": "Devour",
     "description": "Destroy a unit and gain counters equal to its power."
   },
-  {
-    "name": "Tall",
-    "description": "Counters on this unit contribute towards its power."
-  },
+
   {
     "name": "Plunder X",
     "description": "Gain X points when the unit is destroyed.",

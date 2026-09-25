@@ -9,7 +9,7 @@ Spelunker: 3/2p [Vulcania, Dwarf] [When played, add a counter to an allied Mine.
 Ore Hauler: 3/2p [Vulcania, Dwarf] [Engine.; Tap and expend fire_mana fire_mana to gain 2 points.] ['Tis honest work, at least.]
 Sleepy: 3/2p [Vulcania, Dwarf] [When you pass, you may expend fire_mana fire_mana to become stalwart.] [Zzzzzzzzzzzzzzzz]
 Fire Breath: 2p [Vulcania, Tactic, Instinct] [When played, spawn fire_mana fire_mana.; Whenever you play a Dragon, you may expend fire_mana fire_mana to banish this card from your graveyard and assault 2.] [BURN BABY BURN!!!]
-Dragonbrew Reserve: 2/2p [Vulcania, Equipment, Liquor] [Engine.; Tap to spawn fire_mana.] [Spill a barrel of this stuff, and you'll learn a thing or two about dwarven hospitality.]
+Golden Froth: 3/2p [Vulcania, Equipment, Liquor] [When played, gain 1 point for each Liquor card already equipped to the target.] [Beer is proof that God loves dwarves and wants them to be happy.]
 Fireswill Wine: 3/2p [Vulcania, Equipment, Liquor] [When played, spawn fire_mana.] [The cheapest booze that money can buy.]
 Natural Spring Water: 3/2p [Vulcania, Equipment] [When played, purify the equip target.] [Pure, refreshing goodness.]
 Old Warhammer: 1a 2p [Vulcania, Equipment, Weapon] [When played, assault 2.; This card's assault ignores armor.] [If all you have is a hammer, everything looks like a nail.]
@@ -23,29 +23,28 @@ Dwarven Veteran: 4/3p [Vulcania, Dwarf, Warrior] [Engine.; You must expend 4 fir
 Butler: 3/3p [Vulcania, Dwarf] [Tap and expend fire_mana fire_mana fire_mana to play a Common Liquor card from your graveyard and give it doomed.] [Pray he doesn't get into the liquor.]
 Structural Engineer: 4/3p [Vulcania, Dwarf] [When played, you may expend fire_mana to make an allied Mine stalwart.] [The weird noises mean the mine is about to collapse.]
 Mechanical Engineer: 4/3p [Vulcania, Dwarf] [Tap and expend fire_mana fire_mana to untap an adjacent Common unit.] [Unlike elves, dwarves don't let the computers do their thinkin' for 'em.]
-Golden Froth: 2/3p [Vulcania, Equipment, Liquor] [When played, gain ] [Beer is proof that God loves dwarves and wants them to be happy.]
-Dwarfsteel Battleaxe: 3p [Vulcania, Equipment, Weapon] [When played, assault 2.; If equipped to a Warrior, either:#Assault 3 instead.#Play another "Dwarfsteel Battleaxe" from hand and draw a card.] [Even dwarven battleaxes have beards...]
+Dragonbrew Reserve: 2/3p [Vulcania, Equipment, Liquor] [Engine.; Tap to spawn fire_mana.] [Spill a barrel of this stuff, and you'll learn a thing or two about dwarven hospitality.]
+Guinness Stout: 3/3p [Vulcania, Equipment, Liquor] [When played, also trigger the imbibe abilities of units adjacent to the equip target.] [Take one down and pass it around...]
 Pickaxe: 3p [Vulcania, Equipment, Weapon] [When played, assault 2.; If equipped to a Dwarf, untap an allied Mine.] [Instructions: Bang pointy end against rock. Repeat until arm tired.]
+Dwarfsteel Battleaxe: 3p [Vulcania, Equipment, Weapon] [When played, assault 2.; If equipped to a Warrior, you may play another "Dwarfsteel Battleaxe" from hand and draw a card.] [Even dwarven battleaxes have beards...]
 Volcano: 3p [Vulcania, Emplacement, Land] [Engine.; Tap to either:#Spawn fire_mana.#Expend X fire_mana to assault X and destroy this card.] []
 
 Dwarven Brawler: 3/4p [Vulcania, Dwarf, Warrior] [Imbibe to either:#Assault 1.#If paired, assault 2.#Play a "Dwarven Brawler" from your deck.] [If it's a fight yer lookin' fer, ye just found it.]
-Ritual Master: 2/4p [Vulcania, Dwarf, Cultist] [When played, either:#Summon a Common Cultist from your graveyard.#Make a Common allied Cultist stalwart.] [Let the flames purge the weakness of the flesh!]
-Guinness Stout: 4/4p [Vulcania, Equipment, Liquor] [When played, also trigger the imbibe abilities of units adjacent to the equip target.] [Take one down and pass it around...]
+Ritual Master: 4/4p [Vulcania, Dwarf, Cultist] [When played, either:#Expend fire_mana fire_mana to summon a Common Cultist from your graveyard.#Expend fire_mana fire_mana to make a Common allied Cultist stalwart.] [Let the flames purge the weakness of the flesh!]
 Coal Mine: 4p [Vulcania, Emplacement, Mine] [Tap and remove 1 counter to spawn fire_mana fire_mana.; This card untaps whenever an adjacent Dwarf is tapped.; Initial counters: 6. Max counters: 6.] [Hard work. Low pay.]
 
 Lost Dragon Egg: 1a 1/4p [Vulcania, Egg, Rare] [When you pass, gain 9 points.; This card starts in your graveyard.] [It's a long way back to the nest.]
-Immortal Dragon: 1a 4/4p [Vulcania, Dragon, Rare] [When played, you may either:#Destroy an allied Cultist to become stalwart.#Destroy an allied Warrior to assault 3.] [Kneel.]
+Secret Brew: 4/4p [Vulcania, Equipment, Liquor, Rare] [When played, trigger the equip target's imbibe ability an additional time.] [What'd you even put in this stuff?]
 Shorty's Axe: 4p [Vulcania, Equipment, Weapon, Rare] [When played, assault 4.; If equipped to "Shorty McGee", increase the assault by 1 for every Liquor card equipped to him.] [The one, the only.]
 
 Golden Dragon Egg: 1/5p [Vulcania, Egg, Rare] [Tap to destroy self and play a Dragon from your deck.] [Oooh, shiny!]
-Secret Brew: 4/5p [Vulcania, Equipment, Liquor, Rare] [When played, trigger the equip target's imbibe ability an additional time.] [What'd you even put in this stuff?]
-Swoop: 5p [Vulcania, Dragon, Tactic, Instinct, Rare] [When played, either:#Spawn fire_mana fire_mana and play a Common Dragon from your deck.#Expend fire_mana fire_mana and play a Dragon from your deck.] [Now you've made her mad!]
 Rite of Passage: 5p [Vulcania, Tactic, Instinct, Rare] [When played, spawn 6 fire_mana.; Whenever you play a Dragon, you may banish this card from your graveyard to purify a unit.] [If you survive...]
 Dwarven Spec Ops: 5p [Vulcania, Tactic, Rare] [When played, play a Dwarf from hand and draw a card.; All assaults are promoted to assassinations this turn.] [...so that his place shall never be with those cold and timid souls who knew neither victory nor defeat.]
 
 The Eggspert: 1/6p [Vulcania, Dwarf, Rare] [When played, either:#Play an Egg from your deck.#Expend 2X fire_mana to play X Egg cards from your graveyard.] [You mean you DON'T collect dragon eggs?]
 Pseudodragon: 1/6p [Vulcania, Dragon, Rare] [When played, you may expend fire_mana fire_mana to play a Common Liquor card from your graveyard and give it doomed.; Imbibe to lock a unit.] [It's basically a scaly red chihuahua.]
 Shorty McGee: 1/6p [Vulcania, Dwarf, Warrior, Rare] [When played, assault 2.; Imbibe to assault 2.] [Live by the axe...]
+Swoop: 6p [Vulcania, Dragon, Tactic, Instinct, Rare] [When played, either:#Spawn fire_mana fire_mana and play a Common Dragon from your deck.#Expend fire_mana fire_mana and play a Dragon from your deck.] [Now you've made her mad!]
 Gold Mine: 6p [Vulcania, Emplacement, Mine, Rare] [Tap and remove 1 counter to gain 2 points.; This card untaps whenever an adjacent Dwarf is tapped.; Initial counters: 6. Max counters: 6.] [Mine yer own business.]
 
 The Prospector: 2/7p [Vulcania, Dwarf, Rare] [Haste.; Tap and expend fire_mana fire_mana to play a Mine from your deck.; If haste was not used, you may play a Mine from your graveyard and give it doomed instead.] [I never knew a prospector that made a fortune who didn't blow it trying to make another.]
@@ -61,6 +60,7 @@ Ale of the Ancestors: 4/8p [Vulcania, Equipment, Liquor, Rare] [Echo.; When play
 Bloody Slash: 8p [Vulcania, Tactic, Instinct, Legendary] [When played, assault X where X is the power of the most powerful dragon you control.; Overkill X: Spawn X fire_mana.] [Might makes right.]
 
 Neromir, Warrior Dragon: 1a 4/9p [Vulcania, Dragon, Warrior, Legendary] [Haste.; Tap and expend X fire_mana to assault X.; Imbibe to untap this card.] [Look who woke up on the wrong side of the bed.]
+Immortal Dragon: 2a 6/9p [Vulcania, Dragon, Rare] [When played, you may either:#Destroy an allied Cultist to become stalwart.#Destroy an allied Warrior to assault 3.] [Kneel.]
 Scaly Feast: 9p [Vulcania, Tactic, Instinct, Legendary] [When played, trigger a separate assault 2 for each allied Dragon.] [It's a circle of life.]
 Mithril Mine: 9p [Vulcania, Emplacement, Mine, Legendary] [Tap and remove 1 counter to assault 2.; This card untaps whenever an adjacent Dwarf is tapped.; Initial counters: 4. Max counters: 4.] [The dwarves delved too greedily and too deep.]
 

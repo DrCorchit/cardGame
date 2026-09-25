@@ -15,6 +15,7 @@ Goblin Hunter: 1/3p [Avalon, Ogroid, Tribal] [When played, poison a unit.; Tap a
 Goblin Assassin: 1/3p [Avalon, Ogroid, Tribal] [When played, you may expend earth_mana water_mana to become invisible.; Tap to assault 3. If invisible, assassinate 3 instead.] [You're all out of luck.]
 Dryad Grovekeeper: 1/3p [Avalon, Nymph] [When played, spawn earth_mana earth_mana, water_mana water_mana, or air_mana air_mana.; Tap to repeat the "when played" ability.] [Nature always provides.]
 Treant Sage: 1a 1/3p [Avalon, Treant] [When played, gain 1 point for each Nature card in your graveyard.] [I think, therefore... hmmm...]
+Elven Lorekeeper: 2/3p [Avalon, Elf] [When played, gain 1 point for each allied Elf.] [According to an old legend...]
 Selkie: 2/3p [Avalon, Fairy] [When mulliganed, this card moves to your sideboard.; During your turn, you may expend water_mana water_mana to play this card from your sideboard.] [To stay on land past midnight would surely be her death.]
 Goblin Smitty: 1a 2/3p [Avalon, Ogroid, Tribal] [Tap and expend earth_mana earth_mana to play a Weapon from hand and draw a card.] [If you whistle while you work, you get fired.]
 Elven Guerilla: 2/3p [Avalon, Elf] [Engine.; Whenever an Elf enters the battlefield (including self), gain a counter.; Tap and remove X counters to assault X.; Maximum counters: 6.] [Did you hear something?]
@@ -28,7 +29,6 @@ Lightning Strike: 3p [Avalon, Tactic, Nature] [When played, assault 2.; You may 
 
 Ancient Hamadryad: 1/4p [Avalon, Nymph] [When played, play a Common Nature card from hand and draw a card.; Tap and expend earth_mana water_mana to become a protector and doomed.] [The forest will never die!]
 Heartwood Treant: 1a 4/4p [Avalon, Treant] [You must expend earth_mana earth_mana to tap this unit.; Tap to either:#Become stalwart.#Play a Common Nature card from hand and draw a card.] [Some people just can't see the forest for the trees.]
-Elven Lorekeeper: 3/4p [Avalon, Elf] [When played, gain 1 point for each allied Elf.] [According to an old legend...]
 Dwarven Hermit: 2a 4/4p [Avalon, Dwarf] [When you pass (diversity 5), become stalwart.] [You can take the Dwarf out of the volcano, but you can't take the volcano out of the dwarf.]
 #Centaur: 3/4p [Avalon, Beast] [When played, either:#Spawn air_mana air_mana air_mana. #Expend air_mana air_mana to assault 3.] [A centaur has a man-stomach and a horse-stomach. And of course both want breakfast.]
 Goblin Bow: 4p [Avalon, Equipment, Weapon] [When played, assault 2.; Tap to poison an enemy unit.] [You can pull out the arrow, but you can't suck out the poison.]
