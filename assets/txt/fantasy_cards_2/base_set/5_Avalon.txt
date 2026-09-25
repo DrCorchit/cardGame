@@ -2,7 +2,7 @@ Firefly: 1/2p [Avalon, Insectoid] [When played, spawn earth_mana water_mana.; Ta
 Fairy Ring: 1/2p [Avalon, Fairy] [Engine, Haste.; Tap to either:#Spawn earth_mana.#Purify an enemy unit and lock this card.] [Come dance with us!]
 Goblin Dancer: 1/2p [Avalon, Ogroid, Tribal] [Tap to gain 2 points for each adjacent unit.; This unit may be played between other units.] [You spin my head right round.]
 Tree Elf: 2/2p [Avalon, Elf] [Harmony: Gain 1 point.] [She knows every tree and calls them by name.]
-Elven Princess: 2/2p [Avalon, Elf] [When you pass (diversity X), gain X points.] [Most of them have at least three or four middle names.]
+Elven Princess: 2/2p [Avalon, Elf] [When played (diversity X), gain X points.] [Most of them have at least three or four middle names.]
 Elven Scout: 2/2p [Avalon, Elf] [When played, you may expend earth_mana to create an "Elven Archer" token.] [They don't always fire a warning shot.]
 Dryad Ranger: 3/2p [Avalon, Nymph] [When played, either:#Expend earth_mana and become stalwart.#Expend water_mana and purify a unit.#Expend air_mana and lock a unit.] [You ever feel like you're being watched?]
 Goblin Shaman: 2/2p [Avalon, Ogroid, Tribal] [When played, spawn earth_mana water_mana.; Tap to either:#Expend earth_mana and give a unit doomed.#Expend water_mana and give a unit immune.] [Double, double, toil and trouble!]
@@ -61,7 +61,7 @@ Anastasia, Wildshape: 2/8p [Avalon, Human, Mage, Legendary] [When played (divers
 Hurricane: 8p [Avalon, Tactic, Nature, Legendary] [When played, you may expend X air_mana to look at the top 2X cards from your deck. You may play any 2 of these cards.; Afterward, return the unplayed cards to your deck and shuffle.] [She's a-gonna blow!]
 
 Tarzan: 1/9p [Avalon, Human, Tribal, Legendary] [This card starts in your sideboard. During your turn, you may expend earth_mana earth_mana earth_mana to play Tarzan from your sideboard. Decrease this cost by 1 for each allied "Mountain Gorilla".; When played, assault 2.; Tap to return to your sideboard.] [AaaauuEiEiEiEiaaaahhhh!]
-Grandmother Autumn: 2/9p [Avalon, Fairy, Legendary] [When you pass (diversity X), gain X points.; During your turn (diversity 4), you may play this card from your graveyard and give it doomed.] [Behold, the season of fire and feast.]
+Grandmother Autumn: 2/9p [Avalon, Fairy, Legendary] [When played (diversity X), gain X points.; During your turn (diversity 4), you may play this card from your graveyard and give it doomed.] [Behold, the season of fire and feast.]
 Hamadriel: 2/9p [Avalon, Elf, Legendary] [When played, gain a counter for each allied Elf (including self).; Any number of times during your turn, you may remove X counters to assault X.; Max counters: 12.] [She likes humans. Most of all, she likes killing them.]
 Queen Titania: 2/9p [Avalon, Fairy, Regent, Legendary] [When played, play a Fairy from your deck.; If it was Common, play all copies instead.] [Hand in hand, with fairy grace, we will sing and bless this place.]
 #Treant King: 4/9p [Avalon, Treant, Regent, Legendary] [Haste.; Tap to play a "Harvest" from your deck.; If haste was not used, you may play a "Harvest" from your graveyard instead.] [My crown is called content, a crown that seldom kings enjoy.]

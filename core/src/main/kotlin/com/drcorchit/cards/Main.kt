@@ -178,6 +178,7 @@ class Main : ApplicationAdapter() {
         println("Armor Distribution:")
         units.groupBy { it.armor }
             .mapValues { it.value.size }
+            .toSortedMap()
             .forEach { (armor, count) ->
             println("$armor -> $count")
         }

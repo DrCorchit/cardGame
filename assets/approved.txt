@@ -4,9 +4,11 @@ Alice the Wonder
 Allmother
 Alpha Wolf
 Alraune
+Alucard
 Anastasia, Wildshape
 Ancient Hamadryad
 Android Replica
+Anne Bonny
 Anzia the Yeek
 Apothecary
 Apprentice
@@ -20,42 +22,70 @@ Artificer
 Artillery
 Assassin
 Autognome
+Baldr
 Bamboo Grove
 Barracuda
 Battering Ram
 Battery
+Beggar
+Berserker
 Bertcalf the Tall
+Big Bertha
+Big Daddy
+Billy Bones
 Bird of Victory
+Black Market
+Blackbeard
+Blackblood Marauder
 Blade Dancer
 Blistering Heatwave
 Blue-Eyed Fairy
 Bolases
 Bounty Hunter
+Broadside
 Bullfrog Army
+Bystander
 Caelo, Teenage Necromancer
 Caldera
 Capacitor
+Captain Flint
+Captain Fribley
+Carolina Buford
+Carronade
+Casimir, Blood Rival
 Cave Bear
 Cave Dragon
 Censorship
 Champion
 Cheerleader
 Cherubim Swarm
+Chester Zilch
 Chimney Sweep
 Clay Golem
 Cliffs
 Codex Veritas
+Constable
+Contract Kill
 Corruption
+Count Dracula, Final Form
+Cthulhu
 Cyborg Monk
 Cyborg Soldier
+Cynthia Beaumont
+Davy Jones
+Davy Jones’ Locker
+Debutante Ball
 Deckhand Fibber
 Desert
 Devastator
 Dhampir
 Dinghy
 Doco the Paladin
+Dracula, First Form
+Dracula’s Castle
 Dragonslayer Lance
 Drone Swarm
+Drunken Sailor
 Dryad Enchantress
 Dryad Grovekeeper
 Dryad Ranger
@@ -73,11 +103,13 @@ Elven Lorekeeper
 Elven Princess
 Elven Scout
 Elven Trailblazer
+Emissary
 Epocha, Harbinger
 Eriathorn, Gemini
 Excalibur
 Exhibitor
 Fairy Ring
+Fenrir
 Feral Werewolf
 Fireball
 Firefly
@@ -86,12 +118,14 @@ Flash Flood
 Flesh Golem
 Forest Defender
 Forest Fire
+Foundry
 Frankenstein’s Monster
 Fugg Raulner
 Gawain
 Genie
 Ghost
 Giant Turtle
+Gladys the Glorious
 Glass Dagger
 Goblin Assassin
 Goblin Bow
@@ -102,36 +136,59 @@ Goblin Hunter
 Goblin Shaman
 Goblin Smitty
 Goblin Warrior
+Gossip
 Grandmaster Smitty
 Grandmother Autumn
 Gravetender
 Graveyard
 Gray-Eyed Fairy
+Great White
 Green-Eyed Fairy
+Grim Reaper
 Grima, Goblin Hag Queen
 Guinevere
+Gungnir
 Halberd
 Hamadriel
 Hand Cannon
+Harpooner
 Harvest
 Haunted Armor
+Havoc Corsair
+Havoc Longboat
 Havoc Raider
+Havoc Vanguard
 Heartwood Treant
+Heimdall
+Hired Muscle
+Hitman
 Holy Crusader
 Homeland
+Howitzer
 Hurricane
+Hypnotist
+Hysteria
 Ifrit
 Incinerator
+Inspector Culso
+Intimidation
 Iriviel
 Jack Frost
+Jailbreak
+Joanna the Thrall
+Jolly Roger
+Jormungandir
 Journeyman
 Jungle
+Keel-Haul
 Kick it ‘til it Works
 King Arthur
 King Oberon
+Kraken
 Lady in Waiting
 Lady of the Lake
 Lancelot
+Landlady
 Landship
 Lava Lizard
 Left Arm
@@ -140,14 +197,19 @@ Library
 Lifegiving Rainfall
 Lightning Strike
 Logos, Oracle
+Loki
+Long John Silver
 Longshoreman Raider
+Lower the Boom
 Lutis the Mad
+Mafia Soldier
 Magma Defender
 Magnetron
 Magnum Opus
 Makeshift Bomb
 Manacles
 Manipulator Arm
+Maximillian, Slumlord
 Meezurk, Arisen
 Merlin
 Mermaid
@@ -155,26 +217,42 @@ Messenger
 Meteorite Strike
 Metronome
 Mimic
+Mjolnir
 Mobilization
+Moby Dick
+Molgrippe, Master Assassin
+Moomsh
+Moomsh Addict
+Moomsh Dealer
 Mountain
 Mountain Gorilla
 Multitool
 Naiad Grandmother
 Necromancy
+Neighborhood Bully
 Newtonia the White
+Night Watch
 Nightcrawler
+Nithing Pole
+Nosferatu
 Oasis
 Ocean
 Oceanid
 Octicia the Cunning
+Odin
 Omega Defender
 Ophanim
 Opusculum
 Orthos, Orchestrator
 Pack Wolf
+Pandemonium
 Paper Shuffler
+Phlegmtooth, Sewer Dragon
+Pickpocket
+Pillage
 Piranha Swarm
 Plexi Glass
+Pogrom
 Poltergeist
 Pond Naiad
 Power Surge
@@ -184,12 +262,15 @@ Prophecy
 Puck
 Puffball
 Pulverizer
+Pyromaniac
 Pyromaniaxe
 Pyros, Inquisitor
 Queen Aelwyn
+Queen Anne’s Revenge
 Queen Titania
 Queen of Hearts
 Radio
+Raj, Blood Rival
 Red-Eyed Fairy
 Regeneration Weave
 Research Fellow
@@ -198,22 +279,30 @@ Reverse Engineering
 Rhodango the Red
 Right Arm
 River Naiad
+Rock of Gibraltar
 Royal Decree
 Royal Envoy
 Royal Guard
 Royal Wyvern
 Rubber Duck
 Saboteur
+Saint Germain
 Samray the Swift
+Scarlet, Made Lady
 Schematic
+Schooner
 Scribe
 Selkie
 Seraphim
 Settlement
+Shipyard
+Shiv
 Shore Leave
 Shuramorn, Gemini
+Silver Sword
 Skeleton Key
 Slime
+Snitch
 Sojourn
 Solar Panel
 Sophos, Ordinator
@@ -222,15 +311,26 @@ Stealth Weave
 Steam Engine
 Steel Cuirass
 Storm Priest
+Street Thug
 Student
 Surrender
 Swamp
+Swapling
 System Reboot
 Takulev the Undying
+Talisman
 Tarzan
 Teknos, Grand Artificer
 Teleportation
+Terrence Beaumont
+Terror o’ the Seas
+The Butcher
+The Dollhouse
+The Flying Dutchman
 The Pied Piper
+The Quartermaster
+The White Cliffs
+Thor
 Thought Police
 Throne Defender
 Thunderstorm
@@ -240,14 +340,22 @@ Treant Sage
 Treant Sapling
 Treant Stalker
 Treant Wizard
+Treasure Galleon
+Treasure Hunter
 Tree Elf
 Treehomes
 Tutor
+Tyr
 Ultima, Prototype
 Undine
 Unicorn
 University
+Valhalla
+Vampire Aristocrat
 Vampire Nightmaster
+Vampiric Abomination
+Van Helsing
+Vigilante
 Viking Longship
 Viking Raider
 Viking Shieldmaiden
@@ -258,8 +366,12 @@ Vizimir the Golden
 Walk the Plank
 Warthog
 Werebat
+Witch Hunter
+Witness
 World’s Fair
 X Æ A-12
+Yalmamir, Prince of Crime
+Yarn-Spinner Calhoun
 Yellow-Eyed Fairy
 Yggdrasil
 Yorsig, Moomsh Monk
