@@ -10,6 +10,7 @@ import com.drcorchit.justice.utils.logging.Logger
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonParser
+import io.javalin.validation.Rule
 
 import java.io.File
 import java.io.FileNotFoundException
@@ -132,8 +133,13 @@ class Generator(val version: String, val inputDir: File, val outputDir: File) : 
             .appendBody()
             .save(File(Server.serviceDir, "index.html"))
 
+        Rules.appendHeader()
+            .appendTitle("h1")
+            .appendBody()
+            .save(File(Server.serviceDir, "rules.html"))
+
         ToC.appendHeader()
-            .appendElement("h1", "All That Glitters")
+            .appendElement("h1", "Wizard Wars")
             .appendTitle("h2")
             .appendBody()
             .save()

@@ -26,7 +26,6 @@ data class Keyword(
         val keywordsDictionary = mutableMapOf<String, Keyword>()
 
         init {
-            //TODO check for dupe syns?
             keywordsList.forEach {
                 keywordsDictionary.putIfAbsent(it.name.lowercase(), it)
                 it.synonyms.forEach { syn -> keywordsDictionary.putIfAbsent(syn.lowercase(), it) }

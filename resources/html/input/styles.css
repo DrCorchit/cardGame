@@ -1,11 +1,11 @@
 html { font-family: "Calibri"; color: #CCC; background-color: black; }
 body { margin: auto; max-width: 720px; }
-h1 { font-family: "Almendra Display"; font-size: 36pt; text-align: center; color: #cb0; margin: 20px 0; }
+h1 { font-family: "Aboreto"; font-size: 36pt; text-align: center; color: #cb0; margin: 20px 0; }
 h2, h3, h4, h5 { font-family: "Aboreto"; }
 h2 { font-size: 16pt; font-weight: normal; text-align: center; color: #cb0; margin: 15px 0 15px 0; }
 h3 { font-size: 24pt; text-align: center; color: #CB0; margin: 10px 0 10px 0 }
 h4 { margin-bottom: 5px; margin-top: 20px; color: #CCC; font-size: 20pt; }
-h5 { margin-bottom: 5px; margin-top: 20px; color: #AAA; font-size: 14pt; }
+h5 { margin-bottom: 5px; margin-top: 20px; color: #AAA; font-size: 16pt; }
 h4:after, h5:after {
     content:' ';
     display:block;
@@ -32,7 +32,7 @@ button.h5:hover:after {
   height: 20px;
 }
 
-li, p, a { font-size: 10pt; line-height: 100%; margin: 0 0 10px 0; }
+li, p, a { font-size: 14pt; line-height: 100%; margin: 0 0 10px 0; }
 blockquote { font-size: 9pt; line-height: 100)%; }
 ul, li { margin: 10px 0px 10px 0px; }
 a:link { color: #cb0 }
