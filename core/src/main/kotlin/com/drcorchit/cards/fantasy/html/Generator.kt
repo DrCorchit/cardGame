@@ -1,31 +1,24 @@
 package com.drcorchit.cards.fantasy.html
 
-import com.drcorchit.cards.utils.html.HasProperties
-import com.drcorchit.cards.utils.html.HtmlFile
-import com.drcorchit.cards.utils.html.Navigation
-import com.drcorchit.cards.utils.html.Server
-import com.drcorchit.cards.utils.html.Templatizer
+import com.drcorchit.cards.utils.html.*
+import com.drcorchit.justice.utils.IOUtils
 import com.drcorchit.justice.utils.StringUtils.normalize
+import com.drcorchit.justice.utils.Utils
 import com.drcorchit.justice.utils.logging.Logger
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonParser
-import io.javalin.validation.Rule
-
 import java.io.File
 import java.io.FileNotFoundException
+import java.io.IOException
+import java.nio.file.Files
+
 
 class Generator(val version: String, val inputDir: File, val outputDir: File) : HasProperties {
     val versionedOutputDir = File(outputDir, "version/$version")
     val imagesDir = File(outputDir, "images")
 
     val stringsFile = File(inputDir, "strings.json")
-
-    init {
-        println("> ${stringsFile.absoluteFile} ${stringsFile.exists()} <")
-        //C:\Users\drcor\IdeaProjects\CardGame\src\main\resources\html\input\strings.json
-        //C:\Users\drcor\IdeaProjects\CardGame\resources\html\input\strings.json
-    }
 
     val strings: Map<String, String> = stringsFile
         .readText()
@@ -74,7 +67,14 @@ class Generator(val version: String, val inputDir: File, val outputDir: File) : 
     }
 
     val chapters by lazy {
-        listOf<HtmlFile>()
+        listOf<HtmlFile>(
+            CardDatabase("Avalon"),
+            CardDatabase("Metropolis"),
+            CardDatabase("Thalassa"),
+            CardDatabase("Transylvania"),
+            CardDatabase("Vulcania"),
+            CardDatabase("Unaffiliated")
+        )
     }
 
     private val files by lazy { (appendices + chapters).associateBy { it.fileName } }
@@ -84,11 +84,18 @@ class Generator(val version: String, val inputDir: File, val outputDir: File) : 
         return files[key] ?: throw NoSuchElementException("No file named \"$file.html\"")
     }
 
+    fun copyFolder(src: File, dest: File) {
+        if (src.isDirectory) {
+            dest.mkdirs()
+            src.listFiles()?.forEach {
+                copyFolder(it, File(dest, it.name))
+            }
+        } else src.copyTo(dest, true)
+    }
+
     fun copyFiles() {
         imagesDir.mkdir()
-        File(inputDir, "images").listFiles()?.forEach {
-            it.copyTo(File(imagesDir, it.name), true)
-        }
+        copyFolder(File(inputDir, "images"), imagesDir)
         logger.info("Copied images")
 
         File(inputDir, "styles.css")
@@ -99,7 +106,7 @@ class Generator(val version: String, val inputDir: File, val outputDir: File) : 
     fun makeChapter(i: Int) {
         val nav = Navigation.forChapter(i)
         chapters[i - 1].appendHeader()
-            .appendElement("h2", "Chapter $i")
+            //.appendElement("h2", "Chapter $i")
             .appendTitle().append(nav)
             .appendBody().append(nav)
             .appendScripts()

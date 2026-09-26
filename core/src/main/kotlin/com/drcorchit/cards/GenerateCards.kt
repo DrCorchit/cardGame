@@ -5,8 +5,11 @@ import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.files.FileHandle
 import com.badlogic.gdx.graphics.Pixmap
 import com.badlogic.gdx.graphics.PixmapIO
+import com.drcorchit.cards.fantasy.FantasyCard
 import com.drcorchit.cards.graphics.Draw
 import com.drcorchit.cards.graphics.Drawable
+import com.drcorchit.justice.utils.StringUtils.normalize
+import com.google.gson.JsonArray
 import java.io.File
 import java.util.zip.Deflater
 
@@ -39,7 +42,21 @@ class GenerateCards : ApplicationAdapter() {
         val percent = (index + 1) * 100f / cards.size
         println("%.1f%% complete - %s".format(percent, card.name))
         index++
-        if (index >= cards.size) Gdx.app.exit()
+        if (index >= cards.size) {
+            cards.groupBy { it.city }
+                .forEach { city, cards ->
+                    val jsonArray = JsonArray()
+
+                    cards.forEach { card ->
+                        jsonArray.add(card.serialize())
+                    }
+
+                    val factionFile = File("assets/json/${city.name}.json")
+                    factionFile.writeText(jsonArray.toString())
+                }
+
+            Gdx.app.exit()
+        }
     }
 
     fun screenshot(card: Drawable, count: Int) {
@@ -48,6 +65,13 @@ class GenerateCards : ApplicationAdapter() {
             val path = "${card.outputLocation}_$i.png"
             val file = FileHandle(path)
             PixmapIO.writePNG(file, pixmap, Deflater.DEFAULT_COMPRESSION, true)
+        }
+
+        if (card is FantasyCard && !card.isToken) {
+            val faction = card.city.name
+            val cardName = card.name.normalize()
+            val htmlOutputLocation = FileHandle("resources/html/input/images/cards/$faction/$cardName.png")
+            PixmapIO.writePNG(htmlOutputLocation, pixmap, Deflater.DEFAULT_COMPRESSION, true)
         }
     }
 

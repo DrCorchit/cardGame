@@ -31,7 +31,7 @@ class Navigation(
 				.withClass("column-shrink")
 				.withContent(
 					HtmlObject("a")
-						.withAttribute("href", "phb_toc.html")
+						.withAttribute("href", "toc.html")
 						.withContent("Back to the Table of Contents")
 				)
 		)
