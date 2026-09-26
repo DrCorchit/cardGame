@@ -1,7 +1,7 @@
 package com.drcorchit.cards.lwjgl3;
 
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
-import com.drcorchit.cards.AIArtDownloader;
+import com.drcorchit.cards.utils.AIArtDownloader;
 
 /** Launches the desktop (LWJGL3) application. */
 public class AiArtLauncher {

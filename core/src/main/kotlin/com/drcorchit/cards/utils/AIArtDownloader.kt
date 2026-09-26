@@ -1,15 +1,16 @@
-package com.drcorchit.cards
+package com.drcorchit.cards.utils
 
 import com.badlogic.gdx.ApplicationAdapter
 import com.badlogic.gdx.Gdx
-import com.drcorchit.cards.AIUtils.createImage
-import com.drcorchit.cards.AIUtils.createImageForFantasyCard
-import com.drcorchit.cards.AIUtils.customPrompts
-import com.drcorchit.cards.AIUtils.model
-import com.drcorchit.cards.AIUtils.uniqueFile
-import com.drcorchit.cards.AIUtils.runs
-import com.drcorchit.cards.AIUtils.skipExistingCards
-import com.drcorchit.cards.AIUtils.style
+import com.drcorchit.cards.LocalAssets
+import com.drcorchit.cards.utils.AIUtils.createImage
+import com.drcorchit.cards.utils.AIUtils.createImageForFantasyCard
+import com.drcorchit.cards.utils.AIUtils.customPrompts
+import com.drcorchit.cards.utils.AIUtils.model
+import com.drcorchit.cards.utils.AIUtils.uniqueFile
+import com.drcorchit.cards.utils.AIUtils.runs
+import com.drcorchit.cards.utils.AIUtils.skipExistingCards
+import com.drcorchit.cards.utils.AIUtils.style
 import com.drcorchit.cards.fantasy.FantasyCards
 import com.drcorchit.cards.graphics.Draw
 import com.drcorchit.cards.space.SpaceCard
@@ -26,7 +27,7 @@ class AIArtDownloader : ApplicationAdapter() {
 
     override fun create() {
         Draw.batch
-        LocalAssets.getInstance().load()
+        LocalAssets.Companion.getInstance().load()
         //downloadFantasyCardArts()
         //downloadSpaceCardArts()
         //downloadRobots()

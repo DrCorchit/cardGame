@@ -2,7 +2,7 @@ package com.drcorchit.cards.graphics
 
 import com.badlogic.gdx.graphics.Color
 import com.badlogic.gdx.graphics.g2d.BitmapFont
-import com.drcorchit.cards.Keyword
+import com.drcorchit.cards.fantasy.Keyword
 import com.drcorchit.cards.fantasy.FantasyCard
 import com.drcorchit.cards.graphics.Textures.asSprite
 import com.drcorchit.justice.utils.StringUtils.normalize

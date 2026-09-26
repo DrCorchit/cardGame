@@ -1,4 +1,4 @@
-package com.drcorchit.cards
+package com.drcorchit.cards.utils
 
 import com.drcorchit.cards.fantasy.City
 import com.drcorchit.cards.fantasy.FantasyCard

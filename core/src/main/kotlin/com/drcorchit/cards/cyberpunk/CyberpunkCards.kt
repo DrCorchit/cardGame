@@ -1,6 +1,6 @@
 package com.drcorchit.cards.cyberpunk
 
-import com.drcorchit.cards.Utils.replaceQuotes
+import com.drcorchit.cards.utils.Utils.replaceQuotes
 import java.io.File
 
 class CyberpunkCards(path: String) {

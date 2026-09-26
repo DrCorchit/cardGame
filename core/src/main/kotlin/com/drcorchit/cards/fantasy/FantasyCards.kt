@@ -1,6 +1,6 @@
 package com.drcorchit.cards.fantasy
 
-import com.drcorchit.cards.Utils.replaceQuotes
+import com.drcorchit.cards.utils.Utils.replaceQuotes
 import java.io.File
 
 class FantasyCards(path: String, var imageRoot: String = "resources/images/fantasy_cards/cards/ChatGPT/Realistic/") {

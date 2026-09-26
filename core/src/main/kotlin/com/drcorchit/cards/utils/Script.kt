@@ -1,10 +1,11 @@
-package com.drcorchit.cards
+package com.drcorchit.cards.utils
 
 import com.drcorchit.justice.utils.json.JsonUtils.prettyPrint
 import com.drcorchit.justice.utils.json.JsonUtils.toJsonArray
 import com.google.gson.JsonObject
 import com.google.gson.JsonPrimitive
 import java.io.File
+import kotlin.text.get
 
 class Script {
     companion object {

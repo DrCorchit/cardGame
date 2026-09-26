@@ -1,4 +1,4 @@
-package com.drcorchit.cards
+package com.drcorchit.cards.fantasy
 
 import com.drcorchit.justice.utils.json.JsonUtils
 

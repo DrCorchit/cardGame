@@ -1,4 +1,4 @@
-package com.drcorchit.cards
+package com.drcorchit.cards.utils
 
 object Utils {
 
