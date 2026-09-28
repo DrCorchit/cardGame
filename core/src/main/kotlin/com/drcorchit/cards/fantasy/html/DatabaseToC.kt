@@ -4,19 +4,15 @@ import com.drcorchit.cards.fantasy.html.Generator.Companion.generator
 import com.drcorchit.cards.utils.html.HtmlFile
 import com.drcorchit.cards.utils.html.HtmlObject
 
-object ToC : HtmlFile("New Player's Guide", "toc.html", generator.inputDir) {
+object DatabaseToC : HtmlFile("Card Database", "database.html", generator.inputDir) {
 
 	override fun appendBody(): HtmlFile {
-		appendElement(
-			"p",
-			"This guide is designed for players new to Wizard Wars."
-		)
 		val list = HtmlObject("ol").withAll(
-			generator.cardDatabases.map { chapter ->
-				HtmlObject("li").withContent(chapter.linkTo())
+			generator.cardDatabases.map { database ->
+				HtmlObject("li").withContent(database.linkTo())
 					.withContent(
 						HtmlObject("ol").withAttribute("type", "i")
-							.withAll(chapter.subsections.map { subsection ->
+							.withAll(database.subsections.map { subsection ->
 								HtmlObject("li").withContent(subsection.linkTo())
 							})
 					)
@@ -28,7 +24,7 @@ object ToC : HtmlFile("New Player's Guide", "toc.html", generator.inputDir) {
 				HtmlObject("ol").withAttribute("type", "i")
 					.withAll(generator.loreEntries.map { HtmlObject("li").withContent(it.linkTo()) })
 			)
-		list.withContent(appendices)
+		//list.withContent(appendices)
 		append(list)
 		return this
 	}

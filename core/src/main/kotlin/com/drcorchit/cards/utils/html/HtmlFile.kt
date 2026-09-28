@@ -5,10 +5,10 @@ import com.drcorchit.justice.utils.logging.Logger
 import org.jsoup.Jsoup
 import java.io.File
 
-abstract class HtmlFile(val title: String, val fileName: String, val inputDir: File) :
+open class HtmlFile(val title: String, val fileName: String, val inputDir: File) :
 	HasProperties {
 	open val logger = Logger.getLogger(HtmlFile::class.java)
-	val outputFile = File(generator.versionedOutputDir, fileName)
+	val outputFile = File(generator.outputDir, fileName)
 	open val templatizer: Templatizer = generator.templatizer
 
 	val subsections = mutableListOf<Subsection>()

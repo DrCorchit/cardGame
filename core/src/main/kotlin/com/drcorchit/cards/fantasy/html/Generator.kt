@@ -59,7 +59,11 @@ class Generator(val version: String, val inputDir: File, val outputDir: File) : 
     }
 
     val loreEntries by lazy {
-        listOf<HtmlFile>()
+        val loreDir = File(inputDir, "lore")
+        loreDir.listFiles { it.extension == "html" }
+            ?.mapNotNull { file ->
+                HtmlFile(file.nameWithoutExtension, file.name, loreDir)
+            } ?: listOf()
     }
 
     val cardDatabases by lazy {
@@ -99,16 +103,17 @@ class Generator(val version: String, val inputDir: File, val outputDir: File) : 
         logger.info("Copied styles.css")
     }
 
-    fun makeChapter(i: Int) {
+    fun makeCardDatabase(i: Int) {
         val prev = if (i > 0) {
             cardDatabases[i - 1]
-        } else null
+        } else cardDatabases.last()
         val next = if (i < cardDatabases.size - 1) {
             cardDatabases[i + 1]
-        } else null
+        } else cardDatabases.first()
         val nav = Navigation(
-            prev?.let { it.title to it.fileName },
-            next?.let { it.title to it.fileName })
+            "Back to Database" to "database.html",
+            prev.let { it.title to it.fileName },
+            next.let { it.title to it.fileName })
 
         cardDatabases[i].appendHeader()
             //.appendElement("h2", "Chapter $i")
@@ -118,7 +123,7 @@ class Generator(val version: String, val inputDir: File, val outputDir: File) : 
             .save()
     }
 
-    fun makeAppendix(i: Int) {
+    fun makeLoreEntry(i: Int) {
         val prev = if (i > 0) {
             loreEntries[i - 1]
         } else null
@@ -126,6 +131,7 @@ class Generator(val version: String, val inputDir: File, val outputDir: File) : 
             loreEntries[i + 1]
         } else null
         val nav = Navigation(
+            "Back to Lore" to "lore.html",
             prev?.let { it.title to it.fileName },
             next?.let { it.title to it.fileName })
 
@@ -153,15 +159,28 @@ class Generator(val version: String, val inputDir: File, val outputDir: File) : 
             .appendBody()
             .save(File(Server.serviceDir, "rules.html"))
 
-        ToC.appendHeader()
+        LoreToC.appendHeader()
             .appendElement("h1", "Wizard Wars")
             .appendTitle("h2")
             .append(returnToIndex)
             .appendBody()
             .save()
 
-        for (i in cardDatabases.indices) makeChapter(i)
-        for (i in loreEntries.indices) makeAppendix(i)
+        DatabaseToC.appendHeader()
+            .appendElement("h1", "Wizard Wars")
+            .appendTitle("h2")
+            .append(returnToIndex)
+            .appendBody()
+            .save()
+
+        FAQs.appendHeader()
+            .appendTitle("h1")
+            .append(returnToIndex)
+            .appendBody()
+            .save(File(Server.serviceDir, "faqs.html"))
+
+        for (i in cardDatabases.indices) makeCardDatabase(i)
+        for (i in loreEntries.indices) makeLoreEntry(i)
     }
 
     override fun toString(): String {

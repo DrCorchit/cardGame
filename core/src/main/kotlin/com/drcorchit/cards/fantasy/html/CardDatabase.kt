@@ -6,7 +6,8 @@ import com.drcorchit.cards.utils.html.HtmlObject
 import java.io.File
 import java.util.*
 
-class CardDatabase(val factionName: String) : HtmlFile("$factionName Faction Cards", "$factionName.html", generator.inputDir) {
+class CardDatabase(val factionName: String) :
+    HtmlFile("$factionName Faction Cards", "$factionName.html", generator.inputDir) {
 
     val imageFolder = File(generator.inputDir, "images/cards/$factionName")
 
@@ -19,7 +20,7 @@ class CardDatabase(val factionName: String) : HtmlFile("$factionName Faction Car
                     mapOf(
                         "src" to "/images/cards/$factionName/${it.name}",
                         "alt" to it.nameWithoutExtension,
-                        "style" to "max-height: 500px; max-width: 500px;"
+                        "class" to "databaseImage"
                     )
                 )
             )
