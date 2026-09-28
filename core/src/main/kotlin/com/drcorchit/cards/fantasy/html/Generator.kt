@@ -1,17 +1,13 @@
 package com.drcorchit.cards.fantasy.html
 
 import com.drcorchit.cards.utils.html.*
-import com.drcorchit.justice.utils.IOUtils
 import com.drcorchit.justice.utils.StringUtils.normalize
-import com.drcorchit.justice.utils.Utils
 import com.drcorchit.justice.utils.logging.Logger
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonParser
 import java.io.File
 import java.io.FileNotFoundException
-import java.io.IOException
-import java.nio.file.Files
 
 
 class Generator(val version: String, val inputDir: File, val outputDir: File) : HasProperties {
@@ -62,11 +58,11 @@ class Generator(val version: String, val inputDir: File, val outputDir: File) : 
         deserializer = builder.create()
     }
 
-    val appendices by lazy {
+    val loreEntries by lazy {
         listOf<HtmlFile>()
     }
 
-    val chapters by lazy {
+    val cardDatabases by lazy {
         listOf<HtmlFile>(
             CardDatabase("Avalon"),
             CardDatabase("Metropolis"),
@@ -77,7 +73,7 @@ class Generator(val version: String, val inputDir: File, val outputDir: File) : 
         )
     }
 
-    private val files by lazy { (appendices + chapters).associateBy { it.fileName } }
+    private val files by lazy { (loreEntries + cardDatabases).associateBy { it.fileName } }
 
     fun lookupFile(file: String): HtmlFile {
         val key = file.normalize() + ".html"
@@ -104,8 +100,17 @@ class Generator(val version: String, val inputDir: File, val outputDir: File) : 
     }
 
     fun makeChapter(i: Int) {
-        val nav = Navigation.forChapter(i)
-        chapters[i - 1].appendHeader()
+        val prev = if (i > 0) {
+            cardDatabases[i - 1]
+        } else null
+        val next = if (i < cardDatabases.size - 1) {
+            cardDatabases[i + 1]
+        } else null
+        val nav = Navigation(
+            prev?.let { it.title to it.fileName },
+            next?.let { it.title to it.fileName })
+
+        cardDatabases[i].appendHeader()
             //.appendElement("h2", "Chapter $i")
             .appendTitle().append(nav)
             .appendBody().append(nav)
@@ -115,16 +120,16 @@ class Generator(val version: String, val inputDir: File, val outputDir: File) : 
 
     fun makeAppendix(i: Int) {
         val prev = if (i > 0) {
-            appendices[i - 1]
+            loreEntries[i - 1]
         } else null
-        val next = if (i < appendices.size - 1) {
-            appendices[i + 1]
+        val next = if (i < loreEntries.size - 1) {
+            loreEntries[i + 1]
         } else null
         val nav = Navigation(
             prev?.let { it.title to it.fileName },
             next?.let { it.title to it.fileName })
 
-        appendices[i]
+        loreEntries[i]
             .appendHeader()
             .appendTitle().append(nav)
             .appendBody().append(nav)
@@ -135,6 +140,8 @@ class Generator(val version: String, val inputDir: File, val outputDir: File) : 
     fun generate() {
         copyFiles()
 
+        val returnToIndex = Navigation()
+
         Index.appendHeader()
             .appendTitle("h1")
             .appendBody()
@@ -142,17 +149,19 @@ class Generator(val version: String, val inputDir: File, val outputDir: File) : 
 
         Rules.appendHeader()
             .appendTitle("h1")
+            .append(returnToIndex)
             .appendBody()
             .save(File(Server.serviceDir, "rules.html"))
 
         ToC.appendHeader()
             .appendElement("h1", "Wizard Wars")
             .appendTitle("h2")
+            .append(returnToIndex)
             .appendBody()
             .save()
 
-        for (i in 1..chapters.size) makeChapter(i)
-        for (i in appendices.indices) makeAppendix(i)
+        for (i in cardDatabases.indices) makeChapter(i)
+        for (i in loreEntries.indices) makeAppendix(i)
     }
 
     override fun toString(): String {

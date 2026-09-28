@@ -3,8 +3,8 @@ package com.drcorchit.cards.utils.html
 import com.drcorchit.cards.fantasy.html.Generator.Companion.generator
 
 class Navigation(
-	val prev: Pair<String, String>?,
-	val next: Pair<String, String>?
+	val prev: Pair<String, String>? = null,
+	val next: Pair<String, String>? = null
 ) : Renderable {
 
 	override fun render(): String {
@@ -54,7 +54,7 @@ class Navigation(
 
 	companion object {
 		fun forChapter(i: Int): Navigation {
-			val max = generator.chapters.size
+			val max = generator.cardDatabases.size
 			val prev = if (i > 1) {
 				"Retreat to Chapter ${i - 1}" to "c${i - 1}.html"
 			} else null

@@ -10,10 +10,6 @@ class CardDatabase(val factionName: String) : HtmlFile("$factionName Faction Car
 
     val imageFolder = File(generator.inputDir, "images/cards/$factionName")
 
-    init {
-        println("imageFolder: ${imageFolder.absolutePath}")
-    }
-
     val cards = imageFolder.listFiles { file -> file.extension == "png" }!!
 
     override fun appendBody(): HtmlFile {

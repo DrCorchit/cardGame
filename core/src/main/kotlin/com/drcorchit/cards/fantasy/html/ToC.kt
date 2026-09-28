@@ -12,7 +12,7 @@ object ToC : HtmlFile("New Player's Guide", "toc.html", generator.inputDir) {
 			"This guide is designed for players new to Wizard Wars."
 		)
 		val list = HtmlObject("ol").withAll(
-			generator.chapters.map { chapter ->
+			generator.cardDatabases.map { chapter ->
 				HtmlObject("li").withContent(chapter.linkTo())
 					.withContent(
 						HtmlObject("ol").withAttribute("type", "i")
@@ -26,7 +26,7 @@ object ToC : HtmlFile("New Player's Guide", "toc.html", generator.inputDir) {
 		val appendices = HtmlObject("li").withContent("Appendices")
 			.withContent(
 				HtmlObject("ol").withAttribute("type", "i")
-					.withAll(generator.appendices.map { HtmlObject("li").withContent(it.linkTo()) })
+					.withAll(generator.loreEntries.map { HtmlObject("li").withContent(it.linkTo()) })
 			)
 		list.withContent(appendices)
 		append(list)
