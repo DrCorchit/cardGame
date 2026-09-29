@@ -1,11 +1,10 @@
 package com.drcorchit.cards.fantasy.html
 
 import com.drcorchit.cards.fantasy.Keyword
-import com.drcorchit.cards.fantasy.html.Generator.Companion.generator
 import com.drcorchit.cards.utils.html.HtmlFile
 import com.drcorchit.cards.utils.html.HtmlObject
 
-object Rules : HtmlFile("Wizard Wars Rules", "rules.html", generator.inputDir) {
+object Rules : HtmlFile("Wizard Wars Rules", "rules.html") {
     override fun appendBody(): Rules {
         super.appendBody()
 

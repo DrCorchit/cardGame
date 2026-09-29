@@ -62,7 +62,7 @@ class Generator(val version: String, val inputDir: File, val outputDir: File) : 
         val loreDir = File(inputDir, "lore")
         loreDir.listFiles { it.extension == "html" }
             ?.mapNotNull { file ->
-                HtmlFile(file.nameWithoutExtension, file.name, loreDir)
+                HtmlFile(file.nameWithoutExtension, file, File(outputDir, "lore/${file.name}"))
             } ?: listOf()
     }
 
@@ -77,7 +77,7 @@ class Generator(val version: String, val inputDir: File, val outputDir: File) : 
         )
     }
 
-    private val files by lazy { (loreEntries + cardDatabases).associateBy { it.fileName } }
+    private val files by lazy { (loreEntries + cardDatabases).associateBy { it.inputFile.name } }
 
     fun lookupFile(file: String): HtmlFile {
         val key = file.normalize() + ".html"
@@ -111,9 +111,9 @@ class Generator(val version: String, val inputDir: File, val outputDir: File) : 
             cardDatabases[i + 1]
         } else cardDatabases.first()
         val nav = Navigation(
-            "Back to Database" to "database.html",
-            prev.let { it.title to it.fileName },
-            next.let { it.title to it.fileName })
+            "Back to Database" to "/database.html",
+            prev.let { it.title to it.outputRelativePath },
+            next.let { it.title to it.outputRelativePath })
 
         cardDatabases[i].appendHeader()
             //.appendElement("h2", "Chapter $i")
@@ -131,9 +131,9 @@ class Generator(val version: String, val inputDir: File, val outputDir: File) : 
             loreEntries[i + 1]
         } else null
         val nav = Navigation(
-            "Back to Lore" to "lore.html",
-            prev?.let { it.title to it.fileName },
-            next?.let { it.title to it.fileName })
+            "Back to Lore" to "/lore.html",
+            prev?.let { it.title to it.outputRelativePath },
+            next?.let { it.title to it.outputRelativePath })
 
         loreEntries[i]
             .appendHeader()

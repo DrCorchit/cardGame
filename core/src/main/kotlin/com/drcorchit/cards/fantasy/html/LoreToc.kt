@@ -4,7 +4,7 @@ import com.drcorchit.cards.fantasy.html.Generator.Companion.generator
 import com.drcorchit.cards.utils.html.HtmlFile
 import com.drcorchit.cards.utils.html.HtmlObject
 
-object LoreToC : HtmlFile("Lore Database", "lore.html", generator.inputDir) {
+object LoreToC : HtmlFile("Lore Database", "lore.html") {
 
     override fun appendBody(): HtmlFile {
         val list = HtmlObject("ol").withAll(

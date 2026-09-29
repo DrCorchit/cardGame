@@ -1,127 +1,138 @@
 package com.drcorchit.cards.utils.html
+
 import com.drcorchit.cards.fantasy.html.Generator.Companion.generator
 import com.drcorchit.justice.utils.StringUtils.normalize
 import com.drcorchit.justice.utils.logging.Logger
 import org.jsoup.Jsoup
 import java.io.File
 
-open class HtmlFile(val title: String, val fileName: String, val inputDir: File) :
-	HasProperties {
-	open val logger = Logger.getLogger(HtmlFile::class.java)
-	val outputFile = File(generator.outputDir, fileName)
-	open val templatizer: Templatizer = generator.templatizer
+open class HtmlFile(
+    val title: String,
+    val inputFile: File,
+    val outputFile: File = File(generator.outputDir, inputFile.name)
+) :
+    HasProperties {
 
-	val subsections = mutableListOf<Subsection>()
-	val head = HtmlObject("head").withContent(HtmlObject("title").withContent(title))
-	val body = HtmlObject("body")
-	open val scripts = listOf<String>()
+    constructor(title: String, inputFile: String) : this(title, File(generator.inputDir, inputFile))
 
-	fun linkTo(text: String = title): HtmlObject {
-		return HtmlObject("a").withAttribute("href", fileName)
-			.withContent(text)
-	}
+    open val logger = Logger.getLogger(HtmlFile::class.java)
 
-	fun addSubsection(title: String, link: String = title.normalize()): HtmlFile {
-		val index = subsections.size + 1
-		subsections.add(FileSubsection(this, title, link, index.toString()))
-		return this
-	}
+    //val outputFile = File(generator.outputDir, fileName)
+    open val templatizer: Templatizer = generator.templatizer
 
-	fun getOutline(): HtmlObject {
-		val list = HtmlObject("ol")
-		subsections.forEach { list.withContent(HtmlObject("li").withContent(it.linkTo())) }
-		return list
-	}
+    val subsections = mutableListOf<Subsection>()
+    val head = HtmlObject("head").withContent(HtmlObject("title").withContent(title))
+    val body = HtmlObject("body")
+    open val scripts = listOf<String>()
 
-	fun appendSubsection(subsection: Subsection) {
-		append(subsection.makeHeader())
-		append(subsection)
-	}
+    val outputRelativePath = "/" + outputFile.relativeTo(generator.outputDir).path
 
-	fun append(renderable: Renderable): HtmlFile {
-		body.withContent(renderable)
-		return this
-	}
+    fun linkTo(text: String = title): HtmlObject {
+        return HtmlObject("a").withAttribute("href", outputRelativePath)
+            .withContent(text)
+    }
 
-	fun append(string: String): HtmlFile {
-		body.withContent(string)
-		return this
-	}
+    fun addSubsection(title: String, link: String = title.normalize()): HtmlFile {
+        val index = subsections.size + 1
+        subsections.add(FileSubsection(this, title, link, index.toString()))
+        return this
+    }
 
-	fun appendElement(tag: String, text: String): HtmlFile {
-		return append(HtmlObject(tag).withContent(text))
-	}
+    fun getOutline(): HtmlObject {
+        val list = HtmlObject("ol")
+        subsections.forEach { list.withContent(HtmlObject("li").withContent(it.linkTo())) }
+        return list
+    }
 
-	fun appendTitle(tag: String = "h3"): HtmlFile {
-		return appendElement(tag, title)
-	}
+    fun appendSubsection(subsection: Subsection) {
+        append(subsection.makeHeader())
+        append(subsection)
+    }
 
-	open fun appendHeader(): HtmlFile {
-		head.withContent(Header)
-		return this
-	}
+    fun append(renderable: Renderable): HtmlFile {
+        body.withContent(renderable)
+        return this
+    }
 
-	open fun appendBody(): HtmlFile {
-		if (subsections.isEmpty()) {
-			append(File(inputDir, fileName).readText())
-		} else {
-			//append(getOutline())
-			subsections.forEach { appendSubsection(it) }
-		}
-		return this
-	}
+    fun append(string: String): HtmlFile {
+        body.withContent(string)
+        return this
+    }
 
-	fun appendScripts(): HtmlFile {
-		if (scripts.isNotEmpty()) {
-			val script = HtmlObject("script")
-				.withAll(scripts.map { JSFile(it) })
-			append(script)
-		}
-		return this
-	}
+    fun appendElement(tag: String, text: String): HtmlFile {
+        return append(HtmlObject(tag).withContent(text))
+    }
 
-	fun render(): String {
-		logger.debug("Rendering $fileName")
-		return "<!DOCTYPE html>\n" + HtmlObject("html")
-			.withAttribute("lang", "en")
-			.withContent(head)
-			.withContent(body)
-			.render()
-			.let {
-				try {
-					templatizer.replace(it)
-				} catch (e: Exception) {
-					throw IllegalArgumentException("Error templatizing file: $outputFile", e)
-				}
-			}
-	}
+    fun appendTitle(tag: String = "h3"): HtmlFile {
+        return appendElement(tag, title)
+    }
 
-	fun save(outputFile: File = this.outputFile) {
-		val content = render()
-		val parsed = Jsoup.parse(content)
-		val pretty = parsed.toString()
+    open fun appendHeader(): HtmlFile {
+        head.withContent(Header)
+        return this
+    }
 
-		outputFile.parentFile.mkdirs()
-		val new = outputFile.createNewFile()
-		outputFile.writeText(pretty)
-		if (new) logger.debug("Created file $outputFile")
-		else logger.debug("Wrote file $outputFile")
-	}
+    open fun appendBody(): HtmlFile {
+        if (subsections.isEmpty()) {
+            append(inputFile.readText())
+        } else {
+            //append(getOutline())
+            subsections.forEach { appendSubsection(it) }
+        }
+        return this
+    }
 
-	override fun getProperty(property: String): Any? {
-		return when (property) {
-			"title" -> title
-			"sections" -> object : HasProperties {
-				override fun getProperty(property: String): Any {
-					return subsections[property.toInt()]
-				}
-			}
+    fun appendScripts(): HtmlFile {
+        if (scripts.isNotEmpty()) {
+            val script = HtmlObject("script")
+                .withAll(scripts.map { JSFile(it) })
+            append(script)
+        }
+        return this
+    }
 
-			else -> null
-		}
-	}
+    fun render(): String {
+        logger.debug("Rendering $this")
+        return "<!DOCTYPE html>\n" + HtmlObject("html")
+            .withAttribute("lang", "en")
+            .withContent(head)
+            .withContent(body)
+            .render()
+            .let {
+                try {
+                    templatizer.replace(it)
+                } catch (e: Exception) {
+                    throw IllegalArgumentException("Error templatizing file: $outputFile", e)
+                }
+            }
+    }
 
-	override fun toString(): String {
-		return "$inputDir/$fileName -> $title"
-	}
+    fun save(outputFile: File = this.outputFile) {
+        val content = render()
+        val parsed = Jsoup.parse(content)
+        val pretty = parsed.toString()
+
+        outputFile.parentFile.mkdirs()
+        val new = outputFile.createNewFile()
+        outputFile.writeText(pretty)
+        if (new) logger.debug("Created file $outputFile")
+        else logger.debug("Wrote file $outputFile")
+    }
+
+    override fun getProperty(property: String): Any? {
+        return when (property) {
+            "title" -> title
+            "sections" -> object : HasProperties {
+                override fun getProperty(property: String): Any {
+                    return subsections[property.toInt()]
+                }
+            }
+
+            else -> null
+        }
+    }
+
+    override fun toString(): String {
+        return "$inputFile -> $title"
+    }
 }
