@@ -93,18 +93,37 @@ open class HtmlFile(
 
     fun render(): String {
         logger.debug("Rendering $this")
-        return "<!DOCTYPE html>\n" + HtmlObject("html")
-            .withAttribute("lang", "en")
-            .withContent(head)
-            .withContent(body)
-            .render()
-            .let {
-                try {
-                    templatizer.replace(it)
-                } catch (e: Exception) {
-                    throw IllegalArgumentException("Error templatizing file: $outputFile", e)
+        val html = HtmlObject("html")
+
+//        if (generator.backgroundImage != null) {
+//            html.withAttribute(
+//                "style",
+//                "background-image: url('${generator.backgroundImage}.png');" +
+//                    "background-repeat: no-repeat;" +
+//                    "background-attachment: fixed;" +
+//                    "background-position: center;"
+//            )
+//        }
+
+        return "<!DOCTYPE html>\n" +
+            html.withAttribute("lang", "en")
+                .withContent(head)
+                .withContent(body)
+                .withAttribute(
+                    "style",
+                    "background-image: url('${generator.backgroundImage}');" +
+                        "background-repeat: no-repeat;" +
+                        "background-attachment: fixed;" +
+                        "background-position: center;"
+                )
+                .render()
+                .let {
+                    try {
+                        templatizer.replace(it)
+                    } catch (e: Exception) {
+                        throw IllegalArgumentException("Error templatizing file: $outputFile", e)
+                    }
                 }
-            }
     }
 
     fun save(outputFile: File = this.outputFile) {

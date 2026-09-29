@@ -13,6 +13,7 @@ import java.io.FileNotFoundException
 class Generator(val version: String, val inputDir: File, val outputDir: File) : HasProperties {
     val versionedOutputDir = File(outputDir, "version/$version")
     val imagesDir = File(outputDir, "images")
+    var backgroundImage: String? = "/images/backdrop.png"
 
     val stringsFile = File(inputDir, "strings.json")
 
@@ -148,7 +149,8 @@ class Generator(val version: String, val inputDir: File, val outputDir: File) : 
 
         val returnToIndex = Navigation()
 
-        Index.appendHeader()
+        Index
+            .appendHeader()
             .appendTitle("h1")
             .appendBody()
             .save(File(Server.serviceDir, "index.html"))

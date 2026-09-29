@@ -1,5 +1,6 @@
 package com.drcorchit.cards.fantasy.html
 
+import com.drcorchit.cards.fantasy.FantasyCard
 import com.drcorchit.cards.fantasy.Rarity
 import com.drcorchit.cards.fantasy.html.Generator.Companion.generator
 import com.drcorchit.cards.utils.html.HtmlFile
@@ -22,6 +23,10 @@ class CardDatabase(val factionName: String) :
     override fun appendBody(): HtmlFile {
         body.withContent(HtmlObject("h2").withContent("Hover a card to enlarge."))
         cards.map { it.asJsonObject }
+            .filter {
+                !it.getAsJsonArray("tags")
+                    .map { tag -> tag.asString }.contains("Token")
+            }
             .groupBy {
                 it.getAsJsonArray("tags")
                     .firstNotNullOfOrNull { tag ->
