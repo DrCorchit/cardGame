@@ -19,8 +19,8 @@ apply plugin: 'org.jetbrains.kotlin.jvm'
 
 import io.github.fourlastor.construo.Target
 
-sourceSets.main.resources.srcDirs += [ rootProject.file('assets').path ]
-mainClassName = 'com.drcorchit.cards.lwjgl3.Lwjgl3Launcher'
+//sourceSets.main.resources.srcDirs += [ rootProject.file('assets').path ]
+mainClassName = 'com.drcorchit.cards.lwjgl3.DisplayCardsLauncher'
 application.setMainClass(mainClassName)
 eclipse.project.name = appName + '-lwjgl3'
 java.sourceCompatibility = 11
@@ -46,7 +46,7 @@ dependencies {
 def os = System.properties['os.name'].toLowerCase()
 
 run {
-  workingDir = rootProject.file('assets').path
+  workingDir = rootProject.file('/').path
   setIgnoreExitValue(true)
 
   if (os.contains('mac')) jvmArgs += "-XstartOnFirstThread"

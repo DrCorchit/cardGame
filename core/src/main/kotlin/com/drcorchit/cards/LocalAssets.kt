@@ -25,7 +25,7 @@ class LocalAssets {
     private val localFonts = HashMap<String, BitmapFont>()
 
     fun loadSprite(sprite: File) {
-        val key = sprite.name.lowercase(Locale.getDefault())
+        val key = sprite.name.lowercase()
         //val value = create(sprite.path)
         val oldFile = localTextures.put(key, sprite)
         unusedTextures[key] = sprite
@@ -73,15 +73,15 @@ class LocalAssets {
 
     fun create(name: String): Texture {
         val key = name.lowercase(Locale.getDefault())
-        if (textureCache[key] != null) return textureCache[key]!!
+        return textureCache[key] ?: run {
+            val file = localTextures[key]!!.path
+            val output = Texture(Gdx.files.internal(file), true)
+            output.setFilter(Texture.TextureFilter.MipMap, Texture.TextureFilter.Linear)
 
-        val file = localTextures[key]!!.path
-        val output = Texture(Gdx.files.internal(file), true)
-        output.setFilter(Texture.TextureFilter.MipMap, Texture.TextureFilter.Linear)
-
-        unusedTextures.remove(key)
-        textureCache[file] = output
-        return output
+            unusedTextures.remove(key)
+            textureCache[file] = output
+            return output
+        }
     }
 
     fun create(px: Pixmap?): Texture {
