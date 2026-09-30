@@ -1,6 +1,5 @@
 package com.drcorchit.cards.fantasy.html
 
-import com.drcorchit.cards.fantasy.FantasyCard
 import com.drcorchit.cards.fantasy.Rarity
 import com.drcorchit.cards.fantasy.html.Generator.Companion.generator
 import com.drcorchit.cards.utils.html.HtmlFile

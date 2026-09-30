@@ -2,17 +2,17 @@ Alice the Wonder: 1/13p [Legendary, Human, Mage, Leader] [This card starts in yo
 
 Anzia the Yeek: 4/12p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; When played, purify a card.; Tap to lock a card.] [The rumors about her are mostly true, I'm afraid.]
 
-Bertcalf the Tall: 8/12p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; When played, become invisible.] [A penny saved is a moment wasted.]
+Bertcalf the Tall: 8/12p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; When played, become invisible.] [He's afraid of his own shadow. With good reason.]
 
 Lutis the Mad: 1/14p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; When played, assault 5.; Overkill 1: Additionally banish the targeted unit.] [Downing a fifth of vodka, he and his favorite plane of reality disappeared for millennia.]
 
-Newtonia the White: 3/13p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; Tap to play a Common card from your hand and draw a card.] [Act like a pawn, and you will be treated as such.]
+Newtonia the White: 3/13p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; Tap to play a Common card from your hand and draw a card.] [Her quest for perfection has lead to her being trapped in the body of a doll. It's a long story.]
 
-Octicia the Cunning: 2/14p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. During your turn, you may remove a counter to assassinate 1.; When all counters are used up, summon Octicia from your sideboard.; Initial counters: 3.] [I know what makes you squirm.]
+Octicia the Cunning: 2/14p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. During your turn, you may remove a counter to assassinate 1.; When all counters are used up, summon Octicia from your sideboard.; Initial counters: 3.] [I'll find out what makes you squirm.]
 
 Rhodango the Red: 4/12p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; When played, become stalwart.] [Alone? But I have so many friends: wisdom, silence, solitude, peace of mind... ]
 
-Samray the Swift: 5/12p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; When played, draw three cards, then place three cards from your hand at the top of your deck in any order.] [Whatever you require in others, require in yourself first.]
+Samray the Swift: 5/12p [Legendary, Human, Mage, Leader] [This card starts in your sideboard. You may play this card from your sideboard during your turn.; When played, draw three cards, then place three cards from your hand at the top of your deck in any order.] [Sometimes, there's no middle ground between being the hero and the villain.]
 
 Takulev the Undying: 4/14p [Legendary, Undead, Mage, Leader] [Disloyal.; This card starts in your sideboard. You may play this card from your sideboard during your turn.; When played, play a unit from your graveyard.] [I still breathe — purely out of habit, of course.]
 
