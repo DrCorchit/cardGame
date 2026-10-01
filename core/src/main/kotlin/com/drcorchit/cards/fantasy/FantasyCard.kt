@@ -120,11 +120,10 @@ class FantasyCard(
 
     val keywordTextY = if (compactKeywordTextArea) Companion.keywordTextY else keywordTextNoQuoteY
 
-    //We sort by rarity so we can auto add cards when using the MakePlayingCards.com website
     override val outputLocation =
         "resources/images/temporary/cards/${city.name.normalize()}/${name.normalize()}"
 
-    override val multiplicity = if (rarity == Rarity.Common) 2 else 1
+    override val multiplicity = if (isToken) 6 else if (rarity == Rarity.Common) 2 else 1
 
     constructor(json: JsonObject, cards: FantasyCards) : this(
         cards,

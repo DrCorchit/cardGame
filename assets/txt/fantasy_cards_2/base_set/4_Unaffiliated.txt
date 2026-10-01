@@ -2,7 +2,7 @@ Mimic: 1a 1/2p [Monster] [Tap to replicate a Common allied unit's "when played" 
 Apothecary: 2/2p [Human] [When played, purify a unit.] [An ounce of prevention is worth a pound of cure.]
 Squirrel: 2/2p [Beast] [When played, banish a card from your opponent's graveyard.] [Just one badass squirrel. Nothing more, nothing less.]
 Pack Wolf: 1a 2/2p [Beast] [When played while paired, assault 2.] [Nice doggy...]
-Ghost: 2/2p [Undead] [When played, become invisible.] [Boo!]
+#Ghost: 2/2p [Undead] [When played, become invisible.] [Boo!]
 #Icicle: 2p [Tactic, Spell] [When played, either:#Spawn water_mana and lock a unit.#Expend water_mana to assault 2.] [You'll shoot your eye out!]
 #Escaped Convict: 3/2p [Human] [At allied turn start, gain 1 point and bounty 1.] [Nowhere to run, nowhere to hide.]
 Zombie: 3/2p [Undead] [When played, summon another "Zombie" from your graveyard.] [This is me when I wake up in the morning.]

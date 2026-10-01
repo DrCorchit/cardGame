@@ -7,25 +7,31 @@ import com.drcorchit.cards.utils.html.HtmlObject
 object LoreToC : HtmlFile("Lore Database", "lore.html") {
 
     override fun appendBody(): HtmlFile {
-        val list = HtmlObject("ol").withAll(
-            generator.loreEntries.map { database ->
-                HtmlObject("li").withContent(database.linkTo())
-                    .withContent(
-                        HtmlObject("ol").withAttribute("type", "i")
-                            .withAll(database.subsections.map { subsection ->
-                                HtmlObject("li").withContent(subsection.linkTo())
-                            })
-                    )
-            }
+
+        super.appendBody()
+
+        fun loreToEntry(lore: HtmlFile): HtmlObject {
+            return HtmlObject("li").withContent(lore.linkTo())
+                .withContent(
+                    HtmlObject("ol").withAttribute("type", "i")
+                        .withAll(lore.subsections.map { subsection ->
+                            HtmlObject("li").withContent(subsection.linkTo())
+                        })
+                )
+        }
+
+        val list1 = HtmlObject("ol").withAll(
+            generator.leaderLoreEntries.map { loreToEntry(it) }
         )
 
-        val appendices = HtmlObject("li").withContent("Appendices")
-            .withContent(
-                HtmlObject("ol").withAttribute("type", "i")
-                    .withAll(generator.loreEntries.map { HtmlObject("li").withContent(it.linkTo()) })
-            )
-        //list.withContent(appendices)
-        append(list)
+        val list2 = HtmlObject("ol").withAll(
+            generator.factionLoreEntries.map { loreToEntry(it) }
+        )
+
+        append(HtmlObject("h4").withContent("Leader Stories"))
+        append(list1)
+        append(HtmlObject("h4").withContent("Faction Timelines"))
+        append(list2)
         return this
     }
 }

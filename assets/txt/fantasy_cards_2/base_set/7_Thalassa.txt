@@ -14,7 +14,7 @@ Jolly Roger: 3/2p [Thalassa, Equipment, Warfare] [Tap to either:#If equipped to 
 
 Havoc Vanguard: 2/3p [Thalassa, Human, Pirate] [When discarded, summon self.] [Me first!]
 Schooner: 2/3p [Thalassa, Ship] [Plunder 5.] [Ships are a great place to keep all your drunken sailors.]
-Harpooner: 2/3p [Thalassa, Human, Pirate] [Tap to assault 2.; Increase the damage by 1 for each adjacent Ship.; This unit may be played between other units.] [Do you get my thrust?]
+Harpooner: 2/3p [Thalassa, Human, Pirate] [Tap to assault 2.; Increase the damage by 1 for each adjacent Ship.; This unit may be played between other cards.] [Do you get my thrust?]
 #Frigate: 3/3p [Thalassa, Ship] [Whenever you overkill X, gain X points.; Plunder 2.] [This bad boy can fit so many cannons on it.]
 Great White: 3/3p [Thalassa, Beast] [Engine, Tall.; When played, become immune.; Tap and expend water_mana to devour an allied Ship.] [Who ordered fish and ships?]
 Havoc Longboat: 3/3p [Thalassa, Ship] [Whenever you equip a Cannon, you may expend fire_mana to assault 1.; Plunder 2.] [...put him in a longboat till he's sober...]

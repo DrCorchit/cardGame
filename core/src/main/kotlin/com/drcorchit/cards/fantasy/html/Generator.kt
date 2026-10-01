@@ -59,12 +59,24 @@ class Generator(val version: String, val inputDir: File, val outputDir: File) : 
         deserializer = builder.create()
     }
 
-    val loreEntries by lazy {
-        val loreDir = File(inputDir, "lore")
+    val leaderLoreEntries by lazy {
+        val loreDir = File(inputDir, "lore/leaders")
         loreDir.listFiles { it.extension == "html" }
             ?.mapNotNull { file ->
-                HtmlFile(file.nameWithoutExtension, file, File(outputDir, "lore/${file.name}"))
+                HtmlFile(file.nameWithoutExtension, file, File(outputDir, "lore/leaders/${file.name}"))
             } ?: listOf()
+    }
+
+    val factionLoreEntries by lazy {
+        val loreDir = File(inputDir, "lore/factions")
+        loreDir.listFiles { it.extension == "html" }
+            ?.mapNotNull { file ->
+                HtmlFile(file.nameWithoutExtension, file, File(outputDir, "lore/factions/${file.name}"))
+            } ?: listOf()
+    }
+
+    val loreEntries by lazy {
+        leaderLoreEntries + factionLoreEntries
     }
 
     val cardDatabases by lazy {
@@ -78,7 +90,7 @@ class Generator(val version: String, val inputDir: File, val outputDir: File) : 
         )
     }
 
-    private val files by lazy { (loreEntries + cardDatabases).associateBy { it.inputFile.name } }
+    private val files by lazy { (leaderLoreEntries + cardDatabases).associateBy { it.inputFile.name } }
 
     fun lookupFile(file: String): HtmlFile {
         val key = file.normalize() + ".html"

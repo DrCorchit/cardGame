@@ -55,8 +55,8 @@ configure(subprojects) {
   compileJava {
     options.incremental = true
   }
-  compileKotlin.compilerOptions.jvmTarget.set(JvmTarget.JVM_11)
-  compileTestKotlin.compilerOptions.jvmTarget.set(JvmTarget.JVM_11)
+  compileKotlin.compilerOptions.jvmTarget.set(JvmTarget.JVM_17)
+  compileTestKotlin.compilerOptions.jvmTarget.set(JvmTarget.JVM_17)
 
 }
 

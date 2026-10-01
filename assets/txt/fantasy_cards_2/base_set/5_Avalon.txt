@@ -1,6 +1,6 @@
 Firefly: 1/2p [Avalon, Insectoid] [When played, spawn earth_mana water_mana.; Tap to repeat the "when played" ability.] [Fireflies are proof that nature is magic.]
 Fairy Ring: 1/2p [Avalon, Fairy] [Engine, Haste.; Tap to either:#Spawn earth_mana.#Purify an enemy unit and lock this card.] [Come dance with us!]
-Goblin Dancer: 1/2p [Avalon, Ogroid, Tribal] [Tap to gain 2 points for each adjacent unit.; This unit may be played between other units.] [You spin my head right round.]
+Goblin Dancer: 1/2p [Avalon, Ogroid, Tribal] [Tap to gain 2 points for each adjacent unit.; This unit may be played between other cards.] [You spin my head right round.]
 Tree Elf: 2/2p [Avalon, Elf] [Harmony: Gain 1 point.] [She knows every tree and calls them by name.]
 Elven Princess: 2/2p [Avalon, Elf] [When played (diversity X), gain X points.] [Most of them have at least three or four middle names.]
 Elven Scout: 2/2p [Avalon, Elf] [When played, you may expend earth_mana to create an "Elven Archer" token.] [They don't always fire a warning shot.]
