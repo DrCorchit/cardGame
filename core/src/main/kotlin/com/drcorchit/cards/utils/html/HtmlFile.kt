@@ -95,16 +95,6 @@ open class HtmlFile(
         logger.debug("Rendering $this")
         val html = HtmlObject("html")
 
-//        if (generator.backgroundImage != null) {
-//            html.withAttribute(
-//                "style",
-//                "background-image: url('${generator.backgroundImage}.png');" +
-//                    "background-repeat: no-repeat;" +
-//                    "background-attachment: fixed;" +
-//                    "background-position: center;"
-//            )
-//        }
-
         return "<!DOCTYPE html>\n" +
             html.withAttribute("lang", "en")
                 .withContent(head)

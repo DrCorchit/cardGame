@@ -23,7 +23,7 @@ pre { background-color: #444; border-radius: 3px; padding: 4px; margin: 10px 0px
 }
 
 .databaseImage {
-  max-height: 300px;
+  max-width: 33%;
   display: block;
 }
 
