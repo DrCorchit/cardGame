@@ -145,14 +145,14 @@ object AIUtils {
             else -> ""
         }
 
-        val factionText = when (card.city) {
-            City.Avalon -> "The card is for the Avalon faction, which is set in large, quiet, and lonely temperate forest."
-            City.Metropolis -> "The card is for the Metropolis faction, set in a steampunk city or industrial rooms."
-            City.Transylvania -> "The card is for the Transylvania faction, which includes a mix of humans and vampires living in a crime-ridden victorian era city."
-            //City.Thalassa -> "The card is for the Thalassa faction, which involves sailors on the open seas. Avoid having ships in the background."
-            City.Thalassa -> "The card is for the Thalassa faction, which involves viking warriors."
-            City.Vulcania -> "The card is for the Vulcania faction, which is set in deep dark caverns."
-            City.Unaffiliated -> ""
+        val factionText = when (card.city.name) {
+            "Avalon" -> "The card is for the Avalon faction, which is set in large, quiet, and lonely temperate forest."
+            "Metropolis" -> "The card is for the Metropolis faction, set in a steampunk city or industrial rooms."
+            "Transylvania" -> "The card is for the Transylvania faction, which includes a mix of humans and vampires living in a crime-ridden victorian era city."
+            //"Thalassa" -> "The card is for the Thalassa faction, which involves sailors on the open seas. Avoid having ships in the background."
+            "Thalassa" -> "The card is for the Thalassa faction, which involves viking warriors."
+            "Vulcania" -> "The card is for the Vulcania faction, which is set in deep dark caverns."
+            else -> ""
         }
 
         val color = when (Random.Default.nextInt(10)) {

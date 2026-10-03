@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Alice the Wonder",
+    "description": "A young prodigy with unbelievable promise. Excels at setting up powerful comboes with mana-intensive cards.",
+    "faction": "Metropolis, Metropolis"
+  },
+  {
+    "name": "Anzia the Yeek",
+    "description": "A mysterious figure who may not be who she claims to be. Excels at disrupting the opponent's strategy through unorthodox means.",
+    "faction": "Panacea, Transylvania"
+  },
+  {
+    "name": "Bertcalf the Tall",
+    "description": "A man with a dark past and an equally dark future. Excels at dominating short rounds.",
+    "faction": "Rivenhold, Avalon"
+  },
+  {
+    "name": "Lutis the Mad",
+    "description": "A powerful mage whose twisted tale of heartbreak has lead him to regions unknown. Excels at annihilating a single enemy threat.",
+    "faction": "Thorheim, Thalassa"
+  },
+  {
+    "name": "Newtonia the White",
+    "description": "A human-sized doll with the powers of a demigod. Excels at establishing threatening combos.",
+    "faction": ""
+  },
+  {
+    "name": "Octicia the Cunning",
+    "description": "A cursed child attempting to avert a disastrous fate. Excels at nudging weak enemy threats to their demise.",
+    "faction": "Cashthorpe, Transylvania"
+  },
+  {
+    "name": "Rhodango the Red",
+    "description": "An eccentric hermit with a passion for flora and fauna. Excels at maintaining a presence in more than one round.",
+    "faction": "Godwyn's Rest, Avalon"
+  },
+  {
+    "name": "Samray the Swift",
+    "description": "A farsighted mage who has chosen to respond bravely to a terrifying vision of the future. Excels at improving the cards in one's hand.",
+    "faction": ""
+  },
+  {
+    "name": "Takulev the Undying",
+    "description": "A cold-blooded revenant with strange motives. Excels at reintroducing defeated threats.",
+    "faction": "Mordun, Transylvania"
+  },
+  {
+    "name": "Vizimir the Golden",
+    "description": "A powerful mage and alchemist with a heart for compassion and wisdom. Excels at dominating a single, long round.",
+    "faction": "Vanzeer, Transylvania"
+  }
+]

@@ -1,5 +1,7 @@
 package com.drcorchit.cards.fantasy.html
 
+import com.drcorchit.cards.fantasy.City
+import com.drcorchit.cards.fantasy.Leader.Companion.leaders
 import com.drcorchit.cards.utils.html.*
 import com.drcorchit.justice.utils.StringUtils.normalize
 import com.drcorchit.justice.utils.logging.Logger
@@ -34,6 +36,10 @@ class Generator(val version: String, val inputDir: File, val outputDir: File) : 
             }
         }
 
+    val filesMap by lazy {
+        mapOf("index" to Index, "rules" to Rules, "lore" to LoreToC, "db" to DatabaseToC, "faqs" to FAQs)
+    }
+
     override fun getProperty(property: String): Any? {
         return when (property) {
             "version" -> version
@@ -44,8 +50,8 @@ class Generator(val version: String, val inputDir: File, val outputDir: File) : 
             }
 
             "files" -> object : HasProperties {
-                override fun getProperty(property: String): Any {
-                    return lookupFile(property)
+                override fun getProperty(property: String): Any? {
+                    return filesMap[property.normalize()]
                 }
             }
 
@@ -54,47 +60,34 @@ class Generator(val version: String, val inputDir: File, val outputDir: File) : 
     }
 
     init {
-
         val builder = GsonBuilder().setPrettyPrinting().disableHtmlEscaping()
         deserializer = builder.create()
     }
 
+
     val leaderLoreEntries by lazy {
-        val loreDir = File(inputDir, "lore/leaders")
-        loreDir.listFiles { it.extension == "html" }
-            ?.mapNotNull { file ->
-                HtmlFile(file.nameWithoutExtension, file, File(outputDir, "lore/leaders/${file.name}"))
-            } ?: listOf()
+        leaders.values.map {
+            val inputFile = File(inputDir, "lore/leaders/${it.name.normalize()}.html")
+            val outputFile = File(outputDir, "lore/leaders/${it.name.normalize()}.html")
+            HtmlFile(it.name, inputFile, outputFile)
+        }
     }
+
+    val factions = listOf(City.avalon, City.metropolis, City.thalassa, City.transylvania, City.vulcania)
 
     val factionLoreEntries by lazy {
-        val loreDir = File(inputDir, "lore/factions")
-        loreDir.listFiles { it.extension == "html" }
-            ?.mapNotNull { file ->
-                HtmlFile(file.nameWithoutExtension, file, File(outputDir, "lore/factions/${file.name}"))
-            } ?: listOf()
+        factions.map {
+            val inputFile = File(inputDir, "lore/factions/${it.name}.html")
+            val outputFile = File(outputDir, "lore/factions/${it.name}.html")
+            val title = "A Thousand Years of ${it.name}"
+            HtmlFile(title, inputFile, outputFile)
+        }
     }
 
-    val loreEntries by lazy {
-        leaderLoreEntries + factionLoreEntries
-    }
+    val loreList by lazy { leaderLoreEntries + factionLoreEntries }
 
-    val cardDatabases by lazy {
-        listOf<HtmlFile>(
-            CardDatabase("Avalon"),
-            CardDatabase("Metropolis"),
-            CardDatabase("Thalassa"),
-            CardDatabase("Transylvania"),
-            CardDatabase("Vulcania"),
-            CardDatabase("Unaffiliated")
-        )
-    }
-
-    private val files by lazy { (leaderLoreEntries + cardDatabases).associateBy { it.inputFile.name } }
-
-    fun lookupFile(file: String): HtmlFile {
-        val key = file.normalize() + ".html"
-        return files[key] ?: throw NoSuchElementException("No file named \"$file.html\"")
+    val dbList by lazy {
+        City.cities.values.map { CardDatabase(it) }
     }
 
     fun copyFolder(src: File, dest: File) {
@@ -118,17 +111,17 @@ class Generator(val version: String, val inputDir: File, val outputDir: File) : 
 
     fun makeCardDatabase(i: Int) {
         val prev = if (i > 0) {
-            cardDatabases[i - 1]
-        } else cardDatabases.last()
-        val next = if (i < cardDatabases.size - 1) {
-            cardDatabases[i + 1]
-        } else cardDatabases.first()
+            dbList[i - 1]
+        } else dbList.last()
+        val next = if (i < dbList.size - 1) {
+            dbList[i + 1]
+        } else dbList.first()
         val nav = Navigation(
             "Back to Database" to "/database.html",
             prev.let { it.title to it.outputRelativePath },
             next.let { it.title to it.outputRelativePath })
 
-        cardDatabases[i].appendHeader()
+        dbList[i].appendHeader()
             //.appendElement("h2", "Chapter $i")
             .appendTitle().append(nav)
             .appendBody().append(nav)
@@ -138,17 +131,17 @@ class Generator(val version: String, val inputDir: File, val outputDir: File) : 
 
     fun makeLoreEntry(i: Int) {
         val prev = if (i > 0) {
-            loreEntries[i - 1]
-        } else null
-        val next = if (i < loreEntries.size - 1) {
-            loreEntries[i + 1]
-        } else null
+            loreList[i - 1]
+        } else loreList.last()
+        val next = if (i < loreList.size - 1) {
+            loreList[i + 1]
+        } else loreList.first()
         val nav = Navigation(
             "Back to Lore" to "/lore.html",
-            prev?.let { it.title to it.outputRelativePath },
-            next?.let { it.title to it.outputRelativePath })
+            prev.let { it.title to it.outputRelativePath },
+            next.let { it.title to it.outputRelativePath })
 
-        loreEntries[i]
+        loreList[i]
             .appendHeader()
             .appendTitle().append(nav)
             .appendBody().append(nav)
@@ -193,8 +186,8 @@ class Generator(val version: String, val inputDir: File, val outputDir: File) : 
             .appendBody()
             .save(File(Server.serviceDir, "faqs.html"))
 
-        for (i in cardDatabases.indices) makeCardDatabase(i)
-        for (i in loreEntries.indices) makeLoreEntry(i)
+        for (i in dbList.indices) makeCardDatabase(i)
+        for (i in loreList.indices) makeLoreEntry(i)
     }
 
     override fun toString(): String {

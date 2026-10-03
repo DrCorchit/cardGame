@@ -49,14 +49,8 @@ class FantasyCard(
 
     val toughness = power + armor
 
-    val city = tags.firstNotNullOfOrNull {
-        try {
-            City.valueOf(it)
-        } catch (e: Exception) {
-            //println("No city for card $name")
-            null
-        }
-    } ?: City.Unaffiliated
+    val city = tags.firstNotNullOfOrNull { City.cities[it] } ?: City.unaffiliated
+    val hasCity = (city != City.unaffiliated)
 
     val faction: Faction = city
 
@@ -80,7 +74,7 @@ class FantasyCard(
 
         val race = Race.detectRacialTag(tags, type)
 
-        val prefix = if (city == City.Unaffiliated) "$rarity $race" else "$rarity ${city.adj} $race"
+        val prefix = if (hasCity) "$rarity ${city.adjective} $race" else "$rarity $race"
         val suffix = miscTags.joinToString(", ")
         if (miscTags.isEmpty()) prefix else "$prefix — $suffix"
     }
@@ -110,7 +104,11 @@ class FantasyCard(
 
     val compactKeywordTextArea = !(quote.isBlank() && armor == 0)
 
-    val keywordTextW = if (compactKeywordTextArea) { keywordTextQuoteW } else { keywordTextNoQuoteW }
+    val keywordTextW = if (compactKeywordTextArea) {
+        keywordTextQuoteW
+    } else {
+        keywordTextNoQuoteW
+    }
     val keywordTextH =
         Draw.calculateDimensions(
             Fonts.keywordHelpFont,

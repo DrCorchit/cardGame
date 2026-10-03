@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Avalon",
+    "description": "A nature-driven faction built around equal parts growth, diversity, and aggression, with substantial utility and powerful finishers.",
+    "adjective": "Avalonian",
+    "color": "106010"
+  },
+  {
+    "name": "Metropolis",
+    "description": "A faction of steampunk elves and their mechanical marvels, preferring utility and countermeasures over direct assault.",
+    "adjective": "Metropolitan",
+    "color": "4060a0"
+  },
+  {
+    "name": "Thalassa",
+    "description": "A seafaring faction built around Ships, Pirates, and Warriors. Best for players who favor direct frontal assault without subtlety.",
+    "adjective": "Thalassan",
+    "color": "a03000"
+  },
+  {
+    "name": "Transylvania",
+    "description": "Transylvania – A chaotic criminal underworld where vampires, mobsters, and slayers operate in uneasy cooperation. Excels at taking apart the opponent’s strategy before it can develop.",
+    "adjective": "Transylvanian",
+    "color": "444444"
+  },
+  {
+    "name": "Vulcania",
+    "description": "A faction of dwarven industry, drunken revelry, and fiery dragons. Prioritizes greedy strategies and defense, with limited offensive resources.",
+    "adjective": "Vulcanian",
+    "color": "d07020"
+  },
+  {
+    "name": "Unaffiliated",
+    "description": "A faction for cards which do not belong to any particular faction.",
+    "adjective": "Unaffiliated",
+    "color": "603000"
+  }
+]
