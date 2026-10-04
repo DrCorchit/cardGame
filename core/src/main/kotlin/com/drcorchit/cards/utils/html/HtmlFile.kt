@@ -8,12 +8,18 @@ import java.io.File
 
 open class HtmlFile(
     val title: String,
-    val inputFile: File,
-    val outputFile: File = File(generator.outputDir, inputFile.name)
+    val inputFile: File?,
+    val outputFile: File
 ) :
     HasProperties {
 
-    constructor(title: String, inputFile: String) : this(title, File(generator.inputDir, inputFile))
+    constructor(title: String, inputFile: String, outputFile: String) : this(
+        title,
+        File(generator.inputDir, inputFile),
+        File(generator.outputDir, outputFile)
+    )
+
+    constructor(title: String, inputOutputFile: String) : this(title, inputOutputFile, inputOutputFile)
 
     open val logger = Logger.getLogger(HtmlFile::class.java)
 
@@ -74,7 +80,7 @@ open class HtmlFile(
 
     open fun appendBody(): HtmlFile {
         if (subsections.isEmpty()) {
-            append(inputFile.readText())
+            append(inputFile?.readText() ?: "")
         } else {
             //append(getOutline())
             subsections.forEach { appendSubsection(it) }

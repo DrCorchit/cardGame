@@ -4,12 +4,14 @@ import com.badlogic.gdx.files.FileHandle
 import com.badlogic.gdx.graphics.Color
 import com.badlogic.gdx.graphics.Texture
 import com.badlogic.gdx.utils.ScreenUtils
-import com.drcorchit.cards.fantasy.Keyword
 import com.drcorchit.cards.Main.Companion.BORDER
 import com.drcorchit.cards.Main.Companion.H
 import com.drcorchit.cards.Main.Companion.IMAGE_H
 import com.drcorchit.cards.Main.Companion.IMAGE_W
 import com.drcorchit.cards.Main.Companion.W
+import com.drcorchit.cards.fantasy.FantasyCards.Companion.imageInput
+import com.drcorchit.cards.fantasy.FantasyCards.Companion.imageOutput
+import com.drcorchit.cards.fantasy.Rarity.Companion.findRarity
 import com.drcorchit.cards.graphics.*
 import com.drcorchit.cards.graphics.Textures.asSprite
 import com.drcorchit.cards.graphics.Draw.batch
@@ -24,7 +26,6 @@ import kotlin.math.max
 import kotlin.math.roundToInt
 
 class FantasyCard(
-    val cards: FantasyCards,
     override val name: String,
     val power: Int,
     val cost: Int,
@@ -49,20 +50,13 @@ class FantasyCard(
 
     val toughness = power + armor
 
-    val city = tags.firstNotNullOfOrNull { City.cities[it] } ?: City.unaffiliated
+    val city = City.findCity(tags)
     val hasCity = (city != City.unaffiliated)
 
     val faction: Faction = city
+    val rarity = findRarity(tags)
 
-    val rarity = tags.firstNotNullOfOrNull {
-        try {
-            Rarity.valueOf(it)
-        } catch (_: Exception) {
-            null
-        }
-    } ?: Rarity.Common
-
-    val rarityBorder = if (tags.contains("Leader")) Rarity.shinyBorder else rarity.image
+    val rarityBorder by lazy { if (tags.contains("Leader")) Rarity.shinyBorder else rarity.image }
 
     val isToken = tags.contains("Token")
     val tagsText = run {
@@ -83,7 +77,7 @@ class FantasyCard(
         .joinToString("\n") { it.trim() }
         .replace("#", "\n > ")
 
-    val abilityTextHandler = AbilityTextHandler(abilityText, Keyword.keywordsDictionary)
+    val abilityTextHandler by lazy { AbilityTextHandler(abilityText, Keyword.keywordsDictionary) }
 
     val keywords = abilities
         .flatMap { it.split(Regex("[ #]")) }
@@ -95,12 +89,12 @@ class FantasyCard(
 
     val keywordText = keywords.joinToString("\n") { "${it.name}: ${it.description}" }
 
-    val pngImage = File("${cards.imageRoot}/${city.name}/${name.normalize()}.png")
-    val jpgImage = File("${cards.imageRoot}/${city.name}/${name.normalize()}.jpg")
+    val pngImage = File("$imageInput/${city.name}/${name.normalize()}.png")
+    val jpgImage = File("$imageInput/${city.name}/${name.normalize()}.jpg")
     val hasImage = pngImage.exists() || jpgImage.exists()
     var image: AnimatedSprite? = null
 
-    val abilityTextH = abilityTextHandler.calculateHeight(abilityTextW)
+    val abilityTextH by lazy { abilityTextHandler.calculateHeight(abilityTextW) }
 
     val compactKeywordTextArea = !(quote.isBlank() && armor == 0)
 
@@ -109,22 +103,21 @@ class FantasyCard(
     } else {
         keywordTextNoQuoteW
     }
-    val keywordTextH =
+    val keywordTextH by lazy {
         Draw.calculateDimensions(
             Fonts.keywordHelpFont,
             keywordText,
             keywordTextW
         ).second
+        }
 
     val keywordTextY = if (compactKeywordTextArea) Companion.keywordTextY else keywordTextNoQuoteY
 
-    override val outputLocation =
-        "resources/images/temporary/cards/${city.name.normalize()}/${name.normalize()}"
+    override val outputLocation = "$imageOutput/${city.name.normalize()}/${name.normalize()}"
 
     override val multiplicity = if (isToken) 6 else if (rarity == Rarity.Common) 2 else 1
 
-    constructor(json: JsonObject, cards: FantasyCards) : this(
-        cards,
+    constructor(json: JsonObject) : this(
         json["name"].asString,
         json["power"]?.asInt ?: 0,
         json["cost"].asInt,
@@ -132,7 +125,7 @@ class FantasyCard(
         json.getAsJsonArray("tags").map { it.asString },
         loadAbility(json),
         json["quote"].asString,
-        json.getAsJsonObject("sideboard").entrySet().associate { it.key to it.value.asInt },
+        json.getAsJsonObject("sideboard")?.entrySet()?.associate { it.key to it.value.asInt } ?: mapOf(),
         json["strategy"]?.let { it.asJsonArray.map { ele -> ele.asString } } ?: listOf()
     )
 
@@ -176,23 +169,23 @@ class FantasyCard(
         val keywordColor = Color.valueOf("#502800ff")
         val keywordHelpColor = Color.valueOf("#806040ff") //was 405060
 
-        val brushStroke = Textures.brushStroke.asSprite().setOffset(Compass.CENTER)
-        val tray = Textures.tray.asSprite().setOffset(Compass.SOUTH)
-        val armorBack = Textures.armorBack.asSprite().setOffset(Compass.CENTER)
-        val costBack = Textures.costBack.asSprite().setOffset(200f, 150f)
-        val line = Textures.line.asSprite().setOffset(Compass.CENTER)
-        val border = Textures.frameBack.asSprite()
+        val brushStroke by lazy { Textures.brushStroke.asSprite().setOffset(Compass.CENTER) }
+        val tray by lazy { Textures.tray.asSprite().setOffset(Compass.SOUTH) }
+        val armorBack by lazy { Textures.armorBack.asSprite().setOffset(Compass.CENTER) }
+        val costBack by lazy { Textures.costBack.asSprite().setOffset(200f, 150f) }
+        val line by lazy { Textures.line.asSprite().setOffset(Compass.CENTER) }
+        val border by lazy { Textures.frameBack.asSprite() }
 
-        val scale = W / tray.getFrames().width
-        val trayHeight = tray.getFrames().height * scale
+        val scale by lazy { W / tray.getFrames().width }
+        val trayHeight by lazy { tray.getFrames().height * scale }
 
         val imageX = BORDER + W / 2
         val imageY = (H + BORDER - 10f).roundToInt().toFloat()
         val imageW = W
-        val imageH = H + 10 - trayHeight
+        val imageH by lazy { H + 10 - trayHeight }
 
         val midWidth = IMAGE_W / 2f
-        val midHeight = tray.getFrames().height - 22f
+        //val midHeight = tray.getFrames().height - 22f
 
         val diamondW = 80f
         val diamondH = 2 * diamondW
@@ -211,14 +204,14 @@ class FantasyCard(
         val armorX = BORDER + costBackOffset
         val armorY = BORDER + costBackOffset
 
-        val strokeY = trayHeight + BORDER - 80
+        val strokeY by lazy { trayHeight + BORDER - 80 }
         val strokeH = 120f
         val strokeMargin = 200f
         val strokeMinW = 200f
         val strokeMaxW = W - 50f
 
         val abilityTextX = BORDER + 30f
-        val abilityTextY = strokeY - 60
+        val abilityTextY by lazy { strokeY - 60 }
         val abilityTextW = W - 60f
 
         val lineY = 116f + BORDER
@@ -231,7 +224,7 @@ class FantasyCard(
         val keywordTextNoQuoteY = BORDER + 35f
         val keywordTextQuoteW = abilityTextW - 30
         val keywordTextNoQuoteW = abilityTextW - 150f
-        val totalAbilityTextH = abilityTextY - keywordTextY
+        val totalAbilityTextH by lazy { abilityTextY - keywordTextY }
     }
 
     override fun draw() {

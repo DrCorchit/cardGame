@@ -1,22 +1,21 @@
 package com.drcorchit.cards.fantasy.html
 
 import com.drcorchit.cards.fantasy.html.Generator.Companion.generator
-import com.drcorchit.cards.utils.html.HasProperties
 import com.drcorchit.cards.utils.html.HtmlFile
 import com.drcorchit.cards.utils.html.HtmlObject
 import com.drcorchit.justice.utils.StringUtils.normalize
 
-object LoreToC : HtmlFile("Lore Database", "lore.html"), HasProperties {
+object LoreToC : HtmlFile("Lore Database", "lore.html") {
 
     val loreMap = (generator.leaderLoreEntries + generator.factionLoreEntries)
-        .associateBy { it.inputFile.nameWithoutExtension.normalize() }
+        .mapNotNull { it.inputFile }
+        .associateBy { it.nameWithoutExtension.normalize() }
 
     override fun getProperty(property: String): Any? {
         return loreMap[property.normalize()]
     }
 
     override fun appendBody(): HtmlFile {
-
         super.appendBody()
 
         fun loreToEntry(lore: HtmlFile): HtmlObject {

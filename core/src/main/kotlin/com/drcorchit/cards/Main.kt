@@ -42,8 +42,6 @@ class Main : ApplicationAdapter() {
         const val W = IMAGE_W - (BORDER * 2)
         const val H = IMAGE_H - (BORDER * 2)
 
-        var showStolenArt = false
-
         val spaceCards by lazy {
             SpaceCards.cards + disasters + cardbacks
         }
@@ -267,7 +265,6 @@ class Main : ApplicationAdapter() {
 
     override fun render() {
         fun advanceBy(amount: Int) {
-            showStolenArt = false
             index = MathUtils.modulus(index + amount, cards.size)
             card.updateGraphic()
         }
@@ -301,13 +298,6 @@ class Main : ApplicationAdapter() {
 
         if (Gdx.input.isKeyJustPressed(Input.Keys.S)) nextUnapproved()
         if (Gdx.input.isKeyJustPressed(Input.Keys.W)) toggleApproved()
-
-        if (Gdx.input.isKeyJustPressed(Input.Keys.Z)) {
-            showStolenArt = !showStolenArt
-            if (showStolenArt) card.cards.imageRoot = "resources/images/fantasy_cards/cards/other/Stolen/"
-            else card.cards.imageRoot = "resources/images/fantasy_cards/cards/ChatGPT/Realistic/"
-            card.updateGraphic()
-        }
 
         if (Gdx.input.isKeyJustPressed(Input.Keys.SPACE)) actor.drawable.updateGraphic()
 

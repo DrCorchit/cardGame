@@ -11,6 +11,6 @@ enum class CardType(file: String?) {
     Equipment("equipment.png"),
     Emplacement("emplacement.png");
 
-    val image = file?.let { Textures.initTexture(it).asSprite().setOffset(Compass.CENTER) }
-    val imageBlack = image?.copy()?.let { it.blend = Color.BLACK; it }
+    val image by lazy { file?.let { Textures.initTexture(it).asSprite().setOffset(Compass.CENTER) } }
+    val imageBlack by lazy { image?.copy()?.let { it.blend = Color.BLACK; it } }
 }

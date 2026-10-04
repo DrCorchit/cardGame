@@ -29,6 +29,7 @@ interface HasProperties {
 			return when (temp) {
 				is HtmlFile -> temp.linkTo(name ?: temp.title).render()
 				is Subsection -> temp.linkTo(name ?: temp.title).render()
+                is HtmlObject -> temp.render()
 				else -> temp.toString()
 			}
 		}

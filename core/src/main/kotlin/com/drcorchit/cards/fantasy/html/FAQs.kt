@@ -18,8 +18,8 @@ object FAQs : HtmlFile("FAQs", "faqs.html") {
                 .filter { it != unaffiliated }
                 .forEach { city ->
                     val innerList = HtmlObject("ul")
-                        .withContent(HtmlObject("li").withContent("{{files.db.${city.name}}}"))
-                        .withContent(HtmlObject("li").withContent("{{files.lore.${city.name}}}"))
+                        .withContent(HtmlObject("li").withContent("{{factions.${city.name.normalize()}.db_link}}"))
+                        .withContent(HtmlObject("li").withContent("{{factions.${city.name.normalize()}.lore_link}}"))
 
                     val div = HtmlObject("div")
                         .withClass("roundRect")
@@ -34,14 +34,16 @@ object FAQs : HtmlFile("FAQs", "faqs.html") {
         .withRule("leaders") {
             val leaderList = flexBox()
             leaders.values.forEach { leader ->
+                val innerList = HtmlObject("ul")
+                    .withContent(HtmlObject("li").withContent("{{leaders.${leader.name.normalize()}.db_link}}"))
+                    .withContent(HtmlObject("li").withContent("{{leaders.${leader.name.normalize()}.lore_link}}"))
+
                 val div = HtmlObject("div")
                     .withClass("roundRect")
                 div.withBoldedEntry(leader.name, leader.description)
-                div.withContent(
-                    HtmlObject("a")
-                        .withAttribute("href", "lore/leaders/${leader.name.normalize()}.html")
-                        .withContent("Lore Entry")
-                )
+                div.withContent("Discover more:")
+                div.withContent(innerList)
+
                 leaderList.withContent(div)
             }
             leaderList.render()

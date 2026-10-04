@@ -13,6 +13,16 @@ enum class Rarity {
     companion object {
         val shinyBorder by lazy { Textures.initTexture("leader.png").asSprite() }
 
+        fun findRarity(tags: List<String>): Rarity {
+            return tags.firstNotNullOfOrNull {
+                try {
+                    Rarity.valueOf(it)
+                } catch (_: Exception) {
+                    null
+                }
+            } ?: Common
+        }
+
         fun deserialize(json: JsonElement): Rarity {
             return try {
                 Rarity.valueOf(json.asString)

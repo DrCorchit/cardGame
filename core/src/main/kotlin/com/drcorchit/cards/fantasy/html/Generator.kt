@@ -1,6 +1,8 @@
 package com.drcorchit.cards.fantasy.html
 
 import com.drcorchit.cards.fantasy.City
+import com.drcorchit.cards.fantasy.City.Companion.cities
+import com.drcorchit.cards.fantasy.Leader
 import com.drcorchit.cards.fantasy.Leader.Companion.leaders
 import com.drcorchit.cards.utils.html.*
 import com.drcorchit.justice.utils.StringUtils.normalize
@@ -48,6 +50,8 @@ class Generator(val version: String, val inputDir: File, val outputDir: File) : 
                     return strings[property]
                 }
             }
+            "factions" -> City.Companion
+            "leaders" -> Leader.Companion
 
             "files" -> object : HasProperties {
                 override fun getProperty(property: String): Any? {
@@ -73,14 +77,13 @@ class Generator(val version: String, val inputDir: File, val outputDir: File) : 
         }
     }
 
-    val factions = listOf(City.avalon, City.metropolis, City.thalassa, City.transylvania, City.vulcania)
+    val factions by lazy { listOf(City.avalon, City.metropolis, City.thalassa, City.transylvania, City.vulcania) }
 
     val factionLoreEntries by lazy {
         factions.map {
-            val inputFile = File(inputDir, "lore/factions/${it.name}.html")
-            val outputFile = File(outputDir, "lore/factions/${it.name}.html")
             val title = "A Thousand Years of ${it.name}"
-            HtmlFile(title, inputFile, outputFile)
+            val inputOutputFile ="lore/factions/${it.name.normalize()}.html"
+            HtmlFile(title, inputOutputFile)
         }
     }
 
