@@ -5,10 +5,10 @@ import java.util.*
 
 open class HtmlObject(
 	val tag: String,
-	val attributes: MutableMap<String, String> = TreeMap()
+    val attributes: MutableMap<String, String> = TreeMap()
 ) : Renderable {
 
-	private val content = HtmlContent()
+    private val content = HtmlContent()
 
 	fun withClass(clazz: String): HtmlObject {
 		return this.withAttribute("class", clazz)

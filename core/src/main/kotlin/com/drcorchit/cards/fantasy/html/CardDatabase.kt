@@ -34,6 +34,7 @@ class CardDatabase(val faction: City) :
         fun cardToHtml(card: JsonObject): HtmlObject {
             val name = card.get("name").asString
             val normalized = name.normalize()
+            //val link = HtmlObject("a").withAttribute("id")
 
             return HtmlObject(
                 "img", TreeMap(
