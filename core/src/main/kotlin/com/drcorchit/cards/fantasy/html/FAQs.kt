@@ -21,16 +21,16 @@ object FAQs : HtmlFile("FAQs", "faqs.html") {
                         .withContent(HtmlObject("li").withContent("{{factions.${city.name.normalize()}.db_link}}"))
                         .withContent(HtmlObject("li").withContent("{{factions.${city.name.normalize()}.lore_link}}"))
 
-                    val div = HtmlObject("div")
-                        .withClass("roundRect")
+                    val div = HtmlObject("div").withClass("roundRect")
                     div.withBoldedEntry(city.name, city.description)
-                    div.withContent("Discover more:")
+                    div.withContent(HtmlObject("p").withContent("Discover more:"))
                     div.withContent(innerList)
 
                     cityList.withContent(div)
                 }
             cityList.render()
         }
+            //TODO: fix transparent leader cards
         .withRule("leaders") {
             val leaderList = flexBox()
             leaders.values.forEach { leader ->
@@ -38,10 +38,9 @@ object FAQs : HtmlFile("FAQs", "faqs.html") {
                     .withContent(HtmlObject("li").withContent("{{leaders.${leader.name.normalize()}.db_link}}"))
                     .withContent(HtmlObject("li").withContent("{{leaders.${leader.name.normalize()}.lore_link}}"))
 
-                val div = HtmlObject("div")
-                    .withClass("roundRect")
+                val div = HtmlObject("div").withClass("roundRect")
                 div.withBoldedEntry(leader.name, leader.description)
-                div.withContent("Discover more:")
+                div.withContent(HtmlObject("p").withContent("Discover more:"))
                 div.withContent(innerList)
 
                 leaderList.withContent(div)
