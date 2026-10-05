@@ -167,6 +167,7 @@ class Generator(val version: String, val inputDir: File, val outputDir: File) : 
             .appendTitle("h1")
             .append(returnToIndex)
             .appendBody()
+            .append(returnToIndex)
             .save(File(Server.serviceDir, "rules.html"))
 
         LoreToC.appendHeader()
@@ -187,6 +188,7 @@ class Generator(val version: String, val inputDir: File, val outputDir: File) : 
             .appendTitle("h1")
             .append(returnToIndex)
             .appendBody()
+            .append(returnToIndex)
             .save(File(Server.serviceDir, "faqs.html"))
 
         for (i in dbList.indices) makeCardDatabase(i)
