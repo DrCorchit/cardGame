@@ -184,6 +184,8 @@ class Generator(val version: String, val inputDir: File, val outputDir: File) : 
             .appendBody()
             .save()
 
+
+
         FAQs.appendHeader()
             .appendTitle("h1")
             .append(returnToIndex)

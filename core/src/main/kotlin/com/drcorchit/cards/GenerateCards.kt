@@ -44,14 +44,14 @@ class GenerateCards : ApplicationAdapter() {
         index++
         if (index >= cards.size) {
             cards.groupBy { it.city }
-                .forEach { city, cards ->
+                .forEach { (city, cards) ->
                     val jsonArray = JsonArray()
 
                     cards.forEach { card ->
                         jsonArray.add(card.serialize())
                     }
 
-                    val factionFile = File("assets/json/${city.name}.json")
+                    val factionFile = File("assets/json/${city.name.normalize()}.json")
                     factionFile.writeText(jsonArray.toString())
                 }
 
