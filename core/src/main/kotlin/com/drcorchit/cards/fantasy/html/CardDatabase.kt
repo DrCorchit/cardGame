@@ -56,7 +56,7 @@ class CardDatabase(val faction: City) :
                 list.sortedBy { it.name }.map { card -> cardToHtml(card) }
             }.toSortedMap()
             .forEach { (rarity, cards) ->
-                val flex = HtmlObject("div").withStyle("display:flex; flex-wrap:wrap; align-content:flex-start;")
+                val flex = HtmlObject("div").withStyle("display:flex; flex-wrap:wrap; justify-content: space-around;")
 
                 cards.forEach { card -> flex.withContent(card) }
 
