@@ -14,6 +14,13 @@ h4:after, h5:after {
 hr { border: 0; border-top: 1px solid #bc0; }
 pre { background-color: #444; border-radius: 3px; padding: 4px; margin: 10px 0px; font-family: Courier New; font-size: 10pt; }
 
+.socialImage {
+    width: auto;
+    height: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 .loreImage {
   width: 90%;
   height: auto;
@@ -23,18 +30,19 @@ pre { background-color: #444; border-radius: 3px; padding: 4px; margin: 10px 0px
 }
 
 .databaseImage {
-  width: 200px;
+  width: 240px;
   height: auto;
   display: block;
 }
 
 .databaseImage:hover{
-    transform:scale(1.67);
+    transform:scale(1.5);
 }
 
 .roundRect {
   border-radius: 16px;
-  background-color: #181818;
+  background-color: #0c0c0c;
+  border: 1px solid #181818;
   padding: 20px;
   margin: 10px;
 }

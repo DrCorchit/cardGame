@@ -13,7 +13,7 @@ import java.util.*
 
 class CardDatabase(val faction: City) :
     HtmlFile(
-        "${faction.name} Faction Cards",
+        "${faction.adjective} Cards",
         null,
         File(generator.outputDir, "database/${faction.name.normalize()}.html")
     ) {
